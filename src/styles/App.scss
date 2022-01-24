@@ -9,6 +9,155 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-.App {
+.header {
   width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 300;
+}
+.header__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand__name {
+  text-decoration: none;
+  color: transparent;
+}
+.brand__name__logo {
+  width: 150px;
+}
+.nav__menu__btn {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border: none;
+  z-index: 9999;
+}
+.nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #189366, #00040e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+}
+.nav__link {
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1em;
+  padding: 0em 0.5em;
+  position: relative;
+  font-weight: lighter;
+}
+.nav__link:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  animation: navlink 500ms;
+}
+@keyframes navlink {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+.button {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  background: linear-gradient(45deg, #189366, #00040e);
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 26px 39px 52px rgba(28, 171, 118, 0.17);
+}
+.button:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 0px 30px rgba(28, 171, 118, 0.17);
+}
+.home__section__carousel__entry {
+  width: 100vw;
+  background-color: #189366;
+  position: relative;
+  max-height: 100vh;
+}
+.home__section__carousel__entry video {
+  width: 100%;
+}
+.home__section__carousel__entry__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.home__section__carousel__entry__overlay__content {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 0em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home__section__carousel__entry__overlay__content__right {
+  align-items: flex-end;
+}
+.home__section__carousel__entry__overlay__content__sub__heading {
+  font-size: 22px;
+  color: white;
+}
+.home__section__carousel__entry__overlay__content__heading {
+  font-size: 38px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.carousel .thumbs-wrapper {
+  display: none;
+}
+.into__section {
+  width: 100%;
+  background: linear-gradient(#ffffff, #e1e1e1);
+}
+.into__section__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.into__section__heading {
+  font-size: 22px;
+  color: #00040e;
+}
+.into__section__heading span {
+  font-weight: bold;
+}
+.into__section__video {
+  width: 100%;
+  margin: 1em;
 }
