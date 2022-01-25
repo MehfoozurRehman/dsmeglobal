@@ -211,3 +211,92 @@ body {
   margin-top: 0.8em;
   color: #ffffff;
 }
+.feature__section__entry {
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+}
+.feature__section__entry__content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em 2em;
+}
+.feature__section__entry__content__jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature__section__entry__content__jumbotron__left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.feature__section__entry__content__jumbotron__sub__heading {
+  font-size: 35px;
+  color: #00040e;
+}
+.feature__section__entry__content__jumbotron__heading {
+  font-size: 50px;
+  color: #189366;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.feature__section__entry__content__jumbotron__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.feature__section__entry__content__jumbotron__right__img {
+  height: 500px;
+  max-width: 500px;
+}
+.feature__section__entry__content__feature__list {
+  width: 100%;
+  padding: 3em 4.5em;
+  background: linear-gradient(135deg, #383838, #020202);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 5em;
+  flex-wrap: wrap;
+}
+.feature__section__entry__content__feature__list__entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  flex: 1;
+}
+.feature__section__entry__content__feature__list__entry svg {
+  height: 50px;
+}
+.feature__section__entry__content__feature__list__entry span {
+  font-size: 15px;
+  color: white;
+}
+.button__reverse {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  background: linear-gradient(90deg, #383838, #020202);
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 26px 39px 52px rgba(0, 0, 0, 0.18);
+}
+.button__reverse:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);
+}
