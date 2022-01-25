@@ -32,55 +32,55 @@ export default function Services() {
             <ServicesCard
               heading="Mobile App Development"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Security & 
             Surveillance Solutions"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Web App
             Development"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Startup Services"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Ecommerce Solutions"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Graphic Designing Services"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Animation Services"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="UI & UX Services"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="Search Engine Optimizations"
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
             <ServicesCard
               heading="IT Consulting & Outsourcing
             "
               imgSrc={mobileSvg}
-              path="/"
+              path=""
             />
           </div>
         </div>
