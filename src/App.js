@@ -5,6 +5,7 @@ import Home from "./screens/Home";
 import "./styles/App.scss";
 import "animate.css";
 import Header from "./components/Header";
+import Services from "./screens/Services";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/services" element={<Services />}></Route>
       </Routes>
     </>
   );
