@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import video from "../assets/video.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
+import aidaPro from "../assets/projects/aidaPro.png";
+import signature from "../assets/projects/signature.png";
+import j7 from "../assets/projects/j7.png";
+import boulevardCatering from "../assets/projects/boulevardCatering.png";
+import chenabClub from "../assets/projects/chenabClub.png";
+import peervestGlobal from "../assets/projects/peervestGlobal.png";
+import rlbProfessional from "../assets/projects/rlbProfessional.png";
+import aidaProImg from "../assets/aidaProImg.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -84,6 +92,37 @@ function FeatureSectionCarouselEntry({
 }
 
 export default function Home() {
+  const [project, setProject] = useState("AidaPro");
+  const projectSelection = [
+    {
+      title: "aidaPro",
+      image: aidaPro,
+    },
+    {
+      title: "signature",
+      image: signature,
+    },
+    {
+      title: "boulevardCatering",
+      image: boulevardCatering,
+    },
+    {
+      title: "chenabClub",
+      image: chenabClub,
+    },
+    {
+      title: "peervestGlobal",
+      image: peervestGlobal,
+    },
+    {
+      title: "j7",
+      image: j7,
+    },
+    {
+      title: "rlbProfessional",
+      image: rlbProfessional,
+    },
+  ];
   const mobileApplicationFeatures = [
     {
       title: "Utility Apps",
@@ -870,7 +909,7 @@ export default function Home() {
       </div>
       <Carousel
         autoPlay={true}
-        interval={4000}
+        interval={3000}
         showArrows={false}
         showStatus={false}
         infiniteLoop={true}
@@ -893,6 +932,109 @@ export default function Home() {
           features={mobileApplicationFeatures}
         />
       </Carousel>
+      <div className="work__section">
+        <div className="work__section__header">
+          <div className="work__section__header__bar"></div>
+
+          <div className="work__section__header__content">
+            <div className="work__section__header__content__sub__heading">
+              Checkout
+            </div>
+            <div className="work__section__header__content__heading">
+              Our Work
+            </div>
+          </div>
+          <div className="work__section__header__bar"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1274.087"
+            height="43.975"
+            viewBox="0 0 1274.087 43.975"
+          >
+            <g
+              id="Group_10463"
+              data-name="Group 10463"
+              transform="translate(1.509 1.744)"
+            >
+              <path
+                id="Path_8530"
+                data-name="Path 8530"
+                d="M743.7,4310.92s228.353-1.3,387.208,0,125.76,25.433,248.21,5.191,201.878-33.254,350.8-21.687,284.614,36.146,284.614,36.146"
+                transform="translate(-743.698 -4290.082)"
+                fill="none"
+                stroke="#54bd96"
+                stroke-linecap="round"
+                stroke-width="3"
+              />
+              <path
+                id="Path_8532"
+                data-name="Path 8532"
+                d="M743.7,4309.731s228.353,1.3,387.208,0,125.76-25.433,248.21-5.191,201.878,33.254,350.8,21.688,284.614-36.146,284.614-36.146"
+                transform="translate(-743.698 -4290.082)"
+                fill="none"
+                stroke="#54bd96"
+                stroke-linecap="round"
+                stroke-width="3"
+              />
+            </g>
+          </svg>
+        </div>
+        <div className="work__section__content">
+          <div className="work__section__content__project">
+            <div className="work__section__content__project__image">
+              <img src={aidaProImg} alt="" />
+            </div>
+            <div className="work__section__content__project__about">
+              <div className="work__section__content__project__about__heading">
+                <div className="work__section__content__project__about__heading__top">
+                  CHECKOUT
+                </div>
+                <div className="work__section__content__project__about__heading__bottom">
+                  OUR WORK
+                </div>
+              </div>
+              <div className="work__section__content__project__about__info">
+                AIDApro a community where Data/AI professionals and companies
+                meet. A platform to share experiences, knowledge, ask questions,
+                and find the latest Data and AI vacancies and projects. It will
+                be an international specialized career and freelance platform
+                for data science, artificial intelligence, data analytics, data
+                engineering, and business intelligence jobs. Idea is to match
+                Top AI-DATA rarefied talent with top companies. AIDApro a
+                community where Data/AI professionals and companies meet. A
+                platform to share experiences, knowledge, ask questions, and
+                find the latest Data and AI vacancies and projects. It will be
+                an international specialized career and freelance platform for
+                data science, artificial intelligence, data analytics, data
+                engineering, and business intelligence jobs. Idea is to match
+                Top AI-DATA rarefied talent with top companies.
+              </div>
+            </div>
+          </div>
+          <div className="work__section__content__selection">
+            {projectSelection.map((project) => (
+              <div className="work__section__content__selection__entry">
+                <input
+                  type="radio"
+                  name="work__section__content__selection__entry__input"
+                  className="work__section__content__selection__entry__input"
+                  onClick={() => {
+                    setProject(project.title);
+                  }}
+                />
+                <img
+                  src={project.image}
+                  alt=""
+                  className="work__section__content__selection__entry__img"
+                />
+              </div>
+            ))}
+          </div>
+          <Link to="/" className="button__reverse">
+            View Complete Portfolio
+          </Link>
+        </div>
+      </div>
     </>
   );
 }
