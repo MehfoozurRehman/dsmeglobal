@@ -8,14 +8,16 @@ import "animate.css";
 import Header from "./components/Header";
 import Services from "./screens/Services";
 import Footer from "./components/Footer";
+import ContactUs from "./screens/ContactUs";
 
 export default function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/services" element={<Services />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact_us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>

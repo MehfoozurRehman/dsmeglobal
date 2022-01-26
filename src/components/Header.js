@@ -4,22 +4,52 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import logoDark from "../assets/logoDark.png";
 
-function Nav() {
+function Nav({ setIsNavOpen }) {
   return (
     <div className="nav animate__animated animate__fadeInDown">
-      <Link to="/" className="nav__link">
+      <Link
+        to="/"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
         Home
       </Link>
-      <Link to="about_us" className="nav__link">
+      <Link
+        to="about_us"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
         About Us
       </Link>
-      <Link to="/services" className="nav__link">
+      <Link
+        to="/services"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
         Services
       </Link>
-      <Link to="/portfolio" className="nav__link">
+      <Link
+        to="/portfolio"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
         Portfolio
       </Link>
-      <Link to="/contact_us" className="nav__link">
+      <Link
+        to="/contact_us"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
         Contact Us
       </Link>
     </div>
@@ -31,13 +61,13 @@ export default function Header({ isDark }) {
   return (
     <div className="header">
       <div className="header__wrapper">
-        <a href="#" className="brand__name">
+        <Link to="/" className="brand__name">
           {isDark ? (
             <img src={logoDark} alt="logo" className="brand__name__logo" />
           ) : (
             <img src={logo} alt="logo" className="brand__name__logo" />
           )}
-        </a>
+        </Link>
         <button
           className="nav__menu__btn"
           onClick={() => {
@@ -136,7 +166,7 @@ export default function Header({ isDark }) {
             </svg>
           )}
         </button>
-        {isNavOpen ? <Nav /> : null}
+        {isNavOpen ? <Nav setIsNavOpen={setIsNavOpen} /> : null}
       </div>
     </div>
   );
