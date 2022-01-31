@@ -1,5 +1,6 @@
 import React from "react";
 import logoDark from "../assets/logoDark.png";
+import Input from "./Input";
 
 export default function Footer() {
   return (
@@ -96,14 +97,15 @@ export default function Footer() {
           <div className="footer__overlay__content__col__heading">
             Newsletter
           </div>
-          <a href="#about" className="footer__overlay__content__col__entry">
-            <input
-              type="text"
-              alt=""
-              placeholder="john@gmail.com"
-              className="footer__overlay__content__col__entry__input"
-            />
-          </a>
+          <div className="contact__section__content__middle__form">
+            <Input type="text" placeholder="John@gmail.com" />
+          </div>
+          <button
+            className="button"
+            style={{ width: "60%", marginTop: "1em", height: 40 }}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
