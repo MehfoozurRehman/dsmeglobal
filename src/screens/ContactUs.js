@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import contactImg from "../assets/contactImg.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Input from "../components/Input";
 import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
+import axios from "axios";
 
 export default function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorName, setErrorName] = useState(false);
+  const [errorNameMessage, setErrorNameMessage] = useState("");
   return (
     <>
       <div className="contact__section">
@@ -49,7 +57,31 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <form className="contact__section__content__middle">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (name === "") {
+                if (name === "") {
+                  setErrorName(true);
+                  setErrorNameMessage("Please enter message");
+                }
+              } else {
+                axios
+                  .post("http://localhost:9000/api/v1/set_contact", {
+                    username: name,
+                    email: email,
+                    phone: phone,
+                    subject: subject,
+                    message: message,
+                  })
+                  .then(() => {
+                    console.log("data submited");
+                  });
+              }
+              console.log(name, email, phone, subject, message);
+            }}
+            className="contact__section__content__middle"
+          >
             <div className="contact__section__content__middle__header">
               <div className="contact__section__content__middle__sub__heading">
                 Let us help you!
@@ -59,10 +91,53 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="contact__section__content__middle__form">
-              <Input type="text" placeholder="Name" />
-              <Input type="text" placeholder="Email" />
-              <Input type="text" placeholder="Phone" />
-              <Input variant="textarea" type="text" placeholder="Message" />
+              <Input
+                type="text"
+                placeholder={errorName ? errorNameMessage : "Name"}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorName(true);
+                    setErrorNameMessage("Please enter name");
+                  } else {
+                    setErrorName(false);
+                    setErrorNameMessage("");
+                    setName(e.target.value);
+                  }
+                }}
+              />
+              <Input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <Input
+                type="tel"
+                placeholder="Phone"
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+              />
+              <Input
+                type="text"
+                placeholder="Subject"
+                value={subject}
+                onChange={(e) => {
+                  setSubject(e.target.value);
+                }}
+              />
+              <Input
+                variant="textarea"
+                type="text"
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+                placeholder="Message"
+              />
             </div>
             <button className="button" style={{ width: "80%" }}>
               Send
