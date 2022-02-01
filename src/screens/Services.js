@@ -41,51 +41,52 @@ export default function Services() {
             <ServicesCard
               heading="Mobile App Development"
               imgSrc={mobileSvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
-              heading="Security & 
-            Surveillance Solutions"
+              heading="Security & Surveillance Solutions"
               imgSrc={securitySvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
-              heading="Web App
-            Development"
+              heading="Web App Development"
               imgSrc={webSvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
               heading="Startup Services"
               imgSrc={startupSvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
               heading="Ecommerce Solutions"
               imgSrc={ecommerceSvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
               heading="Graphic Designing Services"
               imgSrc={graphicSvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
               heading="Animation Services"
               imgSrc={animationSvg}
-              path=""
+              path="/service-details"
             />
-            <ServicesCard heading="UI & UX Services" imgSrc={uiSvg} path="" />
+            <ServicesCard
+              heading="UI & UX Services"
+              imgSrc={uiSvg}
+              path="/service-details"
+            />
             <ServicesCard
               heading="Search Engine Optimizations"
               imgSrc={seoSvg}
-              path=""
+              path="/service-details"
             />
             <ServicesCard
-              heading="IT Consulting & Outsourcing
-            "
+              heading="IT Consulting & Outsourcing"
               imgSrc={itSvg}
-              path=""
+              path="/service-details"
             />
           </div>
         </div>
