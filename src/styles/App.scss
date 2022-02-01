@@ -910,6 +910,33 @@ body {
 .portolio__filter__right svg {
   margin-right: 0.5em;
 }
+.pricing__feature {
+  width: 100%;
+  max-width: 1440px;
+  padding: 3em;
+  margin: 5em auto;
+  border-radius: 50px;
+  background: linear-gradient(#383838, #020202);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pricing__feature__entry__reverse {
+  width: 30%;
+  height: 100%;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.pricing__feature__entry {
+  width: 30%;
+  height: fit-content;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
 @media (max-width: 1000px) {
   .service__details__jumbotron__content {
     flex-direction: column-reverse;

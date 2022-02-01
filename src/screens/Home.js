@@ -22,88 +22,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Input from "../components/Input";
 import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
+import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
+import FeatureSectionCarouselEntry from "../components/FeatureSectionCarouselEntry";
 import axios from "axios";
-
-function HomeSectionCarouselEntry({
-  subHeading,
-  heading,
-  buttonLabel,
-  toPath,
-  isRight,
-}) {
-  return (
-    <div className="home__section__carousel__entry">
-      <video src={video} autoPlay={"autoplay"} muted={true} loop={true} />
-      <div className="home__section__carousel__entry__overlay">
-        <div
-          className={
-            isRight
-              ? "home__section__carousel__entry__overlay__content home__section__carousel__entry__overlay__content__right"
-              : "home__section__carousel__entry__overlay__content"
-          }
-        >
-          <div className="home__section__carousel__entry__overlay__content__sub__heading">
-            {subHeading}
-          </div>
-          <div className="home__section__carousel__entry__overlay__content__heading">
-            {heading}
-          </div>
-          <Link to={toPath ? toPath : "/"} className="button">
-            {buttonLabel}
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function FeatureSectionCarouselEntry({
-  subHeading,
-  heading,
-  buttonLabel,
-  toPath,
-  svg,
-  features,
-}) {
-  return (
-    <div className="feature__section__entry">
-      <div className="feature__section__entry__content">
-        <div className="feature__section__entry__content__jumbotron">
-          <div className="feature__section__entry__content__jumbotron__left">
-            <div className="feature__section__entry__content__jumbotron__sub__heading">
-              {subHeading}
-            </div>
-            <div className="feature__section__entry__content__jumbotron__heading">
-              {heading}
-            </div>
-            <Link to={toPath ? toPath : "/"} className="button__reverse">
-              {buttonLabel}
-            </Link>
-          </div>
-          <div className="feature__section__entry__content__jumbotron__right">
-            <img
-              src={svg}
-              alt={subHeading + heading}
-              className="feature__section__entry__content__jumbotron__right__img"
-            />
-          </div>
-        </div>
-        <div className="feature__section__entry__content__feature__list">
-          {features.map((feature) => (
-            <div className="feature__section__entry__content__feature__list__entry">
-              <img
-                src={feature.svg}
-                alt="feature__svg"
-                className="feature__section__entry__content__feature__list__entry__img"
-              />
-              <span>{feature.title}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   const [project, setProject] = useState("AidaPro");
