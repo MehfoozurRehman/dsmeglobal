@@ -927,14 +927,20 @@ body {
   font-size: 35px;
   display: flex;
   flex-direction: column;
+  color: #e1e1e1;
+}
+.pricing__feature__entry__reverse span {
+  font-weight: 600;
 }
 .pricing__feature__entry {
   width: 30%;
   height: fit-content;
+  min-height: 200px;
   padding: 2em;
   background-color: white;
   border-radius: 10px;
   margin-bottom: 2em;
+  position: relative;
 }
 
 .our__mission__section__about__us {
@@ -1005,6 +1011,71 @@ body {
   color: #fbfbfb;
   width: 90%;
 }
+.pricing__delivery__section {
+  width: 100vw;
+  height: 100vh;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#ffffff, #e1e1e1);
+}
+.pricing__delivery__section__content__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  justify-content: center;
+  padding: 2em;
+}
+.pricing__delivery__section__heading {
+  font-size: 30px;
+  color: #00040e;
+  display: flex;
+  flex-direction: column;
+}
+.pricing__delivery__section__heading span {
+  color: #189366;
+  font-weight: 600;
+}
+.pricing__delivery__section__img {
+  width: 100%;
+  filter: grayscale(100%);
+  margin: 2em 0em;
+  border-radius: 20px;
+}
+.pricing__delivery__section__content {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing__delivery__section__content__card {
+  width: 30%;
+  height: fit-content;
+  padding: 2em;
+}
+.pricing__delivery__section__content__card__para {
+  font-size: 16px;
+  color: #00040e;
+  position: relative;
+  margin-left: 1.3em;
+}
+.pricing__delivery__section__content__card__para::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background: linear-gradient(#189366, #00040e);
+  left: -20px;
+  top: 5px;
+}
+.pricing__delivery__section__content__card__heading {
+  font-size: 24px;
+  color: #00040e;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
 @media (max-width: 1000px) {
   .service__details__jumbotron__content {
     flex-direction: column-reverse;
@@ -1031,6 +1102,15 @@ body {
   }
   .service__details__jumbotron__content {
     margin-bottom: 5em;
+  }
+  .pricing__delivery__section__content {
+    flex-direction: column;
+  }
+  .pricing__delivery__section__content__card {
+    width: 100%;
+  }
+  .pricing__delivery__section {
+    height: fit-content;
   }
 }
 @media (max-width: 800px) {
