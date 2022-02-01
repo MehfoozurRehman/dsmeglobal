@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logoDark from "../assets/logoDark.png";
 import Input from "./Input";
 
@@ -11,11 +12,22 @@ export default function Footer() {
     <div className="footer__conatiner">
       <div className="footer__conatiner__content">
         <div className="footer__overlay__content__col">
-          <img
-            src={logoDark}
-            alt="logoDark"
-            className="footer__overlay__content__col__img"
-          />
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className="footer__overlay__content__col__img__wrapper"
+          >
+            <img
+              src={logoDark}
+              alt="logoDark"
+              className="footer__overlay__content__col__img"
+            />
+          </Link>
           <div className="footer__overlay__content__col__text">
             We Engineer Software Solutions and take care of all the technology
             so you can focus on what you do best.
