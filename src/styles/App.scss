@@ -575,11 +575,20 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .contact__section__content__middle__input__label {
   font-size: 13px;
   color: #189366;
   display: none;
+}
+.contact__section__content__middle__input__error__message {
+  font-size: 13px;
+  color: #fd2424;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 .contact__section__content__middle__input__field {
   flex: 1;

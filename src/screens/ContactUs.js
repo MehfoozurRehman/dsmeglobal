@@ -13,6 +13,14 @@ export default function ContactUs() {
   const [message, setMessage] = useState("");
   const [errorName, setErrorName] = useState(false);
   const [errorNameMessage, setErrorNameMessage] = useState("");
+  const [errorEmail, setErrorEmaill] = useState(false);
+  const [errorEmailMessage, setErrorEmailMessage] = useState("");
+  const [errorPhone, setErrorPhone] = useState(false);
+  const [errorPhoneMessage, setErrorPhoneMessage] = useState("");
+  const [errorSubject, setErrorSubject] = useState(false);
+  const [errorSubjectMessage, setErrorSubjectMessage] = useState("");
+  const [errorDescription, setErrorDescription] = useState(false);
+  const [errorDescriptionMessage, setErrorDescriptionMessage] = useState("");
   return (
     <>
       <div className="contact__section">
@@ -60,6 +68,7 @@ export default function ContactUs() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              e.target.reset();
               if (name === "") {
                 if (name === "") {
                   setErrorName(true);
@@ -93,7 +102,10 @@ export default function ContactUs() {
             <div className="contact__section__content__middle__form">
               <Input
                 type="text"
-                placeholder={errorName ? errorNameMessage : "Name"}
+                placeholder="Name"
+                required={true}
+                isError={errorName}
+                errorMessage={errorNameMessage}
                 onChange={(e) => {
                   if (e.target.value === "") {
                     setErrorName(true);
@@ -107,34 +119,70 @@ export default function ContactUs() {
               />
               <Input
                 type="email"
+                required={true}
                 placeholder="Email"
-                value={email}
+                isError={errorEmail}
+                errorMessage={errorEmailMessage}
                 onChange={(e) => {
-                  setEmail(e.target.value);
+                  if (e.target.value === "") {
+                    setErrorEmaill(true);
+                    setErrorEmailMessage("Please enter email");
+                  } else {
+                    setErrorEmaill(false);
+                    setErrorEmailMessage("");
+                    setEmail(e.target.value);
+                  }
                 }}
               />
               <Input
                 type="tel"
                 placeholder="Phone"
-                value={phone}
+                required={true}
+                isError={errorPhone}
+                errorMessage={errorPhoneMessage}
                 onChange={(e) => {
-                  setPhone(e.target.value);
+                  if (e.target.value === "") {
+                    setErrorPhone(true);
+                    setErrorPhoneMessage("Please enter phone");
+                  } else {
+                    setErrorPhone(false);
+                    setErrorPhoneMessage("");
+                    setPhone(e.target.value);
+                  }
                 }}
               />
               <Input
                 type="text"
                 placeholder="Subject"
-                value={subject}
+                required={true}
+                isError={errorSubject}
+                errorMessage={errorSubjectMessage}
                 onChange={(e) => {
-                  setSubject(e.target.value);
+                  if (e.target.value === "") {
+                    setErrorSubject(true);
+                    setErrorSubjectMessage("Please enter subject");
+                  } else {
+                    setErrorSubject(false);
+                    setErrorSubjectMessage("");
+                    setSubject(e.target.value);
+                  }
                 }}
               />
               <Input
                 variant="textarea"
                 type="text"
-                value={message}
+                required={true}
+                isError={errorDescription}
+                errorMessage={errorDescriptionMessage}
                 onChange={(e) => {
-                  setMessage(e.target.value);
+                  if (e.target.value === "") {
+                    setErrorDescription(true);
+                    setErrorDescriptionMessage("Please enter message");
+                  } else {
+                    setErrorDescription(false);
+                    setErrorDescriptionMessage("");
+                    setMessage(e.target.value);
+                  }
                 }}
                 placeholder="Message"
               />

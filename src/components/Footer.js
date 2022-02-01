@@ -1,8 +1,12 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import logoDark from "../assets/logoDark.png";
 import Input from "./Input";
 
 export default function Footer() {
+  const [subscribe, setSubsribe] = useState("");
+  const [errorEmail, setErrorEmaill] = useState(false);
+  const [errorEmailMessage, setErrorEmailMessage] = useState("");
   return (
     <div className="footer__conatiner">
       <div className="footer__conatiner__content">
@@ -93,12 +97,42 @@ export default function Footer() {
             Instagram
           </a>
         </div>
-        <div className="footer__overlay__content__col">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            e.target.reset();
+            axios
+              .post("http://localhost:9000/api/v1/set_news_letter", {
+                email: subscribe,
+              })
+              .then(() => {
+                console.log("NewsLetter Submitted");
+              });
+            console.log(subscribe);
+          }}
+          className="footer__overlay__content__col"
+        >
           <div className="footer__overlay__content__col__heading">
             Newsletter
           </div>
           <div className="contact__section__content__middle__form">
-            <Input type="text" placeholder="John@gmail.com" />
+            <Input
+              type="text"
+              required={true}
+              placeholder="John@gmail.com"
+              isError={errorEmail}
+              errorMessage={errorEmailMessage}
+              onChange={(e) => {
+                if (e.target.value === "") {
+                  setErrorEmaill(true);
+                  setErrorEmailMessage("Please enter email");
+                } else {
+                  setErrorEmaill(false);
+                  setErrorEmailMessage("");
+                  setSubsribe(e.target.value);
+                }
+              }}
+            />
           </div>
           <button
             className="button"
@@ -106,7 +140,7 @@ export default function Footer() {
           >
             Submit
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
