@@ -10,6 +10,7 @@ import Services from "./screens/Services";
 import Footer from "./components/Footer";
 import ContactUs from "./screens/ContactUs";
 import ServiceDetails from "./screens/ServiceDetails";
+import Portfolio from "./screens/Portfolio";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/service-details" element={<ServiceDetails />} />
-        <Route path="/contact_us" element={<ContactUs />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>

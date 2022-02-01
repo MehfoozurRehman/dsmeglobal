@@ -44,7 +44,7 @@ function Nav({ setIsNavOpen }) {
         Portfolio
       </Link>
       <Link
-        to="/contact_us"
+        to="/contact-us"
         className="nav__link"
         onClick={() => {
           setIsNavOpen(false);
