@@ -76,7 +76,7 @@ export default function ContactSection() {
                 }
               } else {
                 axios
-                  .post("http://localhost:9000/api/v1/set_contact", {
+                  .post(`${process.env.REACT_APP_API_URL}api/v1/set_contact`, {
                     username: name,
                     email: email,
                     phone: phone,

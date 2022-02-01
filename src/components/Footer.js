@@ -114,7 +114,7 @@ export default function Footer() {
             e.preventDefault();
             e.target.reset();
             axios
-              .post("http://localhost:9000/api/v1/set_news_letter", {
+              .post(`${process.env.REACT_APP_API_URL}api/v1/set_news_letter`, {
                 email: subscribe,
               })
               .then(() => {
