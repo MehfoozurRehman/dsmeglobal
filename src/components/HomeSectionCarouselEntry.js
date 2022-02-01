@@ -8,6 +8,7 @@ export default function HomeSectionCarouselEntry({
   buttonLabel,
   toPath,
   isRight,
+  noBtn,
 }) {
   return (
     <div className="home__section__carousel__entry">
@@ -26,9 +27,11 @@ export default function HomeSectionCarouselEntry({
           <div className="home__section__carousel__entry__overlay__content__heading">
             {heading}
           </div>
-          <Link to={toPath ? toPath : "/"} className="button">
-            {buttonLabel}
-          </Link>
+          {noBtn ? null : (
+            <Link to={toPath ? toPath : "/"} className="button">
+              {buttonLabel}
+            </Link>
+          )}
         </div>
       </div>
     </div>

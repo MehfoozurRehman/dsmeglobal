@@ -12,6 +12,7 @@ import ContactUs from "./screens/ContactUs";
 import ServiceDetails from "./screens/ServiceDetails";
 import Portfolio from "./screens/Portfolio";
 import Pricing from "./screens/Pricing";
+import AboutUs from "./screens/AboutUs";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </>
