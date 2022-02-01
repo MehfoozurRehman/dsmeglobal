@@ -1,6 +1,7 @@
 import React from "react";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
+import ContactSection from "../components/ContactSection";
 function PricingFeatureEntry() {
   return (
     <div className="pricing__feature__entry">
@@ -102,6 +103,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+      <ContactSection />
     </>
   );
 }

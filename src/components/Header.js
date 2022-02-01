@@ -17,7 +17,7 @@ function Nav({ setIsNavOpen }) {
         Home
       </Link>
       <Link
-        to="about_us"
+        to="about-us"
         className="nav__link"
         onClick={() => {
           setIsNavOpen(false);
@@ -42,6 +42,15 @@ function Nav({ setIsNavOpen }) {
         }}
       >
         Portfolio
+      </Link>
+      <Link
+        to="/pricing"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
+        Pricing
       </Link>
       <Link
         to="/contact-us"
