@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import contactImg from "../assets/contactImg.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Input from "./Input";
 import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
 import axios from "axios";

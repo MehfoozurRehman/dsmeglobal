@@ -17,14 +17,9 @@ import arSvg from "../assets/arSvg.svg";
 import enterpriseSvg from "../assets/enterpriseSvg.svg";
 import commerceSvg from "../assets/e-commerceSvg.svg";
 import lifeSvg from "../assets/lifeSvg.svg";
-import contactImg from "../assets/contactImg.png";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Input from "../components/Input";
-import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import FeatureSectionCarouselEntry from "../components/FeatureSectionCarouselEntry";
-import axios from "axios";
 import ContactSection from "../components/ContactSection";
 
 export default function Home() {
@@ -85,22 +80,6 @@ export default function Home() {
       svg: lifeSvg,
     },
   ];
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorName, setErrorName] = useState(false);
-  const [errorNameMessage, setErrorNameMessage] = useState("");
-  const [errorEmail, setErrorEmaill] = useState(false);
-  const [errorEmailMessage, setErrorEmailMessage] = useState("");
-  const [errorPhone, setErrorPhone] = useState(false);
-  const [errorPhoneMessage, setErrorPhoneMessage] = useState("");
-  const [errorSubject, setErrorSubject] = useState(false);
-  const [errorSubjectMessage, setErrorSubjectMessage] = useState("");
-  const [errorDescription, setErrorDescription] = useState(false);
-  const [errorDescriptionMessage, setErrorDescriptionMessage] = useState("");
   return (
     <>
       <Carousel
