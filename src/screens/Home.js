@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import video from "../assets/video.mp4";
+import bulb from "../assets/bulb.mp4";
+import cycle from "../assets/cycle.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
 import aidaPro from "../assets/projects/aidaPro.png";
@@ -118,7 +119,7 @@ export default function Home({ setIsDark }) {
             WE DELIVER <span>SOLUTIONS</span>
           </div>
           <video
-            src={video}
+            src={cycle}
             className="into__section__video"
             autoPlay={"autoplay"}
             muted={true}
@@ -130,7 +131,7 @@ export default function Home({ setIsDark }) {
         </div>
       </div>
       <div className="difference__section">
-        <video src={video} autoPlay={"autoplay"} muted={true} />
+        <video src={bulb} autoPlay={"autoplay"} muted={true} />
         <div className="difference__section__overlay">
           <div className="difference__section__overlay__content">
             <div className="difference__section__overlay__sub__heading">
