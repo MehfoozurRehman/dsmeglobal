@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import plane from "../assets/plane.mp4";
+import video from "../assets/video.mp4";
 
 export default function HomeSectionCarouselEntry({
   subHeading,
@@ -9,10 +9,16 @@ export default function HomeSectionCarouselEntry({
   toPath,
   isRight,
   noBtn,
+  videoSrc,
 }) {
   return (
     <div className="home__section__carousel__entry">
-      <video src={plane} autoPlay={"autoplay"} muted={true} loop={true} />
+      <video
+        src={videoSrc ? videoSrc : video}
+        autoPlay={"autoplay"}
+        muted={true}
+        loop={true}
+      />
       <div className="home__section__carousel__entry__overlay">
         <div
           className={

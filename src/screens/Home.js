@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import bulb from "../assets/bulb.mp4";
 import cycle from "../assets/cycle.mp4";
+import plane from "../assets/plane.mp4";
+import cross from "../assets/cross.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
 import aidaPro from "../assets/projects/aidaPro.png";
@@ -94,12 +96,14 @@ export default function Home({ setIsDark }) {
         infiniteLoop={true}
       >
         <HomeSectionCarouselEntry
+          videoSrc={plane}
           subHeading="WE FIND"
           heading="OUR UNIQUE WAY"
           buttonLabel="View Our Work"
           toPath="/"
         />
         <HomeSectionCarouselEntry
+          videoSrc={cross}
           subHeading="WE THINK"
           heading="OUT OF THE BOX"
           isRight={true}
@@ -107,6 +111,7 @@ export default function Home({ setIsDark }) {
           toPath="/"
         />
         <HomeSectionCarouselEntry
+          videoSrc={plane}
           subHeading="WE PREFER"
           heading="You Over Anything"
           buttonLabel="View Our Work"
