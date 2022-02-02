@@ -100,7 +100,7 @@ export default function Home({ setIsDark }) {
           subHeading="WE FIND"
           heading="OUR UNIQUE WAY"
           buttonLabel="View Our Work"
-          toPath="/"
+          toPath="/portfolio"
         />
         <HomeSectionCarouselEntry
           videoSrc={cross}
@@ -108,14 +108,14 @@ export default function Home({ setIsDark }) {
           heading="OUT OF THE BOX"
           isRight={true}
           buttonLabel="View Our Work"
-          toPath="/"
+          toPath="/portfolio"
         />
         <HomeSectionCarouselEntry
           videoSrc={plane}
           subHeading="WE PREFER"
           heading="You Over Anything"
           buttonLabel="View Our Work"
-          toPath="/"
+          toPath="/portfolio"
         />
       </Carousel>
       <div className="into__section">
@@ -130,7 +130,7 @@ export default function Home({ setIsDark }) {
             muted={true}
             loop={true}
           />
-          <Link to="/" className="button">
+          <Link to="/services" className="button">
             View All Services
           </Link>
         </div>
@@ -341,7 +341,7 @@ export default function Home({ setIsDark }) {
           subHeading="MOBILE"
           heading="APPLICATIONS"
           buttonLabel="View Our Work"
-          toPath="/"
+          toPath="/portfolio"
           svg={mobileApplicationSvg}
           features={mobileApplicationFeatures}
         />
@@ -349,7 +349,7 @@ export default function Home({ setIsDark }) {
           subHeading="WEB"
           heading="APPLICATIONS"
           buttonLabel="View Our Work"
-          toPath="/"
+          toPath="/portfolio"
           svg={webApplicationSvg}
           features={mobileApplicationFeatures}
         />
@@ -452,7 +452,7 @@ export default function Home({ setIsDark }) {
               </div>
             ))}
           </div>
-          <Link to="/" className="button__reverse">
+          <Link to="/portfolio" className="button__reverse">
             View Complete Portfolio
           </Link>
         </div>

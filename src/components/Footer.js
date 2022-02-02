@@ -37,20 +37,79 @@ export default function Footer() {
           <div className="footer__overlay__content__col__heading">
             Quicklinks
           </div>
-          <a href="#about" className="footer__overlay__content__col__entry">
+          <Link
+            to="/"
+            className="footer__overlay__content__col__entry"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about-us"
+            className="footer__overlay__content__col__entry"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             About Us
-          </a>
-          <a href="#about" className="footer__overlay__content__col__entry">
+          </Link>
+          <Link
+            to="/services"
+            className="footer__overlay__content__col__entry"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
+            Services
+          </Link>
+          <Link
+            to="/portfolio"
+            className="footer__overlay__content__col__entry"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             Portfolio
-          </a>
-          <a href="#about" className="footer__overlay__content__col__entry">
+          </Link>
+          <Link
+            to="/pricing"
+            className="footer__overlay__content__col__entry"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
+            Pricing
+          </Link>
+          <Link
+            to="/contact-us"
+            className="footer__overlay__content__col__entry"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
             Contact Us
-          </a>
-          <a href="#about" className="footer__overlay__content__col__entry">
-            Pricing & Payments
-          </a>
+          </Link>
         </div>
-
         <div className="footer__overlay__content__col">
           <div className="footer__overlay__content__col__heading">
             Socail Media
