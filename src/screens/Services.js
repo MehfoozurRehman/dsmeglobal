@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import mobileSvg from "../assets/mobileSvg.svg";
 import webSvg from "../assets/webSvg.svg";
@@ -29,7 +29,10 @@ function ServicesCard({ heading, imgSrc, path }) {
   );
 }
 
-export default function Services() {
+export default function Services({ setIsDark }) {
+  useEffect(() => {
+    setIsDark(true);
+  }, []);
   return (
     <>
       <div className="services__main__container">

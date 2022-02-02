@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import video from "../assets/video.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
@@ -22,8 +22,11 @@ import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import FeatureSectionCarouselEntry from "../components/FeatureSectionCarouselEntry";
 import ContactSection from "../components/ContactSection";
 
-export default function Home() {
+export default function Home({ setIsDark }) {
   const [project, setProject] = useState("AidaPro");
+  useEffect(() => {
+    setIsDark(false);
+  }, []);
   const projectSelection = [
     {
       title: "aidaPro",

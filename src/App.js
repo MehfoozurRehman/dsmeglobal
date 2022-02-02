@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Home from "./screens/Home";
@@ -15,17 +15,27 @@ import Pricing from "./screens/Pricing";
 import AboutUs from "./screens/AboutUs";
 
 export default function App() {
+  const [isDark, setIsDark] = useState(false);
   return (
     <>
-      <Header />
+      <Header isDark={isDark} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/service-details" element={<ServiceDetails />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/" element={<Home setIsDark={setIsDark} />} />
+        <Route path="/services" element={<Services setIsDark={setIsDark} />} />
+        <Route
+          path="/service-details"
+          element={<ServiceDetails setIsDark={setIsDark} />}
+        />
+        <Route
+          path="/portfolio"
+          element={<Portfolio setIsDark={setIsDark} />}
+        />
+        <Route path="/pricing" element={<Pricing setIsDark={setIsDark} />} />
+        <Route
+          path="/contact-us"
+          element={<ContactUs setIsDark={setIsDark} />}
+        />
+        <Route path="/about-us" element={<AboutUs setIsDark={setIsDark} />} />
       </Routes>
       <Footer />
     </>

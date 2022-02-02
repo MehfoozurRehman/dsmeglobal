@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { X } from "react-feather";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import logoDark from "../assets/logoDark.png";
 
 function Nav({ setIsNavOpen }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "auto");
+  }, []);
+
   return (
     <div className="nav animate__animated animate__fadeInDown">
       <Link

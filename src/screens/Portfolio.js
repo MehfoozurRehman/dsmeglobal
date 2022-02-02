@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import projectImg from "../assets/projectImg.png";
 import ProjectCard from "../components/ProjectCard";
 
@@ -15,13 +15,16 @@ function PortfolioFilter({ title }) {
   );
 }
 
-export default function Portfolio() {
+export default function Portfolio({ setIsDark }) {
   const [showImage, setShowImage] = useState(false);
   if (showImage) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
   }
+  useEffect(() => {
+    setIsDark(true);
+  }, []);
   return (
     <>
       {showImage ? (

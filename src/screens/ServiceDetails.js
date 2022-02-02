@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import serviceDetailsImg from "../assets/serviceDetailsImg.png";
 import projectImg from "../assets/projectImg.png";
 import ProjectCard from "../components/ProjectCard";
 
-export default function ServiceDetails() {
+export default function ServiceDetails({ setIsDark }) {
   const [showImage, setShowImage] = useState(false);
   if (showImage) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
   }
+  useEffect(() => {
+    setIsDark(true);
+  }, []);
   return (
     <>
       {showImage ? (
@@ -66,7 +69,10 @@ export default function ServiceDetails() {
               experience. Our ongoing support ensures your app is ever-ready for
               your users.
             </div>
-            <Link to="/" className="service__details__jumbotron__right__button">
+            <Link
+              to="/pricing"
+              className="service__details__jumbotron__right__button"
+            >
               Order Now
             </Link>
           </div>

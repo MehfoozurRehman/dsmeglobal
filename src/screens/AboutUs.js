@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 
-export default function AboutUs() {
+export default function AboutUs({ setIsDark }) {
+  useEffect(() => {
+    setIsDark(false);
+  }, []);
   return (
     <>
       <div style={{ height: "100vh", overflow: "hidden" }}>

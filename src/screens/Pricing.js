@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
 import ContactSection from "../components/ContactSection";
-function PricingFeatureEntry() {
+function PricingFeatureEntry({ title, content }) {
   return (
     <div className="pricing__feature__entry">
-      <div className="pricing__feature__entry__heading">Discovery Workshop</div>
-      <div className="pricing__feature__entry__info">
-        We provide you with an in-depth analysis of project requirements and its
-        scope through our two-weeks Discovery Workshop.
-      </div>
+      <div className="pricing__feature__entry__heading">{title}</div>
+      <div className="pricing__feature__entry__info">{content}</div>
     </div>
   );
 }
@@ -38,10 +35,13 @@ const DeliveryCardEntry3 = [
   { para: "On-going Support" },
 ];
 
-export default function Pricing() {
+export default function Pricing({ setIsDark }) {
+  useEffect(() => {
+    setIsDark(false);
+  }, []);
   return (
     <>
-      <div style={{ height: "100vh", overflow: "hidden" }}>
+      <div style={{ maxHeight: "100vh", overflow: "hidden" }}>
         <HomeSectionCarouselEntry
           subHeading="WE FIND"
           heading="OUR UNIQUE WAY"
@@ -53,11 +53,26 @@ export default function Pricing() {
         <div className="pricing__feature__entry__reverse">
           We <span>Provide</span> You
         </div>
-        <PricingFeatureEntry />
-        <PricingFeatureEntry />
-        <PricingFeatureEntry />
-        <PricingFeatureEntry />
-        <PricingFeatureEntry />
+        <PricingFeatureEntry
+          title="Discovery Workshop"
+          content="We provide you with an in-depth analysis of project requirements and its scope through our two-weeks Discovery Workshop."
+        />
+        <PricingFeatureEntry
+          title="Fast Track Delivery"
+          content="Thorough requirements engineering & effective development process guarantees fast-track delivery with no bottlenecks."
+        />
+        <PricingFeatureEntry
+          title="Quality Products"
+          content="We make sure that the final product fully meets your expectations by providing quality assurance throughout the project lifecycle."
+        />
+        <PricingFeatureEntry
+          title="Competitive Advantage"
+          content="We offer practical solutions leveraging latest technological tools and industry practices at market competitive rates."
+        />
+        <PricingFeatureEntry
+          title="Security & Protection"
+          content="All the work is completely IP protected and secured by maintaining the intellectual property through strict NDAs."
+        />
       </div>
       <div className="pricing__delivery__section">
         <div className="pricing__delivery__section__content__wrapper">
