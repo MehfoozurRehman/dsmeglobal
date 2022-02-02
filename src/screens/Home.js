@@ -1,19 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import bulb from "../assets/bulb.mp4";
-import cycle from "../assets/cycle.mp4";
+import React, { useEffect } from "react";
 import plane from "../assets/plane.mp4";
 import cross from "../assets/cross.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
-import aidaPro from "../assets/projects/aidaPro.png";
-import signature from "../assets/projects/signature.png";
-import j7 from "../assets/projects/j7.png";
-import boulevardCatering from "../assets/projects/boulevardCatering.png";
-import chenabClub from "../assets/projects/chenabClub.png";
-import peervestGlobal from "../assets/projects/peervestGlobal.png";
-import rlbProfessional from "../assets/projects/rlbProfessional.png";
-import aidaProImg from "../assets/aidaProImg.png";
 import utilitySvg from "../assets/utilitySvg.svg";
 import socialSvg from "../assets/socialSvg.svg";
 import arSvg from "../assets/arSvg.svg";
@@ -24,7 +13,6 @@ import { Carousel } from "react-responsive-carousel";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import FeatureSectionCarouselEntry from "../components/FeatureSectionCarouselEntry";
 import ContactSection from "../components/ContactSection";
-import axios from "axios";
 import WorkSection from "../components/WorkSection";
 import IntoSection from "../components/IntoSection";
 

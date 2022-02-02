@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import bulb from "../assets/bulb.mp4";
 import cycle from "../assets/cycle.mp4";
