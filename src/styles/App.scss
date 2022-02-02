@@ -464,6 +464,15 @@ body {
   border-radius: 20px;
   box-shadow: 6px 23px 30px rgba(0, 0, 0, 0.18);
 }
+.work__section__content__selection::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+}
+.work__section__content__selection::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
 .work__section__content__selection__entry {
   background-color: transparent;
   border: none;
@@ -1119,7 +1128,18 @@ body {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
+@media (max-width: 1300px) {
+  .work__section__content__project__image {
+    width: 700px;
+  }
+}
 @media (max-width: 1000px) {
+  .work__section__content__project__about {
+    margin: 2em 0em;
+  }
+  .work__section__content__project {
+    flex-direction: column;
+  }
   .service__details__jumbotron__content {
     flex-direction: column-reverse;
   }
@@ -1175,6 +1195,12 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .work__section__content__project__about {
+    width: 100%;
+  }
+  .work__section__content__project__image {
+    width: 550px;
+  }
   .portolio__filter {
     flex-direction: column;
   }
@@ -1223,6 +1249,12 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .work__section__content__project__image {
+    width: 360px;
+  }
+  .work__section__content__project__about {
+    display: none;
+  }
   .service__details__projects__entry {
     width: 100%;
   }

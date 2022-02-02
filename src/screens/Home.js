@@ -86,10 +86,11 @@ function WorkSection({}) {
           .filter((item) => item.title === project)
           .map((item) => (
             <div className="work__section__content__project">
-              <div className="work__section__content__project__image">
+              <div className="work__section__content__project__image__wrapper">
                 <img
                   src={process.env.REACT_APP_API_URL + item.image}
                   alt={item.title}
+                  className="work__section__content__project__image"
                 />
               </div>
               <div className="work__section__content__project__about">
