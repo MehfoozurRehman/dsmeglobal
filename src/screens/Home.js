@@ -163,8 +163,8 @@ export default function Home({ setIsDark }) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#1db27b" />
-                      <stop offset="1" stop-color="#0f593e" />
+                      <stop offset="0" stopColor="#1db27b" />
+                      <stop offset="1" stopColor="#0f593e" />
                     </linearGradient>
                     <clipPath id="clip-path">
                       <rect
@@ -230,8 +230,8 @@ export default function Home({ setIsDark }) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#1db27b" />
-                      <stop offset="1" stop-color="#0f593e" />
+                      <stop offset="0" stopColor="#1db27b" />
+                      <stop offset="1" stopColor="#0f593e" />
                     </linearGradient>
                     <clipPath id="clip-path">
                       <rect
@@ -289,8 +289,8 @@ export default function Home({ setIsDark }) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#1db27b" />
-                      <stop offset="1" stop-color="#0f593e" />
+                      <stop offset="0" stopColor="#1db27b" />
+                      <stop offset="1" stopColor="#0f593e" />
                     </linearGradient>
                     <clipPath id="clip-path">
                       <rect
@@ -385,8 +385,8 @@ export default function Home({ setIsDark }) {
                 transform="translate(-743.698 -4290.082)"
                 fill="none"
                 stroke="#54bd96"
-                stroke-linecap="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeWidth="3"
               />
               <path
                 id="Path_8532"
@@ -395,8 +395,8 @@ export default function Home({ setIsDark }) {
                 transform="translate(-743.698 -4290.082)"
                 fill="none"
                 stroke="#54bd96"
-                stroke-linecap="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeWidth="3"
               />
             </g>
           </svg>

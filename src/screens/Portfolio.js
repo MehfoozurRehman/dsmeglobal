@@ -1,14 +1,16 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
-import projectImg from "../assets/projectImg.png";
 import ProjectCard from "../components/ProjectCard";
 
-function PortfolioFilter({ title }) {
+function PortfolioFilter({ title, onChange, defaultChecked }) {
   return (
     <div className="portolio__filter__left__entry">
       <input
         type="radio"
         className="portolio__filter__left__entry__input"
         name="portolio__filter__left__entry__input"
+        onChange={onChange}
+        defaultChecked={defaultChecked}
       />
       <div className="portolio__filter__left__entry__content">{title}</div>
     </div>
@@ -17,6 +19,10 @@ function PortfolioFilter({ title }) {
 
 export default function Portfolio({ setIsDark }) {
   const [showImage, setShowImage] = useState(false);
+  const [noOfItems, setNoOfItems] = useState(9);
+  const [showImagData, setShowImageData] = useState([]);
+  const [projectData, setProjectData] = useState([]);
+  const [filter, setFilter] = useState("");
   if (showImage) {
     document.body.style.overflow = "hidden";
   } else {
@@ -24,6 +30,11 @@ export default function Portfolio({ setIsDark }) {
   }
   useEffect(() => {
     setIsDark(true);
+    axios
+      .get(`${process.env.REACT_APP_API_URL}api/v1/get_project`)
+      .then((res) => {
+        setProjectData(res.data);
+      });
   }, []);
   return (
     <>
@@ -43,18 +54,18 @@ export default function Portfolio({ setIsDark }) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-x"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-x"
               >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
             <img
-              src={projectImg}
-              alt="projectImg"
+              src={showImagData.image}
+              alt={showImagData.title}
               className="service__popup__img"
             />
           </div>
@@ -75,16 +86,46 @@ export default function Portfolio({ setIsDark }) {
       </div>
       <div className="portolio__filter">
         <div className="portolio__filter__left">
-          <PortfolioFilter title="UI DESIGN" />
-          <PortfolioFilter title="WEBSITES" />
-          <PortfolioFilter title="MOBILE APPS" />
-          <PortfolioFilter title="LOGOS" />
+          <PortfolioFilter
+            title="All"
+            defaultChecked={true}
+            onChange={() => {
+              setFilter("");
+            }}
+          />
+          <PortfolioFilter
+            title="Web Apps"
+            onChange={() => {
+              setFilter("Web App Development");
+            }}
+          />
+          <PortfolioFilter
+            title="Mobile Apps"
+            onChange={() => {
+              setFilter("Mobile App Development");
+            }}
+          />
+          <PortfolioFilter
+            title="Ecommerce"
+            onChange={() => {
+              setFilter("Ecommerce Solutions");
+            }}
+          />
+          <PortfolioFilter
+            title="UI/UX Design"
+            onChange={() => {
+              setFilter("UI & UX Services");
+            }}
+          />
         </div>
         <div className="portolio__filter__right">
           <input
             type="radio"
             className="portolio__filter__right__input"
             name="portolio__filter__left__entry__input"
+            onChange={() => {
+              setFilter("our product");
+            }}
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -100,8 +141,8 @@ export default function Portfolio({ setIsDark }) {
                 y2="1"
                 gradientUnits="objectBoundingBox"
               >
-                <stop offset="0" stop-color="#1db27b" />
-                <stop offset="1" stop-color="#0f593e" />
+                <stop offset="0" stopColor="#1db27b" />
+                <stop offset="1" stopColor="#0f593e" />
               </linearGradient>
             </defs>
             <path
@@ -116,33 +157,38 @@ export default function Portfolio({ setIsDark }) {
         </div>
       </div>
       <div className="service__details__projects">
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
+        {projectData
+          .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
+          .map((item) => {
+            return (
+              <ProjectCard
+                setShowImage={setShowImage}
+                setShowImageData={setShowImageData}
+                data={item}
+                key={item._id}
+                filter={filter}
+              />
+            );
+          })}
       </div>
-      <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "2em" }}
-      >
-        <button className="button">Load More</button>
-      </div>
+      {filter === "" ? (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2em",
+          }}
+        >
+          <button
+            className="button"
+            onClick={() => {
+              setNoOfItems(noOfItems + noOfItems);
+            }}
+          >
+            Load More
+          </button>
+        </div>
+      ) : null}
     </>
   );
 }

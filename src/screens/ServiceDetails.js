@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import serviceDetailsImg from "../assets/serviceDetailsImg.png";
-import projectImg from "../assets/projectImg.png";
 import ProjectCard from "../components/ProjectCard";
+import axios from "axios";
 
 export default function ServiceDetails({ setIsDark }) {
   const [showImage, setShowImage] = useState(false);
+  const [showImagData, setShowImageData] = useState([]);
+  const [projectData, setProjectData] = useState([]);
   if (showImage) {
     document.body.style.overflow = "hidden";
   } else {
@@ -13,6 +15,11 @@ export default function ServiceDetails({ setIsDark }) {
   }
   useEffect(() => {
     setIsDark(true);
+    axios
+      .get(`${process.env.REACT_APP_API_URL}api/v1/get_project`)
+      .then((res) => {
+        setProjectData(res.data);
+      });
   }, []);
   return (
     <>
@@ -32,18 +39,18 @@ export default function ServiceDetails({ setIsDark }) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-x"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-x"
               >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
             <img
-              src={projectImg}
-              alt="projectImg"
+              src={showImagData.image}
+              alt={showImagData.title}
               className="service__popup__img"
             />
           </div>
@@ -79,32 +86,17 @@ export default function ServiceDetails({ setIsDark }) {
         </div>
       </div>
       <div className="service__details__projects">
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-        <ProjectCard setShowImage={setShowImage} />
-      </div>
-      <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "2em" }}
-      >
-        <button className="button">Load More</button>
+        {projectData.map((item) => {
+          return (
+            <ProjectCard
+              setShowImage={setShowImage}
+              setShowImageData={setShowImageData}
+              data={item}
+              key={item._id}
+              filter={"Mobile App Development"}
+            />
+          );
+        })}
       </div>
     </>
   );

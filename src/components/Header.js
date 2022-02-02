@@ -109,8 +109,8 @@ export default function Header({ isDark }) {
                   transform="translate(1775.279 43.5)"
                   fill="none"
                   stroke="#242424"
-                  stroke-linecap="round"
-                  stroke-width="4"
+                  strokeLinecap="round"
+                  strokeWidth="4"
                 />
                 <line
                   id="Line_2"
@@ -119,8 +119,8 @@ export default function Header({ isDark }) {
                   transform="translate(1788.631 52.761)"
                   fill="none"
                   stroke="#242424"
-                  stroke-linecap="round"
-                  stroke-width="4"
+                  strokeLinecap="round"
+                  strokeWidth="4"
                 />
                 <line
                   id="Line_3"
@@ -129,8 +129,8 @@ export default function Header({ isDark }) {
                   transform="translate(1778.246 62.022)"
                   fill="none"
                   stroke="#242424"
-                  stroke-linecap="round"
-                  stroke-width="4"
+                  strokeLinecap="round"
+                  strokeWidth="4"
                 />
               </g>
             </svg>
@@ -153,8 +153,8 @@ export default function Header({ isDark }) {
                   transform="translate(1775.279 43.5)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-width="4"
+                  strokeLinecap="round"
+                  strokeWidth="4"
                 />
                 <line
                   id="Line_2"
@@ -163,8 +163,8 @@ export default function Header({ isDark }) {
                   transform="translate(1788.631 52.761)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-width="4"
+                  strokeLinecap="round"
+                  strokeWidth="4"
                 />
                 <line
                   id="Line_3"
@@ -173,8 +173,8 @@ export default function Header({ isDark }) {
                   transform="translate(1778.246 62.022)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-width="4"
+                  strokeLinecap="round"
+                  strokeWidth="4"
                 />
               </g>
             </svg>

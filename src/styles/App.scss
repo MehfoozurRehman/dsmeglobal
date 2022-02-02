@@ -760,9 +760,10 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
 }
 .service__details__projects__entry__content__heading {
-  font-size: 16px;
+  font-size: 22px;
   color: white;
   margin-bottom: 1.5em;
+  font-weight: bold;
 }
 .service__details__projects__entry__content__button__row {
   display: flex;
@@ -870,6 +871,7 @@ body {
   position: relative;
   color: #00040e;
   word-wrap: normal;
+  text-transform: uppercase;
 }
 .portolio__filter__left__entry__content::after {
   content: "";
@@ -1053,7 +1055,7 @@ body {
   width: 90%;
 }
 .pricing__delivery__section {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
