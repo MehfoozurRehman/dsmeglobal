@@ -61,7 +61,7 @@ export default function WorkSection({}) {
         {workData
           .filter((item) => item.title === project)
           .map((item) => (
-            <div className="work__section__content__project">
+            <div className="work__section__content__project" key={item._id}>
               <div className="work__section__content__project__image__wrapper">
                 <img
                   src={process.env.REACT_APP_API_URL + item.image}
@@ -87,7 +87,7 @@ export default function WorkSection({}) {
 
         <div className="work__section__content__selection">
           {workData.map((item, i) => (
-            <div className="work__section__content__selection__entry">
+            <div className="work__section__content__selection__entry" key={i}>
               <input
                 type="radio"
                 name="work__section__content__selection__entry__input"

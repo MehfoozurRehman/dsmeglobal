@@ -67,7 +67,7 @@ export default function IntoSection() {
                   <g
                     id="Group_836"
                     data-name="Group 836"
-                    clip-path="url(#clip-path)"
+                    clipPath="url(#clip-path)"
                   >
                     <path
                       id="Path_1743"
@@ -134,7 +134,7 @@ export default function IntoSection() {
                   <g
                     id="Group_838"
                     data-name="Group 838"
-                    clip-path="url(#clip-path)"
+                    clipPath="url(#clip-path)"
                   >
                     <path
                       id="Path_1747"
@@ -193,7 +193,7 @@ export default function IntoSection() {
                   <g
                     id="Group_840"
                     data-name="Group 840"
-                    clip-path="url(#clip-path)"
+                    clipPath="url(#clip-path)"
                   >
                     <path
                       id="Path_1750"

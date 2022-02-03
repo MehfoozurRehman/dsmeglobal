@@ -300,10 +300,9 @@ body {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.18);
 }
 .services__main__container {
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -753,6 +752,7 @@ body {
 .service__details__projects__entry__img {
   width: 100%;
   border-radius: 10px;
+  min-height: 350px;
 }
 .service__details__projects__entry__content {
   position: absolute;

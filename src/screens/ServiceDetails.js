@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import serviceDetailsImg from "../assets/serviceDetailsImg.png";
 import ProjectCard from "../components/ProjectCard";
 import axios from "axios";
 
@@ -21,6 +20,12 @@ export default function ServiceDetails({ setIsDark }) {
         setProjectData(res.data);
       });
   }, []);
+  let serviceData = JSON.parse(window.localStorage.getItem("servicesData"));
+  let filter;
+  serviceData.categories.map((item) => {
+    filter = item.value;
+  });
+  console.log(filter);
   return (
     <>
       {showImage ? (
@@ -60,21 +65,17 @@ export default function ServiceDetails({ setIsDark }) {
         <div className="service__details__jumbotron__content">
           <div className="service__details__jumbotron__left">
             <img
-              src={serviceDetailsImg}
+              src={process.env.REACT_APP_API_URL + serviceData.image}
               alt="serviceDetailsImg"
               className="service__details__jumbotron__left__img"
             />
           </div>
           <div className="service__details__jumbotron__right">
             <div className="service__details__jumbotron__right__heading">
-              MOBILE APP DEVELOPMENT
+              {serviceData.title}
             </div>
             <div className="service__details__jumbotron__right__info">
-              Our team builds nimble and elegant apps for all smartphone
-              platforms. Our engineers work closely with you to understand your
-              specifications and develop apps that provide an intuitive end user
-              experience. Our ongoing support ensures your app is ever-ready for
-              your users.
+              {serviceData.description}
             </div>
             <Link
               to="/pricing"
@@ -93,7 +94,7 @@ export default function ServiceDetails({ setIsDark }) {
               setShowImageData={setShowImageData}
               data={item}
               key={item._id}
-              filter={"Mobile App Development"}
+              filter={filter}
             />
           );
         })}

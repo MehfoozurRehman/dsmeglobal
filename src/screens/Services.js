@@ -1,38 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import mobileSvg from "../assets/mobileSvg.svg";
-import webSvg from "../assets/webSvg.svg";
-import securitySvg from "../assets/securitySvg.svg";
-import startupSvg from "../assets/startupSvg.svg";
-import ecommerceSvg from "../assets/ecommerceSvg.svg";
-import graphicSvg from "../assets/graphicSvg.svg";
-import animationSvg from "../assets/animationSvg.svg";
-import uiSvg from "../assets/uiSvg.svg";
-import seoSvg from "../assets/seoSvg.svg";
-import itSvg from "../assets/itSvg.svg";
+import axios from "axios";
 
-function ServicesCard({ heading, imgSrc, path }) {
+function ServicesCard({ data }) {
   return (
     <Link
-      to={path}
+      onClick={() => {
+        window.localStorage.setItem("servicesData", JSON.stringify(data));
+      }}
+      to="/service-details"
       className="services__main__container__content__wrapper__card"
     >
       <div className="services__main__container__content__wrapper__card__svg__container">
         <img
-          src={imgSrc}
+          src={process.env.REACT_APP_API_URL + data.logo}
           alt="services__main__container__content__wrapper__card__svg"
           className="services__main__container__content__wrapper__card__svg"
         />
       </div>
-      {heading}
+      {data.title}
     </Link>
   );
 }
 
 export default function Services({ setIsDark }) {
+  const [servicesData, setServicesData] = useState([]);
   useEffect(() => {
     setIsDark(true);
+    axios
+      .get(`${process.env.REACT_APP_API_URL}api/v1/get_service`)
+      .then((res) => {
+        setServicesData(res.data);
+      });
   }, []);
+
   return (
     <>
       <div className="services__main__container">
@@ -41,56 +42,9 @@ export default function Services({ setIsDark }) {
             SERVICES
           </div>
           <div className="services__main__container__content__wrapper">
-            <ServicesCard
-              heading="Mobile App Development"
-              imgSrc={mobileSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Security & Surveillance Solutions"
-              imgSrc={securitySvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Web App Development"
-              imgSrc={webSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Startup Services"
-              imgSrc={startupSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Ecommerce Solutions"
-              imgSrc={ecommerceSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Graphic Designing Services"
-              imgSrc={graphicSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Animation Services"
-              imgSrc={animationSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="UI & UX Services"
-              imgSrc={uiSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="Search Engine Optimizations"
-              imgSrc={seoSvg}
-              path="/service-details"
-            />
-            <ServicesCard
-              heading="IT Consulting & Outsourcing"
-              imgSrc={itSvg}
-              path="/service-details"
-            />
+            {servicesData.map((item) => (
+              <ServicesCard data={item} key={item._id} />
+            ))}
           </div>
         </div>
       </div>

@@ -47,6 +47,30 @@ export default function Home({ setIsDark }) {
       svg: lifeSvg,
     },
   ];
+  const HomeSectionCarouselEntryArray = [
+    {
+      videoSrc: plane,
+      subHeading: "WE FIND",
+      heading: "OUR UNIQUE WAY",
+      buttonLabel: "View Our Work",
+      toPath: "/portfolio",
+    },
+    {
+      videoSrc: cross,
+      subHeading: "WE THINK",
+      heading: "OUT OF THE BOX",
+      isRight: true,
+      buttonLabel: "View Our Work",
+      toPath: "/portfolio",
+    },
+    {
+      videoSrc: plane,
+      subHeading: "WE PREFER",
+      heading: "You Over Anything",
+      buttonLabel: "View Our Work",
+      toPath: "/portfolio",
+    },
+  ];
   return (
     <>
       <Carousel
@@ -55,29 +79,19 @@ export default function Home({ setIsDark }) {
         showArrows={false}
         showStatus={false}
         infiniteLoop={true}
+        showThumbs={false}
       >
-        <HomeSectionCarouselEntry
-          videoSrc={plane}
-          subHeading="WE FIND"
-          heading="OUR UNIQUE WAY"
-          buttonLabel="View Our Work"
-          toPath="/portfolio"
-        />
-        <HomeSectionCarouselEntry
-          videoSrc={cross}
-          subHeading="WE THINK"
-          heading="OUT OF THE BOX"
-          isRight={true}
-          buttonLabel="View Our Work"
-          toPath="/portfolio"
-        />
-        <HomeSectionCarouselEntry
-          videoSrc={plane}
-          subHeading="WE PREFER"
-          heading="You Over Anything"
-          buttonLabel="View Our Work"
-          toPath="/portfolio"
-        />
+        {HomeSectionCarouselEntryArray.map((item, i) => (
+          <HomeSectionCarouselEntry
+            key={i}
+            videoSrc={item.videoSrc}
+            subHeading={item.subHeading}
+            heading={item.heading}
+            isRight={item.isRight}
+            buttonLabel={item.buttonLabel}
+            toPath={item.toPath}
+          />
+        ))}
       </Carousel>
       <IntoSection />
       <Carousel
@@ -86,6 +100,7 @@ export default function Home({ setIsDark }) {
         showArrows={false}
         showStatus={false}
         infiniteLoop={true}
+        showThumbs={false}
         className="into__section"
       >
         <FeatureSectionCarouselEntry
