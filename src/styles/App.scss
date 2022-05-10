@@ -97,9 +97,10 @@ body {
 }
 .home__section__carousel__entry {
   width: 100vw;
-  background-color: #189366;
+  background-color: #00040e;
   position: relative;
   max-height: 100vh;
+  min-height: 500px;
 }
 .home__section__carousel__entry video {
   width: 100%;
@@ -124,19 +125,23 @@ body {
 }
 .home__section__carousel__entry__overlay__content__right {
   align-items: flex-end;
+  padding: 3em;
 }
 .home__section__carousel__entry__overlay__content__sub__heading {
   font-size: 22px;
   color: white;
 }
 .home__section__carousel__entry__overlay__content__heading {
-  font-size: 38px;
+  font-size: 45px;
   color: white;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 .carousel .thumbs-wrapper {
   display: none;
+}
+.carousel .slider-wrapper.axis-horizontal .slider {
+  min-height: 500px;
 }
 .into__section {
   width: 100%;
@@ -165,6 +170,7 @@ body {
 .difference__section {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .difference__section video {
   width: 100%;
@@ -1233,6 +1239,27 @@ body {
     width: 100%;
     margin-top: 4em;
   }
+  .home__section__carousel__entry__overlay__content__heading {
+    font-size: 30px;
+  }
+  .home__section__carousel__entry video {
+    min-width: 100%;
+    width: fit-content;
+    max-height: 700px;
+  }
+  .home__section__carousel__entry__right video {
+    margin-left: 400px;
+  }
+  .difference__section video {
+    width: fit-content;
+    min-height: 500px;
+  }
+  .feature__section__entry__content__jumbotron__sub__heading {
+    font-size: 20px;
+  }
+  .feature__section__entry__content__jumbotron__heading {
+    font-size: 33px;
+  }
 }
 @media (max-width: 700px) {
   .pricing__feature {
@@ -1279,6 +1306,9 @@ body {
   }
   .our__vision__section__about__us__content__left {
     padding: 0em;
+  }
+  .home__section__carousel__entry__overlay__content {
+    align-items: center;
   }
 }
 @media (max-width: 500px) {

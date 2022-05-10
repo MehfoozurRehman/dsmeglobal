@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import plane from "../assets/plane.mp4";
-import cross from "../assets/cross.mp4";
+import plane from "../assets/plane.mov";
+import cross from "../assets/cross.mov";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
 import utilitySvg from "../assets/utilitySvg.svg";
@@ -80,6 +80,7 @@ export default function Home({ setIsDark }) {
         showStatus={false}
         infiniteLoop={true}
         showThumbs={false}
+        stopOnHover={false}
       >
         {HomeSectionCarouselEntryArray.map((item, i) => (
           <HomeSectionCarouselEntry

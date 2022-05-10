@@ -12,12 +12,18 @@ export default function HomeSectionCarouselEntry({
   videoSrc,
 }) {
   return (
-    <div className="home__section__carousel__entry">
+    <div
+      className={
+        isRight
+          ? "home__section__carousel__entry home__section__carousel__entry__right"
+          : "home__section__carousel__entry"
+      }
+    >
       <video
         src={videoSrc ? videoSrc : video}
         autoPlay={"autoplay"}
         muted={true}
-        loop={true}
+        // loop={true}
       />
       <div className="home__section__carousel__entry__overlay">
         <div
