@@ -163,6 +163,48 @@ body {
 .into__section__heading span {
   font-weight: bold;
 }
+.into__section__wrapper__content {
+  width: 100%;
+  padding: 5em 0em;
+  padding-top: 4em;
+}
+.into__section__wrapper__content__service__card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #383838, #020202);
+  align-items: center;
+  padding: 2em;
+  border-radius: 20px;
+  height: 250px;
+  margin-top: 5em;
+  position: relative;
+  justify-content: center;
+  text-decoration: none;
+  transition: 500ms ease-in-out;
+}
+.into__section__wrapper__content__service__card__img {
+  top: -50px;
+
+  position: absolute;
+}
+.into__section__wrapper__content__service__card__text {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 2em;
+}
+.into__section__wrapper__content__service__card:hover {
+  transition: 300ms ease-in-out;
+  background: linear-gradient(90deg, #316656, #62cbac);
+}
+.into__section__wrapper__content__service__card:hover
+  .into__section__wrapper__content__service__card__img {
+  transition: 500ms ease-in-out;
+  position: relative;
+  top: 0px;
+}
+
 .into__section__video {
   width: 100%;
   margin: 1em;

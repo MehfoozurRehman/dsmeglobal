@@ -1,9 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import bulb from "../assets/bulb.mp4";
 import cycle from "../assets/cycle.mp4";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import axios from "axios";
 export default function IntoSection() {
+  const [servicesData, setServicesData] = useState([]);
+  const [slidesPerPage, setSlidesPerPage] = useState(5);
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}api/v1/get_service`)
+      .then((res) => {
+        setServicesData(res.data);
+      });
+    if (window.innerWidth <= 500) {
+      setSlidesPerPage(1);
+    } else if (window.innerWidth <= 650) {
+      setSlidesPerPage(2);
+    } else if (window.innerWidth <= 850) {
+      setSlidesPerPage(3);
+    } else if (window.innerWidth <= 1150) {
+      setSlidesPerPage(4);
+    } else {
+      setSlidesPerPage(5);
+    }
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 500) {
+        setSlidesPerPage(1);
+      } else if (window.innerWidth <= 650) {
+        setSlidesPerPage(2);
+      } else if (window.innerWidth <= 850) {
+        setSlidesPerPage(3);
+      } else if (window.innerWidth <= 1150) {
+        setSlidesPerPage(4);
+      } else {
+        setSlidesPerPage(5);
+      }
+    });
+  }, []);
   return (
     <>
       <div className="into__section">
@@ -23,7 +61,44 @@ export default function IntoSection() {
           </Link>
         </div>
       </div>
-      <div className="difference__section">
+      <div className="into__section">
+        <div className="into__section__wrapper">
+          <div className="into__section__heading">
+            <span>Services</span>
+          </div>
+          <div className="into__section__wrapper__content">
+            <Swiper spaceBetween={50} slidesPerView={slidesPerPage} loop={true}>
+              {servicesData.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <Link
+                    onClick={() => {
+                      window.localStorage.setItem(
+                        "servicesData",
+                        JSON.stringify(item)
+                      );
+                      setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }, 300);
+                    }}
+                    to="/service-details"
+                    className="into__section__wrapper__content__service__card"
+                  >
+                    <img
+                      src={process.env.REACT_APP_API_URL + item.logo}
+                      alt={item.title}
+                      className="into__section__wrapper__content__service__card__img"
+                    />
+                    <div className="into__section__wrapper__content__service__card__text">
+                      {item.title}
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </div>
+      {/* <div className="difference__section">
         <video src={bulb} autoPlay={"autoplay"} muted={true} />
         <div className="difference__section__overlay">
           <div className="difference__section__overlay__content">
@@ -216,7 +291,7 @@ export default function IntoSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
