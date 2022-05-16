@@ -145,7 +145,6 @@ body {
 }
 .into__section {
   width: 100%;
-  background: linear-gradient(#ffffff, #e1e1e1);
 }
 .into__section__wrapper {
   width: 100%;
@@ -157,16 +156,23 @@ body {
   align-items: center;
 }
 .into__section__heading {
-  font-size: 22px;
+  font-size: 25px;
   color: #00040e;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 .into__section__heading span {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 40px;
+  color: #189366;
 }
 .into__section__wrapper__content {
   width: 100%;
   padding: 5em 0em;
-  padding-top: 4em;
+  padding-top: 0em;
+  margin-top: -2em;
 }
 .into__section__wrapper__content__service__card {
   display: flex;
