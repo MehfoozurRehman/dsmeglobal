@@ -16,6 +16,7 @@ import FeatureSectionCarouselEntry from "../components/FeatureSectionCarouselEnt
 import ContactSection from "../components/ContactSection";
 import WorkSection from "../components/WorkSection";
 import IntoSection from "../components/IntoSection";
+import BlogSection from "../components/BlogSection";
 
 export default function Home({ setIsDark }) {
   useEffect(() => {
@@ -123,6 +124,7 @@ export default function Home({ setIsDark }) {
         />
       </Carousel>
       <WorkSection />
+      <BlogSection />
       <ContactSection />
     </>
   );

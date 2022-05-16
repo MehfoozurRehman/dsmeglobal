@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
 import ContactSection from "../components/ContactSection";
+
 function PricingFeatureEntry({ title, content }) {
   return (
     <div className="pricing__feature__entry">

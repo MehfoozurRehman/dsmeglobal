@@ -1185,9 +1185,77 @@ body {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
+.blog__card {
+  position: relative;
+  width: 24%;
+  height: 300px;
+  overflow: hidden;
+  border: none;
+  margin-right: 1%;
+  padding: 0em;
+  border-radius: 10px;
+}
+.blog__card:last-child {
+  margin-right: 0px !important;
+}
+.blog__card__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.blog__card__content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+  padding: 2em;
+  cursor: pointer;
+}
+.blog__card__content__title {
+  background-color: #189366;
+  color: white;
+  padding: 0.7em 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.blog__card__content__info {
+  font-size: 18px;
+  color: white;
+}
+.blog__card:hover {
+  transition: 300ms ease-in-out;
+  transform: scaleY(1.2);
+  z-index: 50;
+}
+.blog__card:hover .blog__card__content .blog__card__content__title {
+  transition: 300ms ease-in-out;
+  transform: scaleY(0.8);
+  margin-bottom: 0.5em;
+}
+.blog__card:hover .blog__card__content .blog__card__content__info {
+  transition: 300ms ease-in-out;
+  transform: scaleY(0.8);
+}
 @media (max-width: 1300px) {
   .work__section__content__project__image {
     width: 700px;
+  }
+}
+@media (max-width: 1150px) {
+  .blog__card {
+    width: 32%;
+    margin-bottom: 1em;
+  }
+  .blog__card:last-child {
+    margin-bottom: 0em;
   }
 }
 @media (max-width: 1000px) {
@@ -1249,6 +1317,16 @@ body {
   }
   .pricing__feature__entry {
     width: 42%;
+  }
+}
+@media (max-width: 850px) {
+  .blog__card {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .blog__card:nth-child(even) {
+    width: 49%;
+    margin-right: 0px;
   }
 }
 @media (max-width: 800px) {
@@ -1360,6 +1438,12 @@ body {
   }
   .home__section__carousel__entry__overlay__content {
     align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .blog__card {
+    width: 100% !important;
+    margin-right: 0px !important;
   }
 }
 @media (max-width: 500px) {

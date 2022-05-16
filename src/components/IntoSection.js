@@ -64,7 +64,7 @@ export default function IntoSection() {
       <div className="into__section">
         <div className="into__section__wrapper">
           <div className="into__section__heading">
-            What provide
+            We provide
             <span>SERVICES</span>
           </div>
           <div className="into__section__wrapper__content">
