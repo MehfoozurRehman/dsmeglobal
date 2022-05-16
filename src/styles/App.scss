@@ -183,15 +183,13 @@ body {
   transition: 500ms ease-in-out;
 }
 .into__section__wrapper__content__service__card__img {
-  top: -50px;
-
-  position: absolute;
+  top: 0px;
+  position: relative;
 }
 .into__section__wrapper__content__service__card__text {
   text-align: center;
   color: white;
   font-size: 14px;
-  font-weight: bold;
   margin-top: 2em;
 }
 .into__section__wrapper__content__service__card:hover {
@@ -201,10 +199,15 @@ body {
 .into__section__wrapper__content__service__card:hover
   .into__section__wrapper__content__service__card__img {
   transition: 500ms ease-in-out;
-  position: relative;
-  top: 0px;
+  position: absolute;
+  top: -50px;
 }
-
+.into__section__wrapper__content__service__card:hover
+  .into__section__wrapper__content__service__card__text {
+  transition: 500ms ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+}
 .into__section__video {
   width: 100%;
   margin: 1em;

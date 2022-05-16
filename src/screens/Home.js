@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import plane from "../assets/plane.mov";
-import cross from "../assets/cross.mov";
+import cross from "../assets/cross.mp4";
+import mobile from "../assets/mobile.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
 import utilitySvg from "../assets/utilitySvg.svg";
@@ -64,7 +65,7 @@ export default function Home({ setIsDark }) {
       toPath: "/portfolio",
     },
     {
-      videoSrc: plane,
+      videoSrc: mobile,
       subHeading: "WE PREFER",
       heading: "You Over Anything",
       buttonLabel: "View Our Work",
@@ -75,7 +76,7 @@ export default function Home({ setIsDark }) {
     <>
       <Carousel
         autoPlay={true}
-        interval={4000}
+        interval={5000}
         showArrows={false}
         showStatus={false}
         infiniteLoop={true}

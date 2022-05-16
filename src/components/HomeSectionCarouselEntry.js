@@ -23,7 +23,7 @@ export default function HomeSectionCarouselEntry({
         src={videoSrc ? videoSrc : video}
         autoPlay={"autoplay"}
         muted={true}
-        // loop={true}
+        loop={true}
       />
       <div className="home__section__carousel__entry__overlay">
         <div
