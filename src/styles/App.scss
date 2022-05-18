@@ -940,6 +940,7 @@ body {
   position: relative;
   color: #00040e;
   word-wrap: normal;
+  font-size: 14px;
   text-transform: uppercase;
 }
 .portolio__filter__left__entry__content::after {
@@ -1197,6 +1198,7 @@ body {
   margin-right: 1%;
   padding: 0em;
   border-radius: 10px;
+  margin-bottom: 1em;
 }
 .blog__card:last-child {
   margin-right: 0px !important;
@@ -1232,6 +1234,8 @@ body {
 .blog__card__content__info {
   font-size: 18px;
   color: white;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .blog__card:hover {
   transition: 300ms ease-in-out;

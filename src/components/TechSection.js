@@ -44,8 +44,8 @@ export default function IntoSection() {
   }, []);
   return (
     <>
-      <div className="into__section" style={{ marginTop: 0 }}>
-        <div className="into__section__wrapper">
+      <div className="into__section">
+        <div className="into__section__wrapper" style={{ paddingTop: 0 }}>
           <div className="into__section__heading">
             Core
             <span>Technologies</span>

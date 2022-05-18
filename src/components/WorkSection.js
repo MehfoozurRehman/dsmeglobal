@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function WorkSection({}) {
-  const [project, setProject] = useState("Aida Pro");
+  const [project, setProject] = useState([]);
   const [workData, setWorkData] = useState([]);
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_work`).then((res) => {
       setWorkData(res.data);
-      console.log(res.data);
+      res.data
+        .filter((item, i) => i === 0)
+        .map((item, i) => {
+          setProject(item);
+        });
     });
   }, []);
   return (
@@ -59,61 +63,58 @@ export default function WorkSection({}) {
         </svg>
       </div>
       <div className="work__section__content">
-        {workData
-          .filter((item) => item.title === project)
-          .map((item) => (
-            <div
-              className="work__section__content__project"
-              key={JSON.stringify(item)}
-            >
-              <div className="work__section__content__project__image__wrapper">
+        <div className="work__section__content__project">
+          <div className="work__section__content__project__image__wrapper">
+            <img
+              src={
+                "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                project.image
+              }
+              alt={project.title}
+              className="work__section__content__project__image"
+            />
+          </div>
+          <div className="work__section__content__project__about">
+            <div className="work__section__content__project__about__heading">
+              <div className="work__section__content__project__about__heading__top">
+                {project.company}
+              </div>
+              <div className="work__section__content__project__about__heading__bottom">
+                {project.title}
+              </div>
+            </div>
+            <div className="work__section__content__project__about__info">
+              {project.description}
+            </div>
+          </div>
+        </div>
+        <div className="work__section__content__selection">
+          {workData.map((item, i) => {
+            return (
+              <div
+                className="work__section__content__selection__entry"
+                key={JSON.stringify(item)}
+              >
+                <input
+                  type="radio"
+                  name="work__section__content__selection__entry__input"
+                  className="work__section__content__selection__entry__input"
+                  onClick={() => {
+                    setProject(item);
+                  }}
+                  defaultChecked={i === 0 ? true : false}
+                />
                 <img
                   src={
                     "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                    item.image
+                    item.logo
                   }
                   alt={item.title}
-                  className="work__section__content__project__image"
+                  className="work__section__content__selection__entry__img"
                 />
               </div>
-              <div className="work__section__content__project__about">
-                <div className="work__section__content__project__about__heading">
-                  <div className="work__section__content__project__about__heading__top">
-                    {item.company}
-                  </div>
-                  <div className="work__section__content__project__about__heading__bottom">
-                    {item.title}
-                  </div>
-                </div>
-                <div className="work__section__content__project__about__info">
-                  {item.description}
-                </div>
-              </div>
-            </div>
-          ))}
-
-        <div className="work__section__content__selection">
-          {workData.map((item, i) => (
-            <div className="work__section__content__selection__entry" key={i}>
-              <input
-                type="radio"
-                name="work__section__content__selection__entry__input"
-                className="work__section__content__selection__entry__input"
-                onClick={() => {
-                  setProject(item.title);
-                }}
-                defaultChecked={i === 0 ? true : false}
-              />
-              <img
-                src={
-                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                  item.logo
-                }
-                alt=""
-                className="work__section__content__selection__entry__img"
-              />
-            </div>
-          ))}
+            );
+          })}
         </div>
         <Link to="/portfolio" className="button__reverse">
           View Complete Portfolio

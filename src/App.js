@@ -13,6 +13,8 @@ import ServiceDetails from "./screens/ServiceDetails";
 import Portfolio from "./screens/Portfolio";
 import Pricing from "./screens/Pricing";
 import AboutUs from "./screens/AboutUs";
+import Blogs from "./screens/Blogs";
+import BlogDetails from "./screens/BlogDetails";
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
@@ -29,6 +31,11 @@ export default function App() {
         <Route
           path="/portfolio"
           element={<Portfolio setIsDark={setIsDark} />}
+        />
+        <Route path="/blog" element={<Blogs setIsDark={setIsDark} />} />
+        <Route
+          path="/blog-details"
+          element={<BlogDetails setIsDark={setIsDark} />}
         />
         <Route path="/pricing" element={<Pricing setIsDark={setIsDark} />} />
         <Route

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import blog from "../assets/blog.jpg";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import axios from "axios";
 
 export default function BlogSection() {
+  const [blogData, setBlogData] = useState([]);
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_blog`).then((res) => {
+      setBlogData(res.data);
+    });
+  }, []);
   return (
     <div className="into__section">
       <div className="into__section__wrapper">
