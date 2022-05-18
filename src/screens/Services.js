@@ -13,7 +13,10 @@ function ServicesCard({ data }) {
     >
       <div className="services__main__container__content__wrapper__card__svg__container">
         <img
-          src={process.env.REACT_APP_API_URL + data.logo}
+          src={
+            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+            data.logo
+          }
           alt="services__main__container__content__wrapper__card__svg"
           className="services__main__container__content__wrapper__card__svg"
         />
@@ -43,7 +46,7 @@ export default function Services({ setIsDark }) {
           </div>
           <div className="services__main__container__content__wrapper">
             {servicesData.map((item) => (
-              <ServicesCard data={item} key={item._id} />
+              <ServicesCard data={item} key={JSON.stringify(item)} />
             ))}
           </div>
         </div>

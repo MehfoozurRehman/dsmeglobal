@@ -159,17 +159,15 @@ export default function Portfolio({ setIsDark }) {
       <div className="service__details__projects">
         {projectData
           .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-          .map((item) => {
-            return (
-              <ProjectCard
-                setShowImage={setShowImage}
-                setShowImageData={setShowImageData}
-                data={item}
-                key={item._id}
-                filter={filter}
-              />
-            );
-          })}
+          .map((item) => (
+            <ProjectCard
+              setShowImage={setShowImage}
+              setShowImageData={setShowImageData}
+              data={item}
+              key={JSON.stringify(item)}
+              filter={filter}
+            />
+          ))}
       </div>
       {filter === "" ? (
         <div

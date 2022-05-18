@@ -191,10 +191,12 @@ body {
 .into__section__wrapper__content__service__card__img {
   top: 0px;
   position: relative;
+  width: 100px;
 }
 .into__section__wrapper__content__service__card__text {
   text-align: center;
   color: white;
+  word-break: break-all;
   font-size: 14px;
   margin-top: 2em;
 }
@@ -547,6 +549,7 @@ body {
   opacity: 0;
 }
 .work__section__content__selection__entry__img {
+  width: 100px;
   mix-blend-mode: luminosity;
 }
 .work__section__content__selection__entry__input:hover
@@ -1243,6 +1246,9 @@ body {
 .blog__card:hover .blog__card__content .blog__card__content__info {
   transition: 300ms ease-in-out;
   transform: scaleY(0.8);
+}
+.work__section__content__project__image {
+  width: 100%;
 }
 @media (max-width: 1300px) {
   .work__section__content__project__image {

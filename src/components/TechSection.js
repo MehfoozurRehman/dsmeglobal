@@ -13,7 +13,7 @@ export default function IntoSection() {
   const [slidesPerPage, setSlidesPerPage] = useState(5);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_service`)
+      .get(`${process.env.REACT_APP_API_URL}api/v1/get_techonologies`)
       .then((res) => {
         setServicesData(res.data);
       });
@@ -44,58 +44,30 @@ export default function IntoSection() {
   }, []);
   return (
     <>
-      <div className="into__section">
+      <div className="into__section" style={{ marginTop: 0 }}>
         <div className="into__section__wrapper">
           <div className="into__section__heading">
-            WE DELIVER <span>SOLUTIONS</span>
-          </div>
-          <video
-            src={cycle}
-            className="into__section__video"
-            autoPlay={"autoplay"}
-            muted={true}
-            loop={true}
-          />
-          <Link to="/services" className="button">
-            View All Services
-          </Link>
-        </div>
-      </div>
-      <div className="into__section">
-        <div className="into__section__wrapper">
-          <div className="into__section__heading">
-            We provide
-            <span>SERVICES</span>
+            Core
+            <span>Technologies</span>
           </div>
           <div className="into__section__wrapper__content">
-            <Swiper spaceBetween={50} slidesPerView={slidesPerPage}>
+            <Swiper spaceBetween={50} slidesPerView={slidesPerPage} loop={true}>
               {servicesData.map((item) => (
                 <SwiperSlide key={JSON.stringify(item)}>
-                  <Link
-                    onClick={() => {
-                      window.localStorage.setItem(
-                        "servicesData",
-                        JSON.stringify(item)
-                      );
-                      setTimeout(() => {
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }, 300);
-                    }}
-                    to="/service-details"
+                  <div
                     className="into__section__wrapper__content__service__card"
+                    style={{ borderRadius: 220, height: 240 }}
                   >
                     <img
                       src={
                         "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                        item.logo
+                        item.image
                       }
                       alt={item.title}
                       className="into__section__wrapper__content__service__card__img"
+                      style={{ position: "relative", top: 0 }}
                     />
-                    <div className="into__section__wrapper__content__service__card__text">
-                      {item.title}
-                    </div>
-                  </Link>
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -65,7 +65,10 @@ export default function ServiceDetails({ setIsDark }) {
         <div className="service__details__jumbotron__content">
           <div className="service__details__jumbotron__left">
             <img
-              src={process.env.REACT_APP_API_URL + serviceData.image}
+              src={
+                "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                serviceData.image
+              }
               alt="serviceDetailsImg"
               className="service__details__jumbotron__left__img"
             />
@@ -93,7 +96,7 @@ export default function ServiceDetails({ setIsDark }) {
               setShowImage={setShowImage}
               setShowImageData={setShowImageData}
               data={item}
-              key={item._id}
+              key={JSON.stringify(item)}
               filter={filter}
             />
           );

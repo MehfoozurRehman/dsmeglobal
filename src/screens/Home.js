@@ -17,6 +17,7 @@ import ContactSection from "../components/ContactSection";
 import WorkSection from "../components/WorkSection";
 import IntoSection from "../components/IntoSection";
 import BlogSection from "../components/BlogSection";
+import TechSection from "../components/TechSection";
 
 export default function Home({ setIsDark }) {
   useEffect(() => {
@@ -84,9 +85,9 @@ export default function Home({ setIsDark }) {
         showThumbs={false}
         stopOnHover={false}
       >
-        {HomeSectionCarouselEntryArray.map((item, i) => (
+        {HomeSectionCarouselEntryArray.map((item) => (
           <HomeSectionCarouselEntry
-            key={i}
+            key={JSON.stringify(item)}
             videoSrc={item.videoSrc}
             subHeading={item.subHeading}
             heading={item.heading}
@@ -125,6 +126,7 @@ export default function Home({ setIsDark }) {
       </Carousel>
       <WorkSection />
       <BlogSection />
+      <TechSection />
       <ContactSection />
     </>
   );

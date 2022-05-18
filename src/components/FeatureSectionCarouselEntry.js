@@ -34,7 +34,10 @@ export default function FeatureSectionCarouselEntry({
         </div>
         <div className="feature__section__entry__content__feature__list">
           {features.map((feature) => (
-            <div className="feature__section__entry__content__feature__list__entry">
+            <div
+              className="feature__section__entry__content__feature__list__entry"
+              key={JSON.stringify(feature)}
+            >
               <img
                 src={feature.svg}
                 alt="feature__svg"

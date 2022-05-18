@@ -91,7 +91,10 @@ export default function Pricing({ setIsDark }) {
                 Discovery
               </div>
               {DeliveryCardEntry1.map((item) => (
-                <div className="pricing__delivery__section__content__card__para">
+                <div
+                  className="pricing__delivery__section__content__card__para"
+                  key={JSON.stringify(item)}
+                >
                   {item.para}
                 </div>
               ))}
@@ -101,7 +104,10 @@ export default function Pricing({ setIsDark }) {
                 Execution
               </div>
               {DeliveryCardEntry2.map((item) => (
-                <div className="pricing__delivery__section__content__card__para">
+                <div
+                  className="pricing__delivery__section__content__card__para"
+                  key={JSON.stringify(item)}
+                >
                   {item.para}
                 </div>
               ))}
@@ -111,7 +117,10 @@ export default function Pricing({ setIsDark }) {
                 Support
               </div>
               {DeliveryCardEntry3.map((item) => (
-                <div className="pricing__delivery__section__content__card__para">
+                <div
+                  className="pricing__delivery__section__content__card__para"
+                  key={JSON.stringify(item)}
+                >
                   {item.para}
                 </div>
               ))}

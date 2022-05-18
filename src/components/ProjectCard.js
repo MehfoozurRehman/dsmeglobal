@@ -10,7 +10,7 @@ function ProjectCardContent({
   return (
     <div className="service__details__projects__entry animate__animated animate__zoomIn">
       <img
-        src={process.env.REACT_APP_API_URL + image}
+        src={"https://res.cloudinary.com/mehfoozurrehman/image/upload/" + image}
         alt="projectImg"
         className="service__details__projects__entry__img"
       />
@@ -27,7 +27,9 @@ function ProjectCardContent({
             onClick={() => {
               setShowImage(true);
               setShowImageData({
-                image: process.env.REACT_APP_API_URL + image,
+                image:
+                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                  image,
                 title: title,
               });
               window.scrollTo({ top: 0, behavior: "smooth" });

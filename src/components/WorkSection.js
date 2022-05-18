@@ -8,6 +8,7 @@ export default function WorkSection({}) {
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_work`).then((res) => {
       setWorkData(res.data);
+      console.log(res.data);
     });
   }, []);
   return (
@@ -61,10 +62,16 @@ export default function WorkSection({}) {
         {workData
           .filter((item) => item.title === project)
           .map((item) => (
-            <div className="work__section__content__project" key={item._id}>
+            <div
+              className="work__section__content__project"
+              key={JSON.stringify(item)}
+            >
               <div className="work__section__content__project__image__wrapper">
                 <img
-                  src={process.env.REACT_APP_API_URL + item.image}
+                  src={
+                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                    item.image
+                  }
                   alt={item.title}
                   className="work__section__content__project__image"
                 />
@@ -98,7 +105,10 @@ export default function WorkSection({}) {
                 defaultChecked={i === 0 ? true : false}
               />
               <img
-                src={process.env.REACT_APP_API_URL + item.logo}
+                src={
+                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                  item.logo
+                }
                 alt=""
                 className="work__section__content__selection__entry__img"
               />
