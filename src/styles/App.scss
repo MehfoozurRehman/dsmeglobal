@@ -333,8 +333,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
   flex: 1;
+  padding: 1em;
 }
 .feature__section__entry__content__feature__list__entry__img {
   height: 50px;
@@ -1254,6 +1254,36 @@ body {
 .work__section__content__project__image {
   width: 100%;
 }
+.techonologies__card {
+  width: 100%;
+  background-color: transparent;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #189366;
+  margin: 1em 0em;
+}
+.techonologies__card__img {
+  max-width: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  border-radius: 50px;
+}
+
+.techonologies__card:hover {
+  transition: 300ms ease-in-out;
+  background: linear-gradient(135deg, #383838, #020202);
+  border-color: transparent;
+  color: white;
+  transform: scaleY(1.1);
+}
+.techonologies__card:hover .techonologies__card__img {
+  transform: scaleY(0.89);
+}
+
 @media (max-width: 1300px) {
   .work__section__content__project__image {
     width: 700px;
@@ -1340,6 +1370,18 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .feature__section__entry__content__jumbotron {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature__section__entry__content__jumbotron__left {
+    align-items: center;
+    width: 100%;
+  }
+  .feature__section__entry__content__jumbotron__right {
+    width: 100%;
+    justify-content: center;
+  }
   .work__section__content__project__about {
     width: 100%;
   }
@@ -1454,6 +1496,13 @@ body {
   .blog__card {
     width: 100% !important;
     margin-right: 0px !important;
+  }
+  .feature__section__entry__content__feature__list {
+    padding: 3em 2em;
+    flex-direction: column;
+  }
+  .feature__section__entry__content__feature__list__entry {
+    padding: 1em 0em;
   }
 }
 @media (max-width: 500px) {

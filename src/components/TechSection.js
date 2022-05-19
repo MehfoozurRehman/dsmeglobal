@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import bulb from "../assets/bulb.mp4";
-import cycle from "../assets/cycle.mp4";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import axios from "axios";
+
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
   const [slidesPerPage, setSlidesPerPage] = useState(5);
@@ -26,7 +21,7 @@ export default function IntoSection() {
     } else if (window.innerWidth <= 1150) {
       setSlidesPerPage(4);
     } else {
-      setSlidesPerPage(5);
+      setSlidesPerPage(6);
     }
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 500) {
@@ -38,7 +33,7 @@ export default function IntoSection() {
       } else if (window.innerWidth <= 1150) {
         setSlidesPerPage(4);
       } else {
-        setSlidesPerPage(5);
+        setSlidesPerPage(6);
       }
     });
   }, []);
@@ -50,22 +45,21 @@ export default function IntoSection() {
             Core
             <span>Technologies</span>
           </div>
-          <div className="into__section__wrapper__content">
+          <div
+            className="into__section__wrapper__content"
+            style={{ marginTop: "5em" }}
+          >
             <Swiper spaceBetween={50} slidesPerView={slidesPerPage} loop={true}>
               {servicesData.map((item) => (
                 <SwiperSlide key={JSON.stringify(item)}>
-                  <div
-                    className="into__section__wrapper__content__service__card"
-                    style={{ borderRadius: 220, height: 240 }}
-                  >
+                  <div className="techonologies__card">
                     <img
                       src={
                         "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
                         item.image
                       }
                       alt={item.title}
-                      className="into__section__wrapper__content__service__card__img"
-                      style={{ position: "relative", top: 0 }}
+                      className="techonologies__card__img"
                     />
                   </div>
                 </SwiperSlide>
