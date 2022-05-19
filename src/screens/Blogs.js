@@ -1,32 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import BlogsCard from "../components/BlogCard";
-
-function BlogsFilter({ title, onChange, defaultChecked }) {
-  return (
-    <div className="portolio__filter__left__entry">
-      <input
-        type="radio"
-        className="portolio__filter__left__entry__input"
-        name="portolio__filter__left__entry__input"
-        onChange={onChange}
-        defaultChecked={defaultChecked}
-      />
-      <div className="portolio__filter__left__entry__content">{title}</div>
-    </div>
-  );
-}
+import BlogsFilter from "../components/BlogsFilter";
+import Loader from "../components/Loader";
 
 export default function Blogs({ setIsDark }) {
-  const [showImage, setShowImage] = useState(false);
   const [noOfItems, setNoOfItems] = useState(9);
   const [blogData, setblogData] = useState([]);
   const [filter, setFilter] = useState("");
-  if (showImage) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+
   useEffect(() => {
     setIsDark(true);
     axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_blog`).then((res) => {
@@ -82,13 +64,21 @@ export default function Blogs({ setIsDark }) {
         </div>
       </div>
       <div className="service__details__projects">
-        {blogData
-          .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-          .map((item) => (
-            <BlogsCard data={item} key={JSON.stringify(item)} filter={filter} />
-          ))}
+        {blogData.length === 0 ? (
+          <Loader />
+        ) : (
+          blogData
+            .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
+            .map((item) => (
+              <BlogsCard
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            ))
+        )}
       </div>
-      {filter === "" ? (
+      {filter === "" && blogData.length > 6 ? (
         <div
           style={{
             display: "flex",

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 import axios from "axios";
+import Loader from "../components/Loader";
 
 export default function ServiceDetails({ setIsDark }) {
   const [showImage, setShowImage] = useState(false);
@@ -90,17 +91,21 @@ export default function ServiceDetails({ setIsDark }) {
         </div>
       </div>
       <div className="service__details__projects">
-        {projectData.map((item) => {
-          return (
-            <ProjectCard
-              setShowImage={setShowImage}
-              setShowImageData={setShowImageData}
-              data={item}
-              key={JSON.stringify(item)}
-              filter={filter}
-            />
-          );
-        })}
+        {projectData.length === 0 ? (
+          <Loader />
+        ) : (
+          projectData.map((item) => {
+            return (
+              <ProjectCard
+                setShowImage={setShowImage}
+                setShowImageData={setShowImageData}
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            );
+          })
+        )}
       </div>
     </>
   );

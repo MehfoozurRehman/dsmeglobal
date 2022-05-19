@@ -1,83 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { X } from "react-feather";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import logoDark from "../assets/logoDark.png";
-
-function Nav({ setIsNavOpen }) {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => (document.body.style.overflow = "auto");
-  }, []);
-
-  return (
-    <div className="nav animate__animated animate__fadeInDown">
-      <Link
-        to="/"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        Home
-      </Link>
-      <Link
-        to="about-us"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        About Us
-      </Link>
-      <Link
-        to="/services"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        Services
-      </Link>
-      <Link
-        to="/portfolio"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        Portfolio
-      </Link>
-      <Link
-        to="/pricing"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        Pricing
-      </Link>
-      <Link
-        to="/blog"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        Blog
-      </Link>
-      <Link
-        to="/contact-us"
-        className="nav__link"
-        onClick={() => {
-          setIsNavOpen(false);
-        }}
-      >
-        Contact Us
-      </Link>
-    </div>
-  );
-}
+import Nav from "./Nav";
 
 export default function Header({ isDark }) {
   const [isNavOpen, setIsNavOpen] = useState(false);

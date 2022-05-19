@@ -3,44 +3,36 @@ import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
 import pricing from "../assets/pricing.mp4";
 import ContactSection from "../components/ContactSection";
-
-function PricingFeatureEntry({ title, content }) {
-  return (
-    <div className="pricing__feature__entry">
-      <div className="pricing__feature__entry__heading">{title}</div>
-      <div className="pricing__feature__entry__info">{content}</div>
-    </div>
-  );
-}
-const DeliveryCardEntry1 = [
-  { para: "Onsite / Offsite Discovery Workshop" },
-  { para: "Vision and Goal Mapping" },
-  { para: "Stakeholders Interviews" },
-  { para: "Requirements Definition" },
-  { para: "UI/UX and Visual Prototyping" },
-  { para: "High Risk Tech POCs" },
-  { para: "Product Roadmap" },
-];
-const DeliveryCardEntry2 = [
-  { para: " Software Architecture and Design" },
-  { para: "Development of Web / Mobile / Backend Components" },
-  { para: "APIs Development and Integrations" },
-  { para: "Continuous Integration/Delivery" },
-  { para: "UAQ" },
-  { para: "QA Testing" },
-];
-const DeliveryCardEntry3 = [
-  { para: "SLA Based Support" },
-  { para: "L3 and Production Support" },
-  { para: "Services" },
-  { para: "Operational support" },
-  { para: "On-going Support" },
-];
+import PricingFeatureEntry from "../components/PricingFeatureEntry";
 
 export default function Pricing({ setIsDark }) {
   useEffect(() => {
     setIsDark(false);
   }, []);
+  const DeliveryCardEntry1 = [
+    { para: "Onsite / Offsite Discovery Workshop" },
+    { para: "Vision and Goal Mapping" },
+    { para: "Stakeholders Interviews" },
+    { para: "Requirements Definition" },
+    { para: "UI/UX and Visual Prototyping" },
+    { para: "High Risk Tech POCs" },
+    { para: "Product Roadmap" },
+  ];
+  const DeliveryCardEntry2 = [
+    { para: " Software Architecture and Design" },
+    { para: "Development of Web / Mobile / Backend Components" },
+    { para: "APIs Development and Integrations" },
+    { para: "Continuous Integration/Delivery" },
+    { para: "UAQ" },
+    { para: "QA Testing" },
+  ];
+  const DeliveryCardEntry3 = [
+    { para: "SLA Based Support" },
+    { para: "L3 and Production Support" },
+    { para: "Services" },
+    { para: "Operational support" },
+    { para: "On-going Support" },
+  ];
   return (
     <>
       <div style={{ maxHeight: "100vh", overflow: "hidden" }}>

@@ -1,21 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Loader from "../components/Loader";
+import PortfolioFilter from "../components/PortfolioFilter";
 import ProjectCard from "../components/ProjectCard";
-
-function PortfolioFilter({ title, onChange, defaultChecked }) {
-  return (
-    <div className="portolio__filter__left__entry">
-      <input
-        type="radio"
-        className="portolio__filter__left__entry__input"
-        name="portolio__filter__left__entry__input"
-        onChange={onChange}
-        defaultChecked={defaultChecked}
-      />
-      <div className="portolio__filter__left__entry__content">{title}</div>
-    </div>
-  );
-}
 
 export default function Portfolio({ setIsDark }) {
   const [showImage, setShowImage] = useState(false);
@@ -157,19 +144,23 @@ export default function Portfolio({ setIsDark }) {
         </div>
       </div>
       <div className="service__details__projects">
-        {projectData
-          .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-          .map((item) => (
-            <ProjectCard
-              setShowImage={setShowImage}
-              setShowImageData={setShowImageData}
-              data={item}
-              key={JSON.stringify(item)}
-              filter={filter}
-            />
-          ))}
+        {projectData.length === 0 ? (
+          <Loader />
+        ) : (
+          projectData
+            .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
+            .map((item) => (
+              <ProjectCard
+                setShowImage={setShowImage}
+                setShowImageData={setShowImageData}
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            ))
+        )}
       </div>
-      {filter === "" ? (
+      {filter === "" && projectData.length > 6 ? (
         <div
           style={{
             display: "flex",

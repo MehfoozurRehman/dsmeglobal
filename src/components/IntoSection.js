@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import axios from "axios";
+import Loader from "./Loader";
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
   const [slidesPerPage, setSlidesPerPage] = useState(5);
@@ -68,37 +69,41 @@ export default function IntoSection() {
             <span>SERVICES</span>
           </div>
           <div className="into__section__wrapper__content">
-            <Swiper spaceBetween={50} slidesPerView={slidesPerPage}>
-              {servicesData.map((item) => (
-                <SwiperSlide key={JSON.stringify(item)}>
-                  <Link
-                    onClick={() => {
-                      window.localStorage.setItem(
-                        "servicesData",
-                        JSON.stringify(item)
-                      );
-                      setTimeout(() => {
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }, 300);
-                    }}
-                    to="/service-details"
-                    className="into__section__wrapper__content__service__card"
-                  >
-                    <img
-                      src={
-                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                        item.logo
-                      }
-                      alt={item.title}
-                      className="into__section__wrapper__content__service__card__img"
-                    />
-                    <div className="into__section__wrapper__content__service__card__text">
-                      {item.title}
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            {servicesData.length === 0 ? (
+              <Loader />
+            ) : (
+              <Swiper spaceBetween={50} slidesPerView={slidesPerPage}>
+                {servicesData.map((item) => (
+                  <SwiperSlide key={JSON.stringify(item)}>
+                    <Link
+                      onClick={() => {
+                        window.localStorage.setItem(
+                          "servicesData",
+                          JSON.stringify(item)
+                        );
+                        setTimeout(() => {
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }, 300);
+                      }}
+                      to="/service-details"
+                      className="into__section__wrapper__content__service__card"
+                    >
+                      <img
+                        src={
+                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                          item.logo
+                        }
+                        alt={item.title}
+                        className="into__section__wrapper__content__service__card__img"
+                      />
+                      <div className="into__section__wrapper__content__service__card__text">
+                        {item.title}
+                      </div>
+                    </Link>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
           </div>
         </div>
       </div>

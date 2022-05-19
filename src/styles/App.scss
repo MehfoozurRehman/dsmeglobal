@@ -361,12 +361,11 @@ body {
 .services__main__container {
   width: 100%;
   height: fit-content;
-  min-height: 100vh;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#ffffff, #e1e1e1);
 }
 .services__main__container__content__heading {
   font-size: 28px;
@@ -565,7 +564,7 @@ body {
 .contact__section {
   width: 100%;
   height: fit-content;
-  min-height: 100vh;
+  min-height: 700px;
   background: linear-gradient(135deg, #00040e, #00040e, #189366);
 }
 .contact__section__content {
@@ -771,6 +770,7 @@ body {
   color: #00040e;
   width: 50%;
   margin-bottom: 0.5em;
+  font-weight: 500;
 }
 .service__details__jumbotron__right__info {
   font-size: 14px;
@@ -1060,7 +1060,7 @@ body {
 }
 .our__mission__section__about__us {
   width: 100vw;
-  height: 90vh;
+  min-height: 600px;
   background: linear-gradient(#ffffff, #e1e1e1);
   display: flex;
   justify-content: center;
@@ -1091,7 +1091,7 @@ body {
 }
 .our__vision__section__about__us {
   width: 100vw;
-  height: 90vh;
+  min-height: 600px;
   background: linear-gradient(135deg, #383838, #020202);
   display: flex;
   justify-content: center;
@@ -1271,8 +1271,6 @@ body {
   max-width: 100px;
   min-width: 100px;
   max-height: 100px;
-  min-height: 100px;
-  border-radius: 50px;
 }
 
 .techonologies__card:hover {

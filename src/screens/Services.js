@@ -1,30 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
-
-function ServicesCard({ data }) {
-  return (
-    <Link
-      onClick={() => {
-        window.localStorage.setItem("servicesData", JSON.stringify(data));
-      }}
-      to="/service-details"
-      className="services__main__container__content__wrapper__card"
-    >
-      <div className="services__main__container__content__wrapper__card__svg__container">
-        <img
-          src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            data.logo
-          }
-          alt="services__main__container__content__wrapper__card__svg"
-          className="services__main__container__content__wrapper__card__svg"
-        />
-      </div>
-      {data.title}
-    </Link>
-  );
-}
+import Loader from "../components/Loader";
+import ServicesCard from "../components/ServicesCard";
 
 export default function Services({ setIsDark }) {
   const [servicesData, setServicesData] = useState([]);
@@ -45,9 +22,13 @@ export default function Services({ setIsDark }) {
             SERVICES
           </div>
           <div className="services__main__container__content__wrapper">
-            {servicesData.map((item) => (
-              <ServicesCard data={item} key={JSON.stringify(item)} />
-            ))}
+            {servicesData.length === 0 ? (
+              <Loader />
+            ) : (
+              servicesData.map((item) => (
+                <ServicesCard data={item} key={JSON.stringify(item)} />
+              ))
+            )}
           </div>
         </div>
       </div>

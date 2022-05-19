@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import axios from "axios";
+import Loader from "./Loader";
 
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
@@ -49,22 +50,30 @@ export default function IntoSection() {
             className="into__section__wrapper__content"
             style={{ marginTop: "5em" }}
           >
-            <Swiper spaceBetween={50} slidesPerView={slidesPerPage} loop={true}>
-              {servicesData.map((item) => (
-                <SwiperSlide key={JSON.stringify(item)}>
-                  <div className="techonologies__card">
-                    <img
-                      src={
-                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                        item.image
-                      }
-                      alt={item.title}
-                      className="techonologies__card__img"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            {servicesData.length === 0 ? (
+              <Loader />
+            ) : (
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={slidesPerPage}
+                loop={true}
+              >
+                {servicesData.map((item) => (
+                  <SwiperSlide key={JSON.stringify(item)}>
+                    <div className="techonologies__card">
+                      <img
+                        src={
+                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                          item.image
+                        }
+                        alt={item.title}
+                        className="techonologies__card__img"
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
           </div>
         </div>
       </div>
