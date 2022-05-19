@@ -1,17 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function getText(html) {
-  var divContainer = document.createElement("div");
-  divContainer.innerHTML = html;
-  return divContainer.textContent || divContainer.innerText || "";
-}
 function BlogsCardContent({ data }) {
+  const navigate = useNavigate();
+  function getText(html) {
+    var divContainer = document.createElement("div");
+    divContainer.innerHTML = html;
+    return divContainer.textContent || divContainer.innerText || "";
+  }
   return (
     <button
       onClick={() => {
         setTimeout(() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }, 300);
+        navigate("/blog-details");
+        window.localStorage.setItem("blogsData", JSON.stringify(data));
       }}
       className="blog__card"
     >

@@ -87,16 +87,6 @@ export default function Blogs({ setIsDark }) {
           .map((item) => (
             <BlogsCard data={item} key={JSON.stringify(item)} filter={filter} />
           ))}
-        {blogData
-          .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-          .map((item) => (
-            <BlogsCard data={item} key={JSON.stringify(item)} filter={filter} />
-          ))}
-        {blogData
-          .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-          .map((item) => (
-            <BlogsCard data={item} key={JSON.stringify(item)} filter={filter} />
-          ))}
       </div>
       {filter === "" ? (
         <div

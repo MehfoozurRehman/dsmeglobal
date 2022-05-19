@@ -4,14 +4,21 @@ import blog from "../assets/blog.jpg";
 // Import Swiper styles
 import "swiper/css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function BlogSection() {
+  const navigate = useNavigate();
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_blog`).then((res) => {
       setBlogData(res.data);
     });
   }, []);
+  function getText(html) {
+    var divContainer = document.createElement("div");
+    divContainer.innerHTML = html;
+    return divContainer.textContent || divContainer.innerText || "";
+  }
   return (
     <div className="into__section">
       <div className="into__section__wrapper">
@@ -27,82 +34,35 @@ export default function BlogSection() {
             justifyContent: "space-between",
           }}
         >
-          <button
-            onClick={() => {
-              setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }, 300);
-            }}
-            className="blog__card"
-          >
-            <img src={blog} alt="" className="blog__card__img" />
-            <div className="blog__card__content">
-              <div className="blog__card__content__title">
-                Lorem ipsum dolor sit.
+          {blogData.map((blog) => (
+            <button
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }, 300);
+                navigate("/blog-details");
+                window.localStorage.setItem("blogsData", JSON.stringify(blog));
+              }}
+              className="blog__card"
+            >
+              <img
+                src={
+                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                  blog.image
+                }
+                alt=""
+                className="blog__card__img"
+              />
+              <div className="blog__card__content">
+                <div className="blog__card__content__title">{blog.title}</div>
+                <div className="blog__card__content__info">
+                  {getText(blog.content).length < 100
+                    ? getText(blog.content)
+                    : getText(blog.content).substring(0, 100) + "..."}
+                </div>
               </div>
-              <div className="blog__card__content__info">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-                dolore, excepturi neque
-              </div>
-            </div>
-          </button>
-          <button
-            onClick={() => {
-              setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }, 300);
-            }}
-            className="blog__card"
-          >
-            <img src={blog} alt="" className="blog__card__img" />
-            <div className="blog__card__content">
-              <div className="blog__card__content__title">
-                Lorem ipsum dolor sit.
-              </div>
-              <div className="blog__card__content__info">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-                dolore, excepturi neque
-              </div>
-            </div>
-          </button>
-          <button
-            onClick={() => {
-              setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }, 300);
-            }}
-            className="blog__card"
-          >
-            <img src={blog} alt="" className="blog__card__img" />
-            <div className="blog__card__content">
-              <div className="blog__card__content__title">
-                Lorem ipsum dolor sit.
-              </div>
-              <div className="blog__card__content__info">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-                dolore, excepturi neque
-              </div>
-            </div>
-          </button>
-          <button
-            onClick={() => {
-              setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }, 300);
-            }}
-            className="blog__card"
-          >
-            <img src={blog} alt="" className="blog__card__img" />
-            <div className="blog__card__content">
-              <div className="blog__card__content__title">
-                Lorem ipsum dolor sit.
-              </div>
-              <div className="blog__card__content__info">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-                dolore, excepturi neque
-              </div>
-            </div>
-          </button>
+            </button>
+          ))}
         </div>
       </div>
     </div>

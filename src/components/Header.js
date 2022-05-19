@@ -58,6 +58,15 @@ function Nav({ setIsNavOpen }) {
         Pricing
       </Link>
       <Link
+        to="/blog"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
+        Blog
+      </Link>
+      <Link
         to="/contact-us"
         className="nav__link"
         onClick={() => {

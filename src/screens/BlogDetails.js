@@ -1,11 +1,47 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 
 export default function BlogDetails({ setIsDark }) {
   useEffect(() => {
-    setIsDark(true);
+    setIsDark(false);
   }, []);
-  let serviceData = JSON.parse(window.localStorage.getItem("servicesData"));
+  let blogData = JSON.parse(window.localStorage.getItem("blogsData"));
+  function getText(html) {
+    var divContainer = document.createElement("div");
+    divContainer.innerHTML = html;
+    return divContainer.textContent || divContainer.innerText || "";
+  }
+  function parseDate(date) {
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const year = date && date.replace(/-/g, "").substring("", 4);
+    const month =
+      date && date.replace(/-/g, "").substring("", 6).replace(year, "");
+    const day =
+      date &&
+      date
+        .replace(/-/g, "")
+        .substring("", 8)
+        .replace(year + month, "");
+    return (
+      day +
+      " - " +
+      months.filter((item, i) => i === parseInt(month) - 1) +
+      " - " +
+      year
+    );
+  }
 
   return (
     <>
@@ -22,7 +58,7 @@ export default function BlogDetails({ setIsDark }) {
         <img
           src={
             "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            serviceData.image
+            blogData.image
           }
           alt="BlogDetailsImg"
           className="service__details__jumbotron__img"
@@ -59,13 +95,13 @@ export default function BlogDetails({ setIsDark }) {
               className="service__details__jumbotron__right__heading"
               style={{ color: "white" }}
             >
-              {serviceData.title}
+              {blogData.title}
             </div>
             <div
               className="service__details__jumbotron__right__info"
               style={{ color: "white" }}
             >
-              By admin - 20-10-2022
+              By {blogData.author} | {parseDate(blogData.updatedAt)}
             </div>
           </div>
         </div>
@@ -78,18 +114,7 @@ export default function BlogDetails({ setIsDark }) {
           className="service__details__jumbotron__right__info"
           style={{ width: "100%" }}
         >
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
-          {serviceData.description}
+          {getText(blogData.content)}
         </div>
       </div>
     </>
