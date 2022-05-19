@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import video from "../assets/video.mp4";
+import LightSpeed from "react-reveal/LightSpeed";
 
 export default function HomeSectionCarouselEntry({
   subHeading,
@@ -36,6 +37,7 @@ export default function HomeSectionCarouselEntry({
           <div className="home__section__carousel__entry__overlay__content__sub__heading">
             {subHeading}
           </div>
+
           <div className="home__section__carousel__entry__overlay__content__heading">
             {heading}
           </div>

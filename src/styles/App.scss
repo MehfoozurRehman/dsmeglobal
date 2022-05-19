@@ -179,41 +179,45 @@ body {
   flex-direction: column;
   background: linear-gradient(135deg, #383838, #020202);
   align-items: center;
-  padding: 2em;
+  padding: 1em 2em;
+  padding-bottom: 2em;
   border-radius: 20px;
-  height: 250px;
+  height: 150px;
   margin-top: 5em;
   position: relative;
   justify-content: center;
   text-decoration: none;
   transition: 500ms ease-in-out;
+  width: 18%;
 }
 .into__section__wrapper__content__service__card__img {
-  top: 0px;
-  position: relative;
   width: 100px;
+  position: absolute;
+  top: -50px;
 }
 .into__section__wrapper__content__service__card__text {
-  text-align: center;
   color: white;
-  word-break: break-all;
-  font-size: 14px;
-  margin-top: 2em;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 3em;
 }
 .into__section__wrapper__content__service__card:hover {
   transition: 300ms ease-in-out;
+  transform: scaleY(1.4);
   background: linear-gradient(90deg, #316656, #62cbac);
 }
 .into__section__wrapper__content__service__card:hover
   .into__section__wrapper__content__service__card__img {
   transition: 500ms ease-in-out;
-  position: absolute;
-  top: -50px;
+  top: 0px;
+  position: relative;
+  transform: scaleY(0.7);
 }
 .into__section__wrapper__content__service__card:hover
   .into__section__wrapper__content__service__card__text {
   transition: 500ms ease-in-out;
-  font-size: 18px;
+  transform: scaleY(0.8);
+  margin-top: 0em;
   font-weight: bold;
 }
 .into__section__video {
@@ -1281,12 +1285,17 @@ body {
   transform: scaleY(1.1);
 }
 .techonologies__card:hover .techonologies__card__img {
-  transform: scaleY(0.89);
+  transform: scaleY(0.85);
 }
 
 @media (max-width: 1300px) {
   .work__section__content__project__image {
     width: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  .into__section__wrapper__content__service__card {
+    width: 32%;
   }
 }
 @media (max-width: 1150px) {
@@ -1442,6 +1451,9 @@ body {
   .feature__section__entry__content__jumbotron__heading {
     font-size: 33px;
   }
+  .into__section__wrapper__content__service__card {
+    width: 49%;
+  }
 }
 @media (max-width: 700px) {
   .pricing__feature {
@@ -1504,6 +1516,9 @@ body {
   }
   .feature__section__entry__content__feature__list__entry {
     padding: 1em 0em;
+  }
+  .into__section__wrapper__content__service__card {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {

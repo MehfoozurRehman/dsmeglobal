@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import bulb from "../assets/bulb.mp4";
 import cycle from "../assets/cycle.mp4";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
 import axios from "axios";
 import Loader from "./Loader";
+
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
   const [slidesPerPage, setSlidesPerPage] = useState(5);
@@ -68,41 +63,47 @@ export default function IntoSection() {
             We provide
             <span>SERVICES</span>
           </div>
-          <div className="into__section__wrapper__content">
+          <div
+            className="into__section__wrapper__content"
+            style={{
+              paddingBottom: 0,
+              paddingTop: 40,
+              alignItems: "flex-end",
+              display: "flex",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+            }}
+          >
             {servicesData.length === 0 ? (
               <Loader />
             ) : (
-              <Swiper spaceBetween={50} slidesPerView={slidesPerPage}>
-                {servicesData.map((item) => (
-                  <SwiperSlide key={JSON.stringify(item)}>
-                    <Link
-                      onClick={() => {
-                        window.localStorage.setItem(
-                          "servicesData",
-                          JSON.stringify(item)
-                        );
-                        setTimeout(() => {
-                          window.scrollTo({ top: 0, behavior: "smooth" });
-                        }, 300);
-                      }}
-                      to="/service-details"
-                      className="into__section__wrapper__content__service__card"
-                    >
-                      <img
-                        src={
-                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                          item.logo
-                        }
-                        alt={item.title}
-                        className="into__section__wrapper__content__service__card__img"
-                      />
-                      <div className="into__section__wrapper__content__service__card__text">
-                        {item.title}
-                      </div>
-                    </Link>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+              servicesData.map((item) => (
+                <Link
+                  onClick={() => {
+                    window.localStorage.setItem(
+                      "servicesData",
+                      JSON.stringify(item)
+                    );
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 300);
+                  }}
+                  to="/service-details"
+                  className="into__section__wrapper__content__service__card"
+                >
+                  <img
+                    src={
+                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                      item.logo
+                    }
+                    alt={item.title}
+                    className="into__section__wrapper__content__service__card__img"
+                  />
+                  <div className="into__section__wrapper__content__service__card__text">
+                    {item.title}
+                  </div>
+                </Link>
+              ))
             )}
           </div>
         </div>
