@@ -926,11 +926,14 @@ body {
 }
 .portolio__filter__left {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  margin-top: -1.5em;
 }
 .portolio__filter__left__entry {
   position: relative;
   margin-right: 2em;
+  margin-top: 1.5em;
 }
 .portolio__filter__left__entry__input {
   position: absolute;
@@ -978,6 +981,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  font-size: 14px;
 }
 .portolio__filter__right__input {
   position: absolute;
@@ -1034,7 +1038,7 @@ body {
   margin-bottom: 0.5em;
 }
 .pricing__feature__entry__info {
-  font-size: 16px;
+  font-size: 14px;
   color: #00040e;
   margin-bottom: 0.5em;
 }
@@ -1173,7 +1177,7 @@ body {
   padding: 2em;
 }
 .pricing__delivery__section__content__card__para {
-  font-size: 16px;
+  font-size: 14px;
   color: #00040e;
   position: relative;
   margin-left: 1.3em;
@@ -1270,6 +1274,7 @@ body {
   justify-content: center;
   border: 1px solid #189366;
   margin: 1em 0em;
+  user-select: none;
 }
 .techonologies__card__img {
   max-width: 100px;
@@ -1522,13 +1527,6 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .portolio__filter__left {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .portolio__filter__left__entry {
-    margin-top: 1.5em;
-  }
   .pricing__feature {
     padding: 2em;
     padding-top: 4em;
