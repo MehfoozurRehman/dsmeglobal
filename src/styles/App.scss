@@ -491,6 +491,8 @@ body {
   padding: 3.5em 2.5em;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
+  max-width: 300px;
+  min-width: 300px;
 }
 .work__section__content__project__about__heading {
   display: flex;
@@ -1301,6 +1303,7 @@ body {
 @media (max-width: 1000px) {
   .work__section__content__project__about {
     margin: 2em 0em;
+    max-width: 100%;
   }
   .work__section__content__project {
     flex-direction: column;
