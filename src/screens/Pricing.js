@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
+import pricing from "../assets/pricing.mp4";
 import ContactSection from "../components/ContactSection";
 
 function PricingFeatureEntry({ title, content }) {
@@ -46,7 +47,8 @@ export default function Pricing({ setIsDark }) {
         <HomeSectionCarouselEntry
           subHeading="WE FIND"
           heading="OUR UNIQUE WAY"
-          buttonLabel="View Our Work"
+          buttonLabel="Lean more"
+          videoSrc={pricing}
           toPath="/"
         />
       </div>
