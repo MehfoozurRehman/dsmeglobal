@@ -55,6 +55,15 @@ export default function Nav({ setIsNavOpen }) {
         Pricing
       </Link>
       <Link
+        to="/careers"
+        className="nav__link"
+        onClick={() => {
+          setIsNavOpen(false);
+        }}
+      >
+        Careers
+      </Link>
+      <Link
         to="/blog"
         className="nav__link"
         onClick={() => {
@@ -63,6 +72,7 @@ export default function Nav({ setIsNavOpen }) {
       >
         Blog
       </Link>
+
       <Link
         to="/contact-us"
         className="nav__link"

@@ -11,6 +11,7 @@ export default function HomeSectionCarouselEntry({
   isRight,
   noBtn,
   videoSrc,
+  onClick,
 }) {
   return (
     <div
@@ -42,7 +43,11 @@ export default function HomeSectionCarouselEntry({
             {heading}
           </div>
           {noBtn ? null : (
-            <Link to={toPath ? toPath : "/"} className="button">
+            <Link
+              to={toPath ? toPath : "/"}
+              onClick={onClick}
+              className="button"
+            >
               {buttonLabel}
             </Link>
           )}

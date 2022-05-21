@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import blog from "../assets/blog.jpg";
-// Import Swiper React components
-// Import Swiper styles
 import "swiper/css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -47,6 +44,7 @@ export default function BlogSection() {
                     JSON.stringify(blog)
                   );
                 }}
+                key={JSON.stringify(blog)}
                 className="blog__card"
               >
                 <img

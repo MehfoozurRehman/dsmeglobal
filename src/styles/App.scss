@@ -3,6 +3,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -130,12 +131,18 @@ body {
 .home__section__carousel__entry__overlay__content__sub__heading {
   font-size: 22px;
   color: white;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 .home__section__carousel__entry__overlay__content__heading {
   font-size: 45px;
   color: white;
   font-weight: 500;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.home__section__carousel__entry__overlay__content__heading span {
+  color: #1dbf84;
 }
 .carousel .thumbs-wrapper {
   display: none;
@@ -656,13 +663,16 @@ body {
   font-size: 13px;
   color: #189366;
   display: none;
+  position: absolute;
+  top: -14px;
+  left: 0px;
 }
 .contact__section__content__middle__input__error__message {
   font-size: 13px;
   color: #fd2424;
   display: flex;
   position: absolute;
-  top: 0px;
+  top: -14px;
   right: 0px;
 }
 .contact__section__content__middle__input__field {
@@ -673,7 +683,7 @@ body {
   border: none;
   border-bottom: 1px solid #707070;
   padding: 0.4em 0em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   outline: none;
 }
 .contact__section__content__middle__input__field::placeholder {
@@ -806,6 +816,7 @@ body {
   padding-right: 1em;
   display: flex;
   flex-wrap: wrap;
+  min-height: 700px;
 }
 .service__details__projects__entry {
   width: 32%;
@@ -920,7 +931,7 @@ body {
   margin: 0em auto;
   margin-bottom: 2em;
   background-color: white;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   padding: 1.5em 2em;
   border-radius: 10px;
 }
@@ -1140,7 +1151,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#ffffff, #e1e1e1);
 }
 .pricing__delivery__section__content__wrapper {
   width: 100%;
@@ -1292,7 +1302,248 @@ body {
 .techonologies__card:hover .techonologies__card__img {
   transform: scaleY(0.85);
 }
+.hot__offers__section {
+  width: 100%;
+  max-width: 1440px;
+  padding: 5em 2em;
+  margin: 0em auto;
+}
+.hot__offers__section__header {
+  color: #189366;
+  font-weight: 500;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.hot__offers__section__content {
+  position: relative;
+}
 
+.hot__offers__section__content__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+  border: none;
+  margin: 2em 0em;
+  padding: 2em;
+  text-align: left;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 250px;
+  cursor: pointer;
+}
+.hot__offers__section__content__card__title {
+  font-size: 18px;
+  margin-bottom: 0.7em;
+  font-weight: 500;
+  color: #189366;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  word-break: break-all;
+  position: relative;
+}
+.hot__offers__section__content__card__title::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  background-color: #189366;
+  left: 0px;
+}
+.hot__offers__section__content__card__info {
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.hot__offers__section__content__card__info__heading {
+  font-size: 12px;
+  margin: 0.5em 0em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+  color: #242424;
+}
+.hot__offers__section__content__card__info__content {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.hot__offers__section__content__card svg {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  stroke: #189366;
+  transition: 500ms ease-in-out;
+}
+.hot__offers__section__content__card:hover svg {
+  transition: 500ms ease-in-out;
+  right: -20px;
+  opacity: 0;
+}
+.hot__offers__section__content__card:hover {
+  transition: 500ms ease-in-out;
+  background: linear-gradient(135deg, #383838, #020202);
+  transform: scale(1.1);
+}
+
+.hot__offers__section__content__card:hover
+  .hot__offers__section__content__card__info__heading {
+  color: white;
+}
+.hot__offers__section__content__card:hover
+  .hot__offers__section__content__card__info__content {
+  color: white;
+}
+.hot__offers__section__content__filters {
+  margin: 2em 0em;
+  display: flex;
+  align-items: center;
+}
+.hot__offers__section__content__filters input {
+  height: 45px;
+  padding: 0em 1em;
+  margin-right: 1em;
+  outline: none;
+  border: 1px solid #020202;
+  width: 100%;
+  max-width: 400px;
+}
+.hot__offers__section__content__filters button {
+  height: 45px;
+  padding: 0em 2em;
+  background-color: #189366;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hot__offers__section__content__filters button:hover {
+  transition: 300ms ease-in-out;
+  background-color: #021015;
+}
+.hot__offers__section__content__entry {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  word-break: break-all;
+  border-top: 1px solid #020202;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.hot__offers__section__content__entry__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hot__offers__section__content__entry__left__heading {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  color: #189366;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hot__offers__section__content__entry__left__date {
+  font-size: 14px;
+  color: #242424;
+}
+.hot__offers__section__content__entry__middle__heading {
+  font-size: 14px;
+  margin-bottom: 0.5em;
+  color: #242424;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hot__offers__section__content__entry__middle__description {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.hot__offers__section__content__entry__middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+  margin: 0em 1em;
+}
+.hot__offers__section__content__entry__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hot__offers__section__content__entry__right button {
+  background-color: white;
+  border: 1px solid #189366;
+  padding: 0.7em 2em;
+  cursor: pointer;
+}
+.hot__offers__section__content__entry__right button:hover {
+  transition: 300ms ease-in-out;
+  background-color: #189366;
+  color: white;
+}
+.apply__popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apply__popup__form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #189366;
+  padding: 2em;
+  border-radius: 10px;
+  position: relative;
+}
+.apply__popup__close {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  color: #00040e;
+  cursor: pointer;
+  padding: 0em;
+  background-color: transparent;
+  border: none;
+}
+.apply__popup__close:hover {
+  color: #fd2424;
+}
+.apply__popup__form__heading {
+  font-size: 20px;
+  color: #189366;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.apply__popup__form__label {
+  font-size: 13px;
+  margin-top: -1em;
+  margin-bottom: 0.7em;
+}
+.apply__popup__form__button {
+  height: 40px;
+  background: linear-gradient(90deg, #316656, #62cbac);
+  border-radius: 50px;
+  margin-top: 2em;
+  color: white;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.apply__popup__form__button:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
 @media (max-width: 1300px) {
   .work__section__content__project__image {
     width: 700px;
@@ -1472,6 +1723,26 @@ body {
   }
   .pricing__feature__entry {
     width: 95%;
+  }
+  .hot__offers__section__content__filters {
+    flex-direction: column;
+  }
+  .hot__offers__section__content__filters input {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-right: 0em;
+  }
+  .hot__offers__section__content__filters button {
+    width: 100%;
+    max-width: 400px;
+  }
+  .hot__offers__section__content__entry {
+    flex-direction: column;
+  }
+  .hot__offers__section__content__entry__middle {
+    min-width: 100%;
+    margin: 1em 0em;
   }
 }
 @media (max-width: 600px) {

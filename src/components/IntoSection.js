@@ -6,37 +6,12 @@ import Loader from "./Loader";
 
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
-  const [slidesPerPage, setSlidesPerPage] = useState(5);
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}api/v1/get_service`)
       .then((res) => {
         setServicesData(res.data);
       });
-    if (window.innerWidth <= 500) {
-      setSlidesPerPage(1);
-    } else if (window.innerWidth <= 650) {
-      setSlidesPerPage(2);
-    } else if (window.innerWidth <= 850) {
-      setSlidesPerPage(3);
-    } else if (window.innerWidth <= 1150) {
-      setSlidesPerPage(4);
-    } else {
-      setSlidesPerPage(5);
-    }
-    window.addEventListener("resize", () => {
-      if (window.innerWidth <= 500) {
-        setSlidesPerPage(1);
-      } else if (window.innerWidth <= 650) {
-        setSlidesPerPage(2);
-      } else if (window.innerWidth <= 850) {
-        setSlidesPerPage(3);
-      } else if (window.innerWidth <= 1150) {
-        setSlidesPerPage(4);
-      } else {
-        setSlidesPerPage(5);
-      }
-    });
   }, []);
   return (
     <>
@@ -88,6 +63,7 @@ export default function IntoSection() {
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }, 300);
                   }}
+                  key={JSON.stringify(item)}
                   to="/service-details"
                   className="into__section__wrapper__content__service__card"
                 >

@@ -15,6 +15,7 @@ import Pricing from "./screens/Pricing";
 import AboutUs from "./screens/AboutUs";
 import Blogs from "./screens/Blogs";
 import BlogDetails from "./screens/BlogDetails";
+import Careers from "./screens/Careers";
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
@@ -43,6 +44,7 @@ export default function App() {
           element={<ContactUs setIsDark={setIsDark} />}
         />
         <Route path="/about-us" element={<AboutUs setIsDark={setIsDark} />} />
+        <Route path="/careers" element={<Careers setIsDark={setIsDark} />} />
       </Routes>
       <Footer />
     </>

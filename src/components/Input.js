@@ -9,6 +9,7 @@ export default function Input({
   required,
   errorMessage,
   isError,
+  disabled,
 }) {
   if (variant === "textarea") {
     return (
@@ -41,6 +42,7 @@ export default function Input({
     return (
       <div className="contact__section__content__middle__input">
         <label
+          style={value !== "" ? { display: "flex" } : null}
           htmlFor={placeholder}
           className="contact__section__content__middle__input__label"
         >
@@ -62,6 +64,7 @@ export default function Input({
           onChange={onChange}
           value={value}
           required={required}
+          disabled={disabled}
         />
       </div>
     );
