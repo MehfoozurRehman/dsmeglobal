@@ -38,7 +38,11 @@ export default function Pricing({ setIsDark }) {
       <div style={{ maxHeight: "100vh", overflow: "hidden" }}>
         <HomeSectionCarouselEntry
           subHeading="WE FIND"
-          heading="OUR UNIQUE WAY"
+          heading={
+            <>
+              OUR <span>UNIQUE</span> WAY
+            </>
+          }
           buttonLabel="Lean more"
           videoSrc={pricing}
           toPath="/"

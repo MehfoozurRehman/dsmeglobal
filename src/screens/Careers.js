@@ -4,9 +4,10 @@ import pricing from "../assets/pricing.mp4";
 import ContactSection from "../components/ContactSection";
 import { Swiper, SwiperSlide } from "swiper/react";
 import axios from "axios";
-import { getText } from "../utils/functions";
 import VacencyCard from "../components/VacencyCard";
 import ApplyForJobPopup from "../components/ApplyForJobPopup";
+import HotOfferJobCard from "../components/HotOfferJobCard";
+import Loader from "../components/Loader";
 
 export default function Careers({ setIsDark }) {
   const [careersData, setCareersData] = useState([]);
@@ -74,50 +75,25 @@ export default function Careers({ setIsDark }) {
           }}
         />
       </div>
-
       <section id="job__section" className="hot__offers__section">
         <div className="hot__offers__section__header">Hot offer</div>
         <div className="hot__offers__section__content">
           <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
-            {careersData.map((item) => (
-              <SwiperSlide>
-                <button className="hot__offers__section__content__card">
-                  <div className="hot__offers__section__content__card__title">
-                    {item.position}
-                  </div>
-                  <div className="hot__offers__section__content__card__info">
-                    <div className="hot__offers__section__content__card__info__heading">
-                      Description
-                    </div>
-                    <div className="hot__offers__section__content__card__info__content">
-                      {item.description.substring("", 100)}
-                    </div>
-                    <div className="hot__offers__section__content__card__info__heading">
-                      Requirements
-                    </div>
-                    <div className="hot__offers__section__content__card__info__content">
-                      {getText(item.requirements).substring("", 200)}
-                    </div>
-                  </div>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-arrow-right"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </button>
-              </SwiperSlide>
-            ))}
+            {careersData.length === 0 ? (
+              <Loader />
+            ) : (
+              careersData.map((item) => (
+                <SwiperSlide>
+                  <HotOfferJobCard
+                    item={item}
+                    onApply={(e) => {
+                      setIsApplyOpen(true);
+                      setSelectedItem(item);
+                    }}
+                  />
+                </SwiperSlide>
+              ))
+            )}
           </Swiper>
         </div>
       </section>
@@ -150,22 +126,26 @@ export default function Careers({ setIsDark }) {
               }}
             />
           </div>
-          {careersData
-            .filter((item) =>
-              item.position
-                .toLowerCase()
-                .includes(searchQuery.toLocaleLowerCase())
-            )
-            .map((item) => (
-              <VacencyCard
-                item={item}
-                department={department}
-                onApply={(e) => {
-                  setIsApplyOpen(true);
-                  setSelectedItem(item);
-                }}
-              />
-            ))}
+          {careersData.length === 0 ? (
+            <Loader />
+          ) : (
+            careersData
+              .filter((item) =>
+                item.position
+                  .toLowerCase()
+                  .includes(searchQuery.toLocaleLowerCase())
+              )
+              .map((item) => (
+                <VacencyCard
+                  item={item}
+                  department={department}
+                  onApply={(e) => {
+                    setIsApplyOpen(true);
+                    setSelectedItem(item);
+                  }}
+                />
+              ))
+          )}
         </div>
       </div>
       <ContactSection />
