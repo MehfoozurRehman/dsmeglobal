@@ -17,7 +17,7 @@ export default function IntoSection() {
     <>
       <div className="into__section">
         <div className="into__section__wrapper">
-          <div className="into__section__heading">
+          <div className="into__section__heading into__section__heading__reverse">
             WE DELIVER <span>SOLUTIONS</span>
           </div>
           <video
@@ -27,7 +27,7 @@ export default function IntoSection() {
             muted={true}
             loop={true}
           />
-          <Link to="/services" className="button">
+          <Link to="/services" className="button button__special">
             View All Services
           </Link>
         </div>

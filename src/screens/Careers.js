@@ -8,6 +8,7 @@ import VacencyCard from "../components/VacencyCard";
 import ApplyForJobPopup from "../components/ApplyForJobPopup";
 import HotOfferJobCard from "../components/HotOfferJobCard";
 import Loader from "../components/Loader";
+import noData from "../assets/noData.png";
 
 export default function Careers({ setIsDark }) {
   const [careersData, setCareersData] = useState([]);
@@ -17,6 +18,17 @@ export default function Careers({ setIsDark }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [isApplyOpen, setIsApplyOpen] = useState(false);
   const [selectItem, setSelectedItem] = useState([]);
+  const [careerDataFiltered, setCareerDataFiltered] = useState([]);
+  useEffect(() => {
+    setCareerDataFiltered(
+      careersData.filter((item) =>
+        item.position
+          .toLowerCase()
+          .replace(" ", "")
+          .includes(searchQuery.toLocaleLowerCase().replace(" ", ""))
+      )
+    );
+  }, [searchQuery, careersData]);
 
   useEffect(() => {
     setIsDark(false);
@@ -83,7 +95,7 @@ export default function Careers({ setIsDark }) {
               <Loader />
             ) : (
               careersData.map((item) => (
-                <SwiperSlide>
+                <SwiperSlide key={JSON.stringify(item)}>
                   <HotOfferJobCard
                     item={item}
                     onApply={(e) => {
@@ -115,7 +127,7 @@ export default function Careers({ setIsDark }) {
             />
             <datalist id="departments">
               {categoryList.map((category) => (
-                <option value={category.name} />
+                <option key={JSON.stringify(category)} value={category.name} />
               ))}
             </datalist>
             <input
@@ -128,23 +140,31 @@ export default function Careers({ setIsDark }) {
           </div>
           {careersData.length === 0 ? (
             <Loader />
+          ) : careerDataFiltered.length === 0 ? (
+            <div
+              style={{
+                width: "100%",
+                height: "400px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img src={noData} alt="nodata image" style={{ width: 400 }} />
+            </div>
           ) : (
-            careersData
-              .filter((item) =>
-                item.position
-                  .toLowerCase()
-                  .includes(searchQuery.toLocaleLowerCase())
-              )
-              .map((item) => (
-                <VacencyCard
-                  item={item}
-                  department={department}
-                  onApply={(e) => {
-                    setIsApplyOpen(true);
-                    setSelectedItem(item);
-                  }}
-                />
-              ))
+            careerDataFiltered.map((item, i) => (
+              <VacencyCard
+                item={item}
+                key={JSON.stringify(item)}
+                noOfItems={i}
+                department={department}
+                onApply={(e) => {
+                  setIsApplyOpen(true);
+                  setSelectedItem(item);
+                }}
+              />
+            ))
           )}
         </div>
       </div>

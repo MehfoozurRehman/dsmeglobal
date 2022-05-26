@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import plane from "../assets/plane.mov";
 import cross from "../assets/cross.mp4";
 import mobile from "../assets/mobile.mp4";
+import woman from "../assets/woman.mp4";
 import mobileApplicationSvg from "../assets/mobileApplicationSvg.svg";
 import webApplicationSvg from "../assets/webApplicationSvg.svg";
 import utilitySvg from "../assets/utilitySvg.svg";
@@ -52,6 +53,20 @@ export default function Home({ setIsDark }) {
   ];
   const HomeSectionCarouselEntryArray = [
     {
+      videoSrc: mobile,
+      subHeading: "WE PREFER",
+      heading: "You Over Anything",
+      buttonLabel: "View Our Work",
+      toPath: "/portfolio",
+    },
+    {
+      videoSrc: woman,
+      subHeading: "WE PREFER",
+      heading: "You Over Anything",
+      buttonLabel: "View Our Work",
+      toPath: "/portfolio",
+    },
+    {
       videoSrc: plane,
       subHeading: "WE FIND",
       heading: "OUR UNIQUE WAY",
@@ -63,13 +78,6 @@ export default function Home({ setIsDark }) {
       subHeading: "WE THINK",
       heading: "OUT OF THE BOX",
       isRight: true,
-      buttonLabel: "View Our Work",
-      toPath: "/portfolio",
-    },
-    {
-      videoSrc: mobile,
-      subHeading: "WE PREFER",
-      heading: "You Over Anything",
       buttonLabel: "View Our Work",
       toPath: "/portfolio",
     },

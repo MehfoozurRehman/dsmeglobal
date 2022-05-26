@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
+import aboutVideo from "../assets/about.mp4";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 
 export default function AboutUs({ setIsDark }) {
@@ -10,7 +11,7 @@ export default function AboutUs({ setIsDark }) {
   return (
     <>
       <div style={{ height: "100vh", overflow: "hidden" }}>
-        <HomeSectionCarouselEntry noBtn={true} />
+        <HomeSectionCarouselEntry videoSrc={aboutVideo} noBtn={true} />
       </div>
       <div className="our__mission__section__about__us">
         <div className="our__mission__section__about__us__content">
