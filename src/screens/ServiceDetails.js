@@ -67,7 +67,7 @@ export default function ServiceDetails({ setIsDark }) {
           <div className="service__details__jumbotron__left">
             <img
               src={
-                "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                 serviceData.image
               }
               alt="serviceDetailsImg"

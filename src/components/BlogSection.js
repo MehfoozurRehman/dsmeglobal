@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Loader from "./Loader";
 import { getText } from "../utils/functions";
+import { Fade, LightSpeed } from "react-reveal";
 
 export default function BlogSection() {
   const navigate = useNavigate();
@@ -18,8 +19,10 @@ export default function BlogSection() {
     <div className="into__section">
       <div className="into__section__wrapper">
         <div className="into__section__heading">
-          Our
-          <span>Blogs</span>
+          <LightSpeed>
+            Our
+            <span>Blogs</span>
+          </LightSpeed>
         </div>
         <div
           className="into__section__wrapper__content"
@@ -47,20 +50,26 @@ export default function BlogSection() {
                 key={JSON.stringify(blog)}
                 className="blog__card"
               >
-                <img
-                  src={
-                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                    blog.image
-                  }
-                  alt=""
-                  className="blog__card__img"
-                />
+                <Fade>
+                  <img
+                    src={
+                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                      blog.image
+                    }
+                    alt={blog.title}
+                    className="blog__card__img"
+                  />
+                </Fade>
                 <div className="blog__card__content">
-                  <div className="blog__card__content__title">{blog.title}</div>
+                  <div className="blog__card__content__title">
+                    <LightSpeed>{blog.title}</LightSpeed>
+                  </div>
                   <div className="blog__card__content__info">
-                    {getText(blog.content).length < 100
-                      ? getText(blog.content)
-                      : getText(blog.content).substring(0, 100) + "..."}
+                    <Fade>
+                      {getText(blog.content).length < 100
+                        ? getText(blog.content)
+                        : getText(blog.content).substring(0, 100) + "..."}
+                    </Fade>
                   </div>
                 </div>
               </button>

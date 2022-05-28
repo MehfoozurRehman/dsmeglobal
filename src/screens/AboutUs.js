@@ -13,7 +13,10 @@ export default function AboutUs({ setIsDark }) {
       <div style={{ height: "100vh", overflow: "hidden" }}>
         <HomeSectionCarouselEntry videoSrc={aboutVideo} noBtn={true} />
       </div>
-      <div className="our__mission__section__about__us">
+      <div
+        className="our__mission__section__about__us"
+        style={{ overflow: "hidden" }}
+      >
         <div className="our__mission__section__about__us__content">
           <div className="our__mission__section__about__us__content__left">
             <div className="feature__section__entry__content__jumbotron__sub__heading">
@@ -38,7 +41,10 @@ export default function AboutUs({ setIsDark }) {
           />
         </div>
       </div>
-      <div className="our__vision__section__about__us">
+      <div
+        className="our__vision__section__about__us"
+        style={{ overflow: "hidden" }}
+      >
         <div className="our__vision__section__about__us__content">
           <div className="our__vision__section__about__us__content__right">
             <img

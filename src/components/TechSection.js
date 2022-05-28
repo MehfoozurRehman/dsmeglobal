@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import axios from "axios";
 import Loader from "./Loader";
+import { Fade } from "react-reveal";
 
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
@@ -60,16 +61,18 @@ export default function IntoSection() {
               >
                 {servicesData.map((item) => (
                   <SwiperSlide key={JSON.stringify(item)}>
-                    <div className="techonologies__card">
-                      <img
-                        src={
-                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                          item.image
-                        }
-                        alt={item.title}
-                        className="techonologies__card__img"
-                      />
-                    </div>
+                    <Fade>
+                      <div className="techonologies__card">
+                        <img
+                          src={
+                            "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                            item.image
+                          }
+                          alt={item.title}
+                          className="techonologies__card__img"
+                        />
+                      </div>
+                    </Fade>
                   </SwiperSlide>
                 ))}
               </Swiper>

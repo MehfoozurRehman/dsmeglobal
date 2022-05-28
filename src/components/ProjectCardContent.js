@@ -10,7 +10,10 @@ export default function ProjectCardContent({
   return (
     <div className="service__details__projects__entry animate__animated animate__zoomIn">
       <img
-        src={"https://res.cloudinary.com/mehfoozurrehman/image/upload/" + image}
+        src={
+          "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+          image
+        }
         alt="projectImg"
         className="service__details__projects__entry__img"
       />
@@ -28,7 +31,7 @@ export default function ProjectCardContent({
               setShowImage(true);
               setShowImageData({
                 image:
-                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                   image,
                 title: title,
               });

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "./Loader";
+import { Fade, LightSpeed, Zoom } from "react-reveal";
 
 export default function WorkSection({}) {
   const [project, setProject] = useState([]);
@@ -26,10 +27,10 @@ export default function WorkSection({}) {
             <div className="work__section__header__bar"></div>
             <div className="work__section__header__content">
               <div className="work__section__header__content__sub__heading">
-                Checkout
+                <LightSpeed>Checkout</LightSpeed>
               </div>
               <div className="work__section__header__content__heading">
-                Our Work
+                <LightSpeed>Our Work</LightSpeed>
               </div>
             </div>
             <div className="work__section__header__bar"></div>
@@ -70,26 +71,28 @@ export default function WorkSection({}) {
           <div className="work__section__content">
             <div className="work__section__content__project">
               <div className="work__section__content__project__image__wrapper">
-                <img
-                  src={
-                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                    project.image
-                  }
-                  alt={project.title}
-                  className="work__section__content__project__image"
-                />
+                <Zoom>
+                  <img
+                    src={
+                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                      project.image
+                    }
+                    alt={project.title}
+                    className="work__section__content__project__image"
+                  />
+                </Zoom>
               </div>
               <div className="work__section__content__project__about">
                 <div className="work__section__content__project__about__heading">
                   <div className="work__section__content__project__about__heading__top">
-                    {project.company}
+                    <LightSpeed>{project.company}</LightSpeed>
                   </div>
                   <div className="work__section__content__project__about__heading__bottom">
-                    {project.title}
+                    <LightSpeed>{project.title}</LightSpeed>
                   </div>
                 </div>
                 <div className="work__section__content__project__about__info">
-                  {project.description}
+                  <Fade>{project.description}</Fade>
                 </div>
               </div>
             </div>
@@ -109,14 +112,16 @@ export default function WorkSection({}) {
                       }}
                       defaultChecked={i === 0 ? true : false}
                     />
-                    <img
-                      src={
-                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                        item.logo
-                      }
-                      alt={item.title}
-                      className="work__section__content__selection__entry__img"
-                    />
+                    <Zoom>
+                      <img
+                        src={
+                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                          item.logo
+                        }
+                        alt={item.title}
+                        className="work__section__content__selection__entry__img"
+                      />
+                    </Zoom>
                   </div>
                 );
               })}

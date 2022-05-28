@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import cycle from "../assets/cycle.mp4";
 import axios from "axios";
 import Loader from "./Loader";
+import { LightSpeed, Roll, Zoom } from "react-reveal";
 
 export default function IntoSection() {
   const [servicesData, setServicesData] = useState([]);
@@ -18,7 +19,9 @@ export default function IntoSection() {
       <div className="into__section">
         <div className="into__section__wrapper">
           <div className="into__section__heading into__section__heading__reverse">
-            WE DELIVER <span>SOLUTIONS</span>
+            <LightSpeed>
+              WE DELIVER <span>SOLUTIONS</span>
+            </LightSpeed>
           </div>
           <video
             src={cycle}
@@ -28,15 +31,17 @@ export default function IntoSection() {
             loop={true}
           />
           <Link to="/services" className="button button__special">
-            View All Services
+            <LightSpeed>View All Services</LightSpeed>
           </Link>
         </div>
       </div>
       <div className="into__section">
         <div className="into__section__wrapper">
           <div className="into__section__heading">
-            We provide
-            <span>SERVICES</span>
+            <LightSpeed>
+              We provide
+              <span>SERVICES</span>
+            </LightSpeed>
           </div>
           <div
             className="into__section__wrapper__content"
@@ -67,16 +72,18 @@ export default function IntoSection() {
                   to="/service-details"
                   className="into__section__wrapper__content__service__card"
                 >
-                  <img
-                    src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                      item.logo
-                    }
-                    alt={item.title}
-                    className="into__section__wrapper__content__service__card__img"
-                  />
+                  <Zoom>
+                    <img
+                      src={
+                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                        item.logo
+                      }
+                      alt={item.title}
+                      className="into__section__wrapper__content__service__card__img"
+                    />
+                  </Zoom>
                   <div className="into__section__wrapper__content__service__card__text">
-                    {item.title}
+                    <LightSpeed>{item.title}</LightSpeed>
                   </div>
                 </Link>
               ))

@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import { getText, parseDate } from "../utils/functions";
+import { parseDate } from "../utils/functions";
 
 export default function BlogDetails({ setIsDark }) {
   useEffect(() => {
     setIsDark(false);
   }, []);
   let blogData = JSON.parse(window.localStorage.getItem("blogsData"));
+  console.log(blogData.content);
 
   return (
     <>
@@ -77,9 +78,8 @@ export default function BlogDetails({ setIsDark }) {
         <div
           className="service__details__jumbotron__right__info"
           style={{ width: "100%" }}
-        >
-          {getText(blogData.content)}
-        </div>
+          dangerouslySetInnerHTML={{ __html: blogData.content }}
+        ></div>
       </div>
     </>
   );

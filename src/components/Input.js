@@ -42,7 +42,6 @@ export default function Input({
     return (
       <div className="contact__section__content__middle__input">
         <label
-          style={value !== "" ? { display: "flex" } : null}
           htmlFor={placeholder}
           className="contact__section__content__middle__input__label"
         >
