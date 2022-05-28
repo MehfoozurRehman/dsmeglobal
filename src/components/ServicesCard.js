@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade, Zoom } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export default function ServicesCard({ data }) {
@@ -11,16 +12,18 @@ export default function ServicesCard({ data }) {
       className="services__main__container__content__wrapper__card"
     >
       <div className="services__main__container__content__wrapper__card__svg__container">
-        <img
-          src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            data.logo
-          }
-          alt="services__main__container__content__wrapper__card__svg"
-          className="services__main__container__content__wrapper__card__svg"
-        />
+        <Zoom>
+          <img
+            src={
+              "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+              data.logo
+            }
+            alt="services__main__container__content__wrapper__card__svg"
+            className="services__main__container__content__wrapper__card__svg"
+          />
+        </Zoom>
       </div>
-      {data.title}
+      <Fade>{data.title}</Fade>
     </Link>
   );
 }

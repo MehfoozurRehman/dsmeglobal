@@ -3,7 +3,7 @@ import contactImg from "../assets/contactImg.png";
 import Input from "./Input";
 import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
 import axios from "axios";
-import { Fade, LightSpeed, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export default function ContactSection() {
   const [name, setName] = useState("");
@@ -27,42 +27,42 @@ export default function ContactSection() {
         <div className="contact__section__content">
           <div className="contact__section__content__left">
             <div className="contact__section__content__left__header">
-              <LightSpeed>
+              <Fade>
                 CONTACT <span>Information</span>
-              </LightSpeed>
+              </Fade>
             </div>
             <div className="contact__section__content__left__content">
               <div className="contact__section__content__left__content__entry">
                 <div className="contact__section__content__left__content__entry__heading">
-                  <LightSpeed>Phone</LightSpeed>
+                  <Fade>Phone</Fade>
                 </div>
                 <div className="contact__section__content__left__content__entry__content">
-                  <LightSpeed>354 454 5344 343</LightSpeed>
+                  <Fade>354 454 5344 343</Fade>
                 </div>
                 <div className="contact__section__content__left__content__entry__content">
-                  <LightSpeed>354 454 5344 343</LightSpeed>
+                  <Fade>354 454 5344 343</Fade>
                 </div>
               </div>
               <div className="contact__section__content__left__content__entry">
                 <div className="contact__section__content__left__content__entry__heading">
-                  <LightSpeed>Email</LightSpeed>
+                  <Fade>Email</Fade>
                 </div>
                 <div className="contact__section__content__left__content__entry__content">
-                  <LightSpeed>hello@J7.com</LightSpeed>
+                  <Fade>hello@J7.com</Fade>
                 </div>
                 <div className="contact__section__content__left__content__entry__content">
-                  <LightSpeed>hello@J7Group.com</LightSpeed>
+                  <Fade>hello@J7Group.com</Fade>
                 </div>
               </div>
               <div className="contact__section__content__left__content__entry">
                 <div className="contact__section__content__left__content__entry__heading">
-                  <LightSpeed>Head Office</LightSpeed>
+                  <Fade>Head Office</Fade>
                 </div>
                 <div className="contact__section__content__left__content__entry__content">
-                  <LightSpeed>1st floor, DHA - Z Block,</LightSpeed>
+                  <Fade>1st floor, DHA - Z Block,</Fade>
                 </div>
                 <div className="contact__section__content__left__content__entry__content">
-                  <LightSpeed>Plot # 33, Lahore, 54000, Pakistan</LightSpeed>
+                  <Fade>Plot # 33, Lahore, 54000, Pakistan</Fade>
                 </div>
               </div>
             </div>

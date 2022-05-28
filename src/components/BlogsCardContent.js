@@ -14,7 +14,7 @@ export default function BlogsCardContent({ data }) {
         navigate("/blog-details");
         window.localStorage.setItem("blogsData", JSON.stringify(data));
       }}
-      className="blog__card"
+      className="blog__card  animate__animated animate__zoomIn"
     >
       <img
         src={

@@ -4,6 +4,7 @@ import deliveryPic from "../assets/delivery.png";
 import pricing from "../assets/pricing.mp4";
 import ContactSection from "../components/ContactSection";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
+import { Fade } from "react-reveal";
 
 export default function Pricing({ setIsDark }) {
   useEffect(() => {
@@ -50,7 +51,9 @@ export default function Pricing({ setIsDark }) {
       </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
-          We <span>Provide</span> You
+          <Fade>
+            We <span>Provide</span> You
+          </Fade>
         </div>
         <PricingFeatureEntry
           title="Discovery Workshop"
@@ -76,53 +79,62 @@ export default function Pricing({ setIsDark }) {
       <div className="pricing__delivery__section">
         <div className="pricing__delivery__section__content__wrapper">
           <div className="pricing__delivery__section__heading">
-            Process <span>From Idea Creation to Product Delivery</span>
+            <Fade>
+              Process <span>From Idea Creation to Product Delivery</span>
+            </Fade>
           </div>
           <img
             src={deliveryPic}
             alt="deliveryPic"
             className="pricing__delivery__section__img"
           />
+
           <div className="pricing__delivery__section__content">
-            <div className="pricing__delivery__section__content__card">
-              <div className="pricing__delivery__section__content__card__heading">
-                Discovery
-              </div>
-              {DeliveryCardEntry1.map((item) => (
-                <div
-                  className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
-                  {item.para}
+            <Fade>
+              <div className="pricing__delivery__section__content__card">
+                <div className="pricing__delivery__section__content__card__heading">
+                  Discovery
                 </div>
-              ))}
-            </div>
-            <div className="pricing__delivery__section__content__card">
-              <div className="pricing__delivery__section__content__card__heading">
-                Execution
+                {DeliveryCardEntry1.map((item) => (
+                  <div
+                    className="pricing__delivery__section__content__card__para"
+                    key={JSON.stringify(item)}
+                  >
+                    {item.para}
+                  </div>
+                ))}
               </div>
-              {DeliveryCardEntry2.map((item) => (
-                <div
-                  className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
-                  {item.para}
+            </Fade>
+            <Fade>
+              <div className="pricing__delivery__section__content__card">
+                <div className="pricing__delivery__section__content__card__heading">
+                  Execution
                 </div>
-              ))}
-            </div>
-            <div className="pricing__delivery__section__content__card">
-              <div className="pricing__delivery__section__content__card__heading">
-                Support
+                {DeliveryCardEntry2.map((item) => (
+                  <div
+                    className="pricing__delivery__section__content__card__para"
+                    key={JSON.stringify(item)}
+                  >
+                    {item.para}
+                  </div>
+                ))}
               </div>
-              {DeliveryCardEntry3.map((item) => (
-                <div
-                  className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
-                  {item.para}
+            </Fade>
+            <Fade>
+              <div className="pricing__delivery__section__content__card">
+                <div className="pricing__delivery__section__content__card__heading">
+                  Support
                 </div>
-              ))}
-            </div>
+                {DeliveryCardEntry3.map((item) => (
+                  <div
+                    className="pricing__delivery__section__content__card__para"
+                    key={JSON.stringify(item)}
+                  >
+                    {item.para}
+                  </div>
+                ))}
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

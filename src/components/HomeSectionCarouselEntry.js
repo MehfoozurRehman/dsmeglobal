@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import video from "../assets/video.mp4";
-import LightSpeed from "react-reveal/LightSpeed";
+import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 export default function HomeSectionCarouselEntry({
@@ -36,16 +36,16 @@ export default function HomeSectionCarouselEntry({
               : "home__section__carousel__entry__overlay__content"
           }
         >
-          <LightSpeed>
+          <Fade>
             <div className="home__section__carousel__entry__overlay__content__sub__heading">
               {subHeading}
             </div>
-          </LightSpeed>
-          <LightSpeed>
+          </Fade>
+          <Fade>
             <div className="home__section__carousel__entry__overlay__content__heading">
               {heading}
             </div>
-          </LightSpeed>
+          </Fade>
           {noBtn ? null : (
             <Link
               to={toPath ? toPath : "/"}

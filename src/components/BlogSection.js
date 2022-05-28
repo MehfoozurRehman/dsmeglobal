@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Loader from "./Loader";
 import { getText } from "../utils/functions";
-import { Fade, LightSpeed } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export default function BlogSection() {
   const navigate = useNavigate();
@@ -19,10 +19,10 @@ export default function BlogSection() {
     <div className="into__section">
       <div className="into__section__wrapper">
         <div className="into__section__heading">
-          <LightSpeed>
+          <Fade>
             Our
             <span>Blogs</span>
-          </LightSpeed>
+          </Fade>
         </div>
         <div
           className="into__section__wrapper__content"
@@ -62,7 +62,7 @@ export default function BlogSection() {
                 </Fade>
                 <div className="blog__card__content">
                   <div className="blog__card__content__title">
-                    <LightSpeed>{blog.title}</LightSpeed>
+                    <Fade>{blog.title}</Fade>
                   </div>
                   <div className="blog__card__content__info">
                     <Fade>

@@ -1,5 +1,5 @@
 import React from "react";
-import { LightSpeed, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export default function FeatureSectionCarouselEntry({
@@ -19,7 +19,7 @@ export default function FeatureSectionCarouselEntry({
               <Zoom>{subHeading}</Zoom>
             </div>
             <div className="feature__section__entry__content__jumbotron__heading">
-              <LightSpeed>{heading}</LightSpeed>
+              <Fade>{heading}</Fade>
             </div>
             <Link to={toPath ? toPath : "/"} className="button__reverse">
               <Zoom>{buttonLabel}</Zoom>
@@ -49,7 +49,7 @@ export default function FeatureSectionCarouselEntry({
                 />
               </Zoom>
               <span style={{ marginTop: 20 }}>
-                <LightSpeed>{feature.title}</LightSpeed>
+                <Fade>{feature.title}</Fade>
               </span>
             </div>
           ))}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "./Loader";
-import { Fade, LightSpeed, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 export default function WorkSection({}) {
   const [project, setProject] = useState([]);
@@ -27,10 +27,10 @@ export default function WorkSection({}) {
             <div className="work__section__header__bar"></div>
             <div className="work__section__header__content">
               <div className="work__section__header__content__sub__heading">
-                <LightSpeed>Checkout</LightSpeed>
+                <Fade>Checkout</Fade>
               </div>
               <div className="work__section__header__content__heading">
-                <LightSpeed>Our Work</LightSpeed>
+                <Fade>Our Work</Fade>
               </div>
             </div>
             <div className="work__section__header__bar"></div>
@@ -85,10 +85,10 @@ export default function WorkSection({}) {
               <div className="work__section__content__project__about">
                 <div className="work__section__content__project__about__heading">
                   <div className="work__section__content__project__about__heading__top">
-                    <LightSpeed>{project.company}</LightSpeed>
+                    <Fade>{project.company}</Fade>
                   </div>
                   <div className="work__section__content__project__about__heading__bottom">
-                    <LightSpeed>{project.title}</LightSpeed>
+                    <Fade>{project.title}</Fade>
                   </div>
                 </div>
                 <div className="work__section__content__project__about__info">

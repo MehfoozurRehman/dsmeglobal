@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import plane from "../assets/plane.mov";
+import plane from "../assets/plane.mp4";
 import cross from "../assets/cross.mp4";
 import mobile from "../assets/mobile.mp4";
 import woman from "../assets/woman.mp4";
