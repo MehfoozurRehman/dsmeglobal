@@ -1,42 +1,50 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import React, { useEffect, useState } from "react";
+import { HomeJumbotron } from "./HomeJumbotron";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import axios from "axios";
 
 export default function Home() {
   return (
     <div className="container">
-      <div className="container__jumbotron">
-        <div className="container__jumbotron__left">
-          <div className="container__jumbotron__left__heading">
-            Quality Services you Really want
-          </div>
-          <div className="container__jumbotron__left__info">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
-            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
-            quibusdam ad?
-          </div>
-          <div className="container__jumbotron__left__button">
-            <button
-              onClick={() => {
-                document.getElementById("about__section");
-              }}
-              className="container__jumbotron__left__button__secondary"
-            >
-              Learn more
-            </button>
-            <Link
-              to="/portfolio"
-              className="container__jumbotron__left__button__primary"
-            >
-              Our Work
-            </Link>
-          </div>
+      <HomeJumbotron />
+      <ClientsSection />
+      <HomeJumbotron />
+    </div>
+  );
+}
+
+function ClientsSection({}) {
+  const [clientsData, setClientsData] = useState([]);
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_work`).then((res) => {
+      setClientsData(res.data);
+    });
+  }, []);
+  return (
+    <div className="container__clients">
+      <div className="container__clients__left">
+        <div className="container__clients__left__heading">Our Clients</div>
+        <div className="container__clients__left__info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nostrum.
         </div>
-        <div className="container__jumbotron__right">
-          <img src={bannerImage1} alt="" />
-        </div>
+      </div>
+      <div className="container__clients__right">
+        <Swiper slidesPerView={4}>
+          {clientsData.map((client) => (
+            <SwiperSlide key={JSON.stringify(client)}>
+              <div className="container__clients__right__entry">
+                <img
+                  src={
+                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                    client.logo
+                  }
+                  alt={client.title}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

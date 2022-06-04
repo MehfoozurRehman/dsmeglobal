@@ -13,7 +13,7 @@ export function BackgroundParticals({ particlesInit, particlesLoaded }) {
             value: "transparent",
           },
         },
-        fpsLimit: 30,
+        fpsLimit: 12,
         interactivity: {
           events: {
             onClick: {
