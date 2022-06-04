@@ -17,7 +17,7 @@ body {
   top: 0px;
   width: 100%;
   background-color: white;
-  z-index: 999;
+  z-index: 9999;
 }
 .header__content {
   display: flex;
@@ -108,7 +108,7 @@ body {
   background-color: #0d6e4b;
 }
 .container {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -140,7 +140,7 @@ body {
 .container__jumbotron__left__info {
   font-size: 16px;
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   margin: 1em 0em;
 }
 .container__jumbotron__left__button {
@@ -188,8 +188,7 @@ body {
   margin: 0em auto;
 }
 .container__clients__left {
-  min-width: 350px;
-  margin-right: 2em;
+  width: 30%;
 }
 .container__clients__left__heading {
   font-size: 30px;
@@ -200,7 +199,7 @@ body {
   font-size: 15px;
 }
 .container__clients__right {
-  width: calc(100% - 350px - 2em);
+  width: 75%;
   display: flex;
   align-items: center;
 }
@@ -213,6 +212,36 @@ body {
 .container__clients__right__entry img {
   width: 70%;
 }
+@media (max-width: 1200px) {
+  .container__clients__left {
+    width: 20%;
+  }
+  .container__clients__right {
+    width: 80%;
+  }
+}
+@media (max-width: 1100px) {
+  .container__clients {
+    flex-direction: column;
+  }
+  .container__clients__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .container__clients__left__heading {
+    text-align: center;
+  }
+  .container__clients__left__info {
+    text-align: center;
+  }
+  .container__clients__right {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1000px) {
   .header__content__button__secondary {
     display: flex;
