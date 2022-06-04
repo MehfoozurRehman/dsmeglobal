@@ -16,12 +16,29 @@ import AboutUs from "./screens/AboutUs";
 import Blogs from "./screens/Blogs";
 import BlogDetails from "./screens/BlogDetails";
 import Careers from "./screens/Careers";
+import { loadFull } from "tsparticles";
+import { BackgroundParticals } from "./BackgroundParticals";
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
+  const particlesInit = async (main) => {
+    console.log(main);
 
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
   return (
     <>
+      <BackgroundParticals
+        particlesInit={particlesInit}
+        particlesLoaded={particlesLoaded}
+      />
       <Header isDark={isDark} />
       <Routes>
         <Route path="/" element={<Home setIsDark={setIsDark} />} />

@@ -99,15 +99,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1600px;
-  padding: 0em 2em;
-  margin: 0em auto;
+  z-index: 999;
+  position: sticky;
 }
 .container__jumbotron {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 700px;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0em 2em;
+  margin: 0em auto;
 }
 .container__jumbotron__left {
   flex: 1;
@@ -130,16 +133,18 @@ body {
 .container__jumbotron__left__button {
   display: flex;
   align-items: center;
+  margin-top: 1em;
 }
 .container__jumbotron__left__button__secondary {
   color: white;
   height: 40px;
   padding: 0em 1.5em;
   font-size: 14px;
-  margin-right: 1em;
+  margin-right: 2em;
   background-color: #189366;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 .container__jumbotron__left__button__primary {
   color: #189366;
@@ -151,7 +156,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .container__jumbotron__right img {
   width: 100%;

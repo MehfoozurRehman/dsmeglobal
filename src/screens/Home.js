@@ -17,7 +17,7 @@ export default function Home() {
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?
           </div>
-          <div className="container__jumbotron__button">
+          <div className="container__jumbotron__left__button">
             <button
               onClick={() => {
                 document.getElementById("about__section");
