@@ -19,6 +19,7 @@ import Careers from "./screens/Careers";
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
+
   return (
     <>
       <Header isDark={isDark} />
