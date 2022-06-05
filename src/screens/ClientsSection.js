@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import axios from "axios";
+import { Fade } from "react-reveal";
 
 export function ClientsSection({}) {
   const [clientsData, setClientsData] = useState([]);
@@ -28,9 +29,15 @@ export function ClientsSection({}) {
   return (
     <div className="container__clients">
       <div className="container__clients__left">
-        <div className="container__clients__left__heading">Our Clients</div>
+        <div className="container__clients__left__heading">
+          <Fade>Our Clients</Fade>
+        </div>
         <div className="container__clients__left__info">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nostrum.
+          <Fade>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+            nostrum.
+          </Fade>
         </div>
       </div>
       <div className="container__clients__right">
@@ -38,13 +45,15 @@ export function ClientsSection({}) {
           {clientsData.map((client) => (
             <SwiperSlide key={JSON.stringify(client)}>
               <div className="container__clients__right__entry">
-                <img
-                  src={
-                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                    client.logo
-                  }
-                  alt={client.title}
-                />
+                <Fade>
+                  <img
+                    src={
+                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                      client.logo
+                    }
+                    alt={client.title}
+                  />
+                </Fade>
               </div>
             </SwiperSlide>
           ))}

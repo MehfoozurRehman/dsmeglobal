@@ -425,7 +425,7 @@ body {
 .blog__section__heading {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 .blog__section__content {
   display: flex;
@@ -513,6 +513,20 @@ body {
     width: 80%;
   }
 }
+@media (max-width: 1150px) {
+  .container__services {
+    flex-direction: column;
+  }
+  .container__services__left {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .container__services__right {
+    max-width: 80%;
+  }
+}
 @media (max-width: 1100px) {
   .container__clients {
     flex-direction: column;
@@ -533,6 +547,18 @@ body {
   .container__clients__right {
     width: 100%;
   }
+  .blog__section__content {
+    flex-wrap: wrap;
+  }
+  .blog__card {
+    width: 50%;
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+  .blog__card:nth-child(odd) {
+    margin-right: 2em;
+    width: calc(50% - 2em);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -550,6 +576,7 @@ body {
   }
   .container__jumbotron {
     flex-direction: column;
+    padding-top: 8em;
   }
   .container__jumbotron__left {
     min-height: 400px;
@@ -570,6 +597,46 @@ body {
     height: 500px;
   }
 }
+@media (max-width: 850px) {
+  .container__services__right {
+    max-width: 100%;
+  }
+  .container__newsletter {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 7em;
+  }
+  .container__newsletter__left {
+    width: 100%;
+    margin-bottom: 2em;
+    margin-right: 0em;
+  }
+  .container__newsletter__right__form {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .blog__card {
+    width: 100% !important;
+    margin-right: 0em !important;
+    margin-bottom: 2em !important;
+  }
+}
+@media (max-width: 650px) {
+  .container__services__right {
+    max-width: 100%;
+    margin-top: 4em;
+  }
+  .container__services__right::before {
+    height: 500px;
+    top: calc(50% - 250px);
+  }
+  .container__services__right__entry {
+    width: 80%;
+    margin: 0em !important;
+    margin-bottom: 2em !important;
+  }
+}
 @media (max-width: 500px) {
   .header__content__logo img {
     width: 120px;
@@ -585,11 +652,20 @@ body {
   }
   .container__jumbotron {
     padding: 0em 2em;
+    padding-top: 6em;
   }
   .container__clients {
     padding: 2em;
   }
   .header__content {
     padding: 1.5em 2em;
+  }
+  .blog__section {
+    padding: 2em;
+  }
+}
+@media (max-width: 400px) {
+  .container__services__right__entry {
+    width: 100%;
   }
 }
