@@ -1,7 +1,9 @@
 import React, { useLayoutEffect, useState } from "react";
 import { X, Menu } from "react-feather";
+import { Fade } from "react-reveal";
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.png";
+import OutsideClickHandler from "react-outside-click-handler";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -17,41 +19,58 @@ export default function Header() {
   useLayoutEffect(() => {
     navOpenClose();
     window.addEventListener("resize", navOpenClose);
+    window.addEventListener("scroll", navOpenClose);
   }, []);
 
   return (
     <div className="header">
       <div className="header__content">
         <Link to="/" className="header__content__logo">
-          <img src={logoDark} alt="logo" />
+          <Fade>
+            <img src={logoDark} alt="logo" />
+          </Fade>
         </Link>
-        {isNavOpen ? <Nav navigate={navigate} /> : null}
+        {isNavOpen ? (
+          <OutsideClickHandler
+            onOutsideClick={() => {
+              if (window.innerWidth < 1000) {
+                setIsNavOpen(false);
+              }
+            }}
+          >
+            <Nav navigate={navigate} />
+          </OutsideClickHandler>
+        ) : null}
         <div className="header__content__button">
-          <button
-            className="header__content__button__secondary"
-            onClick={() => {
-              setIsNavOpen(!isNavOpen);
-            }}
-          >
-            {isNavOpen ? (
-              <X size={20} color="currentColor" />
-            ) : (
-              <Menu size={20} color="currentColor" />
-            )}
-          </button>
-          <Link
-            to="/contact-us"
-            onClick={() => {
-              document
-                .getElementsByName("header__content__nav__entry")
-                .forEach((item) => {
-                  item.checked = false;
-                });
-            }}
-            className="header__content__button__primary"
-          >
-            Let's Talk
-          </Link>
+          <Fade>
+            <button
+              className="header__content__button__secondary"
+              onClick={() => {
+                setIsNavOpen(!isNavOpen);
+              }}
+            >
+              {isNavOpen ? (
+                <X size={20} color="currentColor" />
+              ) : (
+                <Menu size={20} color="currentColor" />
+              )}
+            </button>
+          </Fade>
+          <Fade>
+            <Link
+              to="/contact-us"
+              onClick={() => {
+                document
+                  .getElementsByName("header__content__nav__entry")
+                  .forEach((item) => {
+                    item.checked = false;
+                  });
+              }}
+              className="header__content__button__primary"
+            >
+              Let's Talk
+            </Link>
+          </Fade>
         </div>
       </div>
     </div>
@@ -60,18 +79,20 @@ export default function Header() {
 
 function NavLink({ children, to, navigate }) {
   return (
-    <div className="header__content__nav__entry">
-      <input
-        type="radio"
-        name="header__content__nav__entry"
-        className="header__content__nav__entry__input"
-        defaultChecked={window.location.pathname === to}
-        onClick={() => {
-          navigate(to);
-        }}
-      />
-      <div className="header__content__nav__entry__content">{children}</div>
-    </div>
+    <Fade>
+      <div className="header__content__nav__entry">
+        <input
+          type="radio"
+          name="header__content__nav__entry"
+          className="header__content__nav__entry__input"
+          defaultChecked={window.location.pathname === to}
+          onClick={() => {
+            navigate(to);
+          }}
+        />
+        <div className="header__content__nav__entry__content">{children}</div>
+      </div>
+    </Fade>
   );
 }
 
