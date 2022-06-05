@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "swiper/css";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import Loader from "./Loader";
+import { Link, useNavigate } from "react-router-dom";
 import { getText } from "../utils/functions";
 import { Fade } from "react-reveal";
+import axios from "axios";
 
-export default function BlogSection() {
+export function BlogSection() {
   const navigate = useNavigate();
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
@@ -16,26 +14,15 @@ export default function BlogSection() {
   }, []);
 
   return (
-    <div className="into__section">
-      <div className="into__section__wrapper">
-        <div className="into__section__heading">
-          <Fade>
-            Our
-            <span>Blogs</span>
-          </Fade>
-        </div>
-        <div
-          className="into__section__wrapper__content"
-          style={{
-            marginTop: "3em",
-            alignItems: "flex-start",
-            justifyContent: "space-between",
-          }}
-        >
-          {blogData.length === 0 ? (
-            <Loader />
-          ) : (
-            blogData.map((blog) => (
+    <div className="blog__section">
+      <div className="blog__section__heading">
+        <Fade>Our Blogs</Fade>
+      </div>
+      <div className="blog__section__content">
+        {blogData &&
+          blogData
+            .filter((blog, i) => i < 3)
+            .map((blog) => (
               <button
                 onClick={() => {
                   setTimeout(() => {
@@ -61,21 +48,24 @@ export default function BlogSection() {
                   />
                 </Fade>
                 <div className="blog__card__content">
-                  <div className="blog__card__content__title">
+                  <div className="blog__card__content__heading">
                     <Fade>{blog.title}</Fade>
                   </div>
                   <div className="blog__card__content__info">
                     <Fade>
-                      {getText(blog.content).length < 100
+                      {getText(blog.content).length < 260
                         ? getText(blog.content)
-                        : getText(blog.content).substring(0, 100) + "..."}
+                        : getText(blog.content).substring(0, 260) + "..."}
                     </Fade>
                   </div>
                 </div>
               </button>
-            ))
-          )}
-        </div>
+            ))}
+      </div>
+      <div className="blog__section__link__wrapper">
+        <Link to="/blog" className="blog__section__link">
+          Load more
+        </Link>
       </div>
     </div>
   );
