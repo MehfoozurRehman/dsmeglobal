@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
 import pricing from "../assets/pricing.mp4";
-import ContactSection from "../components/ContactSection";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { Fade } from "react-reveal";
 

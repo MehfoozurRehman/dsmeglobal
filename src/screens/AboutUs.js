@@ -21,10 +21,7 @@ export default function AboutUs({ setIsDark }) {
         <div className="our__mission__section__about__us__content">
           <div className="our__mission__section__about__us__content__left">
             <div className="feature__section__entry__content__jumbotron__sub__heading">
-              <Fade>Our</Fade>
-            </div>
-            <div className="feature__section__entry__content__jumbotron__heading">
-              <Fade>Mission</Fade>
+              <Fade>Our Mission</Fade>
             </div>
             <div className="our__mission__section__about__us__content__left__para">
               <Fade>
@@ -61,14 +58,8 @@ export default function AboutUs({ setIsDark }) {
             </Zoom>
           </div>
           <div className="our__vision__section__about__us__content__left">
-            <div
-              style={{ color: "#FBFBFB" }}
-              className="feature__section__entry__content__jumbotron__sub__heading"
-            >
-              <Fade>Our</Fade>
-            </div>
-            <div className="feature__section__entry__content__jumbotron__heading">
-              <Fade>VISION</Fade>
+            <div className="feature__section__entry__content__jumbotron__sub__heading">
+              <Fade>Our Vision</Fade>
             </div>
             <div className="our__vision__section__about__us__content__left__para">
               <Fade>

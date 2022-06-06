@@ -937,6 +937,64 @@ body {
 .apply__popup__close:hover {
   color: red;
 }
+.our__mission__section__about__us {
+  width: 100%;
+}
+.our__mission__section__about__us__content {
+  width: 100%;
+  max-width: 1500px;
+  padding: 2em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0em auto;
+}
+.our__mission__section__about__us__content__left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+.our__mission__section__about__us__content__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our__vision__section__about__us__content__right__img {
+  max-width: 400px;
+}
+.our__vision__section__about__us {
+  width: 100%;
+}
+.our__vision__section__about__us__content {
+  width: 100%;
+  max-width: 1500px;
+  padding: 2em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0em auto;
+}
+.our__vision__section__about__us__content__left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+.our__vision__section__about__us__content__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our__vision__section__about__us__content__right__img {
+  max-width: 400px;
+}
+.feature__section__entry__content__jumbotron__sub__heading {
+  font-size: 20px;
+  color: #242424;
+  display: flex;
+  margin-bottom: 1em;
+}
 @media (max-width: 1200px) {
   .container__clients__left {
     width: 20%;
