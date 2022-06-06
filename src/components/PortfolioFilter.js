@@ -2,15 +2,15 @@ import React from "react";
 
 export default function PortfolioFilter({ title, onChange, defaultChecked }) {
   return (
-    <div className="portolio__filter__left__entry">
+    <div className="blog__page__filter__entry">
       <input
         type="radio"
-        className="portolio__filter__left__entry__input"
-        name="portolio__filter__left__entry__input"
+        className="blog__page__filter__entry__input"
+        name="portfolio__page__filter__entry"
         onChange={onChange}
         defaultChecked={defaultChecked}
       />
-      <div className="portolio__filter__left__entry__content">{title}</div>
+      <div className="blog__page__filter__entry__content">{title}</div>
     </div>
   );
 }

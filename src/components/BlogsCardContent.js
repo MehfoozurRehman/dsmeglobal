@@ -14,7 +14,7 @@ export default function BlogsCardContent({ data }) {
         navigate("/blog-details");
         window.localStorage.setItem("blogsData", JSON.stringify(data));
       }}
-      className="blog__card  animate__animated animate__zoomIn"
+      className="blog__card animate__animated animate__zoomIn"
     >
       <img
         src={
@@ -25,11 +25,11 @@ export default function BlogsCardContent({ data }) {
         className="blog__card__img"
       />
       <div className="blog__card__content">
-        <div className="blog__card__content__title">{data.title}</div>
+        <div className="blog__card__content__heading">{data.title}</div>
         <div className="blog__card__content__info">
-          {getText(data.content).length < 100
+          {getText(data.content).length < 200
             ? getText(data.content)
-            : getText(data.content).substring(0, 100) + "..."}
+            : getText(data.content).substring(0, 200) + "..."}
         </div>
       </div>
     </button>

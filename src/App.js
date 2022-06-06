@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./screens/Home";
 import Header from "./components/Header";
-import Services from "./screens/Services";
 import Footer from "./components/Footer";
 import ContactUs from "./screens/ContactUs";
 import ServiceDetails from "./screens/ServiceDetails";
@@ -42,7 +41,6 @@ export default function App() {
       <Header isDark={isDark} />
       <Routes>
         <Route path="/" element={<Home setIsDark={setIsDark} />} />
-        <Route path="/services" element={<Services setIsDark={setIsDark} />} />
         <Route
           path="/service-details"
           element={<ServiceDetails setIsDark={setIsDark} />}

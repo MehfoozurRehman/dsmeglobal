@@ -23,7 +23,15 @@ export default function ServicesCard({ data }) {
           />
         </Zoom>
       </div>
-      <Fade>{data.title}</Fade>
+      <div className="services__main__container__content__wrapper__card__heading">
+        <Fade>{data.title}</Fade>
+      </div>
+      <div className="services__main__container__content__wrapper__card__info">
+        <Fade>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+          harum?
+        </Fade>
+      </div>
     </Link>
   );
 }

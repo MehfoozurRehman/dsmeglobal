@@ -17,53 +17,42 @@ export default function Blogs({ setIsDark }) {
     });
   }, []);
   return (
-    <>
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "10em",
-        }}
-      >
-        <div className="services__main__container__content__heading">Blogs</div>
+    <div className="blog__page">
+      <div className="blog__page__heading">Blogs</div>
+      <div className="blog__page__filter">
+        <BlogsFilter
+          title="All"
+          defaultChecked={true}
+          onChange={() => {
+            setFilter("");
+          }}
+        />
+        <BlogsFilter
+          title="Web Apps"
+          onChange={() => {
+            setFilter("Web App Development");
+          }}
+        />
+        <BlogsFilter
+          title="Mobile Apps"
+          onChange={() => {
+            setFilter("Mobile App Development");
+          }}
+        />
+        <BlogsFilter
+          title="Ecommerce"
+          onChange={() => {
+            setFilter("Ecommerce Solutions");
+          }}
+        />
+        <BlogsFilter
+          title="UI/UX Design"
+          onChange={() => {
+            setFilter("UI & UX Services");
+          }}
+        />
       </div>
-      <div className="portolio__filter">
-        <div className="portolio__filter__left">
-          <BlogsFilter
-            title="All"
-            defaultChecked={true}
-            onChange={() => {
-              setFilter("");
-            }}
-          />
-          <BlogsFilter
-            title="Web Apps"
-            onChange={() => {
-              setFilter("Web App Development");
-            }}
-          />
-          <BlogsFilter
-            title="Mobile Apps"
-            onChange={() => {
-              setFilter("Mobile App Development");
-            }}
-          />
-          <BlogsFilter
-            title="Ecommerce"
-            onChange={() => {
-              setFilter("Ecommerce Solutions");
-            }}
-          />
-          <BlogsFilter
-            title="UI/UX Design"
-            onChange={() => {
-              setFilter("UI & UX Services");
-            }}
-          />
-        </div>
-      </div>
-      <div className="service__details__projects">
+      <div className="blog__page__content">
         {blogData.length === 0 ? (
           <Loader />
         ) : (
@@ -79,13 +68,7 @@ export default function Blogs({ setIsDark }) {
         )}
       </div>
       {filter === "" && blogData.length > 6 ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "2em",
-          }}
-        >
+        <div className="blog__page__content__button">
           <button
             className="button"
             onClick={() => {
@@ -96,6 +79,6 @@ export default function Blogs({ setIsDark }) {
           </button>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }
