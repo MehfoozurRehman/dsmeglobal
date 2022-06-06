@@ -9,6 +9,8 @@ import ApplyForJobPopup from "../components/ApplyForJobPopup";
 import HotOfferJobCard from "../components/HotOfferJobCard";
 import Loader from "../components/Loader";
 import noData from "../assets/noData.png";
+import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotronCareers } from "./HomeJumbotronCareers";
 
 export default function Careers({ setIsDark }) {
   const [careersData, setCareersData] = useState([]);
@@ -70,22 +72,8 @@ export default function Careers({ setIsDark }) {
 
   return (
     <>
-      <div style={{ maxHeight: "100vh", overflow: "hidden" }}>
-        <HomeSectionCarouselEntry
-          subHeading={43 + " Jobs"}
-          heading={
-            <>
-              Good things should <br />
-              <span>grow</span>, so do we
-            </>
-          }
-          buttonLabel="Lean more"
-          videoSrc={pricing}
-          toPath="/careers"
-          onClick={() => {
-            document.getElementById("job__section").scrollIntoView();
-          }}
-        />
+      <div className="container">
+        <HomeJumbotronCareers />
       </div>
       <section id="job__section" className="hot__offers__section">
         <div className="hot__offers__section__header">Hot offer</div>
@@ -109,10 +97,7 @@ export default function Careers({ setIsDark }) {
           </Swiper>
         </div>
       </section>
-      <div
-        className="hot__offers__section"
-        style={{ paddingTop: 0, marginTop: -20 }}
-      >
+      <div className="hot__offers__section">
         <div className="hot__offers__section__header">Open Vacancies</div>
         <div className="hot__offers__section__content">
           <div className="hot__offers__section__content__filters">
@@ -168,7 +153,7 @@ export default function Careers({ setIsDark }) {
           )}
         </div>
       </div>
-      <ContactSection />
+
       {isApplyOpen ? (
         <ApplyForJobPopup
           selectItem={selectItem}

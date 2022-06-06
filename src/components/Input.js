@@ -31,7 +31,7 @@ export default function Input({
         <textarea
           type={type}
           id={placeholder}
-          placeholder={placeholder}
+          placeholder={"Enter " + placeholder}
           className="contact__section__content__middle__input__textarea"
           onChange={onChange}
           value={value}
@@ -58,7 +58,7 @@ export default function Input({
         <input
           type={type}
           id={placeholder}
-          placeholder={placeholder}
+          placeholder={"Enter " + placeholder}
           className="contact__section__content__middle__input__field"
           onChange={onChange}
           value={value}

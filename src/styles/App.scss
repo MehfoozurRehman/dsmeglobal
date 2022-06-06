@@ -678,6 +678,7 @@ body {
   color: #189366;
   border-radius: 5px;
   margin: 1em 0.5em;
+  cursor: pointer;
 }
 .service__details__projects__entry:hover
   .service__details__projects__entry__content {
@@ -696,7 +697,246 @@ body {
   transition: 300ms ease-in-out;
   display: flex;
 }
-
+.service__popup {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.service__popup__content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0em auto;
+}
+.service__popup__img {
+  max-height: 90vh;
+  max-width: 100%;
+  margin-top: 1em;
+}
+.service__popup__close {
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: #242424;
+  cursor: pointer;
+  margin-bottom: auto;
+  margin-top: 5vh;
+  margin-left: 1em;
+}
+.service__popup__close:hover {
+  color: red;
+}
+.hot__offers__section {
+  width: 100%;
+  max-width: 1500px;
+  padding: 2em 4em;
+  margin: 0em auto;
+}
+.hot__offers__section__header {
+  font-size: 30px;
+  color: #242424;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.hot__offers__section__content {
+  width: 100%;
+}
+.hot__offers__section__content__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
+  border-radius: 15px;
+  min-height: 220px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  word-break: break-all;
+  text-align: left;
+}
+.hot__offers__section__content__card__title {
+  font-size: 18px;
+  color: #189366;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.hot__offers__section__content__card__info__heading {
+  font-size: 15px;
+  color: #242424;
+  margin-bottom: 0.5em;
+}
+.hot__offers__section__content__card__info__content {
+  margin-bottom: 0.5em;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  min-height: 50px;
+}
+.hot__offers__section__content__card:hover {
+  border-color: #189366;
+}
+.hot__offers__section__content__filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.hot__offers__section__content__filters input {
+  height: 45px;
+  padding: 0em 1em;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 1em;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.hot__offers__section__content__filters input:hover,
+.hot__offers__section__content__filters input:focus {
+  border-color: #189366;
+}
+.hot__offers__section__content__entry {
+  width: 100%;
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.hot__offers__section__content__entry:hover {
+  border-color: #189366;
+}
+.hot__offers__section__content__entry__left {
+  flex: 1;
+  max-width: 200px;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.hot__offers__section__content__entry__left__heading {
+  font-size: 16px;
+  color: #189366;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+.hot__offers__section__content__entry__middle {
+  flex: 1;
+}
+.hot__offers__section__content__entry__middle__heading {
+  margin-bottom: 1em;
+  font-size: 16px;
+  color: #242424;
+  font-weight: bold;
+}
+.hot__offers__section__content__entry__right {
+  flex: 1;
+  max-width: 200px;
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hot__offers__section__content__entry__right__apply {
+  background-color: #189366;
+  color: white;
+  padding: 0.9em 2em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.hot__offers__section__content__entry__right__apply:hover {
+  background-color: #0d6e4b;
+}
+.apply__popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apply__popup__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5em;
+  border-radius: 10px;
+  border: 1px solid #189366;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.apply__popup__form__heading {
+  font-size: 20px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.contact__section__content__middle__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.contact__section__content__middle__input__label {
+  font-size: 14px;
+  color: #242424;
+  margin-bottom: 0.5em;
+}
+.contact__section__content__middle__input__field {
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0em 1em;
+  outline: none;
+}
+.contact__section__content__middle__input__field:hover,
+.contact__section__content__middle__input__field:focus {
+  border-color: #189366;
+}
+.apply__popup__form__button {
+  margin-top: 2em;
+  background-color: #189366;
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.apply__popup__form__button:hover {
+  background-color: #0d6e4b;
+}
+.apply__popup__close {
+  position: absolute;
+  top: 2.5em;
+  right: 2em;
+  padding: 0em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.apply__popup__close:hover {
+  color: red;
+}
 @media (max-width: 1200px) {
   .container__clients__left {
     width: 20%;
@@ -752,6 +992,10 @@ body {
     width: calc(50% - 2em);
   }
   .blog__page__content .blog__card {
+    margin: 1em;
+    width: calc(50% - 2em);
+  }
+  .service__details__projects__entry {
     margin: 1em;
     width: calc(50% - 2em);
   }
@@ -829,6 +1073,10 @@ body {
   .container__services__right::before {
     height: 500px;
     top: calc(50% - 250px);
+  }
+  .service__details__projects__entry {
+    margin: 1em;
+    width: calc(100% - 2em);
   }
   .container__services__right__entry {
     width: 80%;

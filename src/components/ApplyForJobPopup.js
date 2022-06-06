@@ -78,7 +78,12 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
           required={true}
           value={selectItem.position}
         />
-        <div className="apply__popup__form__label">Upload CV</div>
+        <div
+          className="apply__popup__form__label"
+          style={{ marginBottom: ".5em" }}
+        >
+          Upload CV
+        </div>
         <Widget
           sources={["local"]}
           resourceType={"image"}

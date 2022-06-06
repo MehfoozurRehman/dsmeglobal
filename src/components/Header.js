@@ -105,9 +105,6 @@ function Nav({ navigate }) {
       <NavLink to="/about-us" navigate={navigate}>
         About Us
       </NavLink>
-      <NavLink to="/services" navigate={navigate}>
-        Services
-      </NavLink>
       <NavLink to="/portfolio" navigate={navigate}>
         Portfolio
       </NavLink>

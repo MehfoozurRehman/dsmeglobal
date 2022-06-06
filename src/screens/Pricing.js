@@ -138,7 +138,6 @@ export default function Pricing({ setIsDark }) {
           </div>
         </div>
       </div>
-      <ContactSection />
     </>
   );
 }
