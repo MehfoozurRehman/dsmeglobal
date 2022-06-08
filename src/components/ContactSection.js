@@ -93,7 +93,6 @@ export default function ContactSection() {
                       console.log("data submited");
                     });
                 }
-                console.log(name, email, phone, subject, message);
               }}
               className="contact__section__content__middle"
             >

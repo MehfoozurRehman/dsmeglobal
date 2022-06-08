@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Fade } from "react-reveal";
 import testimonialBg from "../assets/testimonialBg.jpg";
 
-export function TestimonialsSection({}) {
+export function TestimonialsSection() {
   const array = [
     {
       img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",

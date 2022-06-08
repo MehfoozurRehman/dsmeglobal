@@ -49,7 +49,6 @@ export default function GetQuatePopup({ setIsGetQuateOpen }) {
                     console.log("data submited");
                   });
               }
-              console.log(name, email, phone, subject, message);
               setSubmited(true);
               setTimeout(() => {
                 setSubmited(false);
