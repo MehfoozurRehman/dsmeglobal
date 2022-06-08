@@ -27,7 +27,6 @@ export function HomeJumbotron({
             {taglines
               .filter((tagline, i) => i === taglineNo)
               .map((tagline) => {
-                console.log(tagline);
                 return <span>{tagline}</span>;
               })}{" "}
             {matchers ? (
@@ -36,7 +35,6 @@ export function HomeJumbotron({
                 {matchers
                   ?.filter((matcher, i) => i === taglineNo)
                   .map((matcher) => {
-                    console.log(matcher);
                     return <span>{matcher}</span>;
                   })}{" "}
               </>

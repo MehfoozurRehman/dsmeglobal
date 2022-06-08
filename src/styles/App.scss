@@ -1355,6 +1355,102 @@ body {
   transition: 300ms ease-in-out;
   background-color: #0d6e4b;
 }
+.container__testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin: 4em 0em;
+}
+.container__testimonials__img {
+  width: 100%;
+  height: 500px;
+}
+.container__testimonials__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.container__testimonials__overlay__heading {
+  width: 100%;
+  max-width: 1500px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  margin-bottom: 2em;
+  font-size: 30px;
+  color: #242424;
+  font-weight: bold;
+}
+.container__testimonials__overlay__content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0em auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.container__testimonials__overlay__content__entry {
+  width: fit-content;
+  height: fit-content;
+  padding: 0em;
+  border-radius: 100px;
+  border: 10px solid transparent;
+  position: absolute;
+  cursor: pointer;
+  outline: 15px solid transparent;
+  outline-offset: 0px;
+  transition: 300ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__testimonials__overlay__content__entry__active {
+  animation: animateInOut 800ms linear infinite;
+  border-color: #189366;
+  outline-color: #1893663b;
+}
+@keyframes animateInOut {
+  from {
+    border-color: transparent;
+    outline-color: transparent;
+  }
+  to {
+    border-color: #189366;
+    outline-color: #1893663b;
+  }
+}
+.container__testimonials__overlay__content__entry__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+.container__testimonials__overlay__info {
+  width: 100%;
+  max-width: 800px;
+  margin: 0em auto;
+  text-align: center;
+  margin-top: 4em;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 2em;
+  border-radius: 10px;
+}
+.container__testimonials__overlay__info__message {
+  font-size: 14px;
+  color: #242424;
+}
+.container__testimonials__overlay__info__heading {
+  font-size: 20px;
+  color: #189366;
+  font-weight: bold;
+  margin: 0.5em 0em;
+}
 @media (max-width: 1200px) {
   .container__clients__left {
     width: 20%;

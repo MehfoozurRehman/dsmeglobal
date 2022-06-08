@@ -10,7 +10,7 @@ export default function BlogsCard({ data, filter }) {
   for (var i = 0; i <= categoryList.length; i++) {
     doesFilter = categoryList.includes(filter);
   }
-  console.log(data);
+
   return (
     <>
       {filter === "" ? (

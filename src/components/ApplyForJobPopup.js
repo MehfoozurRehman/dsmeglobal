@@ -32,7 +32,6 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
               console.log("data submited");
             });
           setIsApplyOpen(false);
-          console.log(name, email, phone, selectItem.position, cv);
         }}
         className="apply__popup__form"
       >

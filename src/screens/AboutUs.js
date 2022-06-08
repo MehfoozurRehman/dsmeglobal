@@ -1,7 +1,7 @@
 import React from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
 
