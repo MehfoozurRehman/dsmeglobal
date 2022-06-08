@@ -17,7 +17,7 @@ body {
   top: 0px;
   width: 100%;
   background-color: white;
-  z-index: 9999;
+  z-index: 9990;
 }
 .header__content {
   display: flex;
@@ -875,11 +875,12 @@ body {
   left: 0px;
   width: 100%;
   height: 100%;
-  z-index: 99999;
-  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  background-color: rgba(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 7em;
 }
 .apply__popup__form {
   display: flex;
@@ -890,7 +891,16 @@ body {
   border-radius: 10px;
   border: 1px solid #189366;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255);
+  max-height: 600px;
+  overflow-y: auto;
+}
+.apply__popup__form::-webkit-scrollbar {
+  width: 8px;
+}
+.apply__popup__form::-webkit-scrollbar-thumb {
+  background-color: #189366;
+  border-radius: 50px;
 }
 .apply__popup__form__heading {
   font-size: 20px;
@@ -921,11 +931,21 @@ body {
 .contact__section__content__middle__input__field:focus {
   border-color: #189366;
 }
+.contact__section__content__middle__input__textarea {
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  outline: none;
+}
+.contact__section__content__middle__input__textarea:hover,
+.contact__section__content__middle__input__textarea:focus {
+  border-color: #189366;
+}
 .apply__popup__form__button {
   margin-top: 2em;
   background-color: #189366;
   color: white;
-  height: 40px;
+  min-height: 40px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
