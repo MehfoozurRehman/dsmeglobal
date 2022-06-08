@@ -42,13 +42,13 @@ export default function AboutUs() {
               </Fade>
             </div>
           </div>
-          <Zoom>
+          <Fade>
             <img
               src={missionSvg}
               alt="missionSvg"
               className="our__mission__section__about__us__content__right__img"
             />
-          </Zoom>
+          </Fade>
         </div>
       </div>
       <div
@@ -57,13 +57,13 @@ export default function AboutUs() {
       >
         <div className="our__vision__section__about__us__content">
           <div className="our__vision__section__about__us__content__right">
-            <Zoom>
+            <Fade>
               <img
                 src={visionSvg}
                 alt="visionSvg"
                 className="our__vision__section__about__us__content__right__img"
               />
-            </Zoom>
+            </Fade>
           </div>
           <div className="our__vision__section__about__us__content__left">
             <div className="feature__section__entry__content__jumbotron__sub__heading">

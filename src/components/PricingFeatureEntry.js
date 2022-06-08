@@ -1,13 +1,13 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export default function PricingFeatureEntry({ title, content }) {
   return (
-    <Zoom>
+    <Fade>
       <div className="pricing__feature__entry">
         <div className="pricing__feature__entry__heading">{title}</div>
         <div className="pricing__feature__entry__info">{content}</div>
       </div>
-    </Zoom>
+    </Fade>
   );
 }

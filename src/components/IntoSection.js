@@ -69,7 +69,7 @@ export default function IntoSection() {
                   to="/service-details"
                   className="into__section__wrapper__content__service__card"
                 >
-                  <Zoom>
+                  <Fade>
                     <img
                       src={
                         "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
@@ -78,7 +78,7 @@ export default function IntoSection() {
                       alt={item.title}
                       className="into__section__wrapper__content__service__card__img"
                     />
-                  </Zoom>
+                  </Fade>
                   <div className="into__section__wrapper__content__service__card__text">
                     <Fade>{item.title}</Fade>
                   </div>

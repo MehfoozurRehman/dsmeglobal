@@ -16,23 +16,23 @@ export default function FeatureSectionCarouselEntry({
         <div className="feature__section__entry__content__jumbotron">
           <div className="feature__section__entry__content__jumbotron__left">
             <div className="feature__section__entry__content__jumbotron__sub__heading">
-              <Zoom>{subHeading}</Zoom>
+              <Fade>{subHeading}</Fade>
             </div>
             <div className="feature__section__entry__content__jumbotron__heading">
               <Fade>{heading}</Fade>
             </div>
             <Link to={toPath ? toPath : "/"} className="button__reverse">
-              <Zoom>{buttonLabel}</Zoom>
+              <Fade>{buttonLabel}</Fade>
             </Link>
           </div>
           <div className="feature__section__entry__content__jumbotron__right">
-            <Zoom>
+            <Fade>
               <img
                 src={svg}
                 alt={subHeading + heading}
                 className="feature__section__entry__content__jumbotron__right__img"
               />
-            </Zoom>
+            </Fade>
           </div>
         </div>
         <div className="feature__section__entry__content__feature__list">
@@ -41,13 +41,13 @@ export default function FeatureSectionCarouselEntry({
               className="feature__section__entry__content__feature__list__entry"
               key={JSON.stringify(feature)}
             >
-              <Zoom>
+              <Fade>
                 <img
                   src={feature.svg}
                   alt="feature__svg"
                   className="feature__section__entry__content__feature__list__entry__img"
                 />
-              </Zoom>
+              </Fade>
               <span style={{ marginTop: 20 }}>
                 <Fade>{feature.title}</Fade>
               </span>

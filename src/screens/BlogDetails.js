@@ -6,16 +6,7 @@ export default function BlogDetails() {
 
   return (
     <>
-      <div
-        className="service__details__jumbotron"
-        style={{
-          width: "100%",
-          height: "500px",
-          position: "relative",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <div className="blog__jumbotron">
         <img
           src={
             "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
@@ -25,58 +16,25 @@ export default function BlogDetails() {
           className="service__details__jumbotron__img"
           style={{ height: "100%", width: "100%" }}
         />
-        <div
-          className="service__details__jumbotron__content"
-          style={{
-            position: "absolute",
-            top: 0,
-            padding: 0,
-            width: "100%",
-            maxWidth: "100%",
-            minHeight: "100%",
-            height: "100%",
-            background: "linear-gradient(transparent,rgba(0,0,0,1))",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-end",
-          }}
-        >
+        <div className="blog__jumbotron__overlay">
           <div
-            className="service__details__jumbotron__right"
-            style={{
-              width: "100%",
-              maxWidth: "1440px",
-              height: "fit-content",
-              margin: "0em auto",
-              padding: "0em 2em",
-              justifyContent: "center",
-            }}
+            className="blog__jumbotron__overlay__heading"
+            style={{ color: "white" }}
           >
-            <div
-              className="service__details__jumbotron__right__heading"
-              style={{ color: "white" }}
-            >
-              {blogData.title}
-            </div>
-            <div
-              className="service__details__jumbotron__right__info"
-              style={{ color: "white" }}
-            >
-              By {blogData.author} | {parseDate(blogData.updatedAt)}
-            </div>
+            {blogData.title}
+          </div>
+          <div
+            className="blog__jumbotron__overlay__info"
+            style={{ color: "white" }}
+          >
+            By {blogData.author} | {parseDate(blogData.updatedAt)}
           </div>
         </div>
       </div>
       <div
-        className="service__details__jumbotron__content"
-        style={{ minHeight: "fit-content", marginTop: 50 }}
-      >
-        <div
-          className="service__details__jumbotron__right__info"
-          style={{ width: "100%" }}
-          dangerouslySetInnerHTML={{ __html: blogData.content }}
-        ></div>
-      </div>
+        className="blog__jumbotron__content"
+        dangerouslySetInnerHTML={{ __html: blogData.content }}
+      ></div>
     </>
   );
 }

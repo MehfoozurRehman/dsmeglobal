@@ -74,65 +74,61 @@ export default function Pricing() {
         />
       </div>
       <div className="pricing__delivery__section">
-        <div className="pricing__delivery__section__content__wrapper">
-          <div className="pricing__delivery__section__heading">
-            <Fade>
-              Process <span>From Idea Creation to Product Delivery</span>
-            </Fade>
-          </div>
-          <img
-            src={deliveryPic}
-            alt="deliveryPic"
-            className="pricing__delivery__section__img"
-          />
+        <div className="pricing__delivery__section__heading">
+          <Fade>Process From Idea Creation to Product Delivery</Fade>
+        </div>
+        <img
+          src={deliveryPic}
+          alt="deliveryPic"
+          className="pricing__delivery__section__img"
+        />
 
-          <div className="pricing__delivery__section__content">
-            <Fade>
-              <div className="pricing__delivery__section__content__card">
-                <div className="pricing__delivery__section__content__card__heading">
-                  Discovery
-                </div>
-                {DeliveryCardEntry1.map((item) => (
-                  <div
-                    className="pricing__delivery__section__content__card__para"
-                    key={JSON.stringify(item)}
-                  >
-                    {item.para}
-                  </div>
-                ))}
+        <div className="pricing__delivery__section__content">
+          <Fade>
+            <div className="pricing__delivery__section__content__card">
+              <div className="pricing__delivery__section__content__card__heading">
+                Discovery
               </div>
-            </Fade>
-            <Fade>
-              <div className="pricing__delivery__section__content__card">
-                <div className="pricing__delivery__section__content__card__heading">
-                  Execution
+              {DeliveryCardEntry1.map((item) => (
+                <div
+                  className="pricing__delivery__section__content__card__para"
+                  key={JSON.stringify(item)}
+                >
+                  {item.para}
                 </div>
-                {DeliveryCardEntry2.map((item) => (
-                  <div
-                    className="pricing__delivery__section__content__card__para"
-                    key={JSON.stringify(item)}
-                  >
-                    {item.para}
-                  </div>
-                ))}
+              ))}
+            </div>
+          </Fade>
+          <Fade>
+            <div className="pricing__delivery__section__content__card">
+              <div className="pricing__delivery__section__content__card__heading">
+                Execution
               </div>
-            </Fade>
-            <Fade>
-              <div className="pricing__delivery__section__content__card">
-                <div className="pricing__delivery__section__content__card__heading">
-                  Support
+              {DeliveryCardEntry2.map((item) => (
+                <div
+                  className="pricing__delivery__section__content__card__para"
+                  key={JSON.stringify(item)}
+                >
+                  {item.para}
                 </div>
-                {DeliveryCardEntry3.map((item) => (
-                  <div
-                    className="pricing__delivery__section__content__card__para"
-                    key={JSON.stringify(item)}
-                  >
-                    {item.para}
-                  </div>
-                ))}
+              ))}
+            </div>
+          </Fade>
+          <Fade>
+            <div className="pricing__delivery__section__content__card">
+              <div className="pricing__delivery__section__content__card__heading">
+                Support
               </div>
-            </Fade>
-          </div>
+              {DeliveryCardEntry3.map((item) => (
+                <div
+                  className="pricing__delivery__section__content__card__para"
+                  key={JSON.stringify(item)}
+                >
+                  {item.para}
+                </div>
+              ))}
+            </div>
+          </Fade>
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import loader from "../assets/loader.gif";
 
-export default function Loader() {
+export default function Loader({ style }) {
   return (
     <div
       style={{
@@ -9,6 +9,7 @@ export default function Loader() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        ...style,
       }}
     >
       <img src={loader} alt="loader" style={{ width: 300 }} />
