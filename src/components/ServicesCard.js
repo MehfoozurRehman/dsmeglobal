@@ -19,7 +19,7 @@ function ServicesCard({ data }) {
               "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
               data.logo
             }
-            alt="services__main__container__content__wrapper__card__svg"
+            alt={data.title}
             className="services__main__container__content__wrapper__card__svg"
           />
         </Fade>

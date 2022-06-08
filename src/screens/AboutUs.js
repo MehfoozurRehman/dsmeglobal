@@ -42,13 +42,15 @@ export default function AboutUs() {
               </Fade>
             </div>
           </div>
-          <Fade>
-            <img
-              src={missionSvg}
-              alt="missionSvg"
-              className="our__mission__section__about__us__content__right__img"
-            />
-          </Fade>
+          <div className="our__mission__section__about__us__content__right">
+            <Fade>
+              <img
+                src={missionSvg}
+                alt="missionSvg"
+                className="our__mission__section__about__us__content__right__img"
+              />
+            </Fade>
+          </div>
         </div>
       </div>
       <div

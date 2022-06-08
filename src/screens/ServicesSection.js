@@ -27,19 +27,26 @@ export function ServicesSection() {
           </div>
         </div>
         <div className="container__services__right">
-          <ServicesCardNew />
-          <ServicesCardNew />
-          <ServicesCardNew />
-          <ServicesCardNew />
+          {error ? (
+            <div>failed to load</div>
+          ) : (
+            data
+              .filter((item, i) => i < 4)
+              .map((item) => (
+                <ServicesCardNew data={item} key={JSON.stringify(item)} />
+              ))
+          )}
         </div>
       </div>
       <div className="services__main__container">
         {error ? (
           <div>failed to load</div>
         ) : (
-          data.map((item) => (
-            <ServicesCard data={item} key={JSON.stringify(item)} />
-          ))
+          data
+            .filter((item, i) => i > 3)
+            .map((item) => (
+              <ServicesCard data={item} key={JSON.stringify(item)} />
+            ))
         )}
       </div>
     </>
