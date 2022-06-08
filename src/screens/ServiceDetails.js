@@ -19,12 +19,13 @@ export default function ServiceDetails() {
     fetcher,
     { suspense: true }
   );
+
   let serviceData = JSON.parse(window.localStorage.getItem("servicesData"));
   let filter;
   serviceData.categories.map((item) => {
     filter = item.value;
   });
-  console.log(filter);
+
   return (
     <>
       {showImage ? (
@@ -89,8 +90,10 @@ export default function ServiceDetails() {
         </div>
       </div>
       <div className="service__details__projects">
-        {data.map((item) => {
-          return (
+        {error ? (
+          <div>failed to load</div>
+        ) : (
+          data?.map((item) => (
             <ProjectCard
               setShowImage={setShowImage}
               setShowImageData={setShowImageData}
@@ -98,8 +101,8 @@ export default function ServiceDetails() {
               key={JSON.stringify(item)}
               filter={filter}
             />
-          );
-        })}
+          ))
+        )}
       </div>
     </>
   );

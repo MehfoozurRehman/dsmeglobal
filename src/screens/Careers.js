@@ -114,7 +114,7 @@ export default function Careers() {
                 justifyContent: "center",
               }}
             >
-              <img src={noData} alt="nodata image" style={{ width: 400 }} />
+              <img src={noData} alt="nodata" style={{ width: 400 }} />
             </div>
           ) : (
             careerDataFiltered.map((item, i) => (

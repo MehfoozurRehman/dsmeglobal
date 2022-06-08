@@ -16,7 +16,7 @@ export function HomeJumbotron({
     setTimeout(() => {
       setTaglineNo(taglineNo < taglines.length - 1 ? taglineNo + 1 : 0);
     }, 4100);
-  }, [taglineNo]);
+  }, [taglineNo, taglines.length]);
 
   return (
     <div className="container__jumbotron">

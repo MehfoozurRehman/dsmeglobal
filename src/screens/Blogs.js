@@ -54,7 +54,7 @@ export default function Blogs() {
           <div>failed to load</div>
         ) : (
           data
-            .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
+            .filter((item, i) => (filter === "" ? i < noOfItems : i))
             .map((item) => (
               <BlogsCard
                 data={item}

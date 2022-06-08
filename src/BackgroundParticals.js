@@ -1,10 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import Particles from "react-tsparticles";
 
-export default function BackgroundParticals({
-  particlesInit,
-  particlesLoaded,
-}) {
+function BackgroundParticals({ particlesInit, particlesLoaded }) {
   return (
     <Particles
       id="tsparticles"
@@ -42,7 +39,6 @@ export default function BackgroundParticals({
           },
         },
         particles: {
-          opacity: 0.1,
           color: {
             value: "#242424",
           },
@@ -91,3 +87,5 @@ export default function BackgroundParticals({
     />
   );
 }
+
+export default memo(BackgroundParticals);

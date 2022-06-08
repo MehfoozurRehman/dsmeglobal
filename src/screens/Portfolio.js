@@ -58,7 +58,6 @@ export default function Portfolio() {
 
       <div className="blog__page">
         <div className="blog__page__heading">PORTFOLIO</div>
-
         <div className="blog__page__filter">
           <PortfolioFilter
             title="All"
@@ -99,17 +98,21 @@ export default function Portfolio() {
           />
         </div>
         <div className="blog__page__content">
-          {data
-            .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-            .map((item) => (
-              <ProjectCard
-                setShowImage={setShowImage}
-                setShowImageData={setShowImageData}
-                data={item}
-                key={JSON.stringify(item)}
-                filter={filter}
-              />
-            ))}
+          {error ? (
+            <div>failed to load</div>
+          ) : (
+            data
+              .filter((item, i) => (filter === "" ? i < noOfItems : i))
+              .map((item) => (
+                <ProjectCard
+                  setShowImage={setShowImage}
+                  setShowImageData={setShowImageData}
+                  data={item}
+                  key={JSON.stringify(item)}
+                  filter={filter}
+                />
+              ))
+          )}
         </div>
         {filter === "" && data.length > 6 ? (
           <div className="blog__page__content__button">
