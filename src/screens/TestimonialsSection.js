@@ -10,8 +10,6 @@ export function TestimonialsSection({}) {
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-      top: "20%",
-      left: "5%",
     },
     {
       img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
@@ -19,8 +17,6 @@ export function TestimonialsSection({}) {
       designation: "Developer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-      top: "45%",
-      left: "25%",
     },
     {
       img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
@@ -28,8 +24,6 @@ export function TestimonialsSection({}) {
       designation: "Developer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-      top: "30%",
-      left: "50%",
     },
     {
       img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
@@ -37,8 +31,6 @@ export function TestimonialsSection({}) {
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-      top: "20%",
-      left: "65%",
     },
     {
       img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
@@ -46,8 +38,6 @@ export function TestimonialsSection({}) {
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
-      top: "40%",
-      left: "80%",
     },
   ];
   const [selected, setSelected] = useState(0);
@@ -74,14 +64,6 @@ export function TestimonialsSection({}) {
                 selected === i
                   ? "container__testimonials__overlay__content__entry container__testimonials__overlay__content__entry__active"
                   : "container__testimonials__overlay__content__entry"
-              }
-              style={
-                selected === i
-                  ? {
-                      top: item.top,
-                      left: item.left,
-                    }
-                  : { top: item.top, left: item.left }
               }
               onClick={() => {
                 setSelected(i);
