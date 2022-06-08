@@ -4,9 +4,10 @@ import VacencyCard from "../components/VacencyCard";
 import ApplyForJobPopup from "../components/ApplyForJobPopup";
 import HotOfferJobCard from "../components/HotOfferJobCard";
 import noData from "../assets/noData.png";
-import { HomeJumbotronCareers } from "./HomeJumbotronCareers";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
+import { HomeJumbotron } from "./HomeJumbotron";
+import bannerImage1 from "../assets/bannerImage1.svg";
 
 export default function Careers() {
   const [slidesPerPage, setSlidesPerPage] = useState(3.5);
@@ -63,7 +64,16 @@ export default function Careers() {
   return (
     <>
       <div className="container">
-        <HomeJumbotronCareers />
+        <HomeJumbotron
+          taglinesLine="Best"
+          taglines={["Jobs", "Oppertunities"]}
+          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
+            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
+            quibusdam ad?"
+          img={bannerImage1}
+        />
       </div>
       <section id="job__section" className="hot__offers__section">
         <div className="hot__offers__section__header">Hot offer</div>

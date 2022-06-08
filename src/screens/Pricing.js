@@ -1,9 +1,9 @@
 import React from "react";
-import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
-import pricing from "../assets/pricing.mp4";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { Fade } from "react-reveal";
+import { HomeJumbotron } from "./HomeJumbotron";
+import bannerImage1 from "../assets/bannerImage1.svg";
 
 export default function Pricing() {
   const DeliveryCardEntry1 = [
@@ -32,17 +32,18 @@ export default function Pricing() {
   ];
   return (
     <>
-      <div style={{ maxHeight: "100vh", overflow: "hidden" }}>
-        <HomeSectionCarouselEntry
-          subHeading="WE FIND"
-          heading={
-            <>
-              OUR <span>UNIQUE</span> WAY
-            </>
-          }
-          buttonLabel="Lean more"
-          videoSrc={pricing}
-          toPath="/"
+      <div className="container">
+        <HomeJumbotron
+          taglinesLine="Quality"
+          taglines={["services", "products", "customizations"]}
+          matcherLine="you really"
+          matchers={["want", "need", "deserve"]}
+          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
+            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
+            quibusdam ad?"
+          img={bannerImage1}
         />
       </div>
       <div className="pricing__feature">

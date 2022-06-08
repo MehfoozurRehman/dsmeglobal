@@ -1,8 +1,5 @@
-import React, { lazy, Suspense, useState } from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import BackgroundParticals from "./BackgroundParticals";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles/App.scss";
 import "animate.css";
@@ -18,6 +15,9 @@ const AboutUs = lazy(() => import("./screens/AboutUs"));
 const Blogs = lazy(() => import("./screens/Blogs"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
 const Careers = lazy(() => import("./screens/Careers"));
+const Header = lazy(() => import("./components/Header"));
+const Footer = lazy(() => import("./components/Footer"));
+const BackgroundParticals = lazy(() => import("./BackgroundParticals"));
 
 export default function App() {
   const particlesInit = async (main) => {

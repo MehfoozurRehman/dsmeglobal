@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import Loader from "./Loader";
 import { Fade, Zoom } from "react-reveal";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";

@@ -1,15 +1,26 @@
 import React from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
-import aboutVideo from "../assets/about.mp4";
-import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import { Fade, Zoom } from "react-reveal";
+import { HomeJumbotron } from "./HomeJumbotron";
+import bannerImage1 from "../assets/bannerImage1.svg";
 
 export default function AboutUs() {
   return (
     <>
-      <div style={{ height: "100vh", overflow: "hidden" }}>
-        <HomeSectionCarouselEntry videoSrc={aboutVideo} noBtn={true} />
+      <div className="container">
+        <HomeJumbotron
+          taglinesLine="Quality"
+          taglines={["services", "products", "customizations"]}
+          matcherLine="you really"
+          matchers={["want", "need", "deserve"]}
+          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
+            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
+            quibusdam ad?"
+          img={bannerImage1}
+        />
       </div>
       <div
         className="our__mission__section__about__us"
