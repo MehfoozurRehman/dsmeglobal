@@ -25,7 +25,13 @@ export default function Header() {
   return (
     <div className="header">
       <div className="header__content">
-        <Link to="/" className="header__content__logo">
+        <Link
+          to="/"
+          onClick={() => {
+            document.getElementById("Home").checked = true;
+          }}
+          className="header__content__logo"
+        >
           <Fade>
             <img src={logoDark} alt="logo" />
           </Fade>
@@ -84,6 +90,8 @@ function NavLink({ children, to, navigate }) {
         <input
           type="radio"
           name="header__content__nav__entry"
+          id={children}
+          title={children}
           className="header__content__nav__entry__input"
           defaultChecked={window.location.pathname === to}
           onClick={() => {
