@@ -23,6 +23,7 @@ export default function Home() {
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
         img={bannerImage1}
+        buttons={true}
       />
       <ClientsSection />
       <ServicesSection />

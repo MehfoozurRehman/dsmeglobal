@@ -9,6 +9,7 @@ export function HomeJumbotron({
   matchers,
   info,
   img,
+  buttons,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
 
@@ -44,26 +45,28 @@ export function HomeJumbotron({
         <div className="container__jumbotron__left__info">
           <Fade>{info}</Fade>
         </div>
-        <div className="container__jumbotron__left__button">
-          <Fade>
-            <button
-              onClick={() => {
-                document.getElementById("about__section");
-              }}
-              className="container__jumbotron__left__button__secondary"
-            >
-              Learn more
-            </button>
-          </Fade>
-          <Fade>
-            <Link
-              to="/portfolio"
-              className="container__jumbotron__left__button__primary"
-            >
-              Our Work
-            </Link>
-          </Fade>
-        </div>
+        {buttons ? (
+          <div className="container__jumbotron__left__button">
+            <Fade>
+              <button
+                onClick={() => {
+                  document.getElementById("about__section");
+                }}
+                className="container__jumbotron__left__button__secondary"
+              >
+                Learn more
+              </button>
+            </Fade>
+            <Fade>
+              <Link
+                to="/portfolio"
+                className="container__jumbotron__left__button__primary"
+              >
+                Our Work
+              </Link>
+            </Fade>
+          </div>
+        ) : null}
       </div>
       <div className="container__jumbotron__right">
         <Fade>

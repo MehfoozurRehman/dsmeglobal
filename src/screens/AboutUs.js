@@ -3,23 +3,21 @@ import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
 import { Fade } from "react-reveal";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import bannerImage from "../assets/bannerImage2.png";
 
 export default function AboutUs() {
   return (
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Quality"
-          taglines={["services", "products", "customizations"]}
-          matcherLine="you really"
-          matchers={["want", "need", "deserve"]}
+          taglinesLine="Lets Get to"
+          taglines={["Know Us", "Know Our Story"]}
           info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
             ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
-          img={bannerImage1}
+          img={bannerImage}
         />
       </div>
       <div

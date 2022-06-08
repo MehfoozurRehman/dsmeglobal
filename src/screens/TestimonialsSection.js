@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 import testimonialBg from "../assets/testimonialBg.jpg";
 
 export function TestimonialsSection({}) {
@@ -68,6 +69,7 @@ export function TestimonialsSection({}) {
         >
           {array.map((item, i) => (
             <button
+              key={JSON.stringify(item)}
               className={
                 selected === i
                   ? "container__testimonials__overlay__content__entry container__testimonials__overlay__content__entry__active"
@@ -85,11 +87,13 @@ export function TestimonialsSection({}) {
                 setSelected(i);
               }}
             >
-              <img
-                src={item.img}
-                alt={item.name}
-                className="container__testimonials__overlay__content__entry__img"
-              />
+              <Fade>
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="container__testimonials__overlay__content__entry__img"
+                />
+              </Fade>
             </button>
           ))}
         </div>
@@ -97,15 +101,18 @@ export function TestimonialsSection({}) {
       {array
         .filter((item, i) => i === selected)
         .map((item) => (
-          <div className="container__testimonials__overlay__info">
+          <div
+            className="container__testimonials__overlay__info"
+            key={JSON.stringify(item)}
+          >
             <div className="container__testimonials__overlay__info__message">
-              {item.message}
+              <Fade>{item.message}</Fade>
             </div>
             <div className="container__testimonials__overlay__info__heading">
-              {item.name}
+              <Fade>{item.name}</Fade>
             </div>
             <div className="container__testimonials__overlay__info__sub__heading">
-              {item.designation}
+              <Fade>{item.designation}</Fade>
             </div>
           </div>
         ))}

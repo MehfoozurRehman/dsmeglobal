@@ -3,7 +3,7 @@ import deliveryPic from "../assets/delivery.png";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { Fade } from "react-reveal";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import bannerImage from "../assets/bannerImage3.png";
 
 export default function Pricing() {
   const DeliveryCardEntry1 = [
@@ -34,16 +34,14 @@ export default function Pricing() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Quality"
-          taglines={["services", "products", "customizations"]}
-          matcherLine="you really"
-          matchers={["want", "need", "deserve"]}
+          taglinesLine="Best"
+          taglines={["products", "prices"]}
           info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
             ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
-          img={bannerImage1}
+          img={bannerImage}
         />
       </div>
       <div className="pricing__feature">

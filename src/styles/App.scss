@@ -897,6 +897,10 @@ body {
   margin-bottom: 1em;
   font-weight: bold;
 }
+.contact__section {
+  position: sticky;
+  z-index: 999;
+}
 .contact__section__content__middle__input {
   display: flex;
   flex-direction: column;
@@ -1156,7 +1160,8 @@ body {
   max-width: calc(1500px - 8em);
   margin: 0em auto;
   height: 600px;
-  position: relative;
+  position: sticky;
+  z-index: 999;
 }
 .blog__jumbotron__overlay {
   position: absolute;
@@ -1191,6 +1196,8 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  position: sticky;
+  z-index: 999;
 }
 .blog__jumbotron__content h1,
 .blog__jumbotron__content h2,

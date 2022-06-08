@@ -15,7 +15,7 @@ export default function WorkSection() {
   useEffect(() => {
     data
       .filter((item, i) => i === 0)
-      .map((item, i) => {
+      .map((item) => {
         setProject(item);
       });
   }, [data]);
