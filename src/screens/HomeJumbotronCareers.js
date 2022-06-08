@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
-import { Link } from "react-router-dom";
 import bannerImage1 from "../assets/bannerImage1.svg";
 
-export function HomeJumbotronCareers({}) {
+export function HomeJumbotronCareers() {
   const [taglineNo, setTaglineNo] = useState(0);
   const taglines = ["Jobs", "Oppertunities"];
-  const matchers = ["want", "need"];
   useEffect(() => {
     setTimeout(() => {
       setTaglineNo(taglineNo < taglines.length - 1 ? taglineNo + 1 : 0);
@@ -21,10 +19,9 @@ export function HomeJumbotronCareers({}) {
             Best{" "}
             {taglines
               .filter((tagline, i) => i === taglineNo)
-              .map((tagline) => {
-                console.log(tagline);
-                return <span>{tagline}</span>;
-              })}
+              .map((tagline) => (
+                <span key={JSON.stringify(tagline)}>{tagline}</span>
+              ))}
           </div>
         </Fade>
         <div className="container__jumbotron__left__info">

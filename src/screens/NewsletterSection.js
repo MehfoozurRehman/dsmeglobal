@@ -1,6 +1,6 @@
 import React from "react";
 
-export function NewsletterSection({}) {
+export function NewsletterSection() {
   return (
     <div className="container__newsletter">
       <div className="container__newsletter__left">

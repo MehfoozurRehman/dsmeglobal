@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import { ServicesCard } from "./ServicesCard";
 import Services from "../screens/Services";
 
-export function ServicesSection({}) {
+export function ServicesSection() {
   return (
     <>
       <div className="container__services">
@@ -26,7 +26,7 @@ export function ServicesSection({}) {
           <ServicesCard />
         </div>
       </div>
-      <Services setIsDark={() => {}} />
+      <Services />
     </>
   );
 }

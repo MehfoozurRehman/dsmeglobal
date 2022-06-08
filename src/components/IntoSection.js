@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import cycle from "../assets/cycle.mp4";
-import axios from "axios";
-import Loader from "./Loader";
-import { Fade, Roll, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
+import useSWR from "swr";
+import { fetcher } from "../utils/functions";
 
 export default function IntoSection() {
-  const [servicesData, setServicesData] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_service`)
-      .then((res) => {
-        setServicesData(res.data);
-      });
-  }, []);
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_service`,
+    fetcher,
+    { suspense: true }
+  );
   return (
     <>
       <div className="into__section">
@@ -54,10 +51,10 @@ export default function IntoSection() {
               flexWrap: "wrap",
             }}
           >
-            {servicesData.length === 0 ? (
-              <Loader />
+            {error ? (
+              <div>failed to load</div>
             ) : (
-              servicesData.map((item) => (
+              data.map((item) => (
                 <Link
                   onClick={() => {
                     window.localStorage.setItem(

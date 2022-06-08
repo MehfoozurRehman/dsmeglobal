@@ -1,49 +1,39 @@
 import React, { useEffect, useState } from "react";
-import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
-import pricing from "../assets/pricing.mp4";
-import ContactSection from "../components/ContactSection";
 import { Swiper, SwiperSlide } from "swiper/react";
-import axios from "axios";
 import VacencyCard from "../components/VacencyCard";
 import ApplyForJobPopup from "../components/ApplyForJobPopup";
 import HotOfferJobCard from "../components/HotOfferJobCard";
-import Loader from "../components/Loader";
 import noData from "../assets/noData.png";
-import { HomeJumbotron } from "./HomeJumbotron";
 import { HomeJumbotronCareers } from "./HomeJumbotronCareers";
+import { fetcher } from "../utils/functions";
+import useSWR from "swr";
 
-export default function Careers({ setIsDark }) {
-  const [careersData, setCareersData] = useState([]);
-  const [categoryList, setCategoryList] = useState([]);
+export default function Careers() {
   const [slidesPerPage, setSlidesPerPage] = useState(3.5);
   const [department, setDeparment] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [isApplyOpen, setIsApplyOpen] = useState(false);
   const [selectItem, setSelectedItem] = useState([]);
   const [careerDataFiltered, setCareerDataFiltered] = useState([]);
+
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_careers`,
+    fetcher,
+    { suspense: true }
+  );
+
   useEffect(() => {
     setCareerDataFiltered(
-      careersData.filter((item) =>
+      data.filter((item) =>
         item.position
           .toLowerCase()
           .replace(" ", "")
           .includes(searchQuery.toLocaleLowerCase().replace(" ", ""))
       )
     );
-  }, [searchQuery, careersData]);
+  }, [searchQuery, data]);
 
   useEffect(() => {
-    setIsDark(false);
-    axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_careers`)
-      .then((res) => {
-        setCareersData(res.data);
-      });
-    axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_category`)
-      .then((res) => {
-        setCategoryList(res.data);
-      });
     if (window.innerWidth <= 500) {
       setSlidesPerPage(1);
     } else if (window.innerWidth <= 650) {
@@ -78,11 +68,11 @@ export default function Careers({ setIsDark }) {
       <section id="job__section" className="hot__offers__section">
         <div className="hot__offers__section__header">Hot offer</div>
         <div className="hot__offers__section__content">
-          <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
-            {careersData.length === 0 ? (
-              <Loader />
-            ) : (
-              careersData.map((item) => (
+          {error ? (
+            <div>failed to load</div>
+          ) : (
+            <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
+              {data.map((item) => (
                 <SwiperSlide key={JSON.stringify(item)}>
                   <HotOfferJobCard
                     item={item}
@@ -92,40 +82,19 @@ export default function Careers({ setIsDark }) {
                     }}
                   />
                 </SwiperSlide>
-              ))
-            )}
-          </Swiper>
+              ))}
+            </Swiper>
+          )}
         </div>
       </section>
       <div className="hot__offers__section">
         <div className="hot__offers__section__header">Open Vacancies</div>
         <div className="hot__offers__section__content">
-          <div className="hot__offers__section__content__filters">
-            <input
-              list="departments"
-              name="department"
-              id="department"
-              placeholder="Department"
-              onChange={(e) => {
-                setDeparment(e.target.value);
-              }}
-            />
-            <datalist id="departments">
-              {categoryList.map((category) => (
-                <option key={JSON.stringify(category)} value={category.name} />
-              ))}
-            </datalist>
-            <input
-              type="text"
-              placeholder="Search"
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-              }}
-            />
-          </div>
-          {careersData.length === 0 ? (
-            <Loader />
-          ) : careerDataFiltered.length === 0 ? (
+          <CareersFilters
+            setDeparment={setDeparment}
+            setSearchQuery={setSearchQuery}
+          />
+          {careerDataFiltered.length === 0 ? (
             <div
               style={{
                 width: "100%",
@@ -161,5 +130,42 @@ export default function Careers({ setIsDark }) {
         />
       ) : null}
     </>
+  );
+}
+
+function CareersFilters({ setDeparment, setSearchQuery }) {
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_category`,
+    fetcher,
+    { suspense: true }
+  );
+  return (
+    <div className="hot__offers__section__content__filters">
+      <input
+        list="departments"
+        name="department"
+        id="department"
+        placeholder="Department"
+        onChange={(e) => {
+          setDeparment(e.target.value);
+        }}
+      />
+      <datalist id="departments">
+        {error ? (
+          <option>failed to load</option>
+        ) : (
+          data.map((category) => (
+            <option key={JSON.stringify(category)} value={category.name} />
+          ))
+        )}
+      </datalist>
+      <input
+        type="text"
+        placeholder="Search"
+        onChange={(e) => {
+          setSearchQuery(e.target.value);
+        }}
+      />
+    </div>
   );
 }

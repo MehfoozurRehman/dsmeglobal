@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import bannerImage1 from "../assets/bannerImage1.svg";
 
-export function HomeJumbotron({}) {
+export function HomeJumbotron() {
   const [taglineNo, setTaglineNo] = useState(0);
   const taglines = ["services", "products", "customizations"];
   const matchers = ["want", "need", "deserve"];

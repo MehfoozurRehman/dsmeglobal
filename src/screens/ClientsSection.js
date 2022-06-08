@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import axios from "axios";
 import { Fade } from "react-reveal";
+import { fetcher } from "../utils/functions";
+import useSWR from "swr";
 
-export function ClientsSection({}) {
-  const [clientsData, setClientsData] = useState([]);
+export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
+
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_work`,
+    fetcher,
+    { suspense: true }
+  );
 
   function getSlidesPerView() {
     if (window.innerWidth < 400) {
@@ -18,11 +24,7 @@ export function ClientsSection({}) {
       setSlidesPerView(4);
     }
   }
-
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_work`).then((res) => {
-      setClientsData(res.data);
-    });
     getSlidesPerView();
     window.addEventListener("resize", getSlidesPerView);
   }, []);
@@ -41,23 +43,27 @@ export function ClientsSection({}) {
         </div>
       </div>
       <div className="container__clients__right">
-        <Swiper slidesPerView={slidesPerView}>
-          {clientsData.map((client) => (
-            <SwiperSlide key={JSON.stringify(client)}>
-              <div className="container__clients__right__entry">
-                <Fade>
-                  <img
-                    src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      client.logo
-                    }
-                    alt={client.title}
-                  />
-                </Fade>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {error ? (
+          <div>failed to load</div>
+        ) : (
+          <Swiper slidesPerView={slidesPerView}>
+            {data.map((client) => (
+              <SwiperSlide key={JSON.stringify(client)}>
+                <div className="container__clients__right__entry">
+                  <Fade>
+                    <img
+                      src={
+                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                        client.logo
+                      }
+                      alt={client.title}
+                    />
+                  </Fade>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
     </div>
   );

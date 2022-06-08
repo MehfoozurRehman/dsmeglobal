@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import deliveryPic from "../assets/delivery.png";
 import pricing from "../assets/pricing.mp4";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { Fade } from "react-reveal";
 
-export default function Pricing({ setIsDark }) {
-  useEffect(() => {
-    setIsDark(false);
-  }, []);
+export default function Pricing() {
   const DeliveryCardEntry1 = [
     { para: "Onsite / Offsite Discovery Workshop" },
     { para: "Vision and Goal Mapping" },

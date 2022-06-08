@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
-import axios from "axios";
-import Loader from "../components/Loader";
+import useSWR from "swr";
+import { fetcher } from "../utils/functions";
 
-export default function ServiceDetails({ setIsDark }) {
+export default function ServiceDetails() {
   const [showImage, setShowImage] = useState(false);
   const [showImagData, setShowImageData] = useState([]);
-  const [projectData, setProjectData] = useState([]);
+
   if (showImage) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
   }
-  useEffect(() => {
-    setIsDark(true);
-    axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_project`)
-      .then((res) => {
-        setProjectData(res.data);
-      });
-  }, []);
+
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_project`,
+    fetcher,
+    { suspense: true }
+  );
   let serviceData = JSON.parse(window.localStorage.getItem("servicesData"));
   let filter;
   serviceData.categories.map((item) => {
@@ -91,21 +89,17 @@ export default function ServiceDetails({ setIsDark }) {
         </div>
       </div>
       <div className="service__details__projects">
-        {projectData.length === 0 ? (
-          <Loader />
-        ) : (
-          projectData.map((item) => {
-            return (
-              <ProjectCard
-                setShowImage={setShowImage}
-                setShowImageData={setShowImageData}
-                data={item}
-                key={JSON.stringify(item)}
-                filter={filter}
-              />
-            );
-          })
-        )}
+        {data.map((item) => {
+          return (
+            <ProjectCard
+              setShowImage={setShowImage}
+              setShowImageData={setShowImageData}
+              data={item}
+              key={JSON.stringify(item)}
+              filter={filter}
+            />
+          );
+        })}
       </div>
     </>
   );

@@ -1,12 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { parseDate } from "../utils/functions";
 
-export default function BlogDetails({ setIsDark }) {
-  useEffect(() => {
-    setIsDark(false);
-  }, []);
+export default function BlogDetails() {
   let blogData = JSON.parse(window.localStorage.getItem("blogsData"));
-  console.log(blogData.content);
 
   return (
     <>

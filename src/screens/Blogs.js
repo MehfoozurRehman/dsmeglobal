@@ -1,21 +1,18 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import useSWR from "swr";
 import BlogsCard from "../components/BlogCard";
 import BlogsFilter from "../components/BlogsFilter";
-import Loader from "../components/Loader";
+import { fetcher } from "../utils/functions";
 
-export default function Blogs({ setIsDark }) {
+export default function Blogs() {
   const [noOfItems, setNoOfItems] = useState(9);
-  const [blogData, setblogData] = useState([]);
   const [filter, setFilter] = useState("");
 
-  useEffect(() => {
-    setIsDark(true);
-    axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_blog`).then((res) => {
-      setblogData(res.data);
-      console.log(res.data);
-    });
-  }, []);
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_blog`,
+    fetcher,
+    { suspense: true }
+  );
   return (
     <div className="blog__page">
       <div className="blog__page__heading">Blogs</div>
@@ -53,10 +50,10 @@ export default function Blogs({ setIsDark }) {
         />
       </div>
       <div className="blog__page__content">
-        {blogData.length === 0 ? (
-          <Loader />
+        {error ? (
+          <div>failed to load</div>
         ) : (
-          blogData
+          data
             .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
             .map((item) => (
               <BlogsCard
@@ -67,7 +64,7 @@ export default function Blogs({ setIsDark }) {
             ))
         )}
       </div>
-      {filter === "" && blogData.length > 6 ? (
+      {filter === "" && data.length > 6 ? (
         <div className="blog__page__content__button">
           <button
             className="button"

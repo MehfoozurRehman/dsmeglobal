@@ -1,7 +1,10 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-export function BackgroundParticals({ particlesInit, particlesLoaded }) {
+export default function BackgroundParticals({
+  particlesInit,
+  particlesLoaded,
+}) {
   return (
     <Particles
       id="tsparticles"

@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
 import aboutVideo from "../assets/about.mp4";
 import HomeSectionCarouselEntry from "../components/HomeSectionCarouselEntry";
 import { Fade, Zoom } from "react-reveal";
 
-export default function AboutUs({ setIsDark }) {
-  useEffect(() => {
-    setIsDark(false);
-  }, []);
+export default function AboutUs() {
   return (
     <>
       <div style={{ height: "100vh", overflow: "hidden" }}>

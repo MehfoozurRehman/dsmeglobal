@@ -1,28 +1,25 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import Loader from "../components/Loader";
+import React, { useState } from "react";
+import useSWR from "swr";
 import PortfolioFilter from "../components/PortfolioFilter";
 import ProjectCard from "../components/ProjectCard";
+import { fetcher } from "../utils/functions";
 
-export default function Portfolio({ setIsDark }) {
+export default function Portfolio() {
   const [showImage, setShowImage] = useState(false);
   const [noOfItems, setNoOfItems] = useState(9);
   const [showImagData, setShowImageData] = useState([]);
-  const [projectData, setProjectData] = useState([]);
   const [filter, setFilter] = useState("");
   if (showImage) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
   }
-  useEffect(() => {
-    setIsDark(true);
-    axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_project`)
-      .then((res) => {
-        setProjectData(res.data);
-      });
-  }, []);
+
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_project`,
+    fetcher,
+    { suspense: true }
+  );
   return (
     <>
       {showImage ? (
@@ -102,23 +99,19 @@ export default function Portfolio({ setIsDark }) {
           />
         </div>
         <div className="blog__page__content">
-          {projectData.length === 0 ? (
-            <Loader />
-          ) : (
-            projectData
-              .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
-              .map((item) => (
-                <ProjectCard
-                  setShowImage={setShowImage}
-                  setShowImageData={setShowImageData}
-                  data={item}
-                  key={JSON.stringify(item)}
-                  filter={filter}
-                />
-              ))
-          )}
+          {data
+            .filter((item, i) => (filter === "" ? i < noOfItems : (i = i)))
+            .map((item) => (
+              <ProjectCard
+                setShowImage={setShowImage}
+                setShowImageData={setShowImageData}
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            ))}
         </div>
-        {filter === "" && projectData.length > 6 ? (
+        {filter === "" && data.length > 6 ? (
           <div className="blog__page__content__button">
             <button
               className="button"

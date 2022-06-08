@@ -3,25 +3,27 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "./Loader";
 import { Fade, Zoom } from "react-reveal";
+import { fetcher } from "../utils/functions";
+import useSWR from "swr";
 
-export default function WorkSection({}) {
+export default function WorkSection() {
   const [project, setProject] = useState([]);
-  const [workData, setWorkData] = useState([]);
+
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_work`,
+    fetcher,
+    { suspense: true }
+  );
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}api/v1/get_work`).then((res) => {
-      setWorkData(res.data);
-      res.data
-        .filter((item, i) => i === 0)
-        .map((item, i) => {
-          setProject(item);
-        });
-    });
-  }, []);
+    data
+      .filter((item, i) => i === 0)
+      .map((item, i) => {
+        setProject(item);
+      });
+  }, [data]);
   return (
     <>
-      {workData.length === 0 ? (
-        <Loader />
-      ) : (
+      {
         <div className="work__section">
           <div className="work__section__header">
             <div className="work__section__header__bar"></div>
@@ -97,8 +99,10 @@ export default function WorkSection({}) {
               </div>
             </div>
             <div className="work__section__content__selection">
-              {workData.map((item, i) => {
-                return (
+              {error ? (
+                <div>failed to load</div>
+              ) : (
+                data.map((item, i) => (
                   <div
                     className="work__section__content__selection__entry"
                     key={JSON.stringify(item)}
@@ -123,15 +127,15 @@ export default function WorkSection({}) {
                       />
                     </Zoom>
                   </div>
-                );
-              })}
+                ))
+              )}
             </div>
             <Link to="/portfolio" className="button__reverse">
               View Complete Portfolio
             </Link>
           </div>
         </div>
-      )}
+      }
     </>
   );
 }

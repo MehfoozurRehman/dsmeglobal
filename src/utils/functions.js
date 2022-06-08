@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export function getText(html) {
   var divContainer = document.createElement("div");
   divContainer.innerHTML = html;
@@ -35,3 +37,5 @@ export function parseDate(date) {
     year
   );
 }
+
+export const fetcher = (url) => axios.get(url).then((res) => res.data);

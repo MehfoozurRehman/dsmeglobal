@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import axios from "axios";
-import Loader from "./Loader";
 import { Fade } from "react-reveal";
 
 export default function IntoSection() {
-  const [servicesData, setServicesData] = useState([]);
   const [slidesPerPage, setSlidesPerPage] = useState(5);
+  const { data, error } = useSWR(
+    `${process.env.REACT_APP_API_URL}api/v1/get_techonologies`,
+    fetcher,
+    { suspense: true }
+  );
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}api/v1/get_techonologies`)
-      .then((res) => {
-        setServicesData(res.data);
-      });
     if (window.innerWidth <= 500) {
       setSlidesPerPage(1);
     } else if (window.innerWidth <= 650) {
@@ -51,15 +48,13 @@ export default function IntoSection() {
             className="into__section__wrapper__content"
             style={{ marginTop: "5em" }}
           >
-            {servicesData.length === 0 ? (
-              <Loader />
-            ) : (
+            {
               <Swiper
                 spaceBetween={50}
                 slidesPerView={slidesPerPage}
                 loop={true}
               >
-                {servicesData.map((item) => (
+                {data?.map((item) => (
                   <SwiperSlide key={JSON.stringify(item)}>
                     <Fade>
                       <div className="techonologies__card">
@@ -76,7 +71,7 @@ export default function IntoSection() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-            )}
+            }
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "react-feather";
 import { Fade } from "react-reveal";
 
-export function ServicesCard({}) {
+export function ServicesCard() {
   return (
     <Fade>
       <div className="container__services__right__entry">
