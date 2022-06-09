@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles/App.scss";
 import "animate.css";
 import "swiper/css";
+import "./styles/Footer.scss";
 
 const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
