@@ -74,7 +74,7 @@ export default function Header() {
               }}
               className="header__content__button__primary"
             >
-              Let's Talk
+              Contact Us
             </Link>
           </Fade>
         </div>
