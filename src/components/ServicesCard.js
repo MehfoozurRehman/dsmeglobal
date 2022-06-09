@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 function ServicesCard({ data }) {
   function onClick() {
     window.localStorage.setItem("servicesData", JSON.stringify(data));
+    setTimeout(() => {
+      window.scrollTo({ behavior: "smooth", top: 0 });
+    }, 300);
   }
   return (
     <Link

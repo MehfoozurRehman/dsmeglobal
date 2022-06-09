@@ -1,11 +1,22 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 export function ServicesCard({ data }) {
+  function onClick() {
+    window.localStorage.setItem("servicesData", JSON.stringify(data));
+    setTimeout(() => {
+      window.scrollTo({ behavior: "smooth", top: 0 });
+    }, 300);
+  }
   return (
-    <Fade>
-      <div className="container__services__right__entry">
-        <div className="container__services__right__entry__icon">
+    <Link
+      onClick={onClick}
+      to="/service-details"
+      className="container__services__right__entry"
+    >
+      <div className="container__services__right__entry__icon">
+        <Fade>
           <img
             src={
               "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
@@ -13,15 +24,17 @@ export function ServicesCard({ data }) {
             }
             alt={data.title}
           />
-        </div>
-        <div className="container__services__right__entry__heading">
-          {data.title}
-        </div>
-        <div className="container__services__right__entry__info">
+        </Fade>
+      </div>
+      <div className="container__services__right__entry__heading">
+        <Fade>{data.title}</Fade>
+      </div>
+      <div className="container__services__right__entry__info">
+        <Fade>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
           reiciendis.
-        </div>
+        </Fade>
       </div>
-    </Fade>
+    </Link>
   );
 }

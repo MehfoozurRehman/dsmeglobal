@@ -62,47 +62,47 @@ export default function ServiceDetails() {
         </div>
       ) : null}
       <div className="service__details__jumbotron">
-        <div className="service__details__jumbotron__content">
-          <div className="service__details__jumbotron__left">
-            <img
-              src={
-                "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                serviceData.image
-              }
-              alt="serviceDetailsImg"
-              className="service__details__jumbotron__left__img"
-            />
+        <div className="service__details__jumbotron__left">
+          <img
+            src={
+              "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+              serviceData.image
+            }
+            alt="serviceDetailsImg"
+            className="service__details__jumbotron__left__img"
+          />
+        </div>
+        <div className="service__details__jumbotron__right">
+          <div className="service__details__jumbotron__right__heading">
+            {serviceData.title}
           </div>
-          <div className="service__details__jumbotron__right">
-            <div className="service__details__jumbotron__right__heading">
-              {serviceData.title}
-            </div>
-            <div className="service__details__jumbotron__right__info">
-              {serviceData.description}
-            </div>
-            <Link
-              to="/pricing"
-              className="service__details__jumbotron__right__button"
-            >
-              Order Now
-            </Link>
+          <div className="service__details__jumbotron__right__info">
+            {serviceData.description}
           </div>
+          <Link
+            to="/pricing"
+            className="service__details__jumbotron__right__button"
+          >
+            Order Now
+          </Link>
         </div>
       </div>
-      <div className="service__details__projects">
-        {error ? (
-          <div>failed to load</div>
-        ) : (
-          data?.map((item) => (
-            <ProjectCard
-              setShowImage={setShowImage}
-              setShowImageData={setShowImageData}
-              data={item}
-              key={JSON.stringify(item)}
-              filter={filter}
-            />
-          ))
-        )}
+      <div className="blog__page">
+        <div className="blog__page__content">
+          {error ? (
+            <div>failed to load</div>
+          ) : (
+            data?.map((item) => (
+              <ProjectCard
+                setShowImage={setShowImage}
+                setShowImageData={setShowImageData}
+                data={item}
+                key={JSON.stringify(item)}
+                filter={filter}
+              />
+            ))
+          )}
+        </div>
       </div>
     </>
   );
