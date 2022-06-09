@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import contactImg from "../assets/contactImg.png";
 import Input from "./Input";
-import { Facebook, Instagram, Linkedin, Twitter } from "react-feather";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from "react-feather";
 import axios from "axios";
 import { Fade } from "react-reveal";
+import { HomeJumbotron } from "../screens/HomeJumbotron";
 
 export default function ContactSection() {
   const [name, setName] = useState("");
@@ -26,6 +35,11 @@ export default function ContactSection() {
       <div className="contact__section">
         <div className="contact__section__content">
           <div className="contact__section__content__left">
+            <img
+              src={contactImg}
+              alt="contactImg"
+              className="contact__section__content__img"
+            />
             <div className="contact__section__content__left__header">
               <Fade>
                 CONTACT <span>Information</span>
@@ -33,37 +47,86 @@ export default function ContactSection() {
             </div>
             <div className="contact__section__content__left__content">
               <div className="contact__section__content__left__content__entry">
-                <div className="contact__section__content__left__content__entry__heading">
-                  <Fade>Phone</Fade>
+                <div className="contact__section__content__left__content__entry__icon">
+                  <Phone size={30} color="currentColor" />
                 </div>
-                <div className="contact__section__content__left__content__entry__content">
-                  <Fade>354 454 5344 343</Fade>
-                </div>
-                <div className="contact__section__content__left__content__entry__content">
-                  <Fade>354 454 5344 343</Fade>
-                </div>
-              </div>
-              <div className="contact__section__content__left__content__entry">
-                <div className="contact__section__content__left__content__entry__heading">
-                  <Fade>Email</Fade>
-                </div>
-                <div className="contact__section__content__left__content__entry__content">
-                  <Fade>hello@J7.com</Fade>
-                </div>
-                <div className="contact__section__content__left__content__entry__content">
-                  <Fade>hello@J7Group.com</Fade>
+                <div className="contact__section__content__left__content__entry__wrapper">
+                  <div className="contact__section__content__left__content__entry__heading">
+                    <Fade>Phone</Fade>
+                  </div>
+                  <div className="contact__section__content__left__content__entry__content">
+                    <Fade>354 454 5344 343</Fade>
+                  </div>
+                  <div className="contact__section__content__left__content__entry__content">
+                    <Fade>354 454 5344 343</Fade>
+                  </div>
                 </div>
               </div>
               <div className="contact__section__content__left__content__entry">
-                <div className="contact__section__content__left__content__entry__heading">
-                  <Fade>Head Office</Fade>
+                <div className="contact__section__content__left__content__entry__icon">
+                  <Mail size={30} color="currentColor" />
                 </div>
-                <div className="contact__section__content__left__content__entry__content">
-                  <Fade>1st floor, DHA - Z Block,</Fade>
+                <div className="contact__section__content__left__content__entry__wrapper">
+                  <div className="contact__section__content__left__content__entry__heading">
+                    <Fade>Email</Fade>
+                  </div>
+                  <div className="contact__section__content__left__content__entry__content">
+                    <Fade>hello@J7.com</Fade>
+                  </div>
+                  <div className="contact__section__content__left__content__entry__content">
+                    <Fade>hello@J7Group.com</Fade>
+                  </div>
                 </div>
-                <div className="contact__section__content__left__content__entry__content">
-                  <Fade>Plot # 33, Lahore, 54000, Pakistan</Fade>
+              </div>
+              <div className="contact__section__content__left__content__entry">
+                <div className="contact__section__content__left__content__entry__icon">
+                  <MapPin size={30} color="currentColor" />
                 </div>
+                <div className="contact__section__content__left__content__entry__wrapper">
+                  <div className="contact__section__content__left__content__entry__heading">
+                    <Fade>Head Office</Fade>
+                  </div>
+                  <div className="contact__section__content__left__content__entry__content">
+                    <Fade>
+                      1st floor, DHA - Z Block, Plot # 33, Lahore, 54000,
+                      Pakistan
+                    </Fade>
+                  </div>
+                </div>
+              </div>
+              <div className="contact__section__content__right__links">
+                <Fade>
+                  <a
+                    href="#"
+                    className="contact__section__content__right__links__link"
+                  >
+                    <Facebook size={20} color="currentColor" />
+                  </a>
+                </Fade>
+                <Fade>
+                  <a
+                    href="#"
+                    className="contact__section__content__right__links__link"
+                  >
+                    <Instagram size={20} color="currentColor" />
+                  </a>
+                </Fade>
+                <Fade>
+                  <a
+                    href="#"
+                    className="contact__section__content__right__links__link"
+                  >
+                    <Twitter size={20} color="currentColor" />
+                  </a>
+                </Fade>
+                <Fade>
+                  <a
+                    href="#"
+                    className="contact__section__content__right__links__link"
+                  >
+                    <Linkedin size={20} color="currentColor" />
+                  </a>
+                </Fade>
               </div>
             </div>
           </div>
@@ -192,54 +255,18 @@ export default function ContactSection() {
                   placeholder="Message"
                 />
               </div>
-              <button className="button" style={{ width: "80%" }}>
+              <button className="contact__section__content__middle__form__button">
                 Send
               </button>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.806546077531!2d74.37747145100826!3d31.474507381293495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907a286809427%3A0x66f8b31237e79ada!2sDSME%20Global%20Links!5e0!3m2!1sen!2s!4v1654765161734!5m2!1sen!2s"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                className="contact__section__content__middle__form__map"
+              ></iframe>
             </form>
           </Fade>
-          <div className="contact__section__content__right">
-            <Fade>
-              <img
-                src={contactImg}
-                alt="contactImg"
-                className="contact__section__content__right__img"
-              />
-            </Fade>
-            <div className="contact__section__content__right__links">
-              <Fade>
-                <a
-                  href="#"
-                  className="contact__section__content__right__links__link"
-                >
-                  <Facebook size={20} color="currentColor" />
-                </a>
-              </Fade>
-              <Fade>
-                <a
-                  href="#"
-                  className="contact__section__content__right__links__link"
-                >
-                  <Instagram size={20} color="currentColor" />
-                </a>
-              </Fade>
-              <Fade>
-                <a
-                  href="#"
-                  className="contact__section__content__right__links__link"
-                >
-                  <Twitter size={20} color="currentColor" />
-                </a>
-              </Fade>
-              <Fade>
-                <a
-                  href="#"
-                  className="contact__section__content__right__links__link"
-                >
-                  <Linkedin size={20} color="currentColor" />
-                </a>
-              </Fade>
-            </div>
-          </div>
         </div>
       </div>
     </>
