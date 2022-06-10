@@ -3,8 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 import { loadFull } from "tsparticles";
 import Footer from "./components/Footer";
+import Portfolio__detail from "./screens/Portfolio__detail";
 import "./styles/App.scss";
 import "./styles/Footer.scss";
+import "./styles/portfoliodetail.scss";
 import "animate.css";
 import "swiper/css";
 const Home = lazy(() => import("./screens/Home"));
@@ -39,6 +41,7 @@ export default function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/Portfolio__detail" element={<Portfolio__detail />} />
       </Routes>
       <Footer />
     </Suspense>
