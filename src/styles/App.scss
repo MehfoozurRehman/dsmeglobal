@@ -32,9 +32,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0em !important;
 }
 .header__content__logo img {
-  width: 150px;
+  width: 120px;
 }
 .header__content__nav {
   display: flex;
@@ -132,7 +133,7 @@ body {
   flex-direction: column;
 }
 .container__jumbotron__left__heading {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   width: 100%;
   display: flex;
@@ -571,7 +572,6 @@ body {
   padding: 2em 4em;
   margin-top: 8em;
   position: sticky;
-  top: 0px;
   z-index: 999;
 }
 .blog__page__heading {

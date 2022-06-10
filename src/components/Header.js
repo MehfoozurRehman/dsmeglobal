@@ -1,8 +1,8 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState, useTransition } from "react";
 import { X, Menu } from "react-feather";
 import { Fade } from "react-reveal";
 import { Link, useNavigate } from "react-router-dom";
-import logoDark from "../assets/logoDark.png";
+import logoDark from "../assets/logoDark.svg";
 import OutsideClickHandler from "react-outside-click-handler";
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
     window.addEventListener("resize", navOpenClose);
     window.addEventListener("scroll", navOpenClose);
   }, []);
-
+  const [isPending, startTransition] = useTransition();
   return (
     <div className="header">
       <div className="header__content">
@@ -66,11 +66,13 @@ export default function Header() {
             <Link
               to="/contact-us"
               onClick={() => {
-                document
-                  .getElementsByName("header__content__nav__entry")
-                  .forEach((item) => {
-                    item.checked = false;
-                  });
+                startTransition(() => {
+                  document
+                    .getElementsByName("header__content__nav__entry")
+                    .forEach((item) => {
+                      item.checked = false;
+                    });
+                });
               }}
               className="header__content__button__primary"
             >
@@ -84,6 +86,7 @@ export default function Header() {
 }
 
 function NavLink({ children, to, navigate }) {
+  const [isPending, startTransition] = useTransition();
   return (
     <Fade>
       <div className="header__content__nav__entry">
@@ -95,7 +98,9 @@ function NavLink({ children, to, navigate }) {
           className="header__content__nav__entry__input"
           defaultChecked={window.location.pathname === to}
           onClick={() => {
-            navigate(to);
+            startTransition(() => {
+              navigate(to);
+            });
           }}
         />
         <div className="header__content__nav__entry__content">{children}</div>

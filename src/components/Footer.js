@@ -5,6 +5,11 @@ import img3 from "../assets/3.png";
 import img4 from "../assets/4.png";
 import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
+import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
+import useSWR from "swr";
+import { fetcher } from "../utils/functions";
+import logoDark from "../assets/logo.svg";
 import {
   Dribbble,
   Facebook,
@@ -12,11 +17,6 @@ import {
   Linkedin,
   Twitter,
 } from "react-feather";
-import { Fade } from "react-reveal";
-import { Link } from "react-router-dom";
-import useSWR from "swr";
-import { fetcher } from "../utils/functions";
-import logoDark from "../assets/logoDark.png";
 
 export default function Footer() {
   return (

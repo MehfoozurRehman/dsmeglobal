@@ -1,26 +1,20 @@
 import React, { memo } from "react";
 import Particles from "react-tsparticles";
 
-function BackgroundParticals({ particlesInit, particlesLoaded }) {
+function BackgroundParticals({ particlesInit }) {
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         autoPlay: true,
         background: {
           color: {
             value: "#ffffff",
           },
-          image: "",
-          position: "",
-          repeat: "",
-          size: "",
-          opacity: 1,
         },
         backgroundMask: {
-          composite: "destination-out",
+          composite: "destination-in",
           cover: {
             color: {
               value: "#ffffff",
@@ -33,7 +27,7 @@ function BackgroundParticals({ particlesInit, particlesLoaded }) {
           enable: true,
           zIndex: 1,
         },
-        detectRetina: true,
+        detectRetina: false,
         duration: 0,
         fpsLimit: 120,
         interactivity: {

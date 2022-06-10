@@ -27,6 +27,7 @@ export default function App() {
   return (
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
       <BackgroundParticals particlesInit={particlesInit} />
+
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
