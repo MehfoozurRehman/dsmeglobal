@@ -1,7 +1,17 @@
 import React from "react";
-import loader from "../assets/loader.gif";
+import Lottie from "react-lottie";
+import animationData from "../assets/loader.json";
 
 export default function Loader({ style }) {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div
       style={{
@@ -12,7 +22,7 @@ export default function Loader({ style }) {
         ...style,
       }}
     >
-      <img src={loader} alt="loader" style={{ width: 300 }} />
+      <Lottie options={defaultOptions} height={400} width={400} />
     </div>
   );
 }

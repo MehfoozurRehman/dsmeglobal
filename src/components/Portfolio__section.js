@@ -1,40 +1,25 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Portfolio__section() {
+export default function Portfolio__section({ data }) {
   return (
     <div className="portfolio__section">
       <div className="portfolio__section__container">
-        <div className="portfolio__section__container__heading">
-          Portfolio Section Heading
+        <div
+          className="portfolio__section__container__heading"
+          style={{ color: data.theme }}
+        >
+          About {data.title} solution
         </div>
         <div className="portfolio__section__container__heading__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-          debitis. Praesentium ducimus laboriosam accusantium nisi mollitia iste
-          veritatis ad deleniti. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Aperiam, nemo!
-        </div>
-        <div className="portfolio__section__container__heading__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-          debitis. Praesentium ducimus laboriosam accusantium nisi mollitia iste
-          veritatis ad deleniti. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Aperiam, nemo!
+          {data.description}
         </div>
         <div className="portfolio__section__container__buttons">
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
-          <button>lorem</button>
+          {data.techonologies?.map((item) => (
+            <button style={{ backgroundColor: data.theme }}>
+              {item.label}
+            </button>
+          ))}
         </div>
         <div className="portfolio__section__container__text__content">
           <svg
@@ -50,29 +35,52 @@ export default function Portfolio__section() {
           </svg>
 
           <div className="portfolio__section__container__text__content__entry">
-            <span className="portfolio__section__container__text__content__entry__span">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-              tempora error dolorem dolores dignissimos voluptate delectus
-            </span>{" "}
-            excepturi ipsam aspernatur voluptatibus? Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Pariatur autem obcaecati alias, dolore
-            voluptatibus nam fugit magni beatae veniam vero!
+            {data.quotation}
           </div>
           <div className="portfolio__section__container__text__content__entry__span__bottom">
-            Dominika Drońska, Senior Digital Marketing
-            <div>Manager, Abbey Road Studios</div>
+            <div style={{ marginBottom: ".5em", fontWeight: "bold" }}>
+              {data.quotationAuthor}
+            </div>
+            <div>{data.quotationDesignation}</div>
           </div>
         </div>
       </div>
+      <div className="portfolio__section__images">
+        <Swiper slidesPerView={2} spaceBetween={30}>
+          <SwiperSlide>
+            <img
+              src={
+                "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                data.image
+              }
+              alt=""
+              className="portfolio__section__images__entry"
+            />
+          </SwiperSlide>
+          {data.sliderImage?.map((item) => (
+            <SwiperSlide>
+              <img
+                src={
+                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                  item
+                }
+                alt=""
+                className="portfolio__section__images__entry"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       <div className="portfolio__section__container__calendar__sec">
-        <div className="portfolio__section__container__calendar__sec__container">
+        <div
+          className="portfolio__section__container__calendar__sec__container"
+          style={{ backgroundColor: data.theme }}
+        >
           <div className="portfolio__section__container__calendar__seccontainer__left">
             <div className="portfolio__section__container__calendar__seccontainer__left__weeks">
               10 weeks
             </div>
-            <div>
-              For the MVP <br /> (Flutter)
-            </div>
+            <div>For the MVP</div>
           </div>
           <div className="portfolio__section__container__calendar__seccontainer__right">
             <div className="portfolio__section__container__calendar__seccontainer__right__weeks">

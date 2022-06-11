@@ -11,23 +11,28 @@ export function HomeJumbotron({
   img,
   buttons,
   imgs,
+  styleColor,
+  styleImage,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
-      setTaglineNo(taglineNo < taglines.length - 1 ? taglineNo + 1 : 0);
+      setTaglineNo(taglineNo < taglines?.length - 1 ? taglineNo + 1 : 0);
     }, 4100);
-  }, [taglineNo, taglines.length]);
+  }, [taglineNo, taglines?.length]);
 
   return (
-    <div className="container__jumbotron">
+    <div className="container__jumbotron" style={{ ...styleImage }}>
       <div className="container__jumbotron__left">
         <Fade>
-          <div className="container__jumbotron__left__heading">
+          <div
+            className="container__jumbotron__left__heading"
+            style={{ ...styleColor }}
+          >
             {taglinesLine}{" "}
             {taglines
-              .filter((tagline, i) => i === taglineNo)
+              ?.filter((tagline, i) => i === taglineNo)
               .map((tagline) => {
                 return <span key={JSON.stringify(tagline)}>{tagline}</span>;
               })}{" "}

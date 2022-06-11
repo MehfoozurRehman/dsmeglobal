@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { useNavigate } from "react-router-dom";
 
 export default function ProjectCardContent({
   image,
@@ -7,10 +8,19 @@ export default function ProjectCardContent({
   title,
   setShowImage,
   setShowImageData,
+  data,
 }) {
+  const navigate = useNavigate();
+  console.log(data);
   return (
     <Fade>
-      <div className="service__details__projects__entry ">
+      <button
+        className="service__details__projects__entry"
+        onClick={() => {
+          navigate("/portfolio-detail");
+          window.localStorage.setItem("project", JSON.stringify(data));
+        }}
+      >
         <img
           src={
             "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
@@ -23,7 +33,10 @@ export default function ProjectCardContent({
           <div className="service__details__projects__entry__content__heading">
             {title}
           </div>
-          <div
+          <div className="service__details__projects__entry__content__info">
+            {data.description}
+          </div>
+          {/* <div
             className="service__details__projects__entry__content__button__row"
             style={url === "" ? { justifyContent: "center" } : null}
           >
@@ -80,9 +93,9 @@ export default function ProjectCardContent({
                 </svg>
               </a>
             ) : null}
-          </div>
+          </div> */}
         </div>
-      </div>
+      </button>
     </Fade>
   );
 }

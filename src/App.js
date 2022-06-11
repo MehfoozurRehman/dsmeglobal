@@ -42,7 +42,7 @@ export default function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/Portfolio__detail" element={<Portfolio__detail />} />
+        <Route path="/portfolio-detail" element={<Portfolio__detail />} />
       </Routes>
       <Footer />
     </Suspense>

@@ -16,8 +16,8 @@ body {
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: white;
   z-index: 9990;
+  background-color: white;
 }
 .header__content {
   display: flex;
@@ -131,6 +131,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .container__jumbotron__left__heading {
   font-size: 40px;
@@ -650,6 +651,9 @@ body {
   position: relative;
   margin: 1em;
   border-radius: 10px;
+  padding: 0em;
+  border: none;
+  cursor: pointer;
 }
 .service__details__projects__entry__img {
   width: 100%;
@@ -674,6 +678,13 @@ body {
   color: white;
   font-weight: bold;
   display: none;
+}
+.service__details__projects__entry__content__info {
+  font-size: 14px;
+  color: white;
+  display: none;
+  max-width: 80%;
+  margin-top: 1em;
 }
 .service__details__projects__entry__content__button__row {
   display: none;
@@ -700,6 +711,12 @@ body {
 .service__details__projects__entry:hover
   .service__details__projects__entry__content
   .service__details__projects__entry__content__heading {
+  transition: 300ms ease-in-out;
+  display: flex;
+}
+.service__details__projects__entry:hover
+  .service__details__projects__entry__content
+  .service__details__projects__entry__content__info {
   transition: 300ms ease-in-out;
   display: flex;
 }
@@ -1798,6 +1815,46 @@ body {
   position: sticky;
   z-index: 999;
 }
+.portfolio__home__section {
+  position: sticky;
+  width: 100%;
+  z-index: 999;
+  margin-top: 7em;
+}
+.portfolio__home__section__content {
+  height: 450px;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0em 4em;
+  margin: 0em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio__home__section__left {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.portfolio__home__section__left__heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.portfolio__home__section__right {
+  height: 100%;
+  flex: 1;
+}
+.portfolio__section__images {
+  width: 100%;
+  max-width: 1500px;
+  padding: 2em 4em;
+  margin: 5em auto;
+}
+.portfolio__section__images__entry {
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .container__clients__left {
     width: 20%;
@@ -1938,6 +1995,7 @@ body {
   .container__jumbotron__left__info {
     text-align: center;
   }
+
   .container__jumbotron__right img {
     width: 100%;
     height: 500px;

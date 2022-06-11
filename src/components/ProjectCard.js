@@ -29,6 +29,7 @@ export default function ProjectCard({
           title={data.title}
           setShowImage={setShowImage}
           setShowImageData={setShowImageData}
+          data={data}
         />
       ) : doesFilter ? (
         <ProjectCardContent
@@ -37,6 +38,7 @@ export default function ProjectCard({
           title={data.title}
           setShowImage={setShowImage}
           setShowImageData={setShowImageData}
+          data={data}
         />
       ) : filter === "our product" && isOurProduct ? (
         <ProjectCardContent
@@ -45,6 +47,7 @@ export default function ProjectCard({
           title={data.title}
           setShowImage={setShowImage}
           setShowImageData={setShowImageData}
+          data={data}
         />
       ) : null}
     </>
