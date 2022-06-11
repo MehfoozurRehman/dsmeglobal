@@ -10,6 +10,7 @@ export function HomeJumbotron({
   info,
   img,
   buttons,
+  imgs,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
 
@@ -69,9 +70,19 @@ export function HomeJumbotron({
         ) : null}
       </div>
       <div className="container__jumbotron__right">
-        <Fade>
-          <img src={img} alt={img} />
-        </Fade>
+        {imgs ? (
+          imgs
+            .filter((item, i) => i === taglineNo)
+            .map((item) => (
+              <Fade>
+                <img src={item} alt={item} />
+              </Fade>
+            ))
+        ) : (
+          <Fade>
+            <img src={img} alt={img} />
+          </Fade>
+        )}
       </div>
     </div>
   );
