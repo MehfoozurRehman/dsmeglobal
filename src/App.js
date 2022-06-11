@@ -7,6 +7,7 @@ import Portfolio__detail from "./screens/Portfolio__detail";
 import "./styles/App.scss";
 import "./styles/Footer.scss";
 import "./styles/portfoliodetail.scss";
+import "./styles/About__sec.scss";
 import "animate.css";
 import "swiper/css";
 const Home = lazy(() => import("./screens/Home"));
