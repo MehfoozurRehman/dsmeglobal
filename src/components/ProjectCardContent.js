@@ -19,6 +19,7 @@ export default function ProjectCardContent({
         onClick={() => {
           navigate("/portfolio-detail");
           window.localStorage.setItem("project", JSON.stringify(data));
+          window.scrollTo({ behavior: "smooth", top: 0 });
         }}
       >
         <img
