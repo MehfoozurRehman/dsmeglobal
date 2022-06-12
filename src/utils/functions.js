@@ -5,6 +5,7 @@ export function getText(html) {
   divContainer.innerHTML = html;
   return divContainer.textContent || divContainer.innerText || "";
 }
+
 export function parseDate(date) {
   const months = [
     "January",
