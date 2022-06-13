@@ -13,6 +13,8 @@ import "swiper/css";
 import ContactSection from "./components/ContactSection";
 import Services from "./screens/Services";
 import ServicesWebDev from "./screens/ServicesWebDev";
+import ServiceUIUX from "./screens/ServiceUIUX";
+import ServiceMobDev from "./screens/ServiceMobDev";
 const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
 const ServiceDetails = lazy(() => import("./screens/ServiceDetails"));
@@ -39,6 +41,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/web-dev" element={<ServicesWebDev />} />
+        <Route path="/services/uiux" element={<ServiceUIUX />} />
+        <Route path="/services/mob-dev" element={<ServiceMobDev />} />
         <Route path="/service-details" element={<ServiceDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />

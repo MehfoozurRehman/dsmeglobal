@@ -8,11 +8,6 @@ import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
 
 export default function ServicesWebDev() {
-  const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_service`,
-    fetcher,
-    { suspense: true }
-  );
   return (
     <>
       <div className="container">
