@@ -10,6 +10,8 @@ import "./styles/portfoliodetail.scss";
 import "./styles/About__sec.scss";
 import "animate.css";
 import "swiper/css";
+import ContactSection from "./components/ContactSection";
+import Services from "./screens/Services";
 const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
 const ServiceDetails = lazy(() => import("./screens/ServiceDetails"));
@@ -34,6 +36,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/service-details" element={<ServiceDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />
@@ -44,6 +47,7 @@ export default function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/portfolio-detail" element={<Portfolio__detail />} />
       </Routes>
+      <ContactSection />
       <Footer />
     </Suspense>
   );

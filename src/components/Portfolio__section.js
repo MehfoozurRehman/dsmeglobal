@@ -5,10 +5,7 @@ export default function Portfolio__section({ data }) {
   return (
     <div className="portfolio__section">
       <div className="portfolio__section__container">
-        <div
-          className="portfolio__section__container__heading"
-          style={{ color: data.theme }}
-        >
+        <div className="portfolio__section__container__heading">
           About {data.title} solution
         </div>
         <div className="portfolio__section__container__heading__text">
@@ -16,7 +13,7 @@ export default function Portfolio__section({ data }) {
         </div>
         <div className="portfolio__section__container__buttons">
           {data.techonologies?.map((item) => (
-            <button style={{ backgroundColor: data.theme }}>
+            <button style={{ border: `2px solid ${data.theme}` }}>
               {item.label}
             </button>
           ))}
@@ -46,7 +43,7 @@ export default function Portfolio__section({ data }) {
         </div>
       </div>
       <div className="portfolio__section__images">
-        <Swiper slidesPerView={2} spaceBetween={30}>
+        <Swiper slidesPerView={3} spaceBetween={30}>
           <SwiperSlide>
             <img
               src={

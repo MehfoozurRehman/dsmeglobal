@@ -19,7 +19,7 @@ function BackgroundParticals({ particlesInit }) {
             color: {
               value: "#ffffff",
             },
-            opacity: 1,
+            opacity: 0,
           },
           enable: false,
         },
@@ -83,7 +83,7 @@ function BackgroundParticals({ particlesInit }) {
               links: {
                 blink: false,
                 consent: false,
-                opacity: 1,
+                opacity: 0.4,
               },
             },
             light: {
@@ -191,7 +191,7 @@ function BackgroundParticals({ particlesInit }) {
             },
           },
           color: {
-            value: "#242424",
+            value: "rgba(0,0,0,.3)",
             animation: {
               h: {
                 count: 0,
@@ -264,7 +264,7 @@ function BackgroundParticals({ particlesInit }) {
           links: {
             blink: false,
             color: {
-              value: "#242424",
+              value: "rgba(0,0,0,.3)",
             },
             consent: false,
             distance: 100,
@@ -274,7 +274,7 @@ function BackgroundParticals({ particlesInit }) {
             shadow: {
               blur: 5,
               color: {
-                value: "#242424",
+                value: "rgba(0,0,0,.3)",
               },
               enable: false,
             },
@@ -365,7 +365,7 @@ function BackgroundParticals({ particlesInit }) {
               enable: false,
               minimumValue: 0.1,
             },
-            value: 0.5,
+            value: 0.2,
             animation: {
               count: 0,
               enable: false,
@@ -436,7 +436,7 @@ function BackgroundParticals({ particlesInit }) {
           shadow: {
             blur: 0,
             color: {
-              value: "#242424",
+              value: "rgba(0,0,0,.3)",
             },
             enable: false,
             offset: {

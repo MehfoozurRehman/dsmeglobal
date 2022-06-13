@@ -75,28 +75,30 @@ export default function Careers() {
           img={bannerImage1}
         />
       </div>
-      <section id="job__section" className="hot__offers__section">
-        <div className="hot__offers__section__header">Hot offer</div>
-        <div className="hot__offers__section__content">
-          {error ? (
-            <div>failed to load</div>
-          ) : (
-            <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
-              {data.map((item) => (
-                <SwiperSlide key={JSON.stringify(item)}>
-                  <HotOfferJobCard
-                    item={item}
-                    onApply={(e) => {
-                      setIsApplyOpen(true);
-                      setSelectedItem(item);
-                    }}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
-        </div>
-      </section>
+      <div className="hot__offers__section__wrapper">
+        <section id="job__section" className="hot__offers__section">
+          <div className="hot__offers__section__header">Hot offer</div>
+          <div className="hot__offers__section__content">
+            {error ? (
+              <div>failed to load</div>
+            ) : (
+              <Swiper slidesPerView={slidesPerPage} spaceBetween={30}>
+                {data.map((item) => (
+                  <SwiperSlide key={JSON.stringify(item)}>
+                    <HotOfferJobCard
+                      item={item}
+                      onApply={(e) => {
+                        setIsApplyOpen(true);
+                        setSelectedItem(item);
+                      }}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
+          </div>
+        </section>
+      </div>
       <div className="hot__offers__section">
         <div className="hot__offers__section__header">Open Vacancies</div>
         <div className="hot__offers__section__content">

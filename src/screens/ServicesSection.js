@@ -38,17 +38,6 @@ export function ServicesSection() {
           )}
         </div>
       </div>
-      <div className="services__main__container">
-        {error ? (
-          <div>failed to load</div>
-        ) : (
-          data
-            .filter((item, i) => i > 3)
-            .map((item) => (
-              <ServicesCard data={item} key={JSON.stringify(item)} />
-            ))
-        )}
-      </div>
     </>
   );
 }
