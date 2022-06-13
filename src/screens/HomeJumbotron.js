@@ -48,7 +48,10 @@ export function HomeJumbotron({
             ) : null}
           </div>
         </Fade>
-        <div className="container__jumbotron__left__info">
+        <div
+          className="container__jumbotron__left__info"
+          style={taglines?.length === 0 ? null : { marginTop: "2em" }}
+        >
           <Fade>{info}</Fade>
         </div>
         {buttons ? (

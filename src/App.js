@@ -12,6 +12,7 @@ import "animate.css";
 import "swiper/css";
 import ContactSection from "./components/ContactSection";
 import Services from "./screens/Services";
+import ServicesWebDev from "./screens/ServicesWebDev";
 const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
 const ServiceDetails = lazy(() => import("./screens/ServiceDetails"));
@@ -37,6 +38,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services/web-dev" element={<ServicesWebDev />} />
         <Route path="/service-details" element={<ServiceDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />
