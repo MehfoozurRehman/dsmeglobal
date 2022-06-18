@@ -10,6 +10,8 @@ export default function Input({
   errorMessage,
   isError,
   disabled,
+  list,
+  label,
 }) {
   if (variant === "textarea") {
     return (
@@ -18,7 +20,7 @@ export default function Input({
           htmlFor={placeholder}
           className="contact__section__content__middle__input__label"
         >
-          {placeholder}
+          {label ? label : placeholder}
         </label>
         {isError ? (
           <label
@@ -45,7 +47,7 @@ export default function Input({
           htmlFor={placeholder}
           className="contact__section__content__middle__input__label"
         >
-          {placeholder}
+          {label ? label : placeholder}
         </label>
         {isError ? (
           <label
@@ -57,14 +59,21 @@ export default function Input({
         ) : null}
         <input
           type={type}
+          name={placeholder}
           id={placeholder}
-          placeholder={"Enter " + placeholder}
+          list={placeholder + "s"}
+          placeholder={list ? "Select " + placeholder : "Enter " + placeholder}
           className="contact__section__content__middle__input__field"
           onChange={onChange}
           value={value}
           required={required}
           disabled={disabled}
         />
+        <datalist id={placeholder + "s"}>
+          {list?.map((item) => (
+            <option value={item} />
+          ))}
+        </datalist>
       </div>
     );
   }
