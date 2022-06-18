@@ -1,0 +1,220 @@
+.meetus__container__main {
+  position: sticky;
+  z-index: 99;
+  padding: 0 4rem;
+  margin-bottom: 2em;
+}
+.meetus__container__smallThings {
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+}
+.meetus__container__smallThings__content {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.meetus__container__smallThings__heading {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.meetus__container__smallThings__content__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 4rem;
+}
+.meetus__container__smallThings__left {
+  width: 60%;
+  height: 100%;
+  padding-top: 5rem;
+}
+.meetus__container__smallThings__left__heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.meetus__container__smallThings__right {
+  width: 40%;
+  height: 100%;
+}
+.meetus__container__smallThings__right__image {
+  width: 450px;
+}
+.meetus__container__smallThings__right__image img {
+  width: 100%;
+  max-height: 450px;
+}
+.meetus__container__sub {
+  height: 100%;
+  width: 100%;
+margin-bottom: 4em;
+  display: flex;
+  align-items: center;
+}
+.meetus__container__sub__content {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.meetus__container__sub__left {
+  width: 600px;
+  min-height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+.meetus__container__sub__left__image {
+  width: 100%;
+  height: 100%;
+}
+.meetus__container__sub__left__image img {
+  width:520px;
+}
+.meetus__container__sub__right {
+  width: 600px;
+  min-height: 100%;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  // border: 1px solid rebeccapurple;
+}
+.meetus__container__sub__right__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.meetus__container__stories {
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+  margin-top: 2rem;
+}
+.meetus__container__stories__content {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.meetus__container__stories__heading {
+  font-size: 20px;
+
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.meetus__container__stories__card__container {
+  display: flex;
+  justify-content: space-between;
+}
+.meetus__container__stories__card {
+  width: fit-content;
+}
+.meetus__container__stories__card__image {
+  width: 100%;
+  height: 520px;
+  margin: 1rem 0;
+  object-fit: contain;
+}
+.meetus__container__stories__card__image img {
+  width: 100%;
+  height: 100%;
+}
+.meetus__container__stories__card__heading {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.meetus__container__stories__card__para {
+  text-align: center;
+}
+
+// Language: scss
+@media screen and (max-width: 1200px) {
+  .meetus__container__stories__card__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .meetus__container__smallThings__content__container {
+    flex-direction: column;
+  }
+  .meetus__container__smallThings__heading{
+    margin: 3rem 0;
+  }
+  .meetus__container__sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meetus__container__sub__content {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    margin: 2rem 0;
+  }
+  .meetus__container__sub__left {
+    width: 100%;
+  }
+  .meetus__container__sub__right {
+    width: 100%;
+  }
+  #meetus__container__sub__content2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .meetus__container__smallThings__left {
+    width: 100%;
+    text-align: center;
+  }
+  .meetus__container__main {
+    padding: 0 3em;
+   
+  }
+  .meetus__container__sub__right {
+    padding: 1rem 0;
+  }
+  .meetus__container__stories__heading {
+    text-align: center;
+  }
+  .meetus__container__stories__para {
+    text-align: center;
+  }
+  .meetus__container__sub__left {
+    text-align: center;
+  }
+  .meetus__container__sub__right {
+    text-align: center;
+  }
+  .meetus__container__sub__right__heading {
+    text-align: center;
+    width: 100%;
+  }
+  .meetus__container__smallThings__left {
+    padding: 1rem 0;
+  }
+  .meetus__container__smallThings__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+}
+@media  screen and (max-width:600px) {
+  .meetus__container__sub__left__image img{
+   width: 400px;
+    
+  }
+}

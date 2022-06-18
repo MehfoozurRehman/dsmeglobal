@@ -16,6 +16,7 @@ import ServicesWebDev from "./screens/ServicesWebDev";
 import ServiceUIUX from "./screens/ServiceUIUX";
 import ServiceMobDev from "./screens/ServiceMobDev";
 import QuoteScreen from "./screens/QuoteScreen";
+const MeetUs = lazy(() => import("./screens/MeetUs"));
 const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
 const ServiceDetails = lazy(() => import("./screens/ServiceDetails"));
@@ -57,6 +58,7 @@ export default function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/portfolio-detail" element={<Portfolio__detail />} />
+        <Route path="/meet-us" element={<MeetUs />} />
       </Routes>
       {isContactSection ? <ContactSection /> : null}
       <Footer />
