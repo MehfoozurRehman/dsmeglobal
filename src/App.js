@@ -8,6 +8,7 @@ import "./styles/App.scss";
 import "./styles/Footer.scss";
 import "./styles/portfoliodetail.scss";
 import "./styles/About__sec.scss";
+
 import "animate.css";
 import "swiper/css";
 import ContactSection from "./components/ContactSection";
@@ -15,6 +16,7 @@ import Services from "./screens/Services";
 import ServicesWebDev from "./screens/ServicesWebDev";
 import ServiceUIUX from "./screens/ServiceUIUX";
 import ServiceMobDev from "./screens/ServiceMobDev";
+
 const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
 const ServiceDetails = lazy(() => import("./screens/ServiceDetails"));

@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { fetcher } from "../utils/functions";
-import useSWR from "swr";
+import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import { Box, CheckCircle } from "react-feather";
+import { CheckCircle } from "react-feather";
 import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
+import WebdevArrEntry from "../components/WebdevArrEntry";
 
 export default function ServicesWebDev() {
   return (
@@ -121,6 +120,33 @@ export default function ServicesWebDev() {
           <div className="container__web__dev__solution__right__entry">
             <CheckCircle size={20} color="currentColor" />
             Fast & Responsive
+          </div>
+        </div>
+      </div>
+      <div className="container__emerging__technologies">
+        <div className="container__emerging__technologies__heading__main">
+          Emerging Technologies
+        </div>
+        <div className="container__emerging__technologies__text__main">
+          We constantly push our limits and explore emerging technologies to
+          build a solution that you help our clients stay ahead of the game.
+        </div>
+        <div className="container__emerging__technologies__section">
+          <WebdevArrEntry />
+          <WebdevArrEntry />
+          <WebdevArrEntry />
+          <WebdevArrEntry />
+          <WebdevArrEntry />
+          <WebdevArrEntry />
+        </div>
+        <div className="container__emerging__technologies__section__entry__data">
+          <div className="container__emerging__technologies__section__entry__data___heading">
+            AR/VR
+          </div>
+          <div className="container__emerging__technologies__section__entry__data__text">
+            We study changes in consumer perspective to build a cost-effective,
+            robust and game-changing AR/VR solutions for a variety of products
+            and services.
           </div>
         </div>
       </div>

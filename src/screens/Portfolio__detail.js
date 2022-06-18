@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Portfolio__section from "../components/Portfolio__section";
-import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage from "../assets/bannerImage2.png";
 
 export default function Portfolio__detail() {
   const [data, setData] = useState([]);

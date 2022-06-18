@@ -974,7 +974,7 @@ body {
 .contact__section {
   position: sticky;
   z-index: 999;
-  padding-top: 10em;
+  padding-top: 2em;
 }
 .contact__section__content__middle__input {
   display: flex;
@@ -2031,14 +2031,18 @@ body {
   z-index: 999;
   width: 100%;
   max-width: 1500px;
-  padding: 0em 4em;
-  margin: 5em auto;
+  padding: 4em 4em;
+  margin: 0em auto;
   display: flex;
   justify-content: space-between;
 }
 .container__web__dev__solution__left {
   flex-direction: column;
   flex: 1;
+  padding: 0em 0em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .container__web__dev__solution__header {
   width: 100%;
@@ -2052,14 +2056,14 @@ body {
   color: #242424;
   width: 100%;
   max-width: 500px;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
 }
 .container__web__dev__solution__left__info {
   font-size: 16px;
   color: #242424;
   width: 100%;
   max-width: 600px;
-  margin-bottom: 0.8em;
+  margin-bottom: 1em;
 }
 .container__web__dev__solution__left__row {
   display: flex;
@@ -2067,8 +2071,151 @@ body {
 }
 .container__web__dev__solution__left__row__img {
   width: 80px;
+  cursor: pointer;
+  margin-left: 1em;
+}
+.container__web__dev__solution__right {
+  background-color: #30b795;
+  display: flex;
+  flex-direction: column;
+  padding: 6em 6em;
+  justify-content: center;
+  color: white;
+  margin-left: 1em;
+  width: 40%;
+}
+.container__web__dev__solution__right__entry {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0em;
+  font-size: 16px;
+}
+.container__web__dev__solution__right__entry svg {
   margin-right: 1em;
 }
+.container__emerging__technologies {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: sticky;
+  z-index: 999;
+  padding: 3em 4em;
+  padding-top: 0em;
+}
+.container__emerging__technologies__heading__main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.container__emerging__technologies__text__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  padding: 0em 4em;
+  line-height: 30px;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.container__emerging__technologies__section {
+  z-index: 999;
+  position: sticky;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  margin-top: 2em;
+  padding: 0em 4em;
+}
+.container__emerging__technologies__section::after {
+  content: "";
+  height: 1px;
+  width: calc(100% - 8em);
+  position: absolute;
+  background-color: #dddcdc;
+  bottom: 0px;
+}
+.container__emerging__technologies__section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 150px;
+  flex-wrap: wrap;
+  flex: 0 1 80px;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.container__emerging__technologies__section__wrapper__input {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0 auto;
+  left: 0;
+  cursor: pointer;
+}
+
+.container__emerging__technologies__section__wrapper__input:checked
+  ~ .container__emerging__technologies__section__entry {
+  color: #189366;
+  border-bottom: 3px solid #189366;
+}
+.container__emerging__technologies__section__entry {
+  width: 160px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 3px solid transparent;
+}
+
+.container__emerging__technologies__section__entry__data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 4em;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+.container__emerging__technologies__section__entry__data___heading {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 1em;
+}
+.container__emerging__technologies__section__entry__data__text {
+  max-width: 55%;
+  line-height: 25px;
+  font-size: 14px;
+}
+.container__emerging__technologies__section__entry__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.container__emerging__technologies__section__entry__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin-bottom: 0.7em;
+  font-size: 16px;
+}
+
 @media (max-width: 1200px) {
   .container__clients__left {
     width: 20%;
@@ -2104,6 +2251,10 @@ body {
   .work__section__content__project__about {
     width: 40%;
   }
+  .container__emerging__technologies__text__main {
+    max-width: 80%;
+    padding: 0em 2em;
+  }
 }
 @media (max-width: 1150px) {
   .container__services {
@@ -2117,6 +2268,9 @@ body {
   }
   .container__services__right {
     max-width: 80%;
+  }
+  .container__emerging__technologies__text__main {
+    max-width: 100%;
   }
 }
 @media (max-width: 1100px) {
@@ -2177,11 +2331,16 @@ body {
     margin-right: 10%;
   }
 }
-
+@media (max-width: 1070px) {
+  .container__web__dev__solution__right {
+    padding: 5em 5em;
+  }
+}
 @media (max-width: 1000px) {
   .header__content__button__secondary {
     display: flex;
   }
+
   .header__content__nav {
     position: absolute;
     background-color: white;
@@ -2234,6 +2393,38 @@ body {
   }
   .contact__section__content__middle__form__map {
     margin-bottom: 2em;
+  }
+  .container__web__dev__solution__right {
+    padding: 4em 4em;
+  }
+}
+@media (max-width: 900px) {
+  .container__web__dev__solution__left__heading {
+    max-width: 100%;
+  }
+  .container__web__dev__solution__left__info {
+    max-width: 100%;
+  }
+  .container__web__dev__solution__left__row {
+    justify-content: space-between;
+  }
+  .container__web__dev__solution__right {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .container__web__dev__solution {
+    flex-direction: column;
+  }
+  .container__emerging__technologies {
+    padding-bottom: 2em;
+  }
+  .container__emerging__technologies__text__main {
+    max-width: 100%;
+    padding: 0em 2em;
+  }
+  .container__emerging__technologies__section__entry__data {
+    padding: 0em 2em;
   }
 }
 @media (max-width: 850px) {
@@ -2323,8 +2514,8 @@ body {
   }
 }
 @media (max-width: 800px) {
-  .container__web__dev__experties__content__entry {
-    width: 100%;
+  .container__emerging__technologies__section__entry__data__text {
+    max-width: 80%;
   }
 }
 @media (max-width: 750px) {
@@ -2344,6 +2535,12 @@ body {
   .container__stats__right__card {
     width: 100%;
     margin-right: 10%;
+  }
+  .container__web__dev__solution__right {
+    margin-bottom: 0em;
+  }
+  .container__emerging__technologies__section {
+    justify-content: center;
   }
 }
 @media (max-width: 650px) {
@@ -2389,7 +2586,20 @@ body {
   .container__web__dev__experience__content__entry {
     width: 100%;
   }
+  .container__emerging__technologies__section__entry__data__text {
+    max-width: 100%;
+  }
+  .container__emerging__technologies__section__entry__data {
+    padding: 0em 0em;
+  }
+  .container__emerging__technologies__heading__main {
+    font-size: 30px;
+  }
+  .container__emerging__technologies__section {
+    justify-content: center;
+  }
 }
+
 @media (max-width: 500px) {
   .header__content__logo img {
     width: 120px;
@@ -2448,9 +2658,35 @@ body {
     padding: 5em 2em;
     padding-top: 0em;
   }
+  .container__web__dev__solution {
+    padding: 0em 2em;
+    padding-top: 5em;
+  }
+  .container__emerging__technologies {
+    padding: 2em 2em;
+    padding-top: 4em;
+  }
+  .container__emerging__technologies__text__main {
+    padding: 0em 0em;
+    text-align: start;
+  }
+  .container__emerging__technologies__heading__main {
+    font-size: 27px;
+    justify-content: flex-start;
+  }
+  .container__web__dev__solution__left__row__img {
+    margin-left: 0em;
+  }
 }
 @media (max-width: 400px) {
   .container__services__right__entry {
     width: 100%;
+  }
+  .container__web__dev__solution__right {
+    width: 100%;
+    padding: 2em 2em;
+  }
+  .container__emerging__technologies__text__main {
+    text-align: start;
   }
 }
