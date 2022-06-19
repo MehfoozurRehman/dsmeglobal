@@ -1,21 +1,10 @@
 import React, { useState, useEffect } from "react";
 import contactImg from "../assets/contactImg.png";
 import Input from "../components/Input";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-} from "react-feather";
+import { fetcher } from "../utils/functions";
 import axios from "axios";
 import { Fade } from "react-reveal";
-import { HomeJumbotron } from "../screens/HomeJumbotron";
-import bannerImage1 from ".//../assets/bannerImage1.svg";
 import useSWR from "swr";
-import { fetcher } from "../utils/functions";
 
 export default function QuoteScreen({ setIsContactSection }) {
   useEffect(() => {
@@ -38,7 +27,7 @@ export default function QuoteScreen({ setIsContactSection }) {
   const [message, setMessage] = useState("");
   return (
     <>
-      <div className="contact__section">
+      <div className="contact__section" style={{ marginTop: "8em" }}>
         <div className="contact__section__content">
           <div className="contact__section__content__left">
             <img

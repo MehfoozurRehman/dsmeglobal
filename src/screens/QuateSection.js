@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import GetQuatePopup from "../components/GetQuatePopup";
 import { QuateSectionCard } from "./QuateSectionCard";
+import { useNavigate } from "react-router-dom";
 
 export function QuateSection() {
+  const navigate = useNavigate();
   const [isGetQuateOpen, setIsGetQuateOpen] = useState(false);
   return (
     <>
@@ -20,7 +22,8 @@ export function QuateSection() {
               <button
                 className="container__stats__left__button"
                 onClick={() => {
-                  setIsGetQuateOpen(true);
+                  navigate("/quote");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
                 Get a quote

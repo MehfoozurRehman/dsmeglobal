@@ -2,7 +2,6 @@ import React from "react";
 import { Fade } from "react-reveal";
 import useSWR from "swr";
 import { ServicesCard as ServicesCardNew } from "./ServicesCard";
-import ServicesCard from "../components/ServicesCard";
 import { fetcher } from "../utils/functions";
 
 export function ServicesSection() {

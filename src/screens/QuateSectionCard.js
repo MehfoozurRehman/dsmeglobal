@@ -1,5 +1,4 @@
 import React from "react";
-import { Box } from "react-feather";
 
 export function QuateSectionCard({ title, info, svg }) {
   return (

@@ -7,7 +7,6 @@ import qualityOver from "../assets/qualityOver.png";
 import continuousChange from "../assets/continuousChange.png";
 import fouceOn from "../assets/fouceOn.png";
 import storiesCardImage from "../assets/storiesCardImage.png";
-// import storiesCardImage1 from "../assets/storiesCardImage1.jpg";
 
 function MeetUs() {
   return (
@@ -69,7 +68,10 @@ function MeetUs() {
             </div>
           </div>
           <div className="meetus__container__sub">
-            <div className="meetus__container__sub__content" id="meetus__container__sub__content2">
+            <div
+              className="meetus__container__sub__content"
+              id="meetus__container__sub__content2"
+            >
               <div className="meetus__container__sub__left">
                 <div className="meetus__container__sub__right__heading">
                   Continuous change
