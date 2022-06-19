@@ -1,8 +1,8 @@
-import React, { memo } from "react";
+import React from "react";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
-function ServicesCard({ data }) {
+export default function ServicesCard({ data }) {
   function onClick() {
     window.localStorage.setItem("servicesData", JSON.stringify(data));
     setTimeout(() => {
@@ -12,7 +12,7 @@ function ServicesCard({ data }) {
   return (
     <Link
       onClick={onClick}
-      to="/service-details"
+      to={data.link ? data.link : "/service-details"}
       className="services__main__container__content__wrapper__card"
     >
       <div className="services__main__container__content__wrapper__card__svg__container">
@@ -31,13 +31,8 @@ function ServicesCard({ data }) {
         <Fade>{data.title}</Fade>
       </div>
       <div className="services__main__container__content__wrapper__card__info">
-        <Fade>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
-          harum?
-        </Fade>
+        <Fade>{data.description.substring(0, 120) + "..."}</Fade>
       </div>
     </Link>
   );
 }
-
-export default memo(ServicesCard);
