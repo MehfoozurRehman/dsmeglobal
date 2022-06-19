@@ -93,7 +93,7 @@ function MeetUs() {
             <div className="meetus__container__sub__content">
               <div className="meetus__container__sub__left">
                 <div className="meetus__container__sub__left__image">
-                  <img src={fouceOn} alt="Fouce on people image" />
+                  <img src={fouceOn} alt="Fouce on people" />
                 </div>
               </div>
               <div className="meetus__container__sub__right">
@@ -121,7 +121,7 @@ function MeetUs() {
             <div className="meetus__container__stories__card__container">
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
-                  <img src={storiesCardImage} alt="Stories card image" />
+                  <img src={storiesCardImage} alt="Stories card" />
                 </div>
                 <div className="meetus__container__stories__card__text">
                   <div className="meetus__container__stories__card__heading">
@@ -134,7 +134,7 @@ function MeetUs() {
               </div>
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
-                  <img src={storiesCardImage} alt="Stories card image" />
+                  <img src={storiesCardImage} alt="Stories card" />
                 </div>
                 <div className="meetus__container__stories__card__text">
                   <div className="meetus__container__stories__card__heading">
@@ -147,7 +147,7 @@ function MeetUs() {
               </div>
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
-                  <img src={storiesCardImage} alt="Stories card image" />
+                  <img src={storiesCardImage} alt="Stories card" />
                 </div>
                 <div className="meetus__container__stories__card__text">
                   <div className="meetus__container__stories__card__heading">

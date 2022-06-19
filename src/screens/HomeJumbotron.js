@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function HomeJumbotron({
   taglinesLine,
@@ -15,6 +15,7 @@ export function HomeJumbotron({
   styleImage,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
@@ -59,7 +60,7 @@ export function HomeJumbotron({
             <Fade>
               <button
                 onClick={() => {
-                  document.getElementById("about__section");
+                  navigate("/meet-us");
                 }}
                 className="container__jumbotron__left__button__secondary"
               >

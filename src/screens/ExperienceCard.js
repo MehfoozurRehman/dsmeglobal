@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ExperienceCard({}) {
+export function ExperienceCard() {
   return (
     <div className="container__web__dev__experience__content__entry">
       <div className="container__web__dev__experience__content__entry__heading">

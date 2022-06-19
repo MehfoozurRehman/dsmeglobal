@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "react-feather";
 
-export function ExperitseCard({}) {
+export function ExperitseCard() {
   return (
     <div className="container__web__dev__experties__content__entry">
       <div className="container__web__dev__experties__content__header">

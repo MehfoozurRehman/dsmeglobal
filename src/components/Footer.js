@@ -140,7 +140,7 @@ export default function Footer() {
   );
 }
 
-function FooterServices({}) {
+function FooterServices() {
   const { data, error } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
@@ -172,7 +172,7 @@ function FooterServices({}) {
     </div>
   );
 }
-function FooterTopics({}) {
+function FooterTopics() {
   const { data, error } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_techonologies`,
     fetcher,

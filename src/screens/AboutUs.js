@@ -26,10 +26,16 @@ export default function AboutUs() {
       >
         <div className="our__mission__section__about__us__content">
           <div className="our__mission__section__about__us__content__left">
-            <div className="feature__section__entry__content__jumbotron__sub__heading">
+            <div
+              className="feature__section__entry__content__jumbotron__sub__heading"
+              style={{ color: "#ffffff" }}
+            >
               <Fade>Our Mission</Fade>
             </div>
-            <div className="our__mission__section__about__us__content__left__para">
+            <div
+              className="our__mission__section__about__us__content__left__para"
+              style={{ color: "#ffffff" }}
+            >
               <Fade>
                 DSME’s mission is to solve challenging technical problems in
                 partnership with our clients. D.S.M.E Global Links cohorts with

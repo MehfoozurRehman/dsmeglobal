@@ -135,7 +135,6 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
               }
               style={{
                 color: "black",
-                border: "none",
                 width: "fit-content",
                 minWidth: "170px",
                 backgroundColor: "white",

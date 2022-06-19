@@ -13,7 +13,7 @@ export default function QuoteScreen({ setIsContactSection }) {
       setIsContactSection(true);
     };
   }, []);
-  const { data, error } = useSWR(
+  const { data } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
     { suspense: true }

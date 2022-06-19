@@ -1148,11 +1148,12 @@ body {
   width: 100%;
   position: sticky;
   z-index: 999;
+  background-color: #242424;
 }
 .our__mission__section__about__us__content {
   width: 100%;
   max-width: 1500px;
-  padding: 2em 4em;
+  padding: 6em 4em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1170,10 +1171,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .our__mission__section__about__us__content__right__img {
   max-width: 400px;
   width: 100%;
+  height: 500px;
 }
 .our__vision__section__about__us {
   width: 100%;
@@ -1184,6 +1187,7 @@ body {
   width: 100%;
   max-width: 1500px;
   padding: 2em 4em;
+  padding-top: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1201,10 +1205,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .our__vision__section__about__us__content__right__img {
   max-width: 400px;
   width: 100%;
+  height: 400px;
 }
 .feature__section__entry__content__jumbotron__sub__heading {
   font-size: 30px;
