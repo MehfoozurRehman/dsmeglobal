@@ -3,9 +3,8 @@ import CountUp from "react-countup";
 
 export function StatsSection() {
   const ref = useRef(null);
-
   const isInViewport = useIsInViewport(ref);
-  console.log("isInViewport: ", isInViewport);
+
   return (
     <div className="container__stats__wrapper" ref={ref}>
       <div className="container__stats__content">

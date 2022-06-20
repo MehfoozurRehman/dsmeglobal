@@ -151,7 +151,6 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
               autoClose={false}
               onSuccess={(e) => {
                 setCV(e.info.path);
-                console.log(e);
               }}
               onFailure={(e) => {
                 console.log(e);

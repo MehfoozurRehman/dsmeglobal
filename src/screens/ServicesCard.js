@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export function ServicesCard({ data }) {
   function onClick() {
-    window.localStorage.setItem("servicesData", JSON.stringify(data));
     setTimeout(() => {
       window.scrollTo({ behavior: "smooth", top: 0 });
     }, 300);
@@ -12,7 +11,7 @@ export function ServicesCard({ data }) {
   return (
     <Link
       onClick={onClick}
-      to="/service-details"
+      to={data.link}
       className="container__services__right__entry"
     >
       <div className="container__services__right__entry__icon">
@@ -30,10 +29,7 @@ export function ServicesCard({ data }) {
         <Fade>{data.title}</Fade>
       </div>
       <div className="container__services__right__entry__info">
-        <Fade>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-          reiciendis.
-        </Fade>
+        <Fade>{data.shortDescription}</Fade>
       </div>
     </Link>
   );

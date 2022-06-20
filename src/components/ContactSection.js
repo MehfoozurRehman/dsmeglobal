@@ -12,7 +12,6 @@ import {
 } from "react-feather";
 import axios from "axios";
 import { Fade } from "react-reveal";
-import { HomeJumbotron } from "../screens/HomeJumbotron";
 
 export default function ContactSection() {
   const [name, setName] = useState("");
@@ -97,32 +96,27 @@ export default function ContactSection() {
               <div className="contact__section__content__right__links">
                 <Fade>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/dsmeglobal"
                     className="contact__section__content__right__links__link"
+                    title="Facebook"
                   >
                     <Facebook size={20} color="currentColor" />
                   </a>
                 </Fade>
                 <Fade>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/dsmeglobal/"
                     className="contact__section__content__right__links__link"
+                    title="Instagram"
                   >
                     <Instagram size={20} color="currentColor" />
                   </a>
                 </Fade>
                 <Fade>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/dsmegloballinks/"
                     className="contact__section__content__right__links__link"
-                  >
-                    <Twitter size={20} color="currentColor" />
-                  </a>
-                </Fade>
-                <Fade>
-                  <a
-                    href="#"
-                    className="contact__section__content__right__links__link"
+                    title="Linkedin"
                   >
                     <Linkedin size={20} color="currentColor" />
                   </a>
@@ -260,11 +254,10 @@ export default function ContactSection() {
               </button>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.806546077531!2d74.37747145100826!3d31.474507381293495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907a286809427%3A0x66f8b31237e79ada!2sDSME%20Global%20Links!5e0!3m2!1sen!2s!4v1654765161734!5m2!1sen!2s"
-                allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="contact__section__content__middle__form__map"
-              ></iframe>
+              />
             </form>
           </Fade>
         </div>

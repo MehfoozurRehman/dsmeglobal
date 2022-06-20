@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import React from "react";
 import Particles from "react-tsparticles";
 
-function BackgroundParticals({ particlesInit }) {
+export default function BackgroundParticals({ particlesInit }) {
   return (
     <Particles
       id="tsparticles"
@@ -10,14 +10,14 @@ function BackgroundParticals({ particlesInit }) {
         autoPlay: true,
         background: {
           color: {
-            value: "#ffffff",
+            value: "transparent",
           },
         },
         backgroundMask: {
           composite: "destination-in",
           cover: {
             color: {
-              value: "#ffffff",
+              value: "transparent",
             },
             opacity: 0,
           },
@@ -25,7 +25,7 @@ function BackgroundParticals({ particlesInit }) {
         },
         fullScreen: {
           enable: true,
-          zIndex: 1,
+          zIndex: 0,
         },
         detectRetina: false,
         duration: 0,
@@ -521,5 +521,3 @@ function BackgroundParticals({ particlesInit }) {
     />
   );
 }
-
-export default memo(BackgroundParticals);

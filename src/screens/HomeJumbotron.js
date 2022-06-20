@@ -83,7 +83,7 @@ export function HomeJumbotron({
           imgs
             .filter((item, i) => i === taglineNo)
             .map((item) => (
-              <Fade>
+              <Fade key={JSON.stringify(item)}>
                 <img src={item} alt={item} />
               </Fade>
             ))

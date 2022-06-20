@@ -2,16 +2,9 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { useNavigate } from "react-router-dom";
 
-export default function ProjectCardContent({
-  image,
-  url,
-  title,
-  setShowImage,
-  setShowImageData,
-  data,
-}) {
+export default function ProjectCardContent({ image, title, data }) {
   const navigate = useNavigate();
-  console.log(data);
+
   return (
     <Fade>
       <button
