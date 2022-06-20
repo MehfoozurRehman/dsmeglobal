@@ -8,7 +8,7 @@ export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
 
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_work`,
+    `${process.env.REACT_APP_API_URL}api/v1/get_client`,
     fetcher,
     { suspense: true }
   );

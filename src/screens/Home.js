@@ -12,6 +12,7 @@ import WorkSection from "../components/WorkSection";
 import { StatsSection } from "./StatsSection";
 import { TestimonialsSection } from "./TestimonialsSection";
 import { QuateSection } from "./QuateSection";
+import { PricingSection } from "./PricingSection";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <WorkSection />
       <QuateSection />
       <BlogSection />
+      <PricingSection />
       <TestimonialsSection />
       <NewsletterSection />
     </div>

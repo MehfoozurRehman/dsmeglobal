@@ -31,7 +31,7 @@ export default function Services() {
     },
     {
       logo: "v1652870775/dsme_global/lyoh6lcgwybtqb6e7qvt.png",
-      title: "Customer Software Development",
+      title: "Custom Software Development",
       image: "v1652871579/dsme_global/kb5xhjjcu3nstq2xccul.png",
       description:
         "Helping startups to get off the ground through a single-stop partner.",
@@ -40,7 +40,7 @@ export default function Services() {
     },
     {
       logo: "v1652870830/dsme_global/taxuy0fklzmiwhqfhwmj.png",
-      title: "User Experience",
+      title: "UI/UX Design",
       image: "v1652871615/dsme_global/ihhy1xkxj9mjbk3ll310.png",
       description:
         "Expand business via multifarious digital channels all around the world. Our teams of experts have in-depth knowledge of various E-commerce web development platforms that can not only give a new look to your business but also fuel it to move with amazing pace in today’s cutthroat competition.",
@@ -51,7 +51,7 @@ export default function Services() {
     },
     {
       logo: "v1652870874/dsme_global/cjkmw5aoibcb0rerrfk1.png",
-      title: "Shopify",
+      title: "Ecommerce",
       image: "v1652871767/dsme_global/yuxa6wvumej9dxogzzru.png",
       description:
         "Our design and brand services help you to create brand awareness, stand out from the competition, connect with customers and increase the lead. We make your brand available to your potential customers at the right time and on the right screen.",
@@ -96,6 +96,34 @@ export default function Services() {
         },
       ],
       link: "/services/ios-dev",
+    },
+    {
+      logo: "v1652871320/dsme_global/eoqvrt2hhu2zc2xbteqr.png",
+      title: "Startup Sercices",
+      image: "v1652871923/dsme_global/nvxctba3pblutjl3zbjm.png",
+      description:
+        "We provide SEO services to optimize your website to get organic or unpaid traffic from the search engines to result in pages.",
+      categories: [
+        {
+          value: "Search Engine Optimizations",
+          label: "Search Engine Optimizations",
+        },
+      ],
+      link: "/services/startup",
+    },
+    {
+      logo: "v1652871320/dsme_global/eoqvrt2hhu2zc2xbteqr.png",
+      title: "Staff Augmentation",
+      image: "v1652871923/dsme_global/nvxctba3pblutjl3zbjm.png",
+      description:
+        "We provide SEO services to optimize your website to get organic or unpaid traffic from the search engines to result in pages.",
+      categories: [
+        {
+          value: "Search Engine Optimizations",
+          label: "Search Engine Optimizations",
+        },
+      ],
+      link: "/services/startup",
     },
   ];
   return (
