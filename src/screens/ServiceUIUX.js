@@ -450,10 +450,10 @@ export default function ServiceUIUX() {
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
                 <h1 className="june_main_container_images_content_One">
-                  Pencil sketch
+                High Fidelity Wireframes
                 </h1>
                 <p className="june_main_container_images_content_two">
-                  Back of the napkin designs
+                More realistic content closer to the end result.
                 </p>
               </div>
             </div>
@@ -467,10 +467,10 @@ export default function ServiceUIUX() {
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
                 <h1 className="june_main_container_images_content_One">
-                  Pencil sketch
+                Pixel Perfect Mockups
                 </h1>
                 <p className="june_main_container_images_content_two">
-                  Back of the napkin designs
+                Fully visualize the look and feel of your final product.
                 </p>
               </div>
             </div>
