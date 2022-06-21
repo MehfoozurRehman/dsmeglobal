@@ -9,6 +9,13 @@ import "./styles/portfoliodetail.scss";
 import "./styles/About__sec.scss";
 import "animate.css";
 import "swiper/css";
+import ServiceCustomSoft from "./screens/ServiceCustomSoft";
+import ServiceBlockChain from "./screens/ServiceBlockChain";
+import ServiceEcomerece from "./screens/ServiceEcomerece";
+import ServiceIos from "./screens/ServiceIos";
+import ServiceStaff from "./screens/ServiceStaff";
+import ServiceStartup from "./screens/ServiceStartup";
+import ServiceAndroid from "./screens/ServiceAndroid";
 
 const Footer = lazy(() => import("./components/Footer"));
 const ContactSection = lazy(() => import("./components/ContactSection"));
@@ -47,6 +54,13 @@ export default function App() {
         <Route path="/services/web-dev" element={<ServicesWebDev />} />
         <Route path="/services/uiux" element={<ServiceUIUX />} />
         <Route path="/services/mob-dev" element={<ServiceMobDev />} />
+        <Route path="/services/blockchain" element={<ServiceBlockChain />} />
+        <Route path="/services/custom-soft" element={<ServiceCustomSoft />} />
+        <Route path="/services/ios" element={<ServiceIos />} />
+        <Route path="/services/android" element={<ServiceAndroid />} />
+        <Route path="/services/ecomerece" element={<ServiceEcomerece />} />
+        <Route path="/services/startup" element={<ServiceStartup />} />
+        <Route path="/services/staff" element={<ServiceStaff />} />
         <Route path="/service-details" element={<ServiceDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />
