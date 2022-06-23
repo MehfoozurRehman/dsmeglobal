@@ -5,7 +5,7 @@ import img3 from "../assets/3.png";
 import img4 from "../assets/4.png";
 import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
-import { Fade } from "react-reveal";
+
 import { Link } from "react-router-dom";
 import useSWR from "swr";
 import { fetcher } from "../utils/functions";
@@ -31,9 +31,7 @@ export default function Footer() {
               }}
               className="header__content__logo"
             >
-              <Fade>
-                <img src={logoDark} alt="logo" />
-              </Fade>
+              <img src={logoDark} alt="logo" />
             </Link>
             <div className="footer__container__content__col__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe

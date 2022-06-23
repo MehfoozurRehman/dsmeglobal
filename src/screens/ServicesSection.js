@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+
 import { ServicesCard as ServicesCardNew } from "./ServicesCard";
 
 export function ServicesSection() {
@@ -42,14 +42,11 @@ export function ServicesSection() {
       <div className="container__services">
         <div className="container__services__left">
           <div className="container__services__left__heading">
-            <Fade>How can we help your buisness ?</Fade>
+            How can we help your buisness ?
           </div>
           <div className="container__services__left__info">
-            <Fade>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-              sed sequi tempore minus, eum laborum voluptatibus non, est
-              veritatis,
-            </Fade>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sed
+            sequi tempore minus, eum laborum voluptatibus non, est veritatis,
           </div>
         </div>
         <div className="container__services__right">

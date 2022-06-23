@@ -6,14 +6,14 @@ import { loadFull } from "tsparticles";
 import "./App.scss";
 import "animate.css";
 import "swiper/css";
-import ServiceCustomSoft from "./screens/ServiceCustomSoft";
-import ServiceBlockChain from "./screens/ServiceBlockChain";
-import ServiceEcomerece from "./screens/ServiceEcomerece";
-import ServiceIos from "./screens/ServiceIos";
-import ServiceStaff from "./screens/ServiceStaff";
-import ServiceStartup from "./screens/ServiceStartup";
-import ServiceAndroid from "./screens/ServiceAndroid";
 
+const ServiceCustomSoft = lazy(() => import("./screens/ServiceCustomSoft"));
+const ServiceBlockChain = lazy(() => import("./screens/ServiceBlockChain"));
+const ServiceEcomerece = lazy(() => import("./screens/ServiceEcomerece"));
+const ServiceIos = lazy(() => import("./screens/ServiceIos"));
+const ServiceStaff = lazy(() => import("./screens/ServiceStaff"));
+const ServiceStartup = lazy(() => import("./screens/ServiceStartup"));
+const ServiceAndroid = lazy(() => import("./screens/ServiceAndroid"));
 const Footer = lazy(() => import("./components/Footer"));
 const ContactSection = lazy(() => import("./components/ContactSection"));
 const Portfolio__detail = lazy(() => import("./screens/Portfolio__detail"));
@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
-      <BackgroundParticals particlesInit={particlesInit} />
+      {/* <BackgroundParticals particlesInit={particlesInit} /> */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

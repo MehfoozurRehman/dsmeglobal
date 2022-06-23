@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Fade } from "react-reveal";
+
 import testimonialBg from "../assets/testimonialBg.jpg";
 
 export function TestimonialsSection() {
@@ -69,13 +69,11 @@ export function TestimonialsSection() {
                 setSelected(i);
               }}
             >
-              <Fade>
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  className="container__testimonials__overlay__content__entry__img"
-                />
-              </Fade>
+              <img
+                src={item.img}
+                alt={item.name}
+                className="container__testimonials__overlay__content__entry__img"
+              />
             </button>
           ))}
         </div>
@@ -88,13 +86,13 @@ export function TestimonialsSection() {
             key={JSON.stringify(item)}
           >
             <div className="container__testimonials__overlay__info__message">
-              <Fade>{item.message}</Fade>
+              {item.message}
             </div>
             <div className="container__testimonials__overlay__info__heading">
-              <Fade>{item.name}</Fade>
+              {item.name}
             </div>
             <div className="container__testimonials__overlay__info__sub__heading">
-              <Fade>{item.designation}</Fade>
+              {item.designation}
             </div>
           </div>
         ))}

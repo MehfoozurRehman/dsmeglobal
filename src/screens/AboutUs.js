@@ -1,7 +1,7 @@
 import React from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
-import { Fade } from "react-reveal";
+
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage from "../assets/bannerImage2.png";
 import { Box } from "react-feather";
@@ -314,30 +314,26 @@ export default function AboutUs() {
               className="feature__section__entry__content__jumbotron__sub__heading"
               style={{ color: "#ffffff" }}
             >
-              <Fade>Our Mission</Fade>
+              Our Mission
             </div>
             <div
               className="our__mission__section__about__us__content__left__para"
               style={{ color: "#ffffff" }}
             >
-              <Fade>
-                DSME’s mission is to solve challenging technical problems in
-                partnership with our clients. D.S.M.E Global Links cohorts with
-                its customers to disentangle complex technology problems and
-                help them acclimatize to a constantly evolving economic and
-                technological backdrop. Specializing in mobile, web and other
-                smart technologies.
-              </Fade>
+              DSME’s mission is to solve challenging technical problems in
+              partnership with our clients. D.S.M.E Global Links cohorts with
+              its customers to disentangle complex technology problems and help
+              them acclimatize to a constantly evolving economic and
+              technological backdrop. Specializing in mobile, web and other
+              smart technologies.
             </div>
           </div>
           <div className="our__mission__section__about__us__content__right">
-            <Fade>
-              <img
-                src={missionSvg}
-                alt="missionSvg"
-                className="our__mission__section__about__us__content__right__img"
-              />
-            </Fade>
+            <img
+              src={missionSvg}
+              alt="missionSvg"
+              className="our__mission__section__about__us__content__right__img"
+            />
           </div>
         </div>
       </div>
@@ -347,27 +343,23 @@ export default function AboutUs() {
       >
         <div className="our__vision__section__about__us__content">
           <div className="our__vision__section__about__us__content__right">
-            <Fade>
-              <img
-                src={visionSvg}
-                alt="visionSvg"
-                className="our__vision__section__about__us__content__right__img"
-              />
-            </Fade>
+            <img
+              src={visionSvg}
+              alt="visionSvg"
+              className="our__vision__section__about__us__content__right__img"
+            />
           </div>
           <div className="our__vision__section__about__us__content__left">
             <div className="feature__section__entry__content__jumbotron__sub__heading">
-              <Fade>Our Vision</Fade>
+              Our Vision
             </div>
             <div className="our__vision__section__about__us__content__left__para">
-              <Fade>
-                Our vision is to help businesses and people create a better
-                community and social living using technology-enabled solutions.
-                We spend our efforts in making the finest educational,
-                commercial business software, mobile applications, and next-gen
-                tech-enabled solutions to help and improve businesses and
-                lifestyles of the community.
-              </Fade>
+              Our vision is to help businesses and people create a better
+              community and social living using technology-enabled solutions. We
+              spend our efforts in making the finest educational, commercial
+              business software, mobile applications, and next-gen tech-enabled
+              solutions to help and improve businesses and lifestyles of the
+              community.
             </div>
           </div>
         </div>

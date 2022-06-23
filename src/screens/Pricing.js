@@ -1,7 +1,7 @@
 import React from "react";
 import deliveryPic from "../assets/delivery.png";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
-import { Fade } from "react-reveal";
+
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage from "../assets/bannerImage3.png";
 
@@ -46,9 +46,7 @@ export default function Pricing() {
       </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
-          <Fade>
-            We <span>Provide</span> You
-          </Fade>
+          We <span>Provide</span> You
         </div>
         <PricingFeatureEntry
           title="Discovery Workshop"
@@ -73,7 +71,7 @@ export default function Pricing() {
       </div>
       <div className="pricing__delivery__section">
         <div className="pricing__delivery__section__heading">
-          <Fade>Process From Idea Creation to Product Delivery</Fade>
+          Process From Idea Creation to Product Delivery
         </div>
         <img
           src={deliveryPic}
@@ -82,51 +80,47 @@ export default function Pricing() {
         />
 
         <div className="pricing__delivery__section__content">
-          <Fade>
-            <div className="pricing__delivery__section__content__card">
-              <div className="pricing__delivery__section__content__card__heading">
-                Discovery
-              </div>
-              {DeliveryCardEntry1.map((item) => (
-                <div
-                  className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
-                  {item.para}
-                </div>
-              ))}
+          <div className="pricing__delivery__section__content__card">
+            <div className="pricing__delivery__section__content__card__heading">
+              Discovery
             </div>
-          </Fade>
-          <Fade>
-            <div className="pricing__delivery__section__content__card">
-              <div className="pricing__delivery__section__content__card__heading">
-                Execution
+            {DeliveryCardEntry1.map((item) => (
+              <div
+                className="pricing__delivery__section__content__card__para"
+                key={JSON.stringify(item)}
+              >
+                {item.para}
               </div>
-              {DeliveryCardEntry2.map((item) => (
-                <div
-                  className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
-                  {item.para}
-                </div>
-              ))}
+            ))}
+          </div>
+
+          <div className="pricing__delivery__section__content__card">
+            <div className="pricing__delivery__section__content__card__heading">
+              Execution
             </div>
-          </Fade>
-          <Fade>
-            <div className="pricing__delivery__section__content__card">
-              <div className="pricing__delivery__section__content__card__heading">
-                Support
+            {DeliveryCardEntry2.map((item) => (
+              <div
+                className="pricing__delivery__section__content__card__para"
+                key={JSON.stringify(item)}
+              >
+                {item.para}
               </div>
-              {DeliveryCardEntry3.map((item) => (
-                <div
-                  className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
-                  {item.para}
-                </div>
-              ))}
+            ))}
+          </div>
+
+          <div className="pricing__delivery__section__content__card">
+            <div className="pricing__delivery__section__content__card__heading">
+              Support
             </div>
-          </Fade>
+            {DeliveryCardEntry3.map((item) => (
+              <div
+                className="pricing__delivery__section__content__card__para"
+                key={JSON.stringify(item)}
+              >
+                {item.para}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState, useTransition } from "react";
 import { X, Menu } from "react-feather";
-import { Fade } from "react-reveal";
+
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
 import OutsideClickHandler from "react-outside-click-handler";
@@ -32,9 +32,7 @@ export default function Header() {
           }}
           className="header__content__logo"
         >
-          <Fade>
-            <img src={logoDark} alt="logo" />
-          </Fade>
+          <img src={logoDark} alt="logo" />
         </Link>
         {isNavOpen ? (
           <OutsideClickHandler
@@ -48,37 +46,34 @@ export default function Header() {
           </OutsideClickHandler>
         ) : null}
         <div className="header__content__button">
-          <Fade>
-            <button
-              className="header__content__button__secondary"
-              onClick={() => {
-                setIsNavOpen(!isNavOpen);
-              }}
-            >
-              {isNavOpen ? (
-                <X size={20} color="currentColor" />
-              ) : (
-                <Menu size={20} color="currentColor" />
-              )}
-            </button>
-          </Fade>
-          <Fade>
-            <Link
-              to="/contact-us"
-              onClick={() => {
-                startTransition(() => {
-                  document
-                    .getElementsByName("header__content__nav__entry")
-                    .forEach((item) => {
-                      item.checked = false;
-                    });
-                });
-              }}
-              className="header__content__button__primary"
-            >
-              Contact Us
-            </Link>
-          </Fade>
+          <button
+            className="header__content__button__secondary"
+            onClick={() => {
+              setIsNavOpen(!isNavOpen);
+            }}
+          >
+            {isNavOpen ? (
+              <X size={20} color="currentColor" />
+            ) : (
+              <Menu size={20} color="currentColor" />
+            )}
+          </button>
+
+          <Link
+            to="/contact-us"
+            onClick={() => {
+              startTransition(() => {
+                document
+                  .getElementsByName("header__content__nav__entry")
+                  .forEach((item) => {
+                    item.checked = false;
+                  });
+              });
+            }}
+            className="header__content__button__primary"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>
@@ -88,24 +83,22 @@ export default function Header() {
 function NavLink({ children, to, navigate }) {
   const [isPending, startTransition] = useTransition();
   return (
-    <Fade>
-      <div className="header__content__nav__entry">
-        <input
-          type="radio"
-          name="header__content__nav__entry"
-          id={children}
-          title={children}
-          className="header__content__nav__entry__input"
-          defaultChecked={window.location.pathname === to}
-          onClick={() => {
-            startTransition(() => {
-              navigate(to);
-            });
-          }}
-        />
-        <div className="header__content__nav__entry__content">{children}</div>
-      </div>
-    </Fade>
+    <div className="header__content__nav__entry">
+      <input
+        type="radio"
+        name="header__content__nav__entry"
+        id={children}
+        title={children}
+        className="header__content__nav__entry__input"
+        defaultChecked={window.location.pathname === to}
+        onClick={() => {
+          startTransition(() => {
+            navigate(to);
+          });
+        }}
+      />
+      <div className="header__content__nav__entry__content">{children}</div>
+    </div>
   );
 }
 

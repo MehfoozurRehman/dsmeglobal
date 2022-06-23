@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-reveal";
 import { Link, useNavigate } from "react-router-dom";
 
 export function HomeJumbotron({
@@ -26,55 +25,51 @@ export function HomeJumbotron({
   return (
     <div className="container__jumbotron" style={{ ...styleImage }}>
       <div className="container__jumbotron__left">
-        <Fade>
-          <div
-            className="container__jumbotron__left__heading"
-            style={{ ...styleColor }}
-          >
-            {taglinesLine}{" "}
-            {taglines
-              ?.filter((tagline, i) => i === taglineNo)
-              .map((tagline) => {
-                return <span key={JSON.stringify(tagline)}>{tagline}</span>;
-              })}{" "}
-            {matchers ? (
-              <>
-                {matcherLine}{" "}
-                {matchers
-                  ?.filter((matcher, i) => i === taglineNo)
-                  .map((matcher) => {
-                    return <span key={JSON.stringify(matcher)}>{matcher}</span>;
-                  })}{" "}
-              </>
-            ) : null}
-          </div>
-        </Fade>
+        <div
+          className="container__jumbotron__left__heading"
+          style={{ ...styleColor }}
+        >
+          {taglinesLine}{" "}
+          {taglines
+            ?.filter((tagline, i) => i === taglineNo)
+            .map((tagline) => {
+              return <span key={JSON.stringify(tagline)}>{tagline}</span>;
+            })}{" "}
+          {matchers ? (
+            <>
+              {matcherLine}{" "}
+              {matchers
+                ?.filter((matcher, i) => i === taglineNo)
+                .map((matcher) => {
+                  return <span key={JSON.stringify(matcher)}>{matcher}</span>;
+                })}{" "}
+            </>
+          ) : null}
+        </div>
+
         <div
           className="container__jumbotron__left__info"
           style={taglines?.length === 0 ? null : { marginTop: "2em" }}
         >
-          <Fade>{info}</Fade>
+          {info}
         </div>
         {buttons ? (
           <div className="container__jumbotron__left__button">
-            <Fade>
-              <button
-                onClick={() => {
-                  navigate("/meet-us");
-                }}
-                className="container__jumbotron__left__button__secondary"
-              >
-                Learn more
-              </button>
-            </Fade>
-            <Fade>
-              <Link
-                to="/portfolio"
-                className="container__jumbotron__left__button__primary"
-              >
-                Our Work
-              </Link>
-            </Fade>
+            <button
+              onClick={() => {
+                navigate("/meet-us");
+              }}
+              className="container__jumbotron__left__button__secondary"
+            >
+              Learn more
+            </button>
+
+            <Link
+              to="/portfolio"
+              className="container__jumbotron__left__button__primary"
+            >
+              Our Work
+            </Link>
           </div>
         ) : null}
       </div>
@@ -83,14 +78,10 @@ export function HomeJumbotron({
           imgs
             .filter((item, i) => i === taglineNo)
             .map((item) => (
-              <Fade key={JSON.stringify(item)}>
-                <img src={item} alt={item} />
-              </Fade>
+              <img src={item} alt={item} key={JSON.stringify(item)} />
             ))
         ) : (
-          <Fade>
-            <img src={img} alt={img} />
-          </Fade>
+          <img src={img} alt={img} />
         )}
       </div>
     </div>

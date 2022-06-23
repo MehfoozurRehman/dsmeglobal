@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { fetcher, getText } from "../utils/functions";
-import { Fade } from "react-reveal";
+
 import useSWR from "swr";
 
 export function BlogSection() {
@@ -15,9 +15,7 @@ export function BlogSection() {
 
   return (
     <div className="blog__section">
-      <div className="blog__section__heading">
-        <Fade>Our Blogs</Fade>
-      </div>
+      <div className="blog__section__heading">Our Blogs</div>
       <div className="blog__section__content">
         {error ? (
           <div>failed to load</div>
@@ -39,26 +37,23 @@ export function BlogSection() {
                 key={JSON.stringify(blog)}
                 className="blog__card"
               >
-                <Fade>
-                  <img
-                    src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      blog.image
-                    }
-                    alt={blog.title}
-                    className="blog__card__img"
-                  />
-                </Fade>
+                <img
+                  src={
+                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                    blog.image
+                  }
+                  alt={blog.title}
+                  className="blog__card__img"
+                />
+
                 <div className="blog__card__content">
                   <div className="blog__card__content__heading">
-                    <Fade>{blog.title}</Fade>
+                    {blog.title}
                   </div>
                   <div className="blog__card__content__info">
-                    <Fade>
-                      {getText(blog.content).length < 260
-                        ? getText(blog.content)
-                        : getText(blog.content).substring(0, 260) + "..."}
-                    </Fade>
+                    {getText(blog.content).length < 260
+                      ? getText(blog.content)
+                      : getText(blog.content).substring(0, 260) + "..."}
                   </div>
                 </div>
               </button>

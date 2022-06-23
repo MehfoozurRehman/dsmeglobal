@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Fade } from "react-reveal";
+
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
 
@@ -23,34 +23,30 @@ export default function WorkSection() {
     <>
       {
         <div className="work__section">
-          <div className="work__section__header">
-            <Fade>Checkout Our Work</Fade>
-          </div>
+          <div className="work__section__header">Checkout Our Work</div>
           <div className="work__section__content">
             <div className="work__section__content__project">
               <div className="work__section__content__project__image__wrapper">
-                <Fade>
-                  <img
-                    src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      project.image
-                    }
-                    alt={project.title}
-                    className="work__section__content__project__image"
-                  />
-                </Fade>
+                <img
+                  src={
+                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                    project.image
+                  }
+                  alt={project.title}
+                  className="work__section__content__project__image"
+                />
               </div>
               <div className="work__section__content__project__about">
                 <div className="work__section__content__project__about__heading">
                   <div className="work__section__content__project__about__heading__top">
-                    <Fade>{project.company}</Fade>
+                    {project.company}
                   </div>
                   <div className="work__section__content__project__about__heading__bottom">
-                    <Fade>{project.title}</Fade>
+                    {project.title}
                   </div>
                 </div>
                 <div className="work__section__content__project__about__info">
-                  <Fade>{project.description}</Fade>
+                  {project.description}
                 </div>
               </div>
             </div>
@@ -72,16 +68,15 @@ export default function WorkSection() {
                       }}
                       defaultChecked={i === 0 ? true : false}
                     />
-                    <Fade>
-                      <img
-                        src={
-                          "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-                          item.logo
-                        }
-                        alt={item.title}
-                        className="work__section__content__selection__entry__img"
-                      />
-                    </Fade>
+
+                    <img
+                      src={
+                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+                        item.logo
+                      }
+                      alt={item.title}
+                      className="work__section__content__selection__entry__img"
+                    />
                   </div>
                 ))
               )}

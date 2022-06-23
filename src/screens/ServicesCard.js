@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+
 import { Link } from "react-router-dom";
 
 export function ServicesCard({ data }) {
@@ -15,21 +15,19 @@ export function ServicesCard({ data }) {
       className="container__services__right__entry"
     >
       <div className="container__services__right__entry__icon">
-        <Fade>
-          <img
-            src={
-              "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-              data.logo
-            }
-            alt={data.title}
-          />
-        </Fade>
+        <img
+          src={
+            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+            data.logo
+          }
+          alt={data.title}
+        />
       </div>
       <div className="container__services__right__entry__heading">
-        <Fade>{data.title}</Fade>
+        {data.title}
       </div>
       <div className="container__services__right__entry__info">
-        <Fade>{data.shortDescription}</Fade>
+        {data.shortDescription}
       </div>
     </Link>
   );
