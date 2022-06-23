@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/MeetUs.scss";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage from "../assets/bannerImage2.png";
 import agilefirst from "../assets/agileFirst.png";

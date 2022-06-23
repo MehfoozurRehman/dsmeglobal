@@ -3,10 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 import { loadFull } from "tsparticles";
 
-import "./styles/App.scss";
-import "./styles/Footer.scss";
-import "./styles/portfoliodetail.scss";
-import "./styles/About__sec.scss";
+import "./App.scss";
 import "animate.css";
 import "swiper/css";
 import ServiceCustomSoft from "./screens/ServiceCustomSoft";

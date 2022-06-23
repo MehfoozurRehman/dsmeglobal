@@ -1,7 +1,6 @@
 import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import "../styles/ServiceMobDev.scss";
 
 export default function ServiceStartup() {
   return (

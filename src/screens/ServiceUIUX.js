@@ -4,7 +4,6 @@ import bannerImage1 from "../assets/bannerImage1.svg";
 import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";
 import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
-import "../styles/ServiceUIUX.scss";
 
 export default function ServiceUIUX() {
   return (
@@ -450,10 +449,10 @@ export default function ServiceUIUX() {
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
                 <h1 className="june_main_container_images_content_One">
-                High Fidelity Wireframes
+                  High Fidelity Wireframes
                 </h1>
                 <p className="june_main_container_images_content_two">
-                More realistic content closer to the end result.
+                  More realistic content closer to the end result.
                 </p>
               </div>
             </div>
@@ -467,10 +466,10 @@ export default function ServiceUIUX() {
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
                 <h1 className="june_main_container_images_content_One">
-                Pixel Perfect Mockups
+                  Pixel Perfect Mockups
                 </h1>
                 <p className="june_main_container_images_content_two">
-                Fully visualize the look and feel of your final product.
+                  Fully visualize the look and feel of your final product.
                 </p>
               </div>
             </div>
