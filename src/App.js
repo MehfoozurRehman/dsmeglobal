@@ -40,11 +40,12 @@ export default function App() {
     await loadFull(main);
   };
   const [isContactSection, setIsContactSection] = useState(true);
+  const [lightHeader, setLightHeader] = useState(false);
 
   return (
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
       {/* <BackgroundParticals particlesInit={particlesInit} /> */}
-      <Header />
+      <Header light={lightHeader} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -69,7 +70,10 @@ export default function App() {
           element={<QuoteScreen setIsContactSection={setIsContactSection} />}
         />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/careers" element={<Careers />} />
+        <Route
+          path="/careers"
+          element={<Careers setLightHeader={setLightHeader} />}
+        />
         <Route path="/portfolio-detail" element={<Portfolio__detail />} />
         <Route path="/meet-us" element={<MeetUs />} />
       </Routes>

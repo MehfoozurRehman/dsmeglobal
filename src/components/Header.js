@@ -1,11 +1,11 @@
 import React, { useLayoutEffect, useState, useTransition } from "react";
 import { X, Menu } from "react-feather";
-
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
+import logo from "../assets/logo.svg";
 import OutsideClickHandler from "react-outside-click-handler";
 
-export default function Header() {
+export default function Header({ light }) {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(true);
 
@@ -23,7 +23,7 @@ export default function Header() {
   }, []);
   const [isPending, startTransition] = useTransition();
   return (
-    <div className="header">
+    <div className={light ? "header header__active" : "header"}>
       <div className="header__content">
         <Link
           to="/"
@@ -32,7 +32,7 @@ export default function Header() {
           }}
           className="header__content__logo"
         >
-          <img src={logoDark} alt="logo" />
+          <img src={light ? logo : logoDark} alt="logo" />
         </Link>
         {isNavOpen ? (
           <OutsideClickHandler

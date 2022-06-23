@@ -26,7 +26,9 @@ body {
   z-index: 9990;
   background-color: $white;
 }
-
+.header__active {
+  background-color: transparent;
+}
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -72,7 +74,9 @@ body {
   font-size: 15px;
   white-space: nowrap;
 }
-
+.header__active .header__content__nav__entry__content {
+  color: $white;
+}
 .header__content__nav__entry__input:hover
   ~ .header__content__nav__entry__content,
 .header__content__nav__entry__input:checked
@@ -3850,7 +3854,96 @@ body {
   height: 100%;
   width: 507px;
 }
-
+.careers__wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+.careers__wrapper__img {
+  width: 100%;
+  height: 100%;
+}
+.careers__wrapper__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.careers__wrapper__overlay__left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  color: $white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+.careers__wrapper__overlay__left span {
+  color: $primary;
+  margin-left: 0.1em;
+}
+.careers__wrapper__overlay__left:hover {
+  transition: 300ms ease-in-out;
+  font-size: 60px;
+}
+.careers__wrapper__overlay__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 50px;
+  color: $white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.careers__wrapper__overlay__right span {
+  color: $primary;
+  margin-left: 0.5em;
+}
+.careers__wrapper__overlay__right:hover {
+  transition: 300ms ease-in-out;
+  font-size: 60px;
+}
+.careers__wrapper__overlay__right__svgtop {
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 500px;
+  animation: rotate 3s infinite;
+}
+.careers__wrapper__overlay__right__svgbottom {
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  width: 500px;
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(10deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
 @media (max-width: 550px) {
   .june_main_container_first_container_para {
     width: 350px;
