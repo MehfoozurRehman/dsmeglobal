@@ -26,12 +26,12 @@ function MeetUs() {
         <div className="meetus__container__smallThings">
           <div className="meetus__container__smallThings__content">
             <div className="meetus__container__smallThings__heading">
-              Small things. Big difference
+              Small things. <span>Big difference</span>
             </div>
             <div className="meetus__container__smallThings__content__container">
               <div className="meetus__container__smallThings__left">
                 <div className="meetus__container__smallThings__left__heading">
-                  Agile first
+                  <span>Agile </span> first
                 </div>
                 <div className="meetus__container__smallThings__left__para">
                   For some people, Agile is dull. For us, it is the way to
@@ -56,7 +56,7 @@ function MeetUs() {
               </div>
               <div className="meetus__container__sub__right">
                 <div className="meetus__container__sub__right__heading">
-                  Quality over quantity
+                  <span>Quality </span> over quantity
                 </div>
                 <div className="meetus__container__sub__right__para">
                   When it comes to our job, it's quality that matters. UX
@@ -73,7 +73,7 @@ function MeetUs() {
             >
               <div className="meetus__container__sub__left">
                 <div className="meetus__container__sub__right__heading">
-                  Continuous change
+                  Continuous <span>change</span>
                 </div>
                 <div className="meetus__container__sub__right__para">
                   Change is the only constant. We believe in that. Technology
@@ -97,7 +97,7 @@ function MeetUs() {
               </div>
               <div className="meetus__container__sub__right">
                 <div className="meetus__container__sub__right__heading">
-                  Focus on people
+                  Focus on <span>people</span>
                 </div>
                 <div className="meetus__container__sub__right__para">
                   When it comes to our job, it's quality that matters. UX
@@ -111,7 +111,7 @@ function MeetUs() {
         <div className="meetus__container__stories">
           <div className="meetus__container__stories__content">
             <div className="meetus__container__stories__heading">
-              See our stories
+              See our <span>stories</span>
             </div>
             <div className="meetus__container__stories__para">
               Your passion is the part of our identity. See how #dsmepeople
@@ -120,11 +120,14 @@ function MeetUs() {
             <div className="meetus__container__stories__card__container">
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
-                  <img src={storiesCardImage} alt="Stories card" />
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="Stories card"
+                  />
                 </div>
                 <div className="meetus__container__stories__card__text">
                   <div className="meetus__container__stories__card__heading">
-                    Abrar Khalid
+                    Olivia Piper
                   </div>
                   <div className="meetus__container__stories__card__para">
                     Designer
@@ -133,11 +136,14 @@ function MeetUs() {
               </div>
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
-                  <img src={storiesCardImage} alt="Stories card" />
+                  <img
+                    src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="Stories card"
+                  />
                 </div>
                 <div className="meetus__container__stories__card__text">
                   <div className="meetus__container__stories__card__heading">
-                    Abrar Khalid
+                    Liam Benjamin
                   </div>
                   <div className="meetus__container__stories__card__para">
                     Designer
@@ -146,11 +152,14 @@ function MeetUs() {
               </div>
               <div className="meetus__container__stories__card">
                 <div className="meetus__container__stories__card__image">
-                  <img src={storiesCardImage} alt="Stories card" />
+                  <img
+                    src="https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="Stories card"
+                  />
                 </div>
                 <div className="meetus__container__stories__card__text">
                   <div className="meetus__container__stories__card__heading">
-                    Abrar Khalid
+                    Madison Joe
                   </div>
                   <div className="meetus__container__stories__card__para">
                     Designer
