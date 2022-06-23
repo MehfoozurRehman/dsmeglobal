@@ -3987,8 +3987,8 @@ body {
 }
 
 .ios__mobile__share__your__idea__section__buttons__section__awards img {
-  width: 190px;
-  height: 150px;
+  width: 150px;
+  height: 120px;
   cursor: pointer;
   mix-blend-mode: luminosity;
 }
@@ -4001,16 +4001,18 @@ body {
 }
 .ios__mobile__page__one__step__ios__development__section {
   width: 100%;
-  margin-top: 4em;
   display: flex;
 }
 .ios__mobile__page__one__step__ios__development__section__left {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .ios__mobile__page__one__step__ios__development__section__left__heading {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .ios__mobile__page__one__step__ios__development__section__left__text {
   font-size: 16px;
@@ -4019,39 +4021,28 @@ body {
   color: #189366;
   font-weight: 500;
   text-decoration: none;
+  margin: 0em 1em;
 }
 .ios__mobile__page__one__step__ios__development__section__right {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: end;
+}
+
+.ios__mobile__page__one__step__ios__development__section__right img {
+  width: 400px;
   height: 300px;
 }
-.ios__mobile__page__one__step__ios__development__section__right::before {
-  content: " ";
-  background-color: #f7f7f7;
-  height: 100%;
-  width: calc(100% - 50%);
-  position: absolute;
-  right: 0;
-  display: flex;
-  justify-content: end;
-  z-index: -1;
-}
-.ios__mobile__page__one__step__ios__development__section__right img {
-  width: 350px;
-  height: 230px;
-}
-.ios__mobile__page__one__step__swift__development__section {
-  width: 100%;
-  margin-top: 4em;
-  display: flex;
-}
-.ios__mobile__page__one__step__swift__development__section__right img {
-  width: 350px;
-  height: 230px;
-}
+// .ios__mobile__page__one__step__swift__development__section {
+//   width: 100%;
+//   margin-top: 4em;
+//   display: flex;
+// }
+// .ios__mobile__page__one__step__swift__development__section__right img {
+//   width: 400px;
+//   height: 300px;
+// }
 
 .ios__mobile__page__one__step__swift__development__section__right__heading {
   font-size: 20px;
@@ -4067,24 +4058,11 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 300px;
 }
-.ios__ios__development__swift__development__section__left::before {
-  content: " ";
-  background-color: #f7f7f7;
-  height: 100%;
-  width: calc(100% - 50%);
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: end;
-  z-index: -1;
-}
+
 .ios__ios__development__swift__development__section__left img {
-  width: 350px;
-  height: 230px;
+  width: 400px;
+  height: 300px;
 }
 .ios__ios__development__swift__development__section__right {
   width: 50%;
@@ -4095,7 +4073,7 @@ body {
 .ios__ios__development__swift__development__section__right__heading {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .ios__ios__development__swift__development__section__left__text {
   font-size: 16px;
@@ -4119,6 +4097,7 @@ body {
 .ios__development__tangible__col__two {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   height: 100%;
   padding: 3em 0em;
@@ -4134,7 +4113,7 @@ body {
   margin-bottom: 0.5em;
 }
 .ios__development__tangible__col__two__header__middle {
-  margin-top: 6em;
+  margin-top: 3em;
   font-size: 16px;
 }
 .ios__development__tangible__col__two__header__middle__button {
@@ -4154,7 +4133,7 @@ body {
 }
 .ios__development__tangible__col__three__header {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   height: 100%;
   padding: 3em 4em;
   flex-direction: column;
@@ -4166,7 +4145,7 @@ body {
 }
 .ios__development__native__ios {
   width: 100%;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .ios__development__native__ios__container {
   max-width: 1500px;
@@ -4175,11 +4154,11 @@ body {
   display: flex;
 }
 .ios__development__native__ios__container__left {
-  width: 70%;
+  width: 60%;
 }
 .ios__development__native__ios__container__heading {
   font-size: 30px;
-  margin-bottom: 1em;
+  margin-bottom: 0.4em;
   font-weight: 600;
 }
 .ios__development__native__container__text {
@@ -4190,24 +4169,26 @@ body {
   width: 100%;
 }
 .ios__development__native__impressive__performance__heading {
-  font-size: 30px;
-  margin: 1em 0em;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
 }
 .ios__development__native__impressive__performance__content {
   font-size: 16px;
 }
 .ios__development__native__ios__container__right {
-  width: 30%;
-  height: 1350px;
+  width: 40%;
+  height: 1270px;
 }
 .ios__development__native__ios__container__right__card {
-  width: 280px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  margin-left: 4em;
-  border: 1px solid black;
-  padding: 1em 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 4em 2.5em;
   position: sticky;
+  margin-left: 1em;
   top: 110px;
 }
 .ios__development__native__ios__container__right__card a {
@@ -4241,7 +4222,7 @@ body {
   font-size: 16px;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 1em;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
