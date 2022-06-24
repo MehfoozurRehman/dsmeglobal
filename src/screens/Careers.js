@@ -70,6 +70,10 @@ export default function Careers({ setLightHeader }) {
   }, []);
   const [careerBanner, setCareerBanner] = useState(true);
 
+  useEffect(() => {
+    setCareerBanner(true);
+  }, []);
+
   return (
     <>
       {careerBanner ? (

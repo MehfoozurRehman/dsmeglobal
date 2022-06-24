@@ -2550,6 +2550,7 @@ body {
   width: 50px;
   margin-bottom: 0.7em;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .container__pricing {
@@ -4636,6 +4637,31 @@ body {
   }
   .container__pricing__content {
     flex-direction: column;
+  }
+  .careers__wrapper__overlay {
+    flex-direction: column;
+  }
+  .careers__wrapper__overlay__left {
+    width: 100%;
+    font-size: 30px;
+  }
+  .careers__wrapper__overlay__left:hover {
+    font-size: 40px;
+  }
+  .careers__wrapper__overlay__right {
+    width: 100%;
+    font-size: 30px;
+  }
+  .careers__wrapper__overlay__right:hover {
+    font-size: 40px;
+  }
+  .careers__wrapper__overlay__right__svgtop {
+    top: -300px;
+    right: -300px;
+  }
+  .careers__wrapper__overlay__right__svgbottom {
+    bottom: -300px;
+    left: -300px;
   }
 }
 @media (max-width: 750px) {

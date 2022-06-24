@@ -1,12 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import { CheckCircle } from "react-feather";
+import { CheckCircle, User } from "react-feather";
 import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
 
 export default function ServicesWebDev() {
+  const [selected, setSelected] = useState("AR VR");
+  const array = [
+    {
+      label: "AR VR",
+      svg: <User size={40} color="currentColor" />,
+      info: "We study changes in consumer perspective to build a cost-effective, robust and game-changing AR/VR solutions for a variety of products and services.",
+    },
+    {
+      label: "Blockchain",
+      svg: <User size={40} color="currentColor" />,
+      info: "We provide blockchain consulting services and customized solutions for businesses, startups and enterprises to transform the way they operate.",
+    },
+    {
+      label: "Internet of things",
+      svg: <User size={40} color="currentColor" />,
+      info: "Our team of engineers can help you build fully customized products/apps with interconnectivity between all known tech and non-tech devices.      ",
+    },
+    {
+      label: "Artificial intelligence",
+      svg: <User size={40} color="currentColor" />,
+      info: "Owing to the growing demand for intelligent applications, systems and products our engineers are experienced enough to construct robust artificial intelligent solutions.      ",
+    },
+    {
+      label: "Machine learning",
+      svg: <User size={40} color="currentColor" />,
+      info: "Incorporate machine learning into your current or planned product development initiatives for better user experience, decision making and consumer retention and loyalty.      ",
+    },
+    {
+      label: "Big data",
+      svg: <User size={40} color="currentColor" />,
+      info: "Make better and faster data driven decisions to help support your businesses with our capability of building products/applications that rely on big data analytics.      ",
+    },
+  ];
   return (
     <>
       <div className="container">
@@ -132,23 +165,27 @@ export default function ServicesWebDev() {
           build a solution that you help our clients stay ahead of the game.
         </div>
         <div className="container__emerging__technologies__section">
-          <WebdevArrEntry />
-          <WebdevArrEntry />
-          <WebdevArrEntry />
-          <WebdevArrEntry />
-          <WebdevArrEntry />
-          <WebdevArrEntry />
+          {array.map((item) => (
+            <WebdevArrEntry
+              label={item.label}
+              svg={item.svg}
+              selected={selected}
+              setSelected={setSelected}
+            />
+          ))}
         </div>
-        <div className="container__emerging__technologies__section__entry__data">
-          <div className="container__emerging__technologies__section__entry__data___heading">
-            AR/VR
-          </div>
-          <div className="container__emerging__technologies__section__entry__data__text">
-            We study changes in consumer perspective to build a cost-effective,
-            robust and game-changing AR/VR solutions for a variety of products
-            and services.
-          </div>
-        </div>
+        {array
+          .filter((item) => item.label === selected)
+          .map((item) => (
+            <div className="container__emerging__technologies__section__entry__data">
+              <div className="container__emerging__technologies__section__entry__data___heading">
+                {item.label}
+              </div>
+              <div className="container__emerging__technologies__section__entry__data__text">
+                {item.info}
+              </div>
+            </div>
+          ))}
       </div>
     </>
   );
