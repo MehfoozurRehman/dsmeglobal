@@ -5,10 +5,7 @@ import img3 from "../assets/3.png";
 import img4 from "../assets/4.png";
 import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
-
 import { Link } from "react-router-dom";
-import useSWR from "swr";
-import { fetcher } from "../utils/functions";
 import logoDark from "../assets/logo.svg";
 import {
   Dribbble,
@@ -17,6 +14,8 @@ import {
   Linkedin,
   Twitter,
 } from "react-feather";
+import { FooterServices } from "./FooterServices";
+import { FooterTopics } from "./FooterTopics";
 
 export default function Footer() {
   return (
@@ -134,69 +133,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-function FooterServices() {
-  const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_service`,
-    fetcher,
-    { suspense: true }
-  );
-  return (
-    <div className="footer__container__content__col">
-      <div className="footer__container__content__col__heading">Services</div>
-
-      {error ? (
-        <div>failed to load</div>
-      ) : (
-        data.map((item) => (
-          <Link
-            onClick={() => {
-              window.localStorage.setItem("servicesData", JSON.stringify(item));
-              setTimeout(() => {
-                window.scrollTo({ behavior: "smooth", top: 0 });
-              }, 300);
-            }}
-            to="/service-details"
-            key={JSON.stringify(item)}
-            className="footer__container__content__col__link"
-          >
-            {item.title}
-          </Link>
-        ))
-      )}
-    </div>
-  );
-}
-function FooterTopics() {
-  const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_techonologies`,
-    fetcher,
-    { suspense: true }
-  );
-  return (
-    <div className="footer__container__content__col">
-      <div className="footer__container__content__col__heading">
-        Technologies
-      </div>
-
-      {error ? (
-        <div>failed to load</div>
-      ) : (
-        data
-          .filter((item, i) => i < 7)
-          .map((item) => (
-            <a
-              href="#"
-              key={JSON.stringify(item)}
-              className="footer__container__content__col__link"
-            >
-              {item.name}
-            </a>
-          ))
-      )}
     </div>
   );
 }

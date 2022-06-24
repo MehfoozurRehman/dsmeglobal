@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
 import logo from "../assets/logo.svg";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Nav } from "./Nav";
 
 export default function Header({ light }) {
   const navigate = useNavigate();
@@ -76,56 +77,6 @@ export default function Header({ light }) {
           </Link>
         </div>
       </div>
-    </div>
-  );
-}
-
-function NavLink({ children, to, navigate }) {
-  const [isPending, startTransition] = useTransition();
-  return (
-    <div className="header__content__nav__entry">
-      <input
-        type="radio"
-        name="header__content__nav__entry"
-        id={children}
-        title={children}
-        className="header__content__nav__entry__input"
-        defaultChecked={window.location.pathname === to}
-        onClick={() => {
-          startTransition(() => {
-            navigate(to);
-          });
-        }}
-      />
-      <div className="header__content__nav__entry__content">{children}</div>
-    </div>
-  );
-}
-
-function Nav({ navigate }) {
-  return (
-    <div className="header__content__nav">
-      <NavLink to="/" navigate={navigate}>
-        Home
-      </NavLink>
-      <NavLink to="/about-us" navigate={navigate}>
-        About Us
-      </NavLink>
-      <NavLink to="/services" navigate={navigate}>
-        Services
-      </NavLink>
-      <NavLink to="/portfolio" navigate={navigate}>
-        Portfolio
-      </NavLink>
-      <NavLink to="/pricing" navigate={navigate}>
-        Pricing
-      </NavLink>
-      <NavLink to="/careers" navigate={navigate}>
-        Careers
-      </NavLink>
-      <NavLink to="/blog" navigate={navigate}>
-        Blog
-      </NavLink>
     </div>
   );
 }

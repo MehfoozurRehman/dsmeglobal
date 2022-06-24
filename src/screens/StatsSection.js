@@ -1,5 +1,6 @@
-import React, { useMemo, useState, useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import CountUp from "react-countup";
+import { useIsInViewport } from "./useIsInViewport";
 
 export function StatsSection() {
   const ref = useRef(null);
@@ -46,26 +47,4 @@ export function StatsSection() {
       </div>
     </div>
   );
-}
-
-function useIsInViewport(ref) {
-  const [isIntersecting, setIsIntersecting] = useState(false);
-
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting)
-      ),
-    []
-  );
-
-  useEffect(() => {
-    observer.observe(ref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [ref, observer]);
-
-  return isIntersecting;
 }
