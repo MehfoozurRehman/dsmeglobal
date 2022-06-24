@@ -1,14 +1,13 @@
 import React from "react";
 
-export function ExperienceCard() {
+export function ExperienceCard({ label, info }) {
   return (
     <div className="container__web__dev__experience__content__entry">
       <div className="container__web__dev__experience__content__entry__heading">
-        Large Scale Distributed Systems
+        {label}
       </div>
       <div className="container__web__dev__experience__content__entry__info">
-        Leverage our expertise to build highly customized and scalable projects
-        to gain competitive edge.
+        {info}
       </div>
     </div>
   );

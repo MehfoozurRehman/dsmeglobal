@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import { CheckCircle, User } from "react-feather";
+import { Box, CheckCircle, User } from "react-feather";
 import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
@@ -61,10 +61,26 @@ export default function ServicesWebDev() {
           </div>
         </div>
         <div className="container__web__dev__experties__content">
-          <ExperitseCard />
-          <ExperitseCard />
-          <ExperitseCard />
-          <ExperitseCard />
+          <ExperitseCard
+            svg={<Box size={30} color="currentColor" />}
+            label="Massively Customized Web Apps"
+            info="Tailor your web apps exactly the way your business works. Build one from scratch, migrate your legacy back-end or upgrade existing front-end functionality."
+          />
+          <ExperitseCard
+            svg={<Box size={30} color="currentColor" />}
+            label="Amazing UI/UX Design"
+            info="We aGet the most appealing User Interface design for your web-app that provides an overwhelmingly refreshing and friendly experience for your customers."
+          />
+          <ExperitseCard
+            svg={<Box size={30} color="currentColor" />}
+            label="Build a Minimum Viable Product"
+            info="We always consider the bigger picture while scoping the minimum requirements for your product and build prototypes blazingly fast to reduce your time to market."
+          />
+          <ExperitseCard
+            svg={<Box size={30} color="currentColor" />}
+            label="Rescue Missions"
+            info="Left stranded with a bad product that doesn’t work? We can pick up the pieces and get you up and running in no time."
+          />
         </div>
       </div>
       <div className="container__web__dev__experience__wrapper">
@@ -79,12 +95,30 @@ export default function ServicesWebDev() {
             </div>
           </div>
           <div className="container__web__dev__experience__content">
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
+            <ExperienceCard
+              label="Large Scale Distributed Systems"
+              info="Leverage our expertise to build highly customized and scalable projects to gain competitive edge."
+            />
+            <ExperienceCard
+              label="Results Driven Business Apps"
+              info="Develop intelligent data driven web apps that help you make more informed decisions."
+            />
+            <ExperienceCard
+              label="Automating Existing Processes"
+              info="We can also help you streamline & automate your internal operations with our discovery led approach."
+            />
+            <ExperienceCard
+              label="E-commerce & Web Portals"
+              info="From marketplaces (doctors, insurances etc) to online shopping, we have designed & developed several eCommerce portals."
+            />
+            <ExperienceCard
+              label="Scalable SaaS Products"
+              info="Doesn't matter if you are a startup, entrepreneur or an business, we can help you develop scalable SaaS products."
+            />
+            <ExperienceCard
+              label="Branded Microsites"
+              info="Develop and design custom microsites to introduce new products & services or capture leads to enhance marketing efforts."
+            />
           </div>
         </div>
       </div>
@@ -136,23 +170,19 @@ export default function ServicesWebDev() {
           </div>
           <div className="container__web__dev__solution__right__entry">
             <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
+            Highly Scalable
           </div>
           <div className="container__web__dev__solution__right__entry">
             <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
+            Appealing UI
           </div>
           <div className="container__web__dev__solution__right__entry">
             <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
+            Secure Architecture
           </div>
           <div className="container__web__dev__solution__right__entry">
             <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
+            Cross-Platform Compatibility
           </div>
         </div>
       </div>
