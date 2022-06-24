@@ -1,51 +1,47 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import { CheckCircle, User } from "react-feather";
+import { Box, User } from "react-feather";
 import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
 
 export default function ServicesMobDev() {
   const [selected, setSelected] = useState("AR VR");
+
   const array = [
     {
-      label: "AR VR",
+      label: "Wearable Tech",
       svg: <User size={40} color="currentColor" />,
-      info: "We study changes in consumer perspective to build a cost-effective, robust and game-changing AR/VR solutions for a variety of products and services.",
+      info: "We'll help you ideate, design, develop and launch your Wearable app. Apps would be supported by strong back-end, cloud based web systems.",
     },
     {
-      label: "Blockchain",
+      label: "Geo Tracking",
       svg: <User size={40} color="currentColor" />,
-      info: "We provide blockchain consulting services and customized solutions for businesses, startups and enterprises to transform the way they operate.",
+      info: "We have leveraged GPS technology for apps built for mobile workforce management, fleet tracking to geo-fencing, geo-targeting and location aware in-app messaging.",
     },
     {
-      label: "Internet of things",
+      label: "Internet of Things",
       svg: <User size={40} color="currentColor" />,
-      info: "Our team of engineers can help you build fully customized products/apps with interconnectivity between all known tech and non-tech devices.      ",
+      info: "We deliver mobile-enabled IoT, solutions for equipment and appliances controlled via mobile, including connected home solutions, real-time tracking and monitoring services, and many more.",
     },
     {
-      label: "Artificial intelligence",
+      label: "Location Tracking",
       svg: <User size={40} color="currentColor" />,
-      info: "Owing to the growing demand for intelligent applications, systems and products our engineers are experienced enough to construct robust artificial intelligent solutions.      ",
+      info: "We developed enhanced in-store experiences to capture secure contactless payments, indoor location sensing and contextual coupon delivery leveraging technologies like BLE Beacons, NFC etc.",
     },
     {
-      label: "Machine learning",
+      label: "AR/VR Reality",
       svg: <User size={40} color="currentColor" />,
-      info: "Incorporate machine learning into your current or planned product development initiatives for better user experience, decision making and consumer retention and loyalty.      ",
-    },
-    {
-      label: "Big data",
-      svg: <User size={40} color="currentColor" />,
-      info: "Make better and faster data driven decisions to help support your businesses with our capability of building products/applications that rely on big data analytics.      ",
+      info: "With the new ARKit coming out from Apple and Android, we are set to deliver compelling AR mobile apps overlaying information and interactivity over real-world scenes.",
     },
   ];
   return (
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Web Application Development"
-          info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
+          taglinesLine="Mobile Application Development"
+          info="Custom built mobile applications with amazing experiences that help support your business goals."
           img={bannerImage1}
         />
       </div>
@@ -56,113 +52,93 @@ export default function ServicesMobDev() {
             Our Expertise
           </div>
           <div className="container__web__dev__experties__header__info">
-            Custom built web applications with amazing user experiences & latest
-            web technologies that help support your business goals.
+            Building great business and consumer apps means not only creating
+            amazing user experience but also taking architecture, technical
+            design and security into account.
           </div>
         </div>
         <div className="container__web__dev__experties__content">
-          <ExperitseCard />
-          <ExperitseCard />
-          <ExperitseCard />
-          <ExperitseCard />
+          <ExperitseCard
+            svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
+            label="End-to-End Mobile App Development"
+            info="We offer end-to-end development services for all things mobile - covering everything from initial concepts to design, development & support."
+          />
+          <ExperitseCard
+            svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
+            label="Web to Mobile App Extension"
+            info="We can help you extend your existing web portals and applications to highly functional and beautiful looking mobile apps."
+          />
+          <ExperitseCard
+            svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
+            label="Enterprise Mobility"
+            info="We develop trend setting mobile apps for B2B, B2E, and B2C enterprises - easily integrating with your corporate systems."
+          />
+          <ExperitseCard
+            svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
+            label="Discover how Mobile Help Your Business."
+            info="Leverage our Agile Discovery Workshop, to formulate winning mobile strategies which help you transform your business, cut down on costs and optimize processes."
+          />
         </div>
       </div>
       <div className="container__web__dev__experience__wrapper">
         <div className="container__web__dev__experience">
           <div className="container__web__dev__experience__header">
             <div className="container__web__dev__experience__header__heading">
-              Experience In Developing Diverse Solutions.
+              Exceptional Domain Expertise
             </div>
             <div className="container__web__dev__experience__header__info">
-              Custom solutions are lean, designed as per your brand guidelines
-              and tailor made to address the business goals.
+              Phenomenal domain expertise to help you build and deliver mobile
+              applications that can increase productivity, improve engagement
+              and boost customer loyalty.
             </div>
           </div>
           <div className="container__web__dev__experience__content">
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
+            <ExperienceCard
+              label="Mobile Healthcare"
+              info="Patient-friendly, HIPAA compliant mobile healthcare products effectively handling integration challenges with electronic health records."
+            />
+            <ExperienceCard
+              label="Workflow and Asset Management"
+              info="We build workflow and asset management apps that help you deliver maximum value by using world-class Digital Asset Management solutions."
+            />
+            <ExperienceCard
+              label="Field Automation"
+              info="Our custom built field force apps are fully integrated with a GPS to ensure high efficiency and productivity of your field force."
+            />
+            <ExperienceCard
+              label="Fleet Management"
+              info="With our custom built fleet management systems you can minimize vehicle risk, improve productivity and reduce costs of transportation."
+            />
+            <ExperienceCard
+              label="Media Streaming"
+              info="Build extensive media streaming apps that are highly interactive, scalable, content rich , highly secure and fast."
+            />
+            <ExperienceCard
+              label="mCommerce Development"
+              info="We can help you build fully customized, reliable and secure m-commerce platforms that boosts customer engagement."
+            />
+            <ExperienceCard
+              label="Sports & Lifestyle Apps"
+              info="Captivate users with the most robust, simple and useful sports and lifestyle apps that will give your competitors tough competition."
+            />
+            <ExperienceCard
+              label="Social Networking Apps"
+              info="Reduce the time to market for your amazing social networking apps and cash out on the first movers advantage by leveraging our expertise."
+            />
           </div>
         </div>
       </div>
-      <div className="container__web__dev__solution">
-        <div className="container__web__dev__solution__left">
-          <div className="container__web__dev__solution__left__heading">
-            From MVP's to Enterprise Solution
-          </div>
-          <div className="container__web__dev__solution__left__info">
-            For us an MVP is a solution with limited features that is detailed
-            enough to get you an the most accurate market feedback yet
-            economical enough to fit your pocket.
-          </div>
-          <div className="container__web__dev__solution__left__info">
-            Everything we build meets and exceed industry standards
-          </div>
-          <div className="container__web__dev__solution__left__row">
-            <img
-              src="https://www.codedistrict.com/assets/images/mvp-img-1.svg"
-              alt=""
-              className="container__web__dev__solution__left__row__img"
-            />
-            <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-2.svg"
-              alt=""
-              className="container__web__dev__solution__left__row__img"
-            />
-            <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-3.svg"
-              alt=""
-              className="container__web__dev__solution__left__row__img"
-            />
-            <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-4.svg"
-              alt=""
-              className="container__web__dev__solution__left__row__img"
-            />
-            <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-5.svg"
-              alt=""
-              className="container__web__dev__solution__left__row__img"
-            />
-          </div>
-        </div>
-        <div className="container__web__dev__solution__right">
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-          <div className="container__web__dev__solution__right__entry">
-            <CheckCircle size={20} color="currentColor" />
-            Fast & Responsive
-          </div>
-        </div>
-      </div>
-      <div className="container__emerging__technologies">
+      <div
+        className="container__emerging__technologies"
+        style={{ marginTop: "5em" }}
+      >
         <div className="container__emerging__technologies__heading__main">
-          Emerging Technologies
+          Emerging Technologies Know-How
         </div>
         <div className="container__emerging__technologies__text__main">
-          We constantly push our limits and explore emerging technologies to
-          build a solution that you help our clients stay ahead of the game.
+          We understand the potential value of emerging technologies for both
+          corporates and consumers and thus help you choose the right set of
+          technologies.
         </div>
         <div className="container__emerging__technologies__section">
           {array.map((item) => (

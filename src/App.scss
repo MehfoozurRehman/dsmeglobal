@@ -2303,7 +2303,6 @@ body {
 
 .container__web__dev__experience__content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -2312,6 +2311,7 @@ body {
   flex-direction: column;
   width: 32%;
   margin-bottom: 3em;
+  padding: 1em;
 }
 
 .container__web__dev__experience__content__entry__heading {
