@@ -17,8 +17,8 @@ export default function ServicesIos() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Web Application Development"
-          info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
+          taglinesLine="iOS app development company"
+          info="Explore new business destinations, accelerate growth, and captivate your customers with a custom iOS application"
           img={bannerImage1}
         />
       </div>
@@ -66,13 +66,13 @@ export default function ServicesIos() {
                 make sure that both your strategy and your digital product are
                 flawless. We take good care of your project from start to finish
                 by beginning with in-depth research, a data-based strategy, and
-                outstanding{" "}
+                outstanding
                 <a
                   href="/"
                   className="ios__mobile__page__one__step__ios__development__section__left__text__span"
                 >
                   product design.
-                </a>{" "}
+                </a>
                 Then, we combine foolproof development and maintenance for the
                 excellent stability and performance of your app.
               </div>
