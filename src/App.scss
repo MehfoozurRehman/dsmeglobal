@@ -2396,7 +2396,7 @@ body {
 }
 
 .container__web__dev__solution__right {
-  background-color: #30b795;
+  background-color: $primary;
   display: flex;
   flex-direction: column;
   padding: 3em;
@@ -3276,7 +3276,7 @@ body {
 }
 
 .portfolio__section__container__buttons button:hover {
-  background-color: #0e6f4c;
+  background-color: $primaryDark;
 }
 
 .portfolio__section__container__text__content {
@@ -3711,7 +3711,7 @@ body {
 }
 
 .june_fourth_container_box_title span {
-  color: #30b795;
+  color: $primary;
 }
 
 .june_fourth_container_box_title {
@@ -3743,10 +3743,14 @@ body {
 .june_fourth_container_box_button {
   height: 45px;
   width: 150px;
-  background-color: #30b795;
+  background-color: $primary;
   border: none;
   color: $white;
   border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .june_main_container_images {
@@ -4021,7 +4025,7 @@ body {
   font-size: 16px;
 }
 .ios__mobile__page__one__step__ios__development__section__left__text__span {
-  color: #189366;
+  color: $primary;
   font-weight: 500;
   text-decoration: none;
   margin: 0em 1em;
@@ -4074,7 +4078,7 @@ body {
   font-size: 16px;
 }
 .ios__development__tangible {
-  background-color: #189366;
+  background-color: $primary;
   padding: 1em 6em;
   width: calc(100% - 4em);
   margin-left: 4em;
@@ -4117,14 +4121,14 @@ body {
   outline: none;
   border: 1px solid transparent;
   margin-top: 1.5em;
-  background-color: #0e6f4c;
+  background-color: $primaryDark;
   font-size: 16px;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
   color: white;
 }
 .ios__development__tangible__col__two__header__middle__button:hover {
-  background-color: #189366;
+  background-color: $primary;
 }
 .ios__development__tangible__col__three__header {
   display: flex;
@@ -4200,7 +4204,7 @@ body {
   transition: all ease-in-out 0.3s;
 }
 .ios__development__native__ios__container__right__card a:hover {
-  color: #189366;
+  color: $primary;
 }
 .ios__development__native__sound__promising {
   width: 100%;
@@ -4215,7 +4219,7 @@ body {
   font-weight: 600;
 }
 .ios__development__native__sound__promising__button {
-  background-color: #189366;
+  background-color: $primary;
   color: white;
   width: 150px;
   height: 50px;
@@ -4229,7 +4233,7 @@ body {
   transition: all ease-in-out 0.3s;
 }
 .ios__development__native__sound__promising__button:hover {
-  background-color: #0e6f4c;
+  background-color: $primaryDark;
 }
 .ecommerce__screen__container {
   width: 100%;

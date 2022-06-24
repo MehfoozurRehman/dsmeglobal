@@ -4,6 +4,7 @@ import bannerImage1 from "../assets/bannerImage1.svg";
 import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";
 import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
+import { Link } from "react-router-dom";
 
 export default function ServiceUIUX() {
   return (
@@ -417,9 +418,9 @@ export default function ServiceUIUX() {
             </h2>
           </div>
           <div className="june_fourth_container_box_button_cotainer">
-            <button className="june_fourth_container_box_button">
+            <Link to="/contact-us" className="june_fourth_container_box_button">
               Let's Talk
-            </button>
+            </Link>
           </div>
         </div>
         <div className="june_main_container_images">
