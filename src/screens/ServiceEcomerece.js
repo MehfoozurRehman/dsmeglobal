@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import { Box } from "react-feather";
 import { HomeJumbotron } from "./HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import { Box, Link } from "react-feather";
+import EcomereceRoleSelector from "../components/EcomereceRoleSelector";
+import EcomereceProjectsCard from "../components/EcomereceProjectsCard";
+import EcomerenceServiceEntry from "../components/EcomerenceServiceEntry";
+import EcomereceProcessSelector from "../components/EcomereceProcessSelector";
+import EcommerceWorkCodeCard from "../components/EcommerceWorkCodeCard";
 
 export default function ServiceEcomerece() {
   const [role, setRole] = useState("Shopify");
@@ -146,20 +151,20 @@ export default function ServiceEcomerece() {
             </div>
             <div className="ecommerce__screen__container__recent__work__content">
               <div className="ecommerce__screen__container__recent__work__content___row">
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
               </div>
               <div className="ecommerce__screen__container__recent__work__content___row ecommerce__screen__container__recent__work__content___row__reverse">
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
               </div>
               <div className="ecommerce__screen__container__recent__work__content___row">
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
               </div>
               <div className="ecommerce__screen__container__recent__work__content___row ecommerce__screen__container__recent__work__content___row__reverse">
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
-                <EcomereceProjectsCard imgae="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
               </div>
             </div>
           </div>
@@ -278,101 +283,3 @@ export default function ServiceEcomerece() {
   );
 }
 
-function EcomereceRoleSelector({ svg, label, selected, setSelected }) {
-  return (
-    <div className="ecommerce__screen__container__role__entry">
-      <input
-        type="radio"
-        defaultChecked={selected === label}
-        onChange={() => {
-          setSelected(label);
-        }}
-        name="ecommerce__screen__container__role__entry"
-        className="ecommerce__screen__container__role__entry__input"
-      />
-      <div className="ecommerce__screen__container__role__entry__content">
-        {svg}
-        <div className="ecommerce__screen__container__role__entry__content__heading">
-          {label}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function EcomereceProjectsCard({ imgae }) {
-  return (
-    <div className="ecommerce__screen__container__recent__work__content___row__entry">
-      <img
-        src={imgae}
-        alt={imgae}
-        className="ecommerce__screen__container__recent__work__content___row__entry__img"
-      />
-      <a
-        href="#"
-        className="ecommerce__screen__container__recent__work__content___row__entry__overlay"
-      >
-        <div className="ecommerce__screen__container__recent__work__content___row__entry__overlay__header">
-          <div className="ecommerce__screen__container__recent__work__content___row__entry__overlay__header__left">
-            Skordo
-          </div>
-          <div className="ecommerce__screen__container__recent__work__content___row__entry__overlay__header__right">
-            <Link size={20} color="currentcolor" />
-          </div>
-        </div>
-        <div className="ecommerce__screen__container__recent__work__content___row__entry__overlay__info">
-          Toys and crafts
-        </div>
-      </a>
-    </div>
-  );
-}
-
-function EcomerenceServiceEntry({ svg, label, info }) {
-  return (
-    <div className="ecommerce__screen__container__services__content__entry">
-      {svg}
-      <div className="ecommerce__screen__container__services__content__entry__heading">
-        {label}
-      </div>
-      <div className="ecommerce__screen__container__services__content__entry__info">
-        {info}
-      </div>
-    </div>
-  );
-}
-
-function EcomereceProcessSelector({ label, selected, setSelected }) {
-  return (
-    <div className="ecommerce__screen__container__process__content__selector__entry">
-      <input
-        type="radio"
-        defaultChecked={selected === label}
-        onChange={() => {
-          setSelected(label);
-        }}
-        className="ecommerce__screen__container__process__content__selector__entry__input"
-        name="ecommerce__screen__container__process__content__selector__entry"
-      />
-      <div className="ecommerce__screen__container__process__content__selector__entry__content">
-        {label}
-      </div>
-    </div>
-  );
-}
-
-function EcommerceWorkCodeCard({}) {
-  return (
-    <div className="ecommerce__screen__container__work__code__content__entry">
-      <Box size={20} color="currentColor" />
-      <div className="ecommerce__screen__container__work__code__content__entry__heading">
-        Top Shopify Developers
-      </div>
-      <div className="ecommerce__screen__container__work__code__content__entry__">
-        Our highly experienced development team who have been working with
-        Shopify since its origin, thrive in providing top quality services to
-        our clients.
-      </div>
-    </div>
-  );
-}
