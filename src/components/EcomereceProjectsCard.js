@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-feather";
+import { ExternalLink, Link, Link2 } from "react-feather";
 
 export default function EcomereceProjectsCard({ image }) {
   return (
@@ -18,7 +18,7 @@ export default function EcomereceProjectsCard({ image }) {
             Skordo
           </div>
           <div className="ecommerce__screen__container__recent__work__content___row__entry__overlay__header__right">
-            <Link size={20} color="currentcolor" />
+            <ExternalLink size={20} color="currentcolor" />
           </div>
         </div>
         <div className="ecommerce__screen__container__recent__work__content___row__entry__overlay__info">

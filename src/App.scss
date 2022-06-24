@@ -2345,7 +2345,7 @@ body {
   z-index: 999;
   width: 100%;
   max-width: 1500px;
-  padding: 4em 4em;
+  padding: 7em 4em;
   margin: 0em auto;
   display: flex;
   justify-content: space-between;
@@ -4231,6 +4231,340 @@ body {
 .ios__development__native__sound__promising__button:hover {
   background-color: #0e6f4c;
 }
+.ecommerce__screen__container {
+  width: 100%;
+  max-width: 1500px;
+  padding: 0em 4em;
+  margin: 0em auto;
+}
+.ecommerce__screen__container__role {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ecommerce__screen__container__role__entry {
+  position: relative;
+  margin: 0em 1em;
+}
+.ecommerce__screen__container__role__entry__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.ecommerce__screen__container__role__entry__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  border-radius: 8px;
+  color: $primary;
+  width: 200px;
+  border: 1px solid $black;
+}
+.ecommerce__screen__container__role__entry__content__heading {
+  margin-top: 1em;
+  color: $black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.ecommerce__screen__container__role__entry__input:hover
+  ~ .ecommerce__screen__container__role__entry__content,
+.ecommerce__screen__container__role__entry__input:checked
+  ~ .ecommerce__screen__container__role__entry__content {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  border-color: $primary;
+}
+.ecommerce__screen__container__role__entry__input:hover
+  ~ .ecommerce__screen__container__role__entry__content
+  *,
+.ecommerce__screen__container__role__entry__input:checked
+  ~ .ecommerce__screen__container__role__entry__content
+  * {
+  transition: 300ms ease-in-out;
+  color: $white;
+}
+.ecommerce__screen__container__selling {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5em 0em;
+}
+.ecommerce__screen__container__selling__heading {
+  text-align: center;
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.ecommerce__screen__container__selling__content {
+  display: flex;
+  align-items: center;
+}
+.ecommerce__screen__container__selling__content__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2em;
+}
+.ecommerce__screen__container__selling__content__left__img {
+  height: 500px;
+}
+.ecommerce__screen__container__selling__content__right {
+  flex: 1;
+}
+.ecommerce__screen__container__selling__content__right__entry {
+  font-size: 16px;
+  color: $black;
+  margin-bottom: 3em;
+  font-weight: 500;
+}
+.ecommerce__screen__container__recent__work {
+  width: 100%;
+}
+.ecommerce__screen__container__recent__work__heading {
+  text-align: center;
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.ecommerce__screen__container__recent__work__content {
+  display: flex;
+  flex-direction: column;
+}
+.ecommerce__screen__container__recent__work__content___row {
+  display: flex;
+  align-items: center;
+}
+.ecommerce__screen__container__recent__work__content___row__reverse {
+  flex-direction: row-reverse;
+}
+.ecommerce__screen__container__recent__work__content___row__entry {
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 2em;
+  position: relative;
+}
+.ecommerce__screen__container__recent__work__content___row__entry:first-child {
+  width: 30%;
+  margin-right: 2em;
+}
+.ecommerce__screen__container__recent__work__content___row__entry:last-child {
+  width: 70%;
+}
+
+.ecommerce__screen__container__recent__work__content___row__reverse
+  .ecommerce__screen__container__recent__work__content___row__entry:first-child {
+  width: 30%;
+  margin-right: 0em;
+}
+.ecommerce__screen__container__recent__work__content___row__reverse
+  .ecommerce__screen__container__recent__work__content___row__entry:last-child {
+  width: 70%;
+  margin-right: 2em;
+}
+.ecommerce__screen__container__recent__work__content___row__entry__img {
+  width: 100%;
+  height: 100%;
+  transition: 500ms ease-in-out;
+}
+.ecommerce__screen__container__recent__work__content___row__entry:hover
+  .ecommerce__screen__container__recent__work__content___row__entry__img {
+  transition: 500ms ease-in-out;
+  transform: scale(1.2);
+}
+.ecommerce__screen__container__recent__work__content___row__entry__overlay {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  background-color: $white;
+  padding: 1em;
+  color: $black;
+  text-decoration: none;
+  width: 100%;
+  max-width: 200px;
+}
+.ecommerce__screen__container__recent__work__content___row__entry__overlay__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.ecommerce__screen__container__recent__work__content___row__entry__overlay__header__left {
+  font-size: 16px;
+  color: $black;
+  font-weight: bold;
+}
+.ecommerce__screen__container__recent__work__content___row__entry__overlay__info {
+  font-size: 14px;
+}
+.ecommerce__screen__container__recent__work__content___row__entry__overlay:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.ecommerce__screen__container__services {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0em;
+}
+.ecommerce__screen__container__services__heading {
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.ecommerce__screen__container__services__content {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0em -1em;
+}
+.ecommerce__screen__container__services__content__entry {
+  width: 31%;
+  margin: 1%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  border-radius: 8px;
+  color: $black;
+}
+.ecommerce__screen__container__services__content__entry svg {
+  stroke: $primary;
+  width: 50px;
+  height: 50px;
+}
+.ecommerce__screen__container__services__content__entry__heading {
+  font-size: 18px;
+  color: inherit;
+  font-weight: bold;
+  margin: 1em 0em;
+}
+.ecommerce__screen__container__services__content__entry:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: $white;
+}
+.ecommerce__screen__container__services__content__entry:hover svg {
+  transition: 300ms ease-in-out;
+  stroke: $white;
+}
+.ecommerce__screen__container__process {
+  display: flex;
+  flex-direction: column;
+}
+.ecommerce__screen__container__process__heading {
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.ecommerce__screen__container__process__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ecommerce__screen__container__process__content__selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid $primary;
+  background-color: rgba(255, 255, 255, 0.9);
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+}
+.ecommerce__screen__container__process__content__selector__entry {
+  position: relative;
+}
+.ecommerce__screen__container__process__content__selector__entry__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.ecommerce__screen__container__process__content__selector__entry__content {
+  border-radius: 50px;
+  padding: 0.9em 2em;
+  min-width: 200px;
+  text-align: center;
+}
+.ecommerce__screen__container__process__content__selector__entry__input:hover
+  ~ .ecommerce__screen__container__process__content__selector__entry__content,
+.ecommerce__screen__container__process__content__selector__entry__input:checked
+  ~ .ecommerce__screen__container__process__content__selector__entry__content {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+  color: $white;
+}
+.ecommerce__screen__container__process__content__selector__content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ecommerce__screen__container__process__content__selector__content__entry {
+  width: 31%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ecommerce__screen__container__process__content__selector__content__entry svg {
+  width: 40px;
+  height: 40px;
+  stroke: $primary;
+  margin-bottom: 1em;
+}
+.ecommerce__screen__container__process__content__selector__content__entry__info {
+  text-align: center;
+}
+
+.ecommerce__screen__container__work__code {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0em;
+}
+.ecommerce__screen__container__work__code__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.ecommerce__screen__container__work__code__header__heading {
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.ecommerce__screen__container__work__code__header__info {
+  text-align: center;
+}
+.ecommerce__screen__container__work__code__content {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0em -1em;
+}
+.ecommerce__screen__container__work__code__content
+  .ecommerce__screen__container__services__content__entry {
+  background-color: transparent;
+}
+.ecommerce__screen__container__work__code__content
+  .ecommerce__screen__container__services__content__entry:hover {
+  background-color: $primary;
+}
 @media (max-width: 1030px) {
   .ios__mobile__page__one__step__ios__development__section {
     flex-direction: column;
@@ -4295,12 +4629,47 @@ body {
   .ios__development__tangible__col__three__header {
     padding: 0em;
   }
+
+  .ecommerce__screen__container__recent__work__content___row__reverse {
+    flex-direction: row;
+  }
+  .ecommerce__screen__container__recent__work__content___row__entry {
+    width: 100% !important;
+    margin-right: 0em !important;
+  }
+  .ecommerce__screen__container__recent__work__content___row__entry:first-child {
+    margin-right: 2em !important;
+  }
+  .ecommerce__screen__container__services__content__entry,
+  .ecommerce__screen__container__process__content__selector__content__entry {
+    width: 48%;
+  }
 }
 @media (max-width: 850px) {
   .ios__development__tangible {
     width: 100%;
     margin-left: 0em;
     padding: 1em 2em;
+  }
+  .ecommerce__screen__container__recent__work__content___row {
+    flex-direction: column;
+  }
+  .ecommerce__screen__container__recent__work__content___row__reverse {
+    flex-direction: column;
+  }
+  .ecommerce__screen__container__recent__work__content___row__entry {
+    width: 100% !important;
+    margin-right: 0em !important;
+  }
+  .ecommerce__screen__container__recent__work__content___row__entry:first-child {
+    margin-right: 0em !important;
+  }
+}
+@media (max-width: 750px) {
+  .ecommerce__screen__container__services__content__entry,
+  .ecommerce__screen__container__process__content__selector__content__entry {
+    width: 100%;
+    margin-bottom: 2em;
   }
 }
 @media (max-width: 670px) {
@@ -4353,6 +4722,9 @@ body {
   }
   .june_main_container_first_container_title {
     position: sticky;
+  }
+  .ecommerce__screen__container__process__content__selector {
+    padding: 1em 0em;
   }
 }
 @media (max-width: 465px) {
@@ -4705,6 +5077,21 @@ body {
   .container__web__dev__experience__content__entry {
     width: 49%;
   }
+  .ecommerce__screen__container__selling__content {
+    flex-direction: column;
+  }
+  .ecommerce__screen__container__selling__content__left {
+    margin-right: 0em;
+  }
+  .ecommerce__screen__container__selling__content__left__img {
+    max-width: 100%;
+  }
+  .ecommerce__screen__container__selling__content__right__entry {
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
 }
 @media (max-width: 800px) {
   .container__emerging__technologies__section__entry__data__text {
@@ -4819,6 +5206,16 @@ body {
   .container__emerging__technologies__section {
     justify-content: center;
   }
+  .ecommerce__screen__container__role {
+    flex-direction: column;
+  }
+  .ecommerce__screen__container__role__entry {
+    width: 100%;
+    margin: 1em 0em;
+  }
+  .ecommerce__screen__container__role__entry__content {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .header__content__logo img {
@@ -4902,6 +5299,9 @@ body {
   }
   .container__pricing__content__right {
     padding: 2.5em;
+  }
+  .ecommerce__screen__container {
+    padding: 2em;
   }
 }
 @media (max-width: 400px) {

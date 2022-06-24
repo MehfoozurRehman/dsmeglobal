@@ -36,7 +36,7 @@ export default function Services() {
       description:
         "Helping startups to get off the ground through a single-stop partner.",
       categories: [{ value: "Startup Services", label: "Startup Services" }],
-      link: "/services/customer-software-dev",
+      link: "/services/custom-soft",
     },
     {
       logo: "v1652870830/dsme_global/taxuy0fklzmiwhqfhwmj.png",
@@ -61,7 +61,7 @@ export default function Services() {
           label: "Graphic Designing Services",
         },
       ],
-      link: "/services/shopify",
+      link: "/services/ecomerece",
     },
     {
       logo: "v1652870947/dsme_global/jbakacweinj9nsxjqpxu.png",
@@ -72,7 +72,7 @@ export default function Services() {
       categories: [
         { value: "Animation Services", label: "Animation Services" },
       ],
-      link: "/services/blockchain-consulting",
+      link: "/services/blockchain",
     },
     {
       logo: "v1652871286/dsme_global/b0in2qbbibfaefwsn3ks.png",
@@ -81,7 +81,7 @@ export default function Services() {
       description:
         "We design and launch digital products that deliver great user experiences. We bring together professional user experience design and top-notch technology to deliver compelling experiences that solve business challenges and make people happy.",
       categories: [{ value: "UI & UX Services", label: "UI & UX Services" }],
-      link: "/services/android-dev",
+      link: "/services/android",
     },
     {
       logo: "v1652871320/dsme_global/eoqvrt2hhu2zc2xbteqr.png",
@@ -95,7 +95,7 @@ export default function Services() {
           label: "Search Engine Optimizations",
         },
       ],
-      link: "/services/ios-dev",
+      link: "/services/ios",
     },
     {
       logo: "v1652871320/dsme_global/eoqvrt2hhu2zc2xbteqr.png",
@@ -123,7 +123,7 @@ export default function Services() {
           label: "Search Engine Optimizations",
         },
       ],
-      link: "/services/startup",
+      link: "/services/staff",
     },
   ];
   return (

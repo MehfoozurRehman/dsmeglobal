@@ -98,8 +98,8 @@ export default function ServiceEcomerece() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Web Application Development"
-          info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
+          taglinesLine="Ecomerece Applications"
+          info={`We build functional, state of the art, high-performing results-driven ${role} websites.`}
           img={bannerImage1}
         />
         <div className="ecommerce__screen__container">
@@ -129,16 +129,16 @@ export default function ServiceEcomerece() {
                   className="ecommerce__screen__container__selling__content__left__img"
                 />
               </div>
-              <div className="ecommerce__screen__container__selling__content__left__right">
-                <div className="ecommerce__screen__container__selling__content__left__right__entry">
+              <div className="ecommerce__screen__container__selling__content__right">
+                <div className="ecommerce__screen__container__selling__content__right__entry">
                   You’re just entering into e-commerce, and need a new platform
                   for your online store. s
                 </div>
-                <div className="ecommerce__screen__container__selling__content__left__right__entry">
+                <div className="ecommerce__screen__container__selling__content__right__entry">
                   You’re already familiar with e-commerce and want to upgrade to
                   a more effective website.
                 </div>
-                <div className="ecommerce__screen__container__selling__content__left__right__entry">
+                <div className="ecommerce__screen__container__selling__content__right__entry">
                   You’re looking to migrate to Shopify and leverage their
                   ecosystem.
                 </div>
@@ -155,16 +155,16 @@ export default function ServiceEcomerece() {
                 <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
               </div>
               <div className="ecommerce__screen__container__recent__work__content___row ecommerce__screen__container__recent__work__content___row__reverse">
-                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
                 <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
               </div>
               <div className="ecommerce__screen__container__recent__work__content___row">
                 <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
                 <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
               </div>
               <div className="ecommerce__screen__container__recent__work__content___row ecommerce__screen__container__recent__work__content___row__reverse">
-                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
                 <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-lauren.jpg" />
+                <EcomereceProjectsCard image="https://www.codedistrict.com/assets/images/recent-w-skordo.jpg" />
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function ServiceEcomerece() {
             </div>
             <div className="ecommerce__screen__container__services__content">
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Shopify Store Setup
                 "
                 info="Build your online store quickly by leveraging our Shopify theme libraries. We can help you get up & running with a Shopify website pretty quickly.
@@ -182,7 +182,7 @@ export default function ServiceEcomerece() {
                 "
               />
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Development using Shopify Plus
                 "
                 info="Our Shopify developers know what it takes to build a high volume/transaction eCommerce website. We can build platforms that can handle over 10K+ transactions per minute.
@@ -190,7 +190,7 @@ export default function ServiceEcomerece() {
                 "
               />
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Themes & Customization
                 "
                 info="Our expert Shopify designers can help your store stand out and ensure that it looks visually amazing on both web and mobile.
@@ -198,7 +198,7 @@ export default function ServiceEcomerece() {
                 "
               />
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Integration with Third Parties
                 "
                 info="Bring versatility into your e-commerce software by integrating third-party platforms with Shopify to achieve a seamless experience.
@@ -206,7 +206,7 @@ export default function ServiceEcomerece() {
                 "
               />
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Custom Development
                 "
                 info="Our development services cater to all of your e-commerce development needs, enabling us to build custom Shopify websites as well as adding functionality to the areas that you require.
@@ -214,7 +214,7 @@ export default function ServiceEcomerece() {
                 "
               />
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Migrating to a Shopify Store
                 "
                 info="Our expert Shopify developers are here to cater to all your transitioning needs. Doesn't matter if you're migrating from a physical store or an online platform.
@@ -222,7 +222,7 @@ export default function ServiceEcomerece() {
                 "
               />
               <EcomerenceServiceEntry
-                svg={<Box size={40} color="currentColor" />}
+                svg={<Box size={40} color="currentColor" strokeWidth={1.5} />}
                 label="Maintenance and Support
                 "
                 info="Our Shopify support and maintenance services ensure your online store runs efficiently and smoothly to achieve zero business loss."
@@ -270,11 +270,26 @@ export default function ServiceEcomerece() {
               </div>
             </div>
             <div className="ecommerce__screen__container__work__code__content">
-              <EcommerceWorkCodeCard />
-              <EcommerceWorkCodeCard />
-              <EcommerceWorkCodeCard />
-              <EcommerceWorkCodeCard />
-              <EcommerceWorkCodeCard />
+              <EcommerceWorkCodeCard
+                label="Top Shopify Developers"
+                info="Our highly experienced development team who have been working with Shopify since its origin, thrive in providing top quality services to our clients."
+              />
+              <EcommerceWorkCodeCard
+                label="Mobile-First Approach"
+                info="Mobile devices play a major role in the outburst of e-commerce sales, we make sure to deliver the best Shopify experience which is appealing to consumers."
+              />
+              <EcommerceWorkCodeCard
+                label="Short Time to Market"
+                info="Our Shopify development team understands how important time is to you, to ensure you meet all your launch deadlines, we always go the extra mile."
+              />
+              <EcommerceWorkCodeCard
+                label="Shopify Design Expertise"
+                info="Our Shopify UI/UX engineers who specialize in e-commerce efficiency, help us develop Shopify products that are easy for the consumer to use."
+              />
+              <EcommerceWorkCodeCard
+                label="Technically Diverse Teams"
+                info="Our diverse technologies help us in developing Shopify stores that are fully integrated and work efficiently with all platforms."
+              />
             </div>
           </div>
         </div>
@@ -282,4 +297,3 @@ export default function ServiceEcomerece() {
     </>
   );
 }
-
