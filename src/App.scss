@@ -4015,6 +4015,7 @@ body {
   margin-right: 1em;
   flex-direction: column;
   justify-content: center;
+  padding: 0em 1em;
 }
 .ios__mobile__page__one__step__ios__development__section__left__heading {
   font-size: 20px;
@@ -4031,15 +4032,15 @@ body {
   margin: 0 1em;
 }
 .ios__mobile__page__one__step__ios__development__section__right {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: end;
 }
 
 .ios__mobile__page__one__step__ios__development__section__right img {
-  width: 450px;
-  height: 300px;
+  width: 400px;
+  height: 280px;
 }
 
 .ios__mobile__page__one__step__swift__development__section__right__heading {
@@ -4053,21 +4054,22 @@ body {
   display: flex;
 }
 .ios__ios__development__swift__development__section__left {
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
 }
 
 .ios__ios__development__swift__development__section__left img {
-  width: 450px;
-  height: 300px;
-  margin-right: 1em;
+  width: 400px;
+  height: 280px;
 }
 .ios__ios__development__swift__development__section__right {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 1em;
+  padding: 0em 1em;
 }
 .ios__ios__development__swift__development__section__right__heading {
   font-size: 20px;
@@ -4087,6 +4089,7 @@ body {
   height: 400px;
   align-items: center;
   color: white;
+  border-radius: 10px 0px 0px 10px;
 }
 .ios__development__tangible__col__one__heading {
   max-width: 220px;
@@ -4168,8 +4171,8 @@ body {
   width: 100%;
 }
 .ios__development__native__impressive__performance__heading {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   margin-top: 1.5em;
   margin-bottom: 0.4em;
 }
@@ -4208,11 +4211,12 @@ body {
 }
 .ios__development__native__sound__promising {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 2em 4em;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0px auto;
 }
 .ios__development__native__sound__promising__heading {
   font-size: 18px;
@@ -4569,7 +4573,122 @@ body {
   .ecommerce__screen__container__services__content__entry:hover {
   background-color: $primary;
 }
-@media (max-width: 1030px) {
+
+.ios__development__native__cross__plat__development {
+  width: 100%;
+  position: relative;
+  margin-top: 4em;
+}
+.ios__development__native__cross__plat__development__img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: -40px;
+  width: 370px;
+  height: 270px;
+}
+.ios__development__native__cross__plat__development__container {
+  width: calc(100% - 4em);
+  background-color: #189366;
+  height: 100%;
+  color: white;
+  padding: 4em 4em;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 10px 10px 0px;
+}
+.ios__development__native__cross__plat__development__container__left {
+  width: 60%;
+}
+.ios__development__native__cross__plat__development__container__right {
+  width: 40%;
+}
+.ios__development__native__cross__plat__development__container__heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.ios__development__native__cross__plat__development__container__text {
+  font-size: 16px;
+  max-width: 700px;
+  margin-bottom: 1em;
+}
+.ios__development__native__cross__plat__development__container__text__li li {
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+.ios__development__native__cross__plat__development__container__text__li
+  li::marker {
+}
+.android__development__our__stack {
+  width: 100%;
+  margin-bottom: 3em;
+}
+.android__development__our__stack__container {
+  width: calc(100% - 4em);
+  margin-left: 4em;
+  background-color: $black;
+  height: 500px;
+  margin-top: 4em;
+  border-radius: 10px 0px 0px 10px;
+  padding: 4em 4em;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.android__development__our__stack__container__heading {
+  font-size: 30px;
+  color: $white;
+}
+.android__development__our__stack__container__col__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.android__development__our__stack__container__col {
+  margin-right: 2em;
+}
+.android__development__our__stack__container__col__one__heading {
+  font-size: 18px;
+  margin-top: 1.5em;
+}
+.android__development__our__stack__container__col__one__heading__text {
+  margin-top: 1.5em;
+}
+.android__development__our__stack__container__col__one__heading__text li {
+  margin: 1em 0em;
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .ios__development__native__cross__plat__development__img {
+    display: flex;
+    align-items: center;
+    margin: 0em auto;
+    justify-content: center;
+    position: relative;
+    margin-top: -90px;
+    margin-bottom: 1em;
+    width: 400px;
+  }
+  .ios__development__native__cross__plat__development__container {
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .ios__development__native__cross__plat__development__container__right {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .ios__development__native__cross__plat__development__container__left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1070px) {
   .ios__mobile__page__one__step__ios__development__section {
     flex-direction: column;
   }
@@ -4598,6 +4717,13 @@ body {
     margin-right: 0;
   }
 }
+.android__mobile__page__container__android__mobile__heading__text {
+  font-size: 16px;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  max-width: 800px;
+}
+
 @media (max-width: 1000px) {
   .ios__mobile__share__your__idea__section {
     flex-direction: column;
@@ -4668,6 +4794,12 @@ body {
   .ecommerce__screen__container__recent__work__content___row__entry:first-child {
     margin-right: 0 !important;
   }
+  .android__development__our__stack__container__col__row {
+    flex-direction: column;
+  }
+  .android__development__our__stack__container {
+    height: 100%;
+  }
 }
 @media (max-width: 750px) {
   .ecommerce__screen__container__services__content__entry,
@@ -4717,6 +4849,18 @@ body {
   }
   .ios__development__native__impressive__performance__heading {
     margin-top: 1em;
+  }
+  .ios__development__native__cross__plat__development__container {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .ios__development__native__cross__plat__development__img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .ios__development__native__cross__plat__development__container {
+    padding: 2em 2em;
   }
 }
 @media (max-width: 550px) {
@@ -5573,5 +5717,10 @@ body {
   }
   .ios__development__native__impressive__performance__content {
     width: 100%;
+  }
+  .android__development__our__stack__container {
+    width: 100%;
+    margin-left: 0em;
+    border-radius: 0px;
   }
 }
