@@ -7,7 +7,7 @@ import { ExperitseCard } from "./ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
 
 export default function ServicesMobDev() {
-  const [selected, setSelected] = useState("AR VR");
+  const [selected, setSelected] = useState("Wearable Tech");
 
   const array = [
     {
@@ -43,9 +43,9 @@ export default function ServicesMobDev() {
           taglinesLine="Mobile Application Development"
           info="Custom built mobile applications with amazing experiences that help support your business goals."
           img={bannerImage1}
+          talk={true}
         />
       </div>
-
       <div className="container__web__dev__experties">
         <div className="container__web__dev__experties__header">
           <div className="container__web__dev__experties__header__heading">

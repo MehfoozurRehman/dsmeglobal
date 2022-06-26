@@ -12,6 +12,7 @@ export function HomeJumbotron({
   imgs,
   styleColor,
   styleImage,
+  talk,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
   const navigate = useNavigate();
@@ -29,22 +30,26 @@ export function HomeJumbotron({
           className="container__jumbotron__left__heading"
           style={{ ...styleColor }}
         >
-          {taglinesLine}{" "}
-          {taglines
-            ?.filter((tagline, i) => i === taglineNo)
-            .map((tagline) => {
-              return <span key={JSON.stringify(tagline)}>{tagline}</span>;
-            })}{" "}
-          {matchers ? (
-            <>
-              {matcherLine}{" "}
-              {matchers
-                ?.filter((matcher, i) => i === taglineNo)
-                .map((matcher) => {
-                  return <span key={JSON.stringify(matcher)}>{matcher}</span>;
-                })}{" "}
-            </>
-          ) : null}
+          <div className="container__jumbotron__left__heading__entry">
+            {taglinesLine}{" "}
+            {taglines
+              ?.filter((tagline, i) => i === taglineNo)
+              .map((tagline) => {
+                return <span key={JSON.stringify(tagline)}>{tagline}</span>;
+              })}{" "}
+          </div>
+          <div className="container__jumbotron__left__heading__entry">
+            {matchers ? (
+              <>
+                {matcherLine}{" "}
+                {matchers
+                  ?.filter((matcher, i) => i === taglineNo)
+                  .map((matcher) => {
+                    return <span key={JSON.stringify(matcher)}>{matcher}</span>;
+                  })}{" "}
+              </>
+            ) : null}
+          </div>
         </div>
 
         <div
@@ -70,6 +75,18 @@ export function HomeJumbotron({
             >
               Our Work
             </Link>
+          </div>
+        ) : null}
+        {talk ? (
+          <div className="container__jumbotron__left__button">
+            <button
+              onClick={() => {
+                navigate("/quote");
+              }}
+              className="container__jumbotron__left__button__secondary"
+            >
+              Lets talk
+            </button>
           </div>
         ) : null}
       </div>

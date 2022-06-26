@@ -1,4 +1,9 @@
-import React, { useLayoutEffect, useState, useTransition } from "react";
+import React, {
+  useEffect,
+  useLayoutEffect,
+  useState,
+  useTransition,
+} from "react";
 import { X, Menu } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
@@ -9,6 +14,7 @@ import { Nav } from "./Nav";
 export default function Header({ light }) {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   function navOpenClose() {
     if (window.innerWidth < 1000) {
@@ -23,8 +29,22 @@ export default function Header({ light }) {
     window.addEventListener("scroll", navOpenClose);
   }, []);
   const [isPending, startTransition] = useTransition();
+  const changeBackgrond = () => {
+    if (window.scrollY > 0) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
+    }
+  };
+  useEffect(() => {
+    changeBackgrond();
+  }, []);
+  window.addEventListener("scroll", changeBackgrond);
   return (
-    <div className={light ? "header header__active" : "header"}>
+    <div
+      className={light ? "header header__active" : "header"}
+      style={isScrolling ? { backgroundColor: "white" } : null}
+    >
       <div className="header__content">
         <Link
           to="/"

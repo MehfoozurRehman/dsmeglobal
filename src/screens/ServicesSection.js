@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ServicesCard as ServicesCardNew } from "./ServicesCard";
 
 export function ServicesSection() {
@@ -18,7 +17,7 @@ export function ServicesSection() {
       image: "v1652870611/dsme_global/egjfhnqu8rkiodik92vv.png",
       shortDescription:
         "Video surveillance solutions from Global Links Security Solutions allow ",
-      link: "/services/web-dev",
+      link: "/services/staff",
     },
     {
       logo: "v1652870714/dsme_global/cm8id1phjrizro7729or.png",
@@ -34,7 +33,7 @@ export function ServicesSection() {
       image: "v1652871579/dsme_global/kb5xhjjcu3nstq2xccul.png",
       shortDescription:
         "Video surveillance solutions from Global Links Security Solutions allow ",
-      link: "/services/web-dev",
+      link: "/services/startup",
     },
   ];
   return (

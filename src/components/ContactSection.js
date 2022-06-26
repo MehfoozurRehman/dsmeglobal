@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import contactImg from "../assets/contactImg.png";
 import Input from "./Input";
+import axios from "axios";
 import {
   Facebook,
   Instagram,
@@ -8,9 +9,7 @@ import {
   Mail,
   MapPin,
   Phone,
-  Twitter,
 } from "react-feather";
-import axios from "axios";
 
 export default function ContactSection() {
   const [name, setName] = useState("");
@@ -240,6 +239,7 @@ export default function ContactSection() {
               Send
             </button>
             <iframe
+              title="google-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.806546077531!2d74.37747145100826!3d31.474507381293495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391907a286809427%3A0x66f8b31237e79ada!2sDSME%20Global%20Links!5e0!3m2!1sen!2s!4v1654765161734!5m2!1sen!2s"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

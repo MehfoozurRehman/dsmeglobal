@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
 

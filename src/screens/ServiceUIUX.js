@@ -11,7 +11,7 @@ export default function ServiceUIUX() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Web Application Development"
+          taglinesLine="UI/UX Design"
           info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
           img={bannerImage1}
         />
