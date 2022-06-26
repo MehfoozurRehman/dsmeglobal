@@ -1,9 +1,10 @@
-import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import React, { useEffect } from "react";
 import ServicesCard from "../components/ServicesCard";
 
 export default function Services() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const data = [
     {
       logo: "v1652870358/dsme_global/th4v090zeauzrq7poavv.png",

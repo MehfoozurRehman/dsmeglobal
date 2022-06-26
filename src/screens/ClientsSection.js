@@ -5,13 +5,11 @@ import useSWR from "swr";
 
 export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
-
   const { data, error } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_client`,
     fetcher,
     { suspense: true }
   );
-
   function getSlidesPerView() {
     if (window.innerWidth < 400) {
       setSlidesPerView(1);
@@ -32,7 +30,6 @@ export function ClientsSection() {
       <div className="container__clients__left">
         <div className="container__clients__left__heading">Our Clients</div>
         <div className="container__clients__left__info">
-          {" "}
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nostrum.
         </div>
       </div>
@@ -40,7 +37,7 @@ export function ClientsSection() {
         {error ? (
           <div>failed to load</div>
         ) : (
-          <Swiper slidesPerView={slidesPerView}>
+          <Swiper slidesPerView={slidesPerView} autoplay>
             {data.map((client) => (
               <SwiperSlide key={JSON.stringify(client)}>
                 <div className="container__clients__right__entry">

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
-
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage from "../assets/bannerImage2.png";
+import about from "../assets/about.svg";
 import { Box } from "react-feather";
 
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <div className="container">
@@ -18,10 +21,13 @@ export default function AboutUs() {
             ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
-          img={bannerImage}
+          img={about}
         />
       </div>
-
+      <div className="about__ceo__message">
+        <div className="about__ceo__message__left"></div>
+        <div className="about__ceo__message__right"></div>
+      </div>
       <div className="about__key__different__sec">
         <div className="about__key__different__sec__contanier__heading">
           Key Differentiators

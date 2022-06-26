@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import mobile from "../assets/mobile.svg";
 import { Box, User } from "react-feather";
 import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
@@ -42,7 +42,7 @@ export default function ServicesMobDev() {
         <HomeJumbotron
           taglinesLine="Mobile Application Development"
           info="Custom built mobile applications with amazing experiences that help support your business goals."
-          img={bannerImage1}
+          img={mobile}
           talk={true}
         />
       </div>

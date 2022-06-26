@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export function CareerBanner({ setCareerBanner, setLightHeader }) {
   useEffect(() => {
     document.body.style.overflow = "hidden";
+    window.scrollTo({ top: 0, behavior: "smooth" });
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -52,7 +53,6 @@ export function CareerBanner({ setCareerBanner, setLightHeader }) {
           </svg>
         </button>
       </div>
-      {/* your true story starts <span>here</span> */}
     </div>
   );
 }

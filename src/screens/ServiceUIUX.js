@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import design from "../assets/design.svg";
 import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";
 import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
@@ -13,7 +13,8 @@ export default function ServiceUIUX() {
         <HomeJumbotron
           taglinesLine="UI/UX Design"
           info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
-          img={bannerImage1}
+          img={design}
+          talk={true}
         />
       </div>
       <div className="june_main_container">

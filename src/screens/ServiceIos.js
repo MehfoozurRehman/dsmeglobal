@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import ios from "../assets/ios.svg";
 import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
@@ -17,9 +17,10 @@ export default function ServicesIos() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="iOS app development company"
+          taglinesLine="iOS app development"
           info="Explore new business destinations, accelerate growth, and captivate your customers with a custom iOS application"
-          img={bannerImage1}
+          img={ios}
+          talk={true}
         />
       </div>
       <div className="ios__mobile__page__section">

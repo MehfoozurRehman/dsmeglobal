@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Link, Link2 } from "react-feather";
+import { ExternalLink } from "react-feather";
 
 export default function EcomereceProjectsCard({ image }) {
   return (

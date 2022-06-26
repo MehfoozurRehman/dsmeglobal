@@ -1,15 +1,16 @@
 import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import software from "../assets/software.svg";
 
 export default function ServiceCustomSoft() {
   return (
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Web Application Development"
+          taglinesLine="Custom software Development"
           info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
-          img={bannerImage1}
+          img={software}
+          talk={true}
         />
       </div>
     </>

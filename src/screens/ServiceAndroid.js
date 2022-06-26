@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import android from "../assets/android.svg";
 import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
@@ -52,11 +52,10 @@ export default function ServicesAndroid() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Full-service Android application development company
-          "
-          info="Choose an experienced partner to transform your business idea into a top-performing custom Android app
-          "
-          img={bannerImage1}
+          taglinesLine="Full-service Android application development"
+          info="Choose an experienced partner to transform your business idea into a top-performing custom Android app"
+          img={android}
+          talk={true}
         />
       </div>
       <div className="ios__mobile__page__section">

@@ -1,9 +1,9 @@
 import React from "react";
 import deliveryPic from "../assets/delivery.png";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
-
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage from "../assets/bannerImage3.png";
+import pricing from "../assets/pricing.svg";
+import products from "../assets/products.svg";
 
 export default function Pricing() {
   const DeliveryCardEntry1 = [
@@ -41,7 +41,7 @@ export default function Pricing() {
             ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
-          img={bannerImage}
+          imgs={[products, pricing]}
         />
       </div>
       <div className="pricing__feature">

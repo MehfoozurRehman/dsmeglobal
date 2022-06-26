@@ -35,7 +35,6 @@ const Careers = lazy(() => import("./screens/Careers"));
 const Header = lazy(() => import("./components/Header"));
 
 export default function App() {
-  const [isContactSection, setIsContactSection] = useState(true);
   const [lightHeader, setLightHeader] = useState(false);
   SwiperCore.use([Autoplay]);
   return (
@@ -60,10 +59,7 @@ export default function App() {
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route
-          path="/quote"
-          element={<QuoteScreen setIsContactSection={setIsContactSection} />}
-        />
+        <Route path="/quote" element={<QuoteScreen />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route
           path="/careers"
@@ -72,7 +68,7 @@ export default function App() {
         <Route path="/portfolio-detail" element={<Portfolio__detail />} />
         <Route path="/meet-us" element={<MeetUs />} />
       </Routes>
-      {isContactSection ? <ContactSection /> : null}
+
       <Footer />
     </Suspense>
   );

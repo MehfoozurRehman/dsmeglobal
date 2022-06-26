@@ -4,10 +4,9 @@ import { ClientsSection } from "./ClientsSection";
 import { ServicesSection } from "./ServicesSection";
 import { NewsletterSection } from "./NewsletterSection";
 import { BlogSection } from "./BlogSection";
-import bannerImage from "../assets/bannerImage1.svg";
-import bannerImage1 from "../assets/bannerImage1.svg";
-import bannerImage2 from "../assets/bannerImage2.png";
-import bannerImage3 from "../assets/bannerImage3.png";
+import services from "../assets/services.svg";
+import products from "../assets/products.svg";
+import customizations from "../assets/customizations.svg";
 import WorkSection from "../components/WorkSection";
 import { StatsSection } from "./StatsSection";
 import { TestimonialsSection } from "./TestimonialsSection";
@@ -27,8 +26,7 @@ export default function Home() {
             ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
-        img={bannerImage}
-        imgs={[bannerImage1, bannerImage2, bannerImage3]}
+        imgs={[services, products, customizations]}
         buttons={true}
       />
       <ClientsSection />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import contactImg from "../assets/contactImg.png";
 import Input from "../components/Input";
 import { fetcher } from "../utils/functions";
@@ -6,13 +6,7 @@ import axios from "axios";
 
 import useSWR from "swr";
 
-export default function QuoteScreen({ setIsContactSection }) {
-  useEffect(() => {
-    setIsContactSection(false);
-    return () => {
-      setIsContactSection(true);
-    };
-  }, []);
+export default function QuoteScreen({}) {
   const { data } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
