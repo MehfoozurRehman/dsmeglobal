@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
+import { loadFull } from "tsparticles";
 
 import "./App.scss";
 import "animate.css";
@@ -32,13 +33,18 @@ const Blogs = lazy(() => import("./screens/Blogs"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
 const Careers = lazy(() => import("./screens/Careers"));
 const Header = lazy(() => import("./components/Header"));
+const BackgroundParticals = lazy(() => import("./BackgroundParticals"));
 
 export default function App() {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
   const [isContactSection, setIsContactSection] = useState(true);
   const [lightHeader, setLightHeader] = useState(false);
 
   return (
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
+      <BackgroundParticals particlesInit={particlesInit} />
       <Header light={lightHeader} />
       <Routes>
         <Route path="/" element={<Home />} />

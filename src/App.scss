@@ -137,6 +137,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 999;
+  position: sticky;
 }
 
 .container__jumbotron {
@@ -333,6 +335,8 @@ body {
   width: 120%;
   height: 250px;
   background-color: $primary;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   z-index: -1;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -342,6 +346,8 @@ body {
 .container__services__right__entry {
   width: calc(50% - 2em);
   background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
@@ -394,7 +400,8 @@ body {
   min-height: 180px;
   padding: 0 4em;
   background-color: rgba(255, 255, 255, 0.5);
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   margin: 4em auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
@@ -598,7 +605,8 @@ body {
   box-shadow: 10px 30px 76px rgba(0, 0, 0, 0.04);
   min-height: 250px;
   height: fit-content;
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
 }
 
@@ -654,7 +662,6 @@ body {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .blog__page__filter {
@@ -663,7 +670,8 @@ body {
   align-items: center;
   margin: 5em 0;
   background-color: rgba(255, 255, 255, 0.5);
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   padding: 1em;
 }
@@ -909,7 +917,8 @@ body {
   padding: 2em;
   border-radius: 15px;
   min-height: 220px;
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   word-break: break-all;
@@ -1007,7 +1016,8 @@ body {
   margin-bottom: 2em;
   padding: 2em;
   border-radius: 10px;
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.5);
@@ -1590,7 +1600,8 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   position: sticky;
   z-index: 999;
 }
@@ -1623,7 +1634,8 @@ body {
 .container__stats__content {
   width: 100%;
   background-color: $black;
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   border-radius: 0 20px 20px 0;
@@ -1706,7 +1718,8 @@ body {
 .work__section__content__project__about {
   width: 25%;
   background-color: rgba(255, 255, 255, 0.5);
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   padding: 2.5em;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   min-height: 400px;
@@ -1737,7 +1750,8 @@ body {
   margin: 0 auto;
   margin-top: 4em;
   background-color: rgb(255, 255, 255);
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   align-items: center;
   overflow-x: auto;
@@ -1902,7 +1916,8 @@ body {
   text-align: center;
   margin-top: 0;
   background-color: $black;
-
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   padding: 2em;
   border-radius: 10px;

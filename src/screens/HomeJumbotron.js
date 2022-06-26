@@ -12,7 +12,6 @@ export function HomeJumbotron({
   imgs,
   styleColor,
   styleImage,
-  talk,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
   const navigate = useNavigate();
@@ -71,18 +70,6 @@ export function HomeJumbotron({
             >
               Our Work
             </Link>
-          </div>
-        ) : null}
-        {talk ? (
-          <div className="container__jumbotron__left__button">
-            <button
-              onClick={() => {
-                navigate("/quote");
-              }}
-              className="container__jumbotron__left__button__secondary"
-            >
-              Lets talk
-            </button>
           </div>
         ) : null}
       </div>

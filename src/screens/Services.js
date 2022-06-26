@@ -128,8 +128,17 @@ export default function Services() {
   ];
   return (
     <>
-      <div className="blog__page">
-        <div className="blog__page__heading">Services</div>
+      <div className="container">
+        <HomeJumbotron
+          taglinesLine="Best"
+          taglines={["Jobs", "Oppertunities"]}
+          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
+            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
+            quibusdam ad?"
+          img={bannerImage1}
+        />
       </div>
       <div
         className="services__main__container"
