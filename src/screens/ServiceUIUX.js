@@ -19,9 +19,9 @@ export default function ServiceUIUX() {
       </div>
       <div className="june_main_container">
         <div className="june_main_container_first_container">
-          <h1 className="june_main_container_first_container_title">
+          <div className="june_main_container_first_container_title">
             Our Design capabilites
-          </h1>
+          </div>
           <div className="june_main_container_para">
             <p className="june_main_container_first_container_para">
               Creating a beautiful UI/UX is easy but carefully designing a
@@ -50,13 +50,13 @@ export default function ServiceUIUX() {
                 <polyline points="10 9 9 9 8 9"></polyline>
               </svg>
             </div>
-            <h2 className="june_second_container_box_title_one">
+            <div className="june_second_container_box_title_one">
               Product Design Workshop
-            </h2>
-            <h3 className="june_second_container_title_two">
+            </div>
+            <div className="june_second_container_title_two">
               The fastest way to gather & analyse your requirements and take
               your product from concept to the actual design.
-            </h3>
+            </div>
           </div>
           <div className="june_second_container">
             <div className="june_second_container_svg">
@@ -75,13 +75,13 @@ export default function ServiceUIUX() {
                 <line x1="9" y1="15" x2="15" y2="15"></line>
               </svg>
             </div>
-            <h2 className="june_second_container_box_title_one">
+            <div className="june_second_container_box_title_one">
               Rapid Prototyping
-            </h2>
-            <h3 className="june_second_container_title_two">
+            </div>
+            <div className="june_second_container_title_two">
               Reduce your time to market by swiftly moving your product design
               from pencil sketches to high-fidelity wireframes and mockups.
-            </h3>
+            </div>
           </div>
           <div className="june_second_container">
             <div className="june_second_container_svg">
@@ -99,14 +99,14 @@ export default function ServiceUIUX() {
                 <polyline points="13 2 13 9 20 9"></polyline>
               </svg>
             </div>
-            <h2 className="june_second_container_box_title_one">
+            <div className="june_second_container_box_title_one">
               UI/UX Design
-            </h2>
-            <h3 className="june_second_container_title_two">
+            </div>
+            <div className="june_second_container_title_two">
               We leverage our past UI/UX experience to bring simplicity to
               highly complex designs for user-friendliness and consumer
               engagement.
-            </h3>
+            </div>
           </div>
           <div className="june_second_container">
             <div className="june_second_container_svg">
@@ -126,24 +126,28 @@ export default function ServiceUIUX() {
                 <line x1="9" y1="15" x2="15" y2="15"></line>
               </svg>
             </div>
-            <h2 className="june_second_container_box_title_one">Web Design</h2>
-            <h3 className="june_second_container_title_two">
+            <div className="june_second_container_box_title_one">
+              Web Design
+            </div>
+            <div className="june_second_container_title_two">
               We have designed amazing experiences for websites and web
               applications across all platforms (desktop, mobile & tablets)..
-            </h3>
+            </div>
           </div>
         </div>
         <div className="june_second_main_container">
           <div className="june_second_main_all_container">
             <div className="june_third_container">
-              <h1 className="june_third_container_title">Execution Process</h1>
-              <h3 className="june_third_container_para">
+              <div className="june_third_container_title">
+                Execution Process
+              </div>
+              <div className="june_third_container_para">
                 We work with you to make appealing sites, impactful
                 applications, and modern enterprise systems individuals love.
                 Through your vision and our expertise, our team of business
                 analysts, designers, and developers will build experiences that
                 keep your customers coming back.
-              </h3>
+              </div>
             </div>
             <div className="june_third_container_first_box">
               <div className="june_fourth_container_box_title_on">
@@ -165,9 +169,9 @@ export default function ServiceUIUX() {
                     <polyline points="10 9 9 9 8 9"></polyline>
                   </svg>
                   <div className="june_third_container_first_box_svg_one">
-                    <h2 className="june_third_container_first_box_first_title">
+                    <div className="june_third_container_first_box_first_title">
                       Discovery
-                    </h2>
+                    </div>
                   </div>
                 </div>
                 <div className="june_third_container_first_box_content">
@@ -242,9 +246,9 @@ export default function ServiceUIUX() {
                     <line x1="12" y1="22.08" x2="12" y2="12"></line>
                   </svg>
                   <div className="june_third_container_second_box_container_svg_one">
-                    <h2 className="june_third_container_second_box_container_title">
+                    <div className="june_third_container_second_box_container_title">
                       Wireframes
-                    </h2>
+                    </div>
                   </div>
                 </div>
                 <div className="june_third_container_second_box_container_content">
@@ -328,9 +332,9 @@ export default function ServiceUIUX() {
                     <line x1="9" y1="21" x2="9" y2="9"></line>
                   </svg>
                   <div className="june_third_container_third_box_container_svg_one">
-                    <h2 className="june_third_container_third_container_title">
+                    <div className="june_third_container_third_container_title">
                       Build & Iterate
-                    </h2>
+                    </div>
                   </div>
                 </div>
                 <div className="june_third_container_third_box_content">
@@ -413,10 +417,10 @@ export default function ServiceUIUX() {
         </div>
         <div className="june_fourth_container_box">
           <div className="june_fourth_container_box_one">
-            <h2 className="june_fourth_container_box_title">
+            <div className="june_fourth_container_box_title">
               Talk to us about your <span>challenges</span> and{" "}
               <span>we will bring an</span> incredible team.
-            </h2>
+            </div>
           </div>
           <div className="june_fourth_container_box_button_cotainer">
             <Link to="/contact-us" className="june_fourth_container_box_button">
@@ -433,12 +437,12 @@ export default function ServiceUIUX() {
             />
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
-                <h1 className="june_main_container_images_content_One">
+                <div className="june_main_container_images_content_One">
                   Pencil sketch
-                </h1>
-                <p className="june_main_container_images_content_two">
+                </div>
+                <div className="june_main_container_images_content_two">
                   Back of the napkin designs
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -450,12 +454,12 @@ export default function ServiceUIUX() {
             />
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
-                <h1 className="june_main_container_images_content_One">
+                <div className="june_main_container_images_content_One">
                   High Fidelity Wireframes
-                </h1>
-                <p className="june_main_container_images_content_two">
+                </div>
+                <div className="june_main_container_images_content_two">
                   More realistic content closer to the end result.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -467,12 +471,12 @@ export default function ServiceUIUX() {
             />
             <div className="june_main_container_images_content_main">
               <div className="june_second_container_images_one_content_container">
-                <h1 className="june_main_container_images_content_One">
+                <div className="june_main_container_images_content_One">
                   Pixel Perfect Mockups
-                </h1>
-                <p className="june_main_container_images_content_two">
+                </div>
+                <div className="june_main_container_images_content_two">
                   Fully visualize the look and feel of your final product.
-                </p>
+                </div>
               </div>
             </div>
           </div>

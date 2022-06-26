@@ -3354,13 +3354,16 @@ body {
 }
 
 .june_main_container {
-  position: sticky;
-  z-index: 99;
+  width: 100%;
 }
 
 .june_main_container_first_container_title {
   display: flex;
   justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-top: 3em;
 }
 
 .june_third_container_first_box_content svg {
@@ -3409,9 +3412,11 @@ body {
 }
 
 .june_second_container {
-  width: 300px;
-  height: 250px;
-  padding: 1em 2em;
+  width: 31%;
+  padding: 2em;
+  border-radius: 5px;
+  margin: 1%;
+  background-color: rgba(13, 110, 74, 0.1);
 }
 
 .june_second_container_svg {
@@ -3422,15 +3427,18 @@ body {
   height: 40px;
   width: 40px;
   color: rgba(56, 159, 72, 0.788);
+  stroke-width: 1.5px;
 }
 
 .june_second_container_box_title_one {
   margin-bottom: 1em;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .june_second_container_title_two {
-  width: 250px;
-  font-weight: 300;
+  font-weight: unset;
+  font-size: 16px;
 }
 
 .june_second_container_box_svg_one svg {
@@ -3466,16 +3474,21 @@ body {
 
 .june_second_container_main {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 4em;
+  padding: 4em 2em;
   width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
 }
-
+.june_second_container:hover {
+  background-color: $primary;
+}
+.june_second_container:hover * {
+  color: $white;
+}
 .june_second_container_box_title_one {
   display: flex;
   align-items: center;
-
   width: 100%;
 }
 
@@ -3483,6 +3496,9 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 2em;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 .june_third_container_para {
@@ -3509,6 +3525,8 @@ body {
 
 .june_third_container_first_box_svg_one {
   padding-left: 1em;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .june_third_container_second_box_container_svg svg {
@@ -3517,10 +3535,14 @@ body {
 
 .june_third_container_second_box_container_svg_one {
   padding-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .june_third_container_third_box_container_svg_one {
   padding-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .june_third_container_third_box_container_svg svg {
@@ -3536,24 +3558,28 @@ body {
   align-items: center;
   margin: 1em 0;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_first_box_content {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_first_box_content_three {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_second_box_container_content {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_first_box_content_two ul {
@@ -3607,12 +3633,14 @@ body {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_second_box_container_content_three {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_second_box_container_content_three_svg {
@@ -3646,6 +3674,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_third_box_content ul {
@@ -3658,6 +3687,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_third_box_content_two ul {
@@ -3670,6 +3700,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_third_box_content_three ul {
@@ -3686,6 +3717,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 1em;
+  margin-left: 1em;
 }
 
 .june_third_container_third_box_content_four ul {
@@ -3710,6 +3742,8 @@ body {
 
 .june_fourth_container_box_title span {
   color: $primary;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .june_fourth_container_box_title {
@@ -3718,6 +3752,8 @@ body {
   text-align: center;
   max-width: 1440px;
   margin: 0 auto;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .june_fourth_container_box_title_on {
@@ -4771,6 +4807,9 @@ body {
   .ecommerce__screen__container__process__content__selector__content__entry {
     width: 48%;
   }
+  .june_second_container {
+    width: 48%;
+  }
 }
 @media (max-width: 850px) {
   .ios__development__tangible {
@@ -4803,6 +4842,10 @@ body {
   .ecommerce__screen__container__process__content__selector__content__entry {
     width: 100%;
     margin-bottom: 2em;
+  }
+  .june_second_container {
+    width: 100%;
+    margin: 0em;
   }
 }
 @media (max-width: 670px) {
