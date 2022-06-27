@@ -13,7 +13,7 @@ import { Nav } from "./Nav";
 
 export default function Header({ light }) {
   const navigate = useNavigate();
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
   function navOpenClose() {
