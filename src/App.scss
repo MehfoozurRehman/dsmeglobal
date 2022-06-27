@@ -1501,6 +1501,14 @@ body {
   transition: 300ms ease-in-out;
 }
 
+.pricing__feature__entry__icon {
+  color: $primary;
+  margin-bottom: 0.5em;
+}
+.pricing__feature__entry__icon svg {
+  width: 40px;
+  height: 40px;
+}
 .pricing__feature__entry__heading {
   font-size: 20px;
   margin-bottom: 0.7em;
@@ -1527,13 +1535,13 @@ body {
   width: 100%;
   max-width: 1500px;
   padding: 2em 4em;
-  display: flex;
   margin: 0 auto;
   background-color: $white;
   z-index: 999;
   display: flex;
   flex-direction: column;
   position: sticky;
+  flex-wrap: wrap;
 }
 
 .pricing__delivery__section__content__card {
@@ -1549,6 +1557,13 @@ body {
   color: $black;
   margin-bottom: 1em;
 }
+.pricing__delivery__section__content__card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  flex-wrap: wrap;
+}
 
 .pricing__delivery__section__img {
   width: 100%;
@@ -1560,6 +1575,7 @@ body {
 .pricing__delivery__section__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pricing__delivery__section__content__card__heading {
@@ -4903,6 +4919,11 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
+@media (max-width: 1250px) {
+  .pricing__delivery__section__content__card {
+    min-width: 50%;
+  }
+}
 @media (max-width: 1200px) {
   .about__core__values__content__entry {
     width: 50%;
@@ -5115,6 +5136,9 @@ body {
   .about__ceo__message__right {
     margin-top: 4em;
     text-align: center;
+  }
+  .pricing__delivery__section__content__card__content {
+    height: fit-content;
   }
 }
 @media (max-width: 750px) {

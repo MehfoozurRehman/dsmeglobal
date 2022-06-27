@@ -18,7 +18,13 @@ export function PricingSection() {
             talent. Increase quality and efficiency, and retain complete control
             of teams
           </div>
-          <Link to="/" className="container__pricing__content__left__link">
+          <Link
+            to="/pricing-dedicated-teams"
+            className="container__pricing__content__left__link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             Build your team{" "}
             <ArrowRight size={20} strokeWidth={1.5} color="currentColor" />
           </Link>
@@ -34,7 +40,13 @@ export function PricingSection() {
             Get a comprehensive product development experience from design to
             delivery with reduced development costs.
           </div>
-          <Link to="/" className="container__pricing__content__right__link">
+          <Link
+            to="/pricing"
+            className="container__pricing__content__right__link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             DEVELOP YOUR PRODUCT{" "}
             <ArrowRight size={20} strokeWidth={1.5} color="currentColor" />
           </Link>

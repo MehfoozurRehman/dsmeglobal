@@ -15,7 +15,6 @@ const ServiceStaff = lazy(() => import("./screens/ServiceStaff"));
 const ServiceStartup = lazy(() => import("./screens/ServiceStartup"));
 const ServiceAndroid = lazy(() => import("./screens/ServiceAndroid"));
 const Footer = lazy(() => import("./components/Footer"));
-const ContactSection = lazy(() => import("./components/ContactSection"));
 const PortfolioDetail = lazy(() => import("./screens/PortfolioDetail"));
 const Services = lazy(() => import("./screens/Services"));
 const ServicesWebDev = lazy(() => import("./screens/ServicesWebDev"));
@@ -27,6 +26,7 @@ const Home = lazy(() => import("./screens/Home"));
 const ContactUs = lazy(() => import("./screens/ContactUs"));
 const Portfolio = lazy(() => import("./screens/Portfolio"));
 const Pricing = lazy(() => import("./screens/Pricing"));
+const PricingDedicated = lazy(() => import("./screens/PricingDedicated"));
 const AboutUs = lazy(() => import("./screens/AboutUs"));
 const Blogs = lazy(() => import("./screens/Blogs"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
@@ -56,6 +56,7 @@ export default function App() {
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/pricing-dedicated-teams" element={<PricingDedicated />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/quote" element={<QuoteScreen />} />
         <Route path="/about-us" element={<AboutUs />} />
