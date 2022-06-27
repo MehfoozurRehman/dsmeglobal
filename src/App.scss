@@ -3499,6 +3499,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0.5em;
+  color: $white;
 }
 
 .june_third_container_para {
@@ -3510,6 +3511,7 @@ body {
   text-align: center;
   padding-bottom: 2.5em;
   max-width: 1440px;
+  color: $white;
 }
 
 .june_third_container_first_box_svg svg {
@@ -3737,7 +3739,10 @@ body {
 }
 
 .june_second_main_container {
-  background-color: #f2faff;
+  background-color: $black;
+}
+.june_second_main_container * {
+  color: $white;
 }
 
 .june_fourth_container_box_title span {

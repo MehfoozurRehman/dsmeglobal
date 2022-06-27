@@ -89,7 +89,7 @@ export default function ServicesAndroid() {
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
-            What makes Miquido a top Android development company?
+            What makes DSMEGlobals a top Android development company?
           </div>
           <div className="android__mobile__page__container__android__mobile__heading__text">
             Are you struggling to find a solution that fits your expectations

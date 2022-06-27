@@ -54,7 +54,7 @@ export default function ServicesIos() {
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
-            What makes Miquido a top iOS development company?
+            What makes DSMEGlobals a top iOS development company?
           </div>
           <div className="ios__mobile__page__one__step__ios__development__section">
             <div className="ios__mobile__page__one__step__ios__development__section__left">
