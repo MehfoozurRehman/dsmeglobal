@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import contactImg from "../assets/contactImg.png";
+import quote from "../assets/quote.svg";
 import Input from "../components/Input";
 import { fetcher } from "../utils/functions";
 import axios from "axios";
-
 import useSWR from "swr";
 
-export default function QuoteScreen({}) {
+export default function QuoteScreen() {
   const { data } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
@@ -25,8 +24,8 @@ export default function QuoteScreen({}) {
         <div className="contact__section__content">
           <div className="contact__section__content__left">
             <img
-              src={contactImg}
-              alt="contactImg"
+              src={quote}
+              alt="quote"
               className="contact__section__content__img"
             />
           </div>
@@ -60,62 +59,68 @@ export default function QuoteScreen({}) {
               </div>
             </div>
             <div className="contact__section__content__middle__form">
-              <Input
-                type="text"
-                placeholder="Name"
-                required={true}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-              />
-              <Input
-                type="email"
-                required={true}
-                placeholder="Email"
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-              />
-              <Input
-                type="tel"
-                placeholder="Phone"
-                required={true}
-                onChange={(e) => {
-                  setPhone(e.target.value);
-                }}
-              />
-              <Input
-                type="text"
-                required={true}
-                placeholder="Services"
-                list={data.map((item) => item.title)}
-                onChange={(e) => {
-                  setService(e.target.value);
-                }}
-              />
-              <Input
-                type="text"
-                required={true}
-                placeholder="Estimated Budget"
-                list={[
-                  "$50,000 - $100,000",
-                  "$100,000 - $200,000",
-                  "$200,000 - $500,000",
-                  "$500,000 or above",
-                  "Request budget guidance",
-                ]}
-                onChange={(e) => {
-                  setBudget(e.target.value);
-                }}
-              />
-              <Input
-                type="text"
-                placeholder="Company/Organization"
-                required={true}
-                onChange={(e) => {
-                  setCompany(e.target.value);
-                }}
-              />
+              <div className="contact__section__content__middle__form__row">
+                <Input
+                  type="text"
+                  placeholder="Name"
+                  required={true}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                />
+                <Input
+                  type="email"
+                  required={true}
+                  placeholder="Email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="contact__section__content__middle__form__row">
+                <Input
+                  type="tel"
+                  placeholder="Phone"
+                  required={true}
+                  onChange={(e) => {
+                    setPhone(e.target.value);
+                  }}
+                />
+                <Input
+                  type="text"
+                  required={true}
+                  placeholder="Services"
+                  list={data.map((item) => item.title)}
+                  onChange={(e) => {
+                    setService(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="contact__section__content__middle__form__row">
+                <Input
+                  type="text"
+                  required={true}
+                  placeholder="Estimated Budget"
+                  list={[
+                    "$50,000 - $100,000",
+                    "$100,000 - $200,000",
+                    "$200,000 - $500,000",
+                    "$500,000 or above",
+                    "Request budget guidance",
+                  ]}
+                  onChange={(e) => {
+                    setBudget(e.target.value);
+                  }}
+                />
+                <Input
+                  type="text"
+                  placeholder="Company/Organization"
+                  required={true}
+                  onChange={(e) => {
+                    setCompany(e.target.value);
+                  }}
+                />
+              </div>
               <Input
                 variant="textarea"
                 type="text"

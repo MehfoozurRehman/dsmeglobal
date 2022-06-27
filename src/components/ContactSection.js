@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import contactImg from "../assets/contactImg.png";
+import contactImg from "../assets/contact.svg";
 import Input from "./Input";
 import axios from "axios";
 import {
@@ -148,74 +148,78 @@ export default function ContactSection() {
               </div>
             </div>
             <div className="contact__section__content__middle__form">
-              <Input
-                type="text"
-                placeholder="Name"
-                required={true}
-                isError={errorName}
-                errorMessage={errorNameMessage}
-                onChange={(e) => {
-                  if (e.target.value === "") {
-                    setErrorName(true);
-                    setErrorNameMessage("Please enter name");
-                  } else {
-                    setErrorName(false);
-                    setErrorNameMessage("");
-                    setName(e.target.value);
-                  }
-                }}
-              />
-              <Input
-                type="email"
-                required={true}
-                placeholder="Email"
-                isError={errorEmail}
-                errorMessage={errorEmailMessage}
-                onChange={(e) => {
-                  if (e.target.value === "") {
-                    setErrorEmaill(true);
-                    setErrorEmailMessage("Please enter email");
-                  } else {
-                    setErrorEmaill(false);
-                    setErrorEmailMessage("");
-                    setEmail(e.target.value);
-                  }
-                }}
-              />
-              <Input
-                type="tel"
-                placeholder="Phone"
-                required={true}
-                isError={errorPhone}
-                errorMessage={errorPhoneMessage}
-                onChange={(e) => {
-                  if (e.target.value === "") {
-                    setErrorPhone(true);
-                    setErrorPhoneMessage("Please enter phone");
-                  } else {
-                    setErrorPhone(false);
-                    setErrorPhoneMessage("");
-                    setPhone(e.target.value);
-                  }
-                }}
-              />
-              <Input
-                type="text"
-                placeholder="Subject"
-                required={true}
-                isError={errorSubject}
-                errorMessage={errorSubjectMessage}
-                onChange={(e) => {
-                  if (e.target.value === "") {
-                    setErrorSubject(true);
-                    setErrorSubjectMessage("Please enter subject");
-                  } else {
-                    setErrorSubject(false);
-                    setErrorSubjectMessage("");
-                    setSubject(e.target.value);
-                  }
-                }}
-              />
+              <div className="contact__section__content__middle__form__row">
+                <Input
+                  type="text"
+                  placeholder="Name"
+                  required={true}
+                  isError={errorName}
+                  errorMessage={errorNameMessage}
+                  onChange={(e) => {
+                    if (e.target.value === "") {
+                      setErrorName(true);
+                      setErrorNameMessage("Please enter name");
+                    } else {
+                      setErrorName(false);
+                      setErrorNameMessage("");
+                      setName(e.target.value);
+                    }
+                  }}
+                />
+                <Input
+                  type="email"
+                  required={true}
+                  placeholder="Email"
+                  isError={errorEmail}
+                  errorMessage={errorEmailMessage}
+                  onChange={(e) => {
+                    if (e.target.value === "") {
+                      setErrorEmaill(true);
+                      setErrorEmailMessage("Please enter email");
+                    } else {
+                      setErrorEmaill(false);
+                      setErrorEmailMessage("");
+                      setEmail(e.target.value);
+                    }
+                  }}
+                />
+              </div>
+              <div className="contact__section__content__middle__form__row">
+                <Input
+                  type="tel"
+                  placeholder="Phone"
+                  required={true}
+                  isError={errorPhone}
+                  errorMessage={errorPhoneMessage}
+                  onChange={(e) => {
+                    if (e.target.value === "") {
+                      setErrorPhone(true);
+                      setErrorPhoneMessage("Please enter phone");
+                    } else {
+                      setErrorPhone(false);
+                      setErrorPhoneMessage("");
+                      setPhone(e.target.value);
+                    }
+                  }}
+                />
+                <Input
+                  type="text"
+                  placeholder="Subject"
+                  required={true}
+                  isError={errorSubject}
+                  errorMessage={errorSubjectMessage}
+                  onChange={(e) => {
+                    if (e.target.value === "") {
+                      setErrorSubject(true);
+                      setErrorSubjectMessage("Please enter subject");
+                    } else {
+                      setErrorSubject(false);
+                      setErrorSubjectMessage("");
+                      setSubject(e.target.value);
+                    }
+                  }}
+                />
+              </div>
               <Input
                 variant="textarea"
                 type="text"

@@ -7,7 +7,7 @@ import noData from "../assets/noData.png";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage1 from "../assets/bannerImage1.svg";
+import career from "../assets/career.svg";
 import { CareersFilters } from "./CareersFilters";
 import { CareerBanner } from "./CareerBanner";
 
@@ -95,7 +95,7 @@ export default function Careers({ setLightHeader }) {
             ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
             quibusdam ad?"
-          img={bannerImage1}
+          img={career}
         />
       </div>
       <div className="hot__offers__section__wrapper">

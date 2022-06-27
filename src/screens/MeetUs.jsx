@@ -1,11 +1,10 @@
 import React from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
-import bannerImage from "../assets/bannerImage2.png";
+import meet from "../assets/meet.svg";
 import agilefirst from "../assets/agileFirst.png";
 import qualityOver from "../assets/qualityOver.png";
 import continuousChange from "../assets/continuousChange.png";
 import fouceOn from "../assets/fouceOn.png";
-import storiesCardImage from "../assets/storiesCardImage.png";
 
 function MeetUs() {
   return (
@@ -19,7 +18,7 @@ function MeetUs() {
         ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
         quibusdam ad?"
-          img={bannerImage}
+          img={meet}
         />
       </div>
       <div className="meetus__container__main">

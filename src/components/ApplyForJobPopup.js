@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Input from "./Input";
 import { WidgetLoader, Widget } from "react-cloudinary-upload-widget";
@@ -11,6 +11,13 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [cv, setCV] = useState("");
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <>
       {submitted ? (
@@ -54,39 +61,43 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
               <X size={25} color="currentColor" />
             </button>
             <div className="apply__popup__form__heading">Apply For Job</div>
-            <Input
-              type="text"
-              placeholder="Name"
-              required={true}
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-            />
-            <Input
-              type="text"
-              placeholder="Email"
-              required={true}
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-            <Input
-              type="text"
-              placeholder="Phone"
-              required={true}
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
-            />
-            <Input
-              type="text"
-              placeholder="Position"
-              required={true}
-              value={selectItem.position}
-            />
+            <div className="apply__popup__form__row">
+              <Input
+                type="text"
+                placeholder="Name"
+                required={true}
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+              <Input
+                type="text"
+                placeholder="Email"
+                required={true}
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+            </div>
+            <div className="apply__popup__form__row">
+              <Input
+                type="text"
+                placeholder="Phone"
+                required={true}
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+              />
+              <Input
+                type="text"
+                placeholder="Position"
+                required={true}
+                value={selectItem.position}
+              />
+            </div>
             <div
               className="apply__popup__form__label"
               style={{ marginBottom: ".5em" }}

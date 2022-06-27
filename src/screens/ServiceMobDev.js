@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { HomeJumbotron } from "./HomeJumbotron";
 import mobile from "../assets/mobile.svg";
-import { Box, User } from "react-feather";
 import { ExperienceCard } from "./ExperienceCard";
 import { ExperitseCard } from "./ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
+import { ServicesFeatureListItem } from "./ServicesFeatureListItem";
 
 export default function ServicesMobDev() {
   const [selected, setSelected] = useState("Wearable Tech");
@@ -533,6 +533,38 @@ export default function ServicesMobDev() {
               </div>
             </div>
           ))}
+      </div>
+      <div className="container__feature">
+        <div className="container__feature__col">
+          <div className="container__feature__col__heading">
+            Why Code District?
+          </div>
+          <div className="container__feature__col__info">
+            We create a cross-functional team to find the perfect blend of tech
+            teams and tested development processes that ensure the highest
+            quality custom built products on time and within budget.
+          </div>
+        </div>
+        <div className="container__feature__col">
+          <ServicesFeatureListItem
+            label="Access to Expert Teams"
+            info="Don’t know where to find the best iOS and Android developers? Look no further - we have the top talent available for you anytime."
+          />
+          <ServicesFeatureListItem
+            label="Quality Guaranteed"
+            info="Our code is sure to be crisp and precise to the point it delivers exactly what you are looking for while maintaining all the code quality standards."
+          />
+        </div>
+        <div className="container__feature__col">
+          <ServicesFeatureListItem
+            label="Strong IP Protection"
+            info="Your idea is Safe! All work is done under standard “Work for Hire” and Non-Disclosure Agreements."
+          />
+          <ServicesFeatureListItem
+            label="Covering All Basis"
+            info="We like to go in depth of things before diving deep into development to avoid any major issues later on."
+          />
+        </div>
       </div>
     </>
   );
