@@ -80,12 +80,12 @@ export default function PricingDedicated() {
             part of your existing team, both on a partime/fulltime basis.
           </div>
         </div>
-        <div className="pricing__fitted__team__contant">
-          <div className="pricing__fitted__team__contant__entry">
-            <div className="pricing__fitted__team__contant__entry__heading">
+        <div className="pricing__fitted__team__content">
+          <div className="pricing__fitted__team__content__entry">
+            <div className="pricing__fitted__team__content__entry__heading">
               Full Service Standalone Team
             </div>
-            <ul className="pricing__fitted__team__contant__entry__list">
+            <ul className="pricing__fitted__team__content__entry__list">
               <li>
                 Not looking to build a complete software department but need
                 tech resources on demand.
@@ -95,10 +95,10 @@ export default function PricingDedicated() {
                 and management talent (developers, UI/UX experts).
               </li>
             </ul>
-            <div className="pricing__fitted__team__contant__entry__sub__heading">
+            <div className="pricing__fitted__team__content__entry__sub__heading">
               Suited best when:
             </div>
-            <ul className="pricing__fitted__team__contant__entry__list">
+            <ul className="pricing__fitted__team__content__entry__list">
               <li>
                 Developing new products without defocusing your core team (if
                 exists)
@@ -112,11 +112,11 @@ export default function PricingDedicated() {
               </li>
             </ul>
           </div>
-          <div className="pricing__fitted__team__contant__entry">
-            <div className="pricing__fitted__team__contant__entry__heading">
+          <div className="pricing__fitted__team__content__entry">
+            <div className="pricing__fitted__team__content__entry__heading">
               Extension of Existing Teams
             </div>
-            <ul className="pricing__fitted__team__contant__entry__list">
+            <ul className="pricing__fitted__team__content__entry__list">
               <li>
                 Perfect solution when your current project initiatives need a
                 few additional dedicated specialized resources.
@@ -126,10 +126,10 @@ export default function PricingDedicated() {
                 fill the gaps in your project needs.
               </li>
             </ul>
-            <div className="pricing__fitted__team__contant__entry__sub__heading">
+            <div className="pricing__fitted__team__content__entry__sub__heading">
               Suited best when:
             </div>
-            <ul className="pricing__fitted__team__contant__entry__list">
+            <ul className="pricing__fitted__team__content__entry__list">
               <li>
                 With their own in-house IT teams and established processes.
               </li>

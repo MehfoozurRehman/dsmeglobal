@@ -4919,6 +4919,70 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
+.pricing__fitted__team {
+  width: 100%;
+  max-width: 1440px;
+  padding: 4em 3em;
+  margin: 0em auto;
+  display: flex;
+  flex-direction: column;
+}
+.pricing__fitted__team__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.pricing__fitted__team__header__heading {
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.pricing__fitted__team__header__info {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+.pricing__fitted__team__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pricing__fitted__team__content__entry {
+  flex: 1;
+  background-color: rgba(13, 110, 74, 0.1);
+  padding: 3em;
+  padding-bottom: 1.5em;
+  margin: 1em;
+}
+.pricing__fitted__team__content__entry__heading {
+  font-size: 22px;
+  color: $primary;
+  font-weight: bold;
+}
+.pricing__fitted__team__content__entry__sub__heading {
+  font-size: 18px;
+  color: $black;
+  font-weight: bold;
+}
+.pricing__fitted__team__content__entry__list {
+  list-style: none;
+}
+
+.pricing__fitted__team__content__entry__list li {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.pricing__fitted__team__content__entry__list li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: $primary;
+}
 @media (max-width: 1250px) {
   .pricing__delivery__section__content__card {
     min-width: 50%;
@@ -5140,6 +5204,11 @@ body {
   .pricing__delivery__section__content__card__content {
     height: fit-content;
   }
+  .pricing__fitted__team__content__entry {
+    min-width: 100%;
+    margin: 0em;
+    margin-bottom: 2em;
+  }
 }
 @media (max-width: 750px) {
   .ecommerce__screen__container__services__content__entry,
@@ -5225,6 +5294,9 @@ body {
   }
   .ecommerce__screen__container__process__content__selector {
     padding: 1em 0;
+  }
+  .pricing__fitted__team {
+    padding: 4em 2em;
   }
 }
 @media (max-width: 465px) {
