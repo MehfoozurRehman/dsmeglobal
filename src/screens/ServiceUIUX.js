@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import design from "../assets/design.svg";
 import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";

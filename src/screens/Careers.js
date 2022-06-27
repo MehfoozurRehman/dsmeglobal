@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import VacencyCard from "../components/VacencyCard";
 import ApplyForJobPopup from "../components/ApplyForJobPopup";
+import { CareersFilters } from "../components/CareersFilters";
 import HotOfferJobCard from "../components/HotOfferJobCard";
-import noData from "../assets/noData.png";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import { CareerBanner } from "../components/CareerBanner";
+import VacencyCard from "../components/VacencyCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { fetcher } from "../utils/functions";
-import useSWR from "swr";
-import { HomeJumbotron } from "./HomeJumbotron";
+import noData from "../assets/noData.png";
 import career from "../assets/career.svg";
-import { CareersFilters } from "./CareersFilters";
-import { CareerBanner } from "./CareerBanner";
+import useSWR from "swr";
 
 export default function Careers({ setLightHeader }) {
   const [slidesPerPage, setSlidesPerPage] = useState(3.5);

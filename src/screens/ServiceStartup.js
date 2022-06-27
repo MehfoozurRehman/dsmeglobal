@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import startup from "../assets/startup.svg";
 
 export default function ServiceStartup() {

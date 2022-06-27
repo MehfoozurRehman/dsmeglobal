@@ -1,7 +1,7 @@
 import React from "react";
 import deliveryPic from "../assets/delivery.png";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import pricing from "../assets/pricing.svg";
 import products from "../assets/products.svg";
 

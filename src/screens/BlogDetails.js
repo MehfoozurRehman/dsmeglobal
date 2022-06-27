@@ -3,7 +3,6 @@ import { parseDate } from "../utils/functions";
 
 export default function BlogDetails() {
   let blogData = JSON.parse(window.localStorage.getItem("blogsData"));
-
   return (
     <>
       <div className="blog__jumbotron">
@@ -34,7 +33,7 @@ export default function BlogDetails() {
       <div
         className="blog__jumbotron__content"
         dangerouslySetInnerHTML={{ __html: blogData.content }}
-      ></div>
+      />
     </>
   );
 }

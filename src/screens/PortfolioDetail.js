@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Portfolio__section from "../components/Portfolio__section";
 
-export default function Portfolio__detail() {
+export default function PortfolioDetail() {
   const [data, setData] = useState([]);
   useEffect(() => {
     setData(JSON.parse(window.localStorage.getItem("project")));

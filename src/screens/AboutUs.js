@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import about from "../assets/about.svg";
 import ceo from "../assets/ceo.png";
 import { Box } from "react-feather";
-import { PromiseEntry } from "./PromiseEntry";
-import { CoreValueEntry } from "./CoreValueEntry";
-import { KeyDifferenceEntry } from "./KeyDifferenceEntry";
+import { PromiseEntry } from "../components/PromiseEntry";
+import { CoreValueEntry } from "../components/CoreValueEntry";
+import { KeyDifferenceEntry } from "../components/KeyDifferenceEntry";
 
 export default function AboutUs() {
   useEffect(() => {

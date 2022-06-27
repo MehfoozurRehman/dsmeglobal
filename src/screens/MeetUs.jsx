@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import meet from "../assets/meet.svg";
 import agilefirst from "../assets/agileFirst.png";
 import qualityOver from "../assets/qualityOver.png";
@@ -39,7 +39,7 @@ function MeetUs() {
               </div>
               <div className="meetus__container__smallThings__right">
                 <div className="meetus__container__smallThings__right__image">
-                  <img src={agilefirst} alt="Agile first picture" />
+                  <img src={agilefirst} alt="Agile first" />
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ function MeetUs() {
             <div className="meetus__container__sub__content">
               <div className="meetus__container__sub__left">
                 <div className="meetus__container__sub__left__image">
-                  <img src={qualityOver} alt="Quality over quantity image" />
+                  <img src={qualityOver} alt="Quality over quantity" />
                 </div>
               </div>
               <div className="meetus__container__sub__right">

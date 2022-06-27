@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import CountUp from "react-countup";
-import { useIsInViewport } from "./useIsInViewport";
+import { useIsInViewport } from "../utils/useIsInViewport";
 
 export function StatsSection() {
   const ref = useRef(null);

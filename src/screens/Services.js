@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ServicesCard from "../components/ServicesCard";
+import ServicesCard from "../components/ServicesSectionCard";
 
 export default function Services() {
   useEffect(() => {

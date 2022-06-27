@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import software from "../assets/software.svg";
 
 export default function ServiceCustomSoft() {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box } from "react-feather";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import ecommerce from "../assets/ecommerce.svg";
 import EcomereceRoleSelector from "../components/EcomereceRoleSelector";
 import EcomereceProjectsCard from "../components/EcomereceProjectsCard";

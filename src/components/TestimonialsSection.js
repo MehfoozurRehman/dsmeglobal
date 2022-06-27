@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import testimonialBg from "../assets/testimonialBg.jpg";
 
 export function TestimonialsSection() {

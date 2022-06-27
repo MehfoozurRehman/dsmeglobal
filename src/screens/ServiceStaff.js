@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import staff from "../assets/staff.svg";
 
 export default function ServiceStaff() {

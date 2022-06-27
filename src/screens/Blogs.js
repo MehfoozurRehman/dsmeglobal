@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import useSWR from "swr";
 import BlogsCard from "../components/BlogCard";
 import BlogsFilter from "../components/BlogsFilter";
 import { fetcher } from "../utils/functions";
+import useSWR from "swr";
 
 export default function Blogs() {
   const [noOfItems, setNoOfItems] = useState(9);

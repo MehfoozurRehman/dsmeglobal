@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import GetQuatePopup from "../components/GetQuatePopup";
-import { QuateSectionCard } from "./QuateSectionCard";
+import { QuateSectionCard } from "../components/QuateSectionCard";
 import { useNavigate } from "react-router-dom";
 
 export function QuateSection() {

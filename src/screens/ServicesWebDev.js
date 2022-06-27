@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import web from "../assets/web.svg";
 import { CheckCircle } from "react-feather";
-import { ExperienceCard } from "./ExperienceCard";
-import { ExperitseCard } from "./ExperitseCard";
+import { ExperienceCard } from "../components/ExperienceCard";
+import { ExperitseCard } from "../components/ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
-import { ServicesFeatureListItem } from "./ServicesFeatureListItem";
+import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
 
 export default function ServicesWebDev() {
   const [selected, setSelected] = useState("AR VR");

@@ -1,17 +1,17 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
-import { ClientsSection } from "./ClientsSection";
-import { ServicesSection } from "./ServicesSection";
-import { NewsletterSection } from "./NewsletterSection";
-import { BlogSection } from "./BlogSection";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import { ClientsSection } from "../components/ClientsSection";
+import { ServicesSection } from "../components/ServicesSection";
+import { NewsletterSection } from "../components/NewsletterSection";
+import { BlogSection } from "../components/BlogSection";
 import services from "../assets/services.svg";
 import products from "../assets/products.svg";
 import customizations from "../assets/customizations.svg";
 import WorkSection from "../components/WorkSection";
-import { StatsSection } from "./StatsSection";
-import { TestimonialsSection } from "./TestimonialsSection";
-import { QuateSection } from "./QuateSection";
-import { PricingSection } from "./PricingSection";
+import { StatsSection } from "../components/StatsSection";
+import { TestimonialsSection } from "../components/TestimonialsSection";
+import { QuateSection } from "../components/QuateSection";
+import { PricingSection } from "../components/PricingSection";
 
 export default function Home() {
   return (

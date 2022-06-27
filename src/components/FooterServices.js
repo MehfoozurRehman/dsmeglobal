@@ -24,7 +24,7 @@ export function FooterServices() {
                 window.scrollTo({ behavior: "smooth", top: 0 });
               }, 300);
             }}
-            to="/service-details"
+            to="/service"
             key={JSON.stringify(item)}
             className="footer__container__content__col__link"
           >

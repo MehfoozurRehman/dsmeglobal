@@ -1,8 +1,8 @@
 import React from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import "../styles/ServiceBlockchain.scss";
 import objectimgnew from "../assets/object.png";
+import "../styles/ServiceBlockchain.scss";
 
 export default function ServiceBlockChain() {
   return (

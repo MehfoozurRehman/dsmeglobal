@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { HomeJumbotron } from "./HomeJumbotron";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 import mobile from "../assets/mobile.svg";
-import { ExperienceCard } from "./ExperienceCard";
-import { ExperitseCard } from "./ExperitseCard";
+import { ExperienceCard } from "../components/ExperienceCard";
+import { ExperitseCard } from "../components/ExperitseCard";
 import WebdevArrEntry from "../components/WebdevArrEntry";
-import { ServicesFeatureListItem } from "./ServicesFeatureListItem";
+import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
 
 export default function ServicesMobDev() {
   const [selected, setSelected] = useState("Wearable Tech");
