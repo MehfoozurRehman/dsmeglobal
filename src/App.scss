@@ -2259,7 +2259,7 @@ body {
 
 .container__web__dev__experties__content__header svg {
   margin-bottom: 0.8em;
-  stroke: $primary;
+  fill: $primary;
 }
 
 .container__web__dev__experties__content__header__heading {
@@ -2273,7 +2273,7 @@ body {
   font-size: 14px;
 }
 .container__web__dev__experties__content__entry:hover * {
-  stroke: $white;
+  fill: $white;
   color: $white;
 }
 .container__web__dev__experience__wrapper {
@@ -2510,6 +2510,7 @@ body {
 .container__emerging__technologies__section__wrapper__input:checked
   ~ .container__emerging__technologies__section__entry {
   color: $primary;
+  fill: $primary;
   border-bottom: 3px solid $primary;
 }
 
@@ -2843,10 +2844,7 @@ body {
 }
 
 .about__key__different__sec__contanier__right__col1__entry {
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  height: 150px;
 }
 
 .about__key__different__sec__contanier__right__col1__entry__heading {
@@ -2960,6 +2958,7 @@ body {
 .footer__container__content__col__link {
   margin: 0.3em 0;
   color: #efefef;
+
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
@@ -3428,7 +3427,7 @@ body {
 .june_second_container_svg svg {
   height: 40px;
   width: 40px;
-  color: rgba(56, 159, 72, 0.788);
+  fill: $primary;
   stroke-width: 1.5px;
 }
 
@@ -3487,6 +3486,7 @@ body {
 }
 .june_second_container:hover * {
   color: $white;
+  fill: $white;
 }
 .june_second_container_box_title_one {
   display: flex;
@@ -3797,10 +3797,11 @@ body {
 .june_main_container_images {
   display: flex;
   justify-content: center;
-  padding: 4em 0em;
+  padding-top: 8em;
   align-items: center;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 8em;
 }
 
 .june_first_container_images {
@@ -4315,11 +4316,11 @@ body {
   color: $primary;
   width: 200px;
   border: 1px solid $black;
+  fill: $primary;
 }
 .ecommerce__screen__container__role__entry__content__heading {
   margin-top: 1em;
   color: $black;
-
   font-weight: bold;
 }
 .ecommerce__screen__container__role__entry__input:hover
@@ -4328,6 +4329,7 @@ body {
   ~ .ecommerce__screen__container__role__entry__content {
   transition: 300ms ease-in-out;
   background-color: $primary;
+  fill: $white;
   border-color: $primary;
 }
 .ecommerce__screen__container__role__entry__input:hover
@@ -4336,7 +4338,6 @@ body {
 .ecommerce__screen__container__role__entry__input:checked
   ~ .ecommerce__screen__container__role__entry__content
   * {
-  transition: 300ms ease-in-out;
   color: $white;
 }
 .ecommerce__screen__container__selling {
@@ -4484,7 +4485,7 @@ body {
   background-color: rgba(13, 110, 74, 0.1);
   padding: 2em;
   border-radius: 8px;
-  color: $black;
+  fill: $primary;
 }
 .ecommerce__screen__container__services__content__entry svg {
   stroke: $primary;
@@ -4503,8 +4504,7 @@ body {
   color: $white;
 }
 .ecommerce__screen__container__services__content__entry:hover svg {
-  transition: 300ms ease-in-out;
-  stroke: $white;
+  fill: $white;
 }
 .ecommerce__screen__container__process {
   display: flex;
