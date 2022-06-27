@@ -2843,7 +2843,10 @@ body {
 }
 
 .about__key__different__sec__contanier__right__col1__entry {
-  height: 150px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about__key__different__sec__contanier__right__col1__entry__heading {
@@ -2957,7 +2960,6 @@ body {
 .footer__container__content__col__link {
   margin: 0.3em 0;
   color: #efefef;
-
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
@@ -3795,11 +3797,10 @@ body {
 .june_main_container_images {
   display: flex;
   justify-content: center;
-  padding-top: 8em;
+  padding: 4em 0em;
   align-items: center;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 8em;
 }
 
 .june_first_container_images {

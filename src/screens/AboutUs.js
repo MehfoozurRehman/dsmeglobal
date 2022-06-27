@@ -80,7 +80,18 @@ export default function AboutUs() {
               </div>
             </div>
             <div className="about__key__different__sec__contanier__right__col1">
-              <div className="about__key__different__sec__contanier__right__col2__entry">
+              {/* <div className="about__key__different__sec__contanier__right__col2__entry">
+                <div className="about__key__different__sec__contanier__right__col1__entry__heading">
+                  <Box size={20} color="currentColor" strokeWidth={1.5} />
+                  Domain Expertise
+                </div>
+                <div className="about__key__different__sec__contanier__right__col1__entry__heading__text">
+                  Solid business domain experience, technical expertise and
+                  knowledge of latest industry trends helps us deliver
+                  exceptional results
+                </div>
+              </div> */}
+              <div className="about__key__different__sec__contanier__right__col1__entry">
                 <div className="about__key__different__sec__contanier__right__col1__entry__heading">
                   <Box size={20} color="currentColor" strokeWidth={1.5} />
                   Domain Expertise
