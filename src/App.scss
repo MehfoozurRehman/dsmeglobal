@@ -5919,7 +5919,8 @@ body {
 }
 .customsoft_second_container_all_main:hover {
   color: white;
-  background-color: #189366;
+  background-color: #189366 ;
+  border-radius:5px;
 }
 .customsoft_second_container_all_main:hover
   .customsoft_second_container_button
@@ -6726,8 +6727,6 @@ body {
   .customsoft_second_container_content {
     width: 100%;
   }
-  .customsoft_first_container {
-  }
 }
 @media (max-width: 1000px) {
   .customsoft_third_container_first_box {
@@ -6867,5 +6866,41 @@ body {
   .customsoft_first_container {
     margin-left: 2em;
     margin-right: 2em;
+  }
+}
+
+@media(max-width:930px){
+  .customsoft_first_container{
+    margin-right: 2em;
+  }
+}
+@media(max-width:1300px){
+  .customsoft_second_container_all_main{
+  padding-left: 15px;
+  
+  }
+}
+@media(max-width:1145px){
+  .customsoft_second_container{
+ width: 100%;
+ height: 100%;
+  }
+}
+@media(max-width:1145px){
+  .customsoft_first_container{
+ width: 100%;
+ height: 100%;
+ margin: 0;
+  }
+}
+@media(max-width:950px){
+  .customsoft_second_container_all_main{
+  padding: 0;
+  }
+}
+@media(max-width:950px){
+  .customsoft_second_container_all_main{
+margin-top: 3em;
+
   }
 }
