@@ -3062,7 +3062,7 @@ body {
 .meetus__container__smallThings__content {
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -3125,7 +3125,7 @@ body {
 .meetus__container__sub__content {
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -3187,7 +3187,7 @@ body {
 .meetus__container__stories__content {
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   margin-bottom: 5em;
 }
@@ -3390,7 +3390,7 @@ body {
   flex-wrap: wrap;
   padding: 0em 4em;
   padding-bottom: 4em;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
 }
@@ -3511,7 +3511,7 @@ body {
 .june_second_container_box_two_title {
   width: 150px;
   font-weight: 300;
-  max-width: 1440px;
+  max-width: 1500px;
 }
 
 .june_second_container_box_three_svg svg {
@@ -3539,7 +3539,7 @@ body {
   justify-content: center;
   padding: 4em 2em;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0em auto;
 }
 .june_second_container:hover {
@@ -3573,7 +3573,7 @@ body {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 2.5em;
-  max-width: 1440px;
+  max-width: 1500px;
   color: $white;
 }
 
@@ -3808,7 +3808,7 @@ body {
   width: 45%;
   align-items: center;
   text-align: center;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   font-size: 25px;
   font-weight: bold;
@@ -4751,7 +4751,7 @@ body {
 .about__core__values,
 .about__key__difference {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 0em 3em;
   margin: 0em auto;
   margin-bottom: 7em;
@@ -4921,7 +4921,7 @@ body {
 .container__feature {
   display: flex;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 3em 4em;
   margin: 0em auto;
   flex-wrap: wrap;
@@ -4960,7 +4960,7 @@ body {
 }
 .pricing__fitted__team {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 4em 3em;
   margin: 0em auto;
   display: flex;
@@ -5022,6 +5022,50 @@ body {
   border-radius: 50px;
   background-color: $primary;
 }
+.staff__talent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1500px;
+  padding: 4em;
+  margin: 0em auto;
+}
+.staff__talent__heading {
+  font-size: 25px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.staff__talent__sub__heading {
+  font-size: 18px;
+  color: $primary;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.staff__talent__info {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 1em;
+}
+.staff__talent__features {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.staff__talent__features__entry {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 14px;
+}
+.staff__talent__features__entry svg {
+  margin-right: 1em;
+  width: 18px;
+  height: 18px;
+}
 @media (max-width: 1250px) {
   .pricing__delivery__section__content__card {
     min-width: 50%;
@@ -5049,6 +5093,86 @@ body {
   .service__startup__main__container__second__cards__container__techonologies
     .services__startup__card {
     min-width: 30%;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card
+    .services__startup__card__icon::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-top: 2px solid $primary;
+    top: calc(1em + 40px);
+    left: 50%;
+    z-index: -1;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(2)
+    .services__startup__card__icon::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-top: 2px solid $primary;
+    border-top-right-radius: 50%;
+    top: calc(1em + 40px);
+    left: 50%;
+    z-index: -1;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(3)
+    .services__startup__card__icon::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    aspect-ratio: 16/9;
+    border-bottom: 2px solid $primary;
+    border-bottom-left-radius: 50%;
+    bottom: calc(100% - 1em - 40px);
+    right: 50%;
+    z-index: -1;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(3)
+    .services__startup__card__icon::after {
+    border-radius: 0px;
+    min-width: 100%;
+    height: 0px;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(4)
+    .services__startup__card__icon::before {
+    display: none;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(4)
+    .services__startup__card__icon::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-top: 2px solid $primary;
+    border-top-right-radius: 50%;
+    top: calc(1em + 40px);
+    left: 50%;
+    z-index: -1;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(5)
+    .services__startup__card__icon::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    aspect-ratio: 16/9;
+    border-bottom: 2px solid $primary;
+    border-bottom-left-radius: 50%;
+    bottom: calc(100% - 1em - 40px);
+    right: 50%;
+    z-index: -1;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card:nth-child(6)
+    .services__startup__card__icon::after {
+    display: none;
   }
 }
 @media (max-width: 1100px) {
@@ -5328,6 +5452,16 @@ body {
   .about__core__values,
   .about__key__difference {
     padding: 0em 2em;
+  }
+  .staff__talent {
+    padding: 4em 2em;
+    padding-bottom: 3em;
+  }
+  .max__width__container {
+    padding: 0em 2em !important;
+  }
+  .services__startup__card {
+    margin: 1% 0px !important;
   }
 }
 @media (max-width: 550px) {
@@ -6048,6 +6182,20 @@ body {
     .services__startup__card {
     min-width: 48%;
   }
+  .staff__talent__features {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card
+    .services__startup__card__icon::after {
+    display: none;
+  }
+  .service__startup__main__container__second__cards__container__augmantation
+    .engagement__models__card
+    .services__startup__card__icon::before {
+    display: none;
+  }
 }
 @media (max-width: 744px) {
   .footer__container__content__wrapper {
@@ -6238,7 +6386,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 4em;
 }
 .customsoft_first_container_svg {
@@ -6383,7 +6531,7 @@ body {
   justify-content: space-around;
 }
 .customsoft_third_container_first_box_main {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   align-items: center;
 }
@@ -6493,7 +6641,7 @@ body {
 .customsoft_fourth_container_first_box_all_main_container {
   display: flex;
   justify-content: space-evenly;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 4em;
 }
@@ -6665,7 +6813,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 4em;
 }
 .customsoft_five_container_first_box_content {
@@ -6731,7 +6879,7 @@ body {
   width: 100%;
 }
 .max__width__container {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 4em;
 }
@@ -6739,10 +6887,16 @@ body {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
   padding-top: 2em;
   padding-bottom: 0.5em;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.service__startup__main__container__first__heading span {
+  color: $primary;
 }
 .service__startup__main__container__first__subheading {
   text-align: center;
@@ -6766,7 +6920,6 @@ body {
   width: 23%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 1em;
   margin: 1%;
@@ -6783,6 +6936,8 @@ body {
 }
 .services__startup__card__info {
   text-align: center;
+  width: 100%;
+  max-width: 500px;
 }
 .why__work__with__us__card .services__startup__card__label {
   text-align: left;
@@ -6801,10 +6956,62 @@ body {
   text-align: start;
 }
 .engagement__models__card {
-  width: 32%;
+  width: 31%;
   justify-content: start;
+  position: relative;
 }
-
+.service__startup__main__container__second__cards__container__augmantation
+  .engagement__models__card
+  .services__startup__card__icon {
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 1em;
+  border-radius: 50px;
+  width: 82px;
+  height: 82px;
+}
+.service__startup__main__container__second__cards__container__augmantation
+  .engagement__models__card
+  .services__startup__card__icon::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 2px solid $primary;
+  top: calc(1em + 40px);
+  left: 50%;
+  z-index: -1;
+}
+.service__startup__main__container__second__cards__container__augmantation
+  .engagement__models__card:nth-child(3)
+  .services__startup__card__icon::after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  aspect-ratio: 1/1;
+  border-top: 2px solid $primary;
+  border-top-right-radius: 50%;
+  top: calc(1em + 40px);
+  left: 50%;
+  z-index: -1;
+}
+.service__startup__main__container__second__cards__container__augmantation
+  .engagement__models__card:nth-child(4)
+  .services__startup__card__icon::before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  aspect-ratio: 16/9;
+  border-bottom: 2px solid $primary;
+  border-bottom-left-radius: 50%;
+  bottom: calc(100% - 1em - 40px);
+  right: 50%;
+  z-index: -1;
+}
+.service__startup__main__container__second__cards__container__augmantation
+  .engagement__models__card:nth-child(5)
+  .services__startup__card__icon::after {
+  display: none;
+}
 @media (max-width: 1170px) {
   .customsoft_first_container {
     height: 400px;
@@ -6857,7 +7064,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1500px;
     margin: none;
     padding: 0;
   }
