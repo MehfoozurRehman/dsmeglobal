@@ -43,7 +43,13 @@ export default function Header({ light }) {
   return (
     <div
       className={light ? "header header__active" : "header"}
-      style={isScrolling ? { backgroundColor: "white" } : null}
+      style={
+        isScrolling
+          ? { backgroundColor: "white" }
+          : isNavOpen
+          ? { backgroundColor: "white" }
+          : null
+      }
     >
       <div className="header__content">
         <Link
