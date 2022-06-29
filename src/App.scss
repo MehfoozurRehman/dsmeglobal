@@ -5046,6 +5046,10 @@ body {
   .services__startup__card {
     min-width: 48%;
   }
+  .service__startup__main__container__second__cards__container__techonologies
+    .services__startup__card {
+    min-width: 30%;
+  }
 }
 @media (max-width: 1100px) {
   .ios__development__native__cross__plat__development__img {
@@ -6027,7 +6031,7 @@ body {
     justify-content: center;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .meetus__container__sub__left__image img {
     width: 400px;
   }
@@ -6036,6 +6040,13 @@ body {
   }
   .services__startup__card {
     min-width: 100%;
+  }
+  .why__work__with__us__card {
+    min-width: 100% !important;
+  }
+  .service__startup__main__container__second__cards__container__techonologies
+    .services__startup__card {
+    min-width: 48%;
   }
 }
 @media (max-width: 744px) {
@@ -6764,14 +6775,17 @@ body {
   height: 50px;
   width: 50px;
 }
-
 .services__startup__card__label {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0.5em 0;
+  text-align: center;
 }
 .services__startup__card__info {
   text-align: center;
+}
+.why__work__with__us__card .services__startup__card__label {
+  text-align: left;
 }
 .services__startup__third__header {
   margin: 1em 0;
