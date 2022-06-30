@@ -4,9 +4,9 @@ import { ClientsSection } from "../components/ClientsSection";
 import { ServicesSection } from "../components/ServicesSection";
 import { NewsletterSection } from "../components/NewsletterSection";
 import { BlogSection } from "../components/BlogSection";
-import services from "../assets/services.svg";
-import products from "../assets/products.svg";
-import customizations from "../assets/customizations.svg";
+import homebanner1 from "../assets/homebanner1.png";
+import homebanner2 from "../assets/homebanner2.png";
+import homebanner3 from "../assets/homebanner3.png";
 import WorkSection from "../components/WorkSection";
 import { StatsSection } from "../components/StatsSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
@@ -37,7 +37,7 @@ export default function Home({ setLightHeader }) {
        ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
        Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
        quibusdam ad?"
-          imgs={[services, products, customizations]}
+          imgs={[homebanner1, homebanner2, homebanner3]}
           buttons={true}
           light={true}
           styleColor={{ color: "white" }}
