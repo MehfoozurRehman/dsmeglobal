@@ -188,7 +188,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  line-height: 110%;
 }
 .container__jumbotron__left__heading__entry {
   display: flex;
@@ -678,6 +679,7 @@ body {
   font-weight: bold;
   position: relative;
   width: fit-content;
+  text-transform: uppercase;
 }
 .blog__page__heading::after {
   content: "";
@@ -2595,6 +2597,8 @@ body {
   justify-content: center;
   padding: 4em;
   background-color: $primary;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .container__pricing__content__left__heading {
@@ -2665,6 +2669,8 @@ body {
   justify-content: center;
   background-color: $black;
   padding: 4em;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .container__pricing__content__right__heading {
@@ -5839,6 +5845,12 @@ body {
   }
   .container__pricing__content {
     flex-direction: column;
+  }
+  .container__pricing__content__left {
+    border-radius: 20px;
+  }
+  .container__pricing__content__right {
+    border-radius: 20px;
   }
   .careers__wrapper__overlay {
     flex-direction: column;
