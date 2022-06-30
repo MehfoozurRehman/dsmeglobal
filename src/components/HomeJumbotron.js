@@ -75,7 +75,6 @@ export function HomeJumbotron({
             >
               Learn more
             </button>
-
             <Link
               to="/portfolio"
               className="container__jumbotron__left__button__primary"

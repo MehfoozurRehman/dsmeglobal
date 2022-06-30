@@ -1,10 +1,10 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import meet from "../assets/meet.svg";
-import agilefirst from "../assets/agileFirst.png";
-import qualityOver from "../assets/qualityOver.png";
-import continuousChange from "../assets/continuousChange.png";
-import fouceOn from "../assets/fouceOn.png";
+import agilefirst from "../assets/agileFirst.svg";
+import qualityOver from "../assets/qualityOver.svg";
+import continuousChange from "../assets/continuousChange.svg";
+import fouceOn from "../assets/fouceOn.svg";
 
 function MeetUs() {
   return (
