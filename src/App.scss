@@ -141,7 +141,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 600px;
+  min-height: 700px;
   width: 100%;
   max-width: 1500px;
   padding: 0 4em;
@@ -1791,7 +1791,7 @@ body {
   margin: 0 auto;
   margin-top: 4em;
   background-color: rgb(255, 255, 255);
-
+  border: 1px solid $primary;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   align-items: center;
   overflow-x: auto;
@@ -1799,6 +1799,7 @@ body {
   width: 100%;
   max-width: fit-content;
   padding: 0 2em;
+  border-radius: 10px;
 }
 
 .work__section__content__selection::-webkit-scrollbar {
@@ -2599,8 +2600,18 @@ body {
   background-color: $primary;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: relative;
 }
-
+.container__pricing__content__left img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  opacity: 0.25;
+}
+.container__pricing__content__left div {
+  z-index: 2;
+}
 .container__pricing__content__left__heading {
   font-size: 25px;
   color: $white;
@@ -2671,8 +2682,18 @@ body {
   padding: 4em;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: relative;
 }
-
+.container__pricing__content__right img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  opacity: 0.25;
+}
+.container__pricing__content__right div {
+  z-index: 2;
+}
 .container__pricing__content__right__heading {
   font-size: 25px;
   color: $white;
@@ -4770,6 +4791,7 @@ body {
 }
 .about__ceo__message__left {
   flex: 1;
+  max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4779,10 +4801,15 @@ body {
 }
 .about__ceo__message__right {
   flex: 1;
+  border: 1px solid $black;
+  padding: 2em;
+  border-radius: 20px;
+  margin-top: 2em;
+  background-color: $black;
 }
 .about__ceo__message__right__heading {
   font-size: 25px;
-  color: $black;
+  color: $white;
   font-weight: bold;
   margin-bottom: 0.5em;
   text-transform: capitalize;
@@ -4791,8 +4818,7 @@ body {
   color: $primary;
 }
 .about__ceo__message__right__info {
-  width: 100%;
-  max-width: 500px;
+  color: $white;
 }
 .about__core__values__header {
   width: 100%;
@@ -4806,6 +4832,7 @@ body {
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
+  position: relative;
 }
 .about__core__values__header__heading span {
   color: $primary;
@@ -4853,7 +4880,7 @@ body {
   border: none;
 }
 .about__promise__content__entry {
-  background-color: rgba(13, 110, 74, 0.1);
+  background-color: $black;
   border: none;
   width: 23%;
   margin: 1%;
@@ -4867,15 +4894,37 @@ body {
 .about__promise__content__entry:hover * {
   color: $white;
 }
+.about__promise__content__entry .about__core__values__content__entry__heading {
+  color: $white;
+}
+.about__promise__content__entry .about__core__values__content__entry__info {
+  color: $white;
+}
 .about__key__difference {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .about__key__difference__heading {
   font-size: 25px;
-  text-align: center;
   font-weight: bold;
   margin-bottom: 2em;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+}
+.about__key__difference__heading span {
+  color: $primary;
+}
+.about__key__difference__heading::after,
+.about__core__values__header__heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(13, 110, 74, 0.1);
+  height: 3px;
 }
 .about__key__difference__content {
   display: flex;
@@ -4890,6 +4939,13 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5em;
+  border: 1px solid transparent;
+  padding: 1em;
+  border-radius: 10px;
+}
+.about__key__difference__content__col__entry:hover {
+  transition: 300ms ease-in-out;
+  border-color: $primary;
 }
 .about__key__difference__content__col__entry__header {
   display: flex;
@@ -4918,6 +4974,10 @@ body {
   background-color: rgba(13, 110, 74, 0.1);
   height: fit-content;
   border-radius: 10px;
+}
+.about__key__difference__content__col:last-child
+  .about__key__difference__content__col__entry {
+  padding-bottom: 0.3em;
 }
 .about__key__difference__content__col:last-child
   .about__key__difference__content__col__entry__header__heading {

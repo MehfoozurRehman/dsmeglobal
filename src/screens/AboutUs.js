@@ -321,7 +321,9 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="about__key__difference">
-        <div className="about__key__difference__heading">Key Differences</div>
+        <div className="about__key__difference__heading">
+          Key <span>Differences</span>
+        </div>
         <div className="about__key__difference__content">
           <div className="about__key__difference__content__col">
             <div className="about__key__difference__content__col__info">
@@ -652,15 +654,15 @@ export default function AboutUs() {
             />
             <KeyDifferenceEntry
               svg={<Box size={20} color="currentColor" />}
-              label="Customer Centric (Full Transparency)"
+              label="Recent Achievements"
             />
             <KeyDifferenceEntry
               svg={<Box size={20} color="currentColor" />}
-              label="Customer Centric (Full Transparency)"
+              label="Happy Clients"
             />
             <KeyDifferenceEntry
               svg={<Box size={20} color="currentColor" />}
-              label="Customer Centric (Full Transparency)"
+              label="Countless Testimonials"
             />
           </div>
         </div>

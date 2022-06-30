@@ -42,11 +42,13 @@ export default function Header({ light }) {
   window.addEventListener("scroll", changeBackgrond);
   return (
     <div
-      className={light ? "header header__active" : "header"}
+      className={
+        isScrolling ? "header" : light ? "header header__active" : "header"
+      }
       style={
         isScrolling
           ? { backgroundColor: "white" }
-          : isNavOpen
+          : isNavOpen && window.innerWidth < 1000
           ? { backgroundColor: "white" }
           : null
       }
@@ -59,7 +61,10 @@ export default function Header({ light }) {
           }}
           className="header__content__logo"
         >
-          <img src={light ? logo : logoDark} alt="logo" />
+          <img
+            src={isScrolling ? logoDark : light ? logo : logoDark}
+            alt="logo"
+          />
         </Link>
         {isNavOpen ? (
           <OutsideClickHandler

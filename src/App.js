@@ -40,7 +40,7 @@ export default function App() {
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
       <Header light={lightHeader} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setLightHeader={setLightHeader} />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/web-dev" element={<ServicesWebDev />} />
         <Route path="/services/uiux" element={<ServiceUIUX />} />

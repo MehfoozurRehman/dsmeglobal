@@ -13,6 +13,7 @@ export function HomeJumbotron({
   styleColor,
   styleImage,
   talk,
+  light,
 }) {
   const [taglineNo, setTaglineNo] = useState(0);
   const navigate = useNavigate();
@@ -54,7 +55,13 @@ export function HomeJumbotron({
 
         <div
           className="container__jumbotron__left__info"
-          style={taglines?.length === 0 ? null : { marginTop: "2em" }}
+          style={
+            light
+              ? { color: "white", marginTop: "2em" }
+              : taglines?.length !== 0
+              ? { marginTop: "2em" }
+              : null
+          }
         >
           {info}
         </div>
