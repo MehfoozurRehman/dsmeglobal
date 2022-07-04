@@ -32,7 +32,7 @@ const Blogs = lazy(() => import("./screens/Blogs"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
 const Careers = lazy(() => import("./screens/Careers"));
 const Header = lazy(() => import("./components/Header"));
-
+const Industry = lazy(() => import("./screens/Industry"));
 export default function App() {
   const [lightHeader, setLightHeader] = useState(false);
   SwiperCore.use([Autoplay]);
@@ -60,6 +60,7 @@ export default function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/quote" element={<QuoteScreen />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/industry" element={<Industry />} />
         <Route
           path="/careers"
           element={<Careers setLightHeader={setLightHeader} />}
