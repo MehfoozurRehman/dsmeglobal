@@ -1,5 +1,8 @@
 import React from "react";
 import deliveryPic from "../assets/delivery.png";
+import directionPic from "../assets/te-direction.jpg";
+import rightAngle from "../assets/chevron-right.svg";
+import userPng from "../assets/user.png";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import teams from "../assets/teams.svg";
@@ -142,6 +145,222 @@ export default function PricingDedicated() {
           </div>
         </div>
       </div>
+      <div className="pricing__fitted__team">
+        <div
+          className="pricing__fitted__team__header"
+          id="pricing__getting__started">
+          <div className="pricing__fitted__team__header__heading">
+            How to Get Started?
+          </div>
+        </div>
+        <div className="pricing__fitted__team__content">
+          <div
+            className="pricing__fitted__team__content__entry"
+            id="pricing__fitted__team__content__entry">
+            <div
+              className="pricing__fitted__team__content__entry__sub__heading"
+              id="pricing__fitted__team__content__entry__sub__heading">
+              Suited best when:
+            </div>
+            <ul className="pricing__fitted__team__content__entry__list">
+              <li>
+                Tell us about your project, tech stack, and the kind of team you
+                need.
+              </li>
+              <li>We will match your needs with the best available members.</li>
+              <li>
+                Conduct test trials to determine a good fit in-terms of
+                technical background & communication skills.
+              </li>
+            </ul>
+          </div>
+          <div
+            className="pricing__fitted__team__content__entry"
+            id="pricing__fitted__team__content__entry">
+            <div
+              className="pricing__fitted__team__content__entry__sub__heading"
+              id="pricing__fitted__team__content__entry__sub__heading">
+              Suited best when:
+            </div>
+            <ul className="pricing__fitted__team__content__entry__list">
+              <li>
+                Tell us about your project, tech stack, and the kind of team you
+                need.
+              </li>
+              <li>We will match your needs with the best available members.</li>
+              <li>
+                Conduct test trials to determine a good fit in-terms of
+                technical background & communication skills.
+              </li>
+            </ul>
+          </div>
+          <div
+            className="pricing__fitted__team__content__entry"
+            id="pricing__fitted__team__content__entry">
+            <div
+              className="pricing__fitted__team__content__entry__sub__heading"
+              id="pricing__fitted__team__content__entry__sub__heading">
+              Suited best when:
+            </div>
+            <ul className="pricing__fitted__team__content__entry__list">
+              <li>
+                Tell us about your project, tech stack, and the kind of team you
+                need.
+              </li>
+              <li>We will match your needs with the best available members.</li>
+              <li>
+                Conduct test trials to determine a good fit in-terms of
+                technical background & communication skills.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="pricing__fitted__team">
+        <div className="pricing__fitted__team__header">
+          <div className="pricing__fitted__team__header__heading">
+            Transparent Execution
+          </div>
+          <div className="pricing__fitted__team__header__info">
+            We have entered a new era of uncertainty and unpredictability. To
+            keep you well informed and updated regarding the progress of your
+            project, we employ agile-based project management, with 100% online
+            cloud-based tools to ensure round the clock visibility.
+          </div>
+        </div>
+        <div className="pricing__fitted__team__content">
+          <div className="pricing__transparent__execution__content__entry">
+            <div className="pricing__transparent__execution__content__entry__box">
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__middle">
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
+                  Tasks are maintained on a daily basis. This allows you to get
+                  a quick overview on where the team stands.
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+              </div>
+            </div>
+            <div className="pricing__transparent__execution__content__entry__box">
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__middle">
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
+                  Tasks are maintained on a daily basis. This allows you to get
+                  a quick overview on where the team stands.
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+              </div>
+            </div>
+            <div className="pricing__transparent__execution__content__entry__box">
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__middle">
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
+                  Tasks are maintained on a daily basis. This allows you to get
+                  a quick overview on where the team stands.
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+              </div>
+            </div>
+            <div className="pricing__transparent__execution__content__entry__box">
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__middle">
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
+                    <img src={directionPic} alt="DirectionPic" />
+                  </div>
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
+                  Tasks are maintained on a daily basis. This allows you to get
+                  a quick overview on where the team stands.
+                </div>
+              </div>
+              <div className="pricing__transparent__execution__content__entry__box__icons__left">
+                <div className="pricing__transparent__execution__content__entry__box__right">
+                  <img src={rightAngle} alt="right angle icon" />
+                </div>
+                <div className="pricing__transparent__execution__content__entry__box__left">
+                  <img src={userPng} alt="User Icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
           Why Dedicated Teams with DSMEGlobal?
@@ -190,8 +409,7 @@ export default function PricingDedicated() {
               {DeliveryCardEntry1.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
+                  key={JSON.stringify(item)}>
                   {item}
                 </div>
               ))}
@@ -206,8 +424,7 @@ export default function PricingDedicated() {
               {DeliveryCardEntry2.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
+                  key={JSON.stringify(item)}>
                   {item}
                 </div>
               ))}
@@ -222,8 +439,7 @@ export default function PricingDedicated() {
               {DeliveryCardEntry3.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}
-                >
+                  key={JSON.stringify(item)}>
                   {item}
                 </div>
               ))}
