@@ -6392,7 +6392,22 @@ body {
 .customsoft_first_container_main:hover .customsoft_first_container_button * {
   color: white;
 }
+.customsoft_first_container_main:hover .svg_coustsoft svg {
+  stroke: #fff;
+  fill: none;
+}
+.customsoft_first_container_main:hover .svg__two__coustm svg {
+  stroke: #fff;
+  fill: none;
+}
+.customsoft_second_container_all_main:hover .svg__three_coustm svg {
+  stroke: #fff;
+  fill: none;
+}
 .customsoft_first_container_main:hover .customsoft_first_container_svg svg {
+  color: white;
+}
+.customsoft_first_container_svg svg :hover {
   color: white;
 }
 .customsoft_second_container_all_main:hover {
@@ -6403,7 +6418,7 @@ body {
 .customsoft_second_container_all_main:hover
   .customsoft_second_container_button
   * {
-  color: white;
+  color: #ffffff;
 }
 @media (max-width: 400px) {
   .container__services__right__entry {
