@@ -1725,10 +1725,13 @@ body {
 .pricing__success__stories__slide {
   margin: 0 1em;
   padding: 1em;
+  height: 100%;
+  width: 100%;
 }
 .pricing__success__stories__slide__image {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .pricing__success__stories__slide__image img {
@@ -1777,6 +1780,23 @@ body {
 .swiper-pagination-bullet-active {
   // color: $primary;
   background-color: $primary !important;
+}
+// ----------------------------About Us Section-----------------------
+.about__us__success__stories__slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__us__success__stories__slide__image {
+  // height: 500px;
+  width: 85%;
+}
+.about__us__success__stories__slide__image img {
+  height: 100%;
+  width: 100%;
+  // object-fit: cover;
 }
 // ------------------------Pricing Delivery Section------
 .pricing__delivery__section__content {
@@ -7602,6 +7622,9 @@ body {
   }
   .pricing__process__container__content__bottom__left__top::before {
     display: none;
+  }
+  .about__us__success__stories__slide__image {
+    height: 400px;
   }
 }
 @media (max-width: 1300px) {

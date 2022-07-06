@@ -16,8 +16,8 @@ export function Nav({ navigate }) {
       <NavLink to="/portfolio" navigate={navigate}>
         Portfolio
       </NavLink>
-      <NavLink to="/pricing" navigate={navigate}>
-        Pricing
+      <NavLink to="/industry" navigate={navigate}>
+        Industry
       </NavLink>
       <NavLink to="/careers" navigate={navigate}>
         Careers

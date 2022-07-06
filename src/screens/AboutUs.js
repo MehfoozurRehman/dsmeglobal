@@ -27,6 +27,14 @@ import sdappfuturaBadge from "../assets/sdappfutura-badge.jpg";
 import webappusfuturaBadge from "../assets/webappusfutura-badge.jpg";
 import webappfuturaBadge from "../assets/webappfutura-badge.jpg";
 import topAppPic from "../assets/topapp.jpg";
+import AboutUsEndveoursPic from "../assets/About__us__endveours.jpeg";
+import pressRelasePic1 from "../assets/pressRelase1.jpg";
+import pressRelasePic2 from "../assets/pressRelase2.jpg";
+import pressRelasePic3 from "../assets/pressRelase3.jpg";
+import pressRelasePic4 from "../assets/pressRelase4.jpg";
+import pressRelasePic5 from "../assets/pressRelase5.jpg";
+import pressRelasePic6 from "../assets/pressRelase6.jpg";
+
 export default function AboutUs() {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [slidesPerViewLogo, setSlidesPerViewLogo] = useState(4);
@@ -999,68 +1007,88 @@ export default function AboutUs() {
           className="pricing__fitted__team__header"
           id="pricing__success__stories__team__header">
           <div className="pricing__fitted__team__header__heading">
-            Success Stories
+            Our Endeavors
           </div>
         </div>
         <div className="pricing__fitted__team__content">
-          <Swiper slidesPerView={slidesPerView} autoplay>
+          <Swiper slidesPerView={1} autoplay>
+            <SwiperSlide>
+              <div className="about__us__success__stories__slide">
+                <div className="about__us__success__stories__slide__image">
+                  <img src={AboutUsEndveoursPic} alt="Story Image" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="about__us__success__stories__slide">
+                <div className="about__us__success__stories__slide__image">
+                  <img src={AboutUsEndveoursPic} alt="Story Image" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="about__us__success__stories__slide">
+                <div className="about__us__success__stories__slide__image">
+                  <img src={AboutUsEndveoursPic} alt="Story Image" />
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+      <div className="pricing__fitted__team">
+        <div
+          className="pricing__fitted__team__header"
+          id="pricing__success__stories__team__header">
+          <div className="pricing__fitted__team__header__heading">
+            Press Releases
+          </div>
+        </div>
+        <div className="pricing__fitted__team__content">
+          <Swiper
+            slidesPerView={slidesPerView}
+            autoplay
+            navigation
+            pagination={{ clickable: true }}>
             <SwiperSlide>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
-                  <img src={StoryPic} alt="Story Image" />
-                </div>
-                <div className="pricing__success__stories__slide__logo">
-                  <img src={brandLogo} alt="Brand Logo" />
-                </div>
-                <div className="pricing__success__stories__slide__info">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Repellat exercitationem architecto error a sequi officiis nam
-                  excepturi repudiandae aliquid ipsam.
+                  <img src={pressRelasePic1} alt="Story Image" />
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
-                  <img src={StoryPic} alt="Story Image" />
-                </div>
-                <div className="pricing__success__stories__slide__logo">
-                  <img src={brandLogo} alt="Brand Logo" />
-                </div>
-                <div className="pricing__success__stories__slide__info">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Repellat exercitationem architecto error a sequi officiis nam
-                  excepturi repudiandae aliquid ipsam.
+                  <img src={pressRelasePic2} alt="Story Image" />
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
-                  <img src={StoryPic} alt="Story Image" />
-                </div>
-                <div className="pricing__success__stories__slide__logo">
-                  <img src={brandLogo} alt="Brand Logo" />
-                </div>
-                <div className="pricing__success__stories__slide__info">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Repellat exercitationem architecto error a sequi officiis nam
-                  excepturi repudiandae aliquid ipsam.
+                  <img src={pressRelasePic3} alt="Story Image" />
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
-                  <img src={StoryPic} alt="Story Image" />
+                  <img src={pressRelasePic4} alt="Story Image" />
                 </div>
-                <div className="pricing__success__stories__slide__logo">
-                  <img src={brandLogo} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img src={pressRelasePic5} alt="Story Image" />
                 </div>
-                <div className="pricing__success__stories__slide__info">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Repellat exercitationem architecto error a sequi officiis nam
-                  excepturi repudiandae aliquid ipsam.
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img src={pressRelasePic6} alt="Story Image" />
                 </div>
               </div>
             </SwiperSlide>
