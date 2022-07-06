@@ -1908,13 +1908,16 @@ body {
 .pricing__process__container__content__bottom__left__middle__button {
   height: 38px;
   flex: 1 1 45%;
-  padding: 0 1em;
+  padding: 1em;
   font-size: 14px;
-  background: linear-gradient(to bottom, $primary, black);
+  font-weight: bold;
+  // background: linear-gradient(to bottom, $primary, black);
+  background-color: black;
   margin: 0.3rem;
   border-radius: 5px;
   color: white;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }

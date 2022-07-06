@@ -62,7 +62,7 @@ export default function Pricing() {
                 Initial Discovery
               </div>
               <div className="pricing__process__container__content__bottom__left__middle">
-                <div className="pricing__process__container__content__bottom__left__middle__button pricing__button__1st">
+                <div className="pricing__process__container__content__bottom__left__middle__button ">
                   Assessment
                 </div>
                 <div className="pricing__process__container__content__bottom__left__middle__button">
@@ -76,76 +76,77 @@ export default function Pricing() {
                     or It will be meetings and assess what you already have.
                   </li>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    If we feel that the requirements are enough for us to
+                    provide you with a tentative cost/effort estimate - we go
+                    down that route. Otherwise, we recommend that you go through
+                    our Agile Discovery Workshop to get you development ready.
                   </li>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    Otherwise, we recommend that you go through our Agile
+                    Discovery Workshop to get you development ready.
                   </li>
                 </ul>
               </div>
             </div>
             <div className="pricing__process__container__content__bottom__left">
               <div className="pricing__process__container__content__bottom__left__top">
-                Initial Discovery
+                Develop
               </div>
               <div className="pricing__process__container__content__bottom__left__middle">
                 <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Assessment
+                  Detailed Discovery
                 </div>
                 <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Deep Dive
+                  Design
                 </div>
                 <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Deep Dive
+                  Development & QA
                 </div>
                 <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Deep Dive
+                  UAT
                 </div>
               </div>
               <div className="pricing__process__container__content__bottom__left__bottom">
                 <ul>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    We start off with doing a detailed discovery as a first
+                    milestone, where we revisit the initial requirements and
+                    make them more detailed (user stories, wire-frames,
+                    non-functional requirements).
                   </li>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    On the basis of this, we draft a statement of work and
+                    provide a detailed project & payment plan
                   </li>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    The remaining milestones are about delivering the scope of
+                    work defined during detailed discovery.
                   </li>
                 </ul>
               </div>
             </div>
             <div className="pricing__process__container__content__bottom__left">
               <div className="pricing__process__container__content__bottom__left__top">
-                Initial Discovery
+                Go Live
               </div>
               <div className="pricing__process__container__content__bottom__left__middle">
                 <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Assessment
+                  Pilot
                 </div>
                 <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Deep Dive
+                  Support & Transition
                 </div>
               </div>
               <div className="pricing__process__container__content__bottom__left__bottom">
                 <ul>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    Once the product has gone through the User Acceptance
+                    Testing stage, we successfully launch it while providing
+                    ongoing support & maintenance during the Pilot phase.
                   </li>
                   <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
-                  </li>
-                  <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
+                    After that, we can either transition everything to your team
+                    or move to a monthly Support & Maintenance contract.
                   </li>
                 </ul>
               </div>
