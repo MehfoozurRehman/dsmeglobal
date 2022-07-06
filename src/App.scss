@@ -1716,6 +1716,35 @@ body {
   color: $black;
   margin-bottom: 1em;
 }
+
+// -------------------Suceess Story Section--------------------
+
+#pricing__success__stories__team__header {
+  margin: 0;
+}
+.pricing__success__stories__slide {
+  margin: 0 1em;
+  padding: 1em;
+}
+.pricing__success__stories__slide__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pricing__success__stories__slide__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.pricing__success__stories__slide__logo {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.pricing__success__stories__slide__logo img {
+  height: 100%;
+}
 .pricing__delivery__section__content__card__content {
   flex: 1;
   display: flex;
@@ -1723,14 +1752,33 @@ body {
   height: 420px;
   flex-wrap: wrap;
 }
-
+// ------------------Awards Section--------------------
+.pricing__awards__achievements__slide__logo {
+  height: 150px;
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+}
+.pricing__awards__achievements__slide__logo img {
+  height: 100%;
+}
 .pricing__delivery__section__img {
   width: 100%;
   mix-blend-mode: luminosity;
   border-radius: 10px;
   margin-bottom: 4em;
 }
-
+.swiper-button-prev::after {
+  color: $primary;
+}
+.swiper-button-next::after {
+  color: $primary;
+}
+.swiper-pagination-bullet-active {
+  // color: $primary;
+  background-color: $primary !important;
+}
+// ------------------------Pricing Delivery Section------
 .pricing__delivery__section__content {
   display: flex;
   justify-content: space-between;

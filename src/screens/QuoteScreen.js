@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import quote from "../assets/quote.svg";
 import Input from "../components/Input";
 import { fetcher } from "../utils/functions";
 import axios from "axios";
 import useSWR from "swr";
 
-export default function QuoteScreen() {
+export default function QuoteScreen({ setNoShowContactUs }) {
   const { data } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
     { suspense: true }
   );
+  useEffect(() => {
+    setNoShowContactUs(false);
+
+    return () => {
+      setNoShowContactUs(true);
+    };
+  }, []);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -48,8 +56,7 @@ export default function QuoteScreen() {
                   console.log("data submited");
                 });
             }}
-            className="contact__section__content__middle"
-          >
+            className="contact__section__content__middle">
             <div className="contact__section__content__middle__header">
               <div className="contact__section__content__middle__sub__heading">
                 Tell us about your project

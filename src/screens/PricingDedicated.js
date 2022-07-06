@@ -1,5 +1,4 @@
-import React from "react";
-import deliveryPic from "../assets/delivery.png";
+import React, { useEffect, useState } from "react";
 import directionPic from "../assets/te-direction.jpg";
 import rightAngle from "../assets/chevron-right.svg";
 import userPng from "../assets/user.png";
@@ -7,8 +6,58 @@ import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import teams from "../assets/teams.svg";
 import { Box } from "react-feather";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import StoryPic from "../assets/fw-airlines.jpg";
+import brandLogo from "../assets/6.png";
+import clutch from "../assets/top-clutch.png";
+import topSoftwarePic from "../assets/top-software.png";
+import topMobileAppCompany from "../assets/top-mobile-app-development-company-badge-1.png";
+import subtractPng from "../assets/subtract.png";
+import softwareUsa from "../assets/software-usa.png";
+import itrateco from "../assets/itrateco.png";
+import fastestGrowingApp from "../assets/fastest-growing-app.png";
+import designrush from "../assets/designrush.png";
+import designWorkImageMob from "../assets/design-work-image-mob.png";
+import appfuturaBadge from "../assets/appfutura-badge.jpg";
+import softwaredev from "../assets/softwaredev.png";
+import sdappfuturaBadge from "../assets/sdappfutura-badge.jpg";
+import webappusfuturaBadge from "../assets/webappusfutura-badge.jpg";
+import webappfuturaBadge from "../assets/webappfutura-badge.jpg";
+import topAppPic from "../assets/topapp.jpg";
 
 export default function PricingDedicated() {
+  const [slidesPerView, setSlidesPerView] = useState(3);
+  const [slidesPerViewLogo, setSlidesPerViewLogo] = useState(4);
+  const [showNavigation, setShowNavigation] = useState(true);
+
+  function getSlidesPerView() {
+    if (window.innerWidth < 400) {
+      setSlidesPerView(1);
+      setSlidesPerViewLogo(1);
+    } else if (window.innerWidth < 500) {
+      setSlidesPerView(1);
+      setSlidesPerViewLogo(1);
+    } else if (window.innerWidth < 750) {
+      setSlidesPerView(2);
+      setSlidesPerViewLogo(2);
+    } else if (window.innerWidth < 1000) {
+      setShowNavigation(false);
+      setSlidesPerViewLogo(3);
+    } else {
+      setSlidesPerView(3);
+      setSlidesPerViewLogo(4);
+      setShowNavigation(true);
+    }
+  }
+  useEffect(() => {
+    getSlidesPerView();
+    window.addEventListener("resize", getSlidesPerView);
+
+    return () => {
+      window.removeEventListener("resize", getSlidesPerView);
+    };
+  }, []);
   const DeliveryCardEntry1 = [
     "Web",
     "Mobile",
@@ -445,6 +494,172 @@ export default function PricingDedicated() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+      <div className="pricing__fitted__team">
+        <div
+          className="pricing__fitted__team__header"
+          id="pricing__success__stories__team__header">
+          <div className="pricing__fitted__team__header__heading">
+            Success Stories
+          </div>
+        </div>
+        <div className="pricing__fitted__team__content">
+          <Swiper slidesPerView={slidesPerView} autoplay>
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img src={StoryPic} alt="Story Image" />
+                </div>
+                <div className="pricing__success__stories__slide__logo">
+                  <img src={brandLogo} alt="Brand Logo" />
+                </div>
+                <div className="pricing__success__stories__slide__info">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat exercitationem architecto error a sequi officiis nam
+                  excepturi repudiandae aliquid ipsam.
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img src={StoryPic} alt="Story Image" />
+                </div>
+                <div className="pricing__success__stories__slide__logo">
+                  <img src={brandLogo} alt="Brand Logo" />
+                </div>
+                <div className="pricing__success__stories__slide__info">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat exercitationem architecto error a sequi officiis nam
+                  excepturi repudiandae aliquid ipsam.
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img src={StoryPic} alt="Story Image" />
+                </div>
+                <div className="pricing__success__stories__slide__logo">
+                  <img src={brandLogo} alt="Brand Logo" />
+                </div>
+                <div className="pricing__success__stories__slide__info">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat exercitationem architecto error a sequi officiis nam
+                  excepturi repudiandae aliquid ipsam.
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__success__stories__slide">
+                <div className="pricing__success__stories__slide__image">
+                  <img src={StoryPic} alt="Story Image" />
+                </div>
+                <div className="pricing__success__stories__slide__logo">
+                  <img src={brandLogo} alt="Brand Logo" />
+                </div>
+                <div className="pricing__success__stories__slide__info">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat exercitationem architecto error a sequi officiis nam
+                  excepturi repudiandae aliquid ipsam.
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+      <div className="pricing__fitted__team">
+        <div className="pricing__fitted__team__header">
+          <div className="pricing__fitted__team__header__heading">
+            Awards & Achievements
+          </div>
+          <div className="pricing__fitted__team__header__info">
+            We are proud to be recognized as a top service provider by these
+            platforms.
+          </div>
+        </div>
+        <div className="pricing__fitted__team__content">
+          <Swiper
+            slidesPerView={slidesPerViewLogo}
+            modules={[Navigation, Pagination]}
+            // loop
+            // spaceBetween={30}
+            navigation={showNavigation ? true : false}
+            pagination={!showNavigation ? { clickable: true } : false}>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={clutch} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={designWorkImageMob} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={topSoftwarePic} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={topMobileAppCompany} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={clutch} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={subtractPng} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={fastestGrowingApp} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={designrush} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={softwareUsa} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={itrateco} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={appfuturaBadge} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={softwaredev} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={webappfuturaBadge} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={topAppPic} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={webappusfuturaBadge} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={softwaredev} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={sdappfuturaBadge} alt="Brand Logo" />
+              </div>
+              <div className="pricing__awards__achievements__slide__logo">
+                <img src={softwaredev} alt="Brand Logo" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>

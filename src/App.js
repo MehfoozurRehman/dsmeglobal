@@ -2,10 +2,13 @@ import React, { lazy, Suspense, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 import SwiperCore, { Autoplay } from "swiper";
+import ContactUsBottom from "./screens/ContactUsBottom";
 
 import "./App.scss";
 import "animate.css";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const ServiceCustomSoft = lazy(() => import("./screens/ServiceCustomSoft"));
 const ServiceBlockChain = lazy(() => import("./screens/ServiceBlockChain"));
@@ -33,8 +36,10 @@ const BlogDetails = lazy(() => import("./screens/BlogDetails"));
 const Careers = lazy(() => import("./screens/Careers"));
 const Header = lazy(() => import("./components/Header"));
 const Industry = lazy(() => import("./screens/Industry"));
+
 export default function App() {
   const [lightHeader, setLightHeader] = useState(false);
+  const [noShowContactUs, setNoShowContactUs] = useState(true);
   SwiperCore.use([Autoplay]);
   return (
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
@@ -57,8 +62,14 @@ export default function App() {
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/pricing-dedicated-teams" element={<PricingDedicated />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/quote" element={<QuoteScreen />} />
+        <Route
+          path="/contact-us"
+          element={<ContactUs setNoShowContactUs={setNoShowContactUs} />}
+        />
+        <Route
+          path="/quote"
+          element={<QuoteScreen setNoShowContactUs={setNoShowContactUs} />}
+        />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/industry" element={<Industry />} />
         <Route
@@ -69,6 +80,7 @@ export default function App() {
         <Route path="/meet-us" element={<MeetUs />} />
       </Routes>
 
+      {noShowContactUs ? <ContactUsBottom /> : null}
       <Footer />
     </Suspense>
   );
