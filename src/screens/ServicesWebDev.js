@@ -31,7 +31,7 @@ export default function ServicesWebDev() {
               transform="translate(125.54 2290)"
               stroke="rgba(0,0,0,0)"
               stroke-miterlimit="10"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </g>
         </svg>
@@ -222,7 +222,7 @@ export default function ServicesWebDev() {
                   transform="translate(25.5 -168.487)"
                   stroke="rgba(0,0,0,0)"
                   stroke-miterlimit="10"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
               </svg>
             }
@@ -263,7 +263,7 @@ export default function ServicesWebDev() {
                   transform="translate(25.5 -168.5)"
                   stroke="rgba(0,0,0,0)"
                   stroke-miterlimit="10"
-                  stroke-width="1"
+                  strokeWidth="1"
                 />
               </svg>
             }

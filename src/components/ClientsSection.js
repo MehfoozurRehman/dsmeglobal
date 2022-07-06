@@ -6,7 +6,7 @@ import useSWR from "swr";
 export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_client`,
+    `${process.env.REACT_APP_API_URL}api/v1/get_techonologies`,
     fetcher,
     { suspense: true }
   );
@@ -17,8 +17,10 @@ export function ClientsSection() {
       setSlidesPerView(2);
     } else if (window.innerWidth < 750) {
       setSlidesPerView(3);
-    } else {
+    } else if (window.innerWidth < 1200) {
       setSlidesPerView(4);
+    } else {
+      setSlidesPerView(5);
     }
   }
   useEffect(() => {
@@ -28,7 +30,9 @@ export function ClientsSection() {
   return (
     <div className="container__clients">
       <div className="container__clients__left">
-        <div className="container__clients__left__heading">Our Clients</div>
+        <div className="container__clients__left__heading">
+          Our Techonologies
+        </div>
         <div className="container__clients__left__info">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nostrum.
         </div>
@@ -44,7 +48,7 @@ export function ClientsSection() {
                   <img
                     src={
                       "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      client.logo
+                      client.icon
                     }
                     alt={client.title}
                   />

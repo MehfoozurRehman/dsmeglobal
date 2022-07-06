@@ -669,7 +669,7 @@ export default function AboutUs() {
                       transform="translate(-6309.986 3426.321)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11285"
@@ -678,7 +678,7 @@ export default function AboutUs() {
                       transform="translate(-6309.986 3426.321)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11286"
@@ -687,7 +687,7 @@ export default function AboutUs() {
                       transform="translate(-6309.986 3426.321)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11287"
@@ -696,7 +696,7 @@ export default function AboutUs() {
                       transform="translate(-6309.986 3426.321)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11288"
@@ -705,7 +705,7 @@ export default function AboutUs() {
                       transform="translate(-6309.986 3426.321)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11291"
@@ -714,7 +714,7 @@ export default function AboutUs() {
                       transform="translate(-6309.986 3426.321)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -741,7 +741,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11240"
@@ -750,7 +750,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11241"
@@ -759,7 +759,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11244"
@@ -768,7 +768,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11251"
@@ -777,7 +777,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11252"
@@ -786,7 +786,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                     <path
                       id="Path_11253"
@@ -795,7 +795,7 @@ export default function AboutUs() {
                       transform="translate(-6102.26 3545.949)"
                       fill="#189366"
                       stroke="#189366"
-                      stroke-width="1"
+                      strokeWidth="1"
                     />
                   </g>
                 </svg>
@@ -823,7 +823,7 @@ export default function AboutUs() {
                         transform="translate(-6038.92 3559.629)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="1"
+                        strokeWidth="1"
                       />
                       <path
                         id="Path_11260"
@@ -832,7 +832,7 @@ export default function AboutUs() {
                         transform="translate(-6038.92 3559.629)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="1"
+                        strokeWidth="1"
                       />
                       <path
                         id="Path_11270"
@@ -841,7 +841,7 @@ export default function AboutUs() {
                         transform="translate(-6038.92 3559.629)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="1"
+                        strokeWidth="1"
                       />
                       <path
                         id="Path_11271"
@@ -850,7 +850,7 @@ export default function AboutUs() {
                         transform="translate(-6038.92 3559.629)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="1"
+                        strokeWidth="1"
                       />
                       <path
                         id="Path_11272"
@@ -859,7 +859,7 @@ export default function AboutUs() {
                         transform="translate(-6038.92 3559.629)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="1"
+                        strokeWidth="1"
                       />
                     </g>
                   </g>
@@ -888,7 +888,7 @@ export default function AboutUs() {
                         transform="translate(-6044.78 3554.814)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_11278"
@@ -897,7 +897,7 @@ export default function AboutUs() {
                         transform="translate(-6044.78 3554.814)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_11279"
@@ -906,7 +906,7 @@ export default function AboutUs() {
                         transform="translate(-6044.78 3554.814)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                       <path
                         id="Path_11280"
@@ -915,7 +915,7 @@ export default function AboutUs() {
                         transform="translate(-6044.78 3554.814)"
                         fill="#189366"
                         stroke="#189366"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                     </g>
                   </g>
