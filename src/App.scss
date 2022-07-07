@@ -1607,9 +1607,12 @@ body {
   display: flex;
   width: 25%;
 }
-
+.pricing__transparent__execution__content__entry__box__left {
+  display: flex;
+  justify-content: flex-end;
+}
 .pricing__transparent__execution__content__entry__box__left img {
-  height: 40px;
+  height: 50px;
 }
 .pricing__transparent__execution__content__entry__box__right {
   width: 50%;
@@ -1620,15 +1623,21 @@ body {
 .pricing__transparent__execution__content__entry__box__right::before {
   content: "";
   position: absolute;
-  left: 5px;
+  left: 6px;
   top: 50%;
-  border-top: 1px dashed black;
+  border-top: 1px dashed $primary;
   width: 80%;
   height: 1px;
 }
 .pricing__transparent__execution__content__entry__box__right img {
   height: 30px;
+  stroke: $primary;
 }
+.pricing__transparent__execution__content__entry__box__right img svg {
+  height: 30px;
+  stroke: $primary;
+}
+
 .pricing__transparent__execution__content__entry__box__icons__middle {
   width: 50%;
   background-color: #f2fdfd;
@@ -1674,6 +1683,16 @@ body {
   flex-direction: column;
   margin-right: 2em;
 }
+.pricing__delivery__section__content__card__para::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 15px;
+  width: 10%;
+  height: 120%;
+  border-right: 1px dashed $primary;
+  // background-color: rgba(255, 0, 0, 0.5);
+}
 .pricing__delivery__section__content__card:nth-child(3)
   .pricing__delivery__section__content__card__para::after {
   content: "";
@@ -1684,21 +1703,13 @@ body {
   height: 120%;
   border-right: 1px dashed #bb6bd9;
 }
-.pricing__delivery__section__content__card__para::after {
-  content: "";
-  position: absolute;
-  left: calc(-2em + -2px);
-  top: 15px;
-  width: 10%;
-  height: 120%;
-  border-right: 1px dashed $primary;
-  // background-color: rgba(255, 0, 0, 0.5);
-}
+
 .pricing__delivery__section__content__card__para:last-child::after {
   content: "";
   position: absolute;
   left: -35px;
   top: 15px;
+  display: none;
   width: 0%;
   height: 0%;
 }
@@ -1706,10 +1717,7 @@ body {
 .pricing__delivery__section__content__card__para:nth-child(20)::after {
   content: "";
   position: absolute;
-  left: -35px;
-  top: 15px;
-  width: 0%;
-  height: 0%;
+  display: none;
 }
 
 .pricing__delivery__section__content__card:nth-child(2) * ::before {
@@ -5559,13 +5567,14 @@ body {
 .pricing__fitted__team__content__entry__box__one {
   flex: 1;
   border-radius: 10px;
-background-color: #000000da;
-color: white;
+  background-color: #000000da;
+  color: white;
   padding: 3em;
   padding-bottom: 1.5em;
   margin: 1em;
 }
-  .pricing__fitted__team__content__entry__box__one .pricing__fitted__team__content__entry__sub__heading{
+.pricing__fitted__team__content__entry__box__one
+  .pricing__fitted__team__content__entry__sub__heading {
   color: rgba(255, 255, 255, 0.89);
 }
 .pricing__fitted__team__content__entry {
@@ -7654,7 +7663,7 @@ color: white;
     display: none;
   }
   .about__us__success__stories__slide__image {
-    height: 400px;
+    width: 100%;
   }
 }
 @media (max-width: 1300px) {

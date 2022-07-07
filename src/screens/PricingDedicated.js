@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import directionPic from "../assets/te-direction.jpg";
 import rightAngle from "../assets/chevron-right.svg";
-import userPng from "../assets/user.png";
+import userPng from "../assets/personIcon.svg";
 import PricingFeatureEntry from "../components/PricingFeatureEntry";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import teams from "../assets/teams.svg";
@@ -24,7 +24,13 @@ import softwaredev from "../assets/softwaredev.png";
 import sdappfuturaBadge from "../assets/sdappfutura-badge.jpg";
 import webappusfuturaBadge from "../assets/webappusfutura-badge.jpg";
 import webappfuturaBadge from "../assets/webappfutura-badge.jpg";
+import logoDark from "../assets/logoDark.svg";
+
 import topAppPic from "../assets/topapp.jpg";
+import teAvatar from "../assets/te-avatar.svg";
+import teGoogle from "../assets/te-google-mailer.svg";
+import teFigma from "../assets/te-figma-logo.svg";
+import teZoom from "../assets/te-zoom-logo.svg";
 
 export default function PricingDedicated() {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -294,7 +300,7 @@ export default function PricingDedicated() {
                     <img src={directionPic} alt="DirectionPic" />
                   </div>
                   <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
+                    <img src={teAvatar} alt="DirectionPic" />
                   </div>
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
@@ -307,7 +313,7 @@ export default function PricingDedicated() {
                   <img src={rightAngle} alt="right angle icon" />
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__left">
-                  <img src={userPng} alt="User Icon" />
+                  <img src={logoDark} alt="User Icon" />
                 </div>
               </div>
             </div>
@@ -323,15 +329,16 @@ export default function PricingDedicated() {
               <div className="pricing__transparent__execution__content__entry__box__icons__middle">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                   <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
+                    <img src={teGoogle} alt="GoogleMailerLogo" />
                   </div>
                   <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
+                    <img src={teFigma} alt="FigmaLogo" />
                   </div>
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
-                  Tasks are maintained on a daily basis. This allows you to get
-                  a quick overview on where the team stands.
+                  Each team member posts a daily update on email/slack. This
+                  includes tasks done today, tasks planned for tomorrow and
+                  blockers.
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__left">
@@ -339,7 +346,7 @@ export default function PricingDedicated() {
                   <img src={rightAngle} alt="right angle icon" />
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__left">
-                  <img src={userPng} alt="User Icon" />
+                  <img src={logoDark} alt="User Icon" />
                 </div>
               </div>
             </div>
@@ -355,15 +362,13 @@ export default function PricingDedicated() {
               <div className="pricing__transparent__execution__content__entry__box__icons__middle">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                   <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
-                  </div>
-                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
+                    <img src={teZoom} alt="ZoomLogo" />
                   </div>
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
-                  Tasks are maintained on a daily basis. This allows you to get
-                  a quick overview on where the team stands.
+                  Depending on how involved the client wants to be, daily or
+                  weekly scrum calls are set up to stay on top of what's going
+                  on within the project.
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__left">
@@ -371,7 +376,7 @@ export default function PricingDedicated() {
                   <img src={rightAngle} alt="right angle icon" />
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__left">
-                  <img src={userPng} alt="User Icon" />
+                  <img src={logoDark} alt="User Icon" />
                 </div>
               </div>
             </div>
@@ -387,15 +392,12 @@ export default function PricingDedicated() {
               <div className="pricing__transparent__execution__content__entry__box__icons__middle">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                   <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
-                  </div>
-                  <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                    <img src={directionPic} alt="DirectionPic" />
+                    <img src={teZoom} alt="GoogleMailerLogo" />
                   </div>
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
-                  Tasks are maintained on a daily basis. This allows you to get
-                  a quick overview on where the team stands.
+                  On every Friday, we give you a live demo of work done during
+                  that sprint.
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__left">
@@ -403,7 +405,7 @@ export default function PricingDedicated() {
                   <img src={rightAngle} alt="right angle icon" />
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__left">
-                  <img src={userPng} alt="User Icon" />
+                  <img src={logoDark} alt="User Icon" />
                 </div>
               </div>
             </div>
