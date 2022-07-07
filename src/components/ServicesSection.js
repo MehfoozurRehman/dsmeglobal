@@ -47,6 +47,9 @@ export function ServicesSection() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sed
             sequi tempore minus, eum laborum voluptatibus non, est veritatis,
           </div>
+          <div className="container__services__button__container">
+          <button className="container__services__button">View all services</button>
+          </div>
         </div>
         <div className="container__services__right">
           {data.map((item) => (

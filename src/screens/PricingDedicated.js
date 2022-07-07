@@ -204,7 +204,7 @@ export default function PricingDedicated() {
         </div>
         <div className="pricing__fitted__team__content">
           <div
-            className="pricing__fitted__team__content__entry"
+            className="pricing__fitted__team__content__entry__box__one"
             id="pricing__fitted__team__content__entry">
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
@@ -224,7 +224,7 @@ export default function PricingDedicated() {
             </ul>
           </div>
           <div
-            className="pricing__fitted__team__content__entry"
+            className="pricing__fitted__team__content__entry__box__one"
             id="pricing__fitted__team__content__entry">
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
@@ -244,7 +244,7 @@ export default function PricingDedicated() {
             </ul>
           </div>
           <div
-            className="pricing__fitted__team__content__entry"
+            className="pricing__fitted__team__content__entry__box__one"
             id="pricing__fitted__team__content__entry">
             <div
               className="pricing__fitted__team__content__entry__sub__heading"

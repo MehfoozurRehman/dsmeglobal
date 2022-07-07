@@ -323,6 +323,23 @@ body {
   position: relative;
   overflow: hidden;
 }
+.container__services__button {
+  background-color: #189366;
+  color: white;
+  border: none;
+  height: 35px;
+  width: 150px;
+  margin-top: 1.5em;
+  border-radius: 6px;
+}
+.container__services__button :hover {
+  cursor: pointer;
+  background-color: #0d6e4b;
+}
+.container__services__button__container :hover {
+  cursor: pointer;
+  background-color: #0d6e4b;
+}
 .container__services::after {
   content: "";
   width: 300px;
@@ -5539,9 +5556,22 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.pricing__fitted__team__content__entry__box__one {
+  flex: 1;
+  border-radius: 10px;
+background-color: #000000da;
+color: white;
+  padding: 3em;
+  padding-bottom: 1.5em;
+  margin: 1em;
+}
+  .pricing__fitted__team__content__entry__box__one .pricing__fitted__team__content__entry__sub__heading{
+  color: rgba(255, 255, 255, 0.89);
+}
 .pricing__fitted__team__content__entry {
   flex: 1;
-  background-color: rgba(13, 110, 74, 0.1);
+  border: 2px solid #189366;
+  border-radius: 10px;
   padding: 3em;
   padding-bottom: 1.5em;
   margin: 1em;
