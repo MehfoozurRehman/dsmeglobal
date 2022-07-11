@@ -51,14 +51,16 @@ export default function Header({ light }) {
           : isNavOpen && window.innerWidth < 1000
           ? { backgroundColor: "white" }
           : null
-      }>
+      }
+    >
       <div className="header__content">
         <Link
           to="/"
           onClick={() => {
             document.getElementById("Home").checked = true;
           }}
-          className="header__content__logo">
+          className="header__content__logo"
+        >
           <img
             src={isScrolling ? logoDark : light ? logo : logoDark}
             alt="logo"
@@ -70,7 +72,8 @@ export default function Header({ light }) {
               if (window.innerWidth < 1000) {
                 setIsNavOpen(false);
               }
-            }}>
+            }}
+          >
             <Nav navigate={navigate} />
           </OutsideClickHandler>
         ) : null}
@@ -79,7 +82,8 @@ export default function Header({ light }) {
             className="header__content__button__secondary"
             onClick={() => {
               setIsNavOpen(!isNavOpen);
-            }}>
+            }}
+          >
             {isNavOpen ? (
               <X size={20} color="currentColor" />
             ) : (
@@ -98,7 +102,8 @@ export default function Header({ light }) {
                   });
               });
             }}
-            className="header__content__button__primary">
+            className="header__content__button__primary"
+          >
             Get a Quote
           </Link>
         </div>

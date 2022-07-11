@@ -4,7 +4,6 @@ import visionSvg from "../assets/visionSvg.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import about from "../assets/about.svg";
 import ceo from "../assets/ceo.png";
-import { Box } from "react-feather";
 import { PromiseEntry } from "../components/PromiseEntry";
 import { CoreValueEntry } from "../components/CoreValueEntry";
 import { KeyDifferenceEntry } from "../components/KeyDifferenceEntry";
@@ -116,11 +115,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 166.178 166.099">
+                viewBox="0 0 166.178 166.099"
+              >
                 <g
                   id="Group_49"
                   data-name="Group 49"
-                  transform="translate(-193.985 -8398.595)">
+                  transform="translate(-193.985 -8398.595)"
+                >
                   <g id="Group_48" data-name="Group 48">
                     <g id="Group_47" data-name="Group 47">
                       <path
@@ -162,11 +163,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 175.113 169.042">
+                viewBox="0 0 175.113 169.042"
+              >
                 <g
                   id="Group_50"
                   data-name="Group 50"
-                  transform="translate(-518.867 -8407.365)">
+                  transform="translate(-518.867 -8407.365)"
+                >
                   <path
                     id="Path_281"
                     data-name="Path 281"
@@ -186,11 +189,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 206.907 156.528">
+                viewBox="0 0 206.907 156.528"
+              >
                 <g
                   id="Group_51"
                   data-name="Group 51"
-                  transform="translate(-899.442 -8417.537)">
+                  transform="translate(-899.442 -8417.537)"
+                >
                   <path
                     id="Path_282"
                     data-name="Path 282"
@@ -216,11 +221,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 115.541 191.56">
+                viewBox="0 0 115.541 191.56"
+              >
                 <g
                   id="Group_52"
                   data-name="Group 52"
-                  transform="translate(-1294.475 -8390.99)">
+                  transform="translate(-1294.475 -8390.99)"
+                >
                   <path
                     id="Path_284"
                     data-name="Path 284"
@@ -247,7 +254,8 @@ export default function AboutUs() {
         </div>
         <div
           className="about__core__values__content"
-          style={{ marginTop: -30 }}>
+          style={{ marginTop: -30 }}
+        >
           <PromiseEntry
             svg={
               <svg
@@ -255,11 +263,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 173.981 167.949">
+                viewBox="0 0 173.981 167.949"
+              >
                 <g
                   id="Group_53"
                   data-name="Group 53"
-                  transform="translate(-151.02 -8904.959)">
+                  transform="translate(-151.02 -8904.959)"
+                >
                   <path
                     id="Path_285"
                     data-name="Path 285"
@@ -279,11 +289,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 165.783 165.787">
+                viewBox="0 0 165.783 165.787"
+              >
                 <g
                   id="Group_54"
                   data-name="Group 54"
-                  transform="translate(-483.474 -8904.083)">
+                  transform="translate(-483.474 -8904.083)"
+                >
                   <path
                     id="Path_286"
                     data-name="Path 286"
@@ -309,11 +321,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 165.793 139.648">
+                viewBox="0 0 165.793 139.648"
+              >
                 <g
                   id="Group_55"
                   data-name="Group 55"
-                  transform="translate(-877.315 -8891.035)">
+                  transform="translate(-877.315 -8891.035)"
+                >
                   <path
                     id="Path_288"
                     data-name="Path 288"
@@ -333,11 +347,13 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 165.934 165.662">
+                viewBox="0 0 165.934 165.662"
+              >
                 <g
                   id="Group_56"
                   data-name="Group 56"
-                  transform="translate(-1244.081 -8893.806)">
+                  transform="translate(-1244.081 -8893.806)"
+                >
                   <path
                     id="Path_289"
                     data-name="Path 289"
@@ -382,11 +398,13 @@ export default function AboutUs() {
                   width="60"
                   height="50"
                   viewBox="0 0 179.892 181.891"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <g
                     id="Group_1"
                     data-name="Group 1"
-                    transform="translate(-669.878 -63.639)">
+                    transform="translate(-669.878 -63.639)"
+                  >
                     <path
                       id="Path_1"
                       data-name="Path 1"
@@ -515,7 +533,8 @@ export default function AboutUs() {
                   width="167.428"
                   height="167.27"
                   viewBox="0 0 167.428 167.27"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <path
                     id="Path_24"
                     data-name="Path 24"
@@ -534,7 +553,8 @@ export default function AboutUs() {
                   width="40"
                   height="40"
                   viewBox="0 0 116.445 116.446"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <path
                     id="Path_26"
                     data-name="Path 26"
@@ -555,11 +575,13 @@ export default function AboutUs() {
                   width="40"
                   height="40"
                   viewBox="0 0 163.939 163.703"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <g
                     id="Group_3"
                     data-name="Group 3"
-                    transform="translate(-961.078 -85.061)">
+                    transform="translate(-961.078 -85.061)"
+                  >
                     <path
                       id="Path_32"
                       data-name="Path 32"
@@ -598,11 +620,13 @@ export default function AboutUs() {
                   width="30"
                   height="30"
                   viewBox="0 0 173.295 173.511"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <g
                     id="Group_4"
                     data-name="Group 4"
-                    transform="translate(-712.114 -634.567)">
+                    transform="translate(-712.114 -634.567)"
+                  >
                     <path
                       id="Path_37"
                       data-name="Path 37"
@@ -628,11 +652,13 @@ export default function AboutUs() {
                   width="30"
                   height="30"
                   viewBox="0 0 145.219 144.691"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <g
                     id="Group_5"
                     data-name="Group 5"
-                    transform="translate(-682.792 -453.042)">
+                    transform="translate(-682.792 -453.042)"
+                  >
                     <path
                       id="Path_39"
                       data-name="Path 39"
@@ -683,11 +709,13 @@ export default function AboutUs() {
                   width="30"
                   height="30"
                   viewBox="0 0 82.536 82.676"
-                  fill="#189366">
+                  fill="#189366"
+                >
                   <g
                     id="Group_12046"
                     data-name="Group 12046"
-                    transform="translate(6093.293 -3636.685)">
+                    transform="translate(6093.293 -3636.685)"
+                  >
                     <path
                       id="Path_11284"
                       data-name="Path 11284"
@@ -753,11 +781,13 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 59.464 82.771">
+                  viewBox="0 0 59.464 82.771"
+                >
                   <g
                     id="Group_12047"
                     data-name="Group 12047"
-                    transform="translate(5733.275 -3645.135)">
+                    transform="translate(5733.275 -3645.135)"
+                  >
                     <path
                       id="Path_11239"
                       data-name="Path 11239"
@@ -832,11 +862,13 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  viewBox="0 0 80.251 80.213">
+                  viewBox="0 0 80.251 80.213"
+                >
                   <g
                     id="Group_12048"
                     data-name="Group 12048"
-                    transform="translate(5888.39 -3638.5)">
+                    transform="translate(5888.39 -3638.5)"
+                  >
                     <g id="Group_12044" data-name="Group 12044">
                       <path
                         id="Path_11258"
@@ -895,11 +927,13 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="52.522"
                   height="65.604"
-                  viewBox="0 0 52.522 65.604">
+                  viewBox="0 0 52.522 65.604"
+                >
                   <g
                     id="Group_12049"
                     data-name="Group 12049"
-                    transform="translate(5982.546 -3641)">
+                    transform="translate(5982.546 -3641)"
+                  >
                     <g id="Group_12043" data-name="Group 12043">
                       <path
                         id="Path_11274"
@@ -948,17 +982,20 @@ export default function AboutUs() {
       </div>
       <div
         className="our__mission__section__about__us"
-        style={{ overflow: "hidden" }}>
+        style={{ overflow: "hidden" }}
+      >
         <div className="our__mission__section__about__us__content">
           <div className="our__mission__section__about__us__content__left">
             <div
               className="feature__section__entry__content__jumbotron__sub__heading"
-              style={{ color: "#ffffff" }}>
+              style={{ color: "#ffffff" }}
+            >
               Our Mission
             </div>
             <div
               className="our__mission__section__about__us__content__left__para"
-              style={{ color: "#ffffff" }}>
+              style={{ color: "#ffffff" }}
+            >
               DSME’s mission is to solve challenging technical problems in
               partnership with our clients. D.S.M.E Global Links cohorts with
               its customers to disentangle complex technology problems and help
@@ -978,7 +1015,8 @@ export default function AboutUs() {
       </div>
       <div
         className="our__vision__section__about__us"
-        style={{ overflow: "hidden" }}>
+        style={{ overflow: "hidden" }}
+      >
         <div className="our__vision__section__about__us__content">
           <div className="our__vision__section__about__us__content__right">
             <img
@@ -1005,7 +1043,8 @@ export default function AboutUs() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header">
+          id="pricing__success__stories__team__header"
+        >
           <div className="pricing__fitted__team__header__heading">
             Our Endeavors
           </div>
@@ -1039,7 +1078,8 @@ export default function AboutUs() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header">
+          id="pricing__success__stories__team__header"
+        >
           <div className="pricing__fitted__team__header__heading">
             Press Releases
           </div>
@@ -1049,7 +1089,8 @@ export default function AboutUs() {
             slidesPerView={slidesPerView}
             autoplay
             navigation
-            pagination={{ clickable: true }}>
+            pagination={{ clickable: true }}
+          >
             <SwiperSlide>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
@@ -1098,7 +1139,8 @@ export default function AboutUs() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header">
+          id="pricing__success__stories__team__header"
+        >
           <div className="pricing__fitted__team__header__heading">
             Success Stories
           </div>
@@ -1185,7 +1227,8 @@ export default function AboutUs() {
             // loop
             // spaceBetween={30}
             navigation={showNavigation ? true : false}
-            pagination={!showNavigation ? { clickable: true } : false}>
+            pagination={!showNavigation ? { clickable: true } : false}
+          >
             <SwiperSlide>
               <div className="pricing__awards__achievements__slide__logo">
                 <img src={clutch} alt="Brand Logo" />

@@ -25,7 +25,6 @@ import sdappfuturaBadge from "../assets/sdappfutura-badge.jpg";
 import webappusfuturaBadge from "../assets/webappusfutura-badge.jpg";
 import webappfuturaBadge from "../assets/webappfutura-badge.jpg";
 import logoDark from "../assets/logoDark.svg";
-
 import topAppPic from "../assets/topapp.jpg";
 import teAvatar from "../assets/te-avatar.svg";
 import teGoogle from "../assets/te-google-mailer.svg";
@@ -203,7 +202,8 @@ export default function PricingDedicated() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__getting__started">
+          id="pricing__getting__started"
+        >
           <div className="pricing__fitted__team__header__heading">
             How to Get Started?
           </div>
@@ -211,10 +211,12 @@ export default function PricingDedicated() {
         <div className="pricing__fitted__team__content">
           <div
             className="pricing__fitted__team__content__entry__box__one"
-            id="pricing__fitted__team__content__entry">
+            id="pricing__fitted__team__content__entry"
+          >
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
-              id="pricing__fitted__team__content__entry__sub__heading">
+              id="pricing__fitted__team__content__entry__sub__heading"
+            >
               Suited best when:
             </div>
             <ul className="pricing__fitted__team__content__entry__list">
@@ -231,10 +233,12 @@ export default function PricingDedicated() {
           </div>
           <div
             className="pricing__fitted__team__content__entry__box__one"
-            id="pricing__fitted__team__content__entry">
+            id="pricing__fitted__team__content__entry"
+          >
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
-              id="pricing__fitted__team__content__entry__sub__heading">
+              id="pricing__fitted__team__content__entry__sub__heading"
+            >
               Suited best when:
             </div>
             <ul className="pricing__fitted__team__content__entry__list">
@@ -251,10 +255,12 @@ export default function PricingDedicated() {
           </div>
           <div
             className="pricing__fitted__team__content__entry__box__one"
-            id="pricing__fitted__team__content__entry">
+            id="pricing__fitted__team__content__entry"
+          >
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
-              id="pricing__fitted__team__content__entry__sub__heading">
+              id="pricing__fitted__team__content__entry__sub__heading"
+            >
               Suited best when:
             </div>
             <ul className="pricing__fitted__team__content__entry__list">
@@ -460,7 +466,8 @@ export default function PricingDedicated() {
               {DeliveryCardEntry1.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}>
+                  key={JSON.stringify(item)}
+                >
                   {item}
                 </div>
               ))}
@@ -475,7 +482,8 @@ export default function PricingDedicated() {
               {DeliveryCardEntry2.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}>
+                  key={JSON.stringify(item)}
+                >
                   {item}
                 </div>
               ))}
@@ -490,7 +498,8 @@ export default function PricingDedicated() {
               {DeliveryCardEntry3.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}>
+                  key={JSON.stringify(item)}
+                >
                   {item}
                 </div>
               ))}
@@ -501,7 +510,8 @@ export default function PricingDedicated() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header">
+          id="pricing__success__stories__team__header"
+        >
           <div className="pricing__fitted__team__header__heading">
             Success Stories
           </div>
@@ -588,7 +598,8 @@ export default function PricingDedicated() {
             // loop
             // spaceBetween={30}
             navigation={showNavigation ? true : false}
-            pagination={!showNavigation ? { clickable: true } : false}>
+            pagination={!showNavigation ? { clickable: true } : false}
+          >
             <SwiperSlide>
               <div className="pricing__awards__achievements__slide__logo">
                 <img src={clutch} alt="Brand Logo" />

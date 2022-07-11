@@ -14,7 +14,7 @@ export function CareerBanner({ setCareerBanner, setLightHeader }) {
     <div className="careers__wrapper">
       <img
         src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        alt=""
+        alt="careers__wrapper__img"
         className="careers__wrapper__img"
       />
       <div className="careers__wrapper__overlay">

@@ -1,15 +1,15 @@
 import React, { lazy, Suspense, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-loading";
 import Loader from "./components/Loader";
 import SwiperCore, { Autoplay } from "swiper";
-import ContactUsBottom from "./screens/ContactUsBottom";
 
 import "./App.scss";
 import "animate.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
 
+const ContactUsBottom = lazy(() => import("./screens/ContactUsBottom"));
 const ServiceCustomSoft = lazy(() => import("./screens/ServiceCustomSoft"));
 const ServiceBlockChain = lazy(() => import("./screens/ServiceBlockChain"));
 const ServiceEcomerece = lazy(() => import("./screens/ServiceEcomerece"));
@@ -44,40 +44,58 @@ export default function App() {
   return (
     <Suspense fallback={<Loader style={{ height: "100vh" }} />}>
       <Header light={lightHeader} />
-      <Routes>
+      <Routes maxLoadingTime={500}>
         <Route path="/" element={<Home setLightHeader={setLightHeader} />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/web-dev" element={<ServicesWebDev />} />
-        <Route path="/services/uiux" element={<ServiceUIUX />} />
-        <Route path="/services/mob-dev" element={<ServiceMobDev />} />
-        <Route path="/services/blockchain" element={<ServiceBlockChain />} />
-        <Route path="/services/custom-soft" element={<ServiceCustomSoft />} />
-        <Route path="/services/ios" element={<ServiceIos />} />
-        <Route path="/services/android" element={<ServiceAndroid />} />
-        <Route path="/services/ecomerece" element={<ServiceEcomerece />} />
-        <Route path="/services/startup" element={<ServiceStartup />} />
-        <Route path="/services/staff" element={<ServiceStaff />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blog-details" element={<BlogDetails />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/pricing-dedicated-teams" element={<PricingDedicated />} />
+        <Route path="/services" element={<Services />} loading />
+        <Route path="/services/web-dev" element={<ServicesWebDev />} loading />
+        <Route path="/services/uiux" element={<ServiceUIUX />} loading />
+        <Route path="/services/mob-dev" element={<ServiceMobDev />} loading />
+        <Route
+          path="/services/blockchain"
+          element={<ServiceBlockChain loading />}
+        />
+        <Route
+          path="/services/custom-soft"
+          element={<ServiceCustomSoft />}
+          loading
+        />
+        <Route path="/services/ios" element={<ServiceIos />} loading />
+        <Route path="/services/android" element={<ServiceAndroid />} loading />
+        <Route
+          path="/services/ecomerece"
+          element={<ServiceEcomerece />}
+          loading
+        />
+        <Route path="/services/startup" element={<ServiceStartup />} loading />
+        <Route path="/services/staff" element={<ServiceStaff />} loading />
+        <Route path="/portfolio" element={<Portfolio />} loading />
+        <Route path="/blog" element={<Blogs />} loading />
+        <Route path="/blog-details" element={<BlogDetails />} loading />
+        <Route path="/pricing" element={<Pricing />} loading />
+        <Route
+          path="/pricing-dedicated-teams"
+          element={<PricingDedicated />}
+          loading
+        />
         <Route
           path="/contact-us"
           element={<ContactUs setNoShowContactUs={setNoShowContactUs} />}
+          loading
         />
         <Route
           path="/quote"
           element={<QuoteScreen setNoShowContactUs={setNoShowContactUs} />}
+          loading
         />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/industry" element={<Industry />} />
+        <Route path="/about-us" element={<AboutUs />} loading />
+        <Route path="/industry" element={<Industry />} loading />
         <Route
           path="/careers"
           element={<Careers setLightHeader={setLightHeader} />}
+          loading
         />
-        <Route path="/portfolio-detail" element={<PortfolioDetail />} />
-        <Route path="/meet-us" element={<MeetUs />} />
+        <Route path="/portfolio-detail" element={<PortfolioDetail />} loading />
+        <Route path="/meet-us" element={<MeetUs />} loading />
       </Routes>
 
       {noShowContactUs ? <ContactUsBottom /> : null}

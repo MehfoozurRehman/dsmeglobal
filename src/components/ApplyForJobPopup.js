@@ -106,9 +106,9 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
             </div>
             <Widget
               sources={["local"]}
-              resourceType={"image"}
-              cloudName={"mehfoozurrehman"}
-              uploadPreset={"cqido5en"}
+              resourceType="image"
+              cloudName="mehfoozurrehman"
+              uploadPreset="cqido5en"
               buttonText={
                 cv !== "" ? (
                   <div
