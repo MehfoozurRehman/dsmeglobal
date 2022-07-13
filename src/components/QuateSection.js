@@ -32,9 +32,15 @@ export function QuateSection() {
             <div className="container__stats__right">
               <QuateSectionCard
                 title="Android"
-                info="Create a seamless mobile experience with Android app development Our
-        software house has been recognised by Google for outstanding Android
-        application quality"
+                info={
+                  <>
+                    Create a seamless mobile experience with Android app
+                    development.
+                    <br />
+                    Our software house has been recognized by Google for
+                    outstanding Android application quality.
+                  </>
+                }
                 svg={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +59,14 @@ export function QuateSection() {
               />
               <QuateSectionCard
                 title="iOS"
-                info="Stay ahead of the curve with a custom iOS app We offer iOS application development services for startups, enterprises, and unicorns around the globe"
+                info={
+                  <>
+                    Stay ahead of the curve with a custom iOS app
+                    <br />
+                    We offer iOS application development services for startups,
+                    enterprises, and unicorns around the globe.
+                  </>
+                }
                 svg={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,9 +84,15 @@ export function QuateSection() {
               />
               <QuateSectionCard
                 title="Cross-platform"
-                info="Create a seamless mobile experience with Android app development Our
-              software house has been recognised by Google for outstanding Android
-              application quality"
+                info={
+                  <>
+                    Cut your time-to-market with cross-platform application
+                    development
+                    <br />
+                    We help you save time and resources thanks to our React
+                    Native development services.
+                  </>
+                }
                 svg={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +112,15 @@ export function QuateSection() {
               />
               <QuateSectionCard
                 title="Frontend"
-                info="Create a seamless mobile experience with Android app development Our
-        software house has been recognised by Google for outstanding Android
-        application quality"
+                info={
+                  <>
+                    Take your app to the next level with our front-end app
+                    development.
+                    <br />
+                    We build user-oriented intuitive web applications that
+                    highlight your brand image.
+                  </>
+                }
                 svg={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -139,9 +164,15 @@ export function QuateSection() {
               />
               <QuateSectionCard
                 title="Backend"
-                info="Create a seamless mobile experience with Android app development Our
-        software house has been recognised by Google for outstanding Android
-        application quality"
+                info={
+                  <>
+                    We support the most complex app idea with powerful backend
+                    architecture.
+                    <br />
+                    Our team supports the most demanding application ideas with
+                    experiences in backend development
+                  </>
+                }
                 svg={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -165,9 +196,15 @@ export function QuateSection() {
               />
               <QuateSectionCard
                 title="Artificial Intelligence"
-                info="Create a seamless mobile experience with Android app development Our
-        software house has been recognised by Google for outstanding Android
-        application quality"
+                info={
+                  <>
+                    Reach new business opportunities with our Artificial
+                    Intelligence services
+                    <br />
+                    We help you boost your product and get in-depth business
+                    insights with Data Science and Machine Learning.
+                  </>
+                }
                 svg={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

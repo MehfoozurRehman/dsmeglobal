@@ -8,7 +8,7 @@ export function ServicesSection() {
       title: "Mobile App Development",
       image: "v1652870398/dsme_global/igmowytszkh6lxlfkak8.png",
       shortDescription:
-        "Our team builds nimble and elegant apps for all smartphone platforms",
+        "Leveraging the latest technological tools & industry practices, we build high-performance apps to scale your business. Our team builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with you to understand your specifications and develop apps that provide an intuitive end-user experience.",
       link: "/services/mob-dev",
     },
     {
@@ -16,7 +16,7 @@ export function ServicesSection() {
       title: "Staff Augmentation",
       image: "v1652870611/dsme_global/egjfhnqu8rkiodik92vv.png",
       shortDescription:
-        "Video surveillance solutions from Global Links Security Solutions allow ",
+        "Leveraging the latest technological tools & industry practices, we build high-performance apps to scale your business. Our team builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with you to understand your specifications and develop apps that provide an intuitive end-user experience.",
       link: "/services/staff",
     },
     {
@@ -24,7 +24,7 @@ export function ServicesSection() {
       title: "Web App Development",
       image: "v1652871460/dsme_global/xpajuhaxddo1oevnejmy.png",
       shortDescription:
-        "Video surveillance solutions from Global Links Security Solutions allow ",
+        "We believe in building interactive web applications, To create experiences beyond our clients’ expectations. We create beautifully designed web apps precisely tailored to your situation. From providing Software as a Service to creating custom software to support your customers, our Web App team will get you up and running.",
       link: "/services/web-dev",
     },
     {
@@ -32,7 +32,7 @@ export function ServicesSection() {
       title: "Startup Services",
       image: "v1652871579/dsme_global/kb5xhjjcu3nstq2xccul.png",
       shortDescription:
-        "Video surveillance solutions from Global Links Security Solutions allow ",
+        "Leveraging the latest technological tools & industry practices, we build high-performance apps to scale your business. Our team builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with you to understand your specifications and develop apps that provide an intuitive end-user experience.",
       link: "/services/startup",
     },
   ];
@@ -44,11 +44,20 @@ export function ServicesSection() {
             How can we help your buisness ?
           </div>
           <div className="container__services__left__info">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sed
-            sequi tempore minus, eum laborum voluptatibus non, est veritatis,
+            We excel in providing cutting-edge solutions and development
+            services that drive business performance, cultivate startups, and
+            accelerate growth.
+            <br />
+            <br />
+            We take care of all the technology so you can focus on what you do
+            best. From strategy to execution, our winning combination of
+            innovative thinking, scientific design, sophisticated development,
+            and ongoing analysis ensure we’re delivering value to help you grow.
           </div>
           <div className="container__services__button__container">
-          <button className="container__services__button">View all services</button>
+            <button className="container__services__button">
+              View all services
+            </button>
           </div>
         </div>
         <div className="container__services__right">

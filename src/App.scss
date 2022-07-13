@@ -2398,6 +2398,12 @@ body {
   font-size: 40px;
   color: $black;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.container__testimonials__overlay__heading span {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .container__testimonials__overlay__content {

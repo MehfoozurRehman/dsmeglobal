@@ -44,7 +44,13 @@ export function TestimonialsSection() {
     <div className="container__testimonials">
       <div className="container__testimonials__overlay__heading">
         See what our clients say about us
+        <span>
+          Not sure if DSME Global Links is the right choice in your case? You
+          don’t need to take our word for it. Browse the opinions of our clients
+          and discover the benefits of working with us!
+        </span>
       </div>
+
       <img
         src={testimonialBg}
         alt="testimonialBg"

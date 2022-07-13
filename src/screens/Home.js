@@ -49,9 +49,9 @@ export default function Home({ setLightHeader }) {
         <StatsSection />
         <WorkSection />
         <QuateSection />
-        <BlogSection />
         <PricingSection />
         <TestimonialsSection />
+        <BlogSection />
         <NewsletterSection />
       </div>
     </>

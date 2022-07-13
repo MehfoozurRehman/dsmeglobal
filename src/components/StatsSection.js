@@ -15,7 +15,7 @@ export function StatsSection() {
               <CountUp end={10} redraw={true} />+
             </div>
             <div className="container__stats__entry__label">
-              years in remote software development
+              Years in Remote Software Development
             </div>
           </div>
           <div className="container__stats__entry">
@@ -23,7 +23,7 @@ export function StatsSection() {
               <CountUp end={150} redraw={true} />+
             </div>
             <div className="container__stats__entry__label">
-              digital solutions delivered
+              Digital Solutions Delivered
             </div>
           </div>
           <div className="container__stats__entry">
@@ -31,7 +31,7 @@ export function StatsSection() {
               <CountUp end={200} redraw={true} />
             </div>
             <div className="container__stats__entry__label">
-              experts on board
+              Experts on Board
             </div>
           </div>
           <div className="container__stats__entry">
@@ -40,7 +40,7 @@ export function StatsSection() {
               <CountUp end={10} redraw={true} />
             </div>
             <div className="container__stats__entry__label">
-              projects conducted remotely
+              Projects Conducted Remotely
             </div>
           </div>
         </div>

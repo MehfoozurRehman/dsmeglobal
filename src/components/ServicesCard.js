@@ -26,7 +26,7 @@ export function ServicesCard({ data }) {
         {data.title}
       </div>
       <div className="container__services__right__entry__info">
-        {data.shortDescription}
+        {data.shortDescription.substring(0, 70) + "..."}
       </div>
     </Link>
   );
