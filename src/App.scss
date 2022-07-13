@@ -939,8 +939,13 @@ body {
   color: $black;
   font-weight: bold;
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
 }
-
+.hot__offers__section__header span {
+  font-size: 16px;
+  font-weight: normal;
+}
 .hot__offers__section__wrapper .hot__offers__section__header {
   color: $white;
 }
@@ -3588,7 +3593,9 @@ body {
   color: #efefef;
   margin: 0 1em;
 }
-
+.footer__container__content__bottom__left__link svg:hover {
+  color: black;
+}
 .meetus__container__main {
   position: sticky;
   z-index: 99;
@@ -3611,7 +3618,7 @@ body {
 }
 
 .meetus__container__smallThings__heading {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
 }
@@ -3637,7 +3644,7 @@ body {
   max-width: 500px;
 }
 .meetus__container__smallThings__left__heading {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -3709,7 +3716,7 @@ body {
   max-width: 500px;
 }
 .meetus__container__sub__right__heading {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -3756,7 +3763,7 @@ body {
 
 .meetus__container__stories__card__image {
   width: 100%;
-  height: 500px;
+  height: 550px;
   margin: 1em 0;
   object-fit: contain;
   overflow: hidden;
@@ -7082,14 +7089,11 @@ body {
   font-size: 15px;
 }
 .customsoft_first_container {
-  box-shadow: 0px 1px 2px 3px #9e9a9a8f;
   border-radius: 5px;
   height: 300px;
   width: 550px;
-  padding-left: 4em;
 }
 .customsoft_second_container {
-  box-shadow: 0px 1px 2px 3px #9e9a9a8f;
   height: 300px;
   width: 550px;
   border-radius: 5px;
@@ -7102,12 +7106,13 @@ body {
   align-items: center;
   font-size: 30px;
   font-weight: 650;
-  padding-top: 2em;
+  color: white;
 }
 .customsoft_third_container_content {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: white;
 }
 .customsoft_third_container_content span {
   width: 500px;
@@ -7163,6 +7168,7 @@ body {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
+  color: white;
 }
 .customsoft_third_container_first_box_start span {
   font-size: 20px;
@@ -7171,30 +7177,35 @@ body {
 }
 .customsoft_third_container_first_box_svg span {
   margin-left: 1em;
+  color: white;
 }
 .customsoft_third_container_first_box_svg {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_one span {
   margin-left: 1em;
+  color: white;
 }
 .customsoft_third_container_first_box_svg_one {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_two span {
   margin-left: 1em;
+  color: white;
 }
 .customsoft_third_container_first_box_svg_two {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_three span {
   margin-left: 1em;
+  color: white;
 }
 .customsoft_third_container_first_box_svg_three {
   margin-top: 2em;
 }
 .customsoft_third_container_first_box_svg_fourth span {
   margin-left: 1em;
+  color: white;
 }
 .customsoft_third_container_first_box_svg_fourth {
   margin-top: 2em;
@@ -7208,11 +7219,13 @@ body {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
+  color: white;
 }
 .customsoft_third_container_third_box {
   margin-bottom: 1.5em;
   display: flex;
   align-items: center;
+  color: white;
 }
 .customsoft_third_container_third_box span {
   font-size: 20px;
@@ -7234,7 +7247,7 @@ body {
   padding-top: 2em;
 }
 .customsoft_third_container {
-  background-color: #f2faff;
+  background-color: $black;
   padding: 4em;
 }
 .customsoft_fourth_container_first_title {
@@ -7264,7 +7277,7 @@ body {
 }
 .customsoft_fourth_container_first_box_all_main_container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 1500px;
   margin: 0 auto;
   padding: 4em;

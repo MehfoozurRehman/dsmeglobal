@@ -50,10 +50,7 @@ export default function ContactSection() {
                     Phone
                   </div>
                   <div className="contact__section__content__left__content__entry__content">
-                    354 454 5344 343
-                  </div>
-                  <div className="contact__section__content__left__content__entry__content">
-                    354 454 5344 343
+                    +92-321-9652222
                   </div>
                 </div>
               </div>
@@ -66,10 +63,7 @@ export default function ContactSection() {
                     Email
                   </div>
                   <div className="contact__section__content__left__content__entry__content">
-                    hello@J7.com
-                  </div>
-                  <div className="contact__section__content__left__content__entry__content">
-                    hello@J7Group.com
+                    info@dsmeglobal.com
                   </div>
                 </div>
               </div>
@@ -82,7 +76,8 @@ export default function ContactSection() {
                     Head Office
                   </div>
                   <div className="contact__section__content__left__content__entry__content">
-                    1st floor, DHA - Z Block, Plot # 33, Lahore, 54000, Pakistan
+                    33-Z, 1st Floor Commercial Plaza, DHA Phase III, Lahore,
+                    Pakistan.
                   </div>
                 </div>
               </div>
@@ -94,17 +89,15 @@ export default function ContactSection() {
                 >
                   <Facebook size={20} color="currentColor" />
                 </a>
-
                 <a
-                  href="https://www.instagram.com/dsmeglobal/"
+                  href="https://www.instagram.com/dsmeglobal"
                   className="contact__section__content__right__links__link"
                   title="Instagram"
                 >
                   <Instagram size={20} color="currentColor" />
                 </a>
-
                 <a
-                  href="https://www.linkedin.com/company/dsmegloballinks/"
+                  href="https://www.linkedin.com/company/dsmegloballinks"
                   className="contact__section__content__right__links__link"
                   title="Linkedin"
                 >
@@ -113,7 +106,6 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-
           <form
             onSubmit={(e) => {
               e.preventDefault();

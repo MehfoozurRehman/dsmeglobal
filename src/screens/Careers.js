@@ -10,6 +10,7 @@ import { fetcher } from "../utils/functions";
 import noData from "../assets/noData.png";
 import career from "../assets/career.svg";
 import useSWR from "swr";
+import { ExperitseCard } from "../components/ExperitseCard";
 
 export default function Careers({ setLightHeader }) {
   const [slidesPerPage, setSlidesPerPage] = useState(3.5);
@@ -88,19 +89,50 @@ export default function Careers({ setLightHeader }) {
       ) : null}
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Best"
-          taglines={["Jobs", "Oppertunities"]}
-          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
-            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
-            quibusdam ad?"
+          taglinesLine="Good things should grow, and so do we"
+          info="There are jobs and then there are careers. We welcome you to find your best fit at DSME Global Links and become part of the fastest-growing technology leaders in the region. Join us to be surrounded by smart, ambitious, and motivated people at DSME Global Links."
           img={career}
         />
       </div>
+      <div
+        className="container__web__dev__experties services__startup__second__expertise"
+        style={{ marginBottom: "4em", marginTop: "4em" }}
+      >
+        <div className="container__web__dev__experties__header services__startup__third__header">
+          <div className="container__web__dev__experties__header__heading">
+            We’re not just colleagues. We’re family
+          </div>
+          <div className="container__web__dev__experties__header__info">
+            DSME Global Links is not just a workplace – it’s a lifestyle, and we
+            want each of our team members to get the most out of it
+          </div>
+        </div>
+        <div className="container__web__dev__experties__content">
+          <ExperitseCard
+            label="Work-life balance"
+            info="Our main motto is “work hard – play hard” and we live by that principle every day! You won’t see coding monkeys glued to their screens 24/7 in here. Instead, you’ll find driven individuals passionate about what they’re doing."
+          />
+          <ExperitseCard
+            label="Personal growth"
+            info="Through conferences, training, and 1-on-1 mentoring, we strongly encourage the personal and professional growth of every member of our DSME Global Links family."
+          />
+          <ExperitseCard
+            label="Feedback & communication"
+            info="This works for our own team members, as well as for our clients – feedback is everything! We want to be on the same page and we’d like to address any worries as soon as they arise."
+          />
+          <ExperitseCard
+            label="Career change done simple"
+            info="At DSME Global Links, our talents aren’t stuck in one direction. We have developers turned PMs, designers turned sales superstars, and testers turned engineers – the sky really is the limit!"
+          />
+          <ExperitseCard
+            label="Agility & autonomy"
+            info="With a flat hierarchy, a careful evaluation of inter-team values during the recruitment process, flexible working hours, and more – DSME Global Links is a place where individuality meets teamwork."
+          />
+        </div>
+      </div>
       <div className="hot__offers__section__wrapper">
         <section id="job__section" className="hot__offers__section">
-          <div className="hot__offers__section__header">Hot offer</div>
+          <div className="hot__offers__section__header">View Openings</div>
           <div className="hot__offers__section__content">
             {error ? (
               <div>failed to load</div>
@@ -123,7 +155,13 @@ export default function Careers({ setLightHeader }) {
         </section>
       </div>
       <div className="hot__offers__section">
-        <div className="hot__offers__section__header">Open Vacancies</div>
+        <div className="hot__offers__section__header">
+          Open Vacancies - Join us
+          <span>
+            We give you opportunities to excel and achieve the global
+            recognition that you deserve!
+          </span>
+        </div>
         <div className="hot__offers__section__content">
           <CareersFilters
             setDeparment={setDeparment}

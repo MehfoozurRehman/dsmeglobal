@@ -101,34 +101,25 @@ export default function Footer() {
               Follow us
             </div>
             <a
-              href="#"
+              href="https://www.facebook.com/dsmeglobal"
               className="footer__container__content__bottom__left__link"
+              title="Facebook"
             >
-              <Linkedin size={20} color="currentcolor" strokeWidth={1.5} />
+              <Facebook size={20} color="currentColor" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/dsmeglobal"
               className="footer__container__content__bottom__left__link"
+              title="Instagram"
             >
-              <Twitter size={20} color="currentcolor" strokeWidth={1.5} />
+              <Instagram size={20} color="currentColor" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/dsmegloballinks"
               className="footer__container__content__bottom__left__link"
+              title="Linkedin"
             >
-              <Facebook size={20} color="currentcolor" strokeWidth={1.5} />
-            </a>
-            <a
-              href="#"
-              className="footer__container__content__bottom__left__link"
-            >
-              <Dribbble size={20} color="currentcolor" strokeWidth={1.5} />
-            </a>
-            <a
-              href="#"
-              className="footer__container__content__bottom__left__link"
-            >
-              <Instagram size={20} color="currentcolor" strokeWidth={1.5} />
+              <Linkedin size={20} color="currentColor" />
             </a>
           </div>
         </div>

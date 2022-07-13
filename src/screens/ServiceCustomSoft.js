@@ -664,10 +664,7 @@ export default function ServiceCustomSoft() {
                     Azure
                   </div>
                   <div className="customsoft_fourth_container_third_box_part_three_content_two">
-                    <a
-                      className="customsoft_fourth_container_third_box_part_three_content_three"
-                      href=""
-                    >
+                    <a className="button" href="">
                       Angular
                     </a>
                   </div>

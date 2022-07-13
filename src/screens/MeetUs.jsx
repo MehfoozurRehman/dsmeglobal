@@ -11,13 +11,8 @@ function MeetUs() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Lets Get to"
-          taglines={["Know Us", "Know Our Story"]}
-          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-        culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
-        ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
-        quibusdam ad?"
+          taglinesLine="Meet Us"
+          info="We give you opportunities to excel and achieve the global recognition that you deserve!"
           img={meet}
         />
       </div>
@@ -99,9 +94,9 @@ function MeetUs() {
                   Focus on <span>people</span>
                 </div>
                 <div className="meetus__container__sub__right__para">
-                  When it comes to our job, it's quality that matters. UX
-                  research, code reviews, manual and automatic tests. No
-                  exceptions.
+                  “People matter”. Such a cliché, right? But at DSME Global
+                  Links, they really do. Family atmosphere and tons of laughs
+                  guaranteed. See for yourself.
                 </div>
               </div>
             </div>
@@ -113,7 +108,7 @@ function MeetUs() {
               See our <span>stories</span>
             </div>
             <div className="meetus__container__stories__para">
-              Your passion is the part of our identity. See how #dsmepeople
+              Your passion is part of our identity. See how #dsmeglobalpeople
               rock.
             </div>
             <div className="meetus__container__stories__card__container">
