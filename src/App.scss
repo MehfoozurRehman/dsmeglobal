@@ -5457,6 +5457,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3em;
 }
 .about__core__values__content__entry__icon {
   color: $primary;
@@ -5480,6 +5481,9 @@ body {
   .about__core__values__content__entry__icon
   svg {
   fill: $white;
+}
+.about__core__values__content__entry:nth-child(4) {
+  border: none;
 }
 .about__core__values__content__entry:last-child {
   border: none;
