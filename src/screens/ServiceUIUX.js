@@ -1,10 +1,10 @@
-import React from "react";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import design from "../assets/design.svg";
-import pencilpic from "../assets/pencil-sketch.png";
-import imagepng2 from "../assets/high-fidelity-wireframes.png";
-import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
-import { Link } from "react-router-dom";
+import React from 'react';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import design from '../assets/design.svg';
+import pencilpic from '../assets/pencil-sketch.png';
+import imagepng2 from '../assets/high-fidelity-wireframes.png';
+import imagepng3 from '../assets/pixel-perfect-mockups.jpg';
+import {Link} from 'react-router-dom';
 
 export default function ServiceUIUX() {
   return (
@@ -37,8 +37,7 @@ export default function ServiceUIUX() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 200.812 200.872"
-              >
+                viewBox="0 0 200.812 200.872">
                 <path
                   id="Union_9"
                   data-name="Union 9"
@@ -63,8 +62,7 @@ export default function ServiceUIUX() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 224.441 224.564"
-              >
+                viewBox="0 0 224.441 224.564">
                 <path
                   id="Union_10"
                   data-name="Union 10"
@@ -89,13 +87,11 @@ export default function ServiceUIUX() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 185.914 205.285"
-              >
+                viewBox="0 0 185.914 205.285">
                 <g
                   id="Group_32"
                   data-name="Group 32"
-                  transform="translate(-527.798 -1873.805)"
-                >
+                  transform="translate(-527.798 -1873.805)">
                   <path
                     id="Path_96"
                     data-name="Path 96"
@@ -128,13 +124,11 @@ export default function ServiceUIUX() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 219.301 219.674"
-              >
+                viewBox="0 0 219.301 219.674">
                 <g
                   id="Group_31"
                   data-name="Group 31"
-                  transform="translate(-885.634 -3575.491)"
-                >
+                  transform="translate(-885.634 -3575.491)">
                   <path
                     id="Path_113"
                     data-name="Path 113"
@@ -187,8 +181,7 @@ export default function ServiceUIUX() {
                       stroke-linejoin="round"
                       width="40"
                       height="40"
-                      className="feather feather-file-text"
-                    >
+                      class="feather feather-file-text">
                       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                       <polyline points="14 2 14 8 20 8"></polyline>
                       <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -213,8 +206,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -235,8 +227,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -257,8 +248,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -279,8 +269,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-box"
-                    >
+                      class="feather feather-box">
                       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                       <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                       <line x1="12" y1="22.08" x2="12" y2="12"></line>
@@ -303,8 +292,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -325,8 +313,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -347,8 +334,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -369,16 +355,14 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-layout"
-                    >
+                      class="feather feather-layout">
                       <rect
                         x="3"
                         y="3"
                         width="18"
                         height="18"
                         rx="2"
-                        ry="2"
-                      ></rect>
+                        ry="2"></rect>
                       <line x1="3" y1="9" x2="21" y2="9"></line>
                       <line x1="9" y1="21" x2="9" y2="9"></line>
                     </svg>
@@ -399,8 +383,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -421,8 +404,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -443,8 +425,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -465,8 +446,7 @@ export default function ServiceUIUX() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      className="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -482,7 +462,7 @@ export default function ServiceUIUX() {
         <div className="june_fourth_container_box">
           <div className="june_fourth_container_box_one">
             <div className="june_fourth_container_box_title">
-              Talk to us about your <span>challenges</span> and{" "}
+              Talk to us about your <span>challenges</span> and{' '}
               <span>we will bring an</span> incredible team.
             </div>
           </div>

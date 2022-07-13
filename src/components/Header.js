@@ -28,7 +28,7 @@ export default function Header({ light }) {
     window.addEventListener("resize", navOpenClose);
     window.addEventListener("scroll", navOpenClose);
   }, []);
-  const [startTransition] = useTransition();
+  const [isPending, startTransition] = useTransition();
   const changeBackgrond = () => {
     if (window.scrollY > 0) {
       setIsScrolling(true);
