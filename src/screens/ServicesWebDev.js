@@ -1,29 +1,27 @@
-import React, { useState } from "react";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import web from "../assets/web.svg";
-import { CheckCircle } from "react-feather";
-import { ExperienceCard } from "../components/ExperienceCard";
-import { ExperitseCard } from "../components/ExperitseCard";
-import WebdevArrEntry from "../components/WebdevArrEntry";
-import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
+import React, {useState} from 'react';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import web from '../assets/web.svg';
+import {CheckCircle} from 'react-feather';
+import {ExperienceCard} from '../components/ExperienceCard';
+import {ExperitseCard} from '../components/ExperitseCard';
+import WebdevArrEntry from '../components/WebdevArrEntry';
+import {ServicesFeatureListItem} from '../components/ServicesFeatureListItem';
 
 export default function ServicesWebDev() {
-  const [selected, setSelected] = useState("AR VR");
+  const [selected, setSelected] = useState('AR VR');
   const array = [
     {
-      label: "AR VR",
+      label: 'AR VR',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 166.185 103.878"
-        >
+          viewBox="0 0 166.185 103.878">
           <g
             id="Group_40"
             data-name="Group 40"
-            transform="translate(-100.084 -2458.504)"
-          >
+            transform="translate(-100.084 -2458.504)">
             <path
               id="Union_3"
               data-name="Union 3"
@@ -36,17 +34,16 @@ export default function ServicesWebDev() {
           </g>
         </svg>
       ),
-      info: "We study changes in consumer perspective to build a cost-effective, robust and game-changing AR/VR solutions for a variety of products and services.",
+      info: 'We study changes in consumer perspective to build a cost-effective, robust and game-changing AR/VR solutions for a variety of products and services.',
     },
     {
-      label: "Blockchain",
+      label: 'Blockchain',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 163.531 163.412"
-        >
+          viewBox="0 0 163.531 163.412">
           <path
             id="Union_2"
             data-name="Union 2"
@@ -55,17 +52,16 @@ export default function ServicesWebDev() {
           />
         </svg>
       ),
-      info: "We provide blockchain consulting services and customized solutions for businesses, startups and enterprises to transform the way they operate.",
+      info: 'We provide blockchain consulting services and customized solutions for businesses, startups and enterprises to transform the way they operate.',
     },
     {
-      label: "Internet of things",
+      label: 'Internet of things',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 143.757 144.452"
-        >
+          viewBox="0 0 143.757 144.452">
           <g id="Group_21" data-name="Group 21" transform="translate(0)">
             <path
               id="Path_76"
@@ -94,17 +90,16 @@ export default function ServicesWebDev() {
           </g>
         </svg>
       ),
-      info: "Our team of engineers can help you build fully customized products/apps with interconnectivity between all known tech and non-tech devices.      ",
+      info: 'Our team of engineers can help you build fully customized products/apps with interconnectivity between all known tech and non-tech devices.      ',
     },
     {
-      label: "Artificial intelligence",
+      label: 'Artificial intelligence',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 148.214 148.413"
-        >
+          viewBox="0 0 148.214 148.413">
           <path
             id="Path_103"
             data-name="Path 103"
@@ -113,22 +108,20 @@ export default function ServicesWebDev() {
           />
         </svg>
       ),
-      info: "Owing to the growing demand for intelligent applications, systems and products our engineers are experienced enough to construct robust artificial intelligent solutions.      ",
+      info: 'Owing to the growing demand for intelligent applications, systems and products our engineers are experienced enough to construct robust artificial intelligent solutions.      ',
     },
     {
-      label: "Machine learning",
+      label: 'Machine learning',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 148.361 148.413"
-        >
+          viewBox="0 0 148.361 148.413">
           <g
             id="Group_22"
             data-name="Group 22"
-            transform="translate(-795.794 -72.947)"
-          >
+            transform="translate(-795.794 -72.947)">
             <path
               id="Path_104"
               data-name="Path 104"
@@ -138,17 +131,16 @@ export default function ServicesWebDev() {
           </g>
         </svg>
       ),
-      info: "Incorporate machine learning into your current or planned product development initiatives for better user experience, decision making and consumer retention and loyalty.      ",
+      info: 'Incorporate machine learning into your current or planned product development initiatives for better user experience, decision making and consumer retention and loyalty.      ',
     },
     {
-      label: "Big data",
+      label: 'Big data',
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 150.275 150.286"
-        >
+          viewBox="0 0 150.275 150.286">
           <path
             id="Union_4"
             data-name="Union 4"
@@ -157,7 +149,7 @@ export default function ServicesWebDev() {
           />
         </svg>
       ),
-      info: "Make better and faster data driven decisions to help support your businesses with our capability of building products/applications that rely on big data analytics.      ",
+      info: 'Make better and faster data driven decisions to help support your businesses with our capability of building products/applications that rely on big data analytics.      ',
     },
   ];
   return (
@@ -177,7 +169,7 @@ export default function ServicesWebDev() {
             Our Expertise
           </div>
           <div className="container__web__dev__experties__header__info">
-            Custom built web applications with amazing user experiences & latest
+            Custom-built web applications with amazing user experiences & latest
             web technologies that help support your business goals.
           </div>
         </div>
@@ -188,13 +180,11 @@ export default function ServicesWebDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 206.337 187.652"
-              >
+                viewBox="0 0 206.337 187.652">
                 <g
                   id="Group_41"
                   data-name="Group 41"
-                  transform="translate(-182.155 -1893)"
-                >
+                  transform="translate(-182.155 -1893)">
                   <path
                     id="Union_5"
                     data-name="Union 5"
@@ -213,8 +203,7 @@ export default function ServicesWebDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 185.915 205.285"
-              >
+                viewBox="0 0 185.915 205.285">
                 <path
                   id="Union_6"
                   data-name="Union 6"
@@ -227,7 +216,7 @@ export default function ServicesWebDev() {
               </svg>
             }
             label="Amazing UI/UX Design"
-            info="We aGet the most appealing User Interface design for your web-app that provides an overwhelmingly refreshing and friendly experience for your customers."
+            info="We get the most appealing User Interface design for your web app that provides an overwhelmingly refreshing and friendly experience for your customers."
           />
           <ExperitseCard
             svg={
@@ -235,8 +224,7 @@ export default function ServicesWebDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 208.536 208.52"
-              >
+                viewBox="0 0 208.536 208.52">
                 <path
                   id="Union_7"
                   data-name="Union 7"
@@ -254,8 +242,7 @@ export default function ServicesWebDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 175.885 175.884"
-              >
+                viewBox="0 0 175.885 175.884">
                 <path
                   id="Union_8"
                   data-name="Union 8"
@@ -280,7 +267,7 @@ export default function ServicesWebDev() {
             </div>
             <div className="container__web__dev__experience__header__info">
               Custom solutions are lean, designed as per your brand guidelines
-              and tailor made to address the business goals.
+              and tailor-made to address the business goals.
             </div>
           </div>
           <div className="container__web__dev__experience__content">
@@ -290,15 +277,15 @@ export default function ServicesWebDev() {
             />
             <ExperienceCard
               label="Results Driven Business Apps"
-              info="Develop intelligent data driven web apps that help you make more informed decisions."
+              info="Develop intelligent data-driven web apps that help you make more informed decisions."
             />
             <ExperienceCard
               label="Automating Existing Processes"
-              info="We can also help you streamline & automate your internal operations with our discovery led approach."
+              info="We can also help you streamline & automate your internal operations with our discovery-led approach."
             />
             <ExperienceCard
               label="E-commerce & Web Portals"
-              info="From marketplaces (doctors, insurances etc) to online shopping, we have designed & developed several eCommerce portals."
+              info="From marketplaces to online shopping, we have designed & developed several eCommerce portals."
             />
             <ExperienceCard
               label="Scalable SaaS Products"
@@ -384,7 +371,7 @@ export default function ServicesWebDev() {
           build a solution that you help our clients stay ahead of the game.
         </div>
         <div className="container__emerging__technologies__section">
-          {array.map((item) => (
+          {array.map(item => (
             <WebdevArrEntry
               label={item.label}
               svg={item.svg}
@@ -394,8 +381,8 @@ export default function ServicesWebDev() {
           ))}
         </div>
         {array
-          .filter((item) => item.label === selected)
-          .map((item) => (
+          .filter(item => item.label === selected)
+          .map(item => (
             <div className="container__emerging__technologies__section__entry__data">
               <div className="container__emerging__technologies__section__entry__data___heading">
                 {item.label}
@@ -409,7 +396,7 @@ export default function ServicesWebDev() {
       <div className="container__feature">
         <div className="container__feature__col">
           <div className="container__feature__col__heading">
-            Why Work with Code District?
+            Why Work with DSME Global Links?
           </div>
           <div className="container__feature__col__info">
             Our teams are specifically trained to work under these guideline

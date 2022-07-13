@@ -1,6 +1,6 @@
-import React from "react";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import software from "../assets/software.svg";
+import React from 'react';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import software from '../assets/software.svg';
 
 export default function ServiceCustomSoft() {
   return (
@@ -36,8 +36,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-airplay"
-                  >
+                    class="feather feather-airplay">
                     <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
                     <polygon points="12 15 17 21 7 21 12 15"></polygon>
                   </svg>
@@ -46,8 +45,9 @@ export default function ServiceCustomSoft() {
               </div>
               <div className="customsoft_first_container_content">
                 Looking to build custom web applications? With our expertise in
-                delivering end to end solutions for web using technology stacks
-                like Ruby on Rails, .NET, Node.js etc, we are set to do that.
+                delivering end-to-end solutions for the web using technology
+                stacks like React Js, .NET, MySql, MSSQL, Node.js, etc, we are
+                set to do that.
               </div>
               <div className="customsoft_first_container_button">
                 <a className="learn_more" href="">
@@ -64,8 +64,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-arrow-right"
-                  >
+                    class="feather feather-arrow-right">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                   </svg>
@@ -87,18 +86,17 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-phone"
-                  >
+                    class="feather feather-phone">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
                 </div>
                 <span>Mobile App Development</span>
               </div>
               <div className="customsoft_second_container_content">
-                Developed over 300+ enterprise and consumer facing mobile
-                applications. Work with Code District to formulate winning
-                mobile strategies and develop trend setting mobile apps to help
-                you transform your business, cut down on costs and reap higher
+                Developed over 300+ enterprise and consumer-facing mobile
+                applications. Work with DSME Global Links to formulate winning
+                mobile strategies and develop trendsetting mobile apps to help
+                you transform your business, cut down on costs, and reap higher
                 profits.
               </div>
               <div className="customsoft_second_container_button">
@@ -115,8 +113,7 @@ export default function ServiceCustomSoft() {
                   strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-arrow-right"
-                >
+                  class="feather feather-arrow-right">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -148,8 +145,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-shield"
-                  >
+                    class="feather feather-shield">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
                   <span>Enterprise</span>
@@ -165,8 +161,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -185,8 +180,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -206,8 +200,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -224,12 +217,11 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
-                  <span>Legacy app upgrade and enhancements.e.</span>
+                  <span>Legacy app upgrade and enhancements. </span>
                 </div>
                 <div className="customsoft_third_container_first_box_svg_fourth">
                   <svg
@@ -242,8 +234,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -267,8 +258,7 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-shopping-cart"
-                    >
+                      class="feather feather-shopping-cart">
                       <circle cx="9" cy="21" r="1"></circle>
                       <circle cx="20" cy="21" r="1"></circle>
                       <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
@@ -287,8 +277,7 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -308,8 +297,7 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -328,8 +316,7 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -348,8 +335,7 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -366,8 +352,7 @@ export default function ServiceCustomSoft() {
                       strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-check-circle"
-                    >
+                      class="feather feather-check-circle">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
@@ -391,8 +376,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-flag"
-                  >
+                    class="feather feather-flag">
                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
                     <line x1="4" y1="22" x2="4" y2="15"></line>
                   </svg>
@@ -409,8 +393,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -430,8 +413,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -451,8 +433,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -472,8 +453,7 @@ export default function ServiceCustomSoft() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
+                    class="feather feather-check-circle">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
@@ -687,6 +667,15 @@ export default function ServiceCustomSoft() {
             </div>
           </div>
         </div>
+        <div className="customesoft__why__section">
+          <div className="customesoft__why__section__heading">
+            Why Work With DSME Global Links
+          </div>
+          <div className="customesoft__why section__subheading">
+            Get access to the top talent of experienced product managers,
+            smartest designers, and engineers.
+          </div>
+        </div>
         <div className="customsoft_five_container_all_main">
           <div className="customsoft_five_container_all_main_boxes">
             <div className="customsoft_five_container_first_box">
@@ -700,8 +689,7 @@ export default function ServiceCustomSoft() {
                 strokeWidth="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-file"
-              >
+                class="feather feather-file">
                 <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
                 <polyline points="13 2 13 9 20 9"></polyline>
               </svg>
@@ -727,8 +715,7 @@ export default function ServiceCustomSoft() {
                 strokeWidth="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-file-minus"
-              >
+                class="feather feather-file-minus">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="9" y1="15" x2="15" y2="15"></line>
@@ -754,8 +741,7 @@ export default function ServiceCustomSoft() {
                 strokeWidth="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-file-plus"
-              >
+                class="feather feather-file-plus">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="12" y1="18" x2="12" y2="12"></line>
@@ -783,8 +769,7 @@ export default function ServiceCustomSoft() {
                 strokeWidth="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-file-text"
-              >
+                class="feather feather-file-text">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>

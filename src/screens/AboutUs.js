@@ -815,7 +815,7 @@ export default function AboutUs() {
                 </svg>
               }
               label="Domain Expertise"
-              info="Solid business domain experience, technical expertise and knowledge of latest industry trends helps us deliver exceptional results"
+              info="Solid business domain experience, technical expertise and knowledge of latest industry trends helps us deliver exceptional results."
             />
             <KeyDifferenceEntry
               svg={

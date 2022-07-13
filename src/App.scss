@@ -7583,12 +7583,31 @@ body {
 .customsoft_fourth_container_first_box_all_main_container {
   padding: 4em;
 }
+.customesoft__why__section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 4em;
+  align-items: center;
+}
 .customsoft_five_container_all_main {
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
   max-width: 1500px;
-  padding: 4em;
+  padding: 3em;
+}
+.customesoft__why__section__heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.customesoft__why__section__subheading {
+  display: flex;
+  font-size: 16px;
+  text-align: center;
 }
 .customsoft_five_container_first_box_content {
   font-size: 20px;
