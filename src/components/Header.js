@@ -1,9 +1,4 @@
-import React, {
-  useEffect,
-  useLayoutEffect,
-  useState,
-  useTransition,
-} from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { X, Menu } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../assets/logoDark.svg";
@@ -28,7 +23,7 @@ export default function Header({ light }) {
     window.addEventListener("resize", navOpenClose);
     window.addEventListener("scroll", navOpenClose);
   }, []);
-  const [isPending, startTransition] = useTransition();
+
   const changeBackgrond = () => {
     if (window.scrollY > 0) {
       setIsScrolling(true);
@@ -94,13 +89,11 @@ export default function Header({ light }) {
           <Link
             to="/quote"
             onClick={() => {
-              startTransition(() => {
-                document
-                  .getElementsByName("header__content__nav__entry")
-                  .forEach((item) => {
-                    item.checked = false;
-                  });
-              });
+              document
+                .getElementsByName("header__content__nav__entry")
+                .forEach((item) => {
+                  item.checked = false;
+                });
             }}
             className="header__content__button__primary"
           >
