@@ -54,7 +54,8 @@ export default function ContactUsBottom() {
                   });
               }
             }}
-            className="contact__section__content__middle">
+            className="contact__section__content__middle"
+          >
             <div className="contact__section__content__middle__header">
               <div className="contact__section__content__middle__sub__heading">
                 Let us help you!
@@ -85,7 +86,8 @@ export default function ContactUsBottom() {
                 <Input
                   type="email"
                   required={true}
-                  placeholder="Email"
+                  label="Company Name (Optional)"
+                  placeholder="Type your company name"
                   isError={errorEmail}
                   errorMessage={errorEmailMessage}
                   onChange={(e) => {
@@ -100,10 +102,30 @@ export default function ContactUsBottom() {
                   }}
                 />
               </div>
+
               <div className="contact__section__content__middle__form__row">
                 <Input
+                  type="email"
+                  required={true}
+                  label="Email*"
+                  placeholder=""
+                  isError={errorEmail}
+                  errorMessage={errorEmailMessage}
+                  onChange={(e) => {
+                    if (e.target.value === "") {
+                      setErrorEmaill(true);
+                      setErrorEmailMessage("Please enter email");
+                    } else {
+                      setErrorEmaill(false);
+                      setErrorEmailMessage("");
+                      setEmail(e.target.value);
+                    }
+                  }}
+                />
+                <Input
                   type="tel"
-                  placeholder="Phone"
+                  label="Mobile (Optional)"
+                  placeholder=""
                   required={true}
                   isError={errorPhone}
                   errorMessage={errorPhoneMessage}
@@ -118,24 +140,25 @@ export default function ContactUsBottom() {
                     }
                   }}
                 />
-                <Input
-                  type="text"
-                  placeholder="Subject"
-                  required={true}
-                  isError={errorSubject}
-                  errorMessage={errorSubjectMessage}
-                  onChange={(e) => {
-                    if (e.target.value === "") {
-                      setErrorSubject(true);
-                      setErrorSubjectMessage("Please enter subject");
-                    } else {
-                      setErrorSubject(false);
-                      setErrorSubjectMessage("");
-                      setSubject(e.target.value);
-                    }
-                  }}
-                />
               </div>
+              <Input
+                type="text"
+                label="Subject"
+                placeholder=""
+                required={true}
+                isError={errorSubject}
+                errorMessage={errorSubjectMessage}
+                onChange={(e) => {
+                  if (e.target.value === "") {
+                    setErrorSubject(true);
+                    setErrorSubjectMessage("Please enter subject");
+                  } else {
+                    setErrorSubject(false);
+                    setErrorSubjectMessage("");
+                    setSubject(e.target.value);
+                  }
+                }}
+              />
               <Input
                 variant="textarea"
                 type="text"
@@ -152,11 +175,12 @@ export default function ContactUsBottom() {
                     setMessage(e.target.value);
                   }
                 }}
-                placeholder="Message"
+                label="How can we help you?"
+                placeholder="Give us some details about your project"
               />
             </div>
             <button className="contact__section__content__middle__form__button">
-              Send
+              Let’s start a conversation
             </button>
           </form>
         </div>

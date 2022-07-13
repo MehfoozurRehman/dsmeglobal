@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
 import missionSvg from "../assets/missionSvg.svg";
 import visionSvg from "../assets/visionSvg.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
@@ -7,8 +9,6 @@ import ceo from "../assets/ceo.png";
 import { PromiseEntry } from "../components/PromiseEntry";
 import { CoreValueEntry } from "../components/CoreValueEntry";
 import { KeyDifferenceEntry } from "../components/KeyDifferenceEntry";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
 import StoryPic from "../assets/fw-airlines.jpg";
 import brandLogo from "../assets/6.png";
 import clutch from "../assets/top-clutch.png";
@@ -33,8 +33,96 @@ import pressRelasePic3 from "../assets/pressRelase3.jpg";
 import pressRelasePic4 from "../assets/pressRelase4.jpg";
 import pressRelasePic5 from "../assets/pressRelase5.jpg";
 import pressRelasePic6 from "../assets/pressRelase6.jpg";
+import {
+  Ahmed,
+  Aniqa_Mukhtar,
+  Azeem_Hammad,
+  Daniyal_Pirzada,
+  Director_Legal_Affairs,
+  Dr_Aimon_Malik,
+  Dr_Nimra_Qureshi,
+  Gulraiz_Malik,
+  Hammad_Habib,
+  Hamza_Arshad,
+  Joweriya_Shahid,
+  Kamran_Ameen,
+  Mehfooz_ur_Rehman,
+  Moazam_Saleem,
+  Muhammad_Mobeen,
+  Musharraf_Hassan,
+  Naimah_Jones,
+  Qaiser_Riaz,
+  Qasim,
+  Sapna_Shams,
+  Shahid_Aziz,
+  Usman_Ijaz,
+  Zunaira_Najam,
+  Zunaira_Amjad,
+} from "../assets/team";
 
 export default function AboutUs() {
+  const team = [
+    { image: Shahid_Aziz, name: "Shahid Aziz" },
+    { image: Dr_Aimon_Malik, name: "Dr.Aimon Malik" },
+    { image: Dr_Nimra_Qureshi, name: "Dr.Nimra Qureshi" },
+    {
+      image: Azeem_Hammad,
+      name: "Azeem Hammad",
+      designation: "Frontend Develper",
+    },
+    {
+      image: Daniyal_Pirzada,
+      name: "Daniyal Pirzada",
+      designation: "Frontend Developer",
+    },
+    { image: Director_Legal_Affairs, name: "Director Legal Affairs" },
+    {
+      image: Gulraiz_Malik,
+      name: "Gulraiz Malik",
+      designation: "Frontend Developer",
+    },
+    { image: Hammad_Habib, name: "Hammad Habib" },
+    { image: Hamza_Arshad, name: "Hamza Arshad", designation: "" },
+    { image: Joweriya_Shahid, name: "Joweriya Shahid", designation: "" },
+    { image: Kamran_Ameen, name: "Kamran Ameen", designation: "" },
+    {
+      image: Mehfooz_ur_Rehman,
+      name: "Mehfooz ur Rehman",
+      designation: "Frontend Developer",
+    },
+    {
+      image: Moazam_Saleem,
+      name: "Moazam Saleem",
+      designation: "Frontend Developer",
+    },
+    {
+      image: Zunaira_Najam,
+      name: "Zunaira Najam",
+      designation: "Frontend Developer",
+    },
+    { image: Zunaira_Amjad, name: "Zunaira Amjad", designation: "" },
+    {
+      image: Aniqa_Mukhtar,
+      name: "Aniqa Mukhtar",
+      designation: "Graphic Designer",
+    },
+    { image: Muhammad_Mobeen, name: "Muhammad Mobeen" },
+    {
+      image: Musharraf_Hassan,
+      name: "Musharraf Hassan",
+      designation: "Backend Develper",
+    },
+    { image: Naimah_Jones, name: "Naimah Jones", designation: "" },
+    { image: Qaiser_Riaz, name: "Qaiser Riaz", designation: "" },
+    { image: Qasim, name: "Qasim", designation: "" },
+    { image: Sapna_Shams, name: "Sapna Shams", designation: "" },
+    { image: Usman_Ijaz, name: "Usman Ijaz", designation: "" },
+    {
+      image: Ahmed,
+      name: "Ahmed",
+      designation: "",
+    },
+  ];
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [slidesPerViewLogo, setSlidesPerViewLogo] = useState(4);
   const [showNavigation, setShowNavigation] = useState(true);
@@ -74,11 +162,16 @@ export default function AboutUs() {
         <HomeJumbotron
           taglinesLine="Lets Get to"
           taglines={["Know Us", "Know Our Story"]}
-          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
-            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
-            quibusdam ad?"
+          info={
+            <>
+              We are talented. We are experienced. <br />
+              We are bold. We are DSME Global Links! <br />
+              Get a behind-the-scenes glimpse of your new favorite software
+              development company.
+              <br />
+              Let’s work together
+            </>
+          }
           img={about}
         />
       </div>
@@ -91,10 +184,38 @@ export default function AboutUs() {
             Message from our <span>ceo</span>
           </div>
           <div className="about__ceo__message__right__info">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel fugiat
-            labore magnam assumenda dolore, quos eaque quisquam fugit aliquam ad
-            sed quae placeat non enim ullam et perferendis sint itaque.
+            <b>We believe in what we do and that drives us to excel</b>
+            <br />
+            “We enable a smooth and reliable digital transformation by providing
+            comprehensive services that embed technology into business.”
           </div>
+        </div>
+      </div>
+      <div className="about__teams">
+        <div className="about__teams__heading">
+          Teamwork, Makes the dram work
+        </div>
+        <div className="about__teams__content">
+          {team.map((item) => (
+            <div
+              className="about__teams__content__entry"
+              key={JSON.stringify(item)}
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="about__teams__content__entry__img"
+              />
+              <div className="about__teams__content__entry__overlay">
+                <div className="about__teams__content__entry__overlay__heading">
+                  {item.name}
+                </div>
+                <div className="about__teams__content__entry__overlay__info">
+                  {item.designation}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="about__core__values">

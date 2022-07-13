@@ -143,7 +143,8 @@ export default function ContactSection() {
               <div className="contact__section__content__middle__form__row">
                 <Input
                   type="text"
-                  placeholder="Name"
+                  label="Name"
+                  placeholder="Type your name"
                   required={true}
                   isError={errorName}
                   errorMessage={errorNameMessage}
