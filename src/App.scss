@@ -1517,6 +1517,26 @@ body {
   transition: 300ms ease-in-out;
   opacity: 1;
 }
+.about__agile__process {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 0em 4em;
+  margin-bottom: 5em;
+  align-items: center;
+}
+.about__agile__process__heading {
+  font-size: 30px;
+  color: $black;
+  font-weight: bold;
+  // margin-bottom: 0.5em;
+  text-align: center;
+}
+.about__agile__process__img {
+  width: 100%;
+}
 .feature__section__entry__content__jumbotron__sub__heading {
   font-size: 30px;
   color: $black;
@@ -6202,6 +6222,12 @@ body {
     position: sticky;
     font-size: 20px;
     position: sticky;
+  }
+  .about__teams {
+    padding: 0em 2em;
+  }
+  .about__agile__process {
+    padding: 0em 2em;
   }
   .about__teams__content__entry {
     min-width: 50%;

@@ -33,6 +33,7 @@ import pressRelasePic3 from '../assets/pressRelase3.jpg';
 import pressRelasePic4 from '../assets/pressRelase4.jpg';
 import pressRelasePic5 from '../assets/pressRelase5.jpg';
 import pressRelasePic6 from '../assets/pressRelase6.jpg';
+import agileprocess from '../assets/agile__process__img.png';
 import {
   Ahmed,
   Aniqa_Mukhtar,
@@ -217,14 +218,12 @@ export default function AboutUs() {
           ))}
         </div>
       </div>
-      {/* <div className="about__agile__process">
+      <div className="about__agile__process">
         <div className="about__agile__process__heading">
           Agile Development Process
         </div>
-        <div className="about__agile__process__img">
-          <img src='./' alt='agile process img'></img>
-        </div>
-      </div> */}
+          <img className='about__agile__process__img' src={agileprocess} alt="agile process img"></img>
+      </div>
       <div className="about__core__values">
         <div className="about__core__values__header">
           <div className="about__core__values__header__heading">
