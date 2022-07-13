@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import ApplyForJobPopup from "../components/ApplyForJobPopup";
 import { CareersFilters } from "../components/CareersFilters";
 import HotOfferJobCard from "../components/HotOfferJobCard";
@@ -72,7 +72,7 @@ export default function Careers({ setLightHeader }) {
   }, []);
   const [careerBanner, setCareerBanner] = useState(true);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setCareerBanner(true);
     return () => {
       setCareerBanner(true);

@@ -7,13 +7,7 @@ import img5 from "../assets/5.png";
 import img6 from "../assets/6.png";
 import { Link } from "react-router-dom";
 import logoDark from "../assets/logo.svg";
-import {
-  Dribbble,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-} from "react-feather";
+import { Facebook, Instagram, Linkedin } from "react-feather";
 import { FooterServices } from "./FooterServices";
 import { FooterTopics } from "./FooterTopics";
 

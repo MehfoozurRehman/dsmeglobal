@@ -1,7 +1,7 @@
 import React, { useTransition } from "react";
 
 export function NavLink({ children, to, navigate }) {
-  const [isPending, startTransition] = useTransition();
+  const [startTransition] = useTransition();
   return (
     <div className="header__content__nav__entry">
       <input
