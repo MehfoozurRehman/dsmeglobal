@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
-import {HomeJumbotron} from '../components/HomeJumbotron';
-import web from '../assets/web.svg';
-import {CheckCircle} from 'react-feather';
-import {ExperienceCard} from '../components/ExperienceCard';
-import {ExperitseCard} from '../components/ExperitseCard';
-import WebdevArrEntry from '../components/WebdevArrEntry';
-import {ServicesFeatureListItem} from '../components/ServicesFeatureListItem';
+import React, { useState } from "react";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import web from "../assets/web.svg";
+import { CheckCircle } from "react-feather";
+import { ExperienceCard } from "../components/ExperienceCard";
+import { ExperitseCard } from "../components/ExperitseCard";
+import WebdevArrEntry from "../components/WebdevArrEntry";
+import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
 
 export default function ServicesWebDev() {
-  const [selected, setSelected] = useState('AR VR');
+  const [selected, setSelected] = useState("AR VR");
   const array = [
     {
-      label: 'AR VR',
+      label: "AR VR",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@ export default function ServicesWebDev() {
           </g>
         </svg>
       ),
-      info: 'We study changes in consumer perspective to build a cost-effective, robust and game-changing AR/VR solutions for a variety of products and services.',
+      info: "We study changes in consumer perspective to build a cost-effective, robust and game-changing AR/VR solutions for a variety of products and services.",
     },
     {
-      label: 'Blockchain',
+      label: "Blockchain",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,10 @@ export default function ServicesWebDev() {
           />
         </svg>
       ),
-      info: 'We provide blockchain consulting services and customized solutions for businesses, startups and enterprises to transform the way they operate.',
+      info: "We provide blockchain consulting services and customized solutions for businesses, startups and enterprises to transform the way they operate.",
     },
     {
-      label: 'Internet of things',
+      label: "Internet of things",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -90,10 +90,10 @@ export default function ServicesWebDev() {
           </g>
         </svg>
       ),
-      info: 'Our team of engineers can help you build fully customized products/apps with interconnectivity between all known tech and non-tech devices.      ',
+      info: "Our team of engineers can help you build fully customized products/apps with interconnectivity between all known tech and non-tech devices.      ",
     },
     {
-      label: 'Artificial intelligence',
+      label: "Artificial intelligence",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -108,10 +108,10 @@ export default function ServicesWebDev() {
           />
         </svg>
       ),
-      info: 'Owing to the growing demand for intelligent applications, systems and products our engineers are experienced enough to construct robust artificial intelligent solutions.      ',
+      info: "Owing to the growing demand for intelligent applications, systems and products our engineers are experienced enough to construct robust artificial intelligent solutions.      ",
     },
     {
-      label: 'Machine learning',
+      label: "Machine learning",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -131,10 +131,10 @@ export default function ServicesWebDev() {
           </g>
         </svg>
       ),
-      info: 'Incorporate machine learning into your current or planned product development initiatives for better user experience, decision making and consumer retention and loyalty.      ',
+      info: "Incorporate machine learning into your current or planned product development initiatives for better user experience, decision making and consumer retention and loyalty.      ",
     },
     {
-      label: 'Big data',
+      label: "Big data",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@ export default function ServicesWebDev() {
           />
         </svg>
       ),
-      info: 'Make better and faster data driven decisions to help support your businesses with our capability of building products/applications that rely on big data analytics.      ',
+      info: "Make better and faster data driven decisions to help support your businesses with our capability of building products/applications that rely on big data analytics.      ",
     },
   ];
   return (
@@ -371,7 +371,7 @@ export default function ServicesWebDev() {
           build a solution that you help our clients stay ahead of the game.
         </div>
         <div className="container__emerging__technologies__section">
-          {array.map(item => (
+          {array.map((item) => (
             <WebdevArrEntry
               label={item.label}
               svg={item.svg}
@@ -381,8 +381,8 @@ export default function ServicesWebDev() {
           ))}
         </div>
         {array
-          .filter(item => item.label === selected)
-          .map(item => (
+          .filter((item) => item.label === selected)
+          .map((item) => (
             <div className="container__emerging__technologies__section__entry__data">
               <div className="container__emerging__technologies__section__entry__data___heading">
                 {item.label}

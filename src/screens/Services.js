@@ -134,8 +134,7 @@ export default function Services() {
       </div>
       <div
         className="services__main__container"
-        style={{ position: "sticky", zIndex: 999 }}
-      >
+        style={{ position: "sticky", zIndex: 999 }}>
         {data.map((item) => (
           <ServicesCard data={item} key={JSON.stringify(item)} />
         ))}

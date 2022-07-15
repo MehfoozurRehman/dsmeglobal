@@ -2123,12 +2123,16 @@ body {
 }
 .pricing__understand__container__content__bottom__card__left {
   width: 30%;
+  height: 100%;
+  margin-right: 1em;
+
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: flex-start;
 }
-.pricing__understand__container__content__bottom__card__left img {
+.pricing__understand__container__content__bottom__card__left svg {
   width: 50px;
+  height: 50px;
 }
 .pricing__understand__container__content__bottom__card__right__heading {
   font-size: 25px;
@@ -2188,8 +2192,9 @@ body {
   width: 22%;
   // border: 1px solid red;
 }
-.pricing__all__inclusive__container__content__bottom__card__icon img {
+.pricing__all__inclusive__container__content__bottom__card__icon svg {
   height: 50px;
+  width: 50px;
 }
 .pricing__all__inclusive__container__content__bottom__card__title {
   font-size: 18px;
