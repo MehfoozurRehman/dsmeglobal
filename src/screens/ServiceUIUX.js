@@ -11,8 +11,8 @@ export default function ServiceUIUX() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="UI/UX Design"
-          info="Web applications that are visually amazing and provide seamless user experience for the desktop, mobile and tablet."
+          taglinesLine="User Experience & Design Solutions"
+          info="We design and launch digital products that deliver great user experiences. Good user experiences are very important to us for every software we create. By basing our software on human-centered design principles, we ensure your users get the best experience, and you get the best return on investment.."
           img={design}
           talk={true}
         />
