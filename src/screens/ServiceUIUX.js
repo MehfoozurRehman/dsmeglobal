@@ -3,7 +3,7 @@ import { HomeJumbotron } from "../components/HomeJumbotron";
 import design from "../assets/design.svg";
 import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";
-import { BlockchainServices } from "../components/BlockchainServices";
+import { BlockchainServices } from "../components/BlockchainServicesUiux";
 import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
 import EcomereceProjectsCard from "../components/EcomereceProjectsCard";
 import "../styles/ServiceBlockchain.scss";
