@@ -776,6 +776,7 @@ body {
   color: $white;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .blog__page__content__button button:hover {
@@ -5077,13 +5078,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.ecommerce__screen__container__recent__work__content{
+.ecommerce__screen__container__recent__work__content {
   max-width: 1440px;
   margin: 0 auto;
   padding: 4em;
 }
-@media (max-width:500px){
-  .ecommerce__screen__container__recent__work__content{
+@media (max-width: 500px) {
+  .ecommerce__screen__container__recent__work__content {
     padding: 2em;
   }
 }
@@ -5804,6 +5805,7 @@ body {
 .blog__greenbox__container__button:hover {
   background-color: #242424;
   color: #efefef;
+  cursor: pointer;
 }
 .how__we__do__section {
   display: flex;
