@@ -407,8 +407,8 @@ export default function ServicesMobDev() {
               info="With our custom built fleet management systems you can minimize vehicle risk, improve productivity and reduce costs of transportation."
             />
             <ExperienceCard
-              label="Media Streaming"
-              info="Build extensive media streaming apps that are highly interactive, scalable, content rich , highly secure and fast."
+              label="Recruitment"
+              info="We build recruitment, talent sourcing, and jobs marketplace apps that help you deliver maximum value, vetted candidates, real-time match-making, and support systems result in reduced HR-related costs for companies."
             />
             <ExperienceCard
               label="mCommerce Development"
