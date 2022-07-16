@@ -1546,7 +1546,7 @@ body {
   display: flex;
   margin-bottom: 0.5em;
 }
-.pricing__feature__container{
+.pricing__feature__container {
   font-size: 30px;
   font-weight: 500;
   display: flex;
@@ -1556,7 +1556,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-.pricing__feature__container__button{
+.pricing__feature__container__button {
   font-size: 30px;
   font-weight: 500;
   display: flex;
@@ -1565,8 +1565,7 @@ body {
   margin: 0 auto;
   padding: 4em;
 }
-.btn{
-  
+.btn {
   color: #ffffff;
   height: 40px;
   padding: 0 1.5em;
@@ -1575,7 +1574,6 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
 }
 .pricing__feature {
   width: 100%;
@@ -5885,6 +5883,51 @@ body {
 .how__we__do__section__card__detail__line__svg {
   color: #0d6e4b;
 }
+.Custome__methodologies__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1500px;
+  padding: 4em 4em 1em 4em;
+  margin: 2em auto;
+}
+.Custome__methodologies__section__heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.Custome__methodologies__section__detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Custome__methodologies__section__detail__card {
+  margin-bottom: 2em;
+  background-color: rgba(13, 110, 74, 0.1);
+  border-radius: 5px;
+  padding: 2em;
+  width: 32%;
+}
+.Custome__methodologies__section__detail__card__heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.Custome__methodologies__section__detail__card__line {
+  font-size: 16px;
+}
+.Custome__methodologies__section__detail__card__line::before {
+  content: '';
+  // right: 2em;
+  background-color: #189366;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  // top: 5px;
+  display: inline-block;
+  margin-right: 1em;
+}
 @media (max-width: 1250px) {
   .pricing__delivery__section__content__card {
     min-width: 50%;
@@ -6151,6 +6194,9 @@ body {
   .about__teams__content__entry {
     min-width: 20%;
   }
+  .Custome__methodologies__section__detail__card {
+    width: 48%;
+  }
 }
 @media (max-width: 850px) {
   .ios__development__tangible {
@@ -6220,6 +6266,9 @@ body {
   .june_second_container {
     width: 100%;
     margin: 0em;
+  }
+  .Custome__methodologies__section__detail__card {
+    width: 100%;
   }
 }
 @media (max-width: 670px) {
