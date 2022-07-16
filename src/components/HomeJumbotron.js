@@ -94,7 +94,7 @@ export function HomeJumbotron({
                 }}
                 className="container__jumbotron__left__button__secondary"
               >
-                Lets talk
+                Let’s work together
               </button>
             </div>
           ) : null}

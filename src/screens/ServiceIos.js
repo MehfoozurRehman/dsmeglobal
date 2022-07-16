@@ -33,13 +33,7 @@ export default function ServicesIos() {
             </div>
             <div className="ios__mobile__share__your__idea__section__right">
               <div className="ios__mobile__share__your__idea__section__right__text">
-                How can you ensure your iOS app turns into a great success?
-                Trust an experienced partner that takes the development effort
-                off your hands, and let us create a solution that will astound
-                your users and bring measurable business results. While you can
-                focus on your business, we combine in-depth research,
-                outstanding design, and impeccable development to create an
-                exceptional iOS application that fits your needs.
+              How can you ensure your iOS app turns into a great success? Trust an experienced partner that takes the development effort off your hands, and let us create a solution that will astound your users and bring measurable business results. While you can focus on your business, we combine in-depth research, outstanding design, and impeccable development to create an exceptional iOS application that fits your needs.
               </div>
             </div>
           </div>
@@ -54,12 +48,13 @@ export default function ServicesIos() {
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
-            What makes DSMEGlobals a top iOS development company?
+          What makes DSME Global Links a top iOS development company?
+
           </div>
           <div className="ios__mobile__page__one__step__ios__development__section">
             <div className="ios__mobile__page__one__step__ios__development__section__left">
               <div className="ios__mobile__page__one__step__ios__development__section__left__heading">
-                One-stop iOS development agency
+              One-stop iOS development agency
               </div>
               <div className="ios__mobile__page__one__step__ios__development__section__left__text">
                 It takes lots of effort, planning, and research to create a
@@ -88,32 +83,20 @@ export default function ServicesIos() {
             </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
-                Experts in Swift development
+              Swift dashboard
               </div>
               <div className="ios__ios__development__swift__development__section__left__text">
-                If you are researching iPhone app development, you’ve probably
-                heard of Swift. It’s a powerful, intuitive programming language,
-                created and supported by Apple, and used to build applications
-                for iOS. Although older applications were often written in ObjC,
-                Swift is the go-to choice for new applications, as a faster,
-                more secure, and future-proof choice. With each case, our
-                developers choose the stack carefully to deliver top-notch
-                applications, made to fit specific business needs.
+              If you are researching iPhone app development, you’ve probably heard of Swift. It’s a powerful, intuitive programming language, created and supported by Apple, and used to build applications for iOS. Although older applications were often written in ObjC, Swift is the go-to choice for new applications, as a faster, more secure, and future-proof choice. With each case, our developers choose the stack carefully to deliver top-notch applications, made to fit specific business needs.
               </div>
             </div>
           </div>
           <div className="ios__mobile__page__one__step__ios__development__section">
             <div className="ios__mobile__page__one__step__ios__development__section__left">
               <div className="ios__mobile__page__one__step__ios__development__section__left__heading">
-                iOS applications recognised worldwide
+              iOS applications recognized worldwide
               </div>
               <div className="ios__mobile__page__one__step__ios__development__section__left__text">
-                With over 10 years of work in iOS application development, you
-                can be sure that you are not putting your project in
-                inexperienced hands. Working with world-renowned brands
-                worldwide such as Skyscanner, TUI, Aviva, BNP Paribas, or
-                Herbalife, we’ve gained hands-on experience in combining
-                business objectives with cutting-edge mobile solutions.
+              With over 10 years of work in iOS application development, you can be sure that you are not putting your project in inexperienced hands. Working with world-renowned brands worldwide such as AIDApro, Vinvi, SeeVitals, Friendly Face,  BFS, or Catering, we’ve gained hands-on experience in combining business objectives with cutting-edge mobile solutions.
               </div>
             </div>
             <div className="ios__mobile__page__one__step__ios__development__section__right">
@@ -172,11 +155,10 @@ export default function ServicesIos() {
           <div className="ios__development__native__ios__container">
             <div className="ios__development__native__ios__container__left">
               <div className="ios__development__native__ios__container__heading">
-                Why choose native iOS app development?
+              Why choose native iOS app development?
               </div>
               <div className="ios__development__native__container__text">
-                What are the pros of building a native application for iOS? See
-                our list and make sure your choice is well-informed.
+              What are the pros of building a native application for iOS? See our list and make sure your choice is well-informed.
               </div>
 
               <div className="ios__development__native__impressive__performance">
@@ -184,11 +166,7 @@ export default function ServicesIos() {
                   Impressive performance
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
-                  If application speed and top-notch performance are your
-                  priorities, you should go for native development. Native iOS
-                  apps tend to run faster than cross-platform ones, as they are
-                  written in Swift, which is supported by the platform’s
-                  ecosystem.
+                If application speed and top-notch performance are your priorities, you should go for native development. Native iOS apps tend to run faster than cross-platform ones, as they are written in Swift, which is supported by the platform’s ecosyste
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
@@ -196,16 +174,10 @@ export default function ServicesIos() {
                   Platform-specific features
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
-                  Are you planning to equip your app with functions like
-                  biometrics, geolocation, or features based on a Bluetooth
-                  connection? If so, it’s better to develop a native iOS
-                  application. These are what we call native application
-                  features, and they usually are more difficult to develop for
-                  cross-platform. Even seemingly simple functionalities tend to
-                  perform better within native applications.
+                Are you planning to equip your app with functions like biometrics, geolocation, or features based on a Bluetooth connection? If so, it’s better to develop a native iOS application. These are what we call native application features, and they usually are more difficult to develop for cross-platform. Even seemingly simple functionalities tend to perform better within native applications.
                 </div>
               </div>
-              <div className="ios__development__native__impressive__performance">
+              {/* <div className="ios__development__native__impressive__performance">
                 <div className="ios__development__native__impressive__performance__heading">
                   Dependability and support
                 </div>
@@ -218,7 +190,7 @@ export default function ServicesIos() {
                   keep the language up-to-date and dependable in terms of
                   maintenance and development.
                 </div>
-              </div>
+              </div> */}
               <div className="ios__development__native__impressive__performance">
                 <div className="ios__development__native__impressive__performance__heading">
                   Dependability and support
