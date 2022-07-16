@@ -34,13 +34,9 @@ export default function Pricing() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Best"
-          taglines={["products", "prices"]}
-          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
-            ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
-            quibusdam ad?"
+          taglinesLine="Less Execution Risk"
+          taglines={["More", "trust"]}
+          info="We plan and deliver your product over multiple milestones, leveraging a transparent working methodology."
           imgs={[products, pricing]}
         />
       </div>
@@ -171,7 +167,8 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="100.218"
                   height="100.269"
-                  viewBox="0 0 100.218 100.269">
+                  viewBox="0 0 100.218 100.269"
+                >
                   <path
                     id="Path_11653"
                     data-name="Path 11653"
@@ -248,7 +245,8 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="103.906"
                   height="129.892"
-                  viewBox="0 0 103.906 129.892">
+                  viewBox="0 0 103.906 129.892"
+                >
                   <path
                     id="Path_11666"
                     data-name="Path 11666"
@@ -343,9 +341,17 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+      <div className="pricing__feature__container">
+        This process offers minimum risk and a transparent approach since you
+        only pay on the completion of defined deliverables.
+      </div>
+      <div className="pricing__feature__container__button">
+        <button className="btn">Let's talk</button>
+      </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
-          We <span>Provide</span> You
+          We leverage our across-the-board knowledge base to expertly deliver
+          your product on time and within your budget.
         </div>
         <PricingFeatureEntry
           // icon={
@@ -369,7 +375,7 @@ export default function Pricing() {
           //   </svg>
           // }
           title="Senior Team"
-          content="Highly experienced senior level cross-functional team inclusive of technical project manager, developers, designers and QA experts are allocated for the duration of the project."
+          content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
         />
         <PricingFeatureEntry
           title="Reliable"
@@ -407,11 +413,13 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="108.161"
                   height="90.091"
-                  viewBox="0 0 108.161 90.091">
+                  viewBox="0 0 108.161 90.091"
+                >
                   <g
                     id="Group_12079"
                     data-name="Group 12079"
-                    transform="translate(-1489.808 -1291.89)">
+                    transform="translate(-1489.808 -1291.89)"
+                  >
                     <path
                       id="Path_11402"
                       data-name="Path 11402"
@@ -457,11 +465,13 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="89.627"
                   height="89.616"
-                  viewBox="0 0 89.627 89.616">
+                  viewBox="0 0 89.627 89.616"
+                >
                   <g
                     id="Group_12080"
                     data-name="Group 12080"
-                    transform="translate(-731.829 -1246.219)">
+                    transform="translate(-731.829 -1246.219)"
+                  >
                     <path
                       id="Path_11682"
                       data-name="Path 11682"
@@ -605,11 +615,13 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="80.268"
                   height="84.862"
-                  viewBox="0 0 80.268 84.862">
+                  viewBox="0 0 80.268 84.862"
+                >
                   <g
                     id="Group_12081"
                     data-name="Group 12081"
-                    transform="translate(-1024.546 -1263.53)">
+                    transform="translate(-1024.546 -1263.53)"
+                  >
                     <path
                       id="Path_11710"
                       data-name="Path 11710"
@@ -641,11 +653,13 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="87.47"
                   height="86.85"
-                  viewBox="0 0 87.47 86.85">
+                  viewBox="0 0 87.47 86.85"
+                >
                   <g
                     id="Group_12082"
                     data-name="Group 12082"
-                    transform="translate(-1361.115 -1270.071)">
+                    transform="translate(-1361.115 -1270.071)"
+                  >
                     <path
                       id="Path_11707"
                       data-name="Path 11707"
@@ -686,7 +700,8 @@ export default function Pricing() {
             {DeliveryCardEntry1.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
-                key={JSON.stringify(item)}>
+                key={JSON.stringify(item)}
+              >
                 {item.para}
               </div>
             ))}
@@ -699,7 +714,8 @@ export default function Pricing() {
             {DeliveryCardEntry2.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
-                key={JSON.stringify(item)}>
+                key={JSON.stringify(item)}
+              >
                 {item.para}
               </div>
             ))}
@@ -712,7 +728,8 @@ export default function Pricing() {
             {DeliveryCardEntry3.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
-                key={JSON.stringify(item)}>
+                key={JSON.stringify(item)}
+              >
                 {item.para}
               </div>
             ))}

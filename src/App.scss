@@ -1546,7 +1546,37 @@ body {
   display: flex;
   margin-bottom: 0.5em;
 }
+.pricing__feature__container{
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.pricing__feature__container__button{
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em;
+}
+.btn{
+  
+  color: #ffffff;
+  height: 40px;
+  padding: 0 1.5em;
+  margin-right: 2em;
+  background-color: #189366;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 
+}
 .pricing__feature {
   width: 100%;
   max-width: calc(1500px - 8em);
@@ -1564,7 +1594,7 @@ body {
 }
 
 .pricing__feature__entry__reverse {
-  font-size: 35px;
+  font-size: 30px;
   color: $white;
   font-weight: bold;
   min-height: 200px;
