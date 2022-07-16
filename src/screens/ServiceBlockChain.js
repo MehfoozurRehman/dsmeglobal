@@ -1,11 +1,11 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
+import { WhyBlockChainSection } from "../components/WhyBlockChainSection";
+import { BlockchainServices } from "../components/BlockchainServices";
+import { BlockchainGetReady } from "../components/BlockchainGetReady";
+import { BlockchainHowWork } from "../components/BlockchainHowWork";
+import { BlockchainTechStack } from "../components/BlockchainTechStack";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import { WhyBlockChainSection } from "./WhyBlockChainSection";
-import { BlockchainServices } from "./BlockchainServices";
-import { BlockchainGetReady } from "./BlockchainGetReady";
-import { BlockchainHowWork } from "./BlockchainHowWork";
-import { BlockchainTechStack } from "./BlockchainTechStack";
 import "../styles/ServiceBlockchain.scss";
 
 export default function ServiceBlockChain() {
