@@ -4428,13 +4428,15 @@ body {
   padding-left: 15px;
 }
 
-.june_second_main_container {
-  background-color: $black;
-}
-.june_second_main_container * {
-  color: $white;
-}
 
+.june_second_main_container * {
+  color: black;
+}
+.june_fourth_container_box{
+  background-color: #001712;
+  color: white;
+  padding: 4em;
+}
 .june_fourth_container_box_title span {
   color: $primary;
   font-size: 30px;

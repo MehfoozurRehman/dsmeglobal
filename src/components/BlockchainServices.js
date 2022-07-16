@@ -4,7 +4,7 @@ export function BlockchainServices({}) {
   return (
     <div className="blockchain__servicessection">
       <div className="blockchain__servicessection__heading">
-        Services We Offer
+        We create apps your users will love.
       </div>
       <div className="blockchain__servicessection__services">
         <div className="blockchain__servicessection__servicecard">
@@ -24,11 +24,13 @@ export function BlockchainServices({}) {
             </svg>
           </div>
           <div className="blockchain__servicessection__servicecard__heading">
-            Public and Private Blockchains
+            User Research
           </div>
           <div className="blockchain__servicessection__servicecard__detail">
-            With Public and Private Blockchain options, you get to control who
-            has access to specific information.
+            For clients in the design and prospecting phase of a new product, we
+            offer in-depth user research, mockups, user persona development, and
+            thorough UI/UX testing to ensure your app is human-friendly from the
+            start.
           </div>
         </div>
         <div className="blockchain__servicessection__servicecard">
@@ -62,11 +64,11 @@ export function BlockchainServices({}) {
             </svg>
           </div>
           <div className="blockchain__servicessection__servicecard__heading">
-            Wallets and Exchanges
+            UX Audit
           </div>
           <div className="blockchain__servicessection__servicecard__detail">
-            We help you build safe Cryptocurrency wallets and exchanges to
-            conduct trade seamlessly without hurdles.
+            We offer UX auditing services for products that are already in the
+            hands of users so you can see what’s working and what isn’t.
           </div>
         </div>
         <div className="blockchain__servicessection__servicecard">
@@ -247,11 +249,12 @@ export function BlockchainServices({}) {
             </svg>
           </div>
           <div className="blockchain__servicessection__servicecard__heading">
-            Distributed Applications
+            Interaction Design
           </div>
           <div className="blockchain__servicessection__servicecard__detail">
-            Our Decentralized Applications development service helps keep
-            records tamper-proof and free of intrusions.
+            We combine the five dimensions of interaction design—words, visuals,
+            spatial layouts, time, and object behavior—into one smooth
+            experience to help you create the best possible user experience.
           </div>
         </div>
         <div className="blockchain__servicessection__servicecard">
@@ -306,173 +309,18 @@ export function BlockchainServices({}) {
             </svg>
           </div>
           <div className="blockchain__servicessection__servicecard__heading">
-            Testing & Migration
+            Information Architecture
           </div>
           <div className="blockchain__servicessection__servicecard__detail">
-            We help you migrate your existing business into Blockchain and
-            define a testing and migration roadmap.
+            We build the blueprints for your information systems—whether it’s
+            your website, application database, or internal systems. We optimize
+            your information systems for ease of navigation, usefulness, and
+            findability so you and your users can focus more on benefiting from
+            that information, not grappling with it.
           </div>
         </div>
-        <div className="blockchain__servicessection__servicecard">
-          <div className="blockchain__servicessection__servicecard__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35.398"
-              height="35.398"
-              viewBox="0 0 35.398 35.398"
-            >
-              <g
-                id="Group_337"
-                data-name="Group 337"
-                transform="translate(4728.538 9314.406)"
-              >
-                <path
-                  id="Path_260"
-                  data-name="Path 260"
-                  d="M952.378,332.9c0-6.071.006-12.349-.027-18.521a1.644,1.644,0,0,0-.4-.974c-2-2.09-4.037-4.121-6.042-6.039a1.777,1.777,0,0,0-1.044-.44c-3.986-.039-8.042-.035-11.966-.031l-3.119,0c-.8,0-.905.1-.907.9,0,1.117,0,2.234,0,3.378V313.5h-.782c-.129,0-.249-.005-.362-.01a1.952,1.952,0,0,0-.37,0,3.586,3.586,0,0,1-4.43-2.464,2.205,2.205,0,0,1,.014-2.14,3.134,3.134,0,0,0-2.572-4.625,3.221,3.221,0,0,0-2.374.871,3.093,3.093,0,0,0-1,2.207,3.157,3.157,0,0,0,3.259,3.253,1.8,1.8,0,0,1,1.81,1.024c.212.4.45.79.7,1.2.235.38.485.784.713,1.2a.946.946,0,0,0,1.025.562c.853-.032,1.725-.024,2.494-.018.345,0,.686.006,1.025.006h.782v6.849h-.782c-.344,0-.683,0-1.018,0-.827,0-1.572-.009-2.32.014a1.775,1.775,0,0,1-1.794-1.032,3.048,3.048,0,0,0-3.3-1.566,3.222,3.222,0,0,0-2.592,3.034,3.17,3.17,0,0,0,5.99,1.526c.325-.575.691-.861,1.118-.874,1-.03,2.011-.027,2.984-.024l1.718,0v6.844l-1.9,0c-.879,0-1.732.005-2.586-.008a.7.7,0,0,0-.732.4c-.176.3-.361.6-.546.9-.3.493-.58.939-.825,1.4a2.161,2.161,0,0,1-2.13,1.286h-.071a2.988,2.988,0,0,0-2.323,1.165,3.169,3.169,0,0,0,1.926,5.1,2.913,2.913,0,0,0,3.113-1.268,3.023,3.023,0,0,0,.146-3.5,1.839,1.839,0,0,1-.1-1.581,19.47,19.47,0,0,1,1.266-2.138,1.594,1.594,0,0,1,1.2-.673c.657-.025,1.309-.022,2-.019h.053l.8,0h.782v2.33c0,1.161,0,2.286,0,3.412,0,.736.123.856.867.856q10.888,0,21.773,0c.752,0,.865-.112.866-.856Zm-32.155-23.367h-.056a2.125,2.125,0,0,1-2.1-2.146,2.1,2.1,0,1,1,2.16,2.146Zm1.365,13.953h0a2.092,2.092,0,0,1-1.425.567c-.041,0-.081,0-.122,0a2.1,2.1,0,0,1,.126-4.2h.056a2.138,2.138,0,0,1,2.044,2.127A2.111,2.111,0,0,1,921.588,323.486Zm-1.422,15.085a2.125,2.125,0,0,1-1.536-.681,2.093,2.093,0,0,1,1.627-3.522,2.1,2.1,0,0,1-.091,4.2Zm25.676-29.532,4.462,4.44h-4.462Zm5.4,26.838h-21.27V308.012h14.733l0,3.928c0,.63,0,1.26,0,1.89.007.579.161.73.751.733,1.152.006,2.3.005,3.476,0h2.307Z"
-                  transform="translate(-5645.52 -9618.661)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_261"
-                  data-name="Path 261"
-                  d="M967.339,347.369a.438.438,0,0,0,.115.345.93.93,0,0,0,.643.194q1.978.008,3.957,0h3.4q2,0,4,0a1.052,1.052,0,0,0,.723-.2.425.425,0,0,0,.105-.34c0-.156-.011-.522-.8-.523q-2.84,0-5.681,0t-5.682,0C967.345,346.843,967.341,347.212,967.339,347.369Z"
-                  transform="translate(-5678.707 -9646.727)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_262"
-                  data-name="Path 262"
-                  d="M967.339,362.85a.425.425,0,0,0,.106.34,1.056,1.056,0,0,0,.724.2q1.979.005,3.956,0h3.3q2.014,0,4.027,0a1.071,1.071,0,0,0,.731-.2.422.422,0,0,0,.106-.338c0-.143-.008-.525-.789-.526q-2.841,0-5.681,0t-5.681,0C967.348,362.328,967.342,362.681,967.339,362.85Z"
-                  transform="translate(-5678.707 -9656.932)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_263"
-                  data-name="Path 263"
-                  d="M969.854,331.326c-.653,0-1.306.006-1.958.018a.507.507,0,0,0-.557.518c-.009.482.461.535.6.54.419.014.835.011,1.276.007q.6,0,1.2,0c.44,0,.9.007,1.335-.007.145,0,.616-.057.61-.537a.511.511,0,0,0-.553-.521C971.164,331.332,970.51,331.326,969.854,331.326Z"
-                  transform="translate(-5678.707 -9636.502)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_264"
-                  data-name="Path 264"
-                  d="M991.2,377.8c-.284,0-.624.1-.631.521-.007.458.424.535.682.541.408.009.817.007,1.227,0l.564,0,.59,0c.428,0,.856,0,1.284,0,.257-.005.687-.083.678-.54s-.4-.519-.635-.522C993.7,377.784,992.43,377.784,991.2,377.8Z"
-                  transform="translate(-5694.016 -9667.124)"
-                  fill="#189366"
-                />
-              </g>
-            </svg>
-          </div>
-          <div className="blockchain__servicessection__servicecard__heading">
-            Smart Contracts
-          </div>
-          <div className="blockchain__servicessection__servicecard__detail">
-            We use Blockchain platforms like Etherium to deliver highly secure,
-            and competitive Smart Contracts.
-          </div>
-        </div>
-        <div className="blockchain__servicessection__servicecard">
-          <div className="blockchain__servicessection__servicecard__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35.105"
-              height="34.855"
-              viewBox="0 0 35.105 34.855"
-            >
-              <g
-                id="Group_336"
-                data-name="Group 336"
-                transform="translate(4546.956 9318.602)"
-              >
-                <path
-                  id="Path_265"
-                  data-name="Path 265"
-                  d="M1108.63,360.387c2.242.651,3.91,1.866,4.537,4.176.2.724.313,1.471.462,2.208.059.29.1.583.159.874.188,1,.19,1-.812,1.35a20.128,20.128,0,0,1-13.549-.017c-.954-.332-.953-.338-.766-1.315.154-.806.315-1.61.458-2.418a5.738,5.738,0,0,1,3.986-4.627c.213-.078.431-.142.74-.243a4.029,4.029,0,0,1-1.392-3.8,3.737,3.737,0,0,1,1.493-2.379,3.83,3.83,0,0,1,5.1.488C1110.52,356.257,1110.393,358.253,1108.63,360.387Zm-8.991,7.512a19.121,19.121,0,0,0,12.753.114c.135-.045.27-.387.241-.564-.126-.786-.317-1.562-.475-2.344a4.288,4.288,0,0,0-2.491-3.148,7.516,7.516,0,0,0-4.929-.654c-1.667.357-3.293.945-4.008,2.642A30.315,30.315,0,0,0,1099.639,367.9Zm6.58-7.857a2.747,2.747,0,1,0-2.741-2.755A2.761,2.761,0,0,0,1106.219,360.043Z"
-                  transform="translate(-5645.52 -9653.906)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_266"
-                  data-name="Path 266"
-                  d="M1161.963,360.4c-1.825-2.24-1.887-4.294-.222-5.886a3.843,3.843,0,0,1,5.172-.091c1.755,1.582,1.729,3.626-.107,5.968.26.091.508.174.754.264a5.738,5.738,0,0,1,3.937,4.668q.229,1.313.519,2.615a.7.7,0,0,1-.513.946,20.274,20.274,0,0,1-14.259-.005.679.679,0,0,1-.52-.883c.2-.936.4-1.872.568-2.814a5.709,5.709,0,0,1,3.976-4.553C1161.48,360.548,1161.7,360.484,1161.963,360.4Zm8.829,7.573c.1-4.242-2.39-6.839-6.486-6.808-4.014.03-6.5,2.681-6.34,6.81A19.2,19.2,0,0,0,1170.792,367.971Zm-6.438-7.914a2.747,2.747,0,1,0-2.725-2.77A2.763,2.763,0,0,0,1164.354,360.057Z"
-                  transform="translate(-5683.901 -9653.921)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_267"
-                  data-name="Path 267"
-                  d="M1144.078,300.06c3.153.1,5.946.717,8.283,2.684a4.9,4.9,0,0,1-.067,7.962,10.958,10.958,0,0,1-4.338,2.1.668.668,0,0,0-.594.613q-.284,1.547-.669,3.074c-.057.225-.277.534-.462.565a.848.848,0,0,1-.637-.369,29.957,29.957,0,0,1-1.7-2.656,1.684,1.684,0,0,0-1.523-.911,11.749,11.749,0,0,1-4.919-1.547,9.823,9.823,0,0,1-1.5-1.082,4.818,4.818,0,0,1-.019-7.631,11.445,11.445,0,0,1,6.209-2.634C1142.849,300.132,1143.558,300.1,1144.078,300.06Zm1.805,15.062c.166-.8.337-1.388.4-1.992a1.437,1.437,0,0,1,1.346-1.4,8.141,8.141,0,0,0,4.737-2.687,3.39,3.39,0,0,0,.056-4.629,8.944,8.944,0,0,0-2.5-1.964,12.242,12.242,0,0,0-6.924-1.214,10.783,10.783,0,0,0-6.139,2.255c-2.241,1.851-2.264,4.472-.045,6.332a11.59,11.59,0,0,0,6.6,2.351,1.376,1.376,0,0,1,.867.5C1144.825,313.4,1145.285,314.188,1145.883,315.122Z"
-                  transform="translate(-5668.964 -9618.661)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_268"
-                  data-name="Path 268"
-                  d="M1123.056,322.308c.829-.526,1.5-1,2.222-1.388a1.926,1.926,0,0,1,1.078-.26,13.968,13.968,0,0,0,4.762-.263c.406-.089.833-.15.95.356s-.292.622-.7.714a15.123,15.123,0,0,1-4.9.307,1.423,1.423,0,0,0-.818.2c-1,.6-1.96,1.256-2.962,1.848a.927.927,0,0,1-.784.057c-.148-.084-.2-.478-.167-.715a13.943,13.943,0,0,1,.412-1.867c.128-.432.009-.612-.375-.848a12.838,12.838,0,0,1-2.431-1.747,4.588,4.588,0,0,1-.039-6.834,16.148,16.148,0,0,1,3.153-2.113c.166-.1.529.125.8.2-.12.255-.173.609-.374.748-.783.542-1.692.924-2.411,1.534a3.692,3.692,0,0,0-.014,6.017,13.159,13.159,0,0,0,2.43,1.5c.472.248.65.505.5,1.02C1123.261,321.235,1123.186,321.706,1123.056,322.308Z"
-                  transform="translate(-5658.218 -9625.048)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_269"
-                  data-name="Path 269"
-                  d="M1155.212,318.054v1.013h-6.524v-1.013Z"
-                  transform="translate(-5678.614 -9630.542)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_270"
-                  data-name="Path 270"
-                  d="M1158.414,324.478h5.942V325.5h-5.942Z"
-                  transform="translate(-5685.035 -9634.782)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_271"
-                  data-name="Path 271"
-                  d="M1153.48,312.6v-.989h2.679v.989Z"
-                  transform="translate(-5681.778 -9626.287)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_272"
-                  data-name="Path 272"
-                  d="M1174.046,311.568v1h-2.682v-1Z"
-                  transform="translate(-5693.585 -9626.259)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_273"
-                  data-name="Path 273"
-                  d="M1174.024,319.06h-2.657v-1.025h2.657Z"
-                  transform="translate(-5693.587 -9630.528)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_274"
-                  data-name="Path 274"
-                  d="M1150.812,325.556h-2.1v-1.011h2.1Z"
-                  transform="translate(-5678.627 -9634.827)"
-                  fill="#189366"
-                />
-                <path
-                  id="Path_275"
-                  data-name="Path 275"
-                  d="M1164.839,312.57v-1.007h1.035v1.007Z"
-                  transform="translate(-5689.277 -9626.256)"
-                  fill="#189366"
-                />
-              </g>
-            </svg>
-          </div>
-          <div className="blockchain__servicessection__servicecard__heading">
-            Blockchain Consultancy
-          </div>
-          <div className="blockchain__servicessection__servicecard__detail">
-            By analyzing your business infrastructure, we identify threats
-            Blockchain can counter and opportunities it can address.
-          </div>
-        </div>
+      
+        
       </div>
     </div>
   );

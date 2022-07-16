@@ -3,7 +3,9 @@ import { HomeJumbotron } from "../components/HomeJumbotron";
 import design from "../assets/design.svg";
 import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";
+import { BlockchainServices } from "../components/BlockchainServices";
 import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
+import "../styles/ServiceBlockchain.scss";
 import { Link } from "react-router-dom";
 
 export default function ServiceUIUX() {
@@ -159,6 +161,7 @@ export default function ServiceUIUX() {
             </div>
           </div>
         </div>
+        <BlockchainServices />
         <div className="june_second_main_container">
           <div className="june_second_main_all_container">
             <div className="june_third_container">
