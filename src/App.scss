@@ -5078,6 +5078,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+.ecommerce__screen__container__recent__work__content{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4em;
+}
+@media (max-width:500px){
+  .ecommerce__screen__container__recent__work__content{
+    padding: 2em;
+  }
+}
 .ecommerce__screen__container__recent__work__content___row {
   display: flex;
   align-items: center;
