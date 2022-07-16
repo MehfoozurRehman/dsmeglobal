@@ -153,7 +153,7 @@ export default function ServiceUIUX() {
               </svg>
             </div>
             <div className="june_second_container_box_title_one">
-              Web Design
+              Web & Mobile Design
             </div>
             <div className="june_second_container_title_two">
               We have designed amazing experiences for websites and web
@@ -475,7 +475,7 @@ export default function ServiceUIUX() {
                     </svg>
                   </div>
                   <div className="june_third_container_first_box__colomns__contents__text">
-                    Style guide/brand identity
+                  UI Style guide/brand identity
                   </div>
                 </div>
               </div>
