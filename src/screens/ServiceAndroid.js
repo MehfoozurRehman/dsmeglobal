@@ -52,7 +52,7 @@ export default function ServicesAndroid() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Full-service Android application development"
+          taglinesLine="Full-service Android application development company"
           info="Choose an experienced partner to transform your business idea into a top-performing custom Android app"
           img={android}
           talk={true}
@@ -89,7 +89,7 @@ export default function ServicesAndroid() {
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
-            What makes DSMEGlobals a top Android development company?
+            What makes DSME Global Links a top Android development company?
           </div>
           <div className="android__mobile__page__container__android__mobile__heading__text">
             Are you struggling to find a solution that fits your expectations
@@ -115,8 +115,8 @@ export default function ServicesAndroid() {
                 excellent mobile app. Choose our all-in-one Android development
                 services and hire a team that takes care of everything that your
                 app needs to succeed. Strategy and market research to sharpen
-                your vision, outstanding product designs to delight your users.
-                Foolproof app development and maintenance for excellent
+                your vision, and outstanding product designs to delight your
+                users. Foolproof app development and maintenance for excellent
                 stability and performance. All in one place.
               </div>
             </div>
@@ -147,14 +147,14 @@ export default function ServicesAndroid() {
           <div className="ios__mobile__page__one__step__ios__development__section">
             <div className="ios__mobile__page__one__step__ios__development__section__left">
               <div className="ios__mobile__page__one__step__ios__development__section__left__heading">
-                Android applications recognised worldwide
+                Android applications recognized worldwide
               </div>
               <div className="ios__mobile__page__one__step__ios__development__section__left__text">
                 You don’t want to put your project in inexperienced hands. Our
                 Android team is top-rated on Clutch, and with over 10 years of
                 practice in Android application development, we have gained the
-                trust of world-renowned brands such as Skyscanner, HelloFresh,
-                Aviva, BNP Paribas, or Herbalife. We create beautiful,
+                trust of world-renowned brands such as Marhaba Mahal, AIDAPro,
+                Friendly Face, or Gentleman & Co. We create beautiful,
                 top-performing Android apps for industries like e-commerce,
                 banking, music, and travel.
               </div>
@@ -233,7 +233,7 @@ export default function ServicesAndroid() {
                   it’s best to pick native development. When it comes to Android
                   native development, it’s easier and faster to develop certain
                   platform-specific features that may affect the UX. Also, keep
-                  in mind that smooth and fast performance of a native
+                  in mind that the smooth and fast performance of a native
                   application makes the user experience more satisfying.
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function ServicesAndroid() {
                   thinking about expanding your app over the years, native
                   development is a future-proof choice. Both Kotlin and Java are
                   well-supported languages with rich ecosystems, offering a wide
-                  variety of open-source libraries, patterns or articles.
+                  variety of open-source libraries, patterns, and articles.
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
@@ -271,7 +271,7 @@ export default function ServicesAndroid() {
                 <div className="ios__development__native__impressive__performance__content">
                   Native Android development equals stable performance. Native
                   SDKs and platforms for Android have been around for over 10
-                  years, which makes them well-optimised and battle-tested.
+                  years, which makes them well-optimized and battle-tested.
                   There are plenty of development and testing tools available,
                   and it’s easy to find solutions to most problems that may
                   arise during the development.
@@ -317,7 +317,7 @@ export default function ServicesAndroid() {
           </div>
           <div className="ios__development__native__sound__promising">
             <div className="ios__development__native__sound__promising__heading">
-              Sound promising? Let’s talk about your idea!
+              Sounds promising? Let’s discuss your idea! !
             </div>
             <div className="ios__development__native__sound__promising__button">
               Get in Touch
