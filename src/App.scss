@@ -3023,13 +3023,15 @@ body {
 
 .container__web__dev__solution__left__row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .container__web__dev__solution__left__row__img {
-  width: 80px;
+  width: 60px;
   cursor: pointer;
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 .container__web__dev__solution__right {
@@ -6527,9 +6529,9 @@ body {
   .container__web__dev__solution__left__info {
     max-width: 100%;
   }
-  .container__web__dev__solution__left__row {
-    justify-content: space-between;
-  }
+  // .container__web__dev__solution__left__row {
+  //   justify-content: space-between;
+  // }
   .container__web__dev__solution__right {
     width: 100%;
     margin: 0 auto;
@@ -6850,7 +6852,7 @@ body {
     justify-content: flex-start;
   }
   .container__web__dev__solution__left__row__img {
-    margin-left: 0;
+    margin-left: 1em;
   }
   .container__pricing__content {
     padding: 4em 2em;

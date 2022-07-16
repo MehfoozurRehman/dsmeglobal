@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
 import {HomeJumbotron} from '../components/HomeJumbotron';
 import web from '../assets/web.svg';
-import {CheckCircle} from 'react-feather';
+import {CheckCircle, LogOut} from 'react-feather';
 import {ExperienceCard} from '../components/ExperienceCard';
 import {ExperitseCard} from '../components/ExperitseCard';
 import WebdevArrEntry from '../components/WebdevArrEntry';
 import {ServicesFeatureListItem} from '../components/ServicesFeatureListItem';
 import {HowSection} from '../components/HowSection';
 import angular from '../assets/technologies/angular-icon-logo.png';
+import react from '../assets/technologies/react.png';
+import sql from '../assets/technologies/sql-server-logo.png';
+import nodejs from '../assets/technologies/node js.png';
+import mysql from '../assets/technologies/MySQL-Logo.wine.png';
+import xml from '../assets/technologies/Group 847.png';
+import typescript from '../assets/technologies/Image 5.png';
 
 export default function ServicesWebDev() {
   const [selected, setSelected] = useState('AR VR');
@@ -325,17 +331,32 @@ export default function ServicesWebDev() {
               className="container__web__dev__solution__left__row__img"
             />
             <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-3.svg"
+              src={react}
               alt=""
               className="container__web__dev__solution__left__row__img"
             />
             <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-4.svg"
+              src={sql}
               alt=""
               className="container__web__dev__solution__left__row__img"
             />
             <img
-              src="https://www.codedistrict.com/assets/images/mvp-image-5.svg"
+              src={nodejs}
+              alt=""
+              className="container__web__dev__solution__left__row__img"
+            />
+            <img
+              src={mysql}
+              alt=""
+              className="container__web__dev__solution__left__row__img"
+            />
+            <img
+              src={xml}
+              alt=""
+              className="container__web__dev__solution__left__row__img"
+            />
+            <img
+              src={typescript}
               alt=""
               className="container__web__dev__solution__left__row__img"
             />
