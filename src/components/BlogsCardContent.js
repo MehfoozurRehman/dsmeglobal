@@ -22,7 +22,7 @@ export default function BlogsCardContent({ data }) {
           "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
           data.image
         }
-        alt=""
+        alt={data.title}
         className="blog__card__img"
       />
       <div className="blog__card__content">

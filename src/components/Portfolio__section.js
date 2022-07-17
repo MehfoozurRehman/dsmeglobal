@@ -50,7 +50,7 @@ export default function Portfolio__section({ data }) {
                 "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                 data.image
               }
-              alt=""
+              alt={data.title}
               className="portfolio__section__images__entry"
             />
           </SwiperSlide>
@@ -61,7 +61,7 @@ export default function Portfolio__section({ data }) {
                   "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                   item
                 }
-                alt=""
+                alt={item}
                 className="portfolio__section__images__entry"
               />
             </SwiperSlide>

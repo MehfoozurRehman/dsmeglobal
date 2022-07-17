@@ -121,12 +121,12 @@ export default function ServicesAndroid() {
               </div>
             </div>
             <div className="ios__mobile__page__one__step__ios__development__section__right">
-              <img src={img7} alt="" />
+              <img src={img7} alt="img7" />
             </div>
           </div>
           <div className="ios__ios__development__swift__development__section">
             <div className="ios__ios__development__swift__development__section__left">
-              <img src={img8} alt="" />
+              <img src={img8} alt="img8" />
             </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
@@ -160,12 +160,12 @@ export default function ServicesAndroid() {
               </div>
             </div>
             <div className="ios__mobile__page__one__step__ios__development__section__right">
-              <img src={img9} alt="" />
+              <img src={img9} alt="img9" />
             </div>
           </div>
           <div className="ios__ios__development__swift__development__section">
             <div className="ios__ios__development__swift__development__section__left">
-              <img src={img10} alt="" />
+              <img src={img10} alt="img10" />
             </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
@@ -351,7 +351,7 @@ export default function ServicesAndroid() {
                 <img
                   className="ios__development__native__cross__plat__development__img"
                   src={img8}
-                  alt=""
+                  alt="img8"
                 />
               </div>
             </div>
