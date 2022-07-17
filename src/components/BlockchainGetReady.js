@@ -1,6 +1,6 @@
 import React from "react";
 
-export function BlockchainGetReady({}) {
+export function BlockchainGetReady() {
   return (
     <div className="blockchain__ready">
       <div className="blockchain__ready__text">Ready To Get Started?</div>

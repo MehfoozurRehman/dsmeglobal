@@ -1,6 +1,6 @@
 import React from "react";
 
-export function BlockchainTechStack({}) {
+export function BlockchainTechStack() {
   return (
     <div className="blockchain__techstack">
       <div className="blockchain__techstack__container">

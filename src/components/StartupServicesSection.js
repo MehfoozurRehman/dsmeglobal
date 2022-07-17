@@ -1,7 +1,7 @@
 import React from "react";
 import { ServicesStartupCard } from "../components/ServicesStartupCard";
 
-export function StartupServicesSection({}) {
+export function StartupServicesSection() {
   return (
     <div className="service__startup__main__container__second">
       <div className="max__width__container">

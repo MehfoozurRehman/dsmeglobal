@@ -1,7 +1,7 @@
 import React from "react";
 import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
-export function IndustryFeatrues({}) {
+export function IndustryFeatrues() {
   return (
     <div className="pricing__feature">
       <div className="pricing__feature__entry__reverse">

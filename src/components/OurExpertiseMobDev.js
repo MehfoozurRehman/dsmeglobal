@@ -1,7 +1,7 @@
 import React from "react";
 import { ExperitseCard } from "../components/ExperitseCard";
 
-export function OurExpertiseMobDev({}) {
+export function OurExpertiseMobDev() {
   return (
     <div className="container__web__dev__experties">
       <div className="container__web__dev__experties__header">

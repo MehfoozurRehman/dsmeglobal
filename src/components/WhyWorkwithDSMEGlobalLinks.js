@@ -1,7 +1,7 @@
 import React from "react";
 import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
 
-export function WhyWorkwithDSMEGlobalLinks({}) {
+export function WhyWorkwithDSMEGlobalLinks() {
   return (
     <div className="container__feature">
       <div className="container__feature__col">

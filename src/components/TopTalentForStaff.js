@@ -1,7 +1,7 @@
 import React from "react";
 import { Check } from "react-feather";
 
-export function TopTalentForStaff({}) {
+export function TopTalentForStaff() {
   const talentFeatures = [
     "Frontend Developers",
     "Backend Developers",

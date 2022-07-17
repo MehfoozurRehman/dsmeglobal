@@ -1,6 +1,6 @@
 import React from "react";
 
-export function MeetUsStories({}) {
+export function MeetUsStories() {
   return (
     <div className="meetus__container__stories">
       <div className="meetus__container__stories__content">

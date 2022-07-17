@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ProcessFromIdeaCreationtoProductDelivery({}) {
+export function ProcessFromIdeaCreationtoProductDelivery() {
   const DeliveryCardEntry1 = [
     "Web",
     "Mobile",

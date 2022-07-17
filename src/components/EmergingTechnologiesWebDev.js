@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { WebdevArrEntry } from "../components/WebdevArrEntry";
 
-export function EmergingTechnologiesWebDev({}) {
+export function EmergingTechnologiesWebDev() {
   const [selected, setSelected] = useState("AR VR");
   const array = [
     {

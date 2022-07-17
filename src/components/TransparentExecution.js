@@ -8,7 +8,7 @@ import teGoogle from "../assets/te-google-mailer.svg";
 import teFigma from "../assets/te-figma-logo.svg";
 import teZoom from "../assets/te-zoom-logo.svg";
 
-export function TransparentExecution({}) {
+export function TransparentExecution() {
   return (
     <div className="pricing__fitted__team">
       <div className="pricing__fitted__team__header">

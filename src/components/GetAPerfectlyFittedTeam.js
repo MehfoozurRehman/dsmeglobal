@@ -1,6 +1,6 @@
 import React from "react";
 
-export function GetAPerfectlyFittedTeam({}) {
+export function GetAPerfectlyFittedTeam() {
   return (
     <div className="pricing__fitted__team">
       <div className="pricing__fitted__team__header">

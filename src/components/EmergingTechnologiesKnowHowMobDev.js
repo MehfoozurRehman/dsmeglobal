@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { WebdevArrEntry } from "../components/WebdevArrEntry";
 
-export function EmergingTechnologiesKnowHowMobDev({}) {
+export function EmergingTechnologiesKnowHowMobDev() {
   const [selected, setSelected] = useState("Wearable Tech");
 
   const array = [

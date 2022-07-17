@@ -8,7 +8,7 @@ import mysql from "../assets/technologies/MySQL-Logo.wine.png";
 import xml from "../assets/technologies/Group 847.png";
 import typescript from "../assets/technologies/Image 5.png";
 
-export function FromMVPtoEnterpriseSolution({}) {
+export function FromMVPtoEnterpriseSolution() {
   return (
     <div className="container__web__dev__solution">
       <div className="container__web__dev__solution__left">

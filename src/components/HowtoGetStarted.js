@@ -1,6 +1,6 @@
 import React from "react";
 
-export function HowtoGetStarted({}) {
+export function HowtoGetStarted() {
   return (
     <div className="pricing__fitted__team">
       <div

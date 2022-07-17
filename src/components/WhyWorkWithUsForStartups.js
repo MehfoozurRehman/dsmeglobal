@@ -1,7 +1,7 @@
 import React from "react";
 import { WorkWithUsCard } from "../components/WorkWithUsCard";
 
-export function WhyWorkWithUsForStartups({}) {
+export function WhyWorkWithUsForStartups() {
   return (
     <div
       className="service__startup__main__container__second"

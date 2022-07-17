@@ -3,7 +3,7 @@ import pencilpic from "../assets/pencil-sketch.png";
 import imagepng2 from "../assets/high-fidelity-wireframes.png";
 import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
 
-export function UIUXFeatures({}) {
+export function UIUXFeatures() {
   return (
     <div
       className="june_main_container_images"

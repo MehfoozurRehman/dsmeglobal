@@ -1,7 +1,7 @@
 import React from "react";
 import { ServicesStartupCard } from "../components/ServicesStartupCard";
 
-export function TechonologiesForStaff({}) {
+export function TechonologiesForStaff() {
   return (
     <div
       className="service__startup__main__container__second"

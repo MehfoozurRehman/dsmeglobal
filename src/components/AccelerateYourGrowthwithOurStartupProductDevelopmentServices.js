@@ -1,6 +1,6 @@
 import React from "react";
 
-export function AccelerateYourGrowthwithOurStartupProductDevelopmentServices({}) {
+export function AccelerateYourGrowthwithOurStartupProductDevelopmentServices() {
   return (
     <div className="service__startup__main__container__first">
       <div className="max__width__container">

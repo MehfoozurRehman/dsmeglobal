@@ -1,6 +1,6 @@
 import React from "react";
 
-export function BlockchainServices({}) {
+export function BlockchainServices() {
   return (
     <div className="blockchain__servicessection">
       <div className="blockchain__servicessection__heading">

@@ -1,7 +1,7 @@
 import React from "react";
 import objectimgnew from "../assets/object.png";
 
-export function BlockchainHowWork({}) {
+export function BlockchainHowWork() {
   return (
     <div className="blockchain__worksection">
       <div className="blockchain__worksection__heading">

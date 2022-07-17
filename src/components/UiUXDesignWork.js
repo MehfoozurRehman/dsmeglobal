@@ -1,7 +1,7 @@
 import React from "react";
 import EcomereceProjectsCard from "../components/EcomereceProjectsCard";
 
-export function UiUXDesignWork({}) {
+export function UiUXDesignWork() {
   return (
     <>
       <div className="june_main_container_first_container">

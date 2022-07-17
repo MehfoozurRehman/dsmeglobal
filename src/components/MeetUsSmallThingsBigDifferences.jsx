@@ -1,7 +1,7 @@
 import React from "react";
 import agilefirst from "../assets/agileFirst.svg";
 
-export function MeetUsSmallThingsBigDifferences({}) {
+export function MeetUsSmallThingsBigDifferences() {
   return (
     <div className="meetus__container__smallThings">
       <div className="meetus__container__smallThings__content">

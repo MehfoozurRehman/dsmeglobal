@@ -1,7 +1,7 @@
 import React from "react";
 import { ExperienceCard } from "../components/ExperienceCard";
 
-export function ExperienceInDevelopingDiverseSolutions({}) {
+export function ExperienceInDevelopingDiverseSolutions() {
   return (
     <div className="container__web__dev__experience__wrapper">
       <div className="container__web__dev__experience">

@@ -1,7 +1,7 @@
 import React from "react";
 import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
-export function WhyDedicatedTeamswithDSMEGlobal({}) {
+export function WhyDedicatedTeamswithDSMEGlobal() {
   return (
     <div className="pricing__feature">
       <div className="pricing__feature__entry__reverse">

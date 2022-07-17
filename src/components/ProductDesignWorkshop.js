@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ProductDesignWorkshop({}) {
+export function ProductDesignWorkshop() {
   return (
     <div className="june_second_container_main">
       <div className="june_second_container">

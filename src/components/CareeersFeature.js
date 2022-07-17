@@ -1,7 +1,7 @@
 import React from "react";
 import { ExperitseCard } from "../components/ExperitseCard";
 
-export function CareeersFeature({}) {
+export function CareeersFeature() {
   return (
     <div
       className="container__web__dev__experties services__startup__second__expertise"

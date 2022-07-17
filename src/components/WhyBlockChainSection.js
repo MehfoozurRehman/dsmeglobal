@@ -1,6 +1,6 @@
 import React from "react";
 
-export function WhyBlockChainSection({}) {
+export function WhyBlockChainSection() {
   return (
     <div className="blockchain__whysection">
       <div className="blockchain__whysection__heading">Why Blockchain?</div>

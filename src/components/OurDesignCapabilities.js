@@ -1,6 +1,6 @@
 import React from "react";
 
-export function OurDesignCapabilities({}) {
+export function OurDesignCapabilities() {
   return (
     <div className="june_main_container_first_container">
       <div className="june_main_container_first_container_title">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ExecutionProcess({}) {
+export function ExecutionProcess() {
   return (
     <div className="june_second_main_container">
       <div className="june_second_main_all_container">

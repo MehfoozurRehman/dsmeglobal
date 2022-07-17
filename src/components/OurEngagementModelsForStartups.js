@@ -1,7 +1,7 @@
 import React from "react";
 import { EngagementModelCard } from "../components/EngagementModelCard";
 
-export function OurEngagementModelsForStartups({}) {
+export function OurEngagementModelsForStartups() {
   return (
     <div
       className="service__startup__main__container__second"

@@ -3,7 +3,7 @@ import qualityOver from "../assets/qualityOver.svg";
 import continuousChange from "../assets/continuousChange.svg";
 import fouceOn from "../assets/fouceOn.svg";
 
-export function MeetUsQualityOverQuantity({}) {
+export function MeetUsQualityOverQuantity() {
   return (
     <div className="meetus__containerOf__sub">
       <div className="meetus__container__sub">
