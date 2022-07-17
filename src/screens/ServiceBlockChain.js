@@ -6,7 +6,6 @@ import { BlockchainGetReady } from "../components/BlockchainGetReady";
 import { BlockchainHowWork } from "../components/BlockchainHowWork";
 import { BlockchainTechStack } from "../components/BlockchainTechStack";
 import bannerImage1 from "../assets/bannerImage1.svg";
-import "../styles/ServiceBlockchain.scss";
 
 export default function ServiceBlockChain() {
   return (
