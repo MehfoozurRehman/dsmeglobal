@@ -155,47 +155,45 @@ export default function Pricing() {
         <div className="container__web__dev__experience">
           <div className="container__web__dev__experience__header">
             <div className="container__web__dev__experience__header__heading">
-              Exceptional Domain Expertise
+            Why we Recommend It
             </div>
             <div className="container__web__dev__experience__header__info">
-              Phenomenal domain expertise to help you build and deliver mobile
-              applications that can increase productivity, improve engagement
-              and boost customer loyalty.
+            It's the first step to building a successful and awesome tech product. It builds tremendous confidence when moving on to the development phase.
             </div>
           </div>
           <div className="container__web__dev__experience__content">
             <ExperienceCard
-              label="Mobile Healthcare"
-              info="Patient-friendly, HIPAA compliant mobile healthcare products effectively handling integration challenges with electronic health records."
+              label="Reduce Cost"
+              info="ADW is the best way to reduce inflated and superficial development costs. Our goal is to arrive at the most critical features that add direct business value and get rid of the fat."
             />
             <ExperienceCard
-              label="Workflow and Asset Management"
-              info="We build workflow and asset management apps that help you deliver maximum value by using world-class Digital Asset Management solutions."
+              label="Speed & Agility"
+              info="We have structured this workshop in a way to ensure that we gather and document an in-depth understanding of your product in the shortest time possible."
             />
             <ExperienceCard
-              label="Field Automation"
-              info="Our custom built field force apps are fully integrated with a GPS to ensure high efficiency and productivity of your field force."
+              label="Mitigate Risk"
+              info="During the workshop, we help you identify problem areas and any technical challenges. The goal is to make sure that any high-risk items are identified and dealt ear"
             />
             <ExperienceCard
-              label="Fleet Management"
-              info="With our custom built fleet management systems you can minimize vehicle risk, improve productivity and reduce costs of transportation."
+              label="Best way to prepare for development"
+              info="There is no doubt that 90% of software projects often fail in time, cost or scope. Gathering requirements with ADW is our way of addressing this problem and we have been pretty successful with it."
             />
             <ExperienceCard
-              label="Recruitment"
-              info="We build recruitment, talent sourcing, and jobs marketplace apps that help you deliver maximum value, vetted candidates, real-time match-making, and support systems result in reduced HR-related costs for companies."
+              label="Specialized Experts"
+              info="We’ve helped launch hundreds of products and our team has been doing this for nearly 15 years. We bring experts to the table and our goal is to make you as educated as possible before making important decisions."
             />
             <ExperienceCard
-              label="mCommerce Development"
-              info="We can help you build fully customized, reliable and secure m-commerce platforms that boosts customer engagement."
+              label="Stakeholders Involvement  "
+              info="All concerned stakeholders of the product are involved in the process from day one. This way businesses get to build a product that does end up getting used."
             />
-            <ExperienceCard
+            {/* <ExperienceCard
               label="Sports & Lifestyle Apps"
               info="Captivate users with the most robust, simple and useful sports and lifestyle apps that will give your competitors tough competition."
             />
             <ExperienceCard
               label="Social Networking Apps"
               info="Reduce the time to market for your amazing social networking apps and cash out on the first movers advantage by leveraging our expertise."
-            />
+            /> */}
           </div>
         </div>
       </div>
