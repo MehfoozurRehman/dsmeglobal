@@ -177,6 +177,7 @@ export default function ServicesIos() {
                 Are you planning to equip your app with functions like biometrics, geolocation, or features based on a Bluetooth connection? If so, it’s better to develop a native iOS application. These are what we call native application features, and they usually are more difficult to develop for cross-platform. Even seemingly simple functionalities tend to perform better within native applications.
                 </div>
               </div>
+               
               {/* <div className="ios__development__native__impressive__performance">
                 <div className="ios__development__native__impressive__performance__heading">
                   Dependability and support
