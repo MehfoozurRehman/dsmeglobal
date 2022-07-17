@@ -14,6 +14,7 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
     "Salesforce",
     "Blockchain",
     "Big Data & Analytics",
+    "Software Architecture",
   ];
   const DeliveryCardEntry2 = [
     "Software Architecture",
@@ -27,8 +28,7 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
     "Media & Entertainment",
     "Field Force Automation",
     "Retail",
-    "Technologies We Use",
-  ];
+  ]
   const DeliveryCardEntry3 = [
     "JavaScript",
     "Java",
