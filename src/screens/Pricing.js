@@ -397,7 +397,8 @@ export default function Pricing() {
         only pay on the completion of defined deliverables.
       </div>
       <div className="pricing__feature__container__button">
-        <button className="btn">Let's talk</button>
+        <button className="btn"           style={{ margin: "-6em 0em 0em 0em" }}
+>Let's talk</button>
       </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
