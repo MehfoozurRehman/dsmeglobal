@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PricingFeatureEntry({ title, content, icon }) {
+export function PricingFeatureEntry({ title, content, icon }) {
   return (
     <div className="pricing__feature__entry">
       {icon ? (

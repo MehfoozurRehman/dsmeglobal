@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import directionPic from "../assets/te-direction.jpg";
 import rightAngle from "../assets/chevron-right.svg";
 import userPng from "../assets/personIcon.svg";
-import PricingFeatureEntry from "../components/PricingFeatureEntry";
+import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import teams from "../assets/teams.svg";
 import { Box } from "react-feather";
@@ -202,7 +202,8 @@ export default function PricingDedicated() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__getting__started">
+          id="pricing__getting__started"
+        >
           <div className="pricing__fitted__team__header__heading">
             How to Get Started?
           </div>
@@ -210,10 +211,12 @@ export default function PricingDedicated() {
         <div className="pricing__fitted__team__content">
           <div
             className="pricing__fitted__team__content__entry__box__one"
-            id="pricing__fitted__team__content__entry">
+            id="pricing__fitted__team__content__entry"
+          >
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
-              id="pricing__fitted__team__content__entry__sub__heading">
+              id="pricing__fitted__team__content__entry__sub__heading"
+            >
               Suited best when:
             </div>
             <ul className="pricing__fitted__team__content__entry__list">
@@ -230,10 +233,12 @@ export default function PricingDedicated() {
           </div>
           <div
             className="pricing__fitted__team__content__entry__box__one"
-            id="pricing__fitted__team__content__entry">
+            id="pricing__fitted__team__content__entry"
+          >
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
-              id="pricing__fitted__team__content__entry__sub__heading">
+              id="pricing__fitted__team__content__entry__sub__heading"
+            >
               Suited best when:
             </div>
             <ul className="pricing__fitted__team__content__entry__list">
@@ -250,10 +255,12 @@ export default function PricingDedicated() {
           </div>
           <div
             className="pricing__fitted__team__content__entry__box__one"
-            id="pricing__fitted__team__content__entry">
+            id="pricing__fitted__team__content__entry"
+          >
             <div
               className="pricing__fitted__team__content__entry__sub__heading"
-              id="pricing__fitted__team__content__entry__sub__heading">
+              id="pricing__fitted__team__content__entry__sub__heading"
+            >
               Suited best when:
             </div>
             <ul className="pricing__fitted__team__content__entry__list">
@@ -421,11 +428,13 @@ export default function PricingDedicated() {
               xmlns="http://www.w3.org/2000/svg"
               width="62.013"
               height="98.116"
-              viewBox="0 0 62.013 98.116">
+              viewBox="0 0 62.013 98.116"
+            >
               <g
                 id="Group_12072"
                 data-name="Group 12072"
-                transform="translate(-891.301 -220.236)">
+                transform="translate(-891.301 -220.236)"
+              >
                 <path
                   id="Path_11649"
                   data-name="Path 11649"
@@ -461,7 +470,8 @@ export default function PricingDedicated() {
               xmlns="http://www.w3.org/2000/svg"
               width="89.852"
               height="90.007"
-              viewBox="0 0 89.852 90.007">
+              viewBox="0 0 89.852 90.007"
+            >
               <path
                 id="Path_11631"
                 data-name="Path 11631"
@@ -550,11 +560,13 @@ export default function PricingDedicated() {
               xmlns="http://www.w3.org/2000/svg"
               width="127.524"
               height="98.593"
-              viewBox="0 0 127.524 98.593">
+              viewBox="0 0 127.524 98.593"
+            >
               <g
                 id="Group_12054"
                 data-name="Group 12054"
-                transform="translate(-951.791 -616.706)">
+                transform="translate(-951.791 -616.706)"
+              >
                 <path
                   id="Path_11390"
                   data-name="Path 11390"
@@ -618,7 +630,8 @@ export default function PricingDedicated() {
               xmlns="http://www.w3.org/2000/svg"
               width="106.32"
               height="115.446"
-              viewBox="0 0 106.32 115.446">
+              viewBox="0 0 106.32 115.446"
+            >
               <path
                 id="Path_11611"
                 data-name="Path 11611"
@@ -674,7 +687,8 @@ export default function PricingDedicated() {
               xmlns="http://www.w3.org/2000/svg"
               width="102.468"
               height="130.485"
-              viewBox="0 0 102.468 130.485">
+              viewBox="0 0 102.468 130.485"
+            >
               <path
                 id="Path_11625"
                 data-name="Path 11625"
@@ -709,7 +723,8 @@ export default function PricingDedicated() {
               xmlns="http://www.w3.org/2000/svg"
               width="91.815"
               height="91.995"
-              viewBox="0 0 91.815 91.995">
+              viewBox="0 0 91.815 91.995"
+            >
               <path
                 id="Path_11590"
                 data-name="Path 11590"
@@ -778,7 +793,8 @@ export default function PricingDedicated() {
               {DeliveryCardEntry1.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}>
+                  key={JSON.stringify(item)}
+                >
                   {item}
                 </div>
               ))}
@@ -793,7 +809,8 @@ export default function PricingDedicated() {
               {DeliveryCardEntry2.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}>
+                  key={JSON.stringify(item)}
+                >
                   {item}
                 </div>
               ))}
@@ -808,7 +825,8 @@ export default function PricingDedicated() {
               {DeliveryCardEntry3.map((item) => (
                 <div
                   className="pricing__delivery__section__content__card__para"
-                  key={JSON.stringify(item)}>
+                  key={JSON.stringify(item)}
+                >
                   {item}
                 </div>
               ))}
@@ -819,7 +837,8 @@ export default function PricingDedicated() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header">
+          id="pricing__success__stories__team__header"
+        >
           <div className="pricing__fitted__team__header__heading">
             Success Stories
           </div>
@@ -906,7 +925,8 @@ export default function PricingDedicated() {
             // loop
             // spaceBetween={30}
             navigation={showNavigation ? true : false}
-            pagination={!showNavigation ? { clickable: true } : false}>
+            pagination={!showNavigation ? { clickable: true } : false}
+          >
             <SwiperSlide>
               <div className="pricing__awards__achievements__slide__logo">
                 <img src={clutch} alt="Brand Logo" />

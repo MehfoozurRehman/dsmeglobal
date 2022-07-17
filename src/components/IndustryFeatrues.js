@@ -1,5 +1,5 @@
 import React from "react";
-import PricingFeatureEntry from "../components/PricingFeatureEntry";
+import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
 export function IndustryFeatrues({}) {
   return (

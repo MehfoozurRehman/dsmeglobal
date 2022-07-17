@@ -1,12 +1,7 @@
 import React from "react";
 import ProjectCardContent from "./ProjectCardContent";
 
-export default function ProjectCard({
-  setShowImage,
-  data,
-  setShowImageData,
-  filter,
-}) {
+export function ProjectCard({ setShowImage, data, setShowImageData, filter }) {
   let isOurProduct;
   let doesFilter;
   let categoryList = [];

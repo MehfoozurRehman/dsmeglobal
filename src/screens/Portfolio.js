@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import useSWR from "swr";
-import PortfolioFilter from "../components/PortfolioFilter";
-import ProjectCard from "../components/ProjectCard";
+import { PortfolioFilter } from "../components/PortfolioFilter";
+import { ProjectCard } from "../components/ProjectCard";
 import { fetcher } from "../utils/functions";
+import useSWR from "swr";
 
 export default function Portfolio() {
   const [showImage, setShowImage] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PortfolioFilter({ title, onChange, defaultChecked }) {
+export function PortfolioFilter({ title, onChange, defaultChecked }) {
   return (
     <div className="blog__page__filter__entry">
       <input

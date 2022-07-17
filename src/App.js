@@ -4,7 +4,7 @@ import Loader from "./components/Loader";
 import SwiperCore, { Autoplay } from "swiper";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ContactUsBottom from "./screens/ContactUsBottom";
+import ContactUsBottom from "./components/ContactUsBottom";
 import Home from "./screens/Home";
 import Blogs from "./screens/Blogs";
 import Careers from "./screens/Careers";
@@ -79,7 +79,6 @@ export default function App() {
         <Route path="/portfolio-detail" element={<PortfolioDetail />} />
         <Route path="/meet-us" element={<MeetUs />} />
       </Routes>
-
       {noShowContactUs ? <ContactUsBottom /> : null}
       <Footer />
     </Suspense>

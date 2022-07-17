@@ -1,11 +1,11 @@
 import React from "react";
 import deliveryPic from "../assets/delivery.png";
-import PricingFeatureEntry from "../components/PricingFeatureEntry";
+import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 import { HomeJumbotron } from "../components/HomeJumbotron";
+import { ExperienceCard } from "../components/ExperienceCard";
 import pricing from "../assets/pricing.svg";
 import products from "../assets/products.svg";
-import rightAngleIcon from "../assets/rightAngleIcon.svg";
-import { ExperienceCard } from "../components/ExperienceCard";
+
 export default function Pricing() {
   const DeliveryCardEntry1 = [
     { para: "Onsite / Offsite Discovery Workshop" },
@@ -151,14 +151,16 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-        <div className="container__web__dev__experience__wrapper">
+      <div className="container__web__dev__experience__wrapper">
         <div className="container__web__dev__experience">
           <div className="container__web__dev__experience__header">
             <div className="container__web__dev__experience__header__heading">
-            Why we Recommend It
+              Why we Recommend It
             </div>
             <div className="container__web__dev__experience__header__info">
-            It's the first step to building a successful and awesome tech product. It builds tremendous confidence when moving on to the development phase.
+              It's the first step to building a successful and awesome tech
+              product. It builds tremendous confidence when moving on to the
+              development phase.
             </div>
           </div>
           <div className="container__web__dev__experience__content">
@@ -197,9 +199,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-
-
-
 
       <div className="pricing__understand__container">
         <div className="pricing__understand__container__content">
