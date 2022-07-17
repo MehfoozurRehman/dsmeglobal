@@ -36,7 +36,8 @@ export default function Careers({ setLightHeader }) {
       )
     );
   }, [searchQuery, data]);
-  useEffect(() => {
+
+  useLayoutEffect(() => {
     setLightHeader(true);
 
     return () => {
@@ -195,7 +196,6 @@ export default function Careers({ setLightHeader }) {
           )}
         </div>
       </div>
-
       {isApplyOpen ? (
         <ApplyForJobPopup
           selectItem={selectItem}

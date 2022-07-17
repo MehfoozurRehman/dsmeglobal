@@ -1,10 +1,10 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
-import startup from "../assets/startup.svg";
-import ServicesStartupCard from "../components/ServicesStartupCard";
+import { ServicesStartupCard } from "../components/ServicesStartupCard";
 import { ExperitseCard } from "../components/ExperitseCard";
-import { EngagementModelCard } from "./EngagementModelCard";
-import { WorkWithUsCard } from "./WorkWithUsCard";
+import { EngagementModelCard } from "../components/EngagementModelCard";
+import { WorkWithUsCard } from "../components/WorkWithUsCard";
+import startup from "../assets/startup.svg";
 
 export default function ServiceStartup() {
   return (

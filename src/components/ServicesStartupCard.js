@@ -1,6 +1,6 @@
 import React from "react";
 
-function ServicesStartupCard({ svg, label, info }) {
+export function ServicesStartupCard({ svg, label, info }) {
   return (
     <div className="services__startup__card">
       {svg ? <div className="services__startup__card__icon">{svg}</div> : null}
@@ -11,5 +11,3 @@ function ServicesStartupCard({ svg, label, info }) {
     </div>
   );
 }
-
-export default ServicesStartupCard;

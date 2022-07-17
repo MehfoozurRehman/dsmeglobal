@@ -1,17 +1,19 @@
-import React, {useState} from 'react';
-import BlogsCard from '../components/BlogCard';
-import BlogsFilter from '../components/BlogsFilter';
-import {fetcher} from '../utils/functions';
-import useSWR from 'swr';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import BlogsCard from "../components/BlogCard";
+import BlogsFilter from "../components/BlogsFilter";
+import { fetcher } from "../utils/functions";
+import useSWR from "swr";
 
 export default function Blogs() {
+  const navigate = useNavigate();
   const [noOfItems, setNoOfItems] = useState(9);
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
 
-  const {data, error} = useSWR(
+  const { data, error } = useSWR(
     `${process.env.REACT_APP_API_URL}api/v1/get_blog`,
     fetcher,
-    {suspense: true},
+    { suspense: true }
   );
   return (
     <div className="blog__page">
@@ -21,31 +23,31 @@ export default function Blogs() {
           title="All"
           defaultChecked={true}
           onChange={() => {
-            setFilter('');
+            setFilter("");
           }}
         />
         <BlogsFilter
           title="Web Apps"
           onChange={() => {
-            setFilter('Web App Development');
+            setFilter("Web App Development");
           }}
         />
         <BlogsFilter
           title="Mobile Apps"
           onChange={() => {
-            setFilter('Mobile App Development');
+            setFilter("Mobile App Development");
           }}
         />
         <BlogsFilter
           title="Ecommerce"
           onChange={() => {
-            setFilter('Ecommerce Solutions');
+            setFilter("Ecommerce Solutions");
           }}
         />
         <BlogsFilter
           title="UI/UX Design"
           onChange={() => {
-            setFilter('UI & UX Services');
+            setFilter("UI & UX Services");
           }}
         />
       </div>
@@ -54,8 +56,8 @@ export default function Blogs() {
           <div>failed to load</div>
         ) : (
           data
-            .filter((item, i) => (filter === '' ? i < noOfItems : i))
-            .map(item => (
+            .filter((item, i) => (filter === "" ? i < noOfItems : i))
+            .map((item) => (
               <BlogsCard
                 data={item}
                 key={JSON.stringify(item)}
@@ -64,13 +66,14 @@ export default function Blogs() {
             ))
         )}
       </div>
-      {filter === '' && data.length > 6 ? (
+      {filter === "" && data.length > 6 ? (
         <div className="blog__page__content__button">
           <button
             className="button"
             onClick={() => {
               setNoOfItems(noOfItems + noOfItems);
-            }}>
+            }}
+          >
             Load More
           </button>
         </div>
@@ -82,7 +85,12 @@ export default function Blogs() {
         <div className="blog__greenbox__container__subheading">
           Have a project in mind?
         </div>
-        <button className="blog__greenbox__container__button">
+        <button
+          className="blog__greenbox__container__button"
+          onClick={() => {
+            navigate("/contact");
+          }}
+        >
           Free Consultation
         </button>
       </div>
