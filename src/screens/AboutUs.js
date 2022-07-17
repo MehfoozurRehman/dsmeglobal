@@ -1,39 +1,39 @@
-import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import missionSvg from "../assets/missionSvg.svg";
-import visionSvg from "../assets/visionSvg.svg";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import about from "../assets/about.svg";
-import ceo from "../assets/ceo.png";
-import { PromiseEntry } from "../components/PromiseEntry";
-import { CoreValueEntry } from "../components/CoreValueEntry";
-import { KeyDifferenceEntry } from "../components/KeyDifferenceEntry";
-import StoryPic from "../assets/fw-airlines.jpg";
-import brandLogo from "../assets/6.png";
-import clutch from "../assets/top-clutch.png";
-import topSoftwarePic from "../assets/top-software.png";
-import topMobileAppCompany from "../assets/top-mobile-app-development-company-badge-1.png";
-import subtractPng from "../assets/subtract.png";
-import softwareUsa from "../assets/software-usa.png";
-import itrateco from "../assets/itrateco.png";
-import fastestGrowingApp from "../assets/fastest-growing-app.png";
-import designrush from "../assets/designrush.png";
-import designWorkImageMob from "../assets/design-work-image-mob.png";
-import appfuturaBadge from "../assets/appfutura-badge.jpg";
-import softwaredev from "../assets/softwaredev.png";
-import sdappfuturaBadge from "../assets/sdappfutura-badge.jpg";
-import webappusfuturaBadge from "../assets/webappusfutura-badge.jpg";
-import webappfuturaBadge from "../assets/webappfutura-badge.jpg";
-import topAppPic from "../assets/topapp.jpg";
-import AboutUsEndveoursPic from "../assets/About__us__endveours.jpeg";
-import pressRelasePic1 from "../assets/pressRelase1.jpg";
-import pressRelasePic2 from "../assets/pressRelase2.jpg";
-import pressRelasePic3 from "../assets/pressRelase3.jpg";
-import pressRelasePic4 from "../assets/pressRelase4.jpg";
-import pressRelasePic5 from "../assets/pressRelase5.jpg";
-import pressRelasePic6 from "../assets/pressRelase6.jpg";
-import agileprocess from "../assets/agile__process__img.png";
+import React, {useEffect, useState} from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Navigation, Pagination} from 'swiper';
+import missionSvg from '../assets/missionSvg.svg';
+import visionSvg from '../assets/visionSvg.svg';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import about from '../assets/about.svg';
+import ceo from '../assets/ceo.png';
+import {PromiseEntry} from '../components/PromiseEntry';
+import {CoreValueEntry} from '../components/CoreValueEntry';
+import {KeyDifferenceEntry} from '../components/KeyDifferenceEntry';
+import StoryPic from '../assets/fw-airlines.jpg';
+import brandLogo from '../assets/6.png';
+import clutch from '../assets/top-clutch.png';
+import topSoftwarePic from '../assets/top-software.png';
+import topMobileAppCompany from '../assets/top-mobile-app-development-company-badge-1.png';
+import subtractPng from '../assets/subtract.png';
+import softwareUsa from '../assets/software-usa.png';
+import itrateco from '../assets/itrateco.png';
+import fastestGrowingApp from '../assets/fastest-growing-app.png';
+import designrush from '../assets/designrush.png';
+import designWorkImageMob from '../assets/design-work-image-mob.png';
+import appfuturaBadge from '../assets/appfutura-badge.jpg';
+import softwaredev from '../assets/softwaredev.png';
+import sdappfuturaBadge from '../assets/sdappfutura-badge.jpg';
+import webappusfuturaBadge from '../assets/webappusfutura-badge.jpg';
+import webappfuturaBadge from '../assets/webappfutura-badge.jpg';
+import topAppPic from '../assets/topapp.jpg';
+import AboutUsEndveoursPic from '../assets/About__us__endveours.jpeg';
+import pressRelasePic1 from '../assets/pressRelase1.jpg';
+import pressRelasePic2 from '../assets/pressRelase2.jpg';
+import pressRelasePic3 from '../assets/pressRelase3.jpg';
+import pressRelasePic4 from '../assets/pressRelase4.jpg';
+import pressRelasePic5 from '../assets/pressRelase5.jpg';
+import pressRelasePic6 from '../assets/pressRelase6.jpg';
+import agileprocess from '../assets/agile__process__img.png';
 import {
   Ahmed,
   Aniqa_Mukhtar,
@@ -59,69 +59,72 @@ import {
   Usman_Ijaz,
   Zunaira_Najam,
   Zunaira_Amjad,
-} from "../assets/team";
+} from '../assets/team';
 
 export default function AboutUs() {
   const team = [
-    { image: Shahid_Aziz, name: "Shahid Aziz" },
-    { image: Dr_Aimon_Malik, name: "Dr.Aimon Malik" },
-    { image: Dr_Nimra_Qureshi, name: "Dr.Nimra Qureshi" },
+    {image: Shahid_Aziz, name: 'Shahid Aziz'},
+    {image: Dr_Aimon_Malik, name: 'Dr.Aimon Malik'},
+    {image: Dr_Nimra_Qureshi, name: 'Dr.Nimra Qureshi'},
     {
       image: Azeem_Hammad,
-      name: "Azeem Hammad",
-      designation: "Frontend Develper",
+      name: 'Azeem Hammad',
+      designation: 'Frontend Develper',
     },
     {
       image: Daniyal_Pirzada,
-      name: "Daniyal Pirzada",
-      designation: "Frontend Developer",
+      name: 'Daniyal Pirzada',
+      designation: 'Frontend Developer',
     },
-    { image: Director_Legal_Affairs, name: "Director Legal Affairs" },
+    {image: Director_Legal_Affairs, name: 'Director Legal Affairs'},
+    {image: Zunaira_Amjad, name: 'Zunaira Amjad', designation: ''},
+
+    {image: Hammad_Habib, name: 'Hammad Habib'},
+    {image: Hamza_Arshad, name: 'Hamza Arshad', designation: ''},
     {
       image: Gulraiz_Malik,
-      name: "Gulraiz Malik",
-      designation: "Frontend Developer",
+      name: 'Gulraiz Malik',
+      designation: 'Frontend Developer',
     },
-    { image: Hammad_Habib, name: "Hammad Habib" },
-    { image: Hamza_Arshad, name: "Hamza Arshad", designation: "" },
-    { image: Joweriya_Shahid, name: "Joweriya Shahid", designation: "" },
-    { image: Kamran_Ameen, name: "Kamran Ameen", designation: "" },
-    {
-      image: Mehfooz_ur_Rehman,
-      name: "Mehfooz ur Rehman",
-      designation: "Frontend Developer",
-    },
+    {image: Kamran_Ameen, name: 'Kamran Ameen', designation: ''},
+
     {
       image: Moazam_Saleem,
-      name: "Moazam Saleem",
-      designation: "Frontend Developer",
+      name: 'Moazam Saleem',
+      designation: 'Frontend Developer',
+    },
+    {
+      image: Mehfooz_ur_Rehman,
+      name: 'Mehfooz ur Rehman',
+      designation: 'Frontend Developer',
     },
     {
       image: Zunaira_Najam,
-      name: "Zunaira Najam",
-      designation: "Frontend Developer",
+      name: 'Zunaira Najam',
+      designation: 'Frontend Developer',
     },
-    { image: Zunaira_Amjad, name: "Zunaira Amjad", designation: "" },
     {
       image: Aniqa_Mukhtar,
-      name: "Aniqa Mukhtar",
-      designation: "Graphic Designer",
+      name: 'Aniqa Mukhtar',
+      designation: 'Graphic Designer',
     },
-    { image: Muhammad_Mobeen, name: "Muhammad Mobeen" },
+
+    {image: Joweriya_Shahid, name: 'Joweriya Shahid', designation: ''},
+    {image: Muhammad_Mobeen, name: 'Muhammad Mobeen'},
     {
       image: Musharraf_Hassan,
-      name: "Musharraf Hassan",
-      designation: "Backend Develper",
+      name: 'Musharraf Hassan',
+      designation: 'Backend Develper',
     },
-    { image: Naimah_Jones, name: "Naimah Jones", designation: "" },
-    { image: Qaiser_Riaz, name: "Qaiser Riaz", designation: "" },
-    { image: Qasim, name: "Qasim", designation: "" },
-    { image: Sapna_Shams, name: "Sapna Shams", designation: "" },
-    { image: Usman_Ijaz, name: "Usman Ijaz", designation: "" },
+    {image: Naimah_Jones, name: 'Naimah Jones', designation: ''},
+    {image: Qaiser_Riaz, name: 'Qaiser Riaz', designation: ''},
+    {image: Qasim, name: 'Qasim', designation: ''},
+    {image: Sapna_Shams, name: 'Sapna Shams', designation: ''},
+    {image: Usman_Ijaz, name: 'Usman Ijaz', designation: ''},
     {
       image: Ahmed,
-      name: "Ahmed",
-      designation: "",
+      name: 'Ahmed',
+      designation: '',
     },
   ];
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -148,12 +151,12 @@ export default function AboutUs() {
     }
   }
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({top: 0, behavior: 'smooth'});
     getSlidesPerView();
-    window.addEventListener("resize", getSlidesPerView);
+    window.addEventListener('resize', getSlidesPerView);
 
     return () => {
-      window.removeEventListener("resize", getSlidesPerView);
+      window.removeEventListener('resize', getSlidesPerView);
     };
   }, []);
 
@@ -162,7 +165,7 @@ export default function AboutUs() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Lets Get to"
-          taglines={["Know Us", "Know Our Story"]}
+          taglines={['Know Us', 'Know Our Story']}
           info={
             <>
               We are talented. We are experienced. <br />
@@ -197,11 +200,10 @@ export default function AboutUs() {
           Teamwork, Makes the dram work
         </div>
         <div className="about__teams__content">
-          {team.map((item) => (
+          {team.map(item => (
             <div
               className="about__teams__content__entry"
-              key={JSON.stringify(item)}
-            >
+              key={JSON.stringify(item)}>
               <img
                 src={item.image}
                 alt={item.name}
@@ -226,8 +228,7 @@ export default function AboutUs() {
         <img
           className="about__agile__process__img"
           src={agileprocess}
-          alt="agile process img"
-        ></img>
+          alt="agile process img"></img>
       </div>
       <div className="about__core__values">
         <div className="about__core__values__header">
@@ -247,13 +248,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 166.178 166.099"
-              >
+                viewBox="0 0 166.178 166.099">
                 <g
                   id="Group_49"
                   data-name="Group 49"
-                  transform="translate(-193.985 -8398.595)"
-                >
+                  transform="translate(-193.985 -8398.595)">
                   <g id="Group_48" data-name="Group 48">
                     <g id="Group_47" data-name="Group 47">
                       <path
@@ -295,13 +294,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 175.113 169.042"
-              >
+                viewBox="0 0 175.113 169.042">
                 <g
                   id="Group_50"
                   data-name="Group 50"
-                  transform="translate(-518.867 -8407.365)"
-                >
+                  transform="translate(-518.867 -8407.365)">
                   <path
                     id="Path_281"
                     data-name="Path 281"
@@ -321,13 +318,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 206.907 156.528"
-              >
+                viewBox="0 0 206.907 156.528">
                 <g
                   id="Group_51"
                   data-name="Group 51"
-                  transform="translate(-899.442 -8417.537)"
-                >
+                  transform="translate(-899.442 -8417.537)">
                   <path
                     id="Path_282"
                     data-name="Path 282"
@@ -353,13 +348,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 115.541 191.56"
-              >
+                viewBox="0 0 115.541 191.56">
                 <g
                   id="Group_52"
                   data-name="Group 52"
-                  transform="translate(-1294.475 -8390.99)"
-                >
+                  transform="translate(-1294.475 -8390.99)">
                   <path
                     id="Path_284"
                     data-name="Path 284"
@@ -378,8 +371,7 @@ export default function AboutUs() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="41"
                 height="41"
-                viewBox="0 0 41 41"
-              >
+                viewBox="0 0 41 41">
                 <path
                   id="Union_2"
                   data-name="Union 2"
@@ -398,8 +390,7 @@ export default function AboutUs() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 40 40"
-              >
+                viewBox="0 0 40 40">
                 <rect
                   id="Rectangle_1711"
                   data-name="Rectangle 1711"
@@ -441,8 +432,7 @@ export default function AboutUs() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="44.5"
                 height="37.52"
-                viewBox="0 0 40 33.724"
-              >
+                viewBox="0 0 40 33.724">
                 <g id="Layer_x0020_1" transform="translate(-6.731 -72.103)">
                   <path
                     id="Path_3203"
@@ -462,8 +452,7 @@ export default function AboutUs() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
                 height="34.367"
-                viewBox="0 0 45 34.367"
-              >
+                viewBox="0 0 45 34.367">
                 <path
                   id="Union_3"
                   data-name="Union 3"
@@ -487,10 +476,7 @@ export default function AboutUs() {
             The values which we live by
           </div>
         </div>
-        <div
-          className="about__core__values__content"
-          style={{ marginTop: -30 }}
-        >
+        <div className="about__core__values__content" style={{marginTop: -30}}>
           <PromiseEntry
             svg={
               <svg
@@ -498,13 +484,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 173.981 167.949"
-              >
+                viewBox="0 0 173.981 167.949">
                 <g
                   id="Group_53"
                   data-name="Group 53"
-                  transform="translate(-151.02 -8904.959)"
-                >
+                  transform="translate(-151.02 -8904.959)">
                   <path
                     id="Path_285"
                     data-name="Path 285"
@@ -524,13 +508,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 165.783 165.787"
-              >
+                viewBox="0 0 165.783 165.787">
                 <g
                   id="Group_54"
                   data-name="Group 54"
-                  transform="translate(-483.474 -8904.083)"
-                >
+                  transform="translate(-483.474 -8904.083)">
                   <path
                     id="Path_286"
                     data-name="Path 286"
@@ -556,13 +538,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 165.793 139.648"
-              >
+                viewBox="0 0 165.793 139.648">
                 <g
                   id="Group_55"
                   data-name="Group 55"
-                  transform="translate(-877.315 -8891.035)"
-                >
+                  transform="translate(-877.315 -8891.035)">
                   <path
                     id="Path_288"
                     data-name="Path 288"
@@ -582,13 +562,11 @@ export default function AboutUs() {
                 width="40"
                 height="40"
                 fill="#189366"
-                viewBox="0 0 165.934 165.662"
-              >
+                viewBox="0 0 165.934 165.662">
                 <g
                   id="Group_56"
                   data-name="Group 56"
-                  transform="translate(-1244.081 -8893.806)"
-                >
+                  transform="translate(-1244.081 -8893.806)">
                   <path
                     id="Path_289"
                     data-name="Path 289"
@@ -633,13 +611,11 @@ export default function AboutUs() {
                   width="60"
                   height="50"
                   viewBox="0 0 179.892 181.891"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <g
                     id="Group_1"
                     data-name="Group 1"
-                    transform="translate(-669.878 -63.639)"
-                  >
+                    transform="translate(-669.878 -63.639)">
                     <path
                       id="Path_1"
                       data-name="Path 1"
@@ -768,8 +744,7 @@ export default function AboutUs() {
                   width="167.428"
                   height="167.27"
                   viewBox="0 0 167.428 167.27"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <path
                     id="Path_24"
                     data-name="Path 24"
@@ -788,8 +763,7 @@ export default function AboutUs() {
                   width="40"
                   height="40"
                   viewBox="0 0 116.445 116.446"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <path
                     id="Path_26"
                     data-name="Path 26"
@@ -810,13 +784,11 @@ export default function AboutUs() {
                   width="40"
                   height="40"
                   viewBox="0 0 163.939 163.703"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <g
                     id="Group_3"
                     data-name="Group 3"
-                    transform="translate(-961.078 -85.061)"
-                  >
+                    transform="translate(-961.078 -85.061)">
                     <path
                       id="Path_32"
                       data-name="Path 32"
@@ -855,13 +827,11 @@ export default function AboutUs() {
                   width="30"
                   height="30"
                   viewBox="0 0 173.295 173.511"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <g
                     id="Group_4"
                     data-name="Group 4"
-                    transform="translate(-712.114 -634.567)"
-                  >
+                    transform="translate(-712.114 -634.567)">
                     <path
                       id="Path_37"
                       data-name="Path 37"
@@ -887,13 +857,11 @@ export default function AboutUs() {
                   width="30"
                   height="30"
                   viewBox="0 0 145.219 144.691"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <g
                     id="Group_5"
                     data-name="Group 5"
-                    transform="translate(-682.792 -453.042)"
-                  >
+                    transform="translate(-682.792 -453.042)">
                     <path
                       id="Path_39"
                       data-name="Path 39"
@@ -944,13 +912,11 @@ export default function AboutUs() {
                   width="30"
                   height="30"
                   viewBox="0 0 82.536 82.676"
-                  fill="#189366"
-                >
+                  fill="#189366">
                   <g
                     id="Group_12046"
                     data-name="Group 12046"
-                    transform="translate(6093.293 -3636.685)"
-                  >
+                    transform="translate(6093.293 -3636.685)">
                     <path
                       id="Path_11284"
                       data-name="Path 11284"
@@ -1016,13 +982,11 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  viewBox="0 0 59.464 82.771"
-                >
+                  viewBox="0 0 59.464 82.771">
                   <g
                     id="Group_12047"
                     data-name="Group 12047"
-                    transform="translate(5733.275 -3645.135)"
-                  >
+                    transform="translate(5733.275 -3645.135)">
                     <path
                       id="Path_11239"
                       data-name="Path 11239"
@@ -1097,13 +1061,11 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
-                  viewBox="0 0 80.251 80.213"
-                >
+                  viewBox="0 0 80.251 80.213">
                   <g
                     id="Group_12048"
                     data-name="Group 12048"
-                    transform="translate(5888.39 -3638.5)"
-                  >
+                    transform="translate(5888.39 -3638.5)">
                     <g id="Group_12044" data-name="Group 12044">
                       <path
                         id="Path_11258"
@@ -1162,13 +1124,11 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="52.522"
                   height="65.604"
-                  viewBox="0 0 52.522 65.604"
-                >
+                  viewBox="0 0 52.522 65.604">
                   <g
                     id="Group_12049"
                     data-name="Group 12049"
-                    transform="translate(5982.546 -3641)"
-                  >
+                    transform="translate(5982.546 -3641)">
                     <g id="Group_12043" data-name="Group 12043">
                       <path
                         id="Path_11274"
@@ -1217,20 +1177,17 @@ export default function AboutUs() {
       </div>
       <div
         className="our__mission__section__about__us"
-        style={{ overflow: "hidden" }}
-      >
+        style={{overflow: 'hidden'}}>
         <div className="our__mission__section__about__us__content">
           <div className="our__mission__section__about__us__content__left">
             <div
               className="feature__section__entry__content__jumbotron__sub__heading"
-              style={{ color: "#ffffff" }}
-            >
+              style={{color: '#ffffff'}}>
               Our Mission
             </div>
             <div
               className="our__mission__section__about__us__content__left__para"
-              style={{ color: "#ffffff" }}
-            >
+              style={{color: '#ffffff'}}>
               DSME’s mission is to solve challenging technical problems in
               partnership with our clients. D.S.M.E Global Links cohorts with
               its customers to disentangle complex technology problems and help
@@ -1250,8 +1207,7 @@ export default function AboutUs() {
       </div>
       <div
         className="our__vision__section__about__us"
-        style={{ overflow: "hidden" }}
-      >
+        style={{overflow: 'hidden'}}>
         <div className="our__vision__section__about__us__content">
           <div className="our__vision__section__about__us__content__right">
             <img
@@ -1278,8 +1234,7 @@ export default function AboutUs() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header"
-        >
+          id="pricing__success__stories__team__header">
           <div className="pricing__fitted__team__header__heading">
             Our Endeavors
           </div>
@@ -1313,8 +1268,7 @@ export default function AboutUs() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header"
-        >
+          id="pricing__success__stories__team__header">
           <div className="pricing__fitted__team__header__heading">
             Press Releases
           </div>
@@ -1324,8 +1278,7 @@ export default function AboutUs() {
             slidesPerView={slidesPerView}
             autoplay
             navigation
-            pagination={{ clickable: true }}
-          >
+            pagination={{clickable: true}}>
             <SwiperSlide>
               <div className="pricing__success__stories__slide">
                 <div className="pricing__success__stories__slide__image">
@@ -1374,8 +1327,7 @@ export default function AboutUs() {
       <div className="pricing__fitted__team">
         <div
           className="pricing__fitted__team__header"
-          id="pricing__success__stories__team__header"
-        >
+          id="pricing__success__stories__team__header">
           <div className="pricing__fitted__team__header__heading">
             Success Stories
           </div>
@@ -1462,8 +1414,7 @@ export default function AboutUs() {
             // loop
             // spaceBetween={30}
             navigation={showNavigation ? true : false}
-            pagination={!showNavigation ? { clickable: true } : false}
-          >
+            pagination={!showNavigation ? {clickable: true} : false}>
             <SwiperSlide>
               <div className="pricing__awards__achievements__slide__logo">
                 <img src={clutch} alt="Brand Logo" />
@@ -1555,8 +1506,7 @@ export default function AboutUs() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-square"
-                >
+                  class="feather feather-square">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 </svg>
                 Jira Software
@@ -1578,8 +1528,7 @@ export default function AboutUs() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-square"
-                >
+                  class="feather feather-square">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 </svg>
                 Slack
@@ -1602,8 +1551,7 @@ export default function AboutUs() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-square"
-                >
+                  class="feather feather-square">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 </svg>
                 Daily & Weekly Scrum Call
@@ -1626,8 +1574,7 @@ export default function AboutUs() {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-square"
-                >
+                  class="feather feather-square">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 </svg>
                 Product Demo Calls
@@ -1639,17 +1586,14 @@ export default function AboutUs() {
             </div>
           </div>
           <div className="highly__customer__main__second__container">
-           
             <div className="highly__customer__main__container__heading__content">
-             <span> //</span>
-            
+              <span> //</span>
               We build glass wall visibility on all our projects using various
               communication channels and Project Management tools to ensure
               clients stay updated about the progress of their projects at all
-              times. 
-             <span className="one">//</span>
+              times.
+              <span className="one">//</span>
             </div>
-            
           </div>
         </div>
       </div>
