@@ -11,7 +11,7 @@ import img7 from "../assets/iosandroid.jpg";
 import img8 from "../assets/iosswift.jpg";
 import img9 from "../assets/iosapplication.png";
 import img10 from "../assets/ioscross.png";
-import WebdevArrEntry from "../components/WebdevArrEntry";
+import { WebdevArrEntry } from "../components/WebdevArrEntry";
 import { User } from "react-feather";
 
 export default function ServicesAndroid() {

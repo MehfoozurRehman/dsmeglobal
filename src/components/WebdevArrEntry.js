@@ -1,4 +1,4 @@
-export default function WebdevArrEntry({ label, svg, selected, setSelected }) {
+export function WebdevArrEntry({ label, svg, selected, setSelected }) {
   return (
     <>
       <div className="container__emerging__technologies__section__wrapper">
