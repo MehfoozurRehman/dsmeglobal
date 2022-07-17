@@ -392,6 +392,9 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+
+      
+
       <div className="pricing__feature__container">
         This process offers minimum risk and a transparent approach since you
         only pay on the completion of defined deliverables.

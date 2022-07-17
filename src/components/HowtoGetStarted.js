@@ -20,12 +20,12 @@ export function HowtoGetStarted() {
             className="pricing__fitted__team__content__entry__sub__heading"
             id="pricing__fitted__team__content__entry__sub__heading"
           >
-            Suited best when:
+            Choose Your Team
           </div>
           <ul className="pricing__fitted__team__content__entry__list">
             <li>
-              Tell us about your project, tech stack, and the kind of team you
-              need.
+            Tell us about your project, tech stack, and the kind of team you need.
+
             </li>
             <li>We will match your needs with the best available members.</li>
             <li>
@@ -42,17 +42,19 @@ export function HowtoGetStarted() {
             className="pricing__fitted__team__content__entry__sub__heading"
             id="pricing__fitted__team__content__entry__sub__heading"
           >
-            Suited best when:
+           Get Ready to Operate
           </div>
           <ul className="pricing__fitted__team__content__entry__list">
             <li>
-              Tell us about your project, tech stack, and the kind of team you
-              need.
+            Team, environment, tools, and infrastructure setup.
+
             </li>
-            <li>We will match your needs with the best available members.</li>
+            <li>Our tool stack offers everything your need but we can work with your stack as well.</li>
             <li>
-              Conduct test trials to determine a good fit in-terms of technical
-              background & communication skills.
+            Communication processes establishment
+            </li>
+            <li>
+            Project kick-off ready. Duration can be 1 month to long-term.
             </li>
           </ul>
         </div>
@@ -64,17 +66,15 @@ export function HowtoGetStarted() {
             className="pricing__fitted__team__content__entry__sub__heading"
             id="pricing__fitted__team__content__entry__sub__heading"
           >
-            Suited best when:
+                Execute
           </div>
           <ul className="pricing__fitted__team__content__entry__list">
             <li>
-              Tell us about your project, tech stack, and the kind of team you
-              need.
+            Conduct your typical agile meetings - daily standups, planning, and retrospective to manage your tasks
             </li>
-            <li>We will match your needs with the best available members.</li>
+            <li>As per your needs, you can add/remove team members, whenever needed.</li>
             <li>
-              Conduct test trials to determine a good fit in-terms of technical
-              background & communication skills.
+            Have weekly live demos of your product to walk through the work done.
             </li>
           </ul>
         </div>
