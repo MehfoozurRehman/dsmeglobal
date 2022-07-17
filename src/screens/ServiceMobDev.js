@@ -1,32 +1,35 @@
-import React, {useState} from 'react';
-import {HomeJumbotron} from '../components/HomeJumbotron';
-import mobile from '../assets/mobile.svg';
-import {ExperienceCard} from '../components/ExperienceCard';
-import {HowSection} from '../components/HowSection';
-import {ExperitseCard} from '../components/ExperitseCard';
-import WebdevArrEntry from '../components/WebdevArrEntry';
-import {ServicesFeatureListItem} from '../components/ServicesFeatureListItem';
+import React, { useState } from "react";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import mobile from "../assets/mobile.svg";
+import { ExperienceCard } from "../components/ExperienceCard";
+import { HowSection } from "../components/HowSection";
+import { ExperitseCard } from "../components/ExperitseCard";
+import { WebdevArrEntry } from "../components/WebdevArrEntry";
+import { ServicesFeatureListItem } from "../components/ServicesFeatureListItem";
 
 export default function ServicesMobDev() {
-  const [selected, setSelected] = useState('Wearable Tech');
+  const [selected, setSelected] = useState("Wearable Tech");
 
   const array = [
     {
-      label: 'Wearable Tech',
+      label: "Wearable Tech",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 144.341 144.374">
+          viewBox="0 0 144.341 144.374"
+        >
           <g
             id="Group_29"
             data-name="Group 29"
-            transform="translate(-157.648 -1512)">
+            transform="translate(-157.648 -1512)"
+          >
             <g
               id="Group_9"
               data-name="Group 9"
-              transform="translate(157.648 1512)">
+              transform="translate(157.648 1512)"
+            >
               <path
                 id="Path_72"
                 data-name="Path 72"
@@ -46,21 +49,24 @@ export default function ServicesMobDev() {
       info: "We'll help you ideate, design, develop and launch your Wearable app. Apps would be supported by strong back-end, cloud based web systems.",
     },
     {
-      label: 'Geo Tracking',
+      label: "Geo Tracking",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 135.396 135.374">
+          viewBox="0 0 135.396 135.374"
+        >
           <g
             id="Group_30"
             data-name="Group 30"
-            transform="translate(-421.925 -1521)">
+            transform="translate(-421.925 -1521)"
+          >
             <g
               id="Group_10"
               data-name="Group 10"
-              transform="translate(421.925 1521)">
+              transform="translate(421.925 1521)"
+            >
               <path
                 id="Path_74"
                 data-name="Path 74"
@@ -77,24 +83,27 @@ export default function ServicesMobDev() {
           </g>
         </svg>
       ),
-      info: 'We have leveraged GPS technology for apps built for mobile workforce management, fleet tracking to geo-fencing, geo-targeting and location aware in-app messaging.',
+      info: "We have leveraged GPS technology for apps built for mobile workforce management, fleet tracking to geo-fencing, geo-targeting and location aware in-app messaging.",
     },
     {
-      label: 'Internet of Things',
+      label: "Internet of Things",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 143.757 144.452">
+          viewBox="0 0 143.757 144.452"
+        >
           <g
             id="Group_31"
             data-name="Group 31"
-            transform="translate(-707.142 -1512)">
+            transform="translate(-707.142 -1512)"
+          >
             <g
               id="Group_11"
               data-name="Group 11"
-              transform="translate(707.142 1512)">
+              transform="translate(707.142 1512)"
+            >
               <path
                 id="Path_76"
                 data-name="Path 76"
@@ -123,24 +132,27 @@ export default function ServicesMobDev() {
           </g>
         </svg>
       ),
-      info: 'We deliver mobile-enabled IoT, solutions for equipment and appliances controlled via mobile, including connected home solutions, real-time tracking and monitoring services, and many more.',
+      info: "We deliver mobile-enabled IoT, solutions for equipment and appliances controlled via mobile, including connected home solutions, real-time tracking and monitoring services, and many more.",
     },
     {
-      label: 'Location Tracking',
+      label: "Location Tracking",
       svg: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 120.788 142.938">
+          viewBox="0 0 120.788 142.938"
+        >
           <g
             id="Group_32"
             data-name="Group 32"
-            transform="translate(-987.321 -1521)">
+            transform="translate(-987.321 -1521)"
+          >
             <g
               id="Group_12"
               data-name="Group 12"
-              transform="translate(987.321 1521)">
+              transform="translate(987.321 1521)"
+            >
               <path
                 id="Path_80"
                 data-name="Path 80"
@@ -157,10 +169,10 @@ export default function ServicesMobDev() {
           </g>
         </svg>
       ),
-      info: 'We developed enhanced in-store experiences to capture secure contactless payments, indoor location sensing and contextual coupon delivery leveraging technologies like BLE Beacons, NFC etc.',
+      info: "We developed enhanced in-store experiences to capture secure contactless payments, indoor location sensing and contextual coupon delivery leveraging technologies like BLE Beacons, NFC etc.",
     },
     {
-      label: 'AR/VR Reality',
+      label: "AR/VR Reality",
       svg: (
         <svg
           id="Group_13"
@@ -168,7 +180,8 @@ export default function ServicesMobDev() {
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
-          viewBox="0 0 165.23 102.883">
+          viewBox="0 0 165.23 102.883"
+        >
           <path
             id="Path_82"
             data-name="Path 82"
@@ -189,7 +202,7 @@ export default function ServicesMobDev() {
           />
         </svg>
       ),
-      info: 'With the new ARKit coming out from Apple and Android, we are set to deliver compelling AR mobile apps overlaying information and interactivity over real-world scenes.',
+      info: "With the new ARKit coming out from Apple and Android, we are set to deliver compelling AR mobile apps overlaying information and interactivity over real-world scenes.",
     },
   ];
   return (
@@ -220,16 +233,19 @@ export default function ServicesMobDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 182.649 200.246">
+                viewBox="0 0 182.649 200.246"
+              >
                 <g
                   id="Group_38"
                   data-name="Group 38"
-                  transform="translate(-130.807 -957.026)">
+                  transform="translate(-130.807 -957.026)"
+                >
                   <g id="Group_37" data-name="Group 37">
                     <g
                       id="Group_7"
                       data-name="Group 7"
-                      transform="translate(0 7.359)">
+                      transform="translate(0 7.359)"
+                    >
                       <path
                         id="Path_46"
                         data-name="Path 46"
@@ -300,11 +316,13 @@ export default function ServicesMobDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 207.145 206.983">
+                viewBox="0 0 207.145 206.983"
+              >
                 <g
                   id="Group_39"
                   data-name="Group 39"
-                  transform="translate(-471.731 -954)">
+                  transform="translate(-471.731 -954)"
+                >
                   <path
                     id="Path_56"
                     data-name="Path 56"
@@ -323,7 +341,8 @@ export default function ServicesMobDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 206.446 228.045">
+                viewBox="0 0 206.446 228.045"
+              >
                 <path
                   id="Union_1"
                   data-name="Union 1"
@@ -341,15 +360,18 @@ export default function ServicesMobDev() {
                 xmlns="http://www.w3.org/2000/svg"
                 height="40"
                 width="40"
-                viewBox="0 0 188.191 219.304">
+                viewBox="0 0 188.191 219.304"
+              >
                 <g
                   id="Group_28"
                   data-name="Group 28"
-                  transform="translate(-1188.832 -948)">
+                  transform="translate(-1188.832 -948)"
+                >
                   <g
                     id="Group_8"
                     data-name="Group 8"
-                    transform="translate(0 -9.674)">
+                    transform="translate(0 -9.674)"
+                  >
                     <path
                       id="Path_54"
                       data-name="Path 54"
@@ -428,7 +450,8 @@ export default function ServicesMobDev() {
       </div>
       <div
         className="container__emerging__technologies"
-        style={{marginTop: '5em'}}>
+        style={{ marginTop: "5em" }}
+      >
         <div className="container__emerging__technologies__heading__main">
           Emerging Technologies Know-How
         </div>
@@ -438,7 +461,7 @@ export default function ServicesMobDev() {
           technologies.
         </div>
         <div className="container__emerging__technologies__section">
-          {array.map(item => (
+          {array.map((item) => (
             <WebdevArrEntry
               label={item.label}
               svg={item.svg}
@@ -448,8 +471,8 @@ export default function ServicesMobDev() {
           ))}
         </div>
         {array
-          .filter(item => item.label === selected)
-          .map(item => (
+          .filter((item) => item.label === selected)
+          .map((item) => (
             <div className="container__emerging__technologies__section__entry__data">
               <div className="container__emerging__technologies__section__entry__data___heading">
                 {item.label}
