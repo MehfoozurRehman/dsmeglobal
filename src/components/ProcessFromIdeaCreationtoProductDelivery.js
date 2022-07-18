@@ -17,8 +17,6 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
     "Software Architecture",
   ];
   const DeliveryCardEntry2 = [
-    "Software Architecture",
-    "Domain Knowledge",
     "Healthcare",
     "Insurance",
     "Real Estate",
@@ -57,7 +55,11 @@ export function ProcessFromIdeaCreationtoProductDelivery() {
   return (
     <div className="pricing__delivery__section">
       <div className="pricing__delivery__section__heading">
-        Process From Idea Creation to Product Delivery
+        The Best Fit
+      </div>
+      <div className="pricing__delivery__section__heading__content">
+      You can trust us with our deep technological & domain expertise to come up with the best solution for your product.
+
       </div>
       <div className="pricing__delivery__section__content">
         <div className="pricing__delivery__section__content__card">
