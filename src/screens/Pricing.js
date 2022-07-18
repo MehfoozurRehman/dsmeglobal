@@ -219,8 +219,7 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="100.218"
                   height="100.269"
-                  viewBox="0 0 100.218 100.269"
-                >
+                  viewBox="0 0 100.218 100.269">
                   <path
                     id="Path_11653"
                     data-name="Path 11653"
@@ -297,8 +296,7 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="103.906"
                   height="129.892"
-                  viewBox="0 0 103.906 129.892"
-                >
+                  viewBox="0 0 103.906 129.892">
                   <path
                     id="Path_11666"
                     data-name="Path 11666"
@@ -394,15 +392,14 @@ export default function Pricing() {
         </div>
       </div>
 
-      
-
       <div className="pricing__feature__container">
         This process offers minimum risk and a transparent approach since you
         only pay on the completion of defined deliverables.
       </div>
       <div className="pricing__feature__container__button">
-        <button className="btn"           style={{ margin: "-6em 0em 0em 0em" }}
->Let's talk</button>
+        <button className="btn" style={{ margin: "-6em 0em 0em 0em" }}>
+          Let's talk
+        </button>
       </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
@@ -454,73 +451,68 @@ export default function Pricing() {
       <div className="container__web__dev__experties">
         <div
           className="container__web__dev__experties__header"
-          style={{ margin: "5em 0em 1em 0em" }}
-        >
-
-
-<div
-      className="service__startup__main__container__second"
-      style={{
-        paddingTop: "0em",
-      }}
-    >
-      <div className="max__width__container">
-        <div
-          className="service__startup__main__container__first__heading"
-          style={{
-            paddingBottom: "1em",
-          }}
-        >
-          All-Inclusive Pricing <span style={{fontSize: "20px",color:"black"}} >We have no hidden costs. Our transparent pricing approach includes everything below.</span>
-        </div>
-        <div className="service__startup__main__container__second__cards__container">
-          <WorkWithUsCard
-            label="Project Management & QA"
-            info="A Project Manager and QA expert are both included in all the fixed price offers we share.   "
-          />
-          <WorkWithUsCard
-            label="No Overhead Costs"
-            info="You don't have to pay for office space, any tech equipment required, the onboarding process, or trainings - we handle all."
-          />
-          <WorkWithUsCard
-            label="No Recruitment Fee "
-            info="Neither do you have to hire an in-house team from scratch nor pay headhunters obscene amounts to find you the best fit team."
-          />
-          <WorkWithUsCard
-            label="Max Flexibility "
-            info="We fully understand how a product at times changes in scope during development and thus offers room for adoption at no cost."
-          />
-          <WorkWithUsCard
-            label="Flexible Contracts  "
-            info="Scalable contracts with simple billing.  "
-          />
-          <WorkWithUsCard
-            label=""
-            info=""
-          />
-        </div>
-      </div>
-    </div>
-
+          style={{ margin: "5em 0em 1em 0em" }}>
+          <div
+            className="service__startup__main__container__second"
+            style={{
+              paddingTop: "0em",
+            }}>
+            <div className="max__width__container">
+              <div
+                className="service__startup__main__container__first__heading"
+                style={{
+                  paddingBottom: "1em",
+                }}>
+                All-Inclusive Pricing{" "}
+                <span style={{ fontSize: "20px", color: "black" }}>
+                  We have no hidden costs. Our transparent pricing approach
+                  includes everything below.
+                </span>
+              </div>
+              <div className="service__startup__main__container__second__cards__container">
+                <WorkWithUsCard
+                  label="Project Management & QA"
+                  info="A Project Manager and QA expert are both included in all the fixed price offers we share.   "
+                />
+                <WorkWithUsCard
+                  label="No Overhead Costs"
+                  info="You don't have to pay for office space, any tech equipment required, the onboarding process, or trainings - we handle all."
+                />
+                <WorkWithUsCard
+                  label="No Recruitment Fee "
+                  info="Neither do you have to hire an in-house team from scratch nor pay headhunters obscene amounts to find you the best fit team."
+                />
+                <WorkWithUsCard
+                  label="Max Flexibility "
+                  info="We fully understand how a product at times changes in scope during development and thus offers room for adoption at no cost."
+                />
+                <WorkWithUsCard
+                  label="Flexible Contracts  "
+                  info="Scalable contracts with simple billing.  "
+                />
+                <WorkWithUsCard label="" info="" />
+              </div>
+            </div>
+          </div>
 
           <div className="container__web__dev__experties__header__heading">
             What You Get
           </div>
         </div>
-        <div className="container__web__dev__experties__content"   style={{ margin: "0em 0em -5em 0em" }}>
+        <div
+          className="container__web__dev__experties__content"
+          style={{ margin: "0em 0em -5em 0em" }}>
           <ExperitseCard
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 206.337 187.652"
-              >
+                viewBox="0 0 206.337 187.652">
                 <g
                   id="Group_41"
                   data-name="Group 41"
-                  transform="translate(-182.155 -1893)"
-                >
+                  transform="translate(-182.155 -1893)">
                   <path
                     id="Union_5"
                     data-name="Union 5"
@@ -540,8 +532,7 @@ export default function Pricing() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 185.915 205.285"
-              >
+                viewBox="0 0 185.915 205.285">
                 <path
                   id="Union_6"
                   data-name="Union 6"
@@ -562,8 +553,7 @@ export default function Pricing() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 208.536 208.52"
-              >
+                viewBox="0 0 208.536 208.52">
                 <path
                   id="Union_7"
                   data-name="Union 7"
@@ -581,8 +571,7 @@ export default function Pricing() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 175.885 175.884"
-              >
+                viewBox="0 0 175.885 175.884">
                 <path
                   id="Union_8"
                   data-name="Union 8"
@@ -618,13 +607,11 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="108.161"
                   height="90.091"
-                  viewBox="0 0 108.161 90.091"
-                >
+                  viewBox="0 0 108.161 90.091">
                   <g
                     id="Group_12079"
                     data-name="Group 12079"
-                    transform="translate(-1489.808 -1291.89)"
-                  >
+                    transform="translate(-1489.808 -1291.89)">
                     <path
                       id="Path_11402"
                       data-name="Path 11402"
@@ -670,13 +657,11 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="89.627"
                   height="89.616"
-                  viewBox="0 0 89.627 89.616"
-                >
+                  viewBox="0 0 89.627 89.616">
                   <g
                     id="Group_12080"
                     data-name="Group 12080"
-                    transform="translate(-731.829 -1246.219)"
-                  >
+                    transform="translate(-731.829 -1246.219)">
                     <path
                       id="Path_11682"
                       data-name="Path 11682"
@@ -820,13 +805,11 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="80.268"
                   height="84.862"
-                  viewBox="0 0 80.268 84.862"
-                >
+                  viewBox="0 0 80.268 84.862">
                   <g
                     id="Group_12081"
                     data-name="Group 12081"
-                    transform="translate(-1024.546 -1263.53)"
-                  >
+                    transform="translate(-1024.546 -1263.53)">
                     <path
                       id="Path_11710"
                       data-name="Path 11710"
@@ -858,13 +841,11 @@ export default function Pricing() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="87.47"
                   height="86.85"
-                  viewBox="0 0 87.47 86.85"
-                >
+                  viewBox="0 0 87.47 86.85">
                   <g
                     id="Group_12082"
                     data-name="Group 12082"
-                    transform="translate(-1361.115 -1270.071)"
-                  >
+                    transform="translate(-1361.115 -1270.071)">
                     <path
                       id="Path_11707"
                       data-name="Path 11707"
@@ -896,8 +877,9 @@ export default function Pricing() {
           alt="deliveryPic"
           className="pricing__delivery__section__img"
         />
-
-        <div className="pricing__delivery__section__content">
+        <div
+          className="pricing__delivery__section__content"
+          style={{ marginBottom: "2em" }}>
           <div className="pricing__delivery__section__content__card">
             <div className="pricing__delivery__section__content__card__heading">
               Discovery
@@ -905,8 +887,7 @@ export default function Pricing() {
             {DeliveryCardEntry1.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
-                key={JSON.stringify(item)}
-              >
+                key={JSON.stringify(item)}>
                 {item.para}
               </div>
             ))}
@@ -919,8 +900,7 @@ export default function Pricing() {
             {DeliveryCardEntry2.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
-                key={JSON.stringify(item)}
-              >
+                key={JSON.stringify(item)}>
                 {item.para}
               </div>
             ))}
@@ -933,12 +913,125 @@ export default function Pricing() {
             {DeliveryCardEntry3.map((item) => (
               <div
                 className="pricing__delivery__section__content__card__para"
-                key={JSON.stringify(item)}
-              >
+                key={JSON.stringify(item)}>
                 {item.para}
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="container__web__dev__experience__wrapper">
+        <div className="container__web__dev__experience">
+          <div className="container__web__dev__experience__header">
+            <div className="container__web__dev__experience__header__heading">
+              DISCOVERY WORKSHOP
+            </div>
+            <div className="container__web__dev__experience__header__info">
+              During this workshop, our Product Strategists, Technical & UI/UX
+              Experts collaborate with our clients, to
+            </div>
+          </div>
+          <div
+            className="container__web__dev__experience__content"
+            style={{ justifyContent: "center" }}>
+            <div
+              className="container__web__dev__experience__content__entry"
+              style={{ width: "47%", marginBottom: "1em" }}>
+              <div
+                className="container__web__dev__experience__content__entry__heading 
+              "
+                style={{ marginBottom: "0em" }}>
+                Map & understand client vision
+              </div>
+            </div>
+            <div
+              className="container__web__dev__experience__content__entry"
+              style={{ width: "47%", marginBottom: "1em" }}>
+              <div
+                className="container__web__dev__experience__content__entry__heading 
+              "
+                style={{ marginBottom: "0em" }}>
+                Visualize the idea
+              </div>
+            </div>
+            <div
+              className="container__web__dev__experience__content__entry"
+              style={{ width: "47%", marginBottom: "1em" }}>
+              <div
+                className="container__web__dev__experience__content__entry__heading 
+              "
+                style={{ marginBottom: "0em" }}>
+                Quantify business value (ROI)
+              </div>
+            </div>
+            <div
+              className="container__web__dev__experience__content__entry"
+              style={{ width: "47%", marginBottom: "1em" }}>
+              <div
+                className="container__web__dev__experience__content__entry__heading 
+              "
+                style={{ marginBottom: "0em" }}>
+                Assess technical viability
+              </div>
+            </div>
+            <div
+              className="container__web__dev__experience__content__entry"
+              style={{ width: "47%", marginBottom: "1em" }}>
+              <div
+                className="container__web__dev__experience__content__entry__heading 
+              "
+                style={{ marginBottom: "0em" }}>
+                Define the scope for budgeting
+              </div>
+            </div>
+            <div
+              className="container__web__dev__experience__content__entry"
+              style={{ width: "47%", marginBottom: "1em" }}>
+              <div
+                className="container__web__dev__experience__content__entry__heading 
+              "
+                style={{ marginBottom: "0em" }}>
+                Develop a comprehensive plan
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container__web__dev__experties"
+        style={{ paddingBottom: "0" }}>
+        <div
+          className="container__web__dev__experties__header"
+          style={{ margin: "3em 0" }}>
+          <div className="container__web__dev__experties__header__heading">
+            At the end of this workshop, our clients get
+          </div>
+        </div>
+        <div className="container__web__dev__experties__content">
+          <ExperitseCard
+            label="User Stories Document
+            "
+            info="A detailed document that highlights all features of the product.
+            "
+          />
+          <ExperitseCard
+            label="Technical Evaluation
+            "
+            info="Early identifies high-risk technical challenges & optimal solutions.
+            "
+          />
+          <ExperitseCard
+            label="Interactive Prototype
+            "
+            info="Interactive UI/UX designs to visualize the end product.
+            "
+          />
+          <ExperitseCard
+            label="Delivery Plan & Schedule
+            "
+            info="Project plan outlining the cost & delivery timeline.
+            "
+          />
         </div>
       </div>
     </>
