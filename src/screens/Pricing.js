@@ -6,6 +6,7 @@ import { ExperienceCard } from "../components/ExperienceCard";
 import pricing from "../assets/pricing.svg";
 import products from "../assets/products.svg";
 import { ExperitseCard } from "../components/ExperitseCard";
+import { WorkWithUsCard } from "../components/WorkWithUsCard";
 
 export default function Pricing() {
   const DeliveryCardEntry1 = [
@@ -455,6 +456,53 @@ export default function Pricing() {
           className="container__web__dev__experties__header"
           style={{ margin: "5em 0em 1em 0em" }}
         >
+
+
+<div
+      className="service__startup__main__container__second"
+      style={{
+        paddingTop: "0em",
+      }}
+    >
+      <div className="max__width__container">
+        <div
+          className="service__startup__main__container__first__heading"
+          style={{
+            paddingBottom: "1em",
+          }}
+        >
+          All-Inclusive Pricing <span style={{fontSize: "20px",color:"black"}} >We have no hidden costs. Our transparent pricing approach includes everything below.</span>
+        </div>
+        <div className="service__startup__main__container__second__cards__container">
+          <WorkWithUsCard
+            label="Project Management & QA"
+            info="A Project Manager and QA expert are both included in all the fixed price offers we share.   "
+          />
+          <WorkWithUsCard
+            label="No Overhead Costs"
+            info="You don't have to pay for office space, any tech equipment required, the onboarding process, or trainings - we handle all."
+          />
+          <WorkWithUsCard
+            label="No Recruitment Fee "
+            info="Neither do you have to hire an in-house team from scratch nor pay headhunters obscene amounts to find you the best fit team."
+          />
+          <WorkWithUsCard
+            label="Max Flexibility "
+            info="We fully understand how a product at times changes in scope during development and thus offers room for adoption at no cost."
+          />
+          <WorkWithUsCard
+            label="Flexible Contracts  "
+            info="Scalable contracts with simple billing.  "
+          />
+          <WorkWithUsCard
+            label=""
+            info=""
+          />
+        </div>
+      </div>
+    </div>
+
+
           <div className="container__web__dev__experties__header__heading">
             What You Get
           </div>
