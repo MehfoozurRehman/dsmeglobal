@@ -40,11 +40,6 @@ export function AboutOurTeam({}) {
       designation: "Frontend Developer",
     },
     {
-      image: Mehfooz_ur_Rehman,
-      name: "Mehfooz ur Rehman",
-      designation: "Frontend Developer",
-    },
-    {
       image: Aniqa_Mukhtar,
       name: "Aniqa Mukhtar",
       designation: "Graphic Designer",
@@ -79,6 +74,11 @@ export function AboutOurTeam({}) {
     {
       image: Moazam_Saleem,
       name: "Moazam Saleem",
+      designation: "Frontend Developer",
+    },
+    {
+      image: Mehfooz_ur_Rehman,
+      name: "Mehfooz ur Rehman",
       designation: "Frontend Developer",
     },
     { image: Muhammad_Mobeen, name: "Muhammad Mobeen" },
