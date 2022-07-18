@@ -5,7 +5,7 @@ export function IndustryFeatrues() {
   return (
     <div className="pricing__feature">
       <div className="pricing__feature__entry__reverse">
-        We <span>Provide</span> You
+      Revolutionizing the way business is conducted across industries with the latest technology introductions.
       </div>
       <PricingFeatureEntry
         icon={

@@ -14,6 +14,17 @@ export default function Industry() {
           talk={true}
         />
       </div>
+      <div className="industry__software__solutions">
+        Software solutions for industry leaders
+      </div>
+      <div className="industry__software__solutions__content">
+        Need a software solution that’s right for you? Choose a digital product
+        crafted to answer the challenges of your industry. Small or big,
+        startup, or enterprise – we partner with companies of various sizes and
+        profiles on their way to innovation and growth. Empower your business
+        with a state-of-the-art digital solution, tailored to your needs and
+        expectations.
+      </div>
       <IndustryFeatrues />
     </>
   );

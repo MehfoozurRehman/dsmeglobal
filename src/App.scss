@@ -1274,7 +1274,28 @@ body {
   border: none;
   height: 250px;
 }
+.industry__software__solutions{
+font-size: 35px;
+font-weight: 600;
+display: flex;
+justify-content: start;
+max-width: 1440px;
+margin: 0 auto;
+padding-bottom: 2em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+}
+.industry__software__solutions__content{
+  font-size: 20px;
+font-weight: 400;
+display: flex;
+justify-content: start;
+max-width: 1440px;
+margin: 0 auto;
+padding-left: 52.5px;
+padding-right: 52.5px;
 
+}
 .contact__section__content__img {
   width: 100%;
   max-width: 600px;
