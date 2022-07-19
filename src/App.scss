@@ -8453,6 +8453,12 @@ body {
   .customsoft_fourth_container_third_box_part_three {
     padding-left: 5em;
   }
+  .highly__customer__main__container__heading__content {
+    font-size: 20px !important;
+  }
+  .highly__customer__main__second__container {
+    padding: 2em 0em;
+  }
 }
 @media (max-width: 605px) {
   .customsoft_fourth_container_third_box_part_two {
@@ -8596,11 +8602,17 @@ body {
 }
 .highly__customer__main__second__container {
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.767);
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.highly__customer__main__second__container__interior {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+  padding: 3em 0em;
 }
 .highly__customer__main__container__heading {
   width: 70%;
@@ -8620,9 +8632,10 @@ body {
   padding-top: 3em;
 }
 .highly__customer__main__container__heading__content {
-  font-size: 20px;
+  font-size: 28px;
   padding: 2em;
   width: 99.2%;
+  font-weight: 500;
 }
 .highly__customer__main__first__container__jira__container__content {
   padding-top: 2em;
