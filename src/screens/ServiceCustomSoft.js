@@ -562,12 +562,11 @@ export default function ServiceCustomSoft() {
         </div>
         <div className="customsoft_fourth_container">
           <div className="customsoft_fourth_container_first_title">
-            The Best Fit
+            TECHNICAL EXPERTISE
           </div>
           <div className="customsoft_fourth_container_first_content">
             <div className="customsoft_fourth_container_first_content_main">
-              You can trust us with our deep technological & domain expertise to
-              come up with the best solution for your product.
+              Tech Stacks For Effective & Up-To-Date Web & Mobile Apps
             </div>
           </div>
           <div className="customsoft_fourth_container_first_box_all_main_container">
