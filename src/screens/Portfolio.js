@@ -3,6 +3,8 @@ import { PortfolioFilter } from "../components/PortfolioFilter";
 import { ProjectCard } from "../components/ProjectCard";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
+import about from "../assets/about.svg";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 
 export default function Portfolio() {
   const [showImage, setShowImage] = useState(false);
@@ -22,6 +24,23 @@ export default function Portfolio() {
   );
   return (
     <>
+      <div className="container">
+        <HomeJumbotron
+          taglinesLine="Portfolio"
+          taglines={["Know Us", "Know Our Story"]}
+          info={
+            <>
+              We are talented. We are experienced. <br />
+              We are bold. We are DSME Global Links! <br />
+              Get a behind-the-scenes glimpse of your new favorite software
+              development company.
+              <br />
+              Let’s work together
+            </>
+          }
+          img={about}
+        />
+      </div>
       {showImage ? (
         <div className="service__popup">
           <div className="service__popup__content">

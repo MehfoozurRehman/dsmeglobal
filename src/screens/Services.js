@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import ServicesCard from "../components/ServicesSectionCard";
+import about from "../assets/about.svg";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 
 export default function Services() {
   useEffect(() => {
@@ -129,12 +131,30 @@ export default function Services() {
   ];
   return (
     <>
+      <div className="container">
+        <HomeJumbotron
+          taglinesLine="Services"
+          taglines={["Know Us", "Know Our Story"]}
+          info={
+            <>
+              We are talented. We are experienced. <br />
+              We are bold. We are DSME Global Links! <br />
+              Get a behind-the-scenes glimpse of your new favorite software
+              development company.
+              <br />
+              Let’s work together
+            </>
+          }
+          img={about}
+        />
+      </div>
       <div className="blog__page">
         <div className="blog__page__heading">Services</div>
       </div>
       <div
         className="services__main__container"
-        style={{ position: "sticky", zIndex: 999 }}>
+        style={{ position: "sticky", zIndex: 999 }}
+      >
         {data.map((item) => (
           <ServicesCard data={item} key={JSON.stringify(item)} />
         ))}
