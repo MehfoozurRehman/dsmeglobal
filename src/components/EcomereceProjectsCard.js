@@ -5,6 +5,7 @@ export default function EcomereceProjectsCard({ image }) {
   return (
     <div className="ecommerce__screen__container__recent__work__content___row__entry">
       <img
+        loading="lazy"
         src={image}
         alt={image}
         className="ecommerce__screen__container__recent__work__content___row__entry__img"

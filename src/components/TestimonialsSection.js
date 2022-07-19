@@ -52,6 +52,7 @@ export function TestimonialsSection() {
       </div>
 
       <img
+        loading="lazy"
         src={testimonialBg}
         alt="testimonialBg"
         className="container__testimonials__img"
@@ -75,6 +76,7 @@ export function TestimonialsSection() {
               }}
             >
               <img
+                loading="lazy"
                 src={item.img}
                 alt={item.name}
                 className="container__testimonials__overlay__content__entry__img"

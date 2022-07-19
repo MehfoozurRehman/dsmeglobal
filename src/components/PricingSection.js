@@ -9,7 +9,7 @@ export function PricingSection() {
     <div className="container__pricing">
       <div className="container__pricing__content">
         <div className="container__pricing__content__left">
-          <img src={customizations} alt="customizations" />
+          <img loading="lazy" src={customizations} alt="customizations" />
           <div className="container__pricing__content__left__heading">
             Build your dedicated teams
           </div>
@@ -39,7 +39,7 @@ export function PricingSection() {
           </Link>
         </div>
         <div className="container__pricing__content__right">
-          <img src={products} alt="products" />
+          <img loading="lazy" src={products} alt="products" />
           <div className="container__pricing__content__right__heading">
             Fixed Price Project
           </div>

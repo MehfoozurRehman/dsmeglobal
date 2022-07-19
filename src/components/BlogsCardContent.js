@@ -18,6 +18,7 @@ export default function BlogsCardContent({ data }) {
       className="blog__card "
     >
       <img
+        loading="lazy"
         src={
           "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
           data.image

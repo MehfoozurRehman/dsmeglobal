@@ -18,21 +18,33 @@ export function AboutOurEndeavors({}) {
           <SwiperSlide>
             <div className="about__us__success__stories__slide">
               <div className="about__us__success__stories__slide__image">
-                <img src={AboutUsEndveoursPic} alt="Story Image" />
+                <img
+                  loading="lazy"
+                  src={AboutUsEndveoursPic}
+                  alt="Story Image"
+                />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="about__us__success__stories__slide">
               <div className="about__us__success__stories__slide__image">
-                <img src={AboutUsEndveoursPic} alt="Story Image" />
+                <img
+                  loading="lazy"
+                  src={AboutUsEndveoursPic}
+                  alt="Story Image"
+                />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="about__us__success__stories__slide">
               <div className="about__us__success__stories__slide__image">
-                <img src={AboutUsEndveoursPic} alt="Story Image" />
+                <img
+                  loading="lazy"
+                  src={AboutUsEndveoursPic}
+                  alt="Story Image"
+                />
               </div>
             </div>
           </SwiperSlide>

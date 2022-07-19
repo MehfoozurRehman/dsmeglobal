@@ -10,7 +10,11 @@ export function MeetUsQualityOverQuantity() {
         <div className="meetus__container__sub__content">
           <div className="meetus__container__sub__left">
             <div className="meetus__container__sub__left__image">
-              <img src={qualityOver} alt="Quality over quantity" />
+              <img
+                loading="lazy"
+                src={qualityOver}
+                alt="Quality over quantity"
+              />
             </div>
           </div>
           <div className="meetus__container__sub__right">
@@ -40,7 +44,11 @@ export function MeetUsQualityOverQuantity() {
           </div>
           <div className="meetus__container__sub__right">
             <div className="meetus__container__sub__left__image">
-              <img src={continuousChange} alt="Continuous change" />
+              <img
+                loading="lazy"
+                src={continuousChange}
+                alt="Continuous change"
+              />
             </div>
           </div>
         </div>
@@ -49,7 +57,7 @@ export function MeetUsQualityOverQuantity() {
         <div className="meetus__container__sub__content">
           <div className="meetus__container__sub__left">
             <div className="meetus__container__sub__left__image">
-              <img src={fouceOn} alt="Fouce on people" />
+              <img loading="lazy" src={fouceOn} alt="Fouce on people" />
             </div>
           </div>
           <div className="meetus__container__sub__right">

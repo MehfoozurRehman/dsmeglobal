@@ -30,6 +30,7 @@ export default function WorkSection() {
             <div className="work__section__content__project">
               <div className="work__section__content__project__image__wrapper">
                 <img
+                  loading="lazy"
                   src={
                     "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                     project.image
@@ -72,6 +73,7 @@ export default function WorkSection() {
                     />
 
                     <img
+                      loading="lazy"
                       src={
                         "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
                         item.logo

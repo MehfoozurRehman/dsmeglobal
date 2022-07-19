@@ -7,6 +7,7 @@ export default function BlogDetails() {
     <>
       <div className="blog__jumbotron">
         <img
+          loading="lazy"
           src={
             "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
             blogData.image

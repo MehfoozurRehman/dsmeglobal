@@ -57,6 +57,7 @@ export default function Header({ light }) {
           className="header__content__logo"
         >
           <img
+            loading="lazy"
             src={isScrolling ? logoDark : light ? logo : logoDark}
             alt="logo"
           />

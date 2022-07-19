@@ -20,7 +20,7 @@ export function MeetUsSmallThingsBigDifferences() {
           </div>
           <div className="meetus__container__smallThings__right">
             <div className="meetus__container__smallThings__right__image">
-              <img src={agilefirst} alt="Agile first" />
+              <img loading="lazy" src={agilefirst} alt="Agile first" />
             </div>
           </div>
         </div>

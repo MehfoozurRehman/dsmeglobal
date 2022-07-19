@@ -9,6 +9,7 @@ export function EcommerceSelling({}) {
       <div className="ecommerce__screen__container__selling__content">
         <div className="ecommerce__screen__container__selling__content__left">
           <img
+            loading="lazy"
             src="https://www.codedistrict.com/assets/images/shopify-multi-stage.jpg"
             alt="ecommerce__screen__container__selling__content__left"
             className="ecommerce__screen__container__selling__content__left__img"

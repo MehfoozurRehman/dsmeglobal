@@ -13,6 +13,7 @@ export function UIUXFeatures() {
     >
       <div className="june_first_container_images">
         <img
+          loading="lazy"
           className="june_first_container_images_one"
           src={pencilpic}
           alt="s"
@@ -30,6 +31,7 @@ export function UIUXFeatures() {
       </div>
       <div className="june_first_container_images">
         <img
+          loading="lazy"
           className="june_first_container_images_one"
           src={imagepng2}
           alt="s"
@@ -47,6 +49,7 @@ export function UIUXFeatures() {
       </div>
       <div className="june_first_container_images">
         <img
+          loading="lazy"
           className="june_first_container_images_one"
           src={imagepng3}
           alt="s"

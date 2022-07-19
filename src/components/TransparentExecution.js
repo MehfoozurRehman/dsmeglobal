@@ -27,19 +27,19 @@ export function TransparentExecution() {
           <div className="pricing__transparent__execution__content__entry__box">
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={userPng} alt="User Icon" />
+                <img loading="lazy" src={userPng} alt="User Icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__middle">
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                  <img src={directionPic} alt="DirectionPic" />
+                  <img loading="lazy" src={directionPic} alt="DirectionPic" />
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                  <img src={teAvatar} alt="DirectionPic" />
+                  <img loading="lazy" src={teAvatar} alt="DirectionPic" />
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
@@ -49,29 +49,29 @@ export function TransparentExecution() {
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={logoDark} alt="User Icon" />
+                <img loading="lazy" src={logoDark} alt="User Icon" />
               </div>
             </div>
           </div>
           <div className="pricing__transparent__execution__content__entry__box">
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={userPng} alt="User Icon" />
+                <img loading="lazy" src={userPng} alt="User Icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__middle">
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                  <img src={teGoogle} alt="GoogleMailerLogo" />
+                  <img loading="lazy" src={teGoogle} alt="GoogleMailerLogo" />
                 </div>
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                  <img src={teFigma} alt="FigmaLogo" />
+                  <img loading="lazy" src={teFigma} alt="FigmaLogo" />
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
@@ -82,26 +82,26 @@ export function TransparentExecution() {
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={logoDark} alt="User Icon" />
+                <img loading="lazy" src={logoDark} alt="User Icon" />
               </div>
             </div>
           </div>
           <div className="pricing__transparent__execution__content__entry__box">
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={userPng} alt="User Icon" />
+                <img loading="lazy" src={userPng} alt="User Icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__middle">
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                  <img src={teZoom} alt="ZoomLogo" />
+                  <img loading="lazy" src={teZoom} alt="ZoomLogo" />
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
@@ -112,26 +112,26 @@ export function TransparentExecution() {
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={logoDark} alt="User Icon" />
+                <img loading="lazy" src={logoDark} alt="User Icon" />
               </div>
             </div>
           </div>
           <div className="pricing__transparent__execution__content__entry__box">
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={userPng} alt="User Icon" />
+                <img loading="lazy" src={userPng} alt="User Icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__middle">
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__top">
                 <div className="pricing__transparent__execution__content__entry__box__icons__middle__top__icon">
-                  <img src={teZoom} alt="GoogleMailerLogo" />
+                  <img loading="lazy" src={teZoom} alt="GoogleMailerLogo" />
                 </div>
               </div>
               <div className="pricing__transparent__execution__content__entry__box__icons__middle__bottom">
@@ -141,10 +141,10 @@ export function TransparentExecution() {
             </div>
             <div className="pricing__transparent__execution__content__entry__box__icons__left">
               <div className="pricing__transparent__execution__content__entry__box__right">
-                <img src={rightAngle} alt="right angle icon" />
+                <img loading="lazy" src={rightAngle} alt="right angle icon" />
               </div>
               <div className="pricing__transparent__execution__content__entry__box__left">
-                <img src={logoDark} alt="User Icon" />
+                <img loading="lazy" src={logoDark} alt="User Icon" />
               </div>
             </div>
           </div>

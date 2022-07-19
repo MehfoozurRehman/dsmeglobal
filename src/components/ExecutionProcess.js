@@ -24,8 +24,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   width="40"
                   height="40"
                   className="feather feather-file-text"
@@ -52,8 +52,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -74,8 +74,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -96,8 +96,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -118,8 +118,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-box"
                 >
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
@@ -142,8 +142,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -164,8 +164,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -186,8 +186,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -208,8 +208,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-layout"
                 >
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -231,8 +231,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -253,8 +253,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -275,8 +275,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -297,8 +297,8 @@ export function ExecutionProcess() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-check-circle"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>

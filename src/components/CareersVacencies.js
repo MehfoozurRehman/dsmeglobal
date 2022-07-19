@@ -36,6 +36,7 @@ export function CareersVacencies({
             }}
           >
             <img
+              loading="lazy"
               src={noData}
               alt="nodata"
               style={{

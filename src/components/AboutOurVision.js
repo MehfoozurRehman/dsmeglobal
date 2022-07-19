@@ -12,6 +12,7 @@ export function AboutOurVision({}) {
       <div className="our__vision__section__about__us__content">
         <div className="our__vision__section__about__us__content__right">
           <img
+            loading="lazy"
             src={visionSvg}
             alt="visionSvg"
             className="our__vision__section__about__us__content__right__img"

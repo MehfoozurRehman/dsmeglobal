@@ -8,6 +8,7 @@ export function AboutAgileDevelopmentProcess({}) {
         Agile Development Process
       </div>
       <img
+        loading="lazy"
         className="about__agile__process__img"
         src={agileprocess}
         alt="agile process img"

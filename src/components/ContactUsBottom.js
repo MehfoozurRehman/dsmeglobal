@@ -25,6 +25,7 @@ export default function ContactUsBottom() {
         <div className="contact__section__content">
           <div className="contact__section__content__left">
             <img
+              loading="lazy"
               src={contactImg}
               alt="contactImg"
               className="contact__section__content__img"

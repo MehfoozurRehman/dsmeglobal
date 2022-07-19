@@ -48,6 +48,7 @@ export default function Portfolio() {
               </svg>
             </button>
             <img
+              loading="lazy"
               src={showImagData.image}
               alt={showImagData.title}
               className="service__popup__img"

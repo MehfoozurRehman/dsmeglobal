@@ -32,6 +32,7 @@ export default function QuoteScreen({ setNoShowContactUs }) {
         <div className="contact__section__content">
           <div className="contact__section__content__left">
             <img
+              loading="lazy"
               src={quote}
               alt="quote"
               className="contact__section__content__img"
@@ -56,7 +57,8 @@ export default function QuoteScreen({ setNoShowContactUs }) {
                   console.log("data submited");
                 });
             }}
-            className="contact__section__content__middle">
+            className="contact__section__content__middle"
+          >
             <div className="contact__section__content__middle__header">
               <div className="contact__section__content__middle__sub__heading">
                 Tell us about your project

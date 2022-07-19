@@ -1072,7 +1072,17 @@ body {
 }
 
 .hot__offers__section__content__entry:hover {
-  border-color: $primary;
+  transition: 300ms ease-in-out;
+  background-color: $black;
+}
+.hot__offers__section__content__entry:hover * {
+  transition: 300ms ease-in-out;
+  color: $white;
+}
+.hot__offers__section__content__entry:hover
+  .hot__offers__section__content__entry__left__heading {
+  transition: 300ms ease-in-out;
+  color: $primary;
 }
 
 .hot__offers__section__content__entry__left {
@@ -4673,10 +4683,10 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 1000;
+  overflow: hidden;
 }
 .careers__wrapper__img {
   width: 100%;
-  height: 100%;
 }
 .careers__wrapper__overlay {
   position: absolute;
@@ -4692,7 +4702,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(24, 147, 102, 0.3);
   font-size: 50px;
   color: $white;
   font-weight: bold;
@@ -4700,8 +4710,8 @@ body {
   transition: 300ms ease-in-out;
 }
 .careers__wrapper__overlay__left span {
-  color: $primary;
-  margin-left: 0.1em;
+  color: $white;
+  margin-left: 0.2em;
 }
 .careers__wrapper__overlay__left:hover {
   transition: 300ms ease-in-out;
@@ -4725,7 +4735,7 @@ body {
 }
 .careers__wrapper__overlay__right span {
   color: $primary;
-  margin-left: 0.5em;
+  margin-left: 0.2em;
 }
 .careers__wrapper__overlay__right:hover {
   transition: 300ms ease-in-out;

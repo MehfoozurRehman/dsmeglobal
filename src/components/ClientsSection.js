@@ -46,6 +46,7 @@ export function ClientsSection() {
               <SwiperSlide key={JSON.stringify(client)}>
                 <div className="container__clients__right__entry">
                   <img
+                    loading="lazy"
                     src={
                       "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                       client.icon

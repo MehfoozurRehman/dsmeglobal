@@ -12,9 +12,11 @@ export default function ServicesSectionCard({ data }) {
     <Link
       onClick={onClick}
       to={data.link ? data.link : "/service"}
-      className="services__main__container__content__wrapper__card">
+      className="services__main__container__content__wrapper__card"
+    >
       <div className="services__main__container__content__wrapper__card__svg__container">
         <img
+          loading="lazy"
           src={
             "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
             data.logo

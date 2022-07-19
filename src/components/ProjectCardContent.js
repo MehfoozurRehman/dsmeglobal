@@ -15,6 +15,7 @@ export default function ProjectCardContent({ image, title, data }) {
       }}
     >
       <img
+        loading="lazy"
         src={
           "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
           image

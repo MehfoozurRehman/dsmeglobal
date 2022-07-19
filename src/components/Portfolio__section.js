@@ -46,6 +46,7 @@ export default function Portfolio__section({ data }) {
         <Swiper slidesPerView={3} spaceBetween={30}>
           <SwiperSlide>
             <img
+              loading="lazy"
               src={
                 "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                 data.image
@@ -57,6 +58,7 @@ export default function Portfolio__section({ data }) {
           {data.sliderImage?.map((item) => (
             <SwiperSlide>
               <img
+                loading="lazy"
                 src={
                   "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                   item

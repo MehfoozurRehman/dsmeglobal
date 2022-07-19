@@ -80,12 +80,12 @@ export default function ServicesAndroid() {
           </div>
           <div className="ios__mobile__share__your__idea__section__buttons__section">
             <div className="ios__mobile__share__your__idea__section__buttons__section__awards">
-              <img src={img1} alt="/" />
-              <img src={img2} alt="/" />
-              <img src={img3} alt="/" />
-              <img src={img4} alt="/" />
-              <img src={img5} alt="/" />
-              <img src={img6} alt="/" />
+              <img loading="lazy" src={img1} alt="/" />
+              <img loading="lazy" src={img2} alt="/" />
+              <img loading="lazy" src={img3} alt="/" />
+              <img loading="lazy" src={img4} alt="/" />
+              <img loading="lazy" src={img5} alt="/" />
+              <img loading="lazy" src={img6} alt="/" />
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
@@ -121,12 +121,12 @@ export default function ServicesAndroid() {
               </div>
             </div>
             <div className="ios__mobile__page__one__step__ios__development__section__right">
-              <img src={img7} alt="img7" />
+              <img loading="lazy" src={img7} alt="img7" />
             </div>
           </div>
           <div className="ios__ios__development__swift__development__section">
             <div className="ios__ios__development__swift__development__section__left">
-              <img src={img8} alt="img8" />
+              <img loading="lazy" src={img8} alt="img8" />
             </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
@@ -160,12 +160,12 @@ export default function ServicesAndroid() {
               </div>
             </div>
             <div className="ios__mobile__page__one__step__ios__development__section__right">
-              <img src={img9} alt="img9" />
+              <img loading="lazy" src={img9} alt="img9" />
             </div>
           </div>
           <div className="ios__ios__development__swift__development__section">
             <div className="ios__ios__development__swift__development__section__left">
-              <img src={img10} alt="img10" />
+              <img loading="lazy" src={img10} alt="img10" />
             </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
@@ -349,6 +349,7 @@ export default function ServicesAndroid() {
               </div>
               <div className="ios__development__native__cross__plat__development__container__right">
                 <img
+                  loading="lazy"
                   className="ios__development__native__cross__plat__development__img"
                   src={img8}
                   alt="img8"

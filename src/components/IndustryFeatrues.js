@@ -362,8 +362,7 @@ export function IndustryFeatrues() {
           </svg>
         }
         title="Ecommerce"
-        content="Delivering custom e-commerce solutions for businesses of all shapes and sizes Regardless of your industry or whether you want to target B2B or B2C customers, the software we create for you promises to benefit your business in every step of its operations and delivery. We pride ourselves on creating fully functional, responsive, and advanced online solutions which offer a unique experience and is custom made for your brand. Our software supports multiple languages, currencies, and features to offer a smooth customer experienc
-          "
+        content="Delivering custom e-commerce solutions for businesses of all shapes and sizes Regardless of your industry or whether you want to target B2B or B2C customers, the software we create for you promises to benefit your business in every step of its operations and delivery."
       />
       <PricingFeatureEntry
         icon={

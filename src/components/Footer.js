@@ -24,7 +24,7 @@ export default function Footer() {
               }}
               className="header__content__logo"
             >
-              <img src={logoDark} alt="logo" />
+              <img loading="lazy" src={logoDark} alt="logo" />
             </Link>
             <div className="footer__container__content__col__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -69,12 +69,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__container__awards">
-          <img src={img1} alt="/" />
-          <img src={img2} alt="/" />
-          <img src={img3} alt="/" />
-          <img src={img4} alt="/" />
-          <img src={img5} alt="/" />
-          <img src={img6} alt="/" />
+          <img loading="lazy" src={img1} alt="/" />
+          <img loading="lazy" src={img2} alt="/" />
+          <img loading="lazy" src={img3} alt="/" />
+          <img loading="lazy" src={img4} alt="/" />
+          <img loading="lazy" src={img5} alt="/" />
+          <img loading="lazy" src={img6} alt="/" />
         </div>
       </div>
       <div className="footer__container__content__bottom">

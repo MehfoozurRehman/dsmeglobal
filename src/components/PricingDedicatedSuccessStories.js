@@ -19,10 +19,10 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story Image" />
               </div>
               <div className="pricing__success__stories__slide__logo">
-                <img src={brandLogo} alt="Brand Logo" />
+                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
               </div>
               <div className="pricing__success__stories__slide__info">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -34,10 +34,10 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story Image" />
               </div>
               <div className="pricing__success__stories__slide__logo">
-                <img src={brandLogo} alt="Brand Logo" />
+                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
               </div>
               <div className="pricing__success__stories__slide__info">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -49,10 +49,10 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story Image" />
               </div>
               <div className="pricing__success__stories__slide__logo">
-                <img src={brandLogo} alt="Brand Logo" />
+                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
               </div>
               <div className="pricing__success__stories__slide__info">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -64,10 +64,10 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story Image" />
               </div>
               <div className="pricing__success__stories__slide__logo">
-                <img src={brandLogo} alt="Brand Logo" />
+                <img loading="lazy" src={brandLogo} alt="Brand Logo" />
               </div>
               <div className="pricing__success__stories__slide__info">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.

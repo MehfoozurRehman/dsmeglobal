@@ -20,6 +20,7 @@ export default function PortfolioDetail() {
             </div>
           </div>
           <img
+            loading="lazy"
             src={
               "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
               data.banner

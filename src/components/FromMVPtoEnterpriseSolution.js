@@ -25,41 +25,49 @@ export function FromMVPtoEnterpriseSolution() {
         </div>
         <div className="container__web__dev__solution__left__row">
           <img
+            loading="lazy"
             src="https://www.codedistrict.com/assets/images/mvp-img-1.svg"
             alt="mvp"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={angular}
             alt="angular"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={react}
             alt="react"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={sql}
             alt="sql"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={nodejs}
             alt="nodejs"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={mysql}
             alt="mysql"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={xml}
             alt="xml"
             className="container__web__dev__solution__left__row__img"
           />
           <img
+            loading="lazy"
             src={typescript}
             alt="typescript"
             className="container__web__dev__solution__left__row__img"

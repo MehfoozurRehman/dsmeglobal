@@ -5,7 +5,12 @@ export function AboutOurCeo({}) {
   return (
     <div className="about__ceo__message">
       <div className="about__ceo__message__left">
-        <img src={ceo} alt="ceo" className="about__ceo__message__left__img" />
+        <img
+          loading="lazy"
+          src={ceo}
+          alt="ceo"
+          className="about__ceo__message__left__img"
+        />
       </div>
       <div className="about__ceo__message__right">
         <div className="about__ceo__message__right__heading">

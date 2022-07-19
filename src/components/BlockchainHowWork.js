@@ -47,7 +47,7 @@ export function BlockchainHowWork() {
           </div>
         </div>
         <div className="blockchain__worksection__img">
-          <img src={objectimgnew} alt="objectimgnew" />
+          <img loading="lazy" src={objectimgnew} alt="objectimgnew" />
         </div>
       </div>
     </div>

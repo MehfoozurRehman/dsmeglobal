@@ -34,6 +34,7 @@ export function AboutOurMission({}) {
         </div>
         <div className="our__mission__section__about__us__content__right">
           <img
+            loading="lazy"
             src={missionSvg}
             alt="missionSvg"
             className="our__mission__section__about__us__content__right__img"

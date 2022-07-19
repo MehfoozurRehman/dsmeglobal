@@ -54,6 +54,7 @@ export default function ServiceDetails() {
               </svg>
             </button>
             <img
+              loading="lazy"
               src={showImagData.image}
               alt={showImagData.title}
               className="service__popup__img"
@@ -64,6 +65,7 @@ export default function ServiceDetails() {
       <div className="service__details__jumbotron">
         <div className="service__details__jumbotron__left">
           <img
+            loading="lazy"
             src={
               "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
               serviceData.image

@@ -49,74 +49,74 @@ export function AboutAwardAchievements({
         >
           <SwiperSlide>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={clutch} alt="Brand Logo" />
+              <img loading="lazy" src={clutch} alt="Brand Logo" />
             </div>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={designWorkImageMob} alt="Brand Logo" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={topSoftwarePic} alt="Brand Logo" />
-            </div>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={topMobileAppCompany} alt="Brand Logo" />
+              <img loading="lazy" src={designWorkImageMob} alt="Brand Logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={clutch} alt="Brand Logo" />
+              <img loading="lazy" src={topSoftwarePic} alt="Brand Logo" />
             </div>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={subtractPng} alt="Brand Logo" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={fastestGrowingApp} alt="Brand Logo" />
-            </div>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={designrush} alt="Brand Logo" />
+              <img loading="lazy" src={topMobileAppCompany} alt="Brand Logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={softwareUsa} alt="Brand Logo" />
+              <img loading="lazy" src={clutch} alt="Brand Logo" />
             </div>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={itrateco} alt="Brand Logo" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={appfuturaBadge} alt="Brand Logo" />
-            </div>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={softwaredev} alt="Brand Logo" />
+              <img loading="lazy" src={subtractPng} alt="Brand Logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={webappfuturaBadge} alt="Brand Logo" />
+              <img loading="lazy" src={fastestGrowingApp} alt="Brand Logo" />
             </div>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={topAppPic} alt="Brand Logo" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={webappusfuturaBadge} alt="Brand Logo" />
-            </div>
-            <div className="pricing__awards__achievements__slide__logo">
-              <img src={softwaredev} alt="Brand Logo" />
+              <img loading="lazy" src={designrush} alt="Brand Logo" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={sdappfuturaBadge} alt="Brand Logo" />
+              <img loading="lazy" src={softwareUsa} alt="Brand Logo" />
             </div>
             <div className="pricing__awards__achievements__slide__logo">
-              <img src={softwaredev} alt="Brand Logo" />
+              <img loading="lazy" src={itrateco} alt="Brand Logo" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={appfuturaBadge} alt="Brand Logo" />
+            </div>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={softwaredev} alt="Brand Logo" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={webappfuturaBadge} alt="Brand Logo" />
+            </div>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={topAppPic} alt="Brand Logo" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={webappusfuturaBadge} alt="Brand Logo" />
+            </div>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={softwaredev} alt="Brand Logo" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={sdappfuturaBadge} alt="Brand Logo" />
+            </div>
+            <div className="pricing__awards__achievements__slide__logo">
+              <img loading="lazy" src={softwaredev} alt="Brand Logo" />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -135,10 +135,10 @@ export function AboutAwardAchievements({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-square"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-square"
               >
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
               </svg>
@@ -158,10 +158,10 @@ export function AboutAwardAchievements({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-square"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-square"
               >
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
               </svg>
@@ -182,10 +182,10 @@ export function AboutAwardAchievements({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-square"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-square"
               >
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
               </svg>
@@ -206,10 +206,10 @@ export function AboutAwardAchievements({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-square"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="feather feather-square"
               >
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
               </svg>
