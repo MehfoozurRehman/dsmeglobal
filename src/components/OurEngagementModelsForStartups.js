@@ -6,7 +6,7 @@ export function OurEngagementModelsForStartups() {
     <div
       className="service__startup__main__container__second"
       style={{
-        paddingTop: "0em",
+        paddingTop: "0em",background:"black" , color:"white"
       }}
     >
       <div className="max__width__container">
