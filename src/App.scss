@@ -8296,7 +8296,16 @@ cursor: pointer;
   min-height: 350px;
   width: 100%;
   padding: 2em 0;
- ;
+ 
+}
+.services__startup__card {
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 4%);
+  margin-bottom: 1em;
+  background-color: rgba(13, 110, 74, 0.1);
+  border: 1px solid transparent;
+ 
 }
 .service__startup__main__container__second__cards__container {
   display: flex;
