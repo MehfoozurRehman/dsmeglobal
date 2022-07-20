@@ -4120,7 +4120,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  flex-wrap: wrap;
   padding: 0em 4em;
   padding-bottom: 4em;
   max-width: 1500px;
@@ -4281,6 +4280,21 @@ body {
 .june_second_container:hover * {
   color: $white;
   fill: $white;
+}
+.june_third_container_first_box__colomns{
+  width: 31%;
+  padding: 2em;
+  border-radius: 5px;
+  margin: 1%;
+  background-color: rgba(13, 110, 74, 0.1);
+}
+.june_third_container_first_box__colomns:hover {
+  background-color: $primary;
+cursor: pointer;
+}
+.june_third_container_first_box__colomns:hover * {
+  color: $white;
+  
 }
 .june_second_container_box_title_one {
   display: flex;
