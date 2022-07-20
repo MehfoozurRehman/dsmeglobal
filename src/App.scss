@@ -6053,6 +6053,12 @@ cursor: pointer;
   width: 30%;
   padding: 1.5em;
   border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 1%;
+  background-color: rgba(13, 110, 74, 0.1);
+}
+.blockchain__whysection__servicecard :hover{
+
 }
 .blockchain__whysection__servicecard__heading {
   font-size: 18px;
