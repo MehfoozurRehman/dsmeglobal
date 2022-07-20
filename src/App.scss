@@ -6057,9 +6057,6 @@ cursor: pointer;
   margin: 1%;
   background-color: rgba(13, 110, 74, 0.1);
 }
-.blockchain__whysection__servicecard :hover{
-
-}
 .blockchain__whysection__servicecard__heading {
   font-size: 18px;
   font-weight: bold;
@@ -6453,6 +6450,7 @@ cursor: pointer;
     .services__startup__card__icon::before {
     display: none;
   }
+  
   .service__startup__main__container__second__cards__container__augmantation
     .engagement__models__card:nth-child(4)
     .services__startup__card__icon::after {
@@ -8298,11 +8296,15 @@ cursor: pointer;
   min-height: 350px;
   width: 100%;
   padding: 2em 0;
+  background-color: black;
+  color: white;
 }
 .service__startup__main__container__second__cards__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: black;
+  color: white;
 }
 .services__startup__card {
   height: fit-content;
