@@ -18,7 +18,7 @@ export function WhyWorkWithUsForStartups() {
         >
           Why work with us?
         </div>
-        <div className="service__startup__main__container__second__cards__container">
+        <div className="service__startup__main__container__second__cards__container"  >
           <WorkWithUsCard
             label="User-Centric Approach"
             info="Our team has in-depth knowledge of startup systems and culture, so we focus on your users’ end needs and expectations"
