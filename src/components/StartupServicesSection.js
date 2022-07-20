@@ -1,12 +1,13 @@
-import React from "react";
 import { ServicesStartupCard } from "../components/ServicesStartupCard";
+import React from "react";
+
 
 export function StartupServicesSection() {
   return (
-    <div className="service__startup__main__container__second">
+    <div className="service__startup__main__container__second" style={{background:"black" , color:"white"}}  >
       <div className="max__width__container">
-        <div className="service__startup__main__container__second__cards__container">
-          <ServicesStartupCard
+        <div className="service__startup__main__container__second__cards__container" >
+          <ServicesStartupCard 
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -2,7 +2,7 @@ import React from "react";
 
 export function ServicesStartupCard({ svg, label, info }) {
   return (
-    <div className="services__startup__card">
+    <div className="services__startup__card" >
       {svg ? <div className="services__startup__card__icon">{svg}</div> : null}
       <div className="services__startup__card__label">{label}</div>
       {info ? (
