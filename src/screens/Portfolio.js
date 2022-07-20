@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { PortfolioFilter } from "../components/PortfolioFilter";
 import { ProjectCard } from "../components/ProjectCard";
 import { fetcher } from "../utils/functions";
-import useSWR from "swr";
-import about from "../assets/about.svg";
+import project from "../assets/projects.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
+import useSWR from "swr";
 
 export default function Portfolio() {
   const [showImage, setShowImage] = useState(false);
@@ -27,18 +27,16 @@ export default function Portfolio() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Portfolio"
-          taglines={["Know Us", "Know Our Story"]}
           info={
             <>
-              We are talented. We are experienced. <br />
-              We are bold. We are DSME Global Links! <br />
-              Get a behind-the-scenes glimpse of your new favorite software
-              development company.
-              <br />
-              Let’s work together
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque
+              minima eveniet vero porro expedita pariatur error reiciendis ut ab
+              architecto quaerat similique, ipsum suscipit placeat quo rem cum!
+              Rem id magni cum, voluptatibus harum possimus fugit praesentium
+              nostrum illum.
             </>
           }
-          img={about}
+          img={project}
         />
       </div>
       {showImage ? (
@@ -75,9 +73,7 @@ export default function Portfolio() {
           </div>
         </div>
       ) : null}
-
-      <div className="blog__page">
-        <div className="blog__page__heading">PORTFOLIO</div>
+      <div className="blog__page" style={{ marginTop: "-8em" }}>
         <div className="blog__page__filter">
           <PortfolioFilter
             title="All"

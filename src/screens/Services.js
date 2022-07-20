@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ServicesCard from "../components/ServicesSectionCard";
-import about from "../assets/about.svg";
+import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 
-export default function Services() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+export default function Services({}) {
   const data = [
     {
       logo: "v1652870358/dsme_global/th4v090zeauzrq7poavv.png",
@@ -133,27 +130,23 @@ export default function Services() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Services"
-          taglines={["Know Us", "Know Our Story"]}
+          taglinesLine="We provide"
+          taglines={["the best", "services"]}
           info={
             <>
-              We are talented. We are experienced. <br />
-              We are bold. We are DSME Global Links! <br />
-              Get a behind-the-scenes glimpse of your new favorite software
-              development company.
-              <br />
-              Let’s work together
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+              provident dolores dolorum expedita maiores dolor nulla, vero ipsam
+              excepturi nostrum soluta iure suscipit aperiam repellat quisquam
+              maxime veniam reprehenderit? Distinctio, cupiditate! Sequi ullam
+              eaque, voluptatum ratione autem iusto ducimus nam!
             </>
           }
-          img={about}
+          img={servicesbanner}
         />
-      </div>
-      <div className="blog__page">
-        <div className="blog__page__heading">Services</div>
       </div>
       <div
         className="services__main__container"
-        style={{ position: "sticky", zIndex: 999 }}
+        style={{ position: "sticky", zIndex: 999, marginTop: "4em" }}
       >
         {data.map((item) => (
           <ServicesCard data={item} key={JSON.stringify(item)} />

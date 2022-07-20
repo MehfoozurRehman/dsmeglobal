@@ -9,6 +9,7 @@
     "react-cloudinary-upload-widget": "^1.6.0",
     "react-compress": "^2.5.4",
     "react-countup": "^6.3.0",
+    "react-critical-css": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-lottie": "^1.2.3",

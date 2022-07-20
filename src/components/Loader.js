@@ -4,7 +4,7 @@ import animationData from "../assets/loader.json";
 
 export default function Loader({ style }) {
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: animationData,
     rendererSettings: {

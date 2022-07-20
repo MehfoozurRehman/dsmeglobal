@@ -40,7 +40,6 @@ export default function AboutUs() {
     }
   }
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
     getSlidesPerView();
     window.addEventListener("resize", getSlidesPerView);
 
