@@ -31,7 +31,7 @@ export function ClientsSection() {
     <div className="container__clients">
       <div className="container__clients__left">
         <div className="container__clients__left__heading">
-          Our Techonologies
+          Our <span>Techonologies</span>
         </div>
         <div className="container__clients__left__info">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nostrum.
