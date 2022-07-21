@@ -1,14 +1,13 @@
 import React, { lazy, Suspense, useState } from "react";
-import { Route, Routes } from "react-router";
-import SwiperCore, { Autoplay } from "swiper";
-import Loader from "./components/Loader";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ContactUsBottom from "./components/ContactUsBottom";
 import { withStyles } from "react-critical-css";
-
+import SwiperCore, { Autoplay } from "swiper";
+import { Route, Routes } from "react-router";
+import Loader from "./components/Loader";
 import style from "./App.scss";
 
+const Header = lazy(() => import("./components/Header"));
+const Footer = lazy(() => import("./components/Footer"));
+const ContactUsBottom = lazy(() => import("./components/ContactUsBottom"));
 const Home = lazy(() => import("./screens/Home"));
 const AboutUs = lazy(() => import("./screens/AboutUs"));
 const Blogs = lazy(() => import("./screens/Blogs"));
