@@ -5764,6 +5764,7 @@ cursor: pointer;
   margin-bottom: 2em;
   min-height: 130px;
 }
+
 .container__feature__col__entry__heading {
   font-size: 20px;
   color: $black;
@@ -5927,6 +5928,9 @@ cursor: pointer;
   color: #efefef;
   cursor: pointer;
 }
+.how__we__do__section__main{
+  background-color: #242424;
+}
 .how__we__do__section {
   display: flex;
   flex-direction: column;
@@ -5934,7 +5938,7 @@ cursor: pointer;
   max-width: 1500px;
   padding: 4em;
   margin: 0em auto;
-  background-color: #242424;
+  
   color: white;
 }
 .how__we__do__section__heading {

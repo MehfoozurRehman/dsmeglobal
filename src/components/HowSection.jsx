@@ -2,6 +2,7 @@ import React from "react";
 
 export function HowSection() {
   return (
+    <div className="how__we__do__section__main">
     <div className="how__we__do__section">
       <div className="how__we__do__section__heading">How We<span> Do It</span> </div>
       <div className="how__we__do__section__subheading">
@@ -295,6 +296,7 @@ export function HowSection() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
