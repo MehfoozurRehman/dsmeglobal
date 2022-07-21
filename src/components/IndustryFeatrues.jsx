@@ -3,6 +3,7 @@ import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 
 export function IndustryFeatrues() {
   return (
+    <div className="pricing__feature__main" >
     <div className="pricing__feature">
       <div className="pricing__feature__entry__reverse">
       Revolutionizing the way business is conducted across industries with the latest technology introductions.
@@ -447,6 +448,7 @@ export function IndustryFeatrues() {
         content="Stay ahead of market trends with our data-driven and analytics-powered food & entertainment applications and development services.
           "
       />
+    </div>
     </div>
   );
 }

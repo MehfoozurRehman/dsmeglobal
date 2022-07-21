@@ -1619,7 +1619,7 @@ body {
   padding: 4em;
   border-radius: 30px;
   margin: 2em auto;
-  background: linear-gradient($black, #434343);
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1628,7 +1628,9 @@ body {
   z-index: 999;
   position: sticky;
 }
-
+.pricing__feature__main{
+  background: linear-gradient($black, #434343);
+}
 .pricing__feature__entry__reverse {
   font-size: 30px;
   color: $white;
