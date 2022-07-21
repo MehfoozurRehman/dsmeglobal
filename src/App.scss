@@ -298,7 +298,7 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
-.container__clients__left__heading span{
+.container__clients__left__heading span {
   color: #189366;
 }
 .container__clients__right {
@@ -1365,7 +1365,7 @@ body {
 
 .contact__section__content__middle__form__button {
   width: 100%;
-  max-width: 200px;
+  max-width: 220px;
   padding: 0.9em 2em;
   background-color: $primary;
   color: $white;
@@ -2938,9 +2938,8 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
 }
-.container__web__dev__experties__header__heading span{
+.container__web__dev__experties__header__heading span {
   color: $primary;
-
 }
 
 .container__web__dev__experties__header__info {
@@ -3028,7 +3027,7 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
 }
-.container__web__dev__experience__header__heading span{
+.container__web__dev__experience__header__heading span {
   color: $primary;
 }
 
@@ -3111,7 +3110,7 @@ body {
   max-width: 500px;
   margin-bottom: 0.5em;
 }
-.container__web__dev__solution__left__heading span{
+.container__web__dev__solution__left__heading span {
   color: $primary;
 }
 .container__web__dev__solution__left__info {
@@ -3174,7 +3173,7 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-.container__emerging__technologies__heading__main span{
+.container__emerging__technologies__heading__main span {
   color: $primary;
 }
 .container__emerging__technologies__text__main {
@@ -4294,7 +4293,7 @@ body {
   color: $white;
   fill: $white;
 }
-.june_third_container_first_box__colomns{
+.june_third_container_first_box__colomns {
   width: 31%;
   padding: 2em;
   border-radius: 5px;
@@ -4303,11 +4302,10 @@ body {
 }
 .june_third_container_first_box__colomns:hover {
   background-color: $primary;
-cursor: pointer;
+  cursor: pointer;
 }
 .june_third_container_first_box__colomns:hover * {
   color: $white;
-  
 }
 .june_second_container_box_title_one {
   display: flex;
@@ -5928,7 +5926,7 @@ cursor: pointer;
   color: #efefef;
   cursor: pointer;
 }
-.how__we__do__section__main{
+.how__we__do__section__main {
   background-color: #242424;
 }
 .how__we__do__section {
@@ -5938,7 +5936,7 @@ cursor: pointer;
   max-width: 1500px;
   padding: 4em;
   margin: 0em auto;
-  
+
   color: white;
 }
 .how__we__do__section__heading {
@@ -5946,7 +5944,7 @@ cursor: pointer;
   font-weight: bold;
   text-align: center;
 }
-.how__we__do__section__heading span{
+.how__we__do__section__heading span {
   color: $primary;
 }
 .how__we__do__section__subheading {
@@ -5992,7 +5990,7 @@ cursor: pointer;
   text-align: center;
   margin-bottom: 2em;
 }
-.Custome__methodologies__section__heading span{
+.Custome__methodologies__section__heading span {
   color: $primary;
 }
 .Custome__methodologies__section__detail {
@@ -6007,28 +6005,28 @@ cursor: pointer;
   padding: 2em;
   width: 32%;
 }
-.customsoft_five_container_all_main_boxes{
+.customsoft_five_container_all_main_boxes {
   margin-bottom: 2em;
   background-color: rgba(13, 110, 74, 0.1);
   border-radius: 5px;
   padding: 2em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
-.customsoft_five_container_second_box{
+.customsoft_five_container_second_box {
   margin-bottom: 2em;
   background-color: rgba(13, 110, 74, 0.1);
   border-radius: 5px;
   padding: 2em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
-.customsoft_five_container_third_box{
+.customsoft_five_container_third_box {
   margin-bottom: 2em;
   background-color: rgba(13, 110, 74, 0.1);
   border-radius: 5px;
   padding: 2em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
-.customsoft_five_container_four_box{
+.customsoft_five_container_four_box {
   margin-bottom: 2em;
   background-color: rgba(13, 110, 74, 0.1);
   border-radius: 5px;
@@ -6473,7 +6471,7 @@ cursor: pointer;
     .services__startup__card__icon::before {
     display: none;
   }
-  
+
   .service__startup__main__container__second__cards__container__augmantation
     .engagement__models__card:nth-child(4)
     .services__startup__card__icon::after {
@@ -7862,11 +7860,9 @@ cursor: pointer;
   font-weight: 650;
   color: white;
 }
-.customsoft_third_container_headindspan{
+.customsoft_third_container_headindspan {
   color: $primary;
   margin-left: 10px;
-  
-
 }
 .customsoft_third_container_content {
   display: flex;
@@ -8017,7 +8013,7 @@ cursor: pointer;
   font-weight: 650;
   padding-top: 2em;
 }
-.customsoft_fourth_container_first_title span{
+.customsoft_fourth_container_first_title span {
   color: $primary;
 }
 .customsoft_fourth_container_first_content {
@@ -8328,15 +8324,12 @@ cursor: pointer;
   min-height: 350px;
   width: 100%;
   padding: 2em 0;
- 
 }
-
 
 .service__startup__main__container__second__cards__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 .services__startup__card {
   height: fit-content;

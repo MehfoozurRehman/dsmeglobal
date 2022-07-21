@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { fetcher, getText } from "../utils/functions";
 import useSWR from "swr";
+import { Bounce, Zoom } from "react-reveal";
 
 export function BlogSection() {
   const navigate = useNavigate();
@@ -24,41 +25,45 @@ export function BlogSection() {
           data
             ?.filter((blog, i) => i < 3)
             .map((blog) => (
-              <button
-                onClick={() => {
-                  setTimeout(() => {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }, 300);
-                  navigate("/blog-details");
-                  window.localStorage.setItem(
-                    "blogsData",
-                    JSON.stringify(blog)
-                  );
-                }}
-                key={JSON.stringify(blog)}
-                className="blog__card"
-              >
-                <img
-                  loading="lazy"
-                  src={
-                    "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                    blog.image
-                  }
-                  alt={blog.title}
-                  className="blog__card__img"
-                />
+              <Zoom>
+                <button
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 300);
+                    navigate("/blog-details");
+                    window.localStorage.setItem(
+                      "blogsData",
+                      JSON.stringify(blog)
+                    );
+                  }}
+                  key={JSON.stringify(blog)}
+                  className="blog__card"
+                >
+                  <img
+                    loading="lazy"
+                    src={
+                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                      blog.image
+                    }
+                    alt={blog.title}
+                    className="blog__card__img"
+                  />
 
-                <div className="blog__card__content">
-                  <div className="blog__card__content__heading">
-                    {blog.title}
+                  <div className="blog__card__content">
+                    <Bounce top>
+                      <div className="blog__card__content__heading">
+                        {blog.title}
+                      </div>
+                      <div className="blog__card__content__info">
+                        {getText(blog.content).length < 260
+                          ? getText(blog.content)
+                          : getText(blog.content).substring(0, 260) + "..."}
+                      </div>
+                    </Bounce>
                   </div>
-                  <div className="blog__card__content__info">
-                    {getText(blog.content).length < 260
-                      ? getText(blog.content)
-                      : getText(blog.content).substring(0, 260) + "..."}
-                  </div>
-                </div>
-              </button>
+                </button>
+              </Zoom>
             ))
         )}
       </div>

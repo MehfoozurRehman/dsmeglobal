@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import contactImg from "../assets/contact.svg";
 import Input from "../components/Input";
 import axios from "axios";
+import { Bounce, Zoom } from "react-reveal";
 
 export default function ContactUsBottom() {
   const [name, setName] = useState("");
@@ -24,14 +25,15 @@ export default function ContactUsBottom() {
       <div className="contact__section">
         <div className="contact__section__content">
           <div className="contact__section__content__left">
-            <img
-              loading="lazy"
-              src={contactImg}
-              alt="contactImg"
-              className="contact__section__content__img"
-            />
+            <Zoom>
+              <img
+                loading="lazy"
+                src={contactImg}
+                alt="contactImg"
+                className="contact__section__content__img"
+              />
+            </Zoom>
           </div>
-
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -63,12 +65,14 @@ export default function ContactUsBottom() {
             className="contact__section__content__middle"
           >
             <div className="contact__section__content__middle__header">
-              <div className="contact__section__content__middle__sub__heading">
-                Let us help you!
-              </div>
-              <div className="contact__section__content__middle__heading">
-                GET IN <span>TOUCH!</span>
-              </div>
+              <Bounce left>
+                <div className="contact__section__content__middle__sub__heading">
+                  Let us help you!
+                </div>
+                <div className="contact__section__content__middle__heading">
+                  GET IN <span>TOUCH!</span>
+                </div>
+              </Bounce>
             </div>
             <div className="contact__section__content__middle__form">
               <div className="contact__section__content__middle__form__row">

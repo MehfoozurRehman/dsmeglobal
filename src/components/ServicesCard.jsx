@@ -1,4 +1,5 @@
 import React from "react";
+import { Bounce } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export function ServicesCard({ data }) {
@@ -13,22 +14,24 @@ export function ServicesCard({ data }) {
       to={data.link}
       className="container__services__right__entry"
     >
-      <div className="container__services__right__entry__icon">
-        <img
-          loading="lazy"
-          src={
-            "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
-            data.logo
-          }
-          alt={data.title}
-        />
-      </div>
-      <div className="container__services__right__entry__heading">
-        {data.title}
-      </div>
-      <div className="container__services__right__entry__info">
-        {data.shortDescription.substring(0, 70) + "..."}
-      </div>
+      <Bounce top>
+        <div className="container__services__right__entry__icon">
+          <img
+            loading="lazy"
+            src={
+              "https://res.cloudinary.com/mehfoozurrehman/image/upload/" +
+              data.logo
+            }
+            alt={data.title}
+          />
+        </div>
+        <div className="container__services__right__entry__heading">
+          {data.title}
+        </div>
+        <div className="container__services__right__entry__info">
+          {data.shortDescription.substring(0, 70) + "..."}
+        </div>
+      </Bounce>
     </Link>
   );
 }

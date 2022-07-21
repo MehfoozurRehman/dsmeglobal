@@ -1,4 +1,5 @@
 import React from "react";
+import { Bounce } from "react-reveal";
 import { ServicesCard as ServicesCardNew } from "./ServicesCard";
 
 export function ServicesSection() {
@@ -39,27 +40,30 @@ export function ServicesSection() {
   return (
     <>
       <div className="container__services">
-        <div className="container__services__left">
-          <div className="container__services__left__heading">
-            How can we help your buisness ?
+        <Bounce left>
+          <div className="container__services__left">
+            <div className="container__services__left__heading">
+              How can we help your buisness ?
+            </div>
+            <div className="container__services__left__info">
+              We excel in providing cutting-edge solutions and development
+              services that drive business performance, cultivate startups, and
+              accelerate growth.
+              <br />
+              <br />
+              We take care of all the technology so you can focus on what you do
+              best. From strategy to execution, our winning combination of
+              innovative thinking, scientific design, sophisticated development,
+              and ongoing analysis ensure we’re delivering value to help you
+              grow.
+            </div>
+            <div className="container__services__button__container">
+              <button className="container__services__button">
+                View all services
+              </button>
+            </div>
           </div>
-          <div className="container__services__left__info">
-            We excel in providing cutting-edge solutions and development
-            services that drive business performance, cultivate startups, and
-            accelerate growth.
-            <br />
-            <br />
-            We take care of all the technology so you can focus on what you do
-            best. From strategy to execution, our winning combination of
-            innovative thinking, scientific design, sophisticated development,
-            and ongoing analysis ensure we’re delivering value to help you grow.
-          </div>
-          <div className="container__services__button__container">
-            <button className="container__services__button">
-              View all services
-            </button>
-          </div>
-        </div>
+        </Bounce>
         <div className="container__services__right">
           {data.map((item) => (
             <ServicesCardNew data={item} key={JSON.stringify(item)} />

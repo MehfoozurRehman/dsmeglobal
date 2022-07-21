@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { fetcher } from "../utils/functions";
 import useSWR from "swr";
+import { Bounce, Reveal } from "react-reveal";
 
 export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
@@ -29,14 +30,17 @@ export function ClientsSection() {
   }, []);
   return (
     <div className="container__clients">
-      <div className="container__clients__left">
-        <div className="container__clients__left__heading">
-          Our <span>Techonologies</span>
+      <Bounce left>
+        <div className="container__clients__left">
+          <div className="container__clients__left__heading">
+            Our <span>Techonologies</span>
+          </div>
+          <div className="container__clients__left__info">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex,
+            nostrum.
+          </div>
         </div>
-        <div className="container__clients__left__info">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nostrum.
-        </div>
-      </div>
+      </Bounce>
       <div className="container__clients__right">
         {error ? (
           <div>failed to load</div>
@@ -45,14 +49,16 @@ export function ClientsSection() {
             {data.map((client) => (
               <SwiperSlide key={JSON.stringify(client)}>
                 <div className="container__clients__right__entry">
-                  <img
-                    loading="lazy"
-                    src={
-                      "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
-                      client.icon
-                    }
-                    alt={client.icon}
-                  />
+                  <Reveal>
+                    <img
+                      loading="lazy"
+                      src={
+                        "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
+                        client.icon
+                      }
+                      alt={client.icon}
+                    />
+                  </Reveal>
                 </div>
               </SwiperSlide>
             ))}

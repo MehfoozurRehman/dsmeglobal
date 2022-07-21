@@ -1,38 +1,39 @@
 import React, { useState } from "react";
+import { Bounce, Zoom } from "react-reveal";
 import testimonialBg from "../assets/testimonialBg.webp";
 
 export function TestimonialsSection() {
   const array = [
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
       name: "Fahad Ayyaz",
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
       name: "Bilal Shabbir",
       designation: "Developer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
       name: "Mehfooz",
       designation: "Developer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
       name: "Asim Rasheed",
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
       name: "Arslan",
       designation: "Designer",
       message:
@@ -64,24 +65,26 @@ export function TestimonialsSection() {
           id="container__testimonials__overlay__content"
         >
           {array.map((item, i) => (
-            <button
-              key={JSON.stringify(item)}
-              className={
-                selected === i
-                  ? "container__testimonials__overlay__content__entry container__testimonials__overlay__content__entry__active"
-                  : "container__testimonials__overlay__content__entry"
-              }
-              onClick={() => {
-                setSelected(i);
-              }}
-            >
-              <img
-                loading="lazy"
-                src={item.img}
-                alt={item.name}
-                className="container__testimonials__overlay__content__entry__img"
-              />
-            </button>
+            <Zoom>
+              <button
+                key={JSON.stringify(item)}
+                className={
+                  selected === i
+                    ? "container__testimonials__overlay__content__entry container__testimonials__overlay__content__entry__active"
+                    : "container__testimonials__overlay__content__entry"
+                }
+                onClick={() => {
+                  setSelected(i);
+                }}
+              >
+                <img
+                  loading="lazy"
+                  src={item.img}
+                  alt={item.name}
+                  className="container__testimonials__overlay__content__entry__img"
+                />
+              </button>
+            </Zoom>
           ))}
         </div>
       </div>
@@ -92,15 +95,17 @@ export function TestimonialsSection() {
             className="container__testimonials__overlay__info"
             key={JSON.stringify(item)}
           >
-            <div className="container__testimonials__overlay__info__message">
-              {item.message}
-            </div>
-            <div className="container__testimonials__overlay__info__heading">
-              {item.name}
-            </div>
-            <div className="container__testimonials__overlay__info__sub__heading">
-              {item.designation}
-            </div>
+            <Bounce top>
+              <div className="container__testimonials__overlay__info__message">
+                {item.message}
+              </div>
+              <div className="container__testimonials__overlay__info__heading">
+                {item.name}
+              </div>
+              <div className="container__testimonials__overlay__info__sub__heading">
+                {item.designation}
+              </div>
+            </Bounce>
           </div>
         ))}
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-reveal";
+import { Bounce, Zoom } from "react-reveal";
 import { Link, useNavigate } from "react-router-dom";
 
 export function HomeJumbotron({
@@ -27,7 +27,7 @@ export function HomeJumbotron({
 
   return (
     <div className="container__jumbotron" style={{ ...styleImage }}>
-      <Fade>
+      <Bounce left>
         <div className="container__jumbotron__left">
           <div
             className="container__jumbotron__left__heading"
@@ -99,8 +99,8 @@ export function HomeJumbotron({
             </div>
           ) : null}
         </div>
-      </Fade>
-      <Fade>
+      </Bounce>
+      <Zoom>
         <div className="container__jumbotron__right">
           {imgs ? (
             imgs
@@ -117,7 +117,7 @@ export function HomeJumbotron({
             <img loading="lazy" src={img} alt={img} />
           )}
         </div>
-      </Fade>
+      </Zoom>
     </div>
   );
 }

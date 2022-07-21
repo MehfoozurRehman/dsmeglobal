@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GetQuatePopup from "../components/GetQuatePopup";
 import { QuateSectionCard } from "../components/QuateSectionCard";
 import { useNavigate } from "react-router-dom";
+import { Bounce } from "react-reveal";
 
 export function QuateSection() {
   const navigate = useNavigate();
@@ -11,24 +12,26 @@ export function QuateSection() {
       <div className="container__stats__wrapper">
         <div className="container__stats__content">
           <div className="container__stats">
-            <div className="container__stats__left">
-              <div className="container__stats__left__heading">
-                Where business meets cutting-edge technology
+            <Bounce left>
+              <div className="container__stats__left">
+                <div className="container__stats__left__heading">
+                  Where business meets cutting-edge technology
+                </div>
+                <div className="container__stats__left__info">
+                  Choose the tech stack for your next application, or let us
+                  pick the best solution for you
+                </div>
+                <button
+                  className="container__stats__left__button"
+                  onClick={() => {
+                    navigate("/quote");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  Get a quote
+                </button>
               </div>
-              <div className="container__stats__left__info">
-                Choose the tech stack for your next application, or let us pick
-                the best solution for you
-              </div>
-              <button
-                className="container__stats__left__button"
-                onClick={() => {
-                  navigate("/quote");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-              >
-                Get a quote
-              </button>
-            </div>
+            </Bounce>
             <div className="container__stats__right">
               <QuateSectionCard
                 title="Android"
