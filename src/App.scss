@@ -5988,6 +5988,9 @@ cursor: pointer;
   text-align: center;
   margin-bottom: 2em;
 }
+.Custome__methodologies__section__heading span{
+  color: $primary;
+}
 .Custome__methodologies__section__detail {
   display: flex;
   flex-wrap: wrap;
@@ -7855,6 +7858,12 @@ cursor: pointer;
   font-weight: 650;
   color: white;
 }
+.customsoft_third_container_headindspan{
+  color: $primary;
+  margin-left: 10px;
+  
+
+}
 .customsoft_third_container_content {
   display: flex;
   justify-content: center;
@@ -8003,6 +8012,9 @@ cursor: pointer;
   font-size: 30px;
   font-weight: 650;
   padding-top: 2em;
+}
+.customsoft_fourth_container_first_title span{
+  color: $primary;
 }
 .customsoft_fourth_container_first_content {
   display: flex;

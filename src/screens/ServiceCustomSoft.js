@@ -127,7 +127,7 @@ export default function ServiceCustomSoft() {
         </div>
         <div className="customsoft_third_container">
           <div className="customsoft_third_container_headind">
-            For All Business Sizes
+            For All  <span className="customsoft_third_container_headindspan"> Business Sizes</span> 
           </div>
           <div className="customsoft_third_container_content">
             <span>
@@ -486,7 +486,7 @@ export default function ServiceCustomSoft() {
         </div>
         <div className="Custome__methodologies__section">
           <div className="Custome__methodologies__section__heading">
-            End-to-End Software Development Methodologies
+            End-to-End Software <span>Development Methodologies</span> 
           </div>
           <div className="Custome__methodologies__section__detail">
             <div className="Custome__methodologies__section__detail__card">
@@ -562,7 +562,7 @@ export default function ServiceCustomSoft() {
         </div>
         <div className="customsoft_fourth_container">
           <div className="customsoft_fourth_container_first_title">
-            TECHNICAL EXPERTISE
+            TECHNICAL {<span>EXPERTISE</span> }
           </div>
           <div className="customsoft_fourth_container_first_content">
             <div className="customsoft_fourth_container_first_content_main">
