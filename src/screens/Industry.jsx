@@ -1,7 +1,7 @@
 import React from "react";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { IndustryFeatrues } from "../components/IndustryFeatrues";
-import industries from "../assets/industry.png";
+import industries from "../assets/industry.webp";
 
 export default function Industry() {
   return (

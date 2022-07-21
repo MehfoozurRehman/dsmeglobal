@@ -14,4 +14,7 @@ export default defineConfig({
     ViteWebfontDownload(),
     removeConsole(),
   ],
+  esbuild: {
+    drop: ["console", "debugger"],
+  },
 });

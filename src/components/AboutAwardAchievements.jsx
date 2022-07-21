@@ -1,20 +1,20 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import clutch from "../assets/top-clutch.png";
-import topSoftwarePic from "../assets/top-software.png";
-import topMobileAppCompany from "../assets/top-mobile-app-development-company-badge-1.png";
-import subtractPng from "../assets/subtract.png";
-import softwareUsa from "../assets/software-usa.png";
-import itrateco from "../assets/itrateco.png";
-import fastestGrowingApp from "../assets/fastest-growing-app.png";
-import designrush from "../assets/designrush.png";
-import designWorkImageMob from "../assets/design-work-image-mob.png";
-import appfuturaBadge from "../assets/appfutura-badge.jpg";
-import softwaredev from "../assets/softwaredev.png";
-import sdappfuturaBadge from "../assets/sdappfutura-badge.jpg";
-import webappusfuturaBadge from "../assets/webappusfutura-badge.jpg";
-import webappfuturaBadge from "../assets/webappfutura-badge.jpg";
-import topAppPic from "../assets/topapp.jpg";
+import clutch from "../assets/top-clutch.webp";
+import topSoftwarePic from "../assets/top-software.webp";
+import topMobileAppCompany from "../assets/top-mobile-app-development-company-badge-1.webp";
+import subtractPng from "../assets/subtract.webp";
+import softwareUsa from "../assets/software-usa.webp";
+import itrateco from "../assets/itrateco.webp";
+import fastestGrowingApp from "../assets/fastest-growing-app.webp";
+import designrush from "../assets/designrush.webp";
+import designWorkImageMob from "../assets/design-work-image-mob.webp";
+import appfuturaBadge from "../assets/appfutura-badge.webp";
+import softwaredev from "../assets/softwaredev.webp";
+import sdappfuturaBadge from "../assets/sdappfutura-badge.webp";
+import webappusfuturaBadge from "../assets/webappusfutura-badge.webp";
+import webappfuturaBadge from "../assets/webappfutura-badge.webp";
+import topAppPic from "../assets/topapp.webp";
 
 export function AboutAwardAchievements({
   slidesPerViewLogo,

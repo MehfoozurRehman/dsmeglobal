@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import AboutUsEndveoursPic from "../assets/About__us__endveours.jpeg";
+import AboutUsEndveoursPic from "../assets/About__us__endveours.webp";
 
 export function AboutOurEndeavors({}) {
   return (

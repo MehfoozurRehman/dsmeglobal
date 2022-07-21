@@ -1,5 +1,5 @@
 import React from "react";
-import deliveryPic from "../assets/delivery.png";
+import deliveryPic from "../assets/delivery.webp";
 import { PricingFeatureEntry } from "../components/PricingFeatureEntry";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 import { ExperienceCard } from "../components/ExperienceCard";

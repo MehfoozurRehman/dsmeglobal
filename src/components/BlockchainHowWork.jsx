@@ -1,5 +1,5 @@
 import React from "react";
-import objectimgnew from "../assets/object.png";
+import objectimgnew from "../assets/object.webp";
 
 export function BlockchainHowWork() {
   return (

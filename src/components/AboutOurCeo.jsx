@@ -1,5 +1,5 @@
 import React from "react";
-import ceo from "../assets/ceo.png";
+import ceo from "../assets/ceo.webp";
 
 export function AboutOurCeo({}) {
   return (

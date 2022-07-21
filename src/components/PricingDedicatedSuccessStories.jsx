@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import StoryPic from "../assets/fw-airlines.jpg";
-import brandLogo from "../assets/6.png";
+import StoryPic from "../assets/fw-airlines.webp";
+import brandLogo from "../assets/6.webp";
 
 export function PricingDedicatedSuccessStories({ slidesPerView }) {
   return (

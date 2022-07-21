@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import pressRelasePic1 from "../assets/pressRelase1.jpg";
-import pressRelasePic2 from "../assets/pressRelase2.jpg";
-import pressRelasePic3 from "../assets/pressRelase3.jpg";
-import pressRelasePic4 from "../assets/pressRelase4.jpg";
-import pressRelasePic5 from "../assets/pressRelase5.jpg";
-import pressRelasePic6 from "../assets/pressRelase6.jpg";
+import pressRelasePic1 from "../assets/pressRelase1.webp";
+import pressRelasePic2 from "../assets/pressRelase2.webp";
+import pressRelasePic3 from "../assets/pressRelase3.webp";
+import pressRelasePic4 from "../assets/pressRelase4.webp";
+import pressRelasePic5 from "../assets/pressRelase5.webp";
+import pressRelasePic6 from "../assets/pressRelase6.webp";
 
 export function AboutPressRelease({ slidesPerView }) {
   return (

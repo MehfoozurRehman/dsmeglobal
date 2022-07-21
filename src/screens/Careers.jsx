@@ -6,7 +6,7 @@ import { CareeersFeature } from "../components/CareeersFeature";
 import { CareersVacencies } from "../components/CareersVacencies";
 import { CareersViewOpenings } from "../components/CareersViewOpenings";
 import { fetcher } from "../utils/functions";
-import noData from "../assets/noData.png";
+import noData from "../assets/noData.webp";
 import career from "../assets/career.svg";
 import useSWR from "swr";
 

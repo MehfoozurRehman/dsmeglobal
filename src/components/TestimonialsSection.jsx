@@ -1,38 +1,38 @@
 import React, { useState } from "react";
-import testimonialBg from "../assets/testimonialBg.jpg";
+import testimonialBg from "../assets/testimonialBg.webp";
 
 export function TestimonialsSection() {
   const array = [
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
       name: "Fahad Ayyaz",
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
       name: "Bilal Shabbir",
       designation: "Developer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
       name: "Mehfooz",
       designation: "Developer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
       name: "Asim Rasheed",
       designation: "Designer",
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, perferendis! Distinctio ducimus ea illo asperiores molestiae. Non, necessitatibus esse! Perferendis corporis consequatur illo quos inventore consectetur, ab eius velit dicta, dolore animi nisi nesciunt nemo iusto ducimus? Maiores placeat minus blanditiis excepturi, iusto consequatur veritatis tenetur ipsam libero voluptate amet?",
     },
     {
-      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.png",
+      img: "https://aigron-web.web.app/assets/clientPic.356d7feb.webp",
       name: "Arslan",
       designation: "Designer",
       message:

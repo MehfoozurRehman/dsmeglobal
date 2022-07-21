@@ -18,7 +18,7 @@ export { default as Naimah_Jones } from "./Naimah_Jones.webp";
 export { default as Qaiser_Riaz } from "./Qaiser_Riaz.webp";
 export { default as Qasim } from "./Qasim.webp";
 export { default as Sapna_Shams } from "./Sapna_Shams.webp";
-export { default as Shahid_Aziz } from "./Shahid_Aziz.jpeg";
+export { default as Shahid_Aziz } from "./Shahid_Aziz.webp";
 export { default as Usman_Ijaz } from "./Usman_Ijaz.webp";
 export { default as Zunaira_Amjad } from "./Zunaira_Amjad.webp";
 export { default as Zunaira_Najam } from "./Zunaira_Najam.webp";

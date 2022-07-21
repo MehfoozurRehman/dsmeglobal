@@ -51,7 +51,7 @@ export function ClientsSection() {
                       "https://res.cloudinary.com/mehfoozurrehman/image/upload/q_50/" +
                       client.icon
                     }
-                    alt={client.title}
+                    alt={client.icon}
                   />
                 </div>
               </SwiperSlide>

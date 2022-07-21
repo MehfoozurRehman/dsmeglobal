@@ -1,5 +1,5 @@
 import React from "react";
-import directionPic from "../assets/te-direction.jpg";
+import directionPic from "../assets/te-direction.webp";
 import rightAngle from "../assets/chevron-right.svg";
 import userPng from "../assets/personIcon.svg";
 import logoDark from "../assets/logoDark.svg";

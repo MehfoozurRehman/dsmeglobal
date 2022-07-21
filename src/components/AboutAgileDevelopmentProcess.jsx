@@ -1,5 +1,5 @@
 import React from "react";
-import agileprocess from "../assets/agile__process__img.png";
+import agileprocess from "../assets/agile__process__img.webp";
 
 export function AboutAgileDevelopmentProcess({}) {
   return (

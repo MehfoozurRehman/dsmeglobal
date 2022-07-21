@@ -66,6 +66,10 @@ export default function WorkSection() {
                       type="radio"
                       name="work__section__content__selection__entry__input"
                       className="work__section__content__selection__entry__input"
+                      title={
+                        "work__section__content__selection__entry__input" +
+                        item.title
+                      }
                       onClick={() => {
                         setProject(item);
                       }}

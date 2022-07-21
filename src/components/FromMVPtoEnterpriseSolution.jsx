@@ -1,19 +1,19 @@
 import React from "react";
 import { CheckCircle } from "react-feather";
-import angular from "../assets/technologies/angular-icon-logo.png";
-import react from "../assets/technologies/react.png";
-import sql from "../assets/technologies/sql-server-logo.png";
-import nodejs from "../assets/technologies/node js.png";
-import mysql from "../assets/technologies/MySQL-Logo.wine.png";
-import xml from "../assets/technologies/Group 847.png";
-import typescript from "../assets/technologies/Image 5.png";
+import angular from "../assets/technologies/angular-icon-logo.webp";
+import react from "../assets/technologies/react.webp";
+import sql from "../assets/technologies/sql-server-logo.webp";
+import nodejs from "../assets/technologies/node js.webp";
+import mysql from "../assets/technologies/MySQL-Logo.wine.webp";
+import xml from "../assets/technologies/Group 847.webp";
+import typescript from "../assets/technologies/Image 5.webp";
 
 export function FromMVPtoEnterpriseSolution() {
   return (
     <div className="container__web__dev__solution">
       <div className="container__web__dev__solution__left">
         <div className="container__web__dev__solution__left__heading">
-          From MVP's to <span> Enterprise Solution</span> 
+          From MVP's to <span> Enterprise Solution</span>
         </div>
         <div className="container__web__dev__solution__left__info">
           For us an MVP is a solution with limited features that is detailed

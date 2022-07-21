@@ -1,7 +1,7 @@
 import React from "react";
-import pencilpic from "../assets/pencil-sketch.png";
-import imagepng2 from "../assets/high-fidelity-wireframes.png";
-import imagepng3 from "../assets/pixel-perfect-mockups.jpg";
+import pencilpic from "../assets/pencil-sketch.webp";
+import imagepng2 from "../assets/high-fidelity-wireframes.webp";
+import imagepng3 from "../assets/pixel-perfect-mockups.webp";
 
 export function UIUXFeatures() {
   return (
