@@ -7,7 +7,7 @@ import useSWR from "swr";
 
 export default function QuoteScreen({ setNoShowContactUs }) {
   const { data } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_service`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
     { suspense: true }
   );
@@ -44,15 +44,18 @@ export default function QuoteScreen({ setNoShowContactUs }) {
               e.preventDefault();
               e.target.reset();
               axios
-                .post(`${process.env.REACT_APP_API_URL}api/v1/set_quote`, {
-                  username: name,
-                  email: email,
-                  service: service,
-                  budget: budget,
-                  phone: phone,
-                  company: company,
-                  message: message,
-                })
+                .post(
+                  `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/set_quote`,
+                  {
+                    username: name,
+                    email: email,
+                    service: service,
+                    budget: budget,
+                    phone: phone,
+                    company: company,
+                    message: message,
+                  }
+                )
                 .then(() => {
                   console.log("data submited");
                 });

@@ -4,7 +4,7 @@ import useSWR from "swr";
 
 export function CareersFilters({ setDeparment, setSearchQuery }) {
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_category`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_category`,
     fetcher,
     { suspense: true }
   );

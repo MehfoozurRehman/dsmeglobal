@@ -31,7 +31,9 @@ export default function ApplyForJobPopup({ selectItem, setIsApplyOpen }) {
               e.target.reset();
               axios
                 .post(
-                  `${process.env.REACT_APP_API_URL}api/v1/set_careers_applied`,
+                  `${
+                    import.meta.env.VITE_REACT_APP_API_URL
+                  }api/v1/set_careers_applied`,
                   {
                     name: name,
                     email: email,

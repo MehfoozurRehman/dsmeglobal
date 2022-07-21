@@ -7,7 +7,7 @@ export function BlogSection() {
   const navigate = useNavigate();
 
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_blog`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,
     fetcher,
     { suspense: true }
   );

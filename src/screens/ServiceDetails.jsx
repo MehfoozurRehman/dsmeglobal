@@ -15,7 +15,7 @@ export default function ServiceDetails() {
   }
 
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_project`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_project`,
     fetcher,
     { suspense: true }
   );

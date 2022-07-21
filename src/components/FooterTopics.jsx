@@ -4,7 +4,7 @@ import { fetcher } from "../utils/functions";
 
 export function FooterTopics() {
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_techonologies`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_techonologies`,
     fetcher,
     { suspense: true }
   );

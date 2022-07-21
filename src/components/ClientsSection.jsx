@@ -6,7 +6,7 @@ import useSWR from "swr";
 export function ClientsSection() {
   const [slidesPerView, setSlidesPerView] = useState(4);
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_techonologies`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_techonologies`,
     fetcher,
     { suspense: true }
   );

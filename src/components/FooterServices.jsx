@@ -5,7 +5,7 @@ import { fetcher } from "../utils/functions";
 
 export function FooterServices() {
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_service`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_service`,
     fetcher,
     { suspense: true }
   );

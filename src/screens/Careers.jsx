@@ -19,7 +19,7 @@ export default function Careers({ setLightHeader }) {
   const [careerDataFiltered, setCareerDataFiltered] = useState([]);
 
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_careers`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_careers`,
     fetcher,
     { suspense: true }
   );

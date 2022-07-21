@@ -1,24 +1,19 @@
 import React, { useState } from "react";
-import { PortfolioFilter } from "../components/PortfolioFilter";
-import { ProjectCard } from "../components/ProjectCard";
+import { useNavigate } from "react-router-dom";
+import BlogsCard from "../components/BlogCard";
+import BlogsFilter from "../components/BlogsFilter";
 import { fetcher } from "../utils/functions";
-import project from "../assets/projects.svg";
-import { HomeJumbotron } from "../components/HomeJumbotron";
+import blog from "../assets/blog.svg";
 import useSWR from "swr";
+import { HomeJumbotron } from "../components/HomeJumbotron";
 
-export default function Portfolio() {
-  const [showImage, setShowImage] = useState(false);
+export default function Blogs() {
+  const navigate = useNavigate();
   const [noOfItems, setNoOfItems] = useState(9);
-  const [showImagData, setShowImageData] = useState([]);
   const [filter, setFilter] = useState("");
-  if (showImage) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
 
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_project`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,
     fetcher,
     { suspense: true }
   );
@@ -26,7 +21,7 @@ export default function Portfolio() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Portfolio"
+          taglinesLine="Blogs"
           info={
             <>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque
@@ -36,80 +31,40 @@ export default function Portfolio() {
               nostrum illum.
             </>
           }
-          img={project}
+          img={blog}
         />
       </div>
-      {showImage ? (
-        <div className="service__popup">
-          <div className="service__popup__content">
-            <button
-              className="service__popup__close"
-              onClick={() => {
-                setShowImage(false);
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="feather feather-x"
-              >
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            </button>
-            <img
-              loading="lazy"
-              src={showImagData.image}
-              alt={showImagData.title}
-              className="service__popup__img"
-            />
-          </div>
-        </div>
-      ) : null}
       <div className="blog__page" style={{ marginTop: "-8em" }}>
         <div className="blog__page__filter">
-          <PortfolioFilter
+          <BlogsFilter
             title="All"
             defaultChecked={true}
             onChange={() => {
               setFilter("");
             }}
           />
-          <PortfolioFilter
+          <BlogsFilter
             title="Web Apps"
             onChange={() => {
               setFilter("Web App Development");
             }}
           />
-          <PortfolioFilter
+          <BlogsFilter
             title="Mobile Apps"
             onChange={() => {
               setFilter("Mobile App Development");
             }}
           />
-          <PortfolioFilter
+          <BlogsFilter
             title="Ecommerce"
             onChange={() => {
               setFilter("Ecommerce Solutions");
             }}
           />
-          <PortfolioFilter
+          <BlogsFilter
             title="UI/UX Design"
             onChange={() => {
               setFilter("UI & UX Services");
-            }}
-          />
-          <PortfolioFilter
-            title="Our Procucts"
-            onChange={() => {
-              setFilter("our product");
             }}
           />
         </div>
@@ -120,9 +75,7 @@ export default function Portfolio() {
             data
               .filter((item, i) => (filter === "" ? i < noOfItems : i))
               .map((item) => (
-                <ProjectCard
-                  setShowImage={setShowImage}
-                  setShowImageData={setShowImageData}
+                <BlogsCard
                   data={item}
                   key={JSON.stringify(item)}
                   filter={filter}
@@ -142,6 +95,22 @@ export default function Portfolio() {
             </button>
           </div>
         ) : null}
+        <div className="blog__greenbox__container">
+          <div className="blog__greenbox__container__heading">
+            Delivering software solutions beyond expectations
+          </div>
+          <div className="blog__greenbox__container__subheading">
+            Have a project in mind?
+          </div>
+          <button
+            className="blog__greenbox__container__button"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Free Consultation
+          </button>
+        </div>
       </div>
     </>
   );

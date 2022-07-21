@@ -43,13 +43,18 @@ export default function ContactUsBottom() {
                 }
               } else {
                 axios
-                  .post(`${process.env.REACT_APP_API_URL}api/v1/set_contact`, {
-                    username: name,
-                    email: email,
-                    phone: phone,
-                    subject: subject,
-                    message: message,
-                  })
+                  .post(
+                    `${
+                      import.meta.env.VITE_REACT_APP_API_URL
+                    }api/v1/set_contact`,
+                    {
+                      username: name,
+                      email: email,
+                      phone: phone,
+                      subject: subject,
+                      message: message,
+                    }
+                  )
                   .then(() => {
                     console.log("data submited");
                   });

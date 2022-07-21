@@ -8,7 +8,7 @@ export default function WorkSection() {
   const [project, setProject] = useState([]);
 
   const { data, error } = useSWR(
-    `${process.env.REACT_APP_API_URL}api/v1/get_work`,
+    `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_work`,
     fetcher,
     { suspense: true }
   );
