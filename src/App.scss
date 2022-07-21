@@ -6094,6 +6094,9 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+.blockchain__servicessection__main{
+  background-color:#242424;
+}
 .blockchain__servicessection {
   max-width: 1500px;
   width: 100%;
@@ -6282,8 +6285,10 @@ body {
 .blockchain__techstack__container__tags {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1500px;
   padding: 3em 4em;
+  max-width: 1500px;
+  margin:0 auto ;
   flex-wrap: wrap;
 }
 .blockchain__techstack__container__tags svg {
