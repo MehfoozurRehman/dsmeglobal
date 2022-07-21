@@ -1840,37 +1840,6 @@ body {
   flex-direction: column;
   margin-right: 2em;
 }
-.pricing__delivery__section__content__card__para::after {
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: 15px;
-  width: 4%;
-  height: 120%;
-  border-right: 1px dashed $primary;
-  // background-color: rgba(255, 0, 0, 0.5);
-}
-.pricing__delivery__section__content__card:nth-child(3)
-  .pricing__delivery__section__content__card__para::after {
-  content: "";
-  position: absolute;
-  left: -30px;
-  top: 15px;
-  width: 3%;
-  height: 120%;
-  border-right: 1px dashed #bb6bd9;
-}
-.pricing__delivery__section__content__card:nth-child(1)
-  .pricing__delivery__section__content__card__para::after {
-  content: "";
-  position: absolute;
-  left: -30px;
-  top: 15px;
-  width: 3%;
-
-  height: 120%;
-  border-right: 1px dashed #bb6bd9;
-}
 
 .pricing__delivery__section__content__card__para:last-child::after {
   content: "";
@@ -3177,6 +3146,7 @@ body {
 }
 .container__emerging__technologies__heading__main span {
   color: $primary;
+  padding-left:.3em ;
 }
 .container__emerging__technologies__text__main {
   display: flex;
@@ -6287,12 +6257,13 @@ body {
 .blockchain__techstack__container__tags {
   display: flex;
   justify-content: center;
-  width: 1500px;
+  width: 100;
   padding: 3em 4em;
-  max-width: 1500px;
+  max-width: 1440px;
   margin:0 auto ;
   flex-wrap: wrap;
 }
+
 .blockchain__techstack__container__tags svg {
   width: 190px;
   height: 80px;
@@ -7332,6 +7303,15 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 1030px) {
+  .june_third_container_first_box {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .june_third_container_first_box__colomns{
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .header__content__logo img {
     width: 120px;
@@ -8342,6 +8322,7 @@ body {
   height: fit-content;
   width: 23%;
   display: flex;
+ 
   flex-direction: column;
   align-items: center;
   padding: 1em;
@@ -8360,7 +8341,8 @@ body {
 .services__startup__card__info {
   text-align: center;
   width: 100%;
-  max-width: 500px;
+
+  min-height: 100%;
 }
 .why__work__with__us__card .services__startup__card__label {
   text-align: left;
@@ -8374,7 +8356,7 @@ body {
 .why__work__with__us__card {
   min-width: 48%;
   align-items: start;
-  height: 200px;
+  height: fit-content;
   padding: 2em;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgb(0 0 0 / 4%);
