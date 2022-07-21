@@ -157,7 +157,7 @@ export function EmergingTechnologiesWebDev() {
   return (
     <div className="container__emerging__technologies">
       <div className="container__emerging__technologies__heading__main">
-        Emerging Technologies
+        Emerging<span>Technologies</span>
       </div>
       <div className="container__emerging__technologies__text__main">
         We constantly push our limits and explore emerging technologies to build

@@ -6,7 +6,7 @@ export function OurExpertise() {
     <div className="container__web__dev__experties">
       <div className="container__web__dev__experties__header">
         <div className="container__web__dev__experties__header__heading">
-          Our Expertise
+          Our <span>Expertise</span> 
         </div>
         <div className="container__web__dev__experties__header__info">
           Custom-built web applications with amazing user experiences & latest

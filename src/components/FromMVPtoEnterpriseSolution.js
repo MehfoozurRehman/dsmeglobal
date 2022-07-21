@@ -13,7 +13,7 @@ export function FromMVPtoEnterpriseSolution() {
     <div className="container__web__dev__solution">
       <div className="container__web__dev__solution__left">
         <div className="container__web__dev__solution__left__heading">
-          From MVP's to Enterprise Solution
+          From MVP's to <span> Enterprise Solution</span> 
         </div>
         <div className="container__web__dev__solution__left__info">
           For us an MVP is a solution with limited features that is detailed

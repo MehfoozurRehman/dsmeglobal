@@ -3113,7 +3113,9 @@ body {
   max-width: 500px;
   margin-bottom: 0.5em;
 }
-
+.container__web__dev__solution__left__heading span{
+  color: $primary;
+}
 .container__web__dev__solution__left__info {
   color: $black;
   width: 100%;

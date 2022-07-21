@@ -7,7 +7,7 @@ export function ExperienceInDevelopingDiverseSolutions() {
       <div className="container__web__dev__experience">
         <div className="container__web__dev__experience__header">
           <div className="container__web__dev__experience__header__heading">
-            Experience In Developing Diverse Solutions.
+            Experience In Developing <span>Diverse Solutions.</span>
           </div>
           <div className="container__web__dev__experience__header__info">
             Custom solutions are lean, designed as per your brand guidelines and
