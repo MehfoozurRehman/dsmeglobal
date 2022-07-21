@@ -133,6 +133,7 @@ export function AboutAwardAchievements({
                 width="30"
                 height="30"
                 viewBox="0 0 88.824 88.824"
+                fill="#189366"
               >
                 <g
                   id="Group_4"
@@ -173,6 +174,7 @@ export function AboutAwardAchievements({
                 width="30"
                 height="30"
                 viewBox="0 0 88.838 88.876"
+                fill="#189366"
               >
                 <g
                   id="Group_7"
@@ -244,6 +246,7 @@ export function AboutAwardAchievements({
                 width="30"
                 height="30"
                 viewBox="0 0 88.872 87.702"
+                fill="#189366"
               >
                 <g
                   id="Group_6"
@@ -273,6 +276,7 @@ export function AboutAwardAchievements({
                 width="30"
                 height="30"
                 viewBox="0 0 58.077 59.597"
+                fill="#189366"
               >
                 <g
                   id="Group_5"
