@@ -19,7 +19,7 @@ export function AboutSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story" />
               </div>
               <div className="pricing__success__stories__slide__logo">
                 <img loading="lazy" src={brandLogo} alt="Brand Logo" />
@@ -34,7 +34,7 @@ export function AboutSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story" />
               </div>
               <div className="pricing__success__stories__slide__logo">
                 <img loading="lazy" src={brandLogo} alt="Brand Logo" />
@@ -49,7 +49,7 @@ export function AboutSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story" />
               </div>
               <div className="pricing__success__stories__slide__logo">
                 <img loading="lazy" src={brandLogo} alt="Brand Logo" />
@@ -64,7 +64,7 @@ export function AboutSuccessStories({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={StoryPic} alt="Story Image" />
+                <img loading="lazy" src={StoryPic} alt="Story" />
               </div>
               <div className="pricing__success__stories__slide__logo">
                 <img loading="lazy" src={brandLogo} alt="Brand Logo" />

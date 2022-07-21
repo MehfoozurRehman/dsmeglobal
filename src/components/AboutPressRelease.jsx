@@ -30,42 +30,42 @@ export function AboutPressRelease({ slidesPerView }) {
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={pressRelasePic1} alt="Story Image" />
+                <img loading="lazy" src={pressRelasePic1} alt="Story" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={pressRelasePic2} alt="Story Image" />
+                <img loading="lazy" src={pressRelasePic2} alt="Story" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={pressRelasePic3} alt="Story Image" />
+                <img loading="lazy" src={pressRelasePic3} alt="Story" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={pressRelasePic4} alt="Story Image" />
+                <img loading="lazy" src={pressRelasePic4} alt="Story" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={pressRelasePic5} alt="Story Image" />
+                <img loading="lazy" src={pressRelasePic5} alt="Story" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="pricing__success__stories__slide">
               <div className="pricing__success__stories__slide__image">
-                <img loading="lazy" src={pressRelasePic6} alt="Story Image" />
+                <img loading="lazy" src={pressRelasePic6} alt="Story" />
               </div>
             </div>
           </SwiperSlide>

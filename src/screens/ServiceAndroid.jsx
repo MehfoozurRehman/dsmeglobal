@@ -80,12 +80,12 @@ export default function ServicesAndroid() {
           </div>
           <div className="ios__mobile__share__your__idea__section__buttons__section">
             <div className="ios__mobile__share__your__idea__section__buttons__section__awards">
-              <img loading="lazy" src={img1} alt="/" />
-              <img loading="lazy" src={img2} alt="/" />
-              <img loading="lazy" src={img3} alt="/" />
-              <img loading="lazy" src={img4} alt="/" />
-              <img loading="lazy" src={img5} alt="/" />
-              <img loading="lazy" src={img6} alt="/" />
+              <img loading="lazy" src={img1} alt="imgmunber" />
+              <img loading="lazy" src={img2} alt="imgmunber" />
+              <img loading="lazy" src={img3} alt="imgmunber" />
+              <img loading="lazy" src={img4} alt="imgmunber" />
+              <img loading="lazy" src={img5} alt="imgmunber" />
+              <img loading="lazy" src={img6} alt="imgmunber" />
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">

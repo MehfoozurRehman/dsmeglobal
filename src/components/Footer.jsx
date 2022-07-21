@@ -68,12 +68,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__container__awards">
-          <img loading="lazy" src={img1} alt="/" />
-          <img loading="lazy" src={img2} alt="/" />
-          <img loading="lazy" src={img3} alt="/" />
-          <img loading="lazy" src={img4} alt="/" />
-          <img loading="lazy" src={img5} alt="/" />
-          <img loading="lazy" src={img6} alt="/" />
+          <img loading="lazy" src={img1} alt="img1" />
+          <img loading="lazy" src={img2} alt="img2" />
+          <img loading="lazy" src={img3} alt="img3" />
+          <img loading="lazy" src={img4} alt="img4" />
+          <img loading="lazy" src={img5} alt="img5" />
+          <img loading="lazy" src={img6} alt="img6" />
         </div>
       </div>
       <div className="footer__container__content__bottom">
