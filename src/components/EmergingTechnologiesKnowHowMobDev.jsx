@@ -207,7 +207,7 @@ export function EmergingTechnologiesKnowHowMobDev() {
       }}
     >
       <div className="container__emerging__technologies__heading__main">
-        Emerging Technologies Know <span>-How</span>
+        Emerging Technologies <span> Know -How</span>
       </div>
       <div className="container__emerging__technologies__text__main">
         We understand the potential value of emerging technologies for both
