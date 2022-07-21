@@ -3,7 +3,7 @@ import React from "react";
 export function HowSection() {
   return (
     <div className="how__we__do__section">
-      <div className="how__we__do__section__heading">How We Do It</div>
+      <div className="how__we__do__section__heading">How We<span> Do It</span> </div>
       <div className="how__we__do__section__subheading">
         Fast-track your project's delivery using our simple three-step
         application development process.

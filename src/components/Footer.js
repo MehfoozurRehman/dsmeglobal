@@ -27,10 +27,9 @@ export default function Footer() {
               <img loading="lazy" src={logoDark} alt="logo" />
             </Link>
             <div className="footer__container__content__col__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              sunt officiis quod harum, in accusantium consectetur earum hic at
-              quibusdam repellendus error nulla atque amet ea sequi porro labore
-              numquam.
+              We are talented. We are experienced. We are bold. We are DSME
+              Global Links! Get a behind-the-scenes glimpse of your new favorite
+              software development company. Let’s work together
             </div>
           </div>
           <FooterServices />
@@ -81,7 +80,7 @@ export default function Footer() {
         <div className="footer__container__content__bottom__container">
           <div className="footer__container__content__bottom__left">
             <div className="footer__container__content__bottom__text">
-              © 2022 Miquido. All rights reserved.
+              © 2022 DSME. All rights reserved.
             </div>
             <a
               href="#"

@@ -2940,6 +2940,10 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
 }
+.container__web__dev__experties__header__heading span{
+  color: $primary;
+
+}
 
 .container__web__dev__experties__header__info {
   color: $black;
@@ -3025,6 +3029,9 @@ body {
   color: $white;
   margin-bottom: 0.5em;
   text-align: center;
+}
+.container__web__dev__experience__header__heading span{
+  color: $primary;
 }
 
 .container__web__dev__experience__header__info {
@@ -3167,7 +3174,9 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-
+.container__emerging__technologies__heading__main span{
+  color: $primary;
+}
 .container__emerging__technologies__text__main {
   display: flex;
   align-items: center;
@@ -5930,6 +5939,9 @@ cursor: pointer;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+}
+.how__we__do__section__heading span{
+  color: $primary;
 }
 .how__we__do__section__subheading {
   font-size: 16px;

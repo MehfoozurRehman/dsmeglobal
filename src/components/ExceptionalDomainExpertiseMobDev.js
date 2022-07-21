@@ -7,7 +7,7 @@ export function ExceptionalDomainExpertiseMobDev() {
       <div className="container__web__dev__experience">
         <div className="container__web__dev__experience__header">
           <div className="container__web__dev__experience__header__heading">
-            Exceptional Domain Expertise
+            Exceptional <span> Domain Expertise </span> 
           </div>
           <div className="container__web__dev__experience__header__info">
             Phenomenal domain expertise to help you build and deliver mobile
