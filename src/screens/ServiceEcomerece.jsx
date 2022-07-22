@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import ecommerce from "../assets/ecommerce.svg";
-import { EcommerceWhyWork } from "../components/EcommerceWhyWork";
-import { EcommerceProcess } from "../components/EcommerceProcess";
-import { EcommerceServices } from "../components/EcommerceServices";
-import { EcommerceRecentWork } from "../components/EcommerceRecentWork";
-import { EcommerceSelling } from "../components/EcommerceSelling";
-import { EcommerceRole } from "../components/EcommerceRole";
+import React, {useState} from 'react';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import ecommerce from '../assets/ecommerce.svg';
+import {EcommerceWhyWork} from '../components/EcommerceWhyWork';
+import {EcommerceProcess} from '../components/EcommerceProcess';
+import {EcommerceServices} from '../components/EcommerceServices';
+import {EcommerceRecentWork} from '../components/EcommerceRecentWork';
+import {EcommerceSelling} from '../components/EcommerceSelling';
+import {EcommerceRole} from '../components/EcommerceRole';
 
 export default function ServiceEcomerece() {
-  const [role, setRole] = useState("Shopify");
-  const [process, setProcess] = useState("Discovery");
+  const [role, setRole] = useState('Shopify');
+  const [process, setProcess] = useState('Discovery');
 
   return (
     <>
@@ -25,7 +25,9 @@ export default function ServiceEcomerece() {
           <EcommerceRole role={role} setRole={setRole} />
           <EcommerceSelling />
           <EcommerceRecentWork />
-          <EcommerceServices />
+        </div>
+        <EcommerceServices />
+        <div className="ecommerce__screen__container">
           <EcommerceProcess
             role={role}
             process={process}

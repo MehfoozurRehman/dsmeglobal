@@ -5310,9 +5310,14 @@ body {
   flex-direction: column;
   padding: 5em 0;
 }
+.ecommerce__screen__container__outside {
+  width: 100%;
+  background-color: #242424;
+  margin-bottom: 6em;
+}
 .ecommerce__screen__container__services__heading {
   font-size: 30px;
-  color: $black;
+  color: white;
   font-weight: bold;
   margin-bottom: 2em;
   text-align: center;
@@ -5329,7 +5334,7 @@ body {
 .ecommerce__screen__container__services__content__entry {
   width: 31%;
   margin: 1%;
-  background-color: rgba(13, 110, 74, 0.1);
+  background-color: #ffffff;
   padding: 2em;
   border-radius: 8px;
   fill: $primary;
