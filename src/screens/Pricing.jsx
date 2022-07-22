@@ -8,6 +8,7 @@ import products from "../assets/products.svg";
 import { ExperitseCard } from "../components/ExperitseCard";
 import { WorkWithUsCard } from "../components/WorkWithUsCard";
 import FaqSection from "../components/FaqSection";
+import { HowFixedPriceProcessWorks } from "./HowFixedPriceProcessWorks";
 
 export default function Pricing() {
   const DeliveryCardEntry1 = [
@@ -38,179 +39,15 @@ export default function Pricing() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Less Execution Risk"
-          taglines={["More", "trust"]}
+          taglinesLine="Fixed Price"
+          taglines={["Less Execution Risk", "More trust"]}
           info="We plan and deliver your product over multiple milestones, leveraging a transparent working methodology."
           imgs={[products, pricing]}
         />
       </div>
-      <div className="pricing__process__container">
-        <div className="pricing__process__container__content">
-          <div className="pricing__process__container__content__top">
-            <div className="pricing__process__container__content__top__heading">
-              How the Process Works?
-            </div>
-            <div className="pricing__process__container__content__top__info">
-              We have been successfully delivered over 250+ products on-time and
-              within budget for startups, entrepreneurs, businesses and large
-              enterprises.
-            </div>
-          </div>
-          <div className="pricing__process__container__content__bottom">
-            <div className="pricing__process__container__content__bottom__left">
-              <div className="pricing__process__container__content__bottom__left__top">
-                Initial Discovery
-              </div>
-              <div className="pricing__process__container__content__bottom__left__middle">
-                <div className="pricing__process__container__content__bottom__left__middle__button ">
-                  Assessment
-                </div>
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Deep Dive
-                </div>
-              </div>
-              <div className="pricing__process__container__content__bottom__left__bottom">
-                <ul>
-                  <li>
-                    We discuss your project requirements over a couple of calls
-                    or It will be meetings and assess what you already have.
-                  </li>
-                  <li>
-                    If we feel that the requirements are enough for us to
-                    provide you with a tentative cost/effort estimate - we go
-                    down that route. Otherwise, we recommend that you go through
-                    our Agile Discovery Workshop to get you development ready.
-                  </li>
-                  <li>
-                    Otherwise, we recommend that you go through our Agile
-                    Discovery Workshop to get you development ready.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="pricing__process__container__content__bottom__left">
-              <div className="pricing__process__container__content__bottom__left__top">
-                Develop
-              </div>
-              <div className="pricing__process__container__content__bottom__left__middle">
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Detailed Discovery
-                </div>
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Design
-                </div>
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Development & QA
-                </div>
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  UAT
-                </div>
-              </div>
-              <div className="pricing__process__container__content__bottom__left__bottom">
-                <ul>
-                  <li>
-                    We start off with doing a detailed discovery as a first
-                    milestone, where we revisit the initial requirements and
-                    make them more detailed (user stories, wire-frames,
-                    non-functional requirements).
-                  </li>
-                  <li>
-                    On the basis of this, we draft a statement of work and
-                    provide a detailed project & payment plan
-                  </li>
-                  <li>
-                    The remaining milestones are about delivering the scope of
-                    work defined during detailed discovery.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="pricing__process__container__content__bottom__left">
-              <div className="pricing__process__container__content__bottom__left__top">
-                Go Live
-              </div>
-              <div className="pricing__process__container__content__bottom__left__middle">
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Pilot
-                </div>
-                <div className="pricing__process__container__content__bottom__left__middle__button">
-                  Support & Transition
-                </div>
-              </div>
-              <div className="pricing__process__container__content__bottom__left__bottom">
-                <ul>
-                  <li>
-                    Once the product has gone through the User Acceptance
-                    Testing stage, we successfully launch it while providing
-                    ongoing support & maintenance during the Pilot phase.
-                  </li>
-                  <li>
-                    After that, we can either transition everything to your team
-                    or move to a monthly Support & Maintenance contract.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container__web__dev__experience__wrapper">
-        <div className="container__web__dev__experience">
-          <div className="container__web__dev__experience__header">
-            <div className="container__web__dev__experience__header__heading">
-              Why we Recommend It
-            </div>
-            <div className="container__web__dev__experience__header__info">
-              It's the first step to building a successful and awesome tech
-              product. It builds tremendous confidence when moving on to the
-              development phase.
-            </div>
-          </div>
-          <div className="container__web__dev__experience__content">
-            <ExperienceCard
-              label="Reduce Cost"
-              info="ADW is the best way to reduce inflated and superficial development costs. Our goal is to arrive at the most critical features that add direct business value and get rid of the fat."
-            />
-            <ExperienceCard
-              label="Speed & Agility"
-              info="We have structured this workshop in a way to ensure that we gather and document an in-depth understanding of your product in the shortest time possible."
-            />
-            <ExperienceCard
-              label="Mitigate Risk"
-              info="During the workshop, we help you identify problem areas and any technical challenges. The goal is to make sure that any high-risk items are identified and dealt ear"
-            />
-            <ExperienceCard
-              label="Best way to prepare for development"
-              info="There is no doubt that 90% of software projects often fail in time, cost or scope. Gathering requirements with ADW is our way of addressing this problem and we have been pretty successful with it."
-            />
-            <ExperienceCard
-              label="Specialized Experts"
-              info="We’ve helped launch hundreds of products and our team has been doing this for nearly 15 years. We bring experts to the table and our goal is to make you as educated as possible before making important decisions."
-            />
-            <ExperienceCard
-              label="Stakeholders Involvement  "
-              info="All concerned stakeholders of the product are involved in the process from day one. This way businesses get to build a product that does end up getting used."
-            />
-            {/* <ExperienceCard
-              label="Sports & Lifestyle Apps"
-              info="Captivate users with the most robust, simple and useful sports and lifestyle apps that will give your competitors tough competition."
-            />
-            <ExperienceCard
-              label="Social Networking Apps"
-              info="Reduce the time to market for your amazing social networking apps and cash out on the first movers advantage by leveraging our expertise."
-            /> */}
-          </div>
-        </div>
-      </div>
-
+      <HowFixedPriceProcessWorks />
       <div className="pricing__understand__container">
         <div className="pricing__understand__container__content">
-          <div className="pricing__understand__container__content__top">
-            We understand that each client is unique although a typical fixed
-            price project is composed of all the above stages, we tailor our
-            process according to your needs. You can also benefit from our
-            additional offerings below:
-          </div>
           <div className="pricing__understand__container__content__bottom">
             <div className="pricing__understand__container__content__bottom__card">
               <div className="pricing__understand__container__content__bottom__card__left">
@@ -284,7 +121,7 @@ export default function Pricing() {
                   dedicated team service based on your priorities.
                 </div>
                 <div className="pricing__understand__container__content__bottom__card__right__btn">
-                  <a href="#">
+                  <a href="https://www.codedistrict.com/agile-discovery-workshop">
                     Learn More <span>→</span>
                   </a>
                 </div>
@@ -394,7 +231,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-
       <div className="pricing__feature__container">
         This process offers minimum risk and a transparent approach since you
         only pay on the completion of defined deliverables.
@@ -403,6 +239,54 @@ export default function Pricing() {
         <button className="btn" style={{ margin: "-6em 0em 0em 0em" }}>
           Let's talk
         </button>
+      </div>
+      <div className="container__web__dev__experience__wrapper">
+        <div className="container__web__dev__experience">
+          <div className="container__web__dev__experience__header">
+            <div className="container__web__dev__experience__header__heading">
+              Why we Recommend It
+            </div>
+            <div className="container__web__dev__experience__header__info">
+              It's the first step to building a successful and awesome tech
+              product. It builds tremendous confidence when moving on to the
+              development phase.
+            </div>
+          </div>
+          <div className="container__web__dev__experience__content">
+            <ExperienceCard
+              label="Reduce Cost"
+              info="ADW is the best way to reduce inflated and superficial development costs. Our goal is to arrive at the most critical features that add direct business value and get rid of the fat."
+            />
+            <ExperienceCard
+              label="Speed & Agility"
+              info="We have structured this workshop in a way to ensure that we gather and document an in-depth understanding of your product in the shortest time possible."
+            />
+            <ExperienceCard
+              label="Mitigate Risk"
+              info="During the workshop, we help you identify problem areas and any technical challenges. The goal is to make sure that any high-risk items are identified and dealt ear"
+            />
+            <ExperienceCard
+              label="Best way to prepare for development"
+              info="There is no doubt that 90% of software projects often fail in time, cost or scope. Gathering requirements with ADW is our way of addressing this problem and we have been pretty successful with it."
+            />
+            <ExperienceCard
+              label="Specialized Experts"
+              info="We’ve helped launch hundreds of products and our team has been doing this for nearly 15 years. We bring experts to the table and our goal is to make you as educated as possible before making important decisions."
+            />
+            <ExperienceCard
+              label="Stakeholders Involvement  "
+              info="All concerned stakeholders of the product are involved in the process from day one. This way businesses get to build a product that does end up getting used."
+            />
+            {/* <ExperienceCard
+              label="Sports & Lifestyle Apps"
+              info="Captivate users with the most robust, simple and useful sports and lifestyle apps that will give your competitors tough competition."
+            />
+            <ExperienceCard
+              label="Social Networking Apps"
+              info="Reduce the time to market for your amazing social networking apps and cash out on the first movers advantage by leveraging our expertise."
+            /> */}
+          </div>
+        </div>
       </div>
       <div className="pricing__feature">
         <div className="pricing__feature__entry__reverse">
@@ -469,7 +353,7 @@ export default function Pricing() {
                   paddingBottom: "1em",
                 }}
               >
-                All-Inclusive Pricing{" "}
+                All-Inclusive Pricing
                 <span style={{ fontSize: "20px", color: "black" }}>
                   We have no hidden costs. Our transparent pricing approach
                   includes everything below.
@@ -500,7 +384,6 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-
           <div className="container__web__dev__experties__header__heading">
             What You Get
           </div>
@@ -600,7 +483,6 @@ export default function Pricing() {
           />
         </div>
       </div>
-
       <div className="pricing__all__inclusive__container">
         <div className="pricing__all__inclusive__container__content">
           <div className="pricing__all__inclusive__container__content__top">
@@ -915,7 +797,6 @@ export default function Pricing() {
               </div>
             ))}
           </div>
-
           <div className="pricing__delivery__section__content__card">
             <div className="pricing__delivery__section__content__card__heading">
               Execution
@@ -929,7 +810,6 @@ export default function Pricing() {
               </div>
             ))}
           </div>
-
           <div className="pricing__delivery__section__content__card">
             <div className="pricing__delivery__section__content__card__heading">
               Support
