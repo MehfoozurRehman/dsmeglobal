@@ -1,7 +1,7 @@
-import React from "react";
-import EcomereceRoleSelector from "../components/EcomereceRoleSelector";
+import React from 'react';
+import EcomereceRoleSelector from '../components/EcomereceRoleSelector';
 
-export function EcommerceRole({ role, setRole }) {
+export function EcommerceRole({role, setRole}) {
   return (
     <div className="ecommerce__screen__container__role">
       <EcomereceRoleSelector
@@ -10,13 +10,11 @@ export function EcommerceRole({ role, setRole }) {
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
-            viewBox="0 0 365.944 365.944"
-          >
+            viewBox="0 0 365.944 365.944">
             <g
               id="Group_40"
               data-name="Group 40"
-              transform="translate(-277.5 -2892.5)"
-            >
+              transform="translate(-277.5 -2892.5)">
               <g id="W_Mark_2_" transform="translate(278 2893)">
                 <path
                   id="Path_106"
@@ -35,7 +33,7 @@ export function EcommerceRole({ role, setRole }) {
             </g>
           </svg>
         }
-        label="Shopify"
+        label="Wordpress"
         selected={role}
         setSelected={setRole}
       />
@@ -45,13 +43,11 @@ export function EcommerceRole({ role, setRole }) {
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
-            viewBox="0 0 324.603 367.407"
-          >
+            viewBox="0 0 324.603 367.407">
             <g
               id="Group_41"
               data-name="Group 41"
-              transform="translate(-802 -2890.536)"
-            >
+              transform="translate(-802 -2890.536)">
               <g id="shopify" transform="translate(800.602 2890.536)">
                 <path
                   id="Path_108"
@@ -69,7 +65,7 @@ export function EcommerceRole({ role, setRole }) {
             </g>
           </svg>
         }
-        label="Wordpress"
+        label="Shopify"
         selected={role}
         setSelected={setRole}
       />
