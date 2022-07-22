@@ -277,63 +277,8 @@ export default function Pricing() {
               label="Stakeholders Involvement  "
               info="All concerned stakeholders of the product are involved in the process from day one. This way businesses get to build a product that does end up getting used."
             />
-            {/* <ExperienceCard
-              label="Sports & Lifestyle Apps"
-              info="Captivate users with the most robust, simple and useful sports and lifestyle apps that will give your competitors tough competition."
-            />
-            <ExperienceCard
-              label="Social Networking Apps"
-              info="Reduce the time to market for your amazing social networking apps and cash out on the first movers advantage by leveraging our expertise."
-            /> */}
           </div>
         </div>
-      </div>
-      <div className="pricing__feature">
-        <div className="pricing__feature__entry__reverse">
-          We leverage our across-the-board knowledge base to expertly deliver
-          your product on time and within your budget.
-        </div>
-        <PricingFeatureEntry
-          // icon={
-          //   <svg
-          //     xmlns="http://www.w3.org/2000/svg"
-          //     width="56.155"
-          //     height="35.123"
-          //     viewBox="0 0 56.155 35.123">
-          //     <g
-          //       id="Group_12098"
-          //       data-name="Group 12098"
-          //       transform="translate(-565 -2340.123)">
-          //       <path
-          //         id="Path_11778"
-          //         data-name="Path 11778"
-          //         d="M13.023,295.638a1.547,1.547,0,0,1,1.607-.766A46.06,46.06,0,0,1,24.5,296.42a11.56,11.56,0,0,1,1.655.707,1.507,1.507,0,0,1,.866,1.816c-.036.175-.053.353-.088.6h.59c2.742,0,5.484.01,8.226-.014a1.73,1.73,0,0,0,.942-.31,7.885,7.885,0,0,1,5.919-1.8,14.59,14.59,0,0,1,3.047.822c2.228.858,4.42,1.807,6.628,2.717.164.068.335.12.575.206-.183-1.086.459-1.479,1.283-1.782a33.262,33.262,0,0,1,8.414-1.869c1.726-.162,3.461-.237,5.193-.314.965-.044,1.423.432,1.423,1.381q0,10.34,0,20.678a1.217,1.217,0,0,1-1.386,1.373c-2.139.006-4.278,0-6.417,0-1.01,0-1.328-.237-1.619-1.194-.067-.221-.14-.44-.227-.71-.573.38-1.1.707-1.594,1.074a.6.6,0,0,0-.165.465,3.961,3.961,0,0,1-3.716,4.212.6.6,0,0,0-.417.243,4.432,4.432,0,0,1-4.365,2.258.585.585,0,0,0-.642.33,4.183,4.183,0,0,1-4.647,1.977.5.5,0,0,0-.349.018c-1.622,1.01-3.275.743-4.949.16a12.122,12.122,0,0,1-3.45-2.09c-3.115-2.452-6.242-4.891-9.308-7.4-1.182-.969-2.213-2.122-3.343-3.221-.07.2-.158.436-.242.678a1.117,1.117,0,0,1-1.1.836c-2.358.011-4.716,0-7.073,0a1.337,1.337,0,0,1-1.147-.8Zm33.8,30.3c-.695-.747-1.26-1.369-1.84-1.977-1.162-1.216-2.341-2.414-3.493-3.639a1.177,1.177,0,0,1,.586-2.037,1.333,1.333,0,0,1,1.241.542c1.745,1.769,3.483,3.546,5.26,5.283a1.865,1.865,0,0,0,2.649-.052c.327-.307.414-.549.022-.937-2.064-2.045-4.1-4.119-6.129-6.2a1.847,1.847,0,0,1-.477-.83,1.055,1.055,0,0,1,.589-1.188,1.085,1.085,0,0,1,1.4.222c.918.917,1.807,1.863,2.723,2.782q1.914,1.924,3.853,3.822a1.024,1.024,0,0,0,1.432.151,1.336,1.336,0,0,0,.532-2.008,14.178,14.178,0,0,0-2.221-2.619c-3.545-3.078-7.152-6.084-10.747-9.1a.642.642,0,0,0-.527-.059c-.57.188-1.112.473-1.69.62a1.818,1.818,0,0,0-.973.624,5.671,5.671,0,0,1-6.246,1.934,2.917,2.917,0,0,1-2.305-3.213,8.319,8.319,0,0,1,1.737-4.307c.427-.624.923-1.2,1.4-1.814H26.55c-.037.186-.059.33-.1.471q-1.459,5.607-2.911,11.217a.842.842,0,0,0,.087.67,48.8,48.8,0,0,0,4.058,4.077c3.417,2.8,6.924,5.5,10.446,8.167a8.566,8.566,0,0,0,2.345,1,4.436,4.436,0,0,0,1.136.067c-.448-.451-.785-.783-1.115-1.123q-1.815-1.869-3.623-3.743a1.171,1.171,0,0,1-.1-1.79,1.214,1.214,0,0,1,1.826.187c.1.105.2.216.3.319q2.667,2.643,5.336,5.282a1.091,1.091,0,0,0,1.41.173A9.525,9.525,0,0,0,46.818,325.936Zm9.865-8.15c.629-.421,1.244-.813,1.83-1.242a.534.534,0,0,0,.15-.474q-2.073-5.76-4.188-11.507a.769.769,0,0,0-.394-.4Q49.294,302.22,44.5,300.3a5.844,5.844,0,0,0-5.931.5,19.069,19.069,0,0,0-4.207,3.976A7.346,7.346,0,0,0,32.81,308c-.1.593.063.849.636,1.018a3.2,3.2,0,0,0,3.343-.767c.339-.329.607-.729.938-1.068a2.148,2.148,0,0,1,.719-.549c1.073-.393,2.17-.722,3.246-1.106a1.385,1.385,0,0,1,1.509.3c1.7,1.474,3.4,2.94,5.124,4.379C51.2,312.6,54.212,314.84,56.683,317.786Zm10.109.445V299.572A39.015,39.015,0,0,0,55.833,301.3L62,318.231Zm-51.389-2.3c1.505,0,2.981-.016,4.457.01a.536.536,0,0,0,.635-.469c1.068-3.882,2.186-7.751,3.216-11.642.422-1.6.665-3.237.995-4.892a39.681,39.681,0,0,0-9.3-1.632Z"
-          //         transform="translate(551.977 2045.261)"
-          //         fill="#329d76"
-          //       />
-          //     </g>
-          //   </svg>
-          // }
-          title="Senior Team"
-          content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
-        />
-        <PricingFeatureEntry
-          title="Reliable"
-          content="Fixed price – no hidden costs. We understand what you need to build and then commit to it.
-          95% client satisfaction – we are happy to make intros to our past clients."
-        />
-        <PricingFeatureEntry
-          title="Immediate Starts"
-          content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
-        />
-        <PricingFeatureEntry
-          title="Flexibility"
-          content="We have agile commercial agreements in place, which allow you to modify your product scope as you move forward."
-        />
-        <PricingFeatureEntry
-          title="Full Cycle Services"
-          content="Our full spectrum of services range from designing and developing your product to initially engineering your requirements through our Discovery Workshop."
-        />
       </div>
       <div className="container__web__dev__experties">
         <div
@@ -388,6 +333,39 @@ export default function Pricing() {
             What You Get
           </div>
         </div>
+
+        <div className="pricing__feature">
+          <div className="pricing__feature__entry__reverse">
+            We leverage our across-the-board knowledge base to expertly deliver
+            your product on time and within your budget.
+          </div>
+          <PricingFeatureEntry
+            title="Senior Team"
+            content="Highly experienced senior-level cross-functional team inclusive of a technical project manager, developers, designers, and QA experts are allocated for the duration of the project."
+          />
+          <PricingFeatureEntry
+            title="Reliable"
+            content="Fixed price – no hidden costs. We understand what you need to build and then commit to it.
+          95% client satisfaction – we are happy to make intros to our past clients."
+          />
+          <PricingFeatureEntry
+            title="Immediate Starts"
+            content="No need to worry about your ideas and code base being stolen, you are fully protected under standard “Work for Hire” agreements and NDAs."
+          />
+          <PricingFeatureEntry
+            title="Flexibility"
+            content="We have agile commercial agreements in place, which allow you to modify your product scope as you move forward."
+          />
+          <PricingFeatureEntry
+            title="Full Cycle Services"
+            content="Our full spectrum of services range from designing and developing your product to initially engineering your requirements through our Discovery Workshop."
+          />
+        </div>
+
+        <div className="container__web__dev__experties__header__heading">
+          What You Get
+        </div>
+
         <div
           className="container__web__dev__experties__content"
           style={{ margin: "0em 0em -5em 0em" }}
