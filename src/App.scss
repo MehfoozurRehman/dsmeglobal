@@ -6068,6 +6068,9 @@ body {
   text-align: center;
   margin-bottom: 2em;
 }
+.blockchain__whysection__heading span{
+  color: $primary;
+}
 .blockchain__whysection__services {
   display: flex;
   flex-direction: row;
@@ -6196,6 +6199,9 @@ body {
   color: white;
   font-weight: bolder;
 }
+.blockchain__ready__text span{
+  color: $black;
+}
 .blockchain__ready__button {
   padding: 12px 25px;
   margin-left: 2rem;
@@ -6222,6 +6228,9 @@ body {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+.blockchain__worksection__heading span{
+  color: $primary;
 }
 .blockchain__worksection__text {
   width: 50%;
@@ -6285,10 +6294,14 @@ body {
   justify-content: center;
 }
 .blockchain__techstack__container__heading {
-  display: flex;
-  justify-content: center;
+
+text-align: center;
+margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
+}
+.blockchain__techstack__container__heading span{
+  color: $primary;
 }
 .blockchain__techstack__container__tags {
   display: flex;
@@ -6309,11 +6322,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .blockchain__techstack__container__tags__button {
   background-color: $primary;
   width: 150px;
   height: 45px;
+  border-radius: 10px;
   outline: none;
   color: $white;
   border: 1px solid $primary;

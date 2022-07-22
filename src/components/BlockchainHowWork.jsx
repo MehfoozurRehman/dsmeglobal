@@ -5,7 +5,7 @@ export function BlockchainHowWork() {
   return (
     <div className="blockchain__worksection">
       <div className="blockchain__worksection__heading">
-        How Blockchain Works?
+        How Blockchain <span>Works?</span> 
       </div>
       <div className="blockchain__worksection__detail">
         <div className="blockchain__worksection__text">

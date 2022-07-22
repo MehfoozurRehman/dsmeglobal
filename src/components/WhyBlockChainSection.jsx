@@ -3,7 +3,7 @@ import React from "react";
 export function WhyBlockChainSection() {
   return (
     <div className="blockchain__whysection">
-      <div className="blockchain__whysection__heading">Why Blockchain?</div>
+      <div className="blockchain__whysection__heading">Why <span>Blockchain?</span> </div>
       <div className="blockchain__whysection__services">
         <div className="blockchain__whysection__servicecard">
           <div className="blockchain__whysection__servicecard__icon">

@@ -5,7 +5,7 @@ export function BlockchainTechStack() {
     <div className="blockchain__techstack">
       <div className="blockchain__techstack__container">
         <div className="blockchain__techstack__container__heading">
-          Tech Stacks
+          Tech<span> Stacks</span>
         </div>
         <div className="blockchain__techstack__container__tags">
           <svg
