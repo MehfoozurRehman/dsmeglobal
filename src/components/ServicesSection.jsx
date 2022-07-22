@@ -43,7 +43,7 @@ export function ServicesSection() {
         <Bounce left>
           <div className="container__services__left">
             <div className="container__services__left__heading">
-              A complete enterprise designed to modernize your business
+              A complete enterprise designed to <span>modernize your business</span> 
             </div>
             <div className="container__services__left__info">
               We excel in providing cutting-edge solutions and development

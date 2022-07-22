@@ -15,7 +15,7 @@ export function QuateSection() {
             <Bounce left>
               <div className="container__stats__left">
                 <div className="container__stats__left__heading">
-                  Where business meets cutting-edge technology
+                  Where business meets <span>cutting-edge technology</span> 
                 </div>
                 <div className="container__stats__left__info">
                   Choose the tech stack for your next application, or let us

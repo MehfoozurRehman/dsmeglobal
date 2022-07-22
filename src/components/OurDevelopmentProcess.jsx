@@ -262,7 +262,7 @@ export function OurDevelopmentProcess() {
         className="container__emerging__technologies__heading__main"
         style={{ color: "white" }}
       >
-        Our Development Process
+        Our Development <span>Process</span> 
       </div>
       <div
         className="container__emerging__technologies__text__main"

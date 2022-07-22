@@ -12,7 +12,7 @@ export function PricingSection() {
         className="container__testimonials__overlay__heading"
         style={{ marginBottom: "1em", marginTop: "2em" }}
       >
-        Engagement Models
+        Engagement  Models
         <span>
           Depending on your project specifics and needs, you can choose method
           of your own choice.

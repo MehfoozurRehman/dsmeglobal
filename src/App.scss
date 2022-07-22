@@ -371,6 +371,9 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
+.container__services__left__heading span{
+  color: $primary;
+}
 
 .container__services__right {
   display: flex;
@@ -537,6 +540,9 @@ body {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 1.5em;
+}
+.blog__section__heading span{
+  color: $primary;
 }
 
 .blog__section__content {
@@ -2412,6 +2418,9 @@ body {
   font-weight: bold;
   margin-bottom: 2em;
 }
+.work__section__header span{
+  color: $primary;
+}
 
 .work__section__content {
   display: flex;
@@ -2564,11 +2573,14 @@ body {
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  color: $primary;
 }
 .container__testimonials__overlay__heading span {
   font-size: 16px;
   font-weight: normal;
+  color: $black;
 }
+
 
 .container__testimonials__overlay__content {
   width: 100%;
@@ -2673,6 +2685,9 @@ body {
   color: $white;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+.container__stats__left__heading span{
+  color: $primary;
 }
 
 .container__stats__left__info {

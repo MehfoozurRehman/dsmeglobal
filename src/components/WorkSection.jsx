@@ -24,7 +24,7 @@ export default function WorkSection() {
       {
         <div className="work__section">
           <div className="work__section__header">
-            Flip through our latest projects
+            Flip through our <span>latest projects</span>
           </div>
           <div className="work__section__content">
             <div className="work__section__content__project">
