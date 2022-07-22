@@ -1512,6 +1512,9 @@ body {
   margin-bottom: 1.5em;
   text-align: center;
 }
+.about__teams__heading span{
+  color: $primary;
+}
 .about__teams__content {
   display: flex;
   flex-wrap: wrap;
@@ -1574,6 +1577,9 @@ body {
   // margin-bottom: 0.5em;
   text-align: center;
 }
+.about__agile__process__heading span {
+  color: $primary;
+}
 .about__agile__process__img {
   width: 100%;
 }
@@ -1628,7 +1634,7 @@ body {
   z-index: 999;
   position: sticky;
 }
-.pricing__feature__main{
+.pricing__feature__main {
   background: linear-gradient($black, #434343);
 }
 .pricing__feature__entry__reverse {
@@ -3146,7 +3152,7 @@ body {
 }
 .container__emerging__technologies__heading__main span {
   color: $primary;
-  padding-left:.3em ;
+  padding-left: 0.3em;
 }
 .container__emerging__technologies__text__main {
   display: flex;
@@ -5532,6 +5538,14 @@ body {
 .about__ceo__message__right__info {
   color: $white;
 }
+.about__ceo__message__right:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primary;
+}
+.about__ceo__message__right:hover .about__ceo__message__right__heading span {
+  transition: 300ms ease-in-out;
+  color: $white;
+}
 .about__core__values__header {
   width: 100%;
   display: flex;
@@ -5632,16 +5646,6 @@ body {
 .about__key__difference__heading span {
   color: $primary;
 }
-.about__key__difference__heading::after,
-.about__core__values__header__heading::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0px;
-  width: 100%;
-  background-color: rgba(13, 110, 74, 0.1);
-  height: 3px;
-}
 .about__key__difference__content {
   display: flex;
   padding: 0em 1em;
@@ -5687,7 +5691,7 @@ body {
 .about__key__difference__content__col:last-child {
   padding: 2em;
   padding-bottom: 0.5em;
-  background-color: rgba(13, 110, 74, 0.1);
+  background-color: $black;
   height: fit-content;
   border-radius: 10px;
 }
@@ -5699,6 +5703,15 @@ body {
   .about__key__difference__content__col__entry__header__heading {
   font-size: initial;
   font-weight: normal;
+  color: white;
+}
+.about__key__difference__content__col:last-child:hover {
+  transition: 300ms ease-in-out;
+  background-color: rgba(13, 110, 74, 0.1);
+}
+.about__key__difference__content__col:last-child:hover * {
+  border-color: transparent;
+  color: black;
 }
 .container__feature {
   display: flex;
@@ -5760,6 +5773,9 @@ body {
   color: $black;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+.pricing__fitted__team__header__heading span{
+  color: $primary;
 }
 .pricing__fitted__team__header__info {
   width: 100%;
@@ -6066,8 +6082,8 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-.blockchain__servicessection__main{
-  background-color:#242424;
+.blockchain__servicessection__main {
+  background-color: #242424;
 }
 .blockchain__servicessection {
   max-width: 1500px;
@@ -6260,7 +6276,7 @@ body {
   width: 100;
   padding: 3em 4em;
   max-width: 1440px;
-  margin:0 auto ;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
@@ -7308,7 +7324,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
   }
-  .june_third_container_first_box__colomns{
+  .june_third_container_first_box__colomns {
     width: 100%;
   }
 }
@@ -8322,7 +8338,7 @@ body {
   height: fit-content;
   width: 23%;
   display: flex;
- 
+
   flex-direction: column;
   align-items: center;
   padding: 1em;

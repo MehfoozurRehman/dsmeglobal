@@ -5,7 +5,7 @@ export function GetAPerfectlyFittedTeam() {
     <div className="pricing__fitted__team">
       <div className="pricing__fitted__team__header">
         <div className="pricing__fitted__team__header__heading">
-          Get A Perfectly Fitted Team
+          Get A <span>Perfectly Fitted</span> Team
         </div>
         <div className="pricing__fitted__team__header__info">
           When you don't want to hire permanent resources, you can rely on our

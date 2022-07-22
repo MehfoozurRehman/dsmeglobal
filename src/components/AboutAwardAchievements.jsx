@@ -26,7 +26,7 @@ export function AboutAwardAchievements({
     <div className="pricing__fitted__team">
       <div className="pricing__fitted__team__header">
         <div className="pricing__fitted__team__header__heading">
-          Awards & Achievements
+          Awards & <span>Achievements</span>
         </div>
         <div className="pricing__fitted__team__header__info">
           We are proud to be recognized as a top service provider by these

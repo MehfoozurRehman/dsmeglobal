@@ -10,7 +10,7 @@ export function AboutOurEndeavors({}) {
         id="pricing__success__stories__team__header"
       >
         <div className="pricing__fitted__team__header__heading">
-          Our Endeavors
+          Our <span>Endeavors</span>
         </div>
       </div>
       <div className="pricing__fitted__team__content">

@@ -14,7 +14,7 @@ export function ServicesCard({ data }) {
       to={data.link}
       className="container__services__right__entry"
     >
-      <Bounce top>
+      <Bounce>
         <div className="container__services__right__entry__icon">
           <img
             loading="lazy"

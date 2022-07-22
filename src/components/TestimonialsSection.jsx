@@ -95,7 +95,7 @@ export function TestimonialsSection() {
             className="container__testimonials__overlay__info"
             key={JSON.stringify(item)}
           >
-            <Bounce top>
+            <Bounce>
               <div className="container__testimonials__overlay__info__message">
                 {item.message}
               </div>

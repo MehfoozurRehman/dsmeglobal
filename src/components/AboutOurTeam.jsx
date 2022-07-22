@@ -1,4 +1,5 @@
 import React from "react";
+import { Bounce } from "react-reveal";
 import {
   Ahmed,
   Aniqa_Mukhtar,
@@ -100,28 +101,30 @@ export function AboutOurTeam({}) {
   return (
     <div className="about__teams">
       <div className="about__teams__heading">
-        Teamwork, Makes the dream work
+        <span>Teamwork</span>, Makes the dream work
       </div>
       <div className="about__teams__content">
         {team.map((item) => (
-          <div
-            className="about__teams__content__entry"
-            key={JSON.stringify(item)}
-          >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="about__teams__content__entry__img"
-            />
-            <div className="about__teams__content__entry__overlay">
-              <div className="about__teams__content__entry__overlay__heading">
-                {item.name}
-              </div>
-              <div className="about__teams__content__entry__overlay__info">
-                {item.designation}
+          <Bounce>
+            <div
+              className="about__teams__content__entry"
+              key={JSON.stringify(item)}
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="about__teams__content__entry__img"
+              />
+              <div className="about__teams__content__entry__overlay">
+                <div className="about__teams__content__entry__overlay__heading">
+                  {item.name}
+                </div>
+                <div className="about__teams__content__entry__overlay__info">
+                  {item.designation}
+                </div>
               </div>
             </div>
-          </div>
+          </Bounce>
         ))}
       </div>
     </div>

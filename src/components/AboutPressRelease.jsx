@@ -15,7 +15,7 @@ export function AboutPressRelease({ slidesPerView }) {
         id="pricing__success__stories__team__header"
       >
         <div className="pricing__fitted__team__header__heading">
-          Press Releases
+          Press <span>Releases</span>
         </div>
       </div>
       <div className="pricing__fitted__team__content">

@@ -13,7 +13,7 @@ export function TransparentExecution() {
     <div className="pricing__fitted__team">
       <div className="pricing__fitted__team__header">
         <div className="pricing__fitted__team__header__heading">
-          Transparent Execution
+          Transparent <span>Execution</span>
         </div>
         <div className="pricing__fitted__team__header__info">
           We have entered a new era of uncertainty and unpredictability. To keep

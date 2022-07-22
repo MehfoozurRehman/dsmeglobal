@@ -51,7 +51,7 @@ export function BlogSection() {
                   />
 
                   <div className="blog__card__content">
-                    <Bounce top>
+                    <Bounce>
                       <div className="blog__card__content__heading">
                         {blog.title}
                       </div>

@@ -11,7 +11,7 @@ export function PricingDedicatedSuccessStories({ slidesPerView }) {
         id="pricing__success__stories__team__header"
       >
         <div className="pricing__fitted__team__header__heading">
-          Success Stories
+          Success <span>Stories</span>
         </div>
       </div>
       <div className="pricing__fitted__team__content">

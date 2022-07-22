@@ -8,7 +8,7 @@ export function HowtoGetStarted() {
         id="pricing__getting__started"
       >
         <div className="pricing__fitted__team__header__heading">
-          How to Get Started?
+          How to Get <span>Started</span> ?
         </div>
       </div>
       <div className="pricing__fitted__team__content">
@@ -24,8 +24,8 @@ export function HowtoGetStarted() {
           </div>
           <ul className="pricing__fitted__team__content__entry__list">
             <li>
-            Tell us about your project, tech stack, and the kind of team you need.
-
+              Tell us about your project, tech stack, and the kind of team you
+              need.
             </li>
             <li>We will match your needs with the best available members.</li>
             <li>
@@ -42,19 +42,17 @@ export function HowtoGetStarted() {
             className="pricing__fitted__team__content__entry__sub__heading"
             id="pricing__fitted__team__content__entry__sub__heading"
           >
-           Get Ready to Operate
+            Get Ready to Operate
           </div>
           <ul className="pricing__fitted__team__content__entry__list">
+            <li>Team, environment, tools, and infrastructure setup.</li>
             <li>
-            Team, environment, tools, and infrastructure setup.
-
+              Our tool stack offers everything your need but we can work with
+              your stack as well.
             </li>
-            <li>Our tool stack offers everything your need but we can work with your stack as well.</li>
+            <li>Communication processes establishment</li>
             <li>
-            Communication processes establishment
-            </li>
-            <li>
-            Project kick-off ready. Duration can be 1 month to long-term.
+              Project kick-off ready. Duration can be 1 month to long-term.
             </li>
           </ul>
         </div>
@@ -66,15 +64,20 @@ export function HowtoGetStarted() {
             className="pricing__fitted__team__content__entry__sub__heading"
             id="pricing__fitted__team__content__entry__sub__heading"
           >
-                Execute
+            Execute
           </div>
           <ul className="pricing__fitted__team__content__entry__list">
             <li>
-            Conduct your typical agile meetings - daily standups, planning, and retrospective to manage your tasks
+              Conduct your typical agile meetings - daily standups, planning,
+              and retrospective to manage your tasks
             </li>
-            <li>As per your needs, you can add/remove team members, whenever needed.</li>
             <li>
-            Have weekly live demos of your product to walk through the work done.
+              As per your needs, you can add/remove team members, whenever
+              needed.
+            </li>
+            <li>
+              Have weekly live demos of your product to walk through the work
+              done.
             </li>
           </ul>
         </div>
