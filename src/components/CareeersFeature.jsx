@@ -12,7 +12,7 @@ export function CareeersFeature() {
     >
       <div className="container__web__dev__experties__header services__startup__third__header">
         <div className="container__web__dev__experties__header__heading">
-          We’re not just colleagues. We’re family
+          We’re not just colleagues.<span>We’re family</span> 
         </div>
         <div className="container__web__dev__experties__header__info">
           DSME Global Links is not just a workplace – it’s a lifestyle, and we

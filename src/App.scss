@@ -949,11 +949,14 @@ body {
   font-weight: bold;
   margin-bottom: 1em;
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  
 }
 .hot__offers__section__header span {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: normal;
+  margin-left: 10px;
+  color: $primary;
 }
 .hot__offers__section__wrapper .hot__offers__section__header {
   color: $white;

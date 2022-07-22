@@ -12,7 +12,7 @@ export function CareersViewOpenings({
   return (
     <div className="hot__offers__section__wrapper">
       <section id="job__section" className="hot__offers__section">
-        <div className="hot__offers__section__header">View Openings</div>
+        <div className="hot__offers__section__header"> View<span>Openings</span>  </div>
         <div className="hot__offers__section__content">
           {error ? (
             <div>failed to load</div>
