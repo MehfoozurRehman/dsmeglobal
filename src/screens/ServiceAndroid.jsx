@@ -89,144 +89,172 @@ export default function ServicesAndroid() {
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
-            What makes DSME Global Links a top <span>Android development company?</span>
+            What makes DSME Global Links a top{" "}
+            <span>Android development company?</span>
           </div>
-            <div className="Android__and__ios__boxes">
-              <div className="Android__and__ios__box__one__and__two">
+          <div className="Android__and__ios__boxes__all">
+          <div className="Android__and__ios__boxes">
+            <div className="Android__and__ios__box__one__and__two">
               <div className="Android__and__ios__box__one">
+                <div className="svg__Android__and__ios__box__two">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-smartphone"
+                  >
+                    <rect
+                      x="5"
+                      y="2"
+                      width="14"
+                      height="20"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
                 <div className="Android__and__ios__box__one__heading">
                   One-stop Android development agency
                 </div>
+                </div>
                 <div className="Android__and__ios__box__one__content">
-                A great idea is important, but it takes more to build an
-                excellent mobile app. Choose our all-in-one Android development
-                services and hire a team that takes care of everything that your
-                app needs to succeed. Strategy and market research to sharpen
-                your vision, and outstanding product designs to delight your
-                users. Foolproof app development and maintenance for excellent
-                stability and performance. All in one place.
+                  A great idea is important, but it takes more to build an
+                  excellent mobile app. Choose our all-in-one Android
+                  development services and hire a team that takes care of
+                  everything that your app needs to succeed. Strategy and market
+                  research to sharpen your vision, and outstanding product
+                  designs to delight your users. Foolproof app development and
+                  maintenance for excellent stability and performance. All in
+                  one place.
                 </div>
               </div>
               <div className="Android__and__ios__box__two">
-              <div className="Android__and__ios__box__two__heading">
-              Experts in Java and Kotlin development
+                <div className="svg__Android__and__ios__box__two">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-smartphone"
+                  >
+                    <rect
+                      x="5"
+                      y="2"
+                      width="14"
+                      height="20"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                <div className="Android__and__ios__box__two__heading">
+                  Experts in Java and Kotlin development
+                </div>
                 </div>
                 <div className="Android__and__ios__box__two__content">
-                When it comes to native Android development, there are two
-                technologies that matter: Java and Kotlin. Older applications
-                are usually written in Java, but most of the new ones are
-                created with Kotlin. Our developers are fluent in both, and with
-                each case, they choose the stack carefully to deliver top-notch
-                applications, made to fit specific business needs. Whether you
-                wish to write a brand new app or spruce up the one you already
-                have, we help you choose the right tech solution.
+                  When it comes to native Android development, there are two
+                  technologies that matter: Java and Kotlin. Older applications
+                  are usually written in Java, but most of the new ones are
+                  created with Kotlin. Our developers are fluent in both, and
+                  with each case, they choose the stack carefully to deliver
+                  top-notch applications, made to fit specific business needs.
+                  Whether you wish to write a brand new app or spruce up the one
+                  you already have, we help you choose the right tech solution.
                 </div>
-                </div>
-                </div>
-                <div className="Android__and__ios__box__one__and__two">
+              </div>
+            </div>
+            <div className="Android__and__ios__box__one__and__two">
               <div className="Android__and__ios__box__one">
+                <div className="svg__Android__and__ios__box__two">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-smartphone"
+                  >
+                    <rect
+                      x="5"
+                      y="2"
+                      width="14"
+                      height="20"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
                 <div className="Android__and__ios__box__one__heading">
-                Android applications recognized worldwide
+                  Android applications recognized worldwide
+                </div>
                 </div>
                 <div className="Android__and__ios__box__one__content">
-                You don’t want to put your project in inexperienced hands. Our
-                Android team is top-rated on Clutch, and with over 10 years of
-                practice in Android application development, we have gained the
-                trust of world-renowned brands such as Marhaba Mahal, AIDAPro,
-                Friendly Face, or Gentleman & Co. We create beautiful,
-                top-performing Android apps for industries like e-commerce,
-                banking, music, and travel.
+                  You don’t want to put your project in inexperienced hands. Our
+                  Android team is top-rated on Clutch, and with over 10 years of
+                  practice in Android application development, we have gained
+                  the trust of world-renowned brands such as Marhaba Mahal,
+                  AIDAPro, Friendly Face, or Gentleman & Co. We create
+                  beautiful, top-performing Android apps for industries like
+                  e-commerce, banking, music, and travel.
                 </div>
               </div>
               <div className="Android__and__ios__box__two">
-              <div className="Android__and__ios__box__two__heading">
-              Cross-platform options
+                <div className="svg__Android__and__ios__box__two">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-smartphone"
+                  >
+                    <rect
+                      x="5"
+                      y="2"
+                      width="14"
+                      height="20"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                  <div className="Android__and__ios__box__two__heading">
+                    Cross-platform options
+                  </div>
                 </div>
                 <div className="Android__and__ios__box__two__content">
-                If you’re thinking about building an app for both Android and
-                iOS, you will face a crucial decision. Should you develop two
-                native apps, or just one that will work on both platforms? We’re
-                here to make sure you choose the right approach! If you pick
-                cross-platform over native Android application development, we
-                can take care of that, too. Our team excels in building apps
-                with the two most popular cross-platform frameworks: Flutter and
-                React Native. <span style={{ color: "#189366" }}>Flutter</span>{" "}
-                and <span style={{ color: "#189366" }}>React</span>,
-                <span style={{ color: "#189366" }}> Native.</span>
+                  If you’re thinking about building an app for both Android and
+                  iOS, you will face a crucial decision. Should you develop two
+                  native apps, or just one that will work on both platforms?
+                  We’re here to make sure you choose the right approach! If you
+                  pick cross-platform over native Android application
+                  development, we can take care of that, too. Our team excels in
+                  building apps with the two most popular cross-platform
+                  frameworks: Flutter and React Native.Flutter and react Native
                 </div>
-                </div>
-                </div>
-             
-              </div>      
-
-          {/* <div className="ios__mobile__page__one__step__ios__development__section">
-            <div className="ios__mobile__page__one__step__ios__development__section__left">
-              <div className="ios__mobile__page__one__step__ios__development__section__left__heading">
-                One-stop Android development agency
-              </div>
-              <div className="ios__mobile__page__one__step__ios__development__section__left__text">
-                A great idea is important, but it takes more to build an
-                excellent mobile app. Choose our all-in-one Android development
-                services and hire a team that takes care of everything that your
-                app needs to succeed. Strategy and market research to sharpen
-                your vision, and outstanding product designs to delight your
-                users. Foolproof app development and maintenance for excellent
-                stability and performance. All in one place.
               </div>
             </div>
           </div>
-          <div className="ios__ios__development__swift__development__section">
-            <div className="ios__ios__development__swift__development__section__right">
-              <div className="ios__ios__development__swift__development__section__right__heading">
-                Experts in Java and Kotlin development
-              </div>
-              <div className="ios__ios__development__swift__development__section__left__text">
-                When it comes to native Android development, there are two
-                technologies that matter: Java and Kotlin. Older applications
-                are usually written in Java, but most of the new ones are
-                created with Kotlin. Our developers are fluent in both, and with
-                each case, they choose the stack carefully to deliver top-notch
-                applications, made to fit specific business needs. Whether you
-                wish to write a brand new app or spruce up the one you already
-                have, we help you choose the right tech solution.
-              </div>
-            </div>
           </div>
-          <div className="ios__mobile__page__one__step__ios__development__section">
-            <div className="ios__mobile__page__one__step__ios__development__section__left">
-              <div className="ios__mobile__page__one__step__ios__development__section__left__heading">
-                Android applications recognized worldwide
-              </div>
-              <div className="ios__mobile__page__one__step__ios__development__section__left__text">
-                You don’t want to put your project in inexperienced hands. Our
-                Android team is top-rated on Clutch, and with over 10 years of
-                practice in Android application development, we have gained the
-                trust of world-renowned brands such as Marhaba Mahal, AIDAPro,
-                Friendly Face, or Gentleman & Co. We create beautiful,
-                top-performing Android apps for industries like e-commerce,
-                banking, music, and travel.
-              </div>
-            </div>
-          </div>
-          <div className="ios__ios__development__swift__development__section">
-            <div className="ios__ios__development__swift__development__section__right">
-              <div className="ios__ios__development__swift__development__section__right__heading">
-                Cross-platform options
-              </div>
-              <div className="ios__ios__development__swift__development__section__left__text">
-                If you’re thinking about building an app for both Android and
-                iOS, you will face a crucial decision. Should you develop two
-                native apps, or just one that will work on both platforms? We’re
-                here to make sure you choose the right approach! If you pick
-                cross-platform over native Android application development, we
-                can take care of that, too. Our team excels in building apps
-                with the two most popular cross-platform frameworks: Flutter and
-                React Native. <span style={{ color: "#189366" }}>Flutter</span>{" "}
-                and <span style={{ color: "#189366" }}>React</span>,
-                <span style={{ color: "#189366" }}> Native.</span>
-              </div>
-            </div>
-          </div> */}
         </div>
         <div className="ios__development__tangible">
           <div className="ios__development__tangible__col__one__heading">

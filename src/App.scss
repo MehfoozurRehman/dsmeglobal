@@ -4792,9 +4792,7 @@ body {
 .ios__mobile__page__container {
   width: 100%;
   justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
-
+ 
   margin-bottom: 2em;
 }
 
@@ -4820,6 +4818,8 @@ body {
   text-align: center;
   max-width: 1440px;
   margin: 0 auto;
+
+ 
 }
 
 .ios__mobile__share__your__idea__section__buttons__section {
@@ -8913,9 +8913,24 @@ body {
   height: 100%;
   width: 100%;
   padding: 4em;
+  padding-bottom: 0em;
   color: white;
   background-color: black;
 }
 .Android__and__ios__boxes {
+ 
+  padding-bottom: 4em;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.Android__and__ios__boxes__all{
   background-color: black;
+}
+.svg__Android__and__ios__box__two{
+  display: flex;
+  align-items: center;
+  
+}
+.svg__Android__and__ios__box__two svg{
+  margin-right: 1em;
 }
