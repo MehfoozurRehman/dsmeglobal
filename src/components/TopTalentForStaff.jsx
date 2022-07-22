@@ -17,7 +17,7 @@ export function TopTalentForStaff() {
   return (
     <div className="staff__talent">
       <div className="staff__talent__heading">
-        IT Staff Augmentation to Extend Your Team with Top Class Tech Talent
+        IT Staff Augmentation to  <span>Extend Your Team</span> with Top Class Tech Talent
       </div>
       <div className="staff__talent__sub__heading">
         Upscale and Up Skill Your Enterprise with our Staff Augmentation

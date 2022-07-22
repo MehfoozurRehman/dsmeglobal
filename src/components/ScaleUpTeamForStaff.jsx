@@ -16,7 +16,7 @@ export function ScaleUpTeamForStaff() {
             paddingBottom: "1em",
           }}
         >
-          Scale-up Your Team the Way You Need
+          Scale-up Your Team the <span>Way You Need</span> 
         </div>
         <div className="service__startup__main__container__second__cards__container">
           <EngagementModelCard
