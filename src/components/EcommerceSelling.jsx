@@ -4,7 +4,7 @@ export function EcommerceSelling({}) {
   return (
     <div className="ecommerce__screen__container__selling">
       <div className="ecommerce__screen__container__selling__heading">
-        We can help you across multiple stages
+        We can help you across <span>multiple stages</span> 
       </div>
       <div className="ecommerce__screen__container__selling__content">
         <div className="ecommerce__screen__container__selling__content__left">

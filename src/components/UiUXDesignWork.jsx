@@ -6,7 +6,7 @@ export function UiUXDesignWork() {
     <>
       <div className="june_main_container_first_container">
         <div className="june_main_container_first_container_title">
-          Design Work
+          Design <span> Work</span>
         </div>
         <div className="june_main_container_para">
           <p className="june_main_container_first_container_para">

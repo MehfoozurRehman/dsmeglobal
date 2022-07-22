@@ -1512,7 +1512,7 @@ body {
   margin-bottom: 1.5em;
   text-align: center;
 }
-.about__teams__heading span{
+.about__teams__heading span {
   color: $primary;
 }
 .about__teams__content {
@@ -4099,12 +4099,14 @@ body {
 }
 
 .june_main_container_first_container_title {
-  display: flex;
-  justify-content: center;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
   margin-top: 3em;
+  text-align: center;
+}
+.june_main_container_first_container_title span {
+  color: $primary;
 }
 .june_third_container_first_box {
   display: flex;
@@ -4292,15 +4294,17 @@ body {
 }
 
 .june_third_container_title {
-  display: flex;
-  justify-content: center;
+ text-align: center;
   padding-top: 2em;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
   color: $white;
+  margin: 0 auto;
 }
-
+.june_third_container_title span{
+  color: $primary;
+}
 .june_third_container_para {
   width: 500px;
   font-weight: 300;
@@ -4624,6 +4628,8 @@ body {
   transition: all 0.5s ease-in;
   height: 100%;
   margin-top: -10px;
+ width: 100%;
+  font-size: 22px;
 }
 
 .june_main_container_images_content_main:hover
@@ -5135,6 +5141,9 @@ body {
   font-weight: bold;
   margin-bottom: 2em;
 }
+.ecommerce__screen__container__selling__heading span{
+  color: $primary;
+}
 .ecommerce__screen__container__selling__content {
   display: flex;
   align-items: center;
@@ -5169,6 +5178,10 @@ body {
   color: $black;
   font-weight: bold;
   margin-bottom: 2em;
+}
+.ecommerce__screen__container__recent__work__heading span{
+  color: $primary;
+
 }
 .ecommerce__screen__container__recent__work__content {
   display: flex;
@@ -5264,6 +5277,9 @@ body {
   font-weight: bold;
   margin-bottom: 2em;
   text-align: center;
+}
+.ecommerce__screen__container__services__heading span{
+  color: $primary;
 }
 .ecommerce__screen__container__services__content {
   display: flex;
@@ -5774,7 +5790,7 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
-.pricing__fitted__team__header__heading span{
+.pricing__fitted__team__header__heading span {
   color: $primary;
 }
 .pricing__fitted__team__header__info {
@@ -6098,6 +6114,10 @@ body {
   margin-bottom: 2em;
   color: white;
   text-align: center;
+}
+.blockchain__servicessection__heading span{
+  color: $primary;
+
 }
 .blockchain__servicessection__services {
   display: flex;
@@ -8228,6 +8248,9 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.5em;
+}
+.customesoft__why__section__heading span {
+  color: $primary;
 }
 .customesoft__why__section__subheading {
   display: flex;

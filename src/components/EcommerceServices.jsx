@@ -5,7 +5,7 @@ export function EcommerceServices({}) {
   return (
     <div className="ecommerce__screen__container__services">
       <div className="ecommerce__screen__container__services__heading">
-        Shopify Services
+        Shopify <span>Services<span/>
       </div>
       <div className="ecommerce__screen__container__services__content">
         <EcomerenceServiceEntry

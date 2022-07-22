@@ -5,7 +5,7 @@ export function EcommerceRecentWork({}) {
   return (
     <div className="ecommerce__screen__container__recent__work">
       <div className="ecommerce__screen__container__recent__work__heading">
-        Recent Works
+        Recent <span> Works</span>
       </div>
       <div className="ecommerce__screen__container__recent__work__content">
         <div className="ecommerce__screen__container__recent__work__content___row">

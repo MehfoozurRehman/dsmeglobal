@@ -5,7 +5,7 @@ export function ExecutionProcess() {
     <div className="june_second_main_container">
       <div className="june_second_main_all_container">
         <div className="june_third_container">
-          <div className="june_third_container_title">Execution Process</div>
+          <div className="june_third_container_title">Execution <span>Process</span> </div>
           <div className="june_third_container_para">
             We work with you to make appealing sites, impactful applications,
             and modern enterprise systems individuals love. Through your vision

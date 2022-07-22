@@ -765,7 +765,7 @@ export default function ServiceCustomSoft() {
         </div>
         <div className="customesoft__why__section">
           <div className="customesoft__why__section__heading">
-            Why Work With DSME Global Links
+            Why Work With DSME <span> Global Links</span>
           </div>
           <div className="customesoft__why section__subheading">
             Get access to the top talent of experienced product managers,

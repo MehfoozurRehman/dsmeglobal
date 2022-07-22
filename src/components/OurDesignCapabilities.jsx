@@ -4,7 +4,7 @@ export function OurDesignCapabilities() {
   return (
     <div className="june_main_container_first_container">
       <div className="june_main_container_first_container_title">
-        Our Design capabilites
+        Our Design <span>Capabilites</span>
       </div>
       <div className="june_main_container_para">
         <p className="june_main_container_first_container_para">

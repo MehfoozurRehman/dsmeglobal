@@ -5,7 +5,7 @@ export function BlockchainServices() {
     <div className="blockchain__servicessection__main">
       <div className="blockchain__servicessection">
         <div className="blockchain__servicessection__heading">
-          We create apps your users will love.
+          We create apps <span> your users</span>  will love.
         </div>
         <div className="blockchain__servicessection__services">
           <div className="blockchain__servicessection__servicecard">
