@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { Navigation, Pagination } from "swiper";
-import { HomeJumbotron } from "../components/HomeJumbotron";
-import about from "../assets/about.svg";
-import { AboutOurVision } from "../components/AboutOurVision";
-import { AboutOurMission } from "../components/AboutOurMission";
-import { AboutKeyDifferences } from "../components/AboutKeyDifferences";
-import { AboutOurTeam } from "../components/AboutOurTeam";
-import { AboutAgileDevelopmentProcess } from "../components/AboutAgileDevelopmentProcess";
-import { AboutOurPromise } from "../components/AboutOurPromise";
-import { AboutOurCoreValues } from "../components/AboutOurCoreValues";
-import { AboutOurCeo } from "../components/AboutOurCeo";
-import { AboutAwardAchievements } from "../components/AboutAwardAchievements";
-import { AboutOurEndeavors } from "../components/AboutOurEndeavors";
-import { AboutSuccessStories } from "../components/AboutSuccessStories";
-import { AboutPressRelease } from "../components/AboutPressRelease";
+import React, {useEffect, useState} from 'react';
+import {Navigation, Pagination} from 'swiper';
+import {HomeJumbotron} from '../components/HomeJumbotron';
+import about from '../assets/about.svg';
+import {AboutOurVision} from '../components/AboutOurVision';
+import {AboutOurMission} from '../components/AboutOurMission';
+import {AboutKeyDifferences} from '../components/AboutKeyDifferences';
+import {AboutOurTeam} from '../components/AboutOurTeam';
+import {AboutAgileDevelopmentProcess} from '../components/AboutAgileDevelopmentProcess';
+import {AboutOurPromise} from '../components/AboutOurPromise';
+import {AboutOurCoreValues} from '../components/AboutOurCoreValues';
+import {AboutOurCeo} from '../components/AboutOurCeo';
+import {AboutAwardAchievements} from '../components/AboutAwardAchievements';
+import {AboutOurEndeavors} from '../components/AboutOurEndeavors';
+import {AboutSuccessStories} from '../components/AboutSuccessStories';
+import {AboutPressRelease} from '../components/AboutPressRelease';
 
 export default function AboutUs() {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -41,10 +41,10 @@ export default function AboutUs() {
   }
   useEffect(() => {
     getSlidesPerView();
-    window.addEventListener("resize", getSlidesPerView);
+    window.addEventListener('resize', getSlidesPerView);
 
     return () => {
-      window.removeEventListener("resize", getSlidesPerView);
+      window.removeEventListener('resize', getSlidesPerView);
     };
   }, []);
 
@@ -53,18 +53,17 @@ export default function AboutUs() {
       <div className="container">
         <HomeJumbotron
           taglinesLine="Lets Get to"
-          taglines={["Know Us", "Know Our Story"]}
+          taglines={['Know Us', 'Know Our Story']}
           info={
             <>
               We are talented. We are experienced. <br />
               We are bold. We are DSME Global Links! <br />
               Get a behind-the-scenes glimpse of your new favorite software
               development company.
-              <br />
-              Let’s work together
             </>
           }
           img={about}
+          talk={true}
         />
       </div>
       <AboutOurCeo />
