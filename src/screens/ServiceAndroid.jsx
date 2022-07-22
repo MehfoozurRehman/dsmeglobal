@@ -63,7 +63,7 @@ export default function ServicesAndroid() {
           <div className="ios__mobile__share__your__idea__section">
             <div className="ios__mobile__share__your__idea__section__left">
               <div className="ios__mobile__share__your__idea__section__left__heading">
-                You share your idea, we get it done
+                You share your idea, <span> we get it done</span>
               </div>
             </div>
             <div className="ios__mobile__share__your__idea__section__right">

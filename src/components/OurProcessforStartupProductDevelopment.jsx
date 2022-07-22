@@ -6,7 +6,7 @@ export function OurProcessforStartupProductDevelopment() {
     <div className="container__web__dev__experties services__startup__second__expertise">
       <div className="container__web__dev__experties__header services__startup__third__header">
         <div className="container__web__dev__experties__header__heading">
-          Our Process for Startup Product Development
+          Our Process for Startup Product <span>  Development</span>
         </div>
       </div>
       <div className="container__web__dev__experties__content">

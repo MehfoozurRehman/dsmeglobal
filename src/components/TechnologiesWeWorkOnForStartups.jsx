@@ -16,7 +16,7 @@ export function TechnologiesWeWorkOnForStartups() {
             paddingBottom: "1em",
           }}
         >
-          Technologies We work on
+          Technologies<span>We work on</span> 
         </div>
         <div className="service__startup__main__container__second__cards__container service__startup__main__container__second__cards__container__techonologies">
           <ServicesStartupCard

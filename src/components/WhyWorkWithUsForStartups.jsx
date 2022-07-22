@@ -16,7 +16,7 @@ export function WhyWorkWithUsForStartups() {
             paddingBottom: "1em",
           }}
         >
-          Why work with us?
+          <span>Why work </span>with us?
         </div>
         <div className="service__startup__main__container__second__cards__container"  >
           <WorkWithUsCard

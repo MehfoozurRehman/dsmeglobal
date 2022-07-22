@@ -5,7 +5,7 @@ export function AccelerateYourGrowthwithOurStartupProductDevelopmentServices() {
     <div className="service__startup__main__container__first">
       <div className="max__width__container">
         <div className="service__startup__main__container__first__heading">
-          Accelerate Your Growth with Our Startup Product Development Services
+          Accelerate Your Growth with Our Startup Product <span>Development Services</span> 
         </div>
         <div
           className=" service__startup__main__container__first__subheading

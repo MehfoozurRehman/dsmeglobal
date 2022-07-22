@@ -16,7 +16,7 @@ export function OurEngagementModelsForStartups() {
             paddingBottom: "1em",
           }}
         >
-          Our Engagement Models
+          Our Engagement <span>Models</span>
         </div>
         <div className="service__startup__main__container__second__cards__container">
           <EngagementModelCard

@@ -2915,6 +2915,9 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
 }
+.container__web__dev__experties__header__heading span{
+  color: $primary;
+}
 .container__web__dev__experties__header__heading span {
   color: $primary;
 }
@@ -4802,6 +4805,9 @@ body {
   font-size: 30px;
   font-weight: 600;
   max-width: 450px;
+}
+.ios__mobile__share__your__idea__section__left__heading span{
+  color:$primary ;
 }
 .ios__mobile__share__your__idea__section__right {
   width: 50%;
@@ -8350,6 +8356,7 @@ margin: 0 auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
 }
 .service__startup__main__container__first__heading span {
   color: $primary;
