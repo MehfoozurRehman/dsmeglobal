@@ -1,6 +1,7 @@
-import React from "react";
-import { CareersFilters } from "../components/CareersFilters";
-import VacencyCard from "../components/VacencyCard";
+import React from 'react';
+import {Bounce} from 'react-reveal';
+import {CareersFilters} from '../components/CareersFilters';
+import VacencyCard from '../components/VacencyCard';
 
 export function CareersVacencies({
   setDeparment,
@@ -13,13 +14,15 @@ export function CareersVacencies({
 }) {
   return (
     <div className="hot__offers__section">
-      <div className="hot__offers__section__header">
-        Open Vacancies - Join us
-        <span>
-          We give you opportunities to excel and achieve the global recognition
-          that you deserve!
-        </span>
-      </div>
+      <Bounce down>
+        <div className="hot__offers__section__header">
+          Open Vacancies - Join us
+          <span>
+            We give you opportunities to excel and achieve the global
+            recognition that you deserve!
+          </span>
+        </div>
+      </Bounce>
       <div className="hot__offers__section__content">
         <CareersFilters
           setDeparment={setDeparment}
@@ -28,13 +31,12 @@ export function CareersVacencies({
         {careerDataFiltered.length === 0 ? (
           <div
             style={{
-              width: "100%",
-              height: "400px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+              width: '100%',
+              height: '400px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
             <img
               loading="lazy"
               src={noData}

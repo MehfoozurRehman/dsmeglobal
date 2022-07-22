@@ -1,23 +1,28 @@
-import React from "react";
-import { ExperitseCard } from "../components/ExperitseCard";
+import React from 'react';
+import {Bounce, Zoom} from 'react-reveal';
+import {ExperitseCard} from '../components/ExperitseCard';
 
 export function CareeersFeature() {
   return (
     <div
       className="container__web__dev__experties services__startup__second__expertise"
       style={{
-        marginBottom: "4em",
-        marginTop: "4em",
-      }}
-    >
+        marginBottom: '4em',
+        marginTop: '4em',
+      }}>
       <div className="container__web__dev__experties__header services__startup__third__header">
-        <div className="container__web__dev__experties__header__heading">
-          We’re not just colleagues.<span>We’re family</span> 
-        </div>
-        <div className="container__web__dev__experties__header__info">
-          DSME Global Links is not just a workplace – it’s a lifestyle, and we
-          want each of our team members to get the most out of it
-        </div>
+        <Zoom>
+          <div className="container__web__dev__experties__header__heading">
+            We’re not just colleagues.
+            <span>We’re family</span>
+          </div>
+        </Zoom>
+        <Bounce up>
+          <div className="container__web__dev__experties__header__info">
+            DSME Global Links is not just a workplace – it’s a lifestyle, and we
+            want each of our team members to get the most out of it
+          </div>
+        </Bounce>
       </div>
       <div className="container__web__dev__experties__content">
         <ExperitseCard
