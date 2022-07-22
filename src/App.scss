@@ -4927,22 +4927,18 @@ body {
 }
 
 .ios__development__tangible {
-  background-color: $black;
+  
   padding: 1em 6em;
-  width: calc(100% - 4em);
-  margin-left: 4em;
-  display: flex;
-  justify-content: space-between;
-  height: 400px;
-  align-items: center;
-  color: white;
-  border-radius: 10px 0px 0px 10px;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 .ios__development__tangible__col__one__heading {
-  max-width: 220px;
+ width: 100%;
+ text-align: center;
   font-size: 30px;
   font-weight: 600;
+}
+.ios__development__tangible__col__one__heading span{
+  color:$primary;
 }
 .ios__development__tangible__col__two {
   display: flex;
@@ -4972,7 +4968,6 @@ body {
   border: 1px solid transparent;
   margin-top: 1.5em;
   background-color: $primaryDark;
-
   cursor: pointer;
   transition: all ease-in-out 0.3s;
   color: white;
