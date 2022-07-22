@@ -8,6 +8,7 @@ import style from "./App.scss";
 const Header = lazy(() => import("./components/Header"));
 const Footer = lazy(() => import("./components/Footer"));
 const ContactUsBottom = lazy(() => import("./components/ContactUsBottom"));
+
 const Home = lazy(() => import("./screens/Home"));
 const AboutUs = lazy(() => import("./screens/AboutUs"));
 const Blogs = lazy(() => import("./screens/Blogs"));
