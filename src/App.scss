@@ -2116,13 +2116,11 @@ body {
   border-radius: 5px;
 }
 .pricing__process__container__content__bottom__left__middle__button {
-  height: 40px;
   flex: 1 1 45%;
   padding: 1em;
   font-size: 14px;
   font-weight: bold;
-  // background: linear-gradient(to bottom, $primary, black);
-  background-color: black;
+  background: linear-gradient(135deg, $primary, black);
   margin: 0.1rem;
   border-radius: 5px;
   color: white;
@@ -2130,6 +2128,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  height: fit-content;
 }
 .pricing__process__container__content__bottom__left:nth-child(2)
   .pricing__process__container__content__bottom__left__middle__button {
@@ -2198,7 +2197,7 @@ body {
   width: 45%;
 
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
 }
 .pricing__understand__container__content__bottom__card__left {
   width: 30%;
@@ -6639,7 +6638,52 @@ body {
   margin-bottom: 5em;
   max-width: 800px;
 }
-
+.faq__section {
+  width: 100%;
+  background-color: #242424;
+  margin-bottom: -3em;
+  margin-top: 5em;
+}
+.faq__section__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 5em 4em;
+  margin: 0em auto;
+}
+.faq__section__content__heading {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.faq__section__content__heading span {
+  color: $primary;
+}
+.faq__section__content__entry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.faq__section__content__entry__heading {
+  font-size: 16px;
+  color: white;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  text-align: left;
+  padding: 0.7em 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: transparent;
+}
+.faq__section__content__entry__heading:hover {
+  transition: 300ms ease-in-out;
+  background-color: $primaryDark;
+}
+.faq__section__content__entry__info {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 1em;
+}
 @media (max-width: 1000px) {
   .ios__mobile__share__your__idea__section {
     flex-direction: column;
@@ -6889,6 +6933,9 @@ body {
   }
   .how__we__do__section {
     padding: 2em;
+  }
+  .faq__section__content {
+    padding: 5em 2em;
   }
 }
 @media (max-width: 550px) {

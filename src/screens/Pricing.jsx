@@ -7,6 +7,7 @@ import pricing from "../assets/pricing.svg";
 import products from "../assets/products.svg";
 import { ExperitseCard } from "../components/ExperitseCard";
 import { WorkWithUsCard } from "../components/WorkWithUsCard";
+import FaqSection from "../components/FaqSection";
 
 export default function Pricing() {
   const DeliveryCardEntry1 = [
@@ -1073,6 +1074,7 @@ export default function Pricing() {
           />
         </div>
       </div>
+      <FaqSection />
     </>
   );
 }

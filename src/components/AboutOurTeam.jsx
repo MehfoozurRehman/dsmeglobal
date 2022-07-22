@@ -1,101 +1,187 @@
 import React from "react";
 import { Bounce } from "react-reveal";
-import {
-  Ahmed,
-  Aniqa_Mukhtar,
-  Azeem_Hammad,
-  Daniyal_Pirzada,
-  Director_Legal_Affairs,
-  Dr_Aimon_Malik,
-  Dr_Nimra_Qureshi,
-  Gulraiz_Malik,
-  Hammad_Habib,
-  Hamza_Arshad,
-  Joweriya_Shahid,
-  Kamran_Ameen,
-  Mehfooz_ur_Rehman,
-  Moazam_Saleem,
-  Muhammad_Mobeen,
-  Musharraf_Hassan,
-  Naimah_Jones,
-  Qaiser_Riaz,
-  Qasim,
-  Sapna_Shams,
-  Shahid_Aziz,
-  Usman_Ijaz,
-  Zunaira_Najam,
-  Zunaira_Amjad,
-} from "../assets/team";
 
 export function AboutOurTeam({}) {
   const team = [
-    { image: Shahid_Aziz, name: "Shahid Aziz" },
-    { image: Dr_Aimon_Malik, name: "Dr.Aimon Malik" },
-    { image: Dr_Nimra_Qureshi, name: "Dr.Nimra Qureshi" },
-    { image: Director_Legal_Affairs, name: "Director Legal Affairs" },
-    { image: Hammad_Habib, name: "Hammad Habib" },
-    { image: Zunaira_Amjad, name: "Zunaira Amjad" },
     {
-      image: Zunaira_Najam,
-      name: "Zunaira Najam",
+      image: "Abdullah_Backend_Developer_szxgvm",
+      name: "Abdullah",
+      designation: "Backend Developer",
+    },
+    {
+      image: "Ahmed__React_Developer_tq0bmz",
+      name: "Ahmed",
+      designation: "React Developer",
+    },
+    {
+      image: "Ahsan_Saeed__Frontend_Developer_gykomy",
+      name: "Ahsan Saeed",
       designation: "Frontend Developer",
     },
     {
-      image: Aniqa_Mukhtar,
+      image: "Aimen_Aamer_Frontend_Developer_kncxlk",
+      name: "Aimen Aamer",
+      designation: "Frontend Developer",
+    },
+    {
+      image: "Aniqa_Mukhtar_Graphic_Designer_vuxi60",
       name: "Aniqa Mukhtar",
       designation: "Graphic Designer",
     },
-
-    { image: Joweriya_Shahid, name: "Joweriya Shahid" },
     {
-      image: Azeem_Hammad,
+      image: "Azeem_Hammad_Team_Lead_Frontend_Developer_yztlx3",
       name: "Azeem Hammad",
-      designation: "Frontend Develper",
-    },
-    {
-      image: Daniyal_Pirzada,
-      name: "Daniyal Pirzada",
       designation: "Frontend Developer",
     },
     {
-      image: Hamza_Arshad,
-      name: "Hamza Arshad",
-      designation: "Frontend Developer",
+      image: "Danish_Azhar_picture_x4szi6",
+      name: "Danish Azhar",
+      designation: "",
     },
     {
-      image: Gulraiz_Malik,
+      image: "Daniyal_Pirzada_Frontend_Developers_w9d6cg",
+      name: "Daniyal Pirzada ",
+      designation: "Frontend Developers",
+    },
+    {
+      image: "Director_Legal_Affairs_f01roo",
+      name: "Muhammad Soman",
+      designation: "Director Legal Affairs",
+    },
+    {
+      image: "Dr.Aimon_Malik_j9vrwo",
+      name: "Dr.Aimon Malik",
+      designation: "",
+    },
+    {
+      image: "Dr.Nimra_Qureshi_ltctgl",
+      name: "Dr.Nimra Qureshi",
+      designation: "",
+    },
+    {
+      image: "Gulraiz_Malik_Team_Lead_Frontend_Developer_hlhvzl",
       name: "Gulraiz Malik",
       designation: "Frontend Developer",
     },
     {
-      image: Kamran_Ameen,
+      image: "Hammad_Habib_Design_Head_dddcvb",
+      name: "Hammad Habib",
+      designation: "Design Head",
+    },
+    {
+      image: "Hamza_Arshad_Frontend_Developer_fjqf8f",
+      name: "Hamza Arshad",
+      designation: "Frontend Developer",
+    },
+    {
+      image: "Hira_Najm__Frontend_Developer_x2rfoa",
+      name: "Hira Najm",
+      designation: "Frontend Developer",
+    },
+    {
+      image: "Joweriya_Shahid_Content_Writer_ft8mep",
+      name: "Joweriya Shahid",
+      designation: "Content Writer",
+    },
+    {
+      image: "Kamran_Ameen_Backend_Developer_lmuq61",
       name: "Kamran Ameen",
-      designation: "Frontend Developer",
+      designation: "Backend Developer",
     },
     {
-      image: Moazam_Saleem,
-      name: "Moazam Saleem",
-      designation: "Frontend Developer",
+      image: "Muhammad_Mobeen_t9kkdl",
+      name: "Laiba Asif",
+      designation: "Marketing",
     },
     {
-      image: Mehfooz_ur_Rehman,
+      image: "Mehfooz_ur_Rehman_Frontend_Developer_d3mlud",
       name: "Mehfooz ur Rehman",
       designation: "Frontend Developer",
     },
-    { image: Muhammad_Mobeen, name: "Muhammad Mobeen" },
     {
-      image: Musharraf_Hassan,
-      name: "Musharraf Hassan",
-      designation: "Backend Develper",
+      image: "Moazam_Saleem_Backend_Developer_i6yyfm",
+      name: "Moazam Saleem",
+      designation: "Backend Developer",
     },
-    { image: Naimah_Jones, name: "Naimah Jones" },
-    { image: Qaiser_Riaz, name: "Qaiser Riaz" },
-    { image: Qasim, name: "Qasim" },
-    { image: Sapna_Shams, name: "Sapna Shams" },
-    { image: Usman_Ijaz, name: "Usman Ijaz" },
     {
-      image: Ahmed,
-      name: "Ahmed",
+      image: "Muhammad_Mobeen_t9kkdl",
+      name: "Muhammad Mobeen",
+      designation: "Marketing",
+    },
+    {
+      image: "Musharraf_Hassan_Backend_Developer_uelg3t",
+      name: "Musharraf Hassan",
+      designation: "Backend Developer",
+    },
+    {
+      image: "Naimah_Jones__Business_Development_Lead_US_Office_njgftp",
+      name: "Naimah Jones",
+      designation: "Business Development Lead US Office",
+    },
+    {
+      image: "Qaiser_Riaz_Frontend_Developer_hi9zb0",
+      name: "Qaiser Riaz",
+      designation: "Frontend Developer",
+    },
+    {
+      image: "Qasim_Frontend_Developer_eybjrf",
+      name: "Qasim",
+      designation: "Frontend Developer",
+    },
+    {
+      image: "Ramsha_Arshad_Talent_Acquisition_Recruiter_pyagxu",
+      name: "Ramsha Arshad",
+      designation: "Talent Acquisition Recruiter",
+    },
+    {
+      image: "Rijaab_Manzoor_Business_Developer_w2kikd",
+      name: "Rijaab Manzoor",
+      designation: "Business Developer",
+    },
+    {
+      image: "Salman_Nisar___Mobile_Architect_qduily",
+      name: "Salman Nisar",
+      designation: "Mobile Architect",
+    },
+    {
+      image: "Sapna_Shams_QA_wm8tyc",
+      name: "Sapna Shams",
+      designation: "QA",
+    },
+    {
+      image: "Saram_Nadeem__Business_Developer_rvtxpd",
+      name: "Saram Nadeem",
+      designation: "Business Developer",
+    },
+    {
+      image: "Shahid_Aziz_Advisor_kkhqzt",
+      name: "Shahid Aziz",
+      designation: "Advisor",
+    },
+    {
+      image: "Usman_Ijaz_Recruitment_Consultant_hmlf1g",
+      name: "Usman Ijaz",
+      designation: "Recruitment Consultant",
+    },
+    {
+      image: "WhatsApp_Image_2022-07-22_at_2.15.31_PM_j9tlpg",
+      name: "",
+      designation: "",
+    },
+    {
+      image: "Zoha_Waqas_Aidapro_jvv1yl",
+      name: "Zoha Waqas",
+      designation: "Recruitment Consultant",
+    },
+    {
+      image: "Zunaira_Amjad__Business_Developer_cbog1k",
+      name: "Zunaira Amjad",
+      designation: "Business Developer",
+    },
+    {
+      image: "Zunaira_Najam_Frontend_Developer_uhiual",
+      name: "Zunaira Najam",
+      designation: "Frontend Developer",
     },
   ];
   return (
@@ -111,7 +197,11 @@ export function AboutOurTeam({}) {
               key={JSON.stringify(item)}
             >
               <img
-                src={item.image}
+                src={
+                  "https://res.cloudinary.com/mehfoozurrehman/image/upload/v1658515904/dsme_team/" +
+                  item.image +
+                  ".webp"
+                }
                 alt={item.name}
                 className="about__teams__content__entry__img"
               />
