@@ -89,23 +89,83 @@ export default function ServicesAndroid() {
             </div>
           </div>
           <div className="ios__mobile__page__container__ios__company__heading">
-            What makes DSME Global Links a top Android development company?
+            What makes DSME Global Links a top <span>Android development company?</span>
           </div>
-          <div className="android__mobile__page__container__android__mobile__heading__text">
-            Are you struggling to find a solution that fits your expectations
-            perfectly? Choose our custom app development services and build your
-            app with an Android team rated number one on Clutch. We create
-            digital products from scratch, starting with deep market research,
-            and studying your needs and business goals carefully to offer you a
-            solution that fits like a glove. What is there to gain? Excellent
-            design to help you stand out from the competition and build a strong
-            brand. Scalability and flexibility that lets you adjust your product
-            as your business grows. No all-fits-one features, but a product that
-            is tailor-made for you. Development schedule and budget adjusted to
-            your business plan. Full application support and maintenance. And
-            that’s just to name a few!
+          <div className="customsoft_main">
+            <div className="customsoft_first_container_main">
+              <div className="customsoft_first_container">
+                <div className="customsoft_first_container_svg">
+                  <span>One-stop Android development agency</span>
+                </div>
+                <div className="customsoft_first_container_content">
+                  A great idea is important, but it takes more to build an
+                  excellent mobile app. Choose our all-in-one Android
+                  development services and hire a team that takes care of
+                  everything that your app needs to succeed. Strategy and market
+                  research to sharpen your vision, and outstanding product
+                  designs to delight your users. Foolproof app development and
+                  maintenance for excellent stability and performance. All in
+                  one place.
+                </div>
+              </div>
+            </div>
+            <div className="customsoft_second_container_all_main">
+              <div className="customsoft_second_container">
+                <div className="customsoft_second_container_svg">
+                  <span>Experts in Java and Kotlin development</span>
+                </div>
+                <div className="customsoft_second_container_content">
+                  When it comes to native Android development, there are two
+                  technologies that matter: Java and Kotlin. Older applications
+                  are usually written in Java, but most of the new ones are
+                  created with Kotlin. Our developers are fluent in both, and
+                  with each case, they choose the stack carefully to deliver
+                  top-notch applications, made to fit specific business needs.
+                  Whether you wish to write a brand new app or spruce up the one
+                  you already have, we help you choose the right tech solution.
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="ios__mobile__page__one__step__ios__development__section">
+
+          <div className="customsoft_main">
+            <div className="customsoft_first_container_main">
+              <div className="customsoft_first_container">
+                <div className="customsoft_first_container_svg">
+                  <span>Android applications recognized worldwide</span>
+                </div>
+                <div className="customsoft_first_container_content">
+                  You don’t want to put your project in inexperienced hands. Our
+                  Android team is top-rated on Clutch, and with over 10 years of
+                  practice in Android application development, we have gained
+                  the trust of world-renowned brands such as Marhaba Mahal,
+                  AIDAPro, Friendly Face, or Gentleman & Co. We create
+                  beautiful, top-performing Android apps for industries like
+                  e-commerce, banking, music, and travel.
+                </div>
+              </div>
+            </div>
+            <div className="customsoft_second_container_all_main">
+              <div className="customsoft_second_container">
+                <div className="customsoft_second_container_svg">
+                  <span>Cross-platform options</span>
+                </div>
+                <div className="customsoft_second_container_content">
+                  If you’re thinking about building an app for both Android and
+                  iOS, you will face a crucial decision. Should you develop two
+                  native apps, or just one that will work on both platforms?
+                  We’re here to make sure you choose the right approach! If you
+                  pick cross-platform over native Android application
+                  development, we can take care of that, too. Our team excels in
+                  building apps with the two most popular cross-platform
+                  frameworks: Flutter and React Native. Flutter and React,
+                  Native.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="ios__mobile__page__one__step__ios__development__section">
             <div className="ios__mobile__page__one__step__ios__development__section__left">
               <div className="ios__mobile__page__one__step__ios__development__section__left__heading">
                 One-stop Android development agency
@@ -120,14 +180,8 @@ export default function ServicesAndroid() {
                 stability and performance. All in one place.
               </div>
             </div>
-            <div className="ios__mobile__page__one__step__ios__development__section__right">
-              <img loading="lazy" src={img7} alt="img7" />
-            </div>
           </div>
           <div className="ios__ios__development__swift__development__section">
-            <div className="ios__ios__development__swift__development__section__left">
-              <img loading="lazy" src={img8} alt="img8" />
-            </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
                 Experts in Java and Kotlin development
@@ -159,14 +213,8 @@ export default function ServicesAndroid() {
                 banking, music, and travel.
               </div>
             </div>
-            <div className="ios__mobile__page__one__step__ios__development__section__right">
-              <img loading="lazy" src={img9} alt="img9" />
-            </div>
           </div>
           <div className="ios__ios__development__swift__development__section">
-            <div className="ios__ios__development__swift__development__section__left">
-              <img loading="lazy" src={img10} alt="img10" />
-            </div>
             <div className="ios__ios__development__swift__development__section__right">
               <div className="ios__ios__development__swift__development__section__right__heading">
                 Cross-platform options
@@ -184,7 +232,7 @@ export default function ServicesAndroid() {
                 <span style={{ color: "#189366" }}> Native.</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="ios__development__tangible">
           <div className="ios__development__tangible__col__one__heading">

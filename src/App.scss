@@ -4792,28 +4792,36 @@ body {
 .ios__mobile__page__container {
   width: 100%;
   justify-content: space-between;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 4em;
+ 
   margin-bottom: 2em;
 }
-.ios__mobile__share__your__idea__section {
-  display: flex;
+
+.ios__mobile__share__your__idea__section__left {
   width: 100%;
 }
-.ios__mobile__share__your__idea__section__left {
-  width: 50%;
+.ios__mobile__share__your__idea__section{
+  width: 100%;
 }
 .ios__mobile__share__your__idea__section__left__heading {
   font-size: 30px;
   font-weight: 600;
-  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 1em;
+
 }
 .ios__mobile__share__your__idea__section__left__heading span {
   color: $primary;
 }
 .ios__mobile__share__your__idea__section__right {
   width: 50%;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  
 }
 
 .ios__mobile__share__your__idea__section__buttons__section {
@@ -4825,9 +4833,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
-}
 
+  mix-blend-mode: luminosity;
+  background-color: white;
+  padding: 2em;
+}
+.ios__mobile__share__your__idea__section{
+  width: 100%;
+}
 .ios__mobile__share__your__idea__section__buttons__section__awards img {
   width: 150px;
   height: 120px;
@@ -4838,8 +4851,12 @@ body {
   width: 100%;
   font-size: 30px;
   font-weight: 600;
-  max-width: 800px;
-  margin-top: 1em;
+  padding: 2em;
+ text-align: center;
+  padding-top: 0;
+}
+.ios__mobile__page__container__ios__company__heading span{
+  color: #189366;
 }
 .ios__mobile__page__one__step__ios__development__section {
   width: 100%;
@@ -6406,6 +6423,11 @@ body {
     margin-top: 1rem;
   }
 }
+@media (max-width: 1540px) {
+  .customsoft_five_container_all_main {
+   flex-wrap: wrap;
+  }
+}
 @media (max-width: 500px) {
   .blockchain__worksection__img {
     justify-content: center;
@@ -7817,17 +7839,19 @@ body {
   margin: 0 auto;
   max-width: 1500px;
   padding: 4em;
+  padding-bottom: 1em;
 }
 .customsoft_first_container_svg {
   display: flex;
   align-items: center;
   padding-top: 2em;
-  padding-left: 2em;
+  padding: 1em;
+  text-align: center;
 }
 .customsoft_first_container_svg span {
   font-size: 30px;
   font-weight: 600;
-  padding-left: 1em;
+  padding-left: .5em;
 }
 .customsoft_first_container_svg svg {
   color: #189366;
@@ -7835,14 +7859,14 @@ body {
 .customsoft_second_container_svg span {
   font-size: 30px;
   font-weight: 600;
-  padding-left: 1em;
+  padding-left: .5em;
 }
 .customsoft_first_container_content {
   width: 90%;
   display: flex;
   justify-content: center;
-  padding-left: 6em;
-  padding-top: 1em;
+  padding-left: 5em;
+ 
   font-size: 15px;
 }
 .customsoft_first_container_button {
@@ -7867,7 +7891,9 @@ body {
   display: flex;
   align-items: center;
   padding-top: 2em;
-  padding-left: 2em;
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 0;
 }
 .customsoft_second_container_svg svg {
   color: #189366;
@@ -7879,21 +7905,26 @@ body {
   color: #189366;
 }
 .customsoft_second_container_content {
-  width: 90%;
-  // display: flex;
-  // justify-content: center;
-  padding-left: 6em;
+  width: 100%;
+  padding-left: 5em;
   padding-top: 1em;
   font-size: 15px;
 }
+.Andriod__and__ios__boxes{
+  background-color: black;
+  color: white;
+}
 .customsoft_first_container {
   border-radius: 5px;
-  height: 300px;
+  min-height: 330px;
   width: 550px;
+  padding: 1em;
 }
+
 .customsoft_second_container {
-  height: 300px;
+  min-height: 330px;
   width: 550px;
+  padding: 1em;
   border-radius: 5px;
   padding-right: 4em;
 }
@@ -8051,6 +8082,7 @@ body {
 .customsoft_third_container {
   background-color: $black;
   padding: 4em;
+  margin-top: 3em;
 }
 .customsoft_fourth_container_first_title {
   display: flex;
