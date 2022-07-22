@@ -4,7 +4,7 @@ import {getText} from '../utils/functions';
 
 export default function HotOfferJobCard({item, onApply}) {
   return (
-    <Zoom right>
+    <Bounce right>
       <button className="hot__offers__section__content__card" onClick={onApply}>
         <div className="hot__offers__section__content__card__title">
           {item.position}
@@ -24,6 +24,6 @@ export default function HotOfferJobCard({item, onApply}) {
           </div>
         </div>
       </button>
-    </Zoom>
+    </Bounce>
   );
 }
