@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 export function BlockchainServices() {
   return (
     <div className="blockchain__servicessection__main">
       <div className="blockchain__servicessection">
         <div className="blockchain__servicessection__heading">
-          We create apps <span> your users</span>  will love.
+          Services <span> We Offer</span>
         </div>
         <div className="blockchain__servicessection__services">
           <div className="blockchain__servicessection__servicecard">
@@ -14,8 +14,7 @@ export function BlockchainServices() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                viewBox="0 0 224.319 224.23"
-              >
+                viewBox="0 0 224.319 224.23">
                 <path
                   id="Union_11"
                   data-name="Union 11"
@@ -25,13 +24,10 @@ export function BlockchainServices() {
               </svg>
             </div>
             <div className="blockchain__servicessection__servicecard__heading">
-              User Research
+            Public and Private Blockchains
             </div>
             <div className="blockchain__servicessection__servicecard__detail">
-              For clients in the design and prospecting phase of a new product,
-              we offer in-depth user research, mockups, user persona
-              development, and thorough UI/UX testing to ensure your app is
-              human-friendly from the start.
+            With Public and Private Blockchain options, you get to control who has access to specific information.
             </div>
           </div>
           <div className="blockchain__servicessection__servicecard">
@@ -40,13 +36,11 @@ export function BlockchainServices() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
                 height="35"
-                viewBox="0 0 35 35"
-              >
+                viewBox="0 0 35 35">
                 <g
                   id="Group_339"
                   data-name="Group 339"
-                  transform="translate(4720.462 9481.71)"
-                >
+                  transform="translate(4720.462 9481.71)">
                   <path
                     id="Path_236"
                     data-name="Path 236"
@@ -78,13 +72,11 @@ export function BlockchainServices() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="35.397"
                 height="35.389"
-                viewBox="0 0 35.397 35.389"
-              >
+                viewBox="0 0 35.397 35.389">
                 <g
                   id="Group_335"
                   data-name="Group 335"
-                  transform="translate(4561.051 9488.755)"
-                >
+                  transform="translate(4561.051 9488.755)">
                   <path
                     id="Path_238"
                     data-name="Path 238"
@@ -151,8 +143,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_328"
                     data-name="Group 328"
-                    transform="translate(-4550.41 -9465.462)"
-                  >
+                    transform="translate(-4550.41 -9465.462)">
                     <path
                       id="Path_247"
                       data-name="Path 247"
@@ -171,8 +162,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_329"
                     data-name="Group 329"
-                    transform="translate(-4550.31 -9478.087)"
-                  >
+                    transform="translate(-4550.31 -9478.087)">
                     <path
                       id="Path_249"
                       data-name="Path 249"
@@ -184,8 +174,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_330"
                     data-name="Group 330"
-                    transform="translate(-4537.887 -9478.109)"
-                  >
+                    transform="translate(-4537.887 -9478.109)">
                     <path
                       id="Path_250"
                       data-name="Path 250"
@@ -197,8 +186,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_331"
                     data-name="Group 331"
-                    transform="translate(-4543.868 -9480.521)"
-                  >
+                    transform="translate(-4543.868 -9480.521)">
                     <path
                       id="Path_251"
                       data-name="Path 251"
@@ -210,8 +198,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_332"
                     data-name="Group 332"
-                    transform="translate(-4552.809 -9471.6)"
-                  >
+                    transform="translate(-4552.809 -9471.6)">
                     <path
                       id="Path_252"
                       data-name="Path 252"
@@ -223,8 +210,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_333"
                     data-name="Group 333"
-                    transform="translate(-4534.964 -9471.616)"
-                  >
+                    transform="translate(-4534.964 -9471.616)">
                     <path
                       id="Path_253"
                       data-name="Path 253"
@@ -236,8 +222,7 @@ export function BlockchainServices() {
                   <g
                     id="Group_334"
                     data-name="Group 334"
-                    transform="translate(-4543.879 -9462.702)"
-                  >
+                    transform="translate(-4543.879 -9462.702)">
                     <path
                       id="Path_254"
                       data-name="Path 254"
@@ -263,13 +248,11 @@ export function BlockchainServices() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="31.568"
                 height="35.398"
-                viewBox="0 0 31.568 35.398"
-              >
+                viewBox="0 0 31.568 35.398">
                 <g
                   id="Group_338"
                   data-name="Group 338"
-                  transform="translate(4868.681 9314.412)"
-                >
+                  transform="translate(4868.681 9314.412)">
                   <path
                     id="Path_255"
                     data-name="Path 255"
@@ -322,13 +305,11 @@ export function BlockchainServices() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="35.398"
                 height="35.398"
-                viewBox="0 0 35.398 35.398"
-              >
+                viewBox="0 0 35.398 35.398">
                 <g
                   id="Group_337"
                   data-name="Group 337"
-                  transform="translate(4728.538 9314.406)"
-                >
+                  transform="translate(4728.538 9314.406)">
                   <path
                     id="Path_260"
                     data-name="Path 260"
@@ -381,13 +362,11 @@ export function BlockchainServices() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="35.105"
                 height="34.855"
-                viewBox="0 0 35.105 34.855"
-              >
+                viewBox="0 0 35.105 34.855">
                 <g
                   id="Group_336"
                   data-name="Group 336"
-                  transform="translate(4546.956 9318.602)"
-                >
+                  transform="translate(4546.956 9318.602)">
                   <path
                     id="Path_265"
                     data-name="Path 265"
