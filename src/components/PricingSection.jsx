@@ -8,7 +8,20 @@ import { Bounce } from "react-reveal";
 export function PricingSection() {
   return (
     <div className="container__pricing">
-      <div className="container__pricing__content">
+      <div
+        className="container__testimonials__overlay__heading"
+        style={{ marginBottom: "1em", marginTop: "2em" }}
+      >
+        Engagement Models
+        <span>
+          Depending on your project specifics and needs, you can choose method
+          of your own choice.
+        </span>
+      </div>
+      <div
+        className="container__pricing__content"
+        style={{ paddingTop: "0em" }}
+      >
         <div className="container__pricing__content__left">
           <img loading="lazy" src={customizations} alt="customizations" />
           <Bounce left>

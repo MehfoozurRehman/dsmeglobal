@@ -72,11 +72,11 @@ export function HomeJumbotron({
             <div className="container__jumbotron__left__button">
               <button
                 onClick={() => {
-                  navigate("/meet-us");
+                  navigate("/quote");
                 }}
                 className="container__jumbotron__left__button__secondary"
               >
-                Learn more
+                Let's Talk
               </button>
               <Link
                 to="/portfolio"

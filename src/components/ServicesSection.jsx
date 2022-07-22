@@ -17,7 +17,7 @@ export function ServicesSection() {
       title: "Staff Augmentation",
       image: "v1652870611/dsme_global/egjfhnqu8rkiodik92vv.webp",
       shortDescription:
-        "Leveraging the latest technological tools & industry practices, we build high-performance apps to scale your business. Our team builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with you to understand your specifications and develop apps that provide an intuitive end-user experience.",
+        'Looking for an extended arm to augment your existing team as per the evolving project needs? We are considered as one of the best staff augmentation firms offering staff augmentation and managed services to scale your internal development teams quickly in minimal time, fulfilling your unique business requirements. Being the most prominent IT staff augmentation company in Pakistan, we ensure to offer 100% "Peace of Mind" with our top-notch team augmentation solutions.',
       link: "/services/staff",
     },
     {
@@ -25,7 +25,7 @@ export function ServicesSection() {
       title: "Web App Development",
       image: "v1652871460/dsme_global/xpajuhaxddo1oevnejmy.webp",
       shortDescription:
-        "We believe in building interactive web applications, To create experiences beyond our clients’ expectations. We create beautifully designed web apps precisely tailored to your situation. From providing Software as a Service to creating custom software to support your customers, our Web App team will get you up and running.",
+        "We believe in developing interactive web applications, to create experiences beyond our clients’ expectations. We create beautifully designed web apps precisely tailored to your situation. From providing Software as a Service to creating custom software to support your customers, our Web App team will get you up and running.",
       link: "/services/web-dev",
     },
     {
@@ -33,7 +33,7 @@ export function ServicesSection() {
       title: "Startup Services",
       image: "v1652871579/dsme_global/kb5xhjjcu3nstq2xccul.webp",
       shortDescription:
-        "Leveraging the latest technological tools & industry practices, we build high-performance apps to scale your business. Our team builds nimble and elegant apps for all smartphone platforms. Our engineers work closely with you to understand your specifications and develop apps that provide an intuitive end-user experience.",
+        "With years of experience, we can help you build things that have never been built before. The launchpad to your rocket fuel. We help entrepreneurs reach new heights.",
       link: "/services/startup",
     },
   ];
@@ -43,7 +43,7 @@ export function ServicesSection() {
         <Bounce left>
           <div className="container__services__left">
             <div className="container__services__left__heading">
-              How can we help your buisness ?
+              A complete enterprise designed to modernize your business
             </div>
             <div className="container__services__left__info">
               We excel in providing cutting-edge solutions and development

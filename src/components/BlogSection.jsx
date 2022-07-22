@@ -16,7 +16,7 @@ export function BlogSection() {
   return (
     <div className="blog__section">
       <div className="blog__section__heading">
-        Thirsty for tech & business tips?
+        Thirsty for tech & business tips? Check out our blog!
       </div>
       <div className="blog__section__content">
         {error ? (

@@ -12,6 +12,7 @@ import { StatsSection } from "../components/StatsSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
 import { QuateSection } from "../components/QuateSection";
 import { PricingSection } from "../components/PricingSection";
+import { OurDevelopmentProcess } from "../components/OurDevelopmentProcess";
 
 export default function Home({ setLightHeader }) {
   useEffect(() => {
@@ -32,11 +33,7 @@ export default function Home({ setLightHeader }) {
           taglines={["services", "products", "customizations"]}
           matcherLine="you really"
           matchers={["want", "need", "deserve"]}
-          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-       culpa est? Quos iusto dolore culpa, veritatis quas minus quibusdam
-       ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-       Dolore, culpa est? Quos iusto dolore culpa, veritatis quas minus
-       quibusdam ad?"
+          info="Whether you want to modernize your application portfolio broadly, pursue specific opportunities in your industry, or optimize a single technology, DSME brings together all the services with leading back-office and industry-specific SaaS. Get started easily with hundreds of reference architectures and fully automated solutions available for direct deployment into your business."
           imgs={[homebanner1, homebanner2, homebanner3]}
           buttons={true}
           light={true}
@@ -44,12 +41,13 @@ export default function Home({ setLightHeader }) {
         />
       </div>
       <div className="container">
-        <ClientsSection />
         <ServicesSection />
         <StatsSection />
         <WorkSection />
         <QuateSection />
         <PricingSection />
+        <OurDevelopmentProcess />
+        <ClientsSection />
         <TestimonialsSection />
         <BlogSection />
         <NewsletterSection />

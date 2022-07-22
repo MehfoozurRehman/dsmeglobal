@@ -316,7 +316,7 @@ body {
 
 .container__clients__right__entry img {
   width: 100%;
-  max-width: 100px;
+  max-width: 80px;
 }
 
 .container__services {
@@ -367,7 +367,7 @@ body {
 }
 
 .container__services__left__heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -534,7 +534,7 @@ body {
 }
 
 .blog__section__heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
@@ -2407,7 +2407,7 @@ body {
 }
 
 .work__section__header {
-  font-size: 40px;
+  font-size: 30px;
   color: $black;
   font-weight: bold;
   margin-bottom: 2em;
@@ -2559,7 +2559,7 @@ body {
   padding: 0 2em;
   margin: 0 auto;
   margin-bottom: 2em;
-  font-size: 40px;
+  font-size: 30px;
   color: $black;
   font-weight: bold;
   display: flex;
@@ -2669,7 +2669,7 @@ body {
 }
 
 .container__stats__left__heading {
-  font-size: 40px;
+  font-size: 30px;
   color: $white;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -3198,6 +3198,11 @@ body {
   bottom: 0;
 }
 
+.container__emerging__technologies__section__reverse
+  .container__emerging__technologies__section__entry {
+  color: white;
+  fill: white;
+}
 .container__emerging__technologies__section__wrapper {
   display: flex;
   justify-content: space-between;
@@ -3253,11 +3258,17 @@ body {
 .container__emerging__technologies__section__entry__data___heading {
   font-weight: 500;
   margin-right: 1em;
+  font-size: 20px;
 }
 
 .container__emerging__technologies__section__entry__data__text {
   max-width: 55%;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.container__emerging__technologies__section__entry__data__text span {
+  font-weight: bold;
 }
 
 .container__emerging__technologies__section__entry__img {
@@ -4792,7 +4803,7 @@ body {
 .ios__mobile__page__container {
   width: 100%;
   justify-content: space-between;
- 
+
   margin-bottom: 2em;
 }
 
@@ -4818,8 +4829,6 @@ body {
   text-align: center;
   max-width: 1440px;
   margin: 0 auto;
-
- 
 }
 
 .ios__mobile__share__your__idea__section__buttons__section {
@@ -4927,18 +4936,17 @@ body {
 }
 
 .ios__development__tangible {
-  
   padding: 1em 6em;
   margin-top: 4em;
 }
 .ios__development__tangible__col__one__heading {
- width: 100%;
- text-align: center;
+  width: 100%;
+  text-align: center;
   font-size: 30px;
   font-weight: 600;
 }
-.ios__development__tangible__col__one__heading span{
-  color:$primary;
+.ios__development__tangible__col__one__heading span {
+  color: $primary;
 }
 .ios__development__tangible__col__two {
   display: flex;
@@ -8913,19 +8921,17 @@ body {
   background-color: black;
 }
 .Android__and__ios__boxes {
- 
   padding-bottom: 4em;
   max-width: 1440px;
   margin: 0 auto;
 }
-.Android__and__ios__boxes__all{
+.Android__and__ios__boxes__all {
   background-color: black;
 }
-.svg__Android__and__ios__box__two{
+.svg__Android__and__ios__box__two {
   display: flex;
   align-items: center;
-  
 }
-.svg__Android__and__ios__box__two svg{
+.svg__Android__and__ios__box__two svg {
   margin-right: 1em;
 }

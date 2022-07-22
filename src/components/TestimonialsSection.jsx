@@ -44,11 +44,13 @@ export function TestimonialsSection() {
   return (
     <div className="container__testimonials">
       <div className="container__testimonials__overlay__heading">
-        See what our clients say about us
+        Learn why more than 1000+ customers trust DSME
         <span>
-          Not sure if DSME Global Links is the right choice in your case? You
-          don’t need to take our word for it. Browse the opinions of our clients
-          and discover the benefits of working with us!
+          Innovation, ease of use, better results—those are just some of the
+          reasons organizations in all industries and of all sizes rely on DSME
+          to help them succeed. Hear from our customers to learn what makes DSME
+          the right choice for them, and why we're the right partner for your
+          business.
         </span>
       </div>
 
