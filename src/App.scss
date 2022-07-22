@@ -1,7 +1,7 @@
-@import "animate.css";
-@import "swiper/scss";
-@import "swiper/scss/navigation";
-@import "swiper/scss/pagination";
+@import 'animate.css';
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
 
 $white: #ffffff;
 $primary: #189366;
@@ -20,7 +20,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 .width__50per {
   width: 48%;
@@ -157,7 +157,7 @@ body {
 }
 
 .container__jumbotron::after {
-  content: "";
+  content: '';
   width: 520px;
   height: 520px;
   position: absolute;
@@ -168,7 +168,7 @@ body {
   z-index: -1;
 }
 .container__jumbotron::before {
-  content: "";
+  content: '';
   width: 500px;
   height: 500px;
   position: absolute;
@@ -349,7 +349,7 @@ body {
   background-color: #0d6e4b;
 }
 .container__services::after {
-  content: "";
+  content: '';
   width: 300px;
   height: 300px;
   position: absolute;
@@ -383,7 +383,7 @@ body {
 }
 
 .container__services__right::before {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(50% - 100px);
   left: -10%;
@@ -460,7 +460,7 @@ body {
 }
 
 .container__newsletter::after {
-  content: "";
+  content: '';
   background-color: $primary;
   position: absolute;
   top: 0;
@@ -707,7 +707,7 @@ body {
   text-transform: uppercase;
 }
 .blog__page__heading::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 3px;
   background-color: rgba(13, 110, 74, 0.1);
@@ -950,7 +950,6 @@ body {
   margin-bottom: 1em;
   display: flex;
   text-align: center;
-  
 }
 .hot__offers__section__header span {
   font-size: 30px;
@@ -986,7 +985,7 @@ body {
 }
 
 .hot__offers__section__content__card::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 90%;
@@ -999,7 +998,7 @@ body {
 }
 
 .hot__offers__section__content__card::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 80%;
@@ -1661,7 +1660,7 @@ body {
 }
 
 .pricing__feature__entry::after {
-  content: "";
+  content: '';
   position: absolute;
   right: -7.5%;
   top: 5%;
@@ -1674,7 +1673,7 @@ body {
 }
 
 .pricing__feature__entry::before {
-  content: "";
+  content: '';
   position: absolute;
   right: -15%;
   top: 10%;
@@ -1728,7 +1727,7 @@ body {
   position: relative;
 }
 #pricing__fitted__team__content__entry::before {
-  content: "1";
+  content: '1';
   position: absolute;
   top: -20px;
   left: 45%;
@@ -1744,10 +1743,10 @@ body {
   width: 50px;
 }
 #pricing__fitted__team__content__entry:nth-child(2):before {
-  content: "2";
+  content: '2';
 }
 #pricing__fitted__team__content__entry:nth-child(3):before {
-  content: "3";
+  content: '3';
 }
 // --------------------pricing__transparent__section--------------------
 .pricing__transparent__execution__content__entry {
@@ -1787,7 +1786,7 @@ body {
   position: relative;
 }
 .pricing__transparent__execution__content__entry__box__right::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 6px;
   top: 50%;
@@ -1851,7 +1850,7 @@ body {
 }
 
 .pricing__delivery__section__content__card__para:last-child::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -35px;
   top: 15px;
@@ -1861,7 +1860,7 @@ body {
 }
 .pricing__delivery__section__content__card__para:nth-child(10)::after,
 .pricing__delivery__section__content__card__para:nth-child(20)::after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -2004,7 +2003,7 @@ body {
 }
 
 .pricing__delivery__section__content__card__para::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -1.5em;
   top: 5px;
@@ -2064,7 +2063,7 @@ body {
   text-align: center;
 }
 .pricing__process__container__content__bottom__left__top::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: -55px;
@@ -2077,7 +2076,7 @@ body {
 }
 .pricing__process__container__content__bottom__left:nth-child(3)
   .pricing__process__container__content__bottom__left__top::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: -70px;
@@ -2100,7 +2099,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 .pricing__process__container__content__bottom__left__middle::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: -1em;
@@ -2149,7 +2148,7 @@ body {
   position: relative;
 }
 .pricing__process__container__content__bottom__left__bottom ul li::before {
-  content: "";
+  content: '';
   height: 6px;
   width: 6px;
   border-radius: 5px;
@@ -2719,7 +2718,7 @@ body {
 }
 
 .container__stats__right__card::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 90%;
@@ -2732,7 +2731,7 @@ body {
 }
 
 .container__stats__right__card::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 80%;
@@ -2918,7 +2917,7 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
 }
-.container__web__dev__experties__header__heading span{
+.container__web__dev__experties__header__heading span {
   color: $primary;
 }
 .container__web__dev__experties__header__heading span {
@@ -3042,7 +3041,7 @@ body {
 }
 
 .container__web__dev__experience__content__entry__heading::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 5px;
   border-radius: 50px;
@@ -3191,7 +3190,7 @@ body {
 }
 
 .container__emerging__technologies__section::after {
-  content: "";
+  content: '';
   height: 1px;
   width: calc(100% - 8em);
   position: absolute;
@@ -3321,7 +3320,7 @@ body {
 }
 
 .container__pricing__content__left__heading::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -3403,7 +3402,7 @@ body {
 }
 
 .container__pricing__content__right__heading::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -3691,7 +3690,7 @@ body {
 .footer__container__content__col__text {
   max-width: 300px;
   color: #efefef;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 27px;
 }
 
@@ -3703,7 +3702,7 @@ body {
   margin: 0.3em 0;
   color: #efefef;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
 
@@ -4300,7 +4299,7 @@ body {
 }
 
 .june_third_container_title {
- text-align: center;
+  text-align: center;
   padding-top: 2em;
   font-size: 30px;
   font-weight: bold;
@@ -4308,7 +4307,7 @@ body {
   color: $white;
   margin: 0 auto;
 }
-.june_third_container_title span{
+.june_third_container_title span {
   color: $primary;
 }
 .june_third_container_para {
@@ -4634,7 +4633,7 @@ body {
   transition: all 0.5s ease-in;
   height: 100%;
   margin-top: -10px;
- width: 100%;
+  width: 100%;
   font-size: 22px;
 }
 
@@ -4705,6 +4704,7 @@ body {
 }
 .careers__wrapper__img {
   width: 100%;
+  min-height: 100vh;
 }
 .careers__wrapper__overlay {
   position: absolute;
@@ -4809,8 +4809,8 @@ body {
   font-weight: 600;
   max-width: 450px;
 }
-.ios__mobile__share__your__idea__section__left__heading span{
-  color:$primary ;
+.ios__mobile__share__your__idea__section__left__heading span {
+  color: $primary;
 }
 .ios__mobile__share__your__idea__section__right {
   width: 50%;
@@ -5037,7 +5037,7 @@ body {
   position: relative;
 }
 .ios__development__native__ios__container__right__card a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -2em;
   background-color: $primary;
@@ -5150,7 +5150,7 @@ body {
   font-weight: bold;
   margin-bottom: 2em;
 }
-.ecommerce__screen__container__selling__heading span{
+.ecommerce__screen__container__selling__heading span {
   color: $primary;
 }
 .ecommerce__screen__container__selling__content {
@@ -5188,9 +5188,8 @@ body {
   font-weight: bold;
   margin-bottom: 2em;
 }
-.ecommerce__screen__container__recent__work__heading span{
+.ecommerce__screen__container__recent__work__heading span {
   color: $primary;
-
 }
 .ecommerce__screen__container__recent__work__content {
   display: flex;
@@ -5287,7 +5286,7 @@ body {
   margin-bottom: 2em;
   text-align: center;
 }
-.ecommerce__screen__container__services__heading span{
+.ecommerce__screen__container__services__heading span {
   color: $primary;
 }
 .ecommerce__screen__container__services__content {
@@ -5851,7 +5850,7 @@ body {
   margin-bottom: 1.5em;
 }
 .pricing__fitted__team__content__entry__list li::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 5px;
   left: -2em;
@@ -5874,7 +5873,7 @@ body {
   font-weight: bold;
   margin-bottom: 1em;
 }
-.staff__talent__heading span{
+.staff__talent__heading span {
   color: $primary;
 }
 .staff__talent__sub__heading {
@@ -6057,7 +6056,7 @@ body {
   font-size: 16px;
 }
 .Custome__methodologies__section__detail__card__line::before {
-  content: "";
+  content: '';
   // right: 2em;
   background-color: #189366;
   width: 10px;
@@ -6080,7 +6079,7 @@ body {
   text-align: center;
   margin-bottom: 2em;
 }
-.blockchain__whysection__heading span{
+.blockchain__whysection__heading span {
   color: $primary;
 }
 .blockchain__whysection__services {
@@ -6130,9 +6129,8 @@ body {
   color: white;
   text-align: center;
 }
-.blockchain__servicessection__heading span{
+.blockchain__servicessection__heading span {
   color: $primary;
-
 }
 .blockchain__servicessection__services {
   display: flex;
@@ -6186,7 +6184,7 @@ body {
   position: relative;
 }
 .blockchain__ready::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 85px;
@@ -6196,7 +6194,7 @@ body {
   opacity: 0.4;
 }
 .blockchain__ready::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 30px;
@@ -6211,7 +6209,7 @@ body {
   color: white;
   font-weight: bolder;
 }
-.blockchain__ready__text span{
+.blockchain__ready__text span {
   color: $black;
 }
 .blockchain__ready__button {
@@ -6241,7 +6239,7 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
-.blockchain__worksection__heading span{
+.blockchain__worksection__heading span {
   color: $primary;
 }
 .blockchain__worksection__text {
@@ -6265,7 +6263,7 @@ body {
   margin-bottom: 0.3em;
 }
 .blockchain__worksection__text__subtext__no::before {
-  content: "";
+  content: '';
   background-image: url(https://cdn-ddddj.nitrocdn.com/NSvsNMzbKkQslXvZnhobiTmmCkBXBUPd/assets/static/optimized/rev-f40fc51/wp-content/themes/tkxel/assets/images/bch-point--arrow.svg);
   background-repeat: no-repeat;
   position: absolute;
@@ -6306,13 +6304,12 @@ body {
   justify-content: center;
 }
 .blockchain__techstack__container__heading {
-
-text-align: center;
-margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
 }
-.blockchain__techstack__container__heading span{
+.blockchain__techstack__container__heading span {
   color: $primary;
 }
 .blockchain__techstack__container__tags {
@@ -6334,7 +6331,6 @@ margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .blockchain__techstack__container__tags__button {
   background-color: $primary;
@@ -6467,7 +6463,7 @@ margin: 0 auto;
     .engagement__models__card
     .services__startup__card__icon::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     border-top: 2px solid $primary;
     top: calc(1em + 40px);
@@ -6478,7 +6474,7 @@ margin: 0 auto;
     .engagement__models__card:nth-child(2)
     .services__startup__card__icon::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 60%;
     aspect-ratio: 1/1;
     border-top: 2px solid $primary;
@@ -6491,7 +6487,7 @@ margin: 0 auto;
     .engagement__models__card:nth-child(3)
     .services__startup__card__icon::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 60%;
     aspect-ratio: 16/9;
     border-bottom: 2px solid $primary;
@@ -6517,7 +6513,7 @@ margin: 0 auto;
     .engagement__models__card:nth-child(4)
     .services__startup__card__icon::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 60%;
     aspect-ratio: 1/1;
     border-top: 2px solid $primary;
@@ -6530,7 +6526,7 @@ margin: 0 auto;
     .engagement__models__card:nth-child(5)
     .services__startup__card__icon::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 60%;
     aspect-ratio: 16/9;
     border-bottom: 2px solid $primary;
@@ -8362,7 +8358,6 @@ margin: 0 auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
 }
 .service__startup__main__container__first__heading span {
   color: $primary;
@@ -8454,7 +8449,7 @@ margin: 0 auto;
   .engagement__models__card
   .services__startup__card__icon::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   border-top: 2px solid $primary;
   top: calc(1em + 40px);
@@ -8465,7 +8460,7 @@ margin: 0 auto;
   .engagement__models__card:nth-child(3)
   .services__startup__card__icon::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 60%;
   aspect-ratio: 1/1;
   border-top: 2px solid $primary;
@@ -8478,7 +8473,7 @@ margin: 0 auto;
   .engagement__models__card:nth-child(4)
   .services__startup__card__icon::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 60%;
   aspect-ratio: 16/9;
   border-bottom: 2px solid $primary;
