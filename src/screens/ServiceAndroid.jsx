@@ -529,7 +529,7 @@ export default function ServicesAndroid() {
             <div className="android__development__our__stack__all">
               <div className="android__development__our__stack__container">
                 <div className="android__development__our__stack__container__heading">
-                  Our tech stack
+                  Our tech <span>stack</span>
                 </div>
                 <div className="android__development__our__stack__container__col__row">
                   <div className="android__development__our__stack__container__col">
@@ -591,7 +591,7 @@ export default function ServicesAndroid() {
           </div>
           <div className="container__emerging__technologies">
             <div className="container__emerging__technologies__heading__main">
-              Emerging Technologies
+              Emerging <span>Technologies</span>
             </div>
             <div className="container__emerging__technologies__text__main">
               We constantly push our limits and explore emerging technologies to

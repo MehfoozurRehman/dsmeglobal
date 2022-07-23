@@ -4956,6 +4956,7 @@ body {
   align-items: center;
   height: 100%;
   padding: 3em 0;
+  padding-bottom: 0;
 }
 .ios__development__tangible__col__two__header {
   display: flex;
@@ -5004,6 +5005,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding: 3em 4em;
+  padding-top: 2em;
   display: flex;
 }
 .ios__development__native__ios__container__left {
@@ -5013,6 +5015,7 @@ body {
   font-size: 30px;
   margin-bottom: 0.4em;
   font-weight: 600;
+  
 }
 .ios__development__native__container__text {
   margin-bottom: 2em;
@@ -5025,6 +5028,8 @@ body {
 }
 .ios__development__native__impressive__performance:hover{
   border: 1px solid $primary;
+  background-color: rgba(13, 110, 74, 0.1);
+  transition: 300ms ease-in-out;
 }
 .ios__development__native__impressive__performance__heading {
   font-size: 20px;
@@ -5544,6 +5549,9 @@ body {
   font-size: 30px;
   color: $white;
   font-weight: bold;
+}
+.android__development__our__stack__container__heading span{
+  color: $primary;
 }
 .android__development__our__stack__container__col__row {
   display: flex;
@@ -8953,11 +8961,13 @@ body {
   border: 1px solid $primary;
   padding: 2em;
   margin-right: 1em;
+  border-radius: 5px;
 }
 .Android__and__ios__box__two {
   width: 50%;
   border: 1px solid $primary;
   padding: 2em;
+  border-radius: 5px;
 }
 
 .Android__and__ios__box__one:hover {
