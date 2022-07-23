@@ -5025,7 +5025,6 @@ body {
   font-size: 30px;
   margin-bottom: 0.4em;
   font-weight: 600;
-  
 }
 .ios__development__native__container__text {
   margin-bottom: 2em;
@@ -5036,7 +5035,7 @@ body {
   border-radius: 5px;
   border: 1px solid transparent;
 }
-.ios__development__native__impressive__performance:hover{
+.ios__development__native__impressive__performance:hover {
   border: 1px solid $primary;
   background-color: rgba(13, 110, 74, 0.1);
   transition: 300ms ease-in-out;
@@ -5044,7 +5043,6 @@ body {
 .ios__development__native__impressive__performance__heading {
   font-size: 20px;
   font-weight: 600;
-
 }
 .ios__development__native__impressive__performance__content {
   width: 90%;
@@ -5060,8 +5058,8 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top:1.5em ;
-  margin-bottom: .5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .ios__development__native__impressive__performance svg {
@@ -5567,7 +5565,7 @@ body {
   color: $white;
   font-weight: bold;
 }
-.android__development__our__stack__container__heading span{
+.android__development__our__stack__container__heading span {
   color: $primary;
 }
 .android__development__our__stack__container__col__row {
@@ -6212,7 +6210,7 @@ body {
   margin-bottom: 4em;
 }
 .blockchain__servicessection__servicecard {
-  width: 30%;
+  width: 49%;
   padding: 2em;
   background-color: $white;
   border-radius: 15px;
@@ -6993,11 +6991,11 @@ body {
     padding: 4em 2em;
   }
 }
-@media (max-width: 300px ) {
+@media (max-width: 300px) {
   .Android__and__ios__box__one__and__two {
-   
-   padding: 1em !important;
-  }}
+    padding: 1em !important;
+  }
+}
 @media (max-width: 465px) {
   .june_main_container_first_container_para {
     width: 300px;
@@ -8538,11 +8536,15 @@ body {
   height: fit-content;
   width: 23%;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   padding: 1em;
   margin: 1%;
+  border: 1px solid transparent;
+}
+.services__startup__card:hover {
+  transition: border 0.5s ease-in-out;
+  border: 1px solid $primary;
 }
 .services__startup__card__icon svg {
   height: 50px;
