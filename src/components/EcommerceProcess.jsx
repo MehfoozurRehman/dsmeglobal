@@ -1513,7 +1513,7 @@ export function EcommerceProcess({ role, process, setProcess }) {
   return (
     <div className="ecommerce__screen__container__process">
       <div className="ecommerce__screen__container__process__heading">
-        Our Process
+        Our <span>Process</span> 
       </div>
       {role === "Shopify" ? (
         <div className="ecommerce__screen__container__process__content">

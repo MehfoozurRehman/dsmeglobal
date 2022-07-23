@@ -24,7 +24,7 @@ export function AboutOurVision({}) {
         <div className="our__vision__section__about__us__content__left">
           <Bounce right>
             <div className="feature__section__entry__content__jumbotron__sub__heading">
-              Our Vision
+              Our <span>Vision</span> 
             </div>
             <div className="our__vision__section__about__us__content__left__para">
               Our vision is to help businesses and people create a better

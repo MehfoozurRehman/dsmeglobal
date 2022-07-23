@@ -6,7 +6,7 @@ export function EcommerceWhyWork({ role }) {
     <div className="ecommerce__screen__container__work__code">
       <div className="ecommerce__screen__container__work__code__header">
         <div className="ecommerce__screen__container__work__code__header__heading">
-          Why Work With DSMEGlobals
+          Why Work With<span>DSMEGlobals</span> 
         </div>
         <div className="ecommerce__screen__container__work__code__header__info">
           Get access to the top talent of experienced product managers, smartest

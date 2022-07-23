@@ -1310,6 +1310,10 @@ body {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
+.industry__software__solutions span{
+   color: $primary;
+   margin-left: 10px;
+}
 .industry__software__solutions__content {
   font-size: 20px;
   font-weight: 400;
@@ -1427,7 +1431,10 @@ body {
   color: $black;
   font-weight: bold;
 }
-
+.feature__section__entry__content__jumbotron__sub__heading span{
+  color: $primary;
+  margin-left:10px;
+}
 .our__mission__section__about__us {
   width: 100%;
   position: sticky;
@@ -1650,6 +1657,9 @@ body {
   font-weight: bold;
   min-height: 180px;
   width: 30%;
+}
+.pricing__feature__entry__reverse span{
+  color: $primary;
 }
 
 .pricing__feature__entry {
@@ -5380,6 +5390,9 @@ body {
   margin-bottom: 2em;
   text-align: center;
 }
+.ecommerce__screen__container__process__heading span{
+  color: $primary;
+}
 .ecommerce__screen__container__process__content {
   width: 100%;
   display: flex;
@@ -5461,6 +5474,10 @@ body {
   font-weight: bold;
   margin-bottom: 0.5em;
   text-align: center;
+}
+.ecommerce__screen__container__work__code__header__heading span{
+  color: $primary;
+  padding-left: 10px;
 }
 .ecommerce__screen__container__work__code__header__info {
   text-align: center;
@@ -5812,6 +5829,9 @@ body {
   margin-bottom: 0.5em;
   width: 100%;
   max-width: 300px;
+}
+.container__feature__col__heading span{ 
+  color: $primary;
 }
 .container__feature__col__info {
   width: 100%;
@@ -8196,6 +8216,7 @@ body {
 }
 .customsoft_fourth_container_first_title span {
   color: $primary;
+  padding-left: 10px;
 }
 .customsoft_fourth_container_first_content {
   display: flex;

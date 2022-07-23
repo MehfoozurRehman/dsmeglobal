@@ -8,7 +8,7 @@ export function IndustryFeatrues() {
       <div className="pricing__feature">
         <Bounce left>
           <div className="pricing__feature__entry__reverse">
-            Revolutionizing the way business is conducted across industries with
+          <span> Revolutionizing</span>  the way business is conducted across industries with
             the latest technology introductions.
           </div>
         </Bounce>

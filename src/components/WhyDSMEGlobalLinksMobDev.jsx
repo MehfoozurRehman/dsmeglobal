@@ -6,7 +6,7 @@ export function WhyDSMEGlobalLinksMobDev() {
     <div className="container__feature">
       <div className="container__feature__col">
         <div className="container__feature__col__heading">
-          Why DSME Global Links?
+          Why DSME <span>Global Links?</span> 
         </div>
         <div className="container__feature__col__info">
           We create a cross-functional team to find the perfect blend of tech

@@ -18,7 +18,7 @@ export default function Industry() {
       <Bounce left>
         {' '}
         <div className="industry__software__solutions">
-          Software solutions for industry leaders
+          Software solutions for<span>industry leaders</span> 
         </div>
       </Bounce>
       <Bounce up>

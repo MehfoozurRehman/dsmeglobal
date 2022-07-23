@@ -16,7 +16,7 @@ export function CareersVacencies({
     <div className="hot__offers__section">
       <Bounce down>
         <div className="hot__offers__section__header">
-          Open Vacancies - Join us
+          Open Vacancies  <span>- Join us</span>
           <span>
             We give you opportunities to excel and achieve the global
             recognition that you deserve!

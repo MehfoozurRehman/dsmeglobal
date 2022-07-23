@@ -19,7 +19,7 @@ export function AboutOurMission({}) {
                 color: "#ffffff",
               }}
             >
-              Our Mission
+              Our <span>Mission</span>
             </div>
             <div
               className="our__mission__section__about__us__content__left__para"

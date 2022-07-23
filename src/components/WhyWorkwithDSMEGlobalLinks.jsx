@@ -6,7 +6,7 @@ export function WhyWorkwithDSMEGlobalLinks() {
     <div className="container__feature">
       <div className="container__feature__col">
         <div className="container__feature__col__heading">
-          Why Work with DSME Global Links?
+          Why Work with <span>DSME Global Links?</span> 
         </div>
         <div className="container__feature__col__info">
           Our teams are specifically trained to work under these guideline
