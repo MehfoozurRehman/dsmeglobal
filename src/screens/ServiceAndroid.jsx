@@ -414,6 +414,7 @@ export default function ServicesAndroid() {
           </div>
 
           <div className="android__development__our__stack">
+            <div className="android__development__our__stack__all">
             <div className="android__development__our__stack__container">
               <div className="android__development__our__stack__container__heading">
                 Our tech stack
@@ -473,6 +474,7 @@ export default function ServicesAndroid() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
           <div className="container__emerging__technologies">
