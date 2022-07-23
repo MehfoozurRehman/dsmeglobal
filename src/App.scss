@@ -5019,12 +5019,17 @@ body {
 }
 .ios__development__native__impressive__performance {
   width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.ios__development__native__impressive__performance:hover{
+  border: 1px solid $primary;
 }
 .ios__development__native__impressive__performance__heading {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.4em;
+
 }
 .ios__development__native__impressive__performance__content {
   width: 90%;
@@ -5036,11 +5041,23 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
 }
+.ios__development__native__impressive__performance__svg {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top:1.5em ;
+  margin-bottom: .5em;
+}
+
+.ios__development__native__impressive__performance svg {
+  margin-right: 1em;
+}
 .ios__development__native__ios__container__right__card {
   width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(13, 110, 74, 0.1);
+
+  background-color: $black;
   padding: 3em;
   position: sticky;
   margin-left: 1em;
@@ -5049,7 +5066,7 @@ body {
 }
 .ios__development__native__ios__container__right__card a {
   text-decoration: none;
-  color: $black;
+  color: $white;
   margin: 0.5em;
   transition: all ease-in-out 0.3s;
   margin-left: 2em;
@@ -6691,6 +6708,8 @@ body {
   .ios__mobile__share__your__idea__section__right {
     width: 100%;
     display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
     justify-content: center;
   }
   .ios__mobile__share__your__idea__section__left__heading {
@@ -6946,6 +6965,11 @@ body {
     padding: 4em 2em;
   }
 }
+@media (max-width: 300px ) {
+  .Android__and__ios__box__one__and__two {
+   
+   padding: 1em !important;
+  }}
 @media (max-width: 465px) {
   .june_main_container_first_container_para {
     width: 300px;
@@ -7592,7 +7616,7 @@ body {
   .Android__and__ios__box__one__and__two {
     padding: 2em !important;
   }
-  .Android__and__ios__box__one{
+  .Android__and__ios__box__one {
     padding: 1em !important;
   }
   .container__web__dev__solution__right {

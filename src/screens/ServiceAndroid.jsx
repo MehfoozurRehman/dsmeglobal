@@ -93,167 +93,169 @@ export default function ServicesAndroid() {
             <span>Android development company?</span>
           </div>
           <div className="Android__and__ios__boxes__all">
-          <div className="Android__and__ios__boxes">
-            <div className="Android__and__ios__box__one__and__two">
-              <div className="Android__and__ios__box__one">
-                <div className="svg__Android__and__ios__box__two">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="34"
-                    height="34"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-smartphone"
-                  >
-                    <rect
-                      x="5"
-                      y="2"
-                      width="14"
-                      height="20"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                  </svg>
-                <div className="Android__and__ios__box__one__heading">
-                  One-stop Android development agency
-                </div>
-                </div>
-                <div className="Android__and__ios__box__one__content">
-                  A great idea is important, but it takes more to build an
-                  excellent mobile app. Choose our all-in-one Android
-                  development services and hire a team that takes care of
-                  everything that your app needs to succeed. Strategy and market
-                  research to sharpen your vision, and outstanding product
-                  designs to delight your users. Foolproof app development and
-                  maintenance for excellent stability and performance. All in
-                  one place.
-                </div>
-              </div>
-              <div className="Android__and__ios__box__two">
-                <div className="svg__Android__and__ios__box__two">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="34"
-                    height="34"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-smartphone"
-                  >
-                    <rect
-                      x="5"
-                      y="2"
-                      width="14"
-                      height="20"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                  </svg>
-                <div className="Android__and__ios__box__two__heading">
-                  Experts in Java and Kotlin development
-                </div>
-                </div>
-                <div className="Android__and__ios__box__two__content">
-                  When it comes to native Android development, there are two
-                  technologies that matter: Java and Kotlin. Older applications
-                  are usually written in Java, but most of the new ones are
-                  created with Kotlin. Our developers are fluent in both, and
-                  with each case, they choose the stack carefully to deliver
-                  top-notch applications, made to fit specific business needs.
-                  Whether you wish to write a brand new app or spruce up the one
-                  you already have, we help you choose the right tech solution.
-                </div>
-              </div>
-            </div>
-            <div className="Android__and__ios__box__one__and__two">
-              <div className="Android__and__ios__box__one">
-                <div className="svg__Android__and__ios__box__two">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="34"
-                    height="34"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-smartphone"
-                  >
-                    <rect
-                      x="5"
-                      y="2"
-                      width="14"
-                      height="20"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                  </svg>
-                <div className="Android__and__ios__box__one__heading">
-                  Android applications recognized worldwide
-                </div>
-                </div>
-                <div className="Android__and__ios__box__one__content">
-                  You don’t want to put your project in inexperienced hands. Our
-                  Android team is top-rated on Clutch, and with over 10 years of
-                  practice in Android application development, we have gained
-                  the trust of world-renowned brands such as Marhaba Mahal,
-                  AIDAPro, Friendly Face, or Gentleman & Co. We create
-                  beautiful, top-performing Android apps for industries like
-                  e-commerce, banking, music, and travel.
-                </div>
-              </div>
-              <div className="Android__and__ios__box__two">
-                <div className="svg__Android__and__ios__box__two">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="34"
-                    height="34"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-smartphone"
-                  >
-                    <rect
-                      x="5"
-                      y="2"
-                      width="14"
-                      height="20"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                  </svg>
-                  <div className="Android__and__ios__box__two__heading">
-                    Cross-platform options
+            <div className="Android__and__ios__boxes">
+              <div className="Android__and__ios__box__one__and__two">
+                <div className="Android__and__ios__box__one">
+                  <div className="svg__Android__and__ios__box__two">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-smartphone"
+                    >
+                      <rect
+                        x="5"
+                        y="2"
+                        width="14"
+                        height="20"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    <div className="Android__and__ios__box__one__heading">
+                      One-stop Android development agency
+                    </div>
+                  </div>
+                  <div className="Android__and__ios__box__one__content">
+                    A great idea is important, but it takes more to build an
+                    excellent mobile app. Choose our all-in-one Android
+                    development services and hire a team that takes care of
+                    everything that your app needs to succeed. Strategy and
+                    market research to sharpen your vision, and outstanding
+                    product designs to delight your users. Foolproof app
+                    development and maintenance for excellent stability and
+                    performance. All in one place.
                   </div>
                 </div>
-                <div className="Android__and__ios__box__two__content">
-                  If you’re thinking about building an app for both Android and
-                  iOS, you will face a crucial decision. Should you develop two
-                  native apps, or just one that will work on both platforms?
-                  We’re here to make sure you choose the right approach! If you
-                  pick cross-platform over native Android application
-                  development, we can take care of that, too. Our team excels in
-                  building apps with the two most popular cross-platform
-                  frameworks: Flutter and React Native.Flutter and react Native
+                <div className="Android__and__ios__box__two">
+                  <div className="svg__Android__and__ios__box__two">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-smartphone"
+                    >
+                      <rect
+                        x="5"
+                        y="2"
+                        width="14"
+                        height="20"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    <div className="Android__and__ios__box__two__heading">
+                      Experts in Java and Kotlin development
+                    </div>
+                  </div>
+                  <div className="Android__and__ios__box__two__content">
+                    When it comes to native Android development, there are two
+                    technologies that matter: Java and Kotlin. Older
+                    applications are usually written in Java, but most of the
+                    new ones are created with Kotlin. Our developers are fluent
+                    in both, and with each case, they choose the stack carefully
+                    to deliver top-notch applications, made to fit specific
+                    business needs. Whether you wish to write a brand new app or
+                    spruce up the one you already have, we help you choose the
+                    right tech solution.
+                  </div>
+                </div>
+              </div>
+              <div className="Android__and__ios__box__one__and__two">
+                <div className="Android__and__ios__box__one">
+                  <div className="svg__Android__and__ios__box__two">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-smartphone"
+                    >
+                      <rect
+                        x="5"
+                        y="2"
+                        width="14"
+                        height="20"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    <div className="Android__and__ios__box__one__heading">
+                      Android applications recognized worldwide
+                    </div>
+                  </div>
+                  <div className="Android__and__ios__box__one__content">
+                    You don’t want to put your project in inexperienced hands.
+                    Our Android team is top-rated on Clutch, and with over 10
+                    years of practice in Android application development, we
+                    have gained the trust of world-renowned brands such as
+                    Marhaba Mahal, AIDAPro, Friendly Face, or Gentleman & Co. We
+                    create beautiful, top-performing Android apps for industries
+                    like e-commerce, banking, music, and travel.
+                  </div>
+                </div>
+                <div className="Android__and__ios__box__two">
+                  <div className="svg__Android__and__ios__box__two">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-smartphone"
+                    >
+                      <rect
+                        x="5"
+                        y="2"
+                        width="14"
+                        height="20"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    <div className="Android__and__ios__box__two__heading">
+                      Cross-platform options
+                    </div>
+                  </div>
+                  <div className="Android__and__ios__box__two__content">
+                    If you’re thinking about building an app for both Android
+                    and iOS, you will face a crucial decision. Should you
+                    develop two native apps, or just one that will work on both
+                    platforms? We’re here to make sure you choose the right
+                    approach! If you pick cross-platform over native Android
+                    application development, we can take care of that, too. Our
+                    team excels in building apps with the two most popular
+                    cross-platform frameworks: Flutter and React Native.Flutter
+                    and react Native
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
         <div className="ios__development__tangible">
@@ -269,17 +271,37 @@ export default function ServicesAndroid() {
         <div className="ios__development__native__ios">
           <div className="ios__development__native__ios__container">
             <div className="ios__development__native__ios__container__left">
-              <div className="ios__development__native__ios__container__heading">
-                Why choose native Android app development?
-              </div>
+             
+                <div className="ios__development__native__ios__container__heading">
+                  Why choose native Android app development?
+                </div>
+              
               <div className="ios__development__native__container__text">
                 Why is it worth building a native application for Android? See
                 our reasons to make a well-informed choice.
               </div>
 
               <div className="ios__development__native__impressive__performance">
+              <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+                
                 <div className="ios__development__native__impressive__performance__heading">
                   Unique user experience
+                </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   If one of your top goals is to create an Android application
@@ -293,8 +315,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
+              <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+                
                 <div className="ios__development__native__impressive__performance__heading">
                   Native Android features
+                </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   Planning to equip your app with functions like biometrics,
@@ -306,8 +346,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
+              <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+                
                 <div className="ios__development__native__impressive__performance__heading">
                   Dependability and support
+                </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   As native languages are more mature than cross-platform ones,
@@ -320,8 +378,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
+              <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+                
                 <div className="ios__development__native__impressive__performance__heading">
                   Stability and performance
+                </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   Native Android development equals stable performance. Native
@@ -333,8 +409,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
+              <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+                
                 <div className="ios__development__native__impressive__performance__heading">
                   Future-proof and scalable
+                </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   Thinking about a product that you can expand over the years?
@@ -348,8 +442,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
+              <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+                
                 <div className="ios__development__native__impressive__performance__heading">
                   In-house transfer options
+                </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   If you plan to transfer the project to in-house in the future,
@@ -415,66 +527,66 @@ export default function ServicesAndroid() {
 
           <div className="android__development__our__stack">
             <div className="android__development__our__stack__all">
-            <div className="android__development__our__stack__container">
-              <div className="android__development__our__stack__container__heading">
-                Our tech stack
+              <div className="android__development__our__stack__container">
+                <div className="android__development__our__stack__container__heading">
+                  Our tech stack
+                </div>
+                <div className="android__development__our__stack__container__col__row">
+                  <div className="android__development__our__stack__container__col">
+                    <div className="android__development__our__stack__container__col__one__heading">
+                      Core
+                    </div>
+                    <div className="android__development__our__stack__container__col__one__heading__text">
+                      <li>MVP or MVVM</li>
+                      <li>RxJava 3 or Kotlin Coroutines</li>
+                      <li>Dagger 2 or Koin</li>
+                      <li>Retrofit and Room</li>
+                      <li>Glide or Picasso</li>
+                    </div>
+                  </div>
+                  <div className="android__development__our__stack__container__col">
+                    <div className="android__development__our__stack__container__col__one__heading">
+                      CI/CD
+                    </div>
+                    <div className="android__development__our__stack__container__col__one__heading__text">
+                      <li>Fastlane</li>
+                      <li>Docker</li>
+                      <li>TeamCity</li>
+                      <li>Gitlab</li>
+                      <li>AWS</li>
+                    </div>
+                  </div>
+                  <div className="android__development__our__stack__container__col">
+                    <div className="android__development__our__stack__container__col__one__heading">
+                      Testing
+                    </div>
+                    <div className="android__development__our__stack__container__col__one__heading__text">
+                      <li>Testing</li>
+                      <li>Espresso</li>
+                      <li>Charles</li>
+                    </div>
+                  </div>
+                  <div className="android__development__our__stack__container__col">
+                    <div className="android__development__our__stack__container__col__one__heading">
+                      Debugging
+                    </div>
+                    <div className="android__development__our__stack__container__col__one__heading__text">
+                      <li>LeakCanary</li>
+                      <li>Firebase Crashlytics</li>
+                    </div>
+                  </div>
+                  <div className="android__development__our__stack__container__col">
+                    <div className="android__development__our__stack__container__col__one__heading">
+                      Design
+                    </div>
+                    <div className="android__development__our__stack__container__col__one__heading__text">
+                      <li>Sketch</li>
+                      <li>InVision</li>
+                      <li>InVision</li>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="android__development__our__stack__container__col__row">
-                <div className="android__development__our__stack__container__col">
-                  <div className="android__development__our__stack__container__col__one__heading">
-                    Core
-                  </div>
-                  <div className="android__development__our__stack__container__col__one__heading__text">
-                    <li>MVP or MVVM</li>
-                    <li>RxJava 3 or Kotlin Coroutines</li>
-                    <li>Dagger 2 or Koin</li>
-                    <li>Retrofit and Room</li>
-                    <li>Glide or Picasso</li>
-                  </div>
-                </div>
-                <div className="android__development__our__stack__container__col">
-                  <div className="android__development__our__stack__container__col__one__heading">
-                    CI/CD
-                  </div>
-                  <div className="android__development__our__stack__container__col__one__heading__text">
-                    <li>Fastlane</li>
-                    <li>Docker</li>
-                    <li>TeamCity</li>
-                    <li>Gitlab</li>
-                    <li>AWS</li>
-                  </div>
-                </div>
-                <div className="android__development__our__stack__container__col">
-                  <div className="android__development__our__stack__container__col__one__heading">
-                    Testing
-                  </div>
-                  <div className="android__development__our__stack__container__col__one__heading__text">
-                    <li>Testing</li>
-                    <li>Espresso</li>
-                    <li>Charles</li>
-                  </div>
-                </div>
-                <div className="android__development__our__stack__container__col">
-                  <div className="android__development__our__stack__container__col__one__heading">
-                    Debugging
-                  </div>
-                  <div className="android__development__our__stack__container__col__one__heading__text">
-                    <li>LeakCanary</li>
-                    <li>Firebase Crashlytics</li>
-                  </div>
-                </div>
-                <div className="android__development__our__stack__container__col">
-                  <div className="android__development__our__stack__container__col__one__heading">
-                    Design
-                  </div>
-                  <div className="android__development__our__stack__container__col__one__heading__text">
-                    <li>Sketch</li>
-                    <li>InVision</li>
-                    <li>InVision</li>
-                  </div>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
           <div className="container__emerging__technologies">
