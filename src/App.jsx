@@ -33,6 +33,7 @@ const ContactUs = lazy(() => import("./screens/ContactUs"));
 const Pricing = lazy(() => import("./screens/Pricing"));
 const PricingDedicated = lazy(() => import("./screens/PricingDedicated"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
+const ServiceWebScraping = lazy(() => import("./screens/ServiceWebScraping"));
 
 function App() {
   const [lightHeader, setLightHeader] = useState(false);
@@ -53,6 +54,7 @@ function App() {
         <Route path="/services/blockchain" element={<ServiceBlockChain />} />
         <Route path="/services/custom-soft" element={<ServiceCustomSoft />} />
         <Route path="/services/ios" element={<ServiceIos />} />
+        <Route path="/services/web-scraping" element={<ServiceWebScraping />} />
         <Route path="/services/android" element={<ServiceAndroid />} />
         <Route path="/services/ecomerece" element={<ServiceEcomerece />} />
         <Route path="/services/startup" element={<ServiceStartup />} />
