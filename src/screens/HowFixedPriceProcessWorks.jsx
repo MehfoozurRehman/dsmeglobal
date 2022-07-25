@@ -6,7 +6,7 @@ export function HowFixedPriceProcessWorks({}) {
       <div className="pricing__process__container__content">
         <div className="pricing__process__container__content__top">
           <div className="pricing__process__container__content__top__heading">
-            How the Process Works?
+            How the <span>Process Works?</span>
           </div>
           <div className="pricing__process__container__content__top__info">
             We have been successfully delivered over 250+ products on-time and
