@@ -494,7 +494,7 @@ export default function ServicesAndroid() {
             <div className="ios__development__native__cross__plat__development__container">
               <div className="ios__development__native__cross__plat__development__container__left">
                 <div className="ios__development__native__cross__plat__development__container__heading">
-                  Cross-platform development
+                  Cross-platform <span>development</span>
                 </div>
                 <div className="ios__development__native__cross__plat__development__container__text">
                   Cross-platform application development allows you to create

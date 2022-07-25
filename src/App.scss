@@ -1310,9 +1310,9 @@ body {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-.industry__software__solutions span{
-   color: $primary;
-   margin-left: 10px;
+.industry__software__solutions span {
+  color: $primary;
+  margin-left: 10px;
 }
 .industry__software__solutions__content {
   font-size: 20px;
@@ -1431,9 +1431,9 @@ body {
   color: $black;
   font-weight: bold;
 }
-.feature__section__entry__content__jumbotron__sub__heading span{
+.feature__section__entry__content__jumbotron__sub__heading span {
   color: $primary;
-  margin-left:10px;
+  margin-left: 10px;
 }
 .our__mission__section__about__us {
   width: 100%;
@@ -1658,7 +1658,7 @@ body {
   min-height: 180px;
   width: 30%;
 }
-.pricing__feature__entry__reverse span{
+.pricing__feature__entry__reverse span {
   color: $primary;
 }
 
@@ -3155,8 +3155,9 @@ body {
   width: 100%;
   position: sticky;
   z-index: 999;
-  padding: 3em 4em;
-  padding-top: 0;
+  padding: 2em 4em;
+ background-color: $black;
+ color: white;
 }
 
 .container__emerging__technologies__heading__main {
@@ -5388,7 +5389,7 @@ body {
   margin-bottom: 2em;
   text-align: center;
 }
-.ecommerce__screen__container__process__heading span{
+.ecommerce__screen__container__process__heading span {
   color: $primary;
 }
 .ecommerce__screen__container__process__content {
@@ -5473,7 +5474,7 @@ body {
   margin-bottom: 0.5em;
   text-align: center;
 }
-.ecommerce__screen__container__work__code__header__heading span{
+.ecommerce__screen__container__work__code__header__heading span {
   color: $primary;
   padding-left: 10px;
 }
@@ -5499,24 +5500,22 @@ body {
   width: 100%;
   position: relative;
   margin-top: 4em;
+  background-color: $black;
 }
 .ios__development__native__cross__plat__development__img {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin-top: -40px;
   width: 370px;
   height: 270px;
 }
 .ios__development__native__cross__plat__development__container {
-  width: calc(100% - 4em);
-  background-color: $primary;
+  width: 100%;
+  // background-color: $black;
+  max-width: 1440px;
+  margin: 0 auto;
   height: 100%;
   color: $white;
   padding: 4em 4em;
   display: flex;
   justify-content: center;
-  border-radius: 0px 10px 10px 0px;
 }
 .ios__development__native__cross__plat__development__container__left {
   width: 60%;
@@ -5528,6 +5527,9 @@ body {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 1em;
+}
+.ios__development__native__cross__plat__development__container__heading span {
+  color: $primary;
 }
 .ios__development__native__cross__plat__development__container__text {
   max-width: 700px;
@@ -5542,10 +5544,7 @@ body {
   margin-bottom: 3em;
 }
 .android__development__our__stack__all {
-  background-color: $black;
-  border-radius: 10px 0px 0px 10px;
   margin-top: 4em;
-  margin-left: 4em;
 }
 .android__development__our__stack__container {
   width: calc(100% - 4em);
@@ -5555,14 +5554,13 @@ body {
 
   margin: 0 auto;
   padding: 4em 4em;
-  color: $white;
+  color: $black;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .android__development__our__stack__container__heading {
   font-size: 30px;
-  color: $white;
   font-weight: bold;
 }
 .android__development__our__stack__container__heading span {
@@ -5585,6 +5583,7 @@ body {
 }
 .android__development__our__stack__container__col__one__heading__text li {
   margin: 1em 0em;
+ 
 }
 .about__ceo__message,
 .about__core__values,
@@ -5628,6 +5627,10 @@ body {
 }
 .about__ceo__message__right__heading span {
   color: $primary;
+}
+::marker{
+  color: $primary;
+  font-size: 20px;
 }
 .about__ceo__message__right__info {
   color: $white;
@@ -5828,7 +5831,7 @@ body {
   width: 100%;
   max-width: 300px;
 }
-.container__feature__col__heading span{ 
+.container__feature__col__heading span {
   color: $primary;
 }
 .container__feature__col__info {
@@ -6629,14 +6632,17 @@ body {
   }
   .ios__development__native__cross__plat__development__container {
     flex-direction: column-reverse;
-    height: 100%;
+    height: fit-content;
+    width: fit-content;
     justify-content: center;
     align-items: center;
   }
   .ios__development__native__cross__plat__development__container__right {
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 4em;
   }
   .ios__development__native__cross__plat__development__container__left {
     width: 100%;
@@ -7944,6 +7950,7 @@ body {
     width: 100%;
     margin-left: 0em;
     border-radius: 0px;
+    padding: 2em;
   }
 }
 .customsoft_content {
