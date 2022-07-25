@@ -120,7 +120,7 @@ export default function Services({}) {
       title: "Startup Sercices",
       image: "v1652871923/dsme_global/nvxctba3pblutjl3zbjm.webp",
       description:
-        "We provide SEO services to optimize your website to get organic or unpaid traffic from the search engines to result in pages.",
+        "Our engineers create custom web scraping solutions that quickly and efficiently gather the data you need and provide it to you in an elegant structure. ",
       categories: [
         {
           value: "Search Engine Optimizations",
