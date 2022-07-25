@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServicesCard from "../components/ServicesSectionCard";
 import servicesbanner from "../assets/servicesbanner.svg";
 import { HomeJumbotron } from "../components/HomeJumbotron";
 
 export default function Services({}) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const data = [
     {
       logo: "v1652870358/dsme_global/th4v090zeauzrq7poavv.webp",

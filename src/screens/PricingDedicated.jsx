@@ -9,6 +9,7 @@ import { TransparentExecution } from "../components/TransparentExecution";
 import { WhyDedicatedTeamswithDSMEGlobal } from "../components/WhyDedicatedTeamswithDSMEGlobal";
 import { ProcessFromIdeaCreationtoProductDelivery } from "../components/ProcessFromIdeaCreationtoProductDelivery";
 import { PricingDedicatedSuccessStories } from "../components/PricingDedicatedSuccessStories";
+import { AdvantagesOfDSMETalent } from "../components/AdvantagesOfDSMETalent";
 
 export default function PricingDedicated() {
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -47,13 +48,14 @@ export default function PricingDedicated() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Dedicated Development Teams"
+          taglinesLine="Fully Managed Development Teams To Build Your Software"
           info="Work with a dedicated pool of technical resources for your software development needs. Hire top tech talent and quickly scale your delivery capacity."
           img={teams}
           talk={true}
         />
       </div>
       <GetAPerfectlyFittedTeam />
+      <AdvantagesOfDSMETalent />
       <HowtoGetStarted />
       <TransparentExecution />
       <WhyDedicatedTeamswithDSMEGlobal />
