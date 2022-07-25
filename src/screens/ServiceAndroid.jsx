@@ -88,13 +88,13 @@ export default function ServicesAndroid() {
               <img loading="lazy" src={img6} alt="imgmunber" />
             </div>
           </div>
-         
+
           <div className="Android__and__ios__boxes__all">
             <div className="Android__and__ios__boxes">
-            <div className="ios__mobile__page__container__ios__company__heading">
-            What makes DSME Global Links a top{" "}
-            <span>Android development company?</span>
-          </div>
+              <div className="ios__mobile__page__container__ios__company__heading">
+                What makes DSME Global Links a top{" "}
+                <span>Android development company?</span>
+              </div>
               <div className="Android__and__ios__box__one__and__two">
                 <div className="Android__and__ios__box__one">
                   <div className="svg__Android__and__ios__box__two">
@@ -142,7 +142,7 @@ export default function ServicesAndroid() {
                       width="34"
                       height="34"
                       viewBox="0 0 24 24"
-                      fill="none"
+                      fill="#189366"
                       stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
@@ -272,37 +272,36 @@ export default function ServicesAndroid() {
         <div className="ios__development__native__ios">
           <div className="ios__development__native__ios__container">
             <div className="ios__development__native__ios__container__left">
-             
-                <div className="ios__development__native__ios__container__heading">
-                  Why choose native <span>Android app development?</span>
-                </div>
-              
+              <div className="ios__development__native__ios__container__heading">
+                Why choose native <span>Android app development?</span>
+              </div>
+
               <div className="ios__development__native__container__text">
                 Why is it worth building a native application for Android? See
                 our reasons to make a well-informed choice.
               </div>
 
               <div className="ios__development__native__impressive__performance">
-              <div className="ios__development__native__impressive__performance__svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#189366"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-airplay"
-                >
-                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
-                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
-                </svg>
-                
-                <div className="ios__development__native__impressive__performance__heading">
-                  Unique user experience
-                </div>
+                <div className="ios__development__native__impressive__performance__svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#189366"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-airplay"
+                  >
+                    <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                  </svg>
+
+                  <div className="ios__development__native__impressive__performance__heading">
+                    Unique user experience
+                  </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   If one of your top goals is to create an Android application
@@ -316,26 +315,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
-              <div className="ios__development__native__impressive__performance__svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#189366"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-airplay"
-                >
-                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
-                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
-                </svg>
-                
-                <div className="ios__development__native__impressive__performance__heading">
-                  Native Android features
-                </div>
+                <div className="ios__development__native__impressive__performance__svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#189366"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-airplay"
+                  >
+                    <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                  </svg>
+
+                  <div className="ios__development__native__impressive__performance__heading">
+                    Native Android features
+                  </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   Planning to equip your app with functions like biometrics,
@@ -347,26 +346,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
-              <div className="ios__development__native__impressive__performance__svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#189366"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-airplay"
-                >
-                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
-                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
-                </svg>
-                
-                <div className="ios__development__native__impressive__performance__heading">
-                  Dependability and support
-                </div>
+                <div className="ios__development__native__impressive__performance__svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#189366"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-airplay"
+                  >
+                    <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                  </svg>
+
+                  <div className="ios__development__native__impressive__performance__heading">
+                    Dependability and support
+                  </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   As native languages are more mature than cross-platform ones,
@@ -379,26 +378,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
-              <div className="ios__development__native__impressive__performance__svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#189366"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-airplay"
-                >
-                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
-                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
-                </svg>
-                
-                <div className="ios__development__native__impressive__performance__heading">
-                  Stability and performance
-                </div>
+                <div className="ios__development__native__impressive__performance__svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#189366"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-airplay"
+                  >
+                    <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                  </svg>
+
+                  <div className="ios__development__native__impressive__performance__heading">
+                    Stability and performance
+                  </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   Native Android development equals stable performance. Native
@@ -410,26 +409,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
-              <div className="ios__development__native__impressive__performance__svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#189366"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-airplay"
-                >
-                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
-                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
-                </svg>
-                
-                <div className="ios__development__native__impressive__performance__heading">
-                  Future-proof and scalable
-                </div>
+                <div className="ios__development__native__impressive__performance__svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#189366"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-airplay"
+                  >
+                    <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                  </svg>
+
+                  <div className="ios__development__native__impressive__performance__heading">
+                    Future-proof and scalable
+                  </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   Thinking about a product that you can expand over the years?
@@ -443,26 +442,26 @@ export default function ServicesAndroid() {
                 </div>
               </div>
               <div className="ios__development__native__impressive__performance">
-              <div className="ios__development__native__impressive__performance__svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="34"
-                  height="34"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#189366"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-airplay"
-                >
-                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
-                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
-                </svg>
-                
-                <div className="ios__development__native__impressive__performance__heading">
-                  In-house transfer options
-                </div>
+                <div className="ios__development__native__impressive__performance__svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#189366"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-airplay"
+                  >
+                    <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                  </svg>
+
+                  <div className="ios__development__native__impressive__performance__heading">
+                    In-house transfer options
+                  </div>
                 </div>
                 <div className="ios__development__native__impressive__performance__content">
                   If you plan to transfer the project to in-house in the future,

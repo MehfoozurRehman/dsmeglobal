@@ -6,7 +6,7 @@ export function WhychoosenativeiOSappdevelopment({}) {
       <div className="ios__development__native__ios__container">
         <div className="ios__development__native__ios__container__left">
           <div className="ios__development__native__ios__container__heading">
-            Why choose native iOS app development?
+            Why choose native <span></span>
           </div>
           <div className="ios__development__native__container__text">
             What are the pros of building a native application for iOS? See our
@@ -14,8 +14,26 @@ export function WhychoosenativeiOSappdevelopment({}) {
           </div>
 
           <div className="ios__development__native__impressive__performance">
+          <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
+               
             <div className="ios__development__native__impressive__performance__heading">
               Impressive performance
+            </div>
             </div>
             <div className="ios__development__native__impressive__performance__content">
               If application speed and top-notch performance are your
@@ -25,8 +43,25 @@ export function WhychoosenativeiOSappdevelopment({}) {
             </div>
           </div>
           <div className="ios__development__native__impressive__performance">
+          <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
             <div className="ios__development__native__impressive__performance__heading">
               Platform-specific features
+            </div>
             </div>
             <div className="ios__development__native__impressive__performance__content">
               Are you planning to equip your app with functions like biometrics,
@@ -38,23 +73,27 @@ export function WhychoosenativeiOSappdevelopment({}) {
             </div>
           </div>
 
-          {/* <div className="ios__development__native__impressive__performance">
-           <div className="ios__development__native__impressive__performance__heading">
-             Dependability and support
-           </div>
-           <div className="ios__development__native__impressive__performance__content">
-             As Swift is a more mature language than any of the
-             cross-platform ones, it is more dependable when it comes to
-             community support or available development resources. They are
-             also less prone to dynamic changes. Also, note that Swift is
-             officially supported by Apple. It is in their best interest to
-             keep the language up-to-date and dependable in terms of
-             maintenance and development.
-           </div>
-          </div> */}
+        
           <div className="ios__development__native__impressive__performance">
+          <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
             <div className="ios__development__native__impressive__performance__heading">
               Dependability and support
+            </div>
             </div>
             <div className="ios__development__native__impressive__performance__content">
               As Swift is a more mature language than any of the cross-platform
@@ -66,8 +105,25 @@ export function WhychoosenativeiOSappdevelopment({}) {
             </div>
           </div>
           <div className="ios__development__native__impressive__performance">
+          <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
             <div className="ios__development__native__impressive__performance__heading">
               Future-proof and scalable
+            </div>
             </div>
             <div className="ios__development__native__impressive__performance__content">
               Thinking about a product that you can expand over the years?
@@ -81,8 +137,25 @@ export function WhychoosenativeiOSappdevelopment({}) {
             </div>
           </div>
           <div className="ios__development__native__impressive__performance">
+          <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
             <div className="ios__development__native__impressive__performance__heading">
               In-house transfer options
+            </div>
             </div>
             <div className="ios__development__native__impressive__performance__content">
               If you plan to transfer the project to in-house in the future,
@@ -93,8 +166,25 @@ export function WhychoosenativeiOSappdevelopment({}) {
             </div>
           </div>
           <div className="ios__development__native__impressive__performance">
+          <div className="ios__development__native__impressive__performance__svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#189366"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+                  <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                </svg>
             <div className="ios__development__native__impressive__performance__heading">
               Excellent UX/UI
+            </div>
             </div>
             <div className="ios__development__native__impressive__performance__content">
               Native iOS development results in a better app experience for your

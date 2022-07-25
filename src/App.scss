@@ -4831,7 +4831,9 @@ body {
   width: 100%;
   text-align: center;
   align-items: center;
-  padding: 1em;
+  padding: 3em;
+  padding-bottom: 1em;
+  
 }
 .ios__mobile__share__your__idea__section__left__heading span {
   color: $primary;
@@ -9083,4 +9085,12 @@ color: $white;
 }
 .svg__Android__and__ios__box__two svg {
   margin-right: 1em;
+  stroke: #189366;
+}
+
+.Android__and__ios__box__two:hover .svg__Android__and__ios__box__two svg{
+  stroke: $white;
+}
+.Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {
+  stroke: $white;
 }
