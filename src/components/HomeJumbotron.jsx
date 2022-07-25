@@ -38,7 +38,7 @@ export function HomeJumbotron({
               {taglines
                 ?.filter((tagline, i) => i === taglineNo)
                 .map((tagline) => {
-                  return <span key={JSON.stringify(tagline)}>{tagline}</span>;
+                  return <span key={tagline}>{tagline}</span>;
                 })}{" "}
             </div>
             <div className="container__jumbotron__left__heading__entry">

@@ -144,18 +144,15 @@ export default function Services({}) {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="We provide"
-          taglines={["the best", "services"]}
+          taglinesLine="From startup to enterprise, the full range of engineering services your company needs"
           info={
             <>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-              provident dolores dolorum expedita maiores dolor nulla, vero ipsam
-              excepturi nostrum soluta iure suscipit aperiam repellat quisquam
-              maxime veniam reprehenderit? Distinctio, cupiditate! Sequi ullam
-              eaque, voluptatum ratione autem iusto ducimus nam!
+              We provide you end to end software development and consultancy
+              services resulting in extraordinary digital experiences.
             </>
           }
           img={servicesbanner}
+          talk={true}
         />
       </div>
       <div

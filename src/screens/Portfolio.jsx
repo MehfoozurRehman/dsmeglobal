@@ -26,17 +26,26 @@ export default function Portfolio() {
     <>
       <div className="container">
         <HomeJumbotron
-          taglinesLine="Portfolio"
+          taglines={[
+            <>
+              <div>Check our</div>success stories.
+            </>,
+            <>
+              <div>Yours</div> may be next!
+            </>,
+          ]}
           info={
             <>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque
-              minima eveniet vero porro expedita pariatur error reiciendis ut ab
-              architecto quaerat similique, ipsum suscipit placeat quo rem cum!
-              Rem id magni cum, voluptatibus harum possimus fugit praesentium
-              nostrum illum.
+              DSME Global Links has successfully rendered digital solutions to
+              every type and size of industries. We take up challenges not only
+              to deliver impactful solutions but also to create avant-garde
+              products. We not only provides customized services but also builds
+              products to aid industry verticals. We accept challenges boldly to
+              move a step forward in the innovative world.
             </>
           }
           img={project}
+          talk={true}
         />
       </div>
       {showImage ? (

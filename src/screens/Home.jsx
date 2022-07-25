@@ -4,15 +4,15 @@ import { ClientsSection } from "../components/ClientsSection";
 import { ServicesSection } from "../components/ServicesSection";
 import { NewsletterSection } from "../components/NewsletterSection";
 import { BlogSection } from "../components/BlogSection";
-import homebanner1 from "../assets/homebanner1.webp";
-import homebanner2 from "../assets/homebanner2.webp";
-import homebanner3 from "../assets/homebanner3.webp";
-import WorkSection from "../components/WorkSection";
 import { StatsSection } from "../components/StatsSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
 import { QuateSection } from "../components/QuateSection";
 import { PricingSection } from "../components/PricingSection";
 import { OurDevelopmentProcess } from "../components/OurDevelopmentProcess";
+import { WorkSection } from "../components/WorkSection";
+import homebanner1 from "../assets/homebanner1.webp";
+import homebanner2 from "../assets/homebanner2.webp";
+import homebanner3 from "../assets/homebanner3.webp";
 
 export default function Home({ setLightHeader }) {
   useEffect(() => {
@@ -26,7 +26,12 @@ export default function Home({ setLightHeader }) {
     <>
       <div
         className="container"
-        style={{ backgroundColor: "#242424", marginBottom: "3em" }}
+        style={{
+          background:
+            'url("https://img.freepik.com/free-photo/black-elegant-background-with-copy-space_24972-1836.jpg?t=st=1658749141~exp=1658749741~hmac=1e2a415798ccb0b21f058af653cee77aa63112f98c093a9fc3d4cd6fa220f5ca&w=900"),no-repeat',
+          backgroundSize: "cover",
+          marginBottom: "3em",
+        }}
       >
         <HomeJumbotron
           taglinesLine="Quality"

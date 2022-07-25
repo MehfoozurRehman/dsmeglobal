@@ -4,7 +4,7 @@ import { fetcher } from "../utils/functions";
 import useSWR from "swr";
 import { Bounce, Fade, Zoom } from "react-reveal";
 
-export default function WorkSection() {
+export function WorkSection() {
   const [project, setProject] = useState([]);
 
   const { data, error } = useSWR(

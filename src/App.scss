@@ -210,6 +210,12 @@ body {
   -webkit-animation: slidedown 4s infinite;
   -moz-animation: slidedown 4s infinite;
   margin-left: 0.3em;
+  display: flex;
+}
+.container__jumbotron__left__heading span div {
+  color: $black;
+  margin-right: 0.3em;
+  margin-left: -0.5em;
 }
 
 @keyframes slidedown {
@@ -3156,8 +3162,8 @@ body {
   position: sticky;
   z-index: 999;
   padding: 4em;
- background-color: $black;
- color: white;
+  background-color: $black;
+  color: white;
 }
 
 .container__emerging__technologies__heading__main {
@@ -4833,7 +4839,6 @@ body {
   align-items: center;
   padding: 3em;
   padding-bottom: 1em;
-  
 }
 .ios__mobile__share__your__idea__section__left__heading span {
   color: $primary;
@@ -4872,7 +4877,7 @@ body {
   width: 100%;
   font-size: 30px;
   font-weight: 600;
-color: $white;
+  color: $white;
   text-align: center;
   padding-top: 2em;
 }
@@ -5027,7 +5032,7 @@ color: $white;
   margin-bottom: 0.4em;
   font-weight: 600;
 }
-.ios__development__native__ios__container__heading span{
+.ios__development__native__ios__container__heading span {
   color: $primary;
 }
 .ios__development__native__container__text {
@@ -5062,7 +5067,7 @@ color: $white;
   display: flex;
   align-items: center;
   width: 100%;
- 
+
   margin-bottom: 0.5em;
 }
 
@@ -5111,7 +5116,7 @@ color: $white;
   flex-direction: column;
   margin: 0px auto;
 }
-.ios__development__native__sound__promising__heading span{
+.ios__development__native__sound__promising__heading span {
   color: $primary;
 }
 .ios__development__native__sound__promising__heading {
@@ -5512,7 +5517,7 @@ color: $white;
   width: 500px;
   height: 350px;
   mix-blend-mode: luminosity;
-  border-radius :5px ;
+  border-radius: 5px;
 }
 .ios__development__native__cross__plat__development__container {
   width: 100%;
@@ -5549,7 +5554,6 @@ color: $white;
 
 .android__development__our__stack {
   width: 100%;
- 
 }
 
 .android__development__our__stack__container {
@@ -5569,7 +5573,7 @@ color: $white;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  padding-bottom:1em ;
+  padding-bottom: 1em;
 }
 .android__development__our__stack__container__heading span {
   color: $primary;
@@ -5591,7 +5595,6 @@ color: $white;
 }
 .android__development__our__stack__container__col__one__heading__text li {
   margin: 1em 0em;
- 
 }
 .about__ceo__message,
 .about__core__values,
@@ -5636,7 +5639,7 @@ color: $white;
 .about__ceo__message__right__heading span {
   color: $primary;
 }
-::marker{
+::marker {
   color: $primary;
   font-size: 20px;
 }
@@ -9088,7 +9091,7 @@ color: $white;
   stroke: #189366;
 }
 
-.Android__and__ios__box__two:hover .svg__Android__and__ios__box__two svg{
+.Android__and__ios__box__two:hover .svg__Android__and__ios__box__two svg {
   stroke: $white;
 }
 .Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {

@@ -1,22 +1,22 @@
-import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
-import BlogsCard from '../components/BlogCard';
-import BlogsFilter from '../components/BlogsFilter';
-import {fetcher} from '../utils/functions';
-import blog from '../assets/blog.svg';
-import useSWR from 'swr';
-import {HomeJumbotron} from '../components/HomeJumbotron';
-import {Bounce} from 'react-reveal';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import BlogsCard from "../components/BlogCard";
+import BlogsFilter from "../components/BlogsFilter";
+import { fetcher } from "../utils/functions";
+import blog from "../assets/blog.svg";
+import useSWR from "swr";
+import { HomeJumbotron } from "../components/HomeJumbotron";
+import { Bounce } from "react-reveal";
 
 export default function Blogs() {
   const navigate = useNavigate();
   const [noOfItems, setNoOfItems] = useState(9);
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
 
-  const {data, error} = useSWR(
+  const { data, error } = useSWR(
     `${import.meta.env.VITE_REACT_APP_API_URL}api/v1/get_blog`,
     fetcher,
-    {suspense: true},
+    { suspense: true }
   );
   return (
     <>
@@ -25,47 +25,45 @@ export default function Blogs() {
           taglinesLine="Blogs"
           info={
             <>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At itaque
-              minima eveniet vero porro expedita pariatur error reiciendis ut ab
-              architecto quaerat similique, ipsum suscipit placeat quo rem cum!
-              Rem id magni cum, voluptatibus harum possimus fugit praesentium
-              nostrum illum.
+              Keep up with the most trending tech news articles. Stay ahead of
+              the curve and up-to-date with the latest technology to advance and
+              innovate your business at DSME Global Link Blog.
             </>
           }
           img={blog}
         />
       </div>
-      <div className="blog__page" style={{marginTop: '-8em'}}>
+      <div className="blog__page" style={{ marginTop: "-8em" }}>
         <div className="blog__page__filter">
           <BlogsFilter
             title="All"
             defaultChecked={true}
             onChange={() => {
-              setFilter('');
+              setFilter("");
             }}
           />
           <BlogsFilter
             title="Web Apps"
             onChange={() => {
-              setFilter('Web App Development');
+              setFilter("Web App Development");
             }}
           />
           <BlogsFilter
             title="Mobile Apps"
             onChange={() => {
-              setFilter('Mobile App Development');
+              setFilter("Mobile App Development");
             }}
           />
           <BlogsFilter
             title="Ecommerce"
             onChange={() => {
-              setFilter('Ecommerce Solutions');
+              setFilter("Ecommerce Solutions");
             }}
           />
           <BlogsFilter
             title="UI/UX Design"
             onChange={() => {
-              setFilter('UI & UX Services');
+              setFilter("UI & UX Services");
             }}
           />
         </div>
@@ -74,8 +72,8 @@ export default function Blogs() {
             <div>failed to load</div>
           ) : (
             data
-              .filter((item, i) => (filter === '' ? i < noOfItems : i))
-              .map(item => (
+              .filter((item, i) => (filter === "" ? i < noOfItems : i))
+              .map((item) => (
                 <BlogsCard
                   data={item}
                   key={JSON.stringify(item)}
@@ -84,13 +82,14 @@ export default function Blogs() {
               ))
           )}
         </div>
-        {filter === '' && data.length > 6 ? (
+        {filter === "" && data.length > 6 ? (
           <div className="blog__page__content__button">
             <button
               className="button"
               onClick={() => {
                 setNoOfItems(noOfItems + noOfItems);
-              }}>
+              }}
+            >
               Load More
             </button>
           </div>
@@ -106,8 +105,9 @@ export default function Blogs() {
             <button
               className="blog__greenbox__container__button"
               onClick={() => {
-                navigate('/contact');
-              }}>
+                navigate("/contact");
+              }}
+            >
               Free Consultation
             </button>
           </Bounce>
