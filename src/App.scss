@@ -3155,7 +3155,7 @@ body {
   width: 100%;
   position: sticky;
   z-index: 999;
-  padding: 2em 4em;
+  padding: 4em;
  background-color: $black;
  color: white;
 }
@@ -4870,9 +4870,9 @@ body {
   width: 100%;
   font-size: 30px;
   font-weight: 600;
-  padding: 2em;
+color: $white;
   text-align: center;
-  padding-top: 0;
+  padding-top: 2em;
 }
 .ios__mobile__page__container__ios__company__heading span {
   color: $primary;
@@ -4966,8 +4966,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 3em 0;
-  padding-bottom: 0;
 }
 .ios__development__tangible__col__two__header {
   display: flex;
@@ -5027,6 +5025,9 @@ body {
   margin-bottom: 0.4em;
   font-weight: 600;
 }
+.ios__development__native__ios__container__heading span{
+  color: $primary;
+}
 .ios__development__native__container__text {
   margin-bottom: 2em;
 }
@@ -5046,7 +5047,7 @@ body {
   font-weight: 600;
 }
 .ios__development__native__impressive__performance__content {
-  width: 90%;
+  width: 100%;
 }
 .ios__development__native__ios__container__right {
   width: 40%;
@@ -5059,7 +5060,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: 1.5em;
+ 
   margin-bottom: 0.5em;
 }
 
@@ -5107,6 +5108,9 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0px auto;
+}
+.ios__development__native__sound__promising__heading span{
+  color: $primary;
 }
 .ios__development__native__sound__promising__heading {
   font-size: 18px;
@@ -5503,8 +5507,10 @@ body {
   background-color: $black;
 }
 .ios__development__native__cross__plat__development__img {
-  width: 370px;
-  height: 270px;
+  width: 500px;
+  height: 350px;
+  mix-blend-mode: luminosity;
+  border-radius :5px ;
 }
 .ios__development__native__cross__plat__development__container {
   width: 100%;
@@ -5541,11 +5547,9 @@ body {
 
 .android__development__our__stack {
   width: 100%;
-  margin-bottom: 3em;
+ 
 }
-.android__development__our__stack__all {
-  margin-top: 4em;
-}
+
 .android__development__our__stack__container {
   width: calc(100% - 4em);
 
@@ -5562,6 +5566,8 @@ body {
 .android__development__our__stack__container__heading {
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
+  padding-bottom:1em ;
 }
 .android__development__our__stack__container__heading span {
   color: $primary;
@@ -9012,7 +9018,7 @@ body {
   width: 50%;
   border: 1px solid $primary;
   padding: 2em;
-  margin-right: 1em;
+  margin-right: 4em;
   border-radius: 5px;
 }
 .Android__and__ios__box__two {

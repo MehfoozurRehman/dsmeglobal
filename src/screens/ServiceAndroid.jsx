@@ -88,12 +88,13 @@ export default function ServicesAndroid() {
               <img loading="lazy" src={img6} alt="imgmunber" />
             </div>
           </div>
-          <div className="ios__mobile__page__container__ios__company__heading">
+         
+          <div className="Android__and__ios__boxes__all">
+            <div className="Android__and__ios__boxes">
+            <div className="ios__mobile__page__container__ios__company__heading">
             What makes DSME Global Links a top{" "}
             <span>Android development company?</span>
           </div>
-          <div className="Android__and__ios__boxes__all">
-            <div className="Android__and__ios__boxes">
               <div className="Android__and__ios__box__one__and__two">
                 <div className="Android__and__ios__box__one">
                   <div className="svg__Android__and__ios__box__two">
@@ -273,7 +274,7 @@ export default function ServicesAndroid() {
             <div className="ios__development__native__ios__container__left">
              
                 <div className="ios__development__native__ios__container__heading">
-                  Why choose native Android app development?
+                  Why choose native <span>Android app development?</span>
                 </div>
               
               <div className="ios__development__native__container__text">
@@ -484,7 +485,7 @@ export default function ServicesAndroid() {
           </div>
           <div className="ios__development__native__sound__promising">
             <div className="ios__development__native__sound__promising__heading">
-              Sounds promising? Let’s discuss your idea! !
+              Sounds promising? <span>Let’s discuss your idea! !</span>
             </div>
             <div className="ios__development__native__sound__promising__button">
               Get in Touch
