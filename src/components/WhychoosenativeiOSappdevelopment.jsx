@@ -6,7 +6,7 @@ export function WhychoosenativeiOSappdevelopment({}) {
       <div className="ios__development__native__ios__container">
         <div className="ios__development__native__ios__container__left">
           <div className="ios__development__native__ios__container__heading">
-            Why choose native <span></span>
+            Why choose native <span>iOS app development?</span>
           </div>
           <div className="ios__development__native__container__text">
             What are the pros of building a native application for iOS? See our
