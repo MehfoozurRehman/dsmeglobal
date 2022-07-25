@@ -8952,9 +8952,8 @@ body {
 }
 .highly__customer__main__first__container__jira__container {
   border-radius: 5px;
-  // margin: 1em 0;
-  padding: 3em 1em 1em 1em;
-
+  padding: 1em;
+  margin-bottom: 2em;
   border: 1px solid rgba(255, 0, 0, 0);
 }
 .highly__customer__main__first__container__jira__container:hover {
@@ -8972,7 +8971,7 @@ body {
 .highly__customer__main__first__container__jira__container__content {
   padding-top: 2em;
   font-size: 17px;
-  width: 70%;
+  width: 100%;
 }
 .highly__customer__main__container {
   padding: 4em 1em 0em 0em;
@@ -9096,4 +9095,24 @@ body {
 }
 .Android__and__ios__box__one:hover .svg__Android__and__ios__box__two svg {
   stroke: $white;
+}
+.Agile__discovery {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.Agile__discovery__content {
+  padding-top: 2em;
+}
+.Agile__discover__workshop__container {
+  padding: 4em;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.Agile__discover__workshop__container__content {
+  border: 1px solid $primary;
+  padding: 1em;
+}
+.Agile__discover__workshop__container__cards {
+  max-width: 1440px;
+  margin: 0 auto;
 }
