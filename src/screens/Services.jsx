@@ -143,6 +143,20 @@ export default function Services({}) {
       ],
       link: "/services/staff",
     },
+    {
+      logo: "v1652871320/dsme_global/eoqvrt2hhu2zc2xbteqr.webp",
+      title: "Agile discovery Workshop ",
+      image: "v1652871923/dsme_global/nvxctba3pblutjl3zbjm.webp",
+      description:
+        "We provide SEO services to optimize your website to get organic or unpaid traffic from the search engines to result in pages.",
+      categories: [
+        {
+          value: "Search Engine Optimizations",
+          label: "Search Engine Optimizations",
+        },
+      ],
+      link: "/services/discoveryworkshop",
+    },
   ];
   return (
     <>

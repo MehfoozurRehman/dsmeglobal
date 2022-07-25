@@ -34,6 +34,7 @@ const Pricing = lazy(() => import("./screens/Pricing"));
 const PricingDedicated = lazy(() => import("./screens/PricingDedicated"));
 const BlogDetails = lazy(() => import("./screens/BlogDetails"));
 const ServiceWebScraping = lazy(() => import("./screens/ServiceWebScraping"));
+const DiscoveryWorkshop = lazy(() => import("./screens/DiscoveryWorkshop"));
 
 function App() {
   const [lightHeader, setLightHeader] = useState(false);
@@ -59,11 +60,16 @@ function App() {
         <Route path="/services/ecomerece" element={<ServiceEcomerece />} />
         <Route path="/services/startup" element={<ServiceStartup />} />
         <Route path="/services/staff" element={<ServiceStaff />} />
+        <Route
+          path="/services/discoveryworkshop"
+          element={<DiscoveryWorkshop />}
+        />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/pricing-dedicated-teams" element={<PricingDedicated />} />
+
         <Route
           path="/contact-us"
           element={<ContactUs setNoShowContactUs={setNoShowContactUs} />}
